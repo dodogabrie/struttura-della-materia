@@ -1,0 +1,104 @@
+\lez{1}{17-02-2020}{}
+\subsection{Introduzione ed argomenti}%
+\paragraph{Informazioni sul professore}%
+Professore: Alessandro Tredicucci. Ricevimenti sotto richesta Mail (tipicamente il prof è in ufficio nel pomeriggio), ufficio 33 al primo piano.
+\paragraph{Informazioni sul corso}%
+Il corso spiega proprietà macroscopiche della materia in funzione di proprietà microscopiche. Il nome adatto sarebbe "stati della materia", visto il forte legame del corso con le nozioni di meccanica quantistica basilari. \\
+Parleremo di gas perfetti e li useremo per modellizzare proprietà di sistemi fisici più complessi.\\
+Le basi che acquisiremo con i gas perfetti ci saranno poco utili nello studio dei liquidi, quest richiederà un altro approccio (e verrà trattata meno).\\
+\paragraph{Struttura del corso}%
+\begin{itemize}
+	\item Gas perfetti $\implies$ gas reali $\implies$ Conducibilità termica.
+	\item Solidi. 
+	\item Liquidi.
+	\item Interazione Radiazione-Materia.
+	\item Laser.
+\end{itemize}
+\paragraph{Libri di testo}%
+Il libro di testo scelto è il \textit{David Goldstein: State Of Matter}, contiene tutti gli argomenti trattati nel corso.\\ 
+In alternativa c'è il  \textit{Pathria: Statistical Mechanics} oppure \textit{Rimondo: Lezioni di struttura della materia} (attenzione agli erroretti nel testo). Dall'ultimo si prende la parte di Interazione Radiazione-Materia.\\ 
+La parte dei solidi viene presa dall' \textit{Ashcroft-Mermin: Solid State Physics} e per approfondire quest'ultima c'è il \textit{Massani Crassano: Fisica dello stato solido} avente molte nozioni di Teoria dei gruppi.\\
+Per la parte dei Liquidi: \textit{Marshay e Tosy??} (specifico per Liquidi), si trovano comunque le dispense della prof. Tozzini su e-learning.\\
+In ogni caso tenere d'occhio il registro: il prof mette le "Reference" di ogni lezione in modo preciso.\\
+E possibile sostituire una parte dell'esame con un seminario: ti prepari un argomento (es. struttura a bande del grafene) e poi lo discuti all'esame.
+\paragraph{Esami}%
+Le sessioni sono piazzate a fine maggio, giugno, luglio, settembre, ottobre (ti iscrivi e puoi farlo fino a natale), gennaio e febbraio. \\
+La modalità di esame è: nella data prestabilità (su valutami) inizia l'appello che dura una settimana o dieci giorni.\\
+Al momento dell'iscrizione è necessario scrivere nelle note la data (incluso mattina o pomeriggio) in cui vorremmo fare l'esame, se ti scordi di scrivere nella nota ripeti l'iscrizione. Se la richiesta non è soddisfabile si va in ordine di iscrizione, la lista degli iscritti arriverà per E-mail. In caso di imprevisti è necessario accordarsi con i colleghi per i cambi. L'esame può essere ripetuto a raffica, senza pregiudizi.\\
+L'esame è un orale di un'ora: Si parla di due argomenti "ortogonali" del corso (una domanda può essere sostituita dal seminario usando Slide, ogni slide può essere madre di domande atroci). È richiesta la  capacità di applicare quanto visto a lezione e il significato fisico dei risultati ottenuti a lezione, non le rigorose dimostrazioni. \\
+Può capitare che vengano chiesti argomenti non visti al corso ma ottenibili ragionando su cose affrontate. 
+\begin{center}
+	"L'esame è una discussione amichevole di fisica tra fisici :)" \quad \quad Cit. A. Tredicucci
+\end{center}
+Che succede se non ricordo un argomento dei due chiesti in sede di esame? Si cambia domanda e si parte un voto massimo ribassato: 24-25.\\
+È fortemente consigliato dare prima Meccanica Quantistica di Struttura della materia per avere una migliore comprensione degli argomenti trattati ed una maggiore sicurezza in sede di esame.\\
+Come bocciare l'esame? Non sapere le distribuzioni statistiche: Boltzmann, Fermi-Dirac, Bose-Einstein con relativi disegni (non fare studio di funzione all'esame per il disegno, va saputo e basta).
+
+\subsection{Principi di Termodinamica Statistica}
+Come introdotto sopra uno degli scopi del corso è quello di collegare il mondo macroscopico a quello microscopico, per far questo è necessario riprendere i concetti principali di Termodinamica Statistica.
+\footnote{Tale campo è quello di Boltzmann e del suo allievo, entrambi si sono suicidati dopo la fama.}\\
+Riallacciamoci subito ai concetti di Meccanica Quantistica: supponiamo di avere un sistema con N particelle, possiamo calcolare gli stati di queste particelle passando dalla Hamiltoniana di ognuna di loro. \\
+Ottenuto il set di stati possiamo dire che il nostro sistema si troverà sicuramente in uno di questi. Ma come mettiamo in relazione questi stati con la struttura macroscopica della materia?
+
+\paragraph{Esempio: Particelle libere nella scatola}%
+Prendiamo una scatola di lato L contenente N particelle non interagente. 
+\begin{figure}[H]
+    \centering
+    \incfig{scatola-l3}
+    \caption{Scatola di lato L}
+    \label{fig:scatola-l3}
+\end{figure}
+Ogni particella avrà energia:
+\begin{align}
+	\epsilon^{\left(i\right)}_{q}=\frac{p_{\left(i\right)}^2}{2m}=\frac{\hbar^2q_{\left(i\right)}^2}{2m}\quad\quad\left(\text{con } \ i = 1 \ \ldots \ N
+	\quad \text{e}\quad q^2 = q^2_{x}+ q^2_{y}+q^2_{z} \right)
+ .\end{align}
+Prendiamo delle condizioni al contorno periodiche per la funzione d'onda:
+\[
+	 e^{iq_{x}\left( x+l \right) } = e^{q_{x}x} \implies e^{iq_{x}L} = 1
+.\] 
+Quindi $q_{x} = \left( 2\pi / L \right) l_{x}$, $l_{x} = 0, 1, \ldots N$. Quindi dato il sistema di N particelle di energia totale E avremo un numero estremamante elevato di combinazioni di stati quantistici che possono avere una tale energia:
+\begin{align}
+	E = \sum_{n=1}^{N} \epsilon_{q}^{\left(i\right)}
+.\end{align}
+Vogliamo scrivere l'Hamiltoniana come se le particelle non fossero interagenti, ma vorremmo anche che il sistema fosse in grado di passare da uno stato ad un altro (ad esempio interagendo con le pareti del contenitore o assumendo che gli stati non siano autostati perfetti).\\
+Supponiamo che il sistema sia inizialmente isolato ad una certa energia E e volume $V=L^3$, ci chiediamo quale sia lo stato microscopico in cui si trova.\\
+In linea di principio non è possibile colmare questo dubbio: lo stato dipenderà dall'evoluzione temporale del materiale e questa non può sempre esser nota.\\
+Per poter caratterizzare meglio la situazione ci servono delle ipotesi:
+\begin{itemize}
+	\item Se aspettiamo un tempo sufficientemente lungo le condizioni iniziali sono irrilevanti (perdita di memoria del sistema o equilibrio termodinamico).
+	\item Se il sistema ha raggiunto l'equilibrio tutti i microstati sono equiprobabili.
+\end{itemize}
+\paragraph{Apparente contraddizione} %
+Se ho uno stato in cui tutta l'energia E sta in una particella con le altre immobili questo è egualmente probabile allo stato in cui tutte le particelle hanno la stessa energia (secondo le nostre ipotesi). \\
+Questo può sembrare assurdo per il semplice motivo che sarà difficilissimo avere N-1 particelle immobili ed una soltanto con tutta l'energia! \\
+In realtà la probabilità di ottenere una delle due situazioni esposte all'inizio è effettivamente la stessqa nei due casi, soltanto che il numero dei microstati in cui ogni particella ha una energia di circa $E / N$ è molto maggiore del numero dei microstati in cui una particella ha tutta l'energia.\\
+Cerchiamo di costruire un metodo per trovare le configurazioni "più probabili" (più popolate), queste ci consentiranno di trovare le proprietà macroscopiche del materiale. Ci serve, in fin dei conti, solo un metodo per contare. 
+\subsection*{Entropia}%
+Boltzmann introduce il concetto di entropia a partire dal numero di microstati $\Gamma$ per un sistema (noti E, N, V). La sua definizione è:
+\[
+	S = k\cdot \ln\Gamma
+.\] 
+con $k = 1.38 \cdot 10^{-23} J\cdot K^{-1}$ costante di Boltzmann.\\
+Visto che $\Gamma$ dipende da V e N possiamo qundi scrivere che $S = S\left( V, N \right)$. \\
+Per queste definizioni è necessario l'equilibrio, altrimenti $\Gamma$ sarebbe solo un sottoinsieme degli stati possibili dipendente dalla evoluzione temporale del sistema.\\
+Al crescere dell'energia E cresce anche S: se aumento l'energia ho più modi di distribuire l'energia all'interno degli stati quantici. 
+\begin{center}
+$\Gamma$ è una funzione monotona nell'energia $\implies$ S è monotona nell'energia.
+\end{center}
+Possiamo quindi scrivere $S = S(V,E,N)$, oppure invertire la relazione (vista la monotonia in E) per esprimere $E = E(S,V,N)$.\\ 
+Se l'energia è finita possiamo farne una variazione infinitesima ed ottenere gli importanti potenziali termodinamici.
+\paragraph{Potenziali termodinamici}%
+\[
+	dE = \left.\frac{dE}{dS}\right|_{V,N}ds + \left.\frac{\mbox{d} E}{\mbox{d} V} \right|_{S,N}dV + \left.\frac{\mbox{d} E}{\mbox{d} N} \right|_{S,V}dN\\
+.\]
+\begin{align}
+	\left.\frac{\mbox{d} E}{\mbox{d} S}\right|_{V,N}= \ \ T&
+	&\left.\frac{\mbox{d} E}{\mbox{d} N}\right|_{S,V} = \ \ \mu& 
+	&\left.-\frac{\mbox{d} E}{\mbox{d} V} \right|_{S,N} = \ \ P&
+\end{align}
+Queste relazioni sono all'equilibrio (a meno che non venga specificata una perturbazione simile al campo elettrico, in qui troveremo comunque soluzioni stazionarie).
+\paragraph{Potenziale chimico $\mu$}%
+Il potenziale chimico è la variazione dell'energia del sistema all'aumentare del numero di particelle.\\
+Saremmo portati a pensare che tale valore debba essere positivo in realtà è generalmente negativo: è la variazione di energia a \textit{Volume ed Entropia} costante, se l'entropia è costante allora resta costante anche il numero totale di configurazioni possibili. Per mantenere costante quest'ultimo devo diminurire necessariamente l'energia, da cui il fatto che esso sia negativo.
+\footnote{Può essere positivo quando il sistema non può diminuire la sua energia (fermioni a bassa temperatura, grazie al principio di esclusione di Pauli).}

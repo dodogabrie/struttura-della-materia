@@ -1,0 +1,278 @@
+\lez{8}{04-03-2020}{}
+Abbiamo visto nella scorsa lezione che per un gas di Bosoni che può scambiare particelle con il bagno termico se la temperatura tende a zero allora numero di particelle medie per cella tende a zero: il sistema si svuota.\\
+Noi considereremo più spesso casi in cui il numero di particelle è fissato, in tal caso il potenziale chimico diventa una funzione della temperatura.\\
+Siccome il numero totale di particelle è dato da:
+\[
+	\int_{0}^{\mathcal{E} } \rho ( \mathcal{E} ) \overline{n}( \mathcal{E} ) d\mathcal{E} = N 
+.\] 
+È necessario che il potenziale chimico cresca e tenda quindi a zero cercando di mantenere costante l'integrale sotteso alla curva per energie positive.
+\begin{figure}[H]
+    %This is a custom LaTeX template!
+    \centering
+    \incfig{bose-einstein-con-t-tendente-a-zero-e-numero-di-particelle-fissato}
+    \caption{\scriptsize Bose-Einstein con T tendente a zero e numero di particelle fissato.}
+    \label{fig:bose-einstein-con-t-tendente-a-zero-e-numero-di-particelle-fissato.}
+\end{figure}
+\noindent
+Quindi a $T=0$ abbiamo che l'unico stato occupato è lo stato fondamentale. Prossimamente discuteremo l'andamento di $\mu $ al variare di T, vedremo che $\mu $ diventa effettivamente zero per una temperatura di poco maggiore dello zero assoluto, raggiungendo uno stato della materia in cui il numero di particelle nello stato fondamentale è macroscopico \footnote{detto condensato di Bose-Einstein}.
+\subsection{Fluttuazioni quantistiche vs fluttuazioni termodinamiche}%
+Nella derivazione delle due distribuzioni abbiamo effettuato con leggerezza il passaggio al continuo, dovremmo almeno verificare che questo passaggio è lecito avendo abbandonato il regime di gas ideale.\\
+Se chiamiamo $\delta \mathcal{E} $ la distanza media tra gli stati dobbiamo verificare che:
+\[
+	\delta \mathcal{E} \ll \sqrt{\overline{\left( \Delta \mathcal{E}  \right) ^2}} 
+.\] 
+In questo modo le fluttuazioni termodinamiche sono più importanti delle fluttuazioni quantistiche e ci è permesso fare un passaggio al continuo come già argomentato.\\
+Le fluttuazioni termodinamiche dell'energia della singola particella sono dell'ordine di $kT$, mentre quelle quantistiche  $\frac{\hbar^2}{2m}\left( \frac{2\pi}{L} \right) ^2$ (nel caso di particelle confinate in una scatola di dimensioni caratteristiche linearri L).\\
+Se prendiamo $L \approx 1cm$, $m \sim 10^{-24}g$ otteniamo che per avere $\overline{\left( \Delta \mathcal{E}  \right) ^2}\gg \delta \mathcal{E} $ serve $T> 10^{-10}K$. Per questo motivo in sistemi fisici reali non abbiamo problemi di fluttuazioni quantistiche.\\
+
+\subsection{Spin nel calcolo della $\rho ( \mathcal{E} ) $}%
+Quando a partire dagli impulsi siamo passati all'energia nella sezione \ref{subsec:dens-stati} ci siamo dimenticati dello spin che è un'altra variabile delle nostre particelle. Sappiamo che la degenerazione di spin è $2s+1$ \footnote{Dove $s$ è lo spin appunto}. Quindi se chiamiamo la densità di stati senza considerare lo spin $\rho '( \mathcal{E} ) $ si ha che la correzione dovuta allo spin su questa è: 
+\[
+	\rho ( \mathcal{E} ) = \rho'( \mathcal{E} ) \cdot  \left( 2s + 1 \right)   = g \rho '( \mathcal{E} ) 
+.\] 
+Visto che noi parliamo di fermioni e bosoni le nostre correzioni sono relativamente 2 e 1, fatta eccezione per i fotoni ed i fononi \footnote{Questi ultimi si occupano delle vibrazioni dei cristalli, sono quanti o quasi-particelle.}.
+Infatti nel caso dei fononi abbiamo tre degenerazioni dovute ai gradi di liberta vibrazionali, mentre per i fotoni sappiamo invece che abbiamo due degenerazioni dovute alle possibili polarizzazioni.\\
+La densità di stati che continueremo ad usare per qualche lezione è quella ricavata nella sezione citata sopra:
+\[
+	\rho ( \mathcal{E} ) d\mathcal{E} = \frac{4\pi\sqrt{2} V m_{3 /2}}{\left( 2\pi \hbar \right)^3 } \mathcal{E} ^{1 /2} g d\mathcal{E} 
+.\] 
+Relativa ad un sistema tridimensionale di particelle con energia $p^2/2m$.
+
+\subsection{Correzione al secondo ordine per l'equazione di stato dei gas ideali}%
+Cerchiamo di capire cosa succede quando siamo in condizioni tali da non poter usare l'approssimazione di gas ideali "per poco" quindi quando la disuguaglianza \ref{eq:ideal_gas_approx} non è forte, ma è soltanto una disuguaglianza.\\ 
+Per farlo andiamo all'ordine successivo nelle approssimazioni fatte con quella disuguaglianza, che ricordiamo essere:
+\[
+	\exp\left( \frac{\mu }{kT} \right) \ll 1
+.\] 
+Quindi vediamo come si modifica l'equazione di stato dei gas ideali quando iniziamo a tener di conto degli effetti quantistici.\\
+Il potenziale di Landau nei due casi studiati sopra è:
+\[
+	\Omega^{\text{FD}}_{\text{BE}} = \mp kT \sum_{q}^{} \ln\left[ 1 \pm \exp\left( - \frac{\mathcal{E} _{q}-\mu }{kT} \right)  \right] 
+.\] 
+Dove il segno superiore è per la Fermi-Dirac, il segno inferiore è per la Bose-Einstein.\\
+Per arrivare alla approssimazione classica nella abbiamo tenuto soltanto i termini al primo ordine in $x$, adesso usando l'espressione di $\Omega$ per bosoni e fermioni possiamo anche andare al secondo ordine $x^2$:
+\[
+	\Omega = -kT \sum_{q}^{} \exp\left( - \frac{\mathcal{E} _{q}-\mu }{kT} \right) \pm \frac{kT}{2}\sum_{q}^{} \exp\left[ - \frac{2 \left( \mathcal{E} _{q}-\mu  \right) }{kT} \right] 
+.\]
+Mentre la prima parte è il potenziale di Landau già trovato in ambito classico il secondo pezzo inizia a differenziarsi nel caso si tratti di fermioni o bosoni:
+\[
+	\Omega = \Omega _{\text{class}} \pm \frac{kT}{2}\sum_{q}^{} \exp\left[ - \frac{2 \left( \mathcal{E} _{q}-\mu  \right) }{kT} \right] 
+.\]
+Possiamo fare il conto della correzione passando al continuo visto la valutazione sulle fluttuazioni fatta due sezioni sopra:
+\[
+	\sum_{q}^{} \exp\left( -\frac{2\mathcal{E} _{q}}{kT} \right) = \int_{0}^{\infty}  \rho ( \mathcal{E} ) \exp\left( - \frac{2\mathcal{E} }{kT} \right) d\mathcal{E} =
+	\left( \frac{1}{2} \right) ^{3 /2}\int_{0}^{\infty} \rho ( \overline{\epsilon }) \exp\left( - \frac{\overline{\epsilon }}{kT} \right) d \overline{\epsilon } 
+.\] 
+Dove abbiamo fatto il cambio di variabile $\overline{\epsilon }= 2\mathcal{E} $, abbiamo inoltre considerato il fatto che in $\rho ( \mathcal{E} ) \propto \mathcal{E} ^{1 /2}$ quindi esce quel fattore alla $3 /2$ dall'integrale.
+Quindi la correzione alla $\Omega _{\text{class}}$ è la seguente:
+\[
+	\pm kT \left( \frac{1}{2} \right) ^{5 /2} \exp\left( \frac{\mu }{kT} \right) \int_{0}^{\infty} \rho ( \overline{\epsilon }) \exp\left( - \frac{\overline{\epsilon }}{kT} \right) d \overline{\epsilon } 
+.\] 
+Notiamo adesso che la maggior parte della correzione che abbiamo ottenuto non è altro che $\Omega _{\text{class}}$ stessa, possiamo allora compattare l'espressione raggruppando questa quantità (ponendo attenzione ai segni):
+\[
+	\Omega = \Omega _{\text{class}} \left[ 1 \mp \frac{\exp\left( \frac{\mu }{kT} \right) }{2^{5 /2}} \right] 
+.\] 
+Siamo pronti a ricavare l'equazione del gas perfetto con effetti quantistici:
+\[
+	\Omega  = - PV
+.\]  
+\[
+	\Omega _{\text{class}} = -NkT
+.\]
+allora avviamo la correzione
+\[
+	PV = NkT\left[ 1 \mp \frac{\exp\left( \frac{\mu }{kT} \right) }{2^{5 /2}} \right] \label{eq:eq-id-corretta_1}
+.\] 
+Possiamo chiederci se questa correzione ha senso, alla luce del fatto che la correzione per i fermioni è negativa e che per questi non possiamo avere più di una particella per stato. Una forma equivalente è la seguente:
+\[
+	P = \frac{N}{V} kT \left[ 1 -+ \frac{\exp\left( \frac{\mu }{kT} \right) }{2^{ 5 /2}} \right] 
+.\] 
+Quindi per un gas di fermioni alla temperatura T con densità $N /V$ la pressione è inferiore a quella di un gas classico, mentre per un gas di bosoni la pressione la pressione è inferiore. \\
+Questo è assolutamente contro intuitivo: i fermioni (che hanno al massimo una particella per stato) ci aspettiamo abbiano una "repulsione intrinseca" maggiore dei bosoni che non hanno problemi ad ammassarsi negli stati a bassa energia. Di conseguenza ci si aspetta anche che per i fermioni la pressione sia maggiore che per i gas ideali e viceversa per i bosoni. \\
+Il segno del secondo termine nella \ref{eq:eq-id-corretta_1} dovrebbe essere allora invertito per soddisfare il nostro intuito. Tuttavia la derivazione che abbiamo seguito sembra corretta, non ci sono evidenze di errori algebrici. Deve esserci qualcosa di concettualmente sbagliato quindi.\\
+Possiamo provare con un'altra derivazione passando questa volta dalla energia libera F, ricordiamo la proprietà che lega le variazioni dei potenziali termodinamici durante una trasformazione sul sistema:
+\[
+	\left.\delta F\right|_{T,V,N} = \left.\delta \Omega \right|_{T,V,\mu }
+.\]
+La variazione che consideriamo è la correzione da sistema classico a sistema "leggermente quantistico" come spiegato all'inizio.
+Possiamo scrivere che:
+\[
+	\Omega ( T,V,\mu )  = \Omega _{\text{class}} + \delta \left.\Omega \right|_{T,V,\mu }
+.\] 
+Con $\left.\delta \Omega \right|_{T,V, \mu}$ che è quella calcolata prima. Avremo di conseguenza per la F:
+\[
+	F( T,V,N) = F_{\text{class}} + \left.\delta F\right|_{T,V,N}
+.\] 
+Quindi la correzione trovata per il potenziale di Landau sarà la stessa di quella per l'energia libera, l'unica accortezza da tenere è che nel primo caso era fissato il potenziale chimco, nel secondo il numero di particelle. Vedremo che la chiave del "mistero" sopra sarà esattamente questa.\\
+Abbiamo trovato che:
+\[
+	\delta \Omega = \mp \Omega _{\text{class}}\frac{\exp\left( \mu  \right)kT }{2^{5 / 2}} = \pm NkT \frac{\exp\left( \frac{\mu }{kT} \right) }{2 ^{5 /2}}
+.\] 
+Quello che vorremmo fare adesso è eliminare la dipendenza esplicita da $\mu $ di questa correzione per poterla sostituire in F in funzione delle sue variabili predilette, per farlo ricordiamo l'equazione \ref{eq:mu_classico} del caso classico:
+\[
+	\mu _{\text{class}} = -kT \ln\left( \frac{V}{N\Lambda ^3} \right) 
+.\] 
+Per toglierci di mezzzo $\mu $ basterà sostituirlo in $\delta \Omega $, infatti la correzione su $\mu _{\text{class}}$ inserita all'interno della variazione sul potenziale di Landau genera una correzione all'ordine successivo che possiamo trascurare. Dalla sostituzione si ricava che:
+\[
+	F = F_{\text{class}} \pm \frac{N^2kT\Lambda ^3}{2^{5 /2}V}
+.\] 
+Quindi ricaviamo la legge di stato:
+\[
+	P = - \frac{\partial F}{\partial V} = P_{\text{class}} \pm \frac{N^2kT\Lambda ^3}{2^{5 /2}V^2} = \frac{NkT}{V}\left( 1 \pm \frac{N\Lambda ^3}{2^{5 /2}V} \right) 
+.\] 
+Abbiamo ottenuto i segni che intuitivamente ci si aspetterebbe, resta tuttavia il problema che i due metodi hanno prodotto risultati all'apparenza contrastanti.\\
+Nel primo caso abbiamo trovato la pressione da $\Omega $, nel secondo partendo da $F$. Ragionando con la $\Omega $ il numero di particelle non è costante durante una compressione. Questo ci porta in errore quando facciamo ragionamenti di intuito come abbiamo fatto sopra. Il modo giusto (nel quale ha senso applicare il nostro ragionamento) è quello di partire dalla $F$. Infatti quello che ci aspettiamo fisicamente è che, durante una compressione, il numero di particelle resti invariato.\\
+Resta il fatto che non abbiamo trovato l'inghippo matematico alla base del problema, infatti quello che abbiamo fatto nel secondo caso è prendere la correzione calcolata con $\Omega $ ed inserirla nell'espressione per $F$, quindi l'errore avrebbe dovuto comparire anche alla fine del secondo ragionamento.\\ 
+Dobbiamo stare attenti al fatto che nel primo caso $N = N ( \mu ) $ ed in particolare si ha che, fissato un $\mu $:
+\[
+N = N_{\text{class}}( \mu ) \neq N_{2^o\text{ordine}}( \mu ) 
+\]
+Abbiamo quindi un abuso di notazione, il numero di particelle $N$ che consideriamo per il nostro sistema non è più quello classico ma è anch'esso corretto al secondo ordine.\\
+Quindi quando facciamo la differenza rispetto alla funzione classica e cerchiamo di capire se ci tornano le considerazioni su fermioni e bosoni sbagliamo nel fatto il numero di particelle non è lo stesso rispetto al caso classico.\\
+Non possiamo dire lo stesso del secondo caso, infatti il numero di particelle in  $F$ è fissato, il chè non ci porta in errore quando sostituiamo l'equazione dei gas perfetti per eliminare $P_{\text{class}}$.
+
+\subsection{Gas di Fermioni: elettroni di conduzione in un metallo}%
+Riprendiamo la distribuzione di Fermi-Dirac per trattare un gas di elettroni in un metallo.\\
+La prima cosa da fare è calcolare il numero di particelle $N$ :
+\[
+	N = \int_{0}^{\infty} \frac{\rho ( \mathcal{E} ) d\mathcal{E} }{\exp\left( \frac{\mathcal{E} -\mu }{kT}+1 \right) }
+.\] 
+Normalmente questo sarebbe integrato da $0$ ad $\infty$, nel limite di $T \to 0$ si può approssimare la distribuzione da un gradino unitario, quindi:
+\[
+	N \to \int_{0}^{\mathcal{E} _{F}}  \rho ( \mathcal{E} ) d\mathcal{E}  
+.\] 
+Quindi possiamo, anzichè integrare la $\rho ( \mathcal{E} ) $ brutta, possiamo prendere il volume della sfera nello spazio delle fasi di raggio $p _{F}$ tale che $\mathcal{E} _{F} = p_{F}^2 /2m$, moltiplicarlo per il volume in questione $V$, dividere per il volume della cella unitaria (senza scordarsi dello spin).
+\[
+	N = \frac{g V \left( \frac{4}{3} \pi p_{F}^3 \right) }{\left( 2\hbar \pi \right) ^3} 
+.\] 
+Possiamo ricavare $p_{F}$ da quest'ultima oppure direttamente $\mathcal{E} _{F}$ dall'integrale, quello che si ottiene è sempre:
+\[
+	\mu _{0} = \mu ( 0) = \mathcal{E} _{F} = \frac{\left( 2\pi \hbar  \right) ^2}{2m} \left( \frac{N}{V} \right) ^{2 /3} \left( \frac{3}{4\pi q} \right) ^{2 /3}
+.\]
+Possiamo trovare l'energia media a $T\to 0$:
+\[
+	\overline{\mathcal{E} } = \frac{\int_{0}^{\mathcal{E} _{F}} \mathcal{E} \rho ( \mathcal{E} ) d\mathcal{E} }{\int_{0}^{\mathcal{E} _{F}} \rho ( \mathcal{E} ) d\mathcal{E}  }=
+	\frac{\int_{0}^{\mathcal{E} _{F}} \mathcal{E} ^{3 /2}d\mathcal{E}  }{\int_{0}^{\mathcal{E} _{F}} \mathcal{E} ^{ 1/ 2}d \mathcal{E}  } = 
+	\frac{3}{5} \mathcal{E} _{F}	
+.\] 
+Di conseguenza l'energia totale sarà:
+\[
+	E( T=0)  = N \overline{\mathcal{E} } = \frac{3}{5} \mathcal{E}_{F} N
+.\] 
+Mentre la pressione è data da:
+\[
+	P = - \left.\frac{\partial E}{\partial V} \right|_{N} = \frac{2}{3}\frac{E}{V}
+.\] 
+Quest'ultima l'avevamo già ricavata a partire dal fatto che la legge di dispersione dell'energia è $p^2/2m$, senza nessuna assunzione. Notiamo che la pressione a $T = 0$ non va a zero. Questo non succede per il gas classico.\\
+Vediamo invece come cambiano le cose se la temperatura non è nulla ma vale 
+\[
+T \ll T_{F} 
+\]
+Dove $T_{F}$ è la temperatura definita a partire da $kT_{F} = \mathcal{E} _{F}$, ed è detta temperatura di Fermi. Visto che abbiamo espresso $\mathcal{E} _{F}$ possiamo esprimere anche $T_{F}$
+\[
+	T_{F} = \frac{\left( 2\pi \hbar  \right)^2}{2m k} \left( \frac{3}{4\pi q} \right)^{2 /3} \left( \frac{N}{V} \right) ^{2 /3}
+.\] 
+Per $T\ll T_{F}$ si ha che la distribuzione di Fermi è molto simile al gradino, questo ci permetterà di fare delle approssimazioni. Vediamo adesso con un esempio pratico se in condizioni normali tale disuguaglianza è rispettata.\\
+Visto che conosciamo la densità di elettroni liberi in un metallo possiamo calcolare la $T_{F}$ di quest'ultimo. Nel rame abbiamo ad esempio $\rho _{e}= 8.5 \cdot 10^{22}$ e/cm$^3$, messa nella formula per la temperatura di Fermi ci restituisce:
+\[
+	T_{F, \text{rame}} = 8.5 \cdot 10^{4} K
+.\] 
+Se ne conclude che a temperatura ambiente siamo sempre nel regime $T \ll T_{F}$.\\
+Tipicamente la $T_{F}$ è maggiore della temperatura di fusione dei metalli. Questo ci dice che gli elettroni nei metalli sono essenzialmete quantistici, abbiamo una distribuzione di questi nei livelli completamente diversa da quella prevista da Boltzmann.
+\begin{defn}[Gas Degenere]{def:Gas Degenere}
+	Un gas si dice degenere quando si trova in un regime in cui non vale più l'approssimazione di gas ideale, tale gas sarà quindi descritto da una distribuzione non classica come la Fermi-Dirac oppure la Bose-Einstein.\\
+	Sono ad esempio degeneri gli elettroni di un metallo.
+\end{defn}
+Abbiamo tuttavia delle precisazioni da fare, poichè gli elettroni in un metallo non solo fanno cadere l'approssimazione di gas ideale ma potrebbero uscire anche dalla approssimazione di gas perfetto!\\
+Infatti stiamo operando in situazioni in cui questi sono degeneri (quindi il più compatti possibile nei limiti imposti dalla Fermi-Dirac), la loro vicinanza ci induce a pensare che non si possa più trascurare l'interazione coluombiana. Inoltre sono all'interno di un metallo che idealmente sta perdendo elettroni in continuazione, quindi saranno immersi in una miriade di ioni che sono un'altra possibile fonte di interazione.\\
+Fortunatamente la situazione si risolve assumendo che gli elettroni abbiano lunghezze d'onda grandi rispetto alla distanza tra gli atomi del solido.\\
+In questo modo gli elettroni è come se vedessero un background di carica uniforme proveniente da tutti gli ioni, questo può essere il fondo della buca di potenziale dato dalla scatola \footnote{In questo ragionamento il "confinamento" dovuto alle pareti della scatola ed il background di ioni sono la stessa cosa!}. Inoltre il fondo positivo scherma l'interazione culoumbiana tra gli elettroni, quindi in questa ottica possiamo tenerci gli elettroni come gas perfetto.\\
+Ci aspettiamo inoltre che gli elettroni possano comunque scatterare o interagire per collisioni, tuttavia se $T \ll T_{F}$ questi fermioni non avranno comunque livelli liberi per cambiare la loro energia qualunque tipo di interazione facciano. \\
+Possiamo anticipare che i fenomeni di scattering coincolgeranno solo gli elettroni aventi energie prossime all'energia di fermi perchè sono gli unici ad avere un pò di stati vuoti nelle vicinanze per potersi spostare.\\
+Essenzialmente, quando faremo il modello di gas di elettroni nei solidi, potremo trattare tutto come un gas perfetto, l'unica cosa che cambia è che la massa nella relazione:
+\[
+	\mathcal{E} = \sum_{}^{} \frac{P^2}{2m}
+.\] 
+Non sarà la massa dell'elettrone libero, sarà una massa efficace che tiene conto del fatto che gli elettroni non si muovono in uno spazio vuoto ma sono "vincolati" in uno spazio occupato da altri elettroni e nuclei.\\
+Storicamente il fatto che all'interno dei metalli vi fossero elettroni liberi fu accolto in modo positivo dalla comunità scentifica che iniziò subito ad attrezzarsi per misurare e verificare questo fatto.\\ 
+I fisici tirarono fuori una densità media di elettroni all'interno del metallo facendo delle misure, furono quindi in grado di tirare fuori un calore specifico sperimentale. Essi si aspettavano che il calore specifico per questo gas di particelle libere nel metallo fosse quello classico: 
+\[
+	C_{V}= \frac{3}{2}Nk
+.\] 
+Quest'ultima risultò incompatubile con le misure. Il calore specifico ottenuto era molto inferiore di quello atteso. Noi sappiamo che il motivo proviene dal fatto che la statistica non è più quella di Boltzmann. \\
+Se ad esempio consideriamo la statistica di Fermi-Dirac per $T \approx 0$ ed aumentiamo di poco la temperatura si ha che gli unici elettroni che cambiano energia sono quelli che stanno in un intorno largo $kT$ dell'energia di fermi, per tutti gli altri non cambia assolutamente nulla.\\ 
+Ci aspettiamoche il numero totale di elettroni che contribuiscono al calore specifico non sia $N$ ma sia solo una frazione:
+\[
+	N_{C_{V}} \sim N\cdot \frac{T}{T_{F}}
+.\] 
+Il guadagno di energia di questi elettroni per fare un salto di energia sarà:
+\[
+	\Delta E = \frac{N kT^2}{T_{F}}
+.\] 
+Quindi per definizione di calore specifico si ha che:
+\[
+	C_{V} \approx \frac{\Delta E}{\Delta  T} = \alpha \frac{T}{T_{F}} 
+.\] 
+In effetti si riscontra che il calore specifico nei metalli ha proprio questo andamento lineare nella temperatura.\\
+Cerchiamo di sviluppare le proprietà termiche del gas di elettroni, le useremo per esempio per descrivere il calore specifico. Non faremo più gli integrali in modo da approssimare la Fermi-Dirac come funzione a gradino ma ci teniamo l'espressione con la dipendenza dalla temperatura.
+\[
+	\Omega = -\frac{2}{3} \frac{4\pi V g \sqrt{2}  m ^{3 /2}  }{\left( 2\pi\hbar  \right) ^3} \int_{0}^{\infty} \frac{\mathcal{E} ^{3 /2}d\mathcal{E} }{\exp\left( \frac{\mathcal{E} -\mu }{kT} \right) +1 } 
+.\] 
+Siamo comunque nelle ipotesi in cui $T\ll T_{F}$, quindi cercheremo di riscrivere l'integrale di sopra con una correzione all'ordine opportuno in questo modo:
+\[
+	I = \int_{0}^{\infty} \frac{f( \mathcal{E} ) }{\exp\left( \frac{\mathcal{E} -\mu }{kT} \right) +1 }d\mathcal{E}  = I_0 + \delta  I 
+.\] 
+Dove il termine $I_0$ introdotto è:
+\[
+	I_0 = \int_{0}^{\mathcal{E} _{F}} f( \mathcal{E} ) d\mathcal{E} 
+.\] 
+Cercheremo di fare una espansione di $I$ in funzione della temperatura:
+\[
+	I = I_0 + \left.\frac{\partial I}{\partial T} \right|_{T =0} + \frac{1}{2}\left.\frac{\partial ^2I}{\partial T^2} \right|_{T = 0} T^2 + \ldots
+.\] 
+Prima di procedere dobbiamo chiederci se ci basta una correzione al primo ordine o se dobbiamo correggere con ordini successivi. Questo possiamo capirlo dalla forma della distribuzione nell'intorno della energia di fermi:
+\begin{figure}[H]
+    %This is a custom LaTeX template!
+    \centering
+    \incfig{correzione-per-il-potenziale-di-landau-nella-statistica-di-fermi-dirac}
+    \caption{\scriptsize Correzione per il potenziale di Landau nella statistica di Fermi-Dirac, in tratteggiato la curva con $T=0$, in continuo la linea con $T\ll T_{F}$}
+    \label{fig:correzione-per-il-potenziale-di-landau-nella-statistica-di-fermi-dirac}
+\end{figure}
+\noindent
+La variazione sull'area $I$ cercata sarà la differenza tra la curva tratteggata e la curva continua, possiamo vedere intuitivamente come al primo ordine questa differenza debba annullarsi per simmetria. Per questo la correzione al primo ordine si annulla, quindi al primo ordine $N$ resta costante.\\ 
+Per calcolare le correzioni al secondo ordine facciamo un cambio di variabile: passiamo da $\mathcal{E} $ a $z = \exp\left( \frac{\mathcal{E} -\mu }{kT} \right) $ ed introduciamo due funzioni: 
+ \begin{align*}
+	&g_1( z)  = \begin{cases}
+		0 \quad z <0\\
+		\frac{1}{e^{z}+1} \quad z > 0
+	\end{cases}\\
+	&g_0( z) =
+ \begin{cases}
+		\frac{1}{e^{-z}+1} \quad z < 0 \\
+		0 \quad z >0
+	\end{cases}
+.\end{align*}
+Vediamo che queste non sono altro che le due "fette" che differiscono tra la distribuzione a temperatura nulla e quella a temperatura molto bassa, soltanto che la $g_0$ è la parte in alto ribaltata:
+\begin{figure}[H]
+    %This is a custom LaTeX template!
+    \centering
+    \incfig{g1-e-g0}
+    \caption{\scriptsize Plot delle due funzioni scritte sopra.}
+    \label{fig:g1-e-g0}
+\end{figure}
+La differenza dell'integrale della fermi dirac tra $T=0$ e  $T\ll T_{F}$ sarà dato da:
+\[
+	\delta I = \int_{-\infty}^{\infty} f( \mathcal{E} ) \left[ g_1( z) - g_0( z)  \right] d\mathcal{E}   = \int_{-\infty}^{\infty}  f ( \mu + kTz) 
+	\left[ g_1( z) - g_0( 0)  \right] kT dz
+.\] 
+L'estremo inferiore di integrazione sarebbe dato dal fatto che $\mathcal{E} _{\text{min}}=0 \implies z_{\text{min}}= - \mu /kT$, tuttavia possiamo anche mandarlo a $-\infty$ poichè per il valore di $z_{\text{min}}$ la differenza tra le $g_{i}$ è praticamente ormai nulla, quindi andare a $-\infty$ non compromette il risultato della somma.\\
+Procediamo al calcolo dell'ultimo integrale, dal momento che l'integrale è pesato solo attorno al potenziale chimico possiamo sviluppare $f( \mu + kTz) $ attorno a $0$:
+\[
+	f( \mu + kTz) = f( \mu )  + kTz \left.\frac{\partial f}{\partial \mathcal{E}  } \right|_{\mathcal{E} =\mu } + \ldots= f( \mu )+ kTzf'( z)  
+.\] 
+Sostituendo troviamo:
+\[
+	\delta I = kTf( \mu )  \int_{-\infty}^{\infty} \left[ g_1( z)- g_0( z)   \right] dz + ( kT) ^2f'( z) \int_{-\infty}^{\infty} z \left[ g_1( z) -g_0( z)  \right] dz  
+.\] 
+Quindi aver fatto lo sviluppo attorno al potenziale chimico della $f$ è stato equivalente a fare lo sviluppo agli ordini successivi della temperatura di $\delta I$.\\
+Il primo pezzo (che è il primo ordine) è esattamente zero perchè le due aree delle $g_{i}$ si elidono in questi estremi di integrazione per simmetria. Il secondo pezzo avendo z nell'integrale "rompe la simmetria" delle $g$ permettendo così che si sommino i contributi di queste due.

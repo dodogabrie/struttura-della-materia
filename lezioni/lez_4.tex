@@ -1,0 +1,357 @@
+\lez{4}{24-02-2020}{}
+
+Abbiamo concluso nella lezione precedente che la probabilità di trovare il sistema con una energia $E_{\alpha}$ ed un numero di particelle $N_{\alpha}$ è:
+\[
+	W_{\alpha} = \frac{\exp\left(- \frac{E_{\alpha}-\mu N_{\alpha}}{kT} \right) }{\L}
+.\] 
+Se si conserva il numero di particelle invece:
+\[
+	W_{\alpha} = \frac{\exp(-\frac{E_{\alpha}-\mu N_{\alpha}}{kT})}{Z}
+.\] 
+\subsection{Probabilità di trovare il sistema in uno stato vs probabilità di trovarlo con una certa energia.}%
+Quindi la probabilità di trovare il sistema con una energia $E_{\alpha}$ decresce esponenzialmente con l'energia. \\
+Nonostante questo sembri controintuitivo dobbiamo tener di conto che più energia mettiamo all'interno del sistemino meno energia sarà disponibile per il bagno termico \footnote{Visto che la totale si deve conservare} e quindi meno cofigurazioni ($\Gamma_{\alpha}$) saranno disponibili a quest'ultimo. \\
+L'esperienza ci dice l'esatto contrario: non sembra plausibile che lo stato, ad una certa temperatura T, abbia grandi possibilità di trovarsi nello stato meno energetico (fondamentale). Tuttavia queste due ultime affermazioni non si escludono.\\
+La confusione generata nelle ultime due affermazioni deriva da una possibile cattiva interpretazione della $W_{\alpha}$:\\
+ $W_{\alpha}$ è la probabilità di trovare il sistema in uno stato specifico, non la probabilità di trovare il sistema con l'energia $E_{\alpha}$. La differenza è che ci sono un sacco di stati $\varphi$ aventi energia $E_{\alpha}$, mentre $W_{\alpha}$ mira proprio al singolo stato scelto $\alpha$. \\
+Se volessimo invece la probabilità di avere l'energia $E_{\alpha}$ il conto da fare sarebbe il seguente:
+\[
+	W\left( E_{\alpha} \right) = W_{\alpha}\cdot \varrho_{E_{\alpha}}
+.\] 
+con $\varrho_{E_{\alpha}}$  il numero di configurazioni aventi energia  $E_{\alpha}$.\\
+Con questa cosa si risolve un problema:\\
+La probabilità provate $W_{\alpha}$ sembrava dipendere soltanto dalla energia dello stato $\alpha$. Tuttavia il bagno termico conosce soltanto l'energia che lui ha a disposizione ed il numero di stati associati a tale energia nel sistemino.\\
+Dal punto di vista del bagno termico dire che il sistemino ha energia $E_{\alpha}$ o che il sistemino sta in uno stato preciso $\alpha$ è la stessa cosa, non sembra quindi chiaro facendo il conto sul bagno termico \footnote{Come nella lezione precedente.} da dove venga fuori la sottile differenza tra le probabilità discussa in questo paragrafo.\\
+La soluzione sta nel fatto che è l'universo a portare le informazioni necessarie ad arrivare alla $W_{\alpha}$, infatti il numero di configurazioni dell'universo $\Gamma_{t}$ non sono le stesse nei due casi citati sopra:
+\begin{itemize}
+	\item Se il bagno termico conosce solo lo stato preciso $\alpha$ del sistemino allora il numero di stati possibili dell'universo è: $\Gamma_{t}= \Gamma_{\alpha}'$
+	\item Se il bagno termico conosce l'energia $E_{\alpha}$ allora il numero di configurazioni possibili dell'universo è $\Gamma_{t}= \Gamma_{\alpha}' \varrho_{E_{\alpha}}$, con $\varrho_{E_{\alpha}}$ numero di configurazioni possibili con $E_{\alpha}$.
+\end{itemize}
+È ovvio che il secondo caso è molto più grande rispetto al primo. Quindi possiamo dimostrare l'equazione della probabilità di avere l'energia $E_{\alpha}$:
+\[
+	W\left( E_{\alpha} \right)  = \frac{\varrho_{E_\alpha}\Gamma'_{\alpha}}{\Gamma_0} = W_{\alpha}\cdot \varrho_{E_{\alpha}}
+.\] 
+Questo ci spiega perchè non abbiamo grandi possibilità di trovarci nel sistema fondamentale: \\
+La probabilità di essere nello stato $\alpha$ decresce con $E_{\alpha}$, invece il numero di configurazioni possibili con energia $E_{\alpha}$ cresce con $E_{\alpha}$. Si ha quindi una situazione in cui la distribuzione in energia del sistemino è della forma:
+\begin{figure}[H]
+    \centering
+    \incfig{andamento-energia-sistemino}
+    \caption{Andamento dell'energia per il sistemino}
+    \label{fig:andamento-energia-sistemino}
+\end{figure}
+\noindent
+Vedremo che la distribuzione in figura è molto piccata attorno al valore medio nel limite di tante particelle. Andremo inoltre a quantificare le fluttuazioni attorno a tale valore in alcuni casi.\\
+Quindi la probabilita di avere una energia $E_{\alpha}$ sarà \footnote{Togliamo la variazione del numero di particelle.}:
+\[
+	W_{\alpha} = \frac{1}{Z} \varrho_{E_{\alpha}} \exp\left( -\frac{E_{\alpha}}{kT} \right) 
+.\]
+Quindi $Z$ si può scrivere anche in modo tale da normalizzare quest'ultima 
+\[
+	Z = \sum_{E_{\alpha}}^{} \varrho_{E_{\alpha}}\exp\left( -\frac{E_{\alpha}}{kT} \right) 
+.\] 
+Quindi avendo una funzione che ci dice il numero di stati per ciascuna energia ci dice che invece di fare le somme su $\alpha$ possiamo sommare sulle energie del sistema.\\
+
+\subsection{Passagio al continuo per le energie del sistemino}%
+Tipicamente, se il sistema è macroscopio, le energie possibili $E_{\alpha}$ saranno estremamente vicine tra loro \footnote{Questo perchè gia per una singola particella il momento confinato scala come $\frac{1}{L}$, le energie come $\frac{1}{L^2}$, se $L$ è molto grande l'energia tende ad essere confinata molto rapidamente. Per $10^{23}$ particelle il discorso è accentuato.}. Essenzialmente possiamo passare da una descrizione discreta di energie possibili ad una descrizione continua, trattando il sistema di conseguenza:
+\[
+	W\left( \epsilon \right) = \frac{1}{Z} \rho\left( E \right) \exp \left(- \frac{\epsilon}{kT} \right) 
+.\] 
+Adesso la $\rho\left( E \right) $ sarà la densità di stati tra energia $E$ ed $E+dE$. Anche quest'ultima deve essere normalizzata, questa volta però con l'integrale:
+Inoltre per essere normalizzata avremo:
+\[
+	\int_{0}^{\infty} W\left( \epsilon \right) d\epsilon = 1
+.\] 
+La nuova definizione di Z sarà:
+\[
+	Z = \int_{0}^{\infty}\rho\left( \epsilon \right) \exp\left( -\frac{\epsilon}{kT} \right) 
+.\] \label{eq:DefZ}
+Quindi adesso non ci serve più conoscere il numero di stati esattamente per unità di energia ma semplicemente conoscere come sono distribuiti, questo rinforza anche la struttura teorica che, come abbiamo visto, aveva un pò di problemi quando si andava a parlare di indeterminazione dell'energia.\\
+Data una grandezza fisica possiamo riscivere il suo valore medio come:
+\[
+	\overline{f} = \int_{0}^{\infty} f\left( \epsilon \right) \rho\left( \epsilon \right) \exp\left( -\frac{\epsilon}{kT} \right) 
+.\] 
+Analogamente possiamo fare per l'energia libera:
+\[
+	F = -kT \ln \int_{o}^{\infty} f\left( \epsilon \right) \exp\left( - \frac{\epsilon}{kT} \right) 
+.\] 
+Cercheremo di calcolarci la densità di stati per varie situazioni: gas di fotoni, gas di elettroni in un metallo, vibrazioni di un cristallo ecc\ldots\\
+Notiamo che abbiamo integrato da 0 a $\infty$ sulle energie del sistemino nonostante queste fossero limitate dalla approssimazione fatta per argomentare sul bagno termico nella scorsa lezione \footnote{Dovedano essere molto minori dell'energia totale dell'universo}.\\
+Ci è permesso usare l'estremo di integrazione $\infty$ se assumiamo che la distribuzione in energia sia piccata attorno al valore medio e vada a zero molto rapidamente fuori.\\
+Cerchiamo di capire come sono distribuite le proprietà di alcune grandezze principali attorno al valore massimo dell'energia. \\
+Se il nostro sistema ha una energia $E_{\alpha}$ allora l'entropia dell'universo sarà:
+\[
+	S_{t}\left( E_{\alpha} \right) = k \ln \varrho_{E_{\alpha}} \Gamma'_{\alpha}
+.\] 
+E come la scorsa lezione possiamo scrivere:
+\[
+	S_0-S_{t}\left( E_{\alpha} \right) = -k \ln\left( W\left( E_{\alpha} \right)  \right) 
+.\] 
+\[
+	W\left( E_{\alpha} \right) = A \exp \left( \frac{S_{t}\left( E_{\alpha} \right) }{k} \right) 
+.\] 
+Con $A$ che è la stessa costante della scorsa lezione. Quindi potremmo arrivare a questa equazione per quallunque grandezza del sistema piccolo $x$ :
+\[
+	W\left( x \right) = A \exp\left( \frac{S_{t}\left( x \right) }{k} \right) 
+.\] 
+Dal momento che abbiamo una distribuzione molto piccata sul valor medio possiamo assumere che:
+\[
+	\left.\frac{\partial S_{t}}{\partial x} \right|_{x = \overline{x}}=0
+.\] 
+Perchè si ha un massimo in tale valore. Mentre per la derivata seconda si avrà:
+\[
+	\left.\frac{\partial ^2 S_{t}}{\partial x^2 } \right|_{x = \overline{x}} < 0
+.\] 
+Quindi nelle vicinanze del picco siamo autorizzati a fare lo sviluppo:
+\[
+	S_{t}\left( x \right) = S_{t}\left( \overline{x} \right) - \frac{1}{2} \beta \left( x - \overline{x} \right) ^2
+.\] 
+Con:
+\[
+	\beta = - \left.\frac{\partial ^2 S_{t}}{\partial x^2} \right|_{x =\overline{x}}
+.\] 
+Abbiamo fatto questa cosa perchè in un intorno di $\overline{x}$ possiamo approssimare $W\left( x \right) $ con una gaussiana:
+\[
+	W\left( x \right) = D \exp \left[ - \frac{\beta}{2k} \left( x - \overline{x} \right) ^2\right] 
+.\] \label{eq:Gauss-approx} 
+Con $D$ che viene dalla normalizzazione della probabilità:
+\[
+	\int_{0}^{\infty} W\left( x \right) = 1  = D \sqrt{\frac{2\pi k}{\beta}} 
+.\] 
+Questo metodo ci permetterà di stimare la larghezza del picco, quindi per stimare le fluttuazioni al valor medio delle quantità studiate \footnote{Questa approssimazione gaussiana per stimare le fluttuazioni è stata introdotta nella prima pubblicazione di Albert Einstein.}.\\
+Ricordando come possiamo scrivere i vari potenziali:
+\[
+	E = F +TS
+.\] 
+\[
+	S = - \frac{\partial F}{\partial T} = k \ln Z + \frac{kT}{Z}\frac{\partial Z}{\partial T} 
+.\] 
+\[
+	E = -kT \ln Z + kT \ln Z + \frac{kT^2}{Z} \frac{\partial Z}{\partial T} = \frac{kT^2}{Z}\frac{\partial Z}{\partial T} 
+.\] 
+Possiamo anche scrivere il numero medio di particelle N:
+\[
+	N = - \left.\frac{\partial \Omega}{\partial \mu}\right|_{V,T} = \frac{kT}{\L} \left.\frac{\partial \L}{\partial \mu} \right|_{T,V} 
+.\] 
+\subsection{Conteggio degli stati con particelle interagenti e non interagenti}%
+Una proprietà importante della Z è la seguente:\\
+Supponiamo che i livelli di $E_{\alpha}$ possano sempre essere scritti come contributo di due pezzi aventi ognuno il suo numero quantico:
+\[
+	E_{\alpha} = H_{i}+ G_{j}
+.\] 
+Ad esempio, per una particella, questi potrebbero essere i contributi all'energia dalla cordinata x e y.\\
+In tal caso la Z sarebbe:
+\[
+	Z = \sum_{i,j}^{} \exp\left( -\frac{H_{i}+G_{j}}{kT} \right) = \sum_{i}^{\infty} \exp\left( - \frac{H_{i}}{kT} \right) \cdot \sum_{j}^{} \exp\left( -\frac{G_{j}}{kT} \right) = Z_{H}\cdot Z_{G}
+.\] 
+Se abbiamo un gas di N particelle che non interaziscono tra loro allora avremo una funzione di partizione:
+\[
+	Z_{t} = Z_1^{N}
+.\] 
+Prendiamo un sistema contenente due tipi di particelle, ciascuna con due stati possibili, in questo caso è facile contare gli stati:
+\begin{align}
+	&1: \ \ket{1_{A},1_{B}}\\
+	&2: \ \ket{2_{A},1_{B}}\\
+	&3: \ \ket{1_{A},2_{B}}\\
+	&4: \ \ket{2_{A},2_{B}}
+.\end{align}
+Quindi abbiamo quattro stati possibili se contiamo come abbiamo fatto nella scorsa lezione.\\
+Avremmo potuto ragionare pensando a quante particelle ci sono in ciascuno stato:
+\begin{align}
+	&1: \text{Due particelle nello stato 1 } \ \ket{1_{A},1_{B}}\\
+	&2: \text{Due particelle nello stato 2 } \ \ket{2_{A},2_{B}}\\
+	&3: \text{Una particella nello stato 1 e una nell'altro stato  } \ \ket{1_{A},2_{B}}\\
+.\end{align}
+Questi due modi di contare non differiscono soltanto di un conteggio, hanno una differenza concettuale: nel secondo caso si suppone di non poter distinguere le particelle.\\
+Il modo corretto di contare è il secondo nella meccanica quantistica. In tal caso non ha senso infatti fare la distinsione tra le particelle.\\
+Il nostro sistema quindi è nella maggior parte dei casi inutilizzabile.\\
+Il conteggio "giusto" rimane relativamente facile nel caso in cui le particelle non interagiscono, nel caso della interazione sarebbe un vero casino.\\
+Ci sono dei modi per correggere la situazione invece nel caso di particelle indistinguibili anche quando le particelle sono interagenti correggendo il conteggio laddove serve.\\
+Sarebbe comunque bello vedere se ci sono dei regimi in cui sia possibile usare la nostra Z introducendo una convenzione per rimuovere il doppio conteggio, oppure trovare delle situazioni in cui le particelle sono davvero distinguibili.\\
+Vediamo adesso il secondo caso: quello delle particelle distinguibili.\\
+\subsection{Solido cristallino con campo magnetico}%
+Prendiamo un solido cristallino, le particelle sono fissate a stare all'interno del cristallo in una certa posizione fissa. Proviamo a fare i conti per questo sistema considerando un sistema di spin nucleari in un solido. Supponiamo che in nuclei abbiano Spin $\pm 1 /2$ e ci mettiamo un campo magnetico. Le particelle, fissate sul reticolo cristallino, saranno distinguibili perchè si orienteranno a seconda del loro spin!\\
+I livelli energetici saranno:
+\[
+	E = \pm \mu B
+.\] 
+Quindi per la funzione di partizione possiamo usare il caso di particelle distinguibili:
+\[
+	Z_1 = \exp\left( \frac{\mu B}{kT} \right) + \exp \left( - \frac{\mu B}{kT} \right) = 2 \cosh\left( \frac{\mu B}{kT} \right) 
+.\] 
+Con la funzione totale che è invece:
+\[
+	Z = Z_1^{N}
+.\] 
+Possiamo trovare allora le popolazioni: il numero di particelle con un determinato spin.
+\[
+	N_{\downarrow} = \frac{1}{Z_1}\exp{\left( \frac{\mu B}{kT} \right) }
+.\] 
+\[
+	N_{\uparrow} = \frac{1}{Z_1}\exp{\left( \frac{-\mu B}{kT} \right) }
+.\] 
+Supponiamo di essere nella condizione di piccoli campi magnetic per approssiamare $Z_1$ :
+\[
+	\frac{\mu B}{kT}\ll 1 \implies Z\sim 2
+.\] 
+\[
+	N_{\downarrow}=\frac{N}{2} \left( 1 + \frac{\mu B}{kT} \right) 
+.\] 
+\[
+	N_{\uparrow}=\frac{N}{2} \left( 1 - \frac{\mu B}{kT} \right) 
+.\] 
+E la magnetizzazione media all'equilibrio sarà:
+\[
+	M = \mu N_{\downarrow} -\mu N_{\uparrow}= N \frac{\mu^2 B}{kT}
+.\] 
+Potremmo trovare ad esempio l'energia media del sistema:
+\[
+	E = N_{\uparrow}\mu B- N_{\downarrow} \mu B = \mu B N \tanh \left( \frac{\mu B}{kT} \right) 
+.\]  
+E da questa calcolare il calore specifico del sistema:
+\[
+	C = \frac{\partial E}{\partial T} = N \frac{\mu^2B^2}{kT^2} \frac{1}{\cosh^2\left( \frac{\mu B}{kT} \right) }
+.\] 
+Questo calore specifico è interessante per un motivo:\\
+Per $T \rightarrow 0$ si ha $C \rightarrow 0$ perchè a basse temperature, quando gli stati non sono più continui, ad un certo punto non si ha una temperatura sufficiente per far fare il salto di energia al nostro sistema.\\
+Inoltre abbiamo anche che $C \rightarrow 0 $ anche per $ T \rightarrow \infty$, questo è caratteristico di sistemi che sono limitati con il numero di stati. \\
+
+\paragraph{Demagnetizzazione adiabatica}%
+Il sistema ha un forte interesse per la tecnica di \textit{demagnetizzazione adiabatica} che è una tecnica di raffreddamento tra le più potenti:\\
+Con questo metodo si riescono a raggiungere temperature dell'ordine del $\mu K$ anche per i solidi. \\
+Come suggerisce il nome della tecnica avremo a che fare con l'entropia del sistema, essa è data da:
+ \[
+	S = Nk \ln Z + NkT \frac{\mbox{d} \ln Z_{1}}{\mbox{d} T} 
+.\] 
+Tralasciamo l'espressione matematica che non è molto importante, la cosa importante è il fatto che troviamo una $S$ che è funzione di $\frac{\mu B}{kT}$, quindi B e T restano sempre in rapporto fra di loro nella espressione finale.\\
+L'andamento della funzione è il seguente:
+\begin{figure}[H]
+    \centering
+    \incfig{entropia-per-sistema-con-due-spin}
+    \caption{Entropia per un sistema con due spin}
+    \label{fig:entropia-per-sistema-con-due-spin}
+\end{figure}
+\noindent
+L'abbiamo graficata in funzione di $T$, è interessante vedere quello che succede alla curva al variare di $B$:
+\begin{figure}[H]
+    \centering
+    \incfig{demagnetizzazione-magnetica}
+    \caption{Demagnetizzazione magnetica}
+    \label{fig:demagnetizzazione-magnetica}
+\end{figure}
+\noindent
+Se il campo magnetico è maggiore vuol dire che i due livelli sono maggiormente separati e l'entropia è minore\footnote{O meglio, per avere la stessa entropia con i due campi magnetici dovrei essere a temperatura maggiore, vista la dipendenza di S. Tuttavia qua T è fissata\ldots}.\\
+La demagnetizzazione adiabatica funziona in queso modo: prendiamo un oggetto alla temperatura $T_{\text{in}}$ a contatto con un bagno termico,  aumentiamo il campo magnetico facendo una traslazione verticale nel grafico precedente (Trasformazione (1) in \hyperref[fig:demagnetizzazione-adiabatica-1]{Figura 19}).\\
+A questo punto scolleghiamo il cristallo dal mondo esterno isoldolo, spengiamo il campo magnetico fino a tornare a quello di partenza. \\
+Quest'ultima trasformazione è adiabatica, quindi isoentropica. Per tornare alla situazione iniziale quindi abbiamo necessariamente raffreddato il cristallo (trasformazione (2) in \hyperref[fig:demagnetizzazione-adiabatica-1]{Figura 19}).
+\begin{figure}[H]
+    \centering
+    \incfig{demagnetizzazione-adiabatica-1}
+    \caption{Demagnetizzazione Magnetica: il funzionamento del processo di raffreddamento.}
+    \label{fig:demagnetizzazione-adiabatica-1}
+\end{figure}
+\noindent
+Il rapporto seguente sarà lasicato invariato dalla trasformazione:
+\[
+	\frac{B_2}{T_{in}} = \frac{B_1}{T_{fin}}
+.\] 
+Quindi 
+\[
+	T_{f} = T_{i}\cdot \frac{B_1}{B_2}
+.\] 
+La fregatura è che $B_1=0$ non si può fare, anche se mettiamo il campo esterno a zero nella posizine di ogni singolo magnete non avremo mai $B = 0$ per via della magnetizzazione interna nel solido che non può essere spenta.\\
+\subsection{Correzione al conteggio degli stati eliminando i conteggi ripetuti.}%
+Cerchiamo adesso di correggere il modo di contare cercando di evitare gli stati che contiamo più di una volta.\\
+Prendiamo un sistema contenente N particelle, utilizzando la tecnica che ci ha portati alla funzione di partizione Z conteremo gli stati più di una volta e come accennato prima questo conteggio risulta incorretto sulla base della meccanica quantistica.\\
+Per provare a buttare giu una correzione al metodo continuiamo a considerare particelle distinguibili.\\
+Mettiamoci in condizione di avere l'energia media del sistema molto grande, tale che:
+\[
+	\frac{E}{N} = \mathcal{E} 
+.\] 
+Quindi dobbiamo essere nella situazione in cui il numero di stati per singola particella avente energia $\mathcal{E}$ sia molto maggiore del numero di particelle \footnote{Essenzialmente tutte le particelle potrebbero stare sus tati diversi.}, questo significa avere poche particelle per unità di volume e temperature elevate.\\
+Se prendiamo un qualunque stato la probabilità di trovarlo occupato è bassa, mentre è nulla quella di trovarlo con più di una particella.\\
+In questo caso sappiamo come correggere il conto: ad ogni particella attribuiamo uno stato diverso, ad esempio associando un numero a ciascuna particella possiamo disporle come si dispongono N palline su uno scaffale pieno di spazio senza poterne mettere due sullo stesso posto:
+\begin{align}
+	&1 \implies N \text{ possibilità}\\
+	&2 \implies N-1 \text{ possibilità}\\
+	&3 \implies N-2 \text{ possibilità}\\
+	&\ldots\\
+	&N \implies 1 \text{ possibilità}
+.\end{align}
+Quindi abbiamo la correzione nel caso di particelle indistinguibili.
+\[
+	Z_{N} = \frac{Z_1^{N}}{N!}
+.\] 
+Quella che facciamo è una approssimazione, stiam correggendo per tutti gli stati nella funzione di partizione, anche ad esempo per il fontamentale in cui non c'era da corregere niente. Inoltre stiamo ancora guardando al picco della nostra distribuzione in energia nel conteggio degli stati.\\
+Questo tipo di funzione di partizione si chiama funzione classica o funzione di partizione di Boltzmann. Un sistema in queste condizioni si chiama \textit{Gas ideale}.
+\begin{itemize}
+	\item Gas perfetto: assenza di interazioni.
+	\item Gas ideale: ogni particella sta in uno stato diverso (sotto caso del gas perfetto).
+\end{itemize} \label{def:gas-ideale}
+Quindi avremo per esempio che
+\[
+	F = -NkT \ln \left( Z_1 \right) + kT \ln N!
+.\] 
+Con cui possiamo calcolare l'entropia:
+\[
+	S = - \frac{\partial F}{\partial T} 
+.\] 
+In cui resta la dipendenza da $Z_1$ sotto forma di logaritmo dopo aver fatto la derivata.\\
+Possiamo calcolare anche la pressione:
+\[
+	P\left( T,V \right) = - \frac{\partial F}{\partial V} = \frac{NkT}{Z_1} \frac{\partial Z_1}{\partial V} 
+.\] 
+Tenendo conto del fatto che $V = L^3$ e che l'energia della singola particella è $\mathcal{E}_{\alpha}= \alpha L^{-2} = c \cdot V^{-2 /3}$ possiamo trovare $\partial Z_1 /\partial V $ :
+\[
+	\frac{\partial Z_1}{\partial V}  = - \frac{1}{kT} \frac{\partial \mathcal{E}_{q}}{\partial V} \exp\left( - \frac{\mathcal{E}_{q}}{kT} \right) = 
+	\frac{2 /3}{VkT} \sum_{q}^{} \mathcal{E}_{q}\exp\left( -\frac{\mathcal{E}_{q}}{kT} \right) 
+.\] 
+dove abbiamo fatto:
+\[
+	\frac{\partial \mathcal{E}_{q}}{\partial V} = -\frac{2}{3}\frac{V^{-2 /3}}{V}\cdot \alpha\cdot  \mathcal{E}_{q}
+.\] 
+proseguendo il conto
+\[
+	P = \frac{2}{3}\frac{N}{V}\overline{\mathcal{E}} \quad \quad \text{con} \quad \quad \overline{\mathcal{E}} = \frac{\sum_{q}^{\infty} \mathcal{E}_{q}\exp\left( - \frac{\mathcal{E}_{q}}{kT} \right) }{Z_1}
+.\] 
+Abbiamo una relazione per P che vale per tutti i gas ideali.\\
+Possiamo passare al caso continuo  imponendo degli integrali su $\mathcal{E}$ per una singola particella:
+\[
+	\overline{\mathcal{E}} = \frac{\int_{0}^{\infty} \mathcal{E}\cdot  \rho\left( \mathcal{E} \right) \exp\left( -\frac{\mathcal{E}}{kT} \right) d\mathcal{E}}{\int_{0}^{\infty}\rho\left( \mathcal{E} \right) \exp \left( -\frac{\mathcal{E}}{kT} \right) d\mathcal{E}}
+.\] 
+Facciamo adesso il conto con un altro metodo: contando per ogni stato di singola particella quante particelle ci sono.\\
+Adesso abbiamo considerato il sistema di N particelle come un insieme di tanti sistemini composti da una singola particella e applicando le opportune correzioni. Adesso invece di prendere come insiemi la singola particella prendiamo insiemi di un singolo stato. In questo modo il nostro sistema risulta idenditficato dal $\overline{q}$.\\
+In questo caso ragioniamo per un numero di particelle di un sottosistema variabile $N_{\overline{q}}$, l'energia dello stato di questo sistema sarà:
+\[
+	 \mathcal{E}_{\overline{q}}\cdot n_{\overline{q}}
+.\] 
+Ovvero l'energia dello stato per il numero di particelle che ci stanno dentro. Quali saranno gli stati per questo sotto-sistema \footnote{Che ricordiamo essere uno stato.}?\\
+Saranno (1 particella, 2 particelle, ecc\ldots) ovvero quante particelle ci sono nello statto  $\overline{q}$.\\
+Il potenziale di Landau $\Omega_{\overline{q}}$ del singolo sottosistema $\overline{q}$ sarà:
+\[
+	\Omega_{\overline{q}} = - kT 
+	\ln \left[ \sum_{\text{stati con $n_{q}$}}^{} \exp\left( -\frac{\mathcal{E}_{q}n_{q}-\mu n_{q}}{kT} \right) 
+\right] .\] \label{eq:Landau_gas_ideale}
+A questo punto la $\Omega$ del sistema completo sarà la somma delle $\Omega_{\overline{q}}$ di tutti i sottosistemi \footnote{che sono i singoli stati di singola particella.}:
+\[
+	\Omega = \sum_{q}^{} \Omega_{q}
+.\] 
+Le ultime due che abbiamo scritto sono "corrette" per particelle indistinguibili e le useremo per tutti i regimi, quantistici e classici.\\ 
+Facciamo su queste le approssiamazioni di gas ideale, per ogni $q$ :
+\[
+	W\left( n_{q}=0 \right) \sim 1 
+.\] 
+\[
+	W\left( n_{q}=1 \right) \ll 1
+.\] 
+\[
+	W\left( n_{q}=2 \right) \sim 0
+.\] 
+Ricordiamo che $\Omega = kT \ln B$ e che
+\[
+	W_{\alpha}= B \exp\left( -\frac{E_{\alpha-\mu N_{\alpha}}}{kT} \right) 
+.\] 
+Dalle quali possiamo scrivere che:
+\[
+	W_{\alpha} = \exp\left[ \frac{\Omega-\left( E_{\alpha}-\mu N_{\alpha} \right) }{kT} \right] 
+.\] 
+

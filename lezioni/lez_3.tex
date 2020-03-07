@@ -1,0 +1,405 @@
+\lez{3}{21-02-2020}{}
+Le grandezze introdotte a fine della scorsa lezione non sono tutte indipendenti tra loro, ci sono delle relazioni che si saranno utili:
+\[
+	\frac{C_{V}}{T}= \left.\frac{\partial S}{\partial T} \right|_{V}= \left.\frac{\partial S}{\partial P} \right|_{T} \left( \frac{\partial P}{\partial T}  \right) _{V} + \left.\frac{\partial S}{\partial T} \right|_{P}
+.\] 
+Quindi usando la relazione di Maxwell
+\[
+	\left.\frac{\partial S}{\partial P} \right|_{T}= - \left.\frac{\partial V}{\partial T} \right|_{P}
+\]
+Possiamo arrivare alla relazione:
+\[
+	 \frac{C_{P}- C_{V}}{T}= \left.\frac{\partial V}{\partial T} \right|_{P} \left.\frac{\partial P}{\partial T} \right|_{V}
+.\] 
+Questa relazione può essere riscritta in anche altri termini considerando la permutazione ciclica delle derivate:
+\[
+	\left.\frac{\partial V}{\partial T} \right|_{P} \left.\frac{\partial T}{\partial P} \right|_{V} \left.\frac{\partial P}{\partial V} \right|_{T} = -1
+.\] 
+Per esempio possiamo eliminare una delle variabili per scrivere alcune relazioni che mettono in corrispondenza i calori specifici con la compressibilità:
+\[
+	C_{P}- C_{V}= TVk_{T} \left[ \left( \left.\frac{\partial P}{\partial T} \right|_{V} \right)  \right] ^2 
+		= \frac{T}{V k_{T}} \left[ \left.\frac{\partial V}{\partial T} \right|_{P} \right]^2
+.\]
+\subsection{Segno delle capacità termiche}%
+La capacità termica è una quantità sempre positiva. Dal punto di vista intuitivo risulta naturale: se aumento la temperatura di un oggetto sto aumentando l'entropia e di conseguenza anche l'energia \footnote{Nella definizione abbiamo la variazione di energia.}.\\
+È comunque possibile dimostrarlo a partire dalle condizioni di equilibrio che abbiamo trovato. 
+\paragraph{Dimostrare che la capacità termica e la compressibilità sono sempre positive}%
+Consideriamo il seguente sistema:
+\begin{figure}[H]
+    \centering
+    \incfig{cvpositiva}
+    \caption{Sistema di due volumi divisi da una membrana immersi in un bagno termico.}
+    \label{fig:cvpositiva}
+\end{figure}
+\noindent
+Il sistema è costituito da un gas diviso tra due volumi da una membrana libera di muoversi, il tutto è immerso in un bagno termico a temperatura T. \\
+Cerchiamo la condizione di equilibrio del sistema. Abbiam visto che, non essendo il sistema isolato, la funzione da utilizzare è l'energia libera F. La condizione di equilibrio sarà data dal fatto che l'energia libera deve essere in un minimo \footnote{Questo deve essere vero per tutte le variabili da cui dipende l'energia libera}. \\
+Visto le caratteristiche del sistema la variazione di volume totale sarà per ogni istante nulla:
+\[
+	dV_1 + dV_2= 0
+.\] 
+Cerchiamo adesso la derivata dell'energia libera totale rispetto a $V_1$:
+\[
+	\frac{\partial F}{\partial V_1} = \frac{\partial \left( F_1+F_2 \right) }{\partial V_1} = \frac{\partial F_1}{\partial V_1} - \frac{\partial F_2}{\partial V_2}= P_1 - P_2 
+.\] 
+Essendo all'equilibrio la quantità che stiamo calcolando deve essere nulla, quindi all'equilibrio:
+\[
+	P_1 = P_2
+.\] 
+Visto che sappiamo che è un minimo possiamo imporre non solo l'annullarsi della derivata prima ma anche che la derivata seconda risulti positiva:
+\[
+	\frac{\partial ^2 F}{\partial V_1^2} = \frac{\partial }{\partial V_1} \left( P_2-P_1 \right) = - \frac{\partial P_1}{\partial V_1} - \frac{\partial P_2}{\partial V_2} >0
+.\] 
+Visto che $\frac{\partial P}{\partial V} = K_{T}$ per definizione si ha:
+\[
+	\frac{1}{K_{T_1}V_1} + \frac{1}{k_{T_2}V_2} >0
+.\] 
+Se il gas nei due setti è lo stesso allora abbiamo anche che $k_{T_1}$ = $k_{T_t}$
+\[
+	k_{T} >0
+.\] 
+Quindi abbiamo ottenuto una proprietà generale: \textit{La compressibilità è sempre positiva}. \\
+\begin{framed}
+\noindent \textbf{Nota}: \\
+Se $k_{T}<0$ ci troveremmo in una buffa situazione, avremmo che è verificata la disequazione:
+\[
+	\left.\frac{\partial V}{\partial P} \right|_{T}<0 \quad \text{Con $k_{T}$ negativa}
+.\] 
+Quindi il volume aumenterebbe all'aumentare della pressione \footnote{A temperatura costante!}, non si raggiungerebbe mai un equilibrio perchè il sistema andrebbe ad esplodere occupando tutto l'universo.\\
+\end{framed}
+\noindent 
+Possiamo ripetere quanto fatto con $k_{T}$ per dimostrare che anche la capacità termica deve essere positiva, infatti basta prendere un sistema isolato diviso in due parti
+\begin{figure}[H]
+    \centering
+    \incfig{sistema-isolato}
+    \caption{Sistema a due setti isolato termodinamicamente.}
+    \label{fig:sistema-isolato}
+\end{figure}
+\noindent
+Sfruttiamo questa volta l'entropia:
+\[
+	\frac{\partial S}{\partial E_1} = \frac{1}{T_1}- \frac{1}{T_2}
+.\] 
+Per la conservazione dell'energia del sistema si ha:
+\[
+	dE_1 + dE_2=0
+.\] 
+Imponendo l'equilibrio si ha che S è sicuramente in un massimo, quindi facendo passaggi analoghi a sopra si troverebbe banalmente che è necessario $T_1 = T_2$.\\
+Se ci concentriamo sulla derivata seconda di S rispetto ad una delle due enrgie invece si ha:
+\[
+	\frac{\partial }{\partial E_1} \left( \frac{1}{T_1} \right) + \frac{\partial }{\partial E_2} \left( \frac{1}{T_2} \right) =
+	-\frac{1}{T_1^2}\frac{\partial T_1}{\partial E_1} -\frac{1}{T_2^2}\frac{\partial T_2}{\partial E_2} = 
+	-\frac{1}{C_{V_1}T_1^2}-\frac{1}{C_{V_2}T_2^2} \le 0
+.\] 
+L'ultima disuguaglianza è dovuta al fatto che S è in un massimo. Se imponiamo che nei due setti vi sia la stessa sostanza allora si conclude anche qui:
+\[
+	C_{V}>0
+.\] 
+Notiamo che se $C_{V}$ è positivo a maggior ragione $C_{P}$ è maggiore di zero per via delle relazioni che li legano trovate ad inizio lezione.
+
+\subsection{Transizioni di fase di un sistema}%
+Prendiamo un generale diagramma di fase di un materiale: un Plot (P,T).
+\begin{figure}[H]
+    \centering
+    \incfig{diagramma-di-fase-generico}
+    \caption{Diagramma di fase generico}
+    \label{fig:diagramma-di-fase-generico}
+\end{figure}
+\noindent
+Le linee che separano le fasi ci indicano zone in cui due fasi sono in equilibrio tra loro, quindi in queste condizioni varie fasi possono coesistere. \\
+Se ad esempio abbiamo fase liquida e solida in una zona di coesistena allora fissata la temperatura sarà fissata automaticamente anche la pressione, essa sarà vincolata su una curva dipendente da T.\\
+Tipicamente le curve hanno una "Slope" positiva, i casi in cui questo non è vero sono pochi, vedremo qualche esempo più tardi.\\
+Il punto in cui coesistono tutte le fasi è detto \textit{punto triplo}.
+
+\paragraph{Curve di coesistenza}%
+Per studiare le zone di coesistenza possiamo possiamo prendere un sistema composto da un recipiente di N atomi dello stesso elemento diviso in due sottosistemi contenente le due fasi: ad esempio liquida e gassosa\\
+\begin{figure}[H]
+    \centering
+    \incfig{sistema-diviso-in-due-fasi}
+    \caption{Sistema diviso in due fasi}
+    \label{fig:sistema-diviso-in-due-fasi}
+\end{figure}
+\noindent
+È facile immaginare questo sistema: di solito nella separazione di fase varia la densità e quindi la gravità divide spontaneamente i due stai.\\
+Per trovare il diagramma di fase a partire da questo sistema supponiamo che la temperatura del sistema sia fissatta, imponiamo le condizioni di equilibrio (F minimo) in funzione del numero di particelle nel recipiente:
+\[
+	\frac{\partial F}{\partial N_1} = \frac{\partial F}{\partial N_2} 
+.\] 
+Ma $\frac{\partial F}{\partial N} $ è il potenziale chimico $\mu$ \footnote{Il parametro che ci dice quando due sottosistemi che possono scambiare particelle tra di loro sono all'equilibrio}.
+Quindi dobbiamo trovare $\mu_1$ del liquido e $\mu_2$ del gas ed imporre che siano uguali. Visto che $\mu$ è una buona grandezza termodinamica delle variabili (P,T).  Di conseguenza abbiamo fissato una curva (P,T) quando due specie sono all'equilibrio termodinamico.\\
+Possiamo inoltre notare che nel punto triplo abbiamo 2 uguaglianze:
+\[
+	\mu_{\text{solido}}=\mu_{\text{liquido}}= \mu_{\text{gas}}
+.\] 
+Che individuano anzichè una curva un punto nel piano (P,T), che è compatibile con quanto affermato fin'ora.
+
+\paragraph{Punto Critico}%
+La curva disegnata ha un "limite" detto punto critico, oltre il tale non esistono più fase liquida e gassosa ma abbiamo soltanto una unica fase (fluida) e le curve smettono di esistere. 
+\begin{figure}[H]
+    \centering
+    \incfig{punto-critico}
+    \caption{Punto critico}
+    \label{fig:punto-critico}
+\end{figure}
+\noindent
+Questo punto si osserva perchè non si riesce più ad osservare una transizione di fase: non si ha nessuna discontinuità di grandezze fisiche della sostanza nel sistema.
+\begin{framed}
+\noindent \textbf{Nota}: \\
+In linea di principio possiamo inventarci una trasformazione che porti da gas a liquido senza aver effettuato una transizione di fase passando da sopra le curve del diagramma di fase! 
+\end{framed}
+\noindent 
+Tra lo stato solido e lo stato liquido non ci sono prove sperimentali sul fatto che esista un punto critico. 
+
+\paragraph{Diagramma (P,V)}%
+Oltre allo spazio (P,T) possiamo fare anche un diagramma delle fasi nello spazio (P,V). Tipicamente tale diagramma prende la forma:
+\begin{figure}[H]
+    \centering
+    \incfig{diagramma-pv}
+    \caption{Diagramma PV}
+    \label{fig:diagramma-pv}
+\end{figure}
+\noindent
+Tale grafico è utile per analizzare le zone di coesistenza (quelle in basso, dove non vi sono stati definiti gli stati) che nell'altro grafico erano semplicemente puntiformi.\\
+Possiamo vedere come si trasformano le curve isoterme dal grafico (P,T) al grafico (P, V):
+\begin{figure}[H]
+    \centering
+    \incfig{curve-isoterme-pt-pv}
+    \caption{curve isoterme PT PV}
+    \label{fig:curve-isoterme-pt-pv}
+\end{figure}
+\noindent
+
+\paragraph{Sistemi particolari}%
+Alcuni sistemi non hanno entrambe le slope positive, il classico esempio è l'acqua:
+\begin{figure}[H]
+    \centering
+    \incfig{diagramma-di-fase-dell'acqua}
+    \caption{Diagramma di fase dell'acqua}
+    \label{fig:diagramma-di-fase-dell'acqua}
+\end{figure}
+\noindent
+In cui la Slope della curva di separazione tra solido e liquido è negativa.\\
+Un caso ancora più strano è quello dell'elio:
+\begin{figure}[H]
+    \centering
+    \incfig{diagramma-di-fase-dell'elio}
+    \caption{Diagramma di fase dell'elio}
+    \label{fig:diagramma-di-fase-dell'elio}
+\end{figure}
+\noindent
+In questo caso abbiamo una curva di coesistenza del gas "normale", ma la curva del solido non incontra mai quella del gas. \\
+La cosa più strana è che le fasi liquide sono due: quella standard e quella superfluida.\\
+Cerchiamo di capire a cosa è legata la pendenza della curva.
+\paragraph{Pendenza delle curve di separazione delle fasi}%
+Prendiamo come esempio il caso dell'acqua e mettiamoci in una zona di separazione tra gas e liquido alla temperatura $T_0$ e pressione $P_0$ in una condizione di equilibrio termodinamico:\\
+\begin{figure}[H]
+    \centering
+    \incfig{punto-sulla-separazione-gas-liquido-per-l'acqua}
+    \caption{Punto sulla separazione gas-liquido per l'acqua}
+    \label{fig:punto-sulla-separazione-gas-liquido-per-l'acqua}
+\end{figure}
+\noindent
+Cambiamo la temperatura di $dT$ infinitesimo, è possibile supporre di essere ancora in uno stato di equilibrio per una variazione sufficientemente piccola \footnote{O comunque che dopo poco tempo il sistema si riassesti all'equilibrio}.\\
+per una trasformazione del genere si ha in generale una variazione della pressione ed anche dei potenziali termodinamici, supponiamo che in questo caso la piccola variazione no induca un cambiamento di questi ultimi. In particolar modo non si induce allora una variazione nel potenziale chimico delle due fasi, la cui variazione ricordiamo essere:
+ \[
+	d\mu=-\frac{S}{N}dT + \frac{V}{N}dP
+.\] 
+Visto che siamo ancora all'equilibrio $d\mu_1$ = $d\mu_2$, dove il pedice indica lo stato (liquido o gassoso), quindi abbiamo:
+\[
+	-s_1 dT + v_1 dP = -s_2 dT + v_2 dP
+.\] 
+Dove si introduce la notazione per ciascuna specie:
+\begin{align}
+	&s = S/N \quad \text{Entropia per particella}\\
+	&v = V/N \quad \text{Volume per particella}
+.\end{align}
+Notiamo che $v$ è l'inverso del volume.\\
+Possiamo allora esprimere la pendenza della curva di separazione tra gli stati nel grafico PT come:
+\[
+	\frac{\mbox{d} P}{\mbox{d} T} = \frac{s_1-s_2}{v_1-v_2}
+.\] 
+Che è la relazione di \textit{Klausius-Clapeiron}.\\
+Possiamo definire anche un calore latente quando avviene una transizione di fase: \[
+	L = T \Delta s = T \left( s_1-s_2 \right) 
+.\]
+Che è la quantità di calore per particella da fornire per far avvenire la transizione di fase.\\
+Tramite $L$ possiamo scrivere la relazione di Klausius-Clapeiron in modo più compatto:
+\[
+	\frac{\mbox{d} P}{\mbox{d} T} = \frac{L}{T\left( v_1-v_2 \right) }
+.\] 
+Adesso possiamo capire perchè questa quantità è in generale positiva: ci aspettiamo ad esempio che andando da gas (stato 1) verso il liquido (stato 2) l'entropia ed il volume specifico diminuiscano. Quindi nella relazione sopra numeratore e denominatore sono nella maggior parte dei casi positivi.\\
+Per l'acqua la Slope solido-liquido è negativa per il semplice motivo che il ghiaccio è meno denso dell'acqua liquida, questo inverte il segno al denominatore nella equazione sopra.\\
+Nel caso dell'elio invece abbiamo una transiozione da solido a superfluido con dei punti in cui la slope è zero. Qui la densità non c'entra: è una questione di entropia. \\
+Si ha infatti che il superfluido può avere entropia minore del solido! Questo sarà collegato al Condensato di Bose-Einstein che vedremo.
+
+\subsection{Conteggio degli stati $\Gamma$}%
+Preso il sistema con (E,V,N) abbiamo definito l'entropia $S = k \ln\Gamma$, da qui abbiamo costruito tutta la nostra teoria termodinamica partendo dal concetto di equilibrio. Adesso dobbiamo trovare come calcolare il numero di stati associato con le variabili di stato.\\
+In linea di principio se avessimo un gas perfetto composto da particelle indipendenti, non interagenti, all'equilibrio termodinamico, senza gradi di libertà interni ecc\ldots potremmo prendere gli stati gli stati di una singola particella nella scatola di volume V e vedere come sono distribuite queste N particelle negli stati in modo tale che la loro energia sia complessivamente E.\\
+Questo funziona quando abbiamo poche particelle, se abbiamo $10^{23}$ particelle inizia ad essere complicato. \\
+Inoltre potrebbero nascere dei problemi dalle indeterminazioni intrinseche dei livelli energetici come abbiamo discusso. \\
+Un ulteriore problema è dato dal fatto che non possiamo considerare sistemi isolati a livello pratico, quindi è pressochè impossibile tenere l'energia fissata.\\
+Cerchiamo allora di risolvere la questione per un sistema immerso in un bagno termico. Abbiamo già affrontato tale sistema dal punto di vista termodinamico trovando l'energia libera ed altri potenziali termodinamici.\\
+È necessario definire il modo in cui tenere il sistema a temperatura fissata, per questo consideriamo il seguente:
+\begin{figure}[H]
+    \centering
+    \incfig{sistema-nel-bagno-termico-per-il-conteggio-degli-stati}
+    \caption{Sistema nel bagno termico per il conteggio degli stati}
+    \label{fig:sistema-nel-bagno-termico-per-il-conteggio-degli-stati}
+\end{figure}
+\noindent
+Dove le variabili primate sono quelle del bagno termico, quelle con lo zero sono quelle globali: del bagno termico e del sistema al suo interno.\\
+Supponiamo il contenitore talmente grande da assumere che sia sempre in equilibrio in modo indipendente da ciò che accade al sistema immerso.\\
+Il sistema totale ha una entropia all'equilibrio termico ben definita:
+\[
+	S_0 = k \ln \Gamma_0
+.\] 
+Dove $\Gamma_0$ è il numero possibile di stati associati a questa energia $E_0$.\\
+Se il sistemino non è ancora l'equilibrio possiamo immaginarci che il numero di stati disponibili a tutto l'universo sia:
+\[
+	\Gamma_{t}\le  \Gamma_0
+.\] 
+Quindi anche l'entropia $S$ sarà inferiore di  $S_0$.\\
+Il discorso è diverso per il bagno termico, che è sempre all'equilibrio. Possiamo scrivere per lui:
+\[
+	dE' = TdS' -PdV' + \mu dN'
+.\] 
+Nonostante il bagno termico sia sempre e comunque all'equilibrio i valori $E'$ ed $N'$ devono dipendere da quanto valgono $E$ ed $N$ per preservare l'energia totale e il numero N totale dell'universo.\\
+Assumiamo anche che il potenziale $\mu$ sia fissato per il bagno termico. Per poter considerare il bagno termico sempre all'equilibro è necessario imporre qualche condizione su quali stati del sistemino sono accessibili a quest'ultimo.\\
+Infatti se attribuiamo al sistemino uno stato $\alpha$ avente tutta l'energia dell'universo allora è facile capire che il bagno termico a contatto conil sistema avente tutta l'energia avrà qualche problema nel preservare il suo equilibrio. \\
+In modo analogo non possiam pensare di avere uno stato $\alpha$ per il sistemino contenente tutte le $S_0$ particelle dell'universo.\\
+Dobbiamo restringerci a considerare stati $\alpha$ per il sistemino piccolo che hanno energie e numero di particelle molto minore di $E_0$ e $N_0$.
+\begin{align}
+	&E_{\alpha}\ll E_0\\
+	&N_{\alpha}\ll N_0
+.\end{align}
+Vedremo che queste approssimazioni saranno ragionevoli alla fine del conto.\\
+L'approssimazione può essere riscritta in questi termini:
+\[
+	\frac{\partial E'}{\partial S'} = T \frac{\partial E'}{\partial N'} = \mu \text{ (costanti)}
+.\] 
+mettiamoci ora in una configurazione in cui il nostro sistema ha $\Gamma$ stati possibili associati, il bagno termico ne avrà $\Gamma'$ mentre il numero di stati possibili totali sarà:
+\[
+	\Gamma_{T}= \Gamma\cdot \Gamma'
+.\] 
+inoltre abbiamo anche che l'entropia totale è:
+\[
+	S_{T}= S+ S'
+.\] 
+Se il piccolo sistema è all'equilibrio con il bagno termico inoltre:
+\begin{align}
+	&\Gamma_{T}=\Gamma_0\\
+	&S_{T}= S_0
+.\end{align}
+Nella condizione di equilibrio la probabilità di ciascuno degli stati di tutto l'universo sarà:
+\[
+	W_{q}= \frac{1}{\Gamma_0}
+.\]
+Mettiamoci adesso fuori dall'equilibrio scegliamo l'energia ed il numero di particelle del sistemino $E_{\alpha}$, $N_{\alpha}$ di un particolare stato $\alpha$.\\
+Allora il bagno termico avrà energia $E_0- E_{\alpha}$, avrà numero di particelle $N_0-N_{\alpha}$ ed avrà associato un numero di stati $\Gamma'_{\alpha}$.\\
+In questa configurazione fuori equilibrio abbiamo che il numero di stati possibili dell'universo totale è esattamente $\Gamma_{\alpha}'$ \footnote{Abbiamo forzato il sistemino a stare nello stato $\alpha$, quindi nel conteggio degli stati possibili $\Gamma_{\text{sistemino}}=1$, $\Gamma_{T, \alpha}=1\cdot \Gamma_{\alpha}'$.}.\\
+Tornando all'equilibrio, in cui tutti gli stati sono equiprobabili, la probabilità di trovare il sistemino nel nostro stato $\alpha$ scelto sarà data da:
+\[
+	W_{\alpha}= \frac{\Gamma_{T,\alpha}}{\Gamma_0}= \frac{\Gamma_{\alpha}'}{\Gamma_0}
+.\] 
+Questo numero è incredibilmente utile perchè se volessimo calcolare una qualunque grandezza fisica $f$ del sistemino, imponendo che sia all'equilibrio termico con il bagno termico, troveremo un balore medio per la grandezza dato da:
+\[
+	\overline{f}= \sum_{\alpha}^{} W_{\alpha}f_{\alpha} \quad \quad \quad \sum_{\alpha}^{} W_\alpha= 1
+.\] 
+Dove $f_{\alpha}$ è il valore della grandezza sullo stato $\alpha$.\\
+Dobbiamo concentrarci adesso sulla ricerca della $W_{\alpha}$, è interessante notare che per far ciò adesso non serve più fare i conti sul sistemino, bensì sul bagno termico grazie alla dipendenza da $\Gamma'_{\alpha}$.\\
+Troviamo l'entropia del bagno termico quando il sistemino si trova nello stato $\alpha$ :
+\[
+	S_{\alpha}'= k\ln\Gamma_{\alpha}'
+.\] 
+Ma questa è uguale anche a 
+\[
+	S_{\alpha}'= S'\left( E_0-E_{\alpha}, N_0-N_{\alpha} \right) 
+.\] 
+L'entropia del'universo invece:
+\[
+	S_0= k \ln \Gamma_0
+.\] 
+Quindi possiamo scrivere che:
+\[
+	S_0-S_{\alpha}'= -k \ln \frac{\Gamma_{\alpha}'}{\Gamma_0}
+.\] 
+Dobbiamo notare che questa $S_0- S_{\alpha}$ non è l'entropia del nostro sistemino, l'entropia del sistemino nello stato fissato $\alpha$ è nulla: $S_{\text{sistemino}} = k\ln1 = 0$
+Però possiamo fare all'equilibrio 
+\[
+	S_0- \overline{S_{\alpha}'}= - \overline{k\ln W_{\alpha}}= -\sum_{\alpha}^{} W_{\alpha} \left( k\ln W_{\alpha} \right)  
+.\] 
+Dove abbiamo esplicitato l'operazione di media utilizzando la funzione $W_{\alpha}$. Quella che abbiamo scritto in fondo è l'entropia media del sistemino.\\
+Se facciamo l'esponenziale della relazione non mediata possiamo trovare $W_{\alpha}$ :
+\[
+	W_{\alpha}= e^{\left( -\frac{S_0-S_{\alpha}'}{k} \right)}  .\] 
+	Consideriamo il fatto che $S_0$ è l'entropia dell'universo all'infinito, non dipende da $\alpha$ e lo possiamo quindi rimuovere perchè è una costante e non intaccherà il conto finale.
+\[
+	W_{\alpha}= A \exp{\left( \frac{S_{\alpha}'}{k} \right) }
+.\] 
+Ricordiamo che questa è la probabilità di trovare uno stato $\alpha$ nel nostro sistema quando questo è all'equilibrio nel bagno termico a teperatura T e potenziale chimico $\mu$. \\
+Se siamo nelle ipotesi che $N_{\alpha}$ e $E_{\alpha}$ siano piccoli possiamo sviluppare $S_{\alpha}'$ vicino all'equilibrio e scrivere:
+\[
+	S_{\alpha}' = S'\left( E_0- E_{\alpha}, N_0- N_{\alpha} \right) \approx S' \left( E_0, N_0 \right) -
+	\left.\frac{\partial S'}{\partial E'} \right|_{V', N'} E_{\alpha} - \left.\frac{\partial S'}{\partial N'} \right|_{E', V'} N_{\alpha}
+.\] 
+Sappiamo cosa sono le derivate, mentre il primo termine non è nient'altro che una costante, allora:
+\[
+	S_{\alpha}' = \text{cost} - \frac{E_{\alpha}}{T} + \frac{\mu N_{\alpha}}{T}
+.\] 
+Possiamo adesso sostituire nella equazione di $W_{\alpha}$ :
+\[
+	W_{\alpha} = B \exp\left( - \frac{E_{\alpha - \mu N_{\alpha}}}{kT} \right) 
+.\]
+Dove B è la costante di normalizzazione:
+\[
+	B = \frac{1}{\sum_{\alpha}^{} \exp \left[ -\left( E_{\alpha}-\mu N_\alpha \right)/kT  \right] }
+.\] 
+Adesso che abbiamo la probabilità in linea di principio possiamo trovarci il numero medio di particelle nel nostro sistema:
+\[
+	N = \frac{\sum_{\alpha}^{} N_{\alpha} \exp\left( - \frac{E_{\alpha}- \mu N_{\alpha}}{kT} \right) }{\sum_{\alpha}^{} \exp\left( -\frac{E_{\alpha}-\mu N_{\alpha}}{kT} \right) }
+.\] 
+Analogamente per l'energia:
+\[
+	E = \frac{\sum_{\alpha}^{} E_{\alpha}\exp\left( -\frac{E_{\alpha}-\mu N_{\alpha}}{kT} \right) }{\sum_{\alpha}^{} \exp\left( -\frac{E_{\alpha}-\mu N_{\alpha}}{kT} \right) }
+.\] 
+Abbiamo in linea di principio finito, tuttavia abbiamo la soluzione in termini di $T, V, \mu$, che sappiamo non essere le variabili giuste.\\ 
+Va meglio se partiamo invece dal valor medio dell'entropia:
+\[
+	S = -k \sum_{\alpha}^{} W_{\alpha} \ln W_\alpha.\] 
+Che se vi sostituiamo il valore di $W_{\alpha}$ trovato prima ci porta a:
+\[
+	S=-k \ln B + \frac{E-\mu N}{T}
+.\] 
+Quindi abbiamo la relazione per trovare il potenziale $\Omega$ :
+\[
+	kT \ln B = E - TS - \mu N = \Omega
+.\] 
+\[
+	\Omega = -kT \ln \sum_{\alpha}^{} \exp\left( -\frac{E_{\alpha}-\mu N_{\alpha}}{kT} \right) 
+.\] 
+Questa ci va bene perchè è funzione di ($T, \mu, V$) che sono variabili buone per descrivere il sistema. A livello formale abbiamo una soluzione, lavoreremo più avanti per semplificarla e renderla utilizzabile.\\
+Se assumiamo che $N_{\alpha}$ è fissato allora possiamo supporre che per ogni stato $N_{\alpha}$ sia sempre lo stesso e, ricordando la forma di F, si ha:
+\[
+	F = -kT \ln\left( \sum_{\alpha}^{} \exp\left( -\frac{E_{\alpha}}{kT} \right)  \right) 
+.\] 
+E inoltre anche $W_{\alpha}$ si semplifica moltissimo.
+\[
+	W_{\alpha}= c \exp\left( -\frac{E_{\alpha}}{kT} \right) 
+.\] 
+Si possono definire la funzioni di partizione:
+\[
+	Z = \sum_{\alpha}^{} \exp\left( -\frac{E_{\alpha}}{kT} \right) 
+.\] 
+E la funzione di gran partizione (se il sistema può scambiare particelle):
+\[
+	\L = \sum_{\alpha}^{} \exp\left( - \frac{E_{\alpha}-\mu N_{\alpha}}{kT} \right) 
+.\] 
+Da cui i potenziali termodinamici sono:
+\[
+	F = -kT \ln Z
+.\] \label{eq:F_Z}
+\[
+	\Omega = -kT \ln \L
+.\] 
+Prossimamente il nostro obbiettivo sarà il calcolo di $\L$.
+	

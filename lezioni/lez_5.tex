@@ -1,0 +1,275 @@
+\lez{5}{26-02-2020}{}
+Alla fine della scorsa lezione abbiamo cambiato punto di vista, prendendo come insiemi anzichè la singola particella il singolo stato di singola particella. \\
+Per far questo abbiamo usato il potenziale di Landau. Infatti per poter contare tutti gli stati possibili \footnote{Avendo presi come insiemi gli stati stessi} è necessario considerare il numero di particelle all'interno degli stati stessi variabile, quindi il potenziale adatto è quello sopra citato. Il risultato che abbiamo ottenuto è:
+\[
+	\Omega_{\overline{q}} = - kT \ln \left[ \sum_{\text{stati con $n_{q}$}}^{} \exp\left( -\frac{\mathcal{E}_{q}n_{q}-\mu n_{q}}{kT} \right)\right] 
+.\] \label{eq:potenziale-Landau1}
+La somma è fatta sugli stati del nostro sottosistema, che sono gli stati di singola particella e sono definiti da quante particelle sono dentro allo stato di singola particella.\\
+Inoltre il potenziale di Landau totale abbiamo visto essere la somma dei precedenti sugli stati $q$.\\
+Questo conteggio evita di contare gli stati due volte, perchè conta attribuendo quante particelle ci sono in ogni singolo stato \footnote{Quindi di fatto considerando gia le particelle indistinguibili} e poi conta quanti stati di singola particella ci sono.\\
+La probabilità di trovare il sistema complessivo di $N$ particelle in uno stato $\alpha$ abbiamo visto essere:
+\[
+	W_\alpha= B\cdot \exp\left( -\frac{E_{\alpha}-\mu N_{\alpha}}{kT} \right)  
+.\] 
+Dove le lettere maiuscole si riferiscono al sistema, le minuscole (come nella espressione sopra) si riferiscono alle quantità della singola particella, oppure alle quantità dello stato di singola particella.\\
+\subsection{Distribuzione di Boltzmann}%
+\label{sec:Boltzmann_distrib}
+Possiamo anche chiederci la probabilità del sottosistema di trovarsi in uno dei suoi stati, ovvero la probabilità di avere $n_{q}$ particelle nello stato $q$:
+\[
+	W_{n_{q}} = \exp\left[ -\frac{\Omega_{q} - \left( n_{q}\mathcal{E}_{q} - \mu n_{q} \right) }{kT} \right] 
+.\] 
+Questa ci serve per vedere il significato della approssimazione classica di gas ideale che prevedeva una piccola probabilità di avere due particelle nello stesso stato: $W_{\hat{n}} \approx 0$ con $\hat{n} > 1$. \\
+Vediamo allora come possiamo scrivere le probabilità di avere poche particelle nello stato $q$:
+\begin{itemize}
+	\item Probabilità di avere 0 particelle nello stato $q$:
+		\[
+			W_0 = \exp \left( \frac{\Omega_{q}}{kT} \right) \approx 1
+		.\] 
+	\item Probabilità di avere 1 particella nello stato $q$
+		\[
+			W_1 = \exp\left( \frac{\Omega}{kT} \right) \cdot \exp\left( - \frac{\mathcal{E}_{q}-\mu}{kT} \right) \approx
+			\exp\left( - \frac{\mathcal{E}_{q}-\mu}{kT} \right) \ll 1
+		.\] 
+		Dove l'approssimazione è data dal fatto che $W_0 \approx 1$.
+	\item Probabilità di avere un numero maggiore di particelle nello stato $q$:
+		\[
+			W_2 \approx W_1^2 \ll W_1
+		.\] 
+\end{itemize}
+Deve quindi valere per ogni stato l'approssimazione 
+\[
+	W_1 \approx \exp\left( - \frac{\mathcal{E}_{q}-\nu}{kT}\right) \ll 1
+.\]
+Quindi a maggior ragione dovrà essere vero quando l'esponenziale in questione è massimo, ovvero per lo stato fondamentale di energia $\mathcal{E}_{\text{fond}}=0$, quindi troviamo una importante relazione:
+\[
+	\exp\left( \frac{\mu}{kT} \right) \ll 1
+.\] \label{eq:ideal_gas_approx}
+Quindi se questa è soddisfatta l'approssimazione di gas ideale produce dei risultati validi. Di conseguenza $\mu$ dovrà essere:
+\begin{center}
+	$\mu <0$\\
+	$\left| \mu \right|  \gg kT$ 
+\end{center}
+Possiamo trovare allora nelle ipotesi di gas ideale quanto vale $n_{\overline{q}}$: il numero di particelle medio nello stato $q$ all'equilibrio sarà per definizione la media di $n_{q}$:
+\[
+	\overline{n}_{q}= \frac{\sum_{n_{q}}^{} n_{q}\exp\left( -\frac{n_{q}\left( \mathcal{E}_{q}-\mu \right) }{kT} \right) }
+	{\sum_{n_{q}}^{} \exp\left( -\frac{n_{q}\left( \mathcal{E}_{q}-\mu \right) }{kT} \right) } .\] 
+Nella approssimazione di gas ideali la somma al numeratore può essere approssimata al secondo termine con $n_{q} = 1$, mentre al denominatore di prende solo il primo termine che è unitario:
+\[
+	\overline{n}_{q} \approx \frac{\exp\left( - \frac{\mathcal{E}_{q}-\mu}{kT} \right) }{1} = \exp\left[ -\frac{\mathcal{E}_{q}-\mu}{kT} \right] 
+.\] 
+Questo è il numero medio di particelle che possiamo trovare in uno stato di energia $\mathcal{E}_{q}$, noto con il nome di distribuzione di Boltzmann.\\
+Non è il numero medio di particelle aventi energia $\mathcal{E}_{q}$ perchè potrebbero esserci tanti stati con tale energia!\\
+In questa approssimazione possiamo trovare anche $\Omega_{q}$ :
+\[
+	\Omega_{q} \approx -kT \ln \left( 1+ \exp \left[ -\frac{\mathcal{E}_{q}-\mu}{kT} \right]  \right) = -kT \ln \left[ 1+ \overline{n}_{q} \right]	\label{eq:Landau-ordine_0}
+.\] 
+Per Boltzmann il numero medio di singole particelle che possiamo trovare in ogni singolo stato $q$ è molto piccolo: $\overline{n}_{q}\ll 1$, possiamo allora approssimare ulteriormente.
+\[
+	\Omega_{q} \approx -kT \overline{n}_{q} \label{eq:Landau_Boltzmann}
+.\] 
+Quindi possiamo scrivere la $\Omega_{\text{tot}}$ : 
+\[
+	\Omega_{\text{tot}} = - PV = -kT \sum_{\overline{q}}^{} \overline{n}_{q} = -kT N
+.\] 
+Quindi abbiamo trovato la relazione $PV = NkT$ ben nota per i gas ideali.\\
+Vediamo che $\overline{n}_{q}$ ha una forma del tipo:
+\begin{figure}[H]
+    \centering
+    \incfig{distribuzione-di-boltzmann}
+    \caption{Distribuzione di Boltzmann}
+    \label{fig:distribuzione-di-boltzmann}
+\end{figure}
+\noindent
+Quindi è un esponenziale avente esponente nullo per $\mathcal{E}_{q}$ molto negativo, a noi interessano ovviamente le energie positive quindi ci troviamo nella coda dell'esponenziale.\\
+È interessante notare che non abbiamo mai assunto, nella derivazione della legge di stato dei gas ideali, che l'energia della particella fosse $\mathcal{E}= p^2 /2m$.\\
+Siamo arrivati alle nostre conclusioni soltanto con ragionamenti puramente statistici che valgono per qualunque dipendenza dell'energia da $q$ \footnote{Mentre per trovare il $PV = \frac{2}{3}E$ abbiamo assunto una dipendenza dal volume, ad esempio.}.\\
+Evidentemente per qualunque gas ideale si ha la validità della legge di stato. Questo è interessante perchè possiamo imparare dagli errori di alcuni fisici del passato:
+\paragraph{Particelle vortice e legge di stato}%
+Si pensava che gli atomi fossero dei vortici che permeavano l'etere spaziale, avevano addirittura trovato leggi che legavano l'energia del vortice all'impulso del vortice:
+\[
+	\mathcal{E}_{\text{vortice}} \ \alpha \ \sqrt{p} 
+.\] 
+A questo punto attraverso la termodinamica statistica avevano trovato la legge di stato $PV = NkT$, quindi si erano trovati rassicurati sulla loro visione del mondo dalla compatibilità con tale legge. Non sapevano che per arrivare a tale legge basta imporre le condizioni di gas ideale e poi si arriva con qualunque legge di dispersione, anche con quella del vortice!\\
+Troveremo particelle con leggi del tipo $\mathcal{E} = cp$, anche per esse potremmo applicare la legge $PV = NkT$.\\
+
+\subsection{Conteggio degli stati nel passagio al continuo}%
+Per proseguire con la nostra trattazione è necessario implementare il metodo di passaggio al continuo per il conteggio degli stati. \\
+Infatti preferiremmo sempre anzichè fare le somme trovare il numero di stati per unità di energia (ovvero la densità di stati) e poi integrare nell'energia per il numero di stati totali.\\
+Partiamo dalla meccanica classica: qui il concetto di numero di stati ha alcune difficoltà. Infatti, se per la meccanica quantistica basta quantizzare l'impulso e mettere le condizioni al contorno sulla scatola per essere in grado di contare gli stati, in meccanica classica si ha invece una distribuzione continua di stati. Quindi il numero di stati sembrerebbe andare all'infinito in quest'ultimo caso.\\ 
+Di conseguenza l'ipotesi che gli stati siano equiprobabili sembra problematica visto che questi ultimi non sono finiti. Cerchiamo allora di capire cosa significa quantizzare gli stati dal punto di vista del conteggio degli stati. \\
+Se siamo in un sistema classico lo stato del nostro sistema di n particelle è definito assegnando l'insieme degli impulsi $\left\{ p_{i} \right\}$ di ogni particella e le coordinate $\left\{ r_{i} \right\}$ di ogni singola particella.\\
+Una volta assegnati questi possiamo trovare l'energia totale $\mathcal{E}_{0}$ del sistema di particelle, essa sarà una funzione continua dei due oggetti sopra:
+\[
+	\mathcal{E}_{0} = \mathcal{E}_{0}\left( \left\{ p_{i} \right\} , \left\{ q_{i} \right\}  \right) 
+.\] 
+Ad esempio se abbiamo $N_0$ particelle in totale allora abbiamo $3N_0$ impulsi e $3N_0$ coordinate nel nostro spazio in considerazione. Possiamo chiamare allora $f_0$ il numero di gradi di libertà del sistema diviso 2; nel nostro caso sarà $3N_0$.\\
+Data una energia $E_0$ del sistema il numero di stati classici possibili aventi tale energia è infinito, in ambito classico non vi è un modo per contarli. Possiamo fare una costruzione matematica che parte dal considerare il sistema classico per poi arrivare al sistema quantistico che ci permette effettivamente di contare gli stati $\Gamma_0$.\\
+Consideriamo il nostro spazio delle fasi 6-dimensionale e disegnamone una proiezione:
+\begin{figure}[H]
+    \centering
+    \incfig{spazio-delle-fasi-proiettato-in-due-dimensioni}
+    \caption{\scriptsize Spazio delle fasi proiettato in due dimensioni, si disegna sovrapposto un elementino di volume dello spazio tridimensionale solo per fissare le idee del prossimo passaggio.}
+    \label{fig:spazio-delle-fasi-proiettato-in-due-dimensioni}
+\end{figure}
+\noindent
+Noi dovremmo contare quanti stati ci sono sulla superficie $6N_0-1$ dimensionale, a tale scopo serve un numero proporzionale all'area della superficie interessata. \\
+Quindi si divide lo spazio $6N_0$ dimensionale in tante cellette unitarie aventi dimensioni proiettate bidimensionalmente di: 
+\[
+\Delta r_{k} \Delta p_{k} = \tau
+.\]
+Dove $\tau$ è il volume (o meglio, l'area) del cubetto.\\
+Quindi dividiamo il nostro spazio accoppiando ciascuna coordinata ed impulso nella stessa direzione della stessa particella ed attribuendogli un volumetto $\tau$. Il nostro mondo è quindi diviso in tanti volumetti di dimensione $\tau^{3N_0} = \tau^{f_0}$.\\
+In questo modo è possibile definire il numero di stati $\Gamma_0$ considerando che esso sarà proporzionale al volume della superficie $6N_0-1$ dimensionale diviso il volumetto di ciascuna cella unitaria.
+\[
+	\Gamma_0 = \frac{1}{\tau^{f_0}} \int\int\int\int_{f_0}^{'}d\left\{ p_{i} \right\} d\left\{ r_{i} \right\} 
+.\] 
+Il valore in apice all'integrale " ' " sta ad indicare che l'integrale è fatto solo sulla superficie, mentre il pedice indica il numero di gradi di libertà su cui viene fatto l'intetgrale.\\
+Facendo questo conto di fatto stiamo assumendo che tale volumetto $\tau$ contenga un singolo stato, quindi contare il numero di stati diventa calcolare il volumetto della Shell definita sopra e dividerlo per il volume della cella unitaria.\\
+Visto che per fare il conteggio facciamo la somma dei volumetti che stanno sulla superficie avremo che questa superficie avrà un certo spessore, come se fosse una buccia di un frutto. Proprio per questo motivo si introduce una piccola indeterminazione dell'energia pari al volume della cella unitaria.\\
+Quindi potremmo fare il conto dell'integrale e poi fare il limite per $\tau \rightarrow 0$. Vedremo che questo limite non ci darà informazioni sul sistema, inducendoci a pensare che sia necessario un approccio diverso al conteggio degli stati, che è appunto quello quantistico.\\
+Definiamo intanto l'entropia e le altre quantità tenendo conto della nuova definizione di $\Gamma_0$ :
+\[
+	S_0 = kT \ln\Gamma_0 = k\ln \int\int_{f_0}^{'} d\left\{ p_{i} \right\} d\left\{ q_{i} \right\} - k \ln \left( \tau^{f_0} \right) 
+.\] 
+Possiamo trovare anche l'entropia del bagno termico quando il sistema che stiamo considerando è nello stato $\alpha$: $S_{\alpha}'$. \\
+Dovremmo fare l'integrale su un'altra superficie " $''$ " che corrisponde ad una energia del bagno termico 
+\[
+	\mathcal{E}_{\alpha}' = \mathcal{E}_0 - \mathcal{E}_{\alpha}
+.\]
+e su dei gradi di libertà $f'$. Questi saranno i gradi di libertà del bagno termico quando il nostro sistema è nello stato $\alpha$; quindi l'entropia del bagno:
+\[
+	S_{\alpha}' = k\ln \int\int_{f'}^{''}d\left\{ p_{i} \right\} d\left\{ q_{i} \right\} - k \ln \left( \tau^{f'} \right) 
+.\] 
+Allora siamo anche in grado di trovare l'entropia del sistema semplicemente facendo la seguente sottrazione:
+\[
+	S = S_0- \overline{S'}_{\alpha}= k \ln \int\int_{f_0}^{'}d\left\{ p_{i} \right\} d\left\{ q_{i} \right\} - k\ln \int\int_{f'}^{''}d\left\{ p_{i} \right\} d \left\{ q_i \right\} - k \ln \left( \tau^{\left( f_0-f' \right) } \right)
+.\] 
+Possiamo notare che $f_0- f' = f$ è proprio il numero di gradi di libertà del sistema. Noto questo compattiamo l'ultima come:
+\[
+	S = S_0- \overline{S'}_{\alpha}= k \ln \int\int_{f_0}^{'}d\left\{ p_{i} \right\} d\left\{ q_{i} \right\} - k\ln \int\int_{f'}^{''}d\left\{ p_{i} \right\} d \left\{ q_i \right\} - fk\ln\left( \tau \right) \label{eq:entropia1}
+.\] 
+Adesso risultano evidenti i problemi legati al fatto che non è lecito mandare  $\tau$ a zero, l'entropia diverge. Inoltre questo $\tau$ in linea di principio non dipende dal tipo di sistema, sembra un numero fondamentale non nullo. Si vede quindi che $\tau$ assomiglia molto alla costante di Plank $h$. \\
+Vorremmo allora passare da un oggetto che fa la somma sugli stati ad un integrale nella densità di energia, per fare questo passaggio sfruttiamo la meccanica classica:
+\[
+	\sum_{\text{Stati}}^{} \longrightarrow \int \rho \left( \mathcal{E} \right) d\mathcal{E}=
+	\frac{1}{\tau^{f}}\int\int d\left\{ p_{i} \right\} d\left\{ q_{i} \right\} 
+.\] 
+Quindi sfruttiamo il formalismo continuo proveniente dalla meccanica classica per contare gli stati a patto di normalizzare con $\tau^{f}$. La normalizzazione è quella che ci permette di contare nel modo corretto gli stati \footnote{Ricordiamo che è costruito in modo tale da far si che in ogni stato ci sia al massimo una particella, la probabilità che ve ne stiano due è piccolissima}. \\
+La densità degli stati può essere definita sotto questa ottica di passaggio al continuo: il numero di stati quantistici associati a ciascun elemento infinitesimo di spazio delle fasi classico (scegliendo invece che impulso e coordinate la variabile energia, tuttavia questo è solo un cambio di variabile).\\
+Dal momento che $\tau$ è universale possiamo provare a calcolarlo per la singola particella nella scatola unidimensionale:
+
+\subsection{La costante di Plank nel conteggio degli stati}%
+Prendiamo una scatola unimensionale di lunghezza $L$, l'energia sarà:
+\[
+	\mathcal{E}_{q} = \frac{\hbar^2 p^2}{2m}
+.\] 
+Mentre $p$ è quantizzato: $p = \left( 2\pi /L  \right) l$, con $l = \left( 0,1,2,\ldots \right)$. \\
+Chiaramente le soluzioni di questo problema sono le onde piane, quindi le particelle non hanno dipendenza da $q$ e le energie sono distribuite lungo tutte le dimensioni della scatola.\\
+Quindi facendo il differenziale della relazione sopra per $p$ abbiamo una relazione che ci permette di trovare direttamente il numero di stati in un intervallo di impulso tra $p$ e  $p + \Delta p$:
+\[
+	\Delta p = \frac{2\pi}{L}\Delta l
+.\] 
+Di conseguenza il numero di stati $\Delta l$ sempre tra $p$ e $p + \Delta p$ lo possiamo scrivere anche come:
+\[
+	\Delta l = \frac{L}{2\pi \hbar\Delta p}
+.\]
+Quindi la somma sugli stati è di fatto già fatta. Questo è il numero di stati nel volume dello spazio delle fasi di dimensioni $L$ e $\Delta p$.\\
+Facciamolo classicamente:
+\[
+	\frac{1}{\tau} \int_{L}\int_{\Delta p} dp dr = \frac{L \Delta p}{\tau}
+.\]  
+E quindi uguagliando il metodo classico con il metodo quantistico abbiamo 
+\[
+	\tau = 2\pi\hbar = h
+.\]
+Quindi effettivamente abbiamo che  $\tau$ è la costante di Plank. \\
+
+
+\subsection{Calcolo della $\rho\left( \mathcal{E} \right)$}%
+\label{subsec:dens-stati}
+Calcoliamo adesso la densità di stati, sarà necessario fare soltanto un cambio di variabili visto che abbiamo già tutte le quantità che ci servono nel nostro metodo.\\
+Partiamo dalla densità di stati per una singola particella \footnote{Che è direttamente l'elemento infinitesimo dello spazio delle fasi discusso sopra}, successivamente sfrutteremo le proprietà della $\Omega$ o della $Z$ per generalizzare a $N$ particelle. In particolare abbiamo visto che tramite la $\rho\left( \mathcal{E} \right)$ della singola particella potevamo gia calcolare l'energia media della singola particella e quindi la $Z$ facendo $Z = Z^{N}/N!$. È allora evidente la potenza di questa quantità $\rho\left( \mathcal{E} \right)$.\\
+Quello che dobbiamo fare è passare dall'integrale per una singola particella negli elementi dello spazio delle fasi ad un integrale in $d\mathcal{E}$ per una particella avente energia $ \mathcal{E} = p^2/2m$:
+\begin{align}
+	\frac{d^3p d^3r}{\left( 2\pi\hbar \right)^3 }&  
+	&\longrightarrow&  
+	&\int&\rho\left( \mathcal{E} \right) d\mathcal{E}
+.\end{align}
+Possiamo già integrare sulle variabili $r$, queste ci portano fuori un volume:
+\begin{align}
+	\frac{d^3p d^3r}{\left( 2\pi\hbar \right)^3 } = V \frac{d^3p}{\left( 2\pi \hbar  \right)^3} 
+.\end{align}
+Possiamo scrivere il $d^3p$ come $4\pi p^2 dp$ ipotizzando il sistema isotropo con l'energia indipendente dall'angolo:
+\begin{align}
+	\frac{d^3p d^3r}{\left( 2\pi\hbar \right)^3 } = V \frac{4\pi p^2 dp}{\left( 2\pi\hbar \right)^3 } 
+.\end{align}
+Ora possiamo procedere con qualche sostituzione per il cambio di variabile:
+\begin{align}
+	\frac{d^3p d^3r}{\left( 2\pi\hbar \right)^3 } = \frac{4\pi V}{h^3}p^2 \frac{\mbox{d} p}{\mbox{d} \mathcal{E}} d\mathcal{E} 
+.\end{align}
+Visto che 
+ \[
+	\frac{\mbox{d} \mathcal{E}}{\mbox{d} p} = \frac{p}{m} = \sqrt{\frac{2\mathcal{E}}{m}} 
+.\] 
+Possiamo concludere il calcolo:
+\begin{align}
+	\frac{d^3p d^3r}{\left( 2\pi\hbar \right)^3 } =&\frac{4\pi V}{h^3}2m\mathcal{E}\frac{m ^{1 /2}}{\sqrt{2} \sqrt{\mathcal{E}}} d\mathcal{E} =\\
+	=&\frac{4\pi \sqrt{2} m ^{3 /2} V}{h ^3} \mathcal{E}^{1 /2} d\mathcal{E}
+.\end{align}
+Quindi la densità di stati per la singola particella in tre dimensioni scala come $ m ^{3 /2} \cdot  \mathcal{E}^{1 /2}$ e questo vale solo per particelle massive aventi l'energia $p^2 /2m$. \\
+Se fossimo in due dimensioni invece cambierebbe:
+\begin{align}
+	\frac{d^2p d^2r}{\left( 2\pi \hbar  \right)^2} =& \frac{A 2\pi p dp}{\left( 2\pi \hbar \right)^2 }
+.\end{align}
+Quindi il calcolo risulta analogo al caso tridimensionale con una piccola differenza sulle potenze delle varie quantita. Procediamo per trovare $\rho\left( \mathcal{E} \right)$ anche in questo caso:
+\[
+	\rho\left( \mathcal{E} \right) _{\text{2D}} = \frac{Am}{2\pi \hbar^2} d\mathcal{E}
+.\] 
+Quindi in dimensioni la densità di stati è una costante, non più una radice. \\
+Notiamo che facendo in una dimensione allora la densità di stati va come $\mathcal{E}^{-1 /2}$, assolutamente controintuitivo! Questo è alla base di particolari fenomeni di sistemi a bassa dimensionalità.
+
+\paragraph{Esempio}%
+Prendiamo delle particelle aventi la seguente legge di dispersione $\mathcal{E} = c p$. In questo caso si ha, tralasciamo i passaggi:
+\[
+	\rho\left( \mathcal{E} \right) = \frac{4\pi V \mathcal{E}^2d\mathcal{E}}{h^3 c^3}
+.\] 
+Mentre con il caso precente si aveva:
+\[
+	\rho\left( \mathcal{E} \right) = \frac{4\pi \sqrt{2} V m ^{2 /3}}{h^3} \mathcal{E}^{1 /2}
+.\] 
+L'ultima legge di dispersione è utile per elettroni in un campo elettrico oppure per le vibrazioni in un cristallo a lunghezze d'onda lunghe (onde sonore, onde elastiche).\\
+\subsection{Calcolo dell'energia media di singola particella}%
+Per calcolare $\overline{\mathcal{E}}$ è necessario mediare $\mathcal{E}$ moltiplicata per la densità di stati:
+\[
+\overline{\mathcal{E}} = \frac
+			{\int \mathcal{E}\rho\left( \mathcal{E} \right) \exp\left( -\frac{\mathcal{E}}{kT} \right) }
+			{\int\rho\left( \mathcal{E} \right) \exp\left( -\frac{\mathcal{E}}{kT} \right)}
+.\] 
+Facendo il seguente cambio di variabile:
+\[
+ x = \frac{\mathcal{E}}{kT}
+ .\] 
+ Si semplifica l'espressione, che diventa:
+\[
+	\overline{\mathcal{E}} = kT \frac
+	{\int_{0}^{\infty}x^{3 /2} e^{-x}}
+	{\int _{0}^{\infty}x^{1 /2}e^{-x}}
+.\] 
+Vediamo in questo modo che i due integrali nella frazione non son altro che la funzione $\Gamma$ di Eulero:
+\[
+	\Gamma\left( n+1 \right) = \int_{0}^{\infty}x^{n}e^{-x}dx
+.\] 
+Tale funzione ci è utile perchè gode della seguente proprietà:
+\[
+	n = \frac{\Gamma\left( n+1 \right) }{\Gamma\left( n \right) }
+.\] 
+Nel nostro caso abbiamo la $\Gamma\left( 5 /2 \right)$ al numeratore e la $\Gamma \left( 3 / 2 \right)$ al denominatore, quindi il risultato della frazione è $3 / 2$ e l'espressione per l'energia diventa semplicemente: 
+\[
+	\overline{\mathcal{E}} =\frac{3}{2}kT
+.\] 
+E visto che nella scorsa lezione avevamo ricavato la legge:
+\[
+	PV = \frac{2}{3}\mathcal{E}
+.\] 
+Possiamo ricavare l'equazione di stato $PV = NkT$ direttamente dalla espressione calcolata con la funzione di partizione classica invece che fare l'approssimazione della $\Omega$.\\
+Cercheremo di ricondurre ogni sistema ad un gas ideale in questo modo sarà possibile ricavare informazioni su tali sistemi semplicemente tramite il modello teorico che abbiamo costruito adesso.

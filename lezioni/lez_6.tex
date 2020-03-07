@@ -1,0 +1,389 @@
+\lez{6}{28-02-2020}{}
+\subsection{Gas ideale con particelle interagenti.}%
+Abbiamo concluso la scorsa lezione dicendo che cercheremo di descrivere i sistemi che incontreremo per analogia con i gas perfetti, è necessario notare che non sarà sempre possibile far questo. Un esempio di sistema per cui non è possibile sono i liquidi.\\
+Abbiamo introdotto il concetto di densità di stati come l'elemento di volume dello spazio delle fasi pesato sulla dimensione della celletta unitaria:
+\[
+	\rho\left( \mathcal{E} \right) d\mathcal{E} = \frac{d\left\{ p_{i} \right\}d\left\{ r_{i} \right\}   }{\left( 2\pi h \right)^{f}}
+.\] 
+con $f = 3N$.\\
+Nella descrizione ci siamo "dimenticati" del fatto che se il nostro sistema contiene N particelle stiamo contando gli stati nuovamente male: infatti abbiamo preso una restrizione a tanti spazi separati, ognuno etichettato con la sua particella; non abbiamo considerato l'indistinguibilità di ogni particella dalle altre. Per questo motivo se vogliamo fare il conto per la funzione di partizione dovremo dividere per $N!$:
+\[
+	\rho\left( \mathcal{E} \right) d\mathcal{E} =\frac{1}{N!} \frac{d\left\{ p_{i} d\left\{ r_{i} \right\}  \right\} }{\left( 2\pi h \right)^{f}}
+.\]
+Vediamo allora fino a che punto possiamo spingerci nel trattare sistemi generici per capire quando è possibile rientrare nella approssimazione di gas ideale, proviamo a prendere sistemi che composti da particelle aventi una correzione all'energia totale data da un termine potenziale di interazione e vediamo come cambiano le principali quantità termodinamiche.\\
+Partiamo dalla funzione di partizione, questa si scrive in generale come:
+
+\[
+	Z = \frac{1}{\left( 2\pi \hbar  \right) ^{3N}N!} \int \int \exp\left( -\frac{\mathcal{E}}{kT} \right) d\left\{ p_{i} \right\} d\left\{ r_{i} \right\} 
+.\] 
+Dove abbiamo inserito l'energia grande perchè questa è riferita a molti corpi, non a singola particella.\\
+Adesso quindi consideriamo come energia totoale del sistema la seguente:
+\[
+	E=\sum_{i =1}^{3N} \frac{p_{i}^2}{2m} + U\left(  r_{i}  \right) 
+.\] 
+In cui rispetto alla trattazione fatta fin'ora abbiamo inserito il termine correttivo $U\left( r_{i} \right) $ che tiene di conto del fatto che il nostro sistema non è un gas perfetto. Tale termine dipenderà in generale dalle coordinate di tutte le particelle. \\
+La funzione di partizione si decompone allora in due termini:
+\[
+	Z = \frac{1}{\left( 2\pi \hbar  \right) ^{3N}N!} \int \int \exp\left( - \sum_{}^{} \frac{p_{i}^2}{2m} \right) d\left\{ p_{i} \right\} 
+	\int\int \exp\left( -\frac{U}{kT} \right) d\left\{ r_{i} \right\} 
+.\] 
+Quest'ultima espressione, sebbene si riferisca ad un gas ideale avente le particelle interagenti, approssima abbastanza bene anche liquidi ideali.\\
+Restringiamoci adesso per fare i conti al caso tridimensionale, abbiamo che l'energia cinetica di una singola particella può essere scritta come:
+\[
+	\mathcal{E} = \frac{p^2}{2m} = \frac{p_{x}^2+p_{y}^2+ p_{z}^2}{2m}
+.\] 
+Quindi ipotizzando le particelle ancora indistinguibili questa energia sarà la stessa per tutte le particelle, allora la parte cinetica dell'integrale precedente può essere scomposta nel prodotto di N integrali tutti uguali, da cui il seguente:
+\[
+	Z = \frac{1}{N! \left( 2\pi\hbar \right)^{3N} }
+	\left[ \int\exp\left( -\frac{p^2}{kT2m} \right) d^3p \right] ^{N} 
+	\int\exp\left( -\frac{U}{kT} \right) d^3r 
+.\] 
+Dividendo e moltiplicando per $V^{N} =  \left[\int d^3r \right]^{N}$:
+\[
+	Z = \frac{1}{N! \left( 2\pi\hbar \right)^{3N} V^{N}}
+	\left[\int \int d^3r \exp\left( -\frac{p^2}{kT2m} \right) d^3p \right] ^{N} 
+	\int\exp\left( -\frac{U}{kT} \right) d^3 r 
+.\] 
+Abbiamo fatto questa ultima operazione in modo da poter alleggerire la notazione: adesso il termine
+\[
+	Z_{IG} = \frac{1}{N! \left( 2\pi\hbar \right)^{3N}}
+	\left[\int \int d^3r \exp\left( -\frac{p^2}{kT2m} \right) d^3p \right] ^{N}
+.\] 
+È la funzione di partizione per il gas ideale ricavata nella \hyperref[eq:DefZ]{Lezione 4}, con l'accortezza di sostituire all'energia la sola energia cinetica ed alla $\rho\left( \mathcal{E} \right)$ quella ricavata tramite la meccanica classica.\\
+Definendo inoltre la parte di energia potenziale come $Q$ si conclude che:
+\[
+	Z = \frac{Z_{IG}}{V^{N}}Q
+.\] 
+Quindi abbiamo la stessa Z di un gas ideale con la correzione del volume e di Q. \\
+Possiamo esplicitare ulteriormente la $Z_{IG}$ facendo uso della funzione $\Gamma$ di Eulero introdotta alla fine della lezione 5:
+\begin{align}
+	Z_{IG} \propto& \int \exp\left( -\frac{\mathcal{E}}{kT} \right) d^3p = \\
+	=& 4\pi\sqrt{2} \left( mkT \right) ^{3 /2} \int \exp\left( -x \right) x^{1 /2}dx=\\
+	=&4\pi\sqrt{2} \left( mkT \right) ^{3 /2} \Gamma\left( \frac{3}{2} \right) 
+.\end{align}
+Quindi se reinseriamo i termini davanti alla espressione \footnote{E considerando che l'integrale della $\Gamma\left( 3 / 2 \right)$ fa $\sqrt{\pi}/2$} possiamo riscriverla introducendo una nuova funzione:
+ \[
+	 Z_{IG} = \frac{1}{N!} \frac{V^{N}}{\Lambda^{3N}} = \left( \frac{V}{\Lambda^3} \right)^{N} \frac{1}{N!} 
+.\] 
+dove $\Lambda$ è la lunghezza d'onda termica di De Broglie: 
+\[
+	\Lambda = \frac{2\pi \hbar }{\sqrt{2\pi m kT} }
+.\] 
+Con questa nuova notazione riscriviamo la Z del fluido:
+\[
+	Z = \frac{Q}{N! \Lambda^{3N}}
+.\] 
+Allo stesso modo possiamo scrivere l'energia libera:
+\[
+	F = F_{IG}- NkT \ln V - kT \ln Q
+.\] 
+Estendendo la trattazione al caso in cui il numero di particelle non è conservato tramite $\L$, la funzione di gran partizione può essere scritta:
+\[
+	\L = \sum_{N}^{} \frac{z^{N} Q_{N}}{N! \Lambda^{3N}}
+.\] 
+Nell'ultima abbiamo introdotto la z che è detta fugacità. La fugacità è definita come: 
+\[
+	z = \exp\left( \frac{\mu}{kT} \right) 
+.\] 
+\subsection{Fluttuazioni}%
+Parliamo adesso delle fluttuazioni, abbiamo detto che il nostro metodo funziona nel limite in cui i valori medi ed i più probabili delle nostre grandezze termodinamiche coincidono e che la distribuzione di probabilità sia estremamente piccata nel punto di maggiore probabilità.\\
+Quindi cerchiamo di stimare quali sono il limiti di applicabilità del nostro modello. Indaghiamo inoltre qual'è la probabilità di trovare una fluttuazione: una differenza rispetto al volore medio atteso.\\
+\paragraph{FLuttuazioni dell'energia.}%
+Ad esempio possiamo isolare il nostro sistema, fin'ora all'equilibrio con il bagno termico, misuriamo la sua energia. Ci aspettiamo di trovare sempre la stessa energia tranne qualche fluttuazione che adesso andiamo appunto a stimare. \\
+Abbiamo detto che l'energia totale è
+\[
+	E = \frac{1}{2m}\sum_{1}^{3N} p_{i}^2
+.\] 
+Ipotizziamo adesso di fissare una energia per il sistema. Come abbiamo visto, nello spazio delle fasi, fissare una energia significa fissare una superficie sferica \footnote{Una sfera 3N dimensionale}, il raggio di questa superficie sarà dato da $P^{*}$ tale che:
+\[
+	\left( P^* \right)^2 = 2mE = \sum_{i}^{} p_{i}^2
+.\] 
+La probabilità di trovare il nostro sistema conuna certa energia è la stessa della scorsa lezione:
+\[
+	W\left( E \right) = \frac{1}{Z}\rho\left( E \right) \exp\left( -\frac{E}{kT} \right) 
+.\] 
+dove $\rho\left( E \right)$ è tale che il volume della buccia spessa $\delta E$ intorno alla energia $E$ nello spazio delle fasi che stiamo considerando, questa densità rispetta la relazione:
+\[
+	\rho\left( E \right) \delta E \propto \delta V^*
+.\]
+\begin{figure}[H]
+    \centering
+    \incfig{calcolo-delle-fluttuazioni}
+    \caption{Calcolo delle fluttuazioni: buccia di spessore $\delta E$ nello spazio delle fasi.}
+    \label{fig:calcolo-delle-fluttuazioni}
+\end{figure}
+\noindent
+Quindi se il raggio di tale sfera nello spazio delle fasi è $P^*$ allora possiamo considerare il volume sotteso a tale raggio come  $V^{*}$:
+\[
+	V^* \propto \left( P^* \right)^{3N}
+.\] 
+Se consideriamo un $\delta E$ sufficientemente piccolo allora possiamo sviluppare $\delta V^{*}$:
+\begin{align}
+	\rho\left( E \right) \delta E \propto& \frac{\partial V^*}{\partial E}  \propto\\
+	\propto &\left( P^* \right) ^{3N-1}\frac{\partial P^*}{\partial E} \delta E \propto\\
+	\propto &\left( E^{1 / 2} \right) ^{3N-1}E^{- 1 / 2} \delta E
+.\end{align}
+Dove nell'ultimo passaggio si è sfruttato il fatto che $\left( P^{*} \right) \propto E$. Si ottiene la seguente relazione: 
+\[
+	\rho\left( E \right) \delta E \propto E ^{\frac{3N}{2} -1}\delta E 
+.\] 
+Questo risultato è coerente con il fatto che inserendo una singola particella riotteniamo $\rho\left( E \right) \propto E^{1 /2}$ come discusso nella lezione precedente.\\
+Quindi il nostro $W \left( E \right) $ può essere scritto come:
+\[
+	W\left( E \right)  = C^{N} E^{\left( \frac{3N}{2}-1 \right)}\exp\left( -\frac{E}{kT} \right) 
+.\] 
+La costante $C^{N}$ dipende dal numero di particelle. La si ottiene tramite:
+\[
+	1 = \int W\left( E \right) dE
+.\] Ciò che si otterrebbe da questo conto è molto simile a quanto fatto nel caso di singola particella:
+\[
+	\frac{1}{C^{N}}= \Gamma \left( \frac{3N}{2} \right) \left( kT \right) ^{\frac{3N}{2}}
+.\] 
+e mettendo tutto indieme:
+\[
+	W\left( E \right) = \frac{1}{\Gamma\left( \frac{3N}{2} \right) }\left( \frac{E}{kT} \right) ^{\left( \frac{3N}{2}-1 \right) }\cdot 
+	\frac{1}{kT}\exp\left( -\frac{E}{kT} \right) 
+.\] 
+Il valore più probabile lo avremo quando la probabilità ha un massimo rispetto all'energia, quindi:
+\[
+	0 = \frac{\partial }{\partial E} \left[ W\left( E \right) \right] \propto \frac{\partial }{\partial E} \left[ E^{\frac{3N}{2}-1} \exp\left( -\frac{E}{kT} \right) \right] 
+.\] 
+Risolvendo il problema algebrico di minimo si conclude che il massimo di $W\left( E \right)$ lo si ha per il valore di energia $E_{\text{max}}$ tale che:
+\[
+	E_{\text{max}} = \left( \frac{3N}{2}-1 \right) kT
+.\] 
+Se il nostro modello è corretto questo sarà anche il valore per cui la nostra distribuzione $W\left( E \right)$ è particolarmente piccata. \\
+Cerchiamo di caratterizzare tale distribuzione, il valore medio dell'energia si trova con:
+\[
+	\overline{E} = \int E W\left( E \right) dE = C_{N} \int E^{\frac{3}{2}N}\exp\left( -\frac{E}{kT} dE \right) 
+.\] 
+Cambiando variabili come nel caso di singola particella ($E /( kT )=x$), questa volta si ottiene:
+\[
+	\overline{E} = C_{N} \left( kT \right) ^{\frac{3}{2}N-1} \Gamma \left( \frac{3}{2}N +1 \right) = \frac{3}{2}N kT
+.\] 
+Quindi nel limite $N\gg 1$ energia media e massimo della distribuzione coincidono. Non si può dire lo stesso per $N= 1$.
+\begin{figure}[H]
+    %This is a custom LaTeX template!
+    \centering
+    \incfig{andamento-della-distribuzione-di-energia-al-variare-di-n}
+    \caption{\scriptsize Andamento della distribuzione di energia al variare di N, notiamo che nella funzione scritta al centro nel caso di una singola particella si scrive con $\mathcal{E}$, non con $E$.}
+    \label{fig:andamento-della-distribuzione-di-energia-al-variare-di-n}
+\end{figure}
+\noindent
+Abbiamo già scoperto un limite della nostra trattazione, possiamo applicare il modello termodinamico di passaggio al continuo dell'energia solo nel caso di sistemi aventi $N \gg 1$. Altrimenti la distribuzione in energia non può essere considerata "piccata". Ci concentriamo allora adesso su sistemi aventi un grande numero di particelle per poter procedere con la nostra trattazione.\\
+Cerchiamo di quantificare le fluttuazioni: possiamo vedere le fluttuazioni come la larghezza della curva piccata. Per far questo semplifichiamo la notazione sul valore medio: $\overline{E} = E$.
+\[
+	E =  \overline{E} = \int E W( E ) dE
+.\] 
+Quindi l'energia del sistema che misuriamo una volta staccato dal bagno termico la chiamiamo $\mathcal{E}$ \footnote{La notazione è cambiata rispetto alla scorsa lezione: adesso questa $\mathcal{E}$ è l'energia totale del sistema misurata, non l'energia della singola particella.}, ed è vero anche che $\overline{\mathcal{E}}= E$. La fluttuazione in questa notazione si scrive come:
+\[
+	\Delta E = \mathcal{E}- E 
+.\] 
+facendo il valore medio di $\Delta E $ otteniamo zero, quindi facciamone il valor medio quadro:
+\[
+	\overline{\left( \Delta E \right) ^2} = \overline{\left( \mathcal{E} - E \right)^2 } = \overline{\mathcal{E}^2- 2\mathcal{E} E + E^2}= 
+	\overline{\mathcal{E}^2} - 2 E^2 + E^2 = \overline{\mathcal{E}^2} - E^2
+.\] 
+Risultato in linea con le basi di statistica. \\
+Il valore $\overline{\mathcal{E}^2}$ è dato da:
+\[
+	\overline{\mathcal{E}^2} = \int \mathcal{E}^2 W( \mathcal{E}) d\mathcal{E}
+.\] 
+Potremmo metterci a fare il conto direttamente con l'energia, tuttavia possiamo utilizzare un metodo più facile che consiste nel considerare la funzione di partizione. Visto che la funzione di partizione è la somma di tutte le probabilità essa tiene di conto della forma della distribuzione di energia. Inoltre ha un legame molto utile con l'energia libera, procediamo quindi a calcolarla. Nella approssimazione continua tale funzione prende la forma:
+\[
+	Z = \int\rho\left( \mathcal{E} \right) \exp\left( -\frac{\mathcal{E}}{kT} \right) d\mathcal{E}
+.\] 
+Con l'energia libera che si scrive in funzione di Z:
+\[
+	F = -kT \ln Z
+.\]
+Facciamo la derivata seconda di questa funzione rispetto alla temperatura:
+\begin{align}
+	\frac{\partial ^2 F}{\partial T^2} =& \frac{\partial ^2}{\partial T^2} \left( -kT \ln Z \right) =\\
+	=&\frac{\partial }{\partial T} \left( -k\ln Z -kT \frac{1}{Z} \frac{\partial Z}{\partial T}  \right) =\\
+	=&-k \frac{1}{Z}\frac{\partial Z}{\partial T} 
+		- k \frac{1}{Z}\frac{\partial Z}{\partial T} 
+		+ kT \frac{1}{Z^2}\left( \frac{\partial Z}{\partial T}  \right) ^2 
+		- \frac{kT}{Z}\frac{\partial ^2 Z}{\partial T^2} 
+.\end{align}
+Quindi inserendo la Z scritta sopra e facendone le derivate \footnote{Provando si nota che la derivata seconda della Z è nulla.} otteniamo:
+\[
+	\frac{\partial ^2 F}{\partial T^2} = \frac{1}{kT^3} 
+	\left[
+		\frac{\left( \int \mathcal{E}\rho(\mathcal{E})\exp\left( -\frac{\mathcal{E}}{kT}  \right)d\mathcal{E} \right)^2  }{Z^2}  
+		- \frac{1}{Z}\int \mathcal{E}^2\rho\left( \mathcal{E} \right) \exp\left( - \frac{\mathcal{E}}{kT} \right)d\mathcal{E}  
+	\right]
+.\] 
+Riconosciamo i due termini nell'integrale, formano proprio la differenza che stavamo cercando: le fluttuazioni \footnote{A meno di un segno.}.
+\[
+	\frac{\partial ^2 F}{\partial T^2} = \frac{E^2-\overline{\mathcal{E}^2}}{kT^3}
+.\] 
+Quindi ricordando come si definisce la \hyperref[eq:capacita-termica]{Capacità termica} a volume costante si ottiene anche che: 
+i
+\[
+	\overline{\left( \Delta E \right) ^2} = -kT^3 \frac{\partial ^2 F}{\partial T^2} = kT^2 C_{v}
+.\] 
+Inoltre ricordando che abbiamo derivato sia l'energia media:
+\[
+	E = \frac{3}{2}N kT
+.\] 
+Che la capacità termica:
+\[
+	C_{v} = \left.\frac{\partial E}{\partial T} \right|_{V} =  \frac{3}{2}Nk
+.\] 
+Possiamo calcolarci la fluttuazione e normalizzarla sull'energia media:
+\[
+	\frac{\sqrt{\overline{\left( \Delta E \right) ^2}} }{E} = \frac{\sqrt{kT^3 \frac{3}{2}Nk} }{\frac{3}{2}NkT} = \frac{\sqrt{N} }{\sqrt{\frac{3}{2}}N}\sim \frac{1}{\sqrt{N} }
+.\] 
+L'ampiezza relativa delle fluttuazioni scala come $N^{-1 /2 }$. coerente con il fatto che la larghezza della distribuzione decresce con il numero di particelle.\\
+\paragraph{Fluttuazioni del numero di particelle.}%
+Potremmo assumere che il nostro sistema possa scambiare particelle con il bagno termico, in tal caso potremmo calcolare l'andamento delle fluttuazioni del numero di particelle. 
+Per calcolare questa fluttuazione si procede in modo del tutto analogo a quanto fatto con l'energia ma si considera (anzichè l'energia libera) il \hyperref[eq:potenziale-Landau1]{Potenziale di Landau} \footnote{Naturalmenta a P e V costanti.} facendo la derivata rispetto al Potenziale chimico.
+\[
+	\left( \frac{\partial ^2 \Omega}{\partial \mu^2}  \right)  = \frac{\partial ^2}{\partial \mu^2} \left[ -kT \ln \left( \sum_{\alpha}^{} \exp\left( -\frac{E_{\alpha}-\mu N_{\alpha}}{kT} \right)  \right)  \right] 
+.\] 
+Quindi analogamente a sopra si ottiene:
+\[
+	\frac{\partial ^2\Omega}{\partial \mu^2} = -\frac{1}{kT}\left( \overline{N_{\alpha}^2}- N^2 \right) \implies
+	\overline{\left( \Delta N \right) ^2} = - kT \left( \frac{\partial ^2\Omega}{\partial \mu^2}  \right) _{T,V}
+.\] 
+visto che il numero medio di particelle è definito da:
+\[
+	N = -\left.\frac{\partial \Omega}{\partial\mu} \right|_{T,V}
+.\] 
+Riscriviamo la fluttuazione di particelle come:
+\[
+	\overline{\left( \Delta N \right) ^2} = kT \left.\frac{\partial N}{\partial \mu} \right|_{T,V}
+.\] 
+Ricordiamo che $\mu$ è una funzione di (P,T), e le sue derivate ci permettono di scrivere, introducento la densità di particelle come $\rho = N /V$: 
+\[
+	\left.\frac{\partial \mu}{\partial N} \right|_{T,V} = \frac{1}{N}\left( \frac{\partial P}{\partial \rho}  \right) _{T,V}
+.\] 
+Ma $\left.\frac{\partial P}{\partial \rho} \right|_{T,V}$ è legato alla $k_{T}$ :
+\[
+	k_{T} = \frac{1}{V}\left( \frac{\partial V}{\partial P}  \right) _{T} = \frac{1}{\rho}\left( \frac{\partial \rho}{\partial P}  \right) _{T}
+.\] 
+quindi si ha:
+\[
+	\overline{\left( \Delta N \right) ^2}= NkT \rho k_{T}
+.\]
+Con una fluttuazione relativa:
+\[
+	\frac{\sqrt{\overline{\left( \Delta N \right) ^2}} }{N} = \frac{kT}{V}k_{T}
+.\] 
+\paragraph{Esempio: gas ideale}%
+Nel caso di gas ideale si ha $PV=NkT$, quindi la compressibilità si ottiene tramite:
+\[
+	k_{T} =- \frac{1}{V}\frac{\partial }{\partial P} \left( \frac{NkT}{P} \right) = \frac{NkT}{P^2V}=   \frac{1}{P} 
+.\] 
+Che sostituito nella fluttuazione relativa ci da lo stesso risultato che abbiamo ottenuto per la energia:
+\[
+	\frac{\sqrt{\overline{\left( \Delta N \right) ^2}} }{N} = \frac{1}{\sqrt{N} }
+.\] 
+Quindi la fluttuazione di energia relativa e la fluttuazione di particelle relativa vanno allo stesso modo nel caso di gas ideale.\\
+Notiamo che concettualmente le due fluttuazioni sono diverse, per la fluttuazione di energia abbiamo trovato tale quantità fissando volume e numero di particelle, nel secondo caso abbiamo fissato soltanto il volume. Tuttavia nel secondo caso oltre alla variazione del numero di particelle ci sara anche una variazione in energia e quindi una fluttuazione dell'energia del sistema!\\
+Non possiamo assumere che quest'ultima fluttuazione sia la stessa che nel caso in cui il numero di particelle sia fissato perchè altrimenti la variazione del numero di particelle non influirebbe con la variazione di energia e questo risulta impossibile in generale \footnote{Ad esempio quando interagiscono l'una con l'altra tramite un potenziale l'energia dipende dal numero di particelle interagenti.}.\\
+Spesso troveremo fluttuazioni di quantità termodinamiche strettamente connesse tra loro, questo giocherà a nostro favore perchè potremo ricavare l'una dall'altra. Un esempio è la fluttuazione di temperatura.
+\paragraph{Fluttuazioni della temperatura}%
+Per un sistema con numero di particelle e volume costante si ha:
+\[
+	\Delta T = \left.\frac{\partial T}{\partial E} \right|_{V,N}\Delta E= \frac{\Delta E}{c_{V}}
+.\] 
+\[
+	\overline{\left( \Delta T\right) ^2} = \frac{kT^2}{c_{V}}
+.\] 
+\subsection{Fluttuazioni dipendenti ed indipendenti}%
+Possiamo anche trovare delle espressioni più generali per le fluttuazioni partendo dallo sviluppo gaussiano delle distribuzioni discusso nella \hyperref[eq:Gauss-approx]{Lezione 4}. \\
+Supponiamo ci interessi trovare il nostro sistema in una determinata grandezza fisica x e di voler prevedere le fluttuazioni del sistema dal valore centrale di quella grandezza. Dobbiamo partire dalla dipendenza dell'entropia da quella variabile x e sviluppiamo al secondo ordine. Con questo procedimento si arriva alla espressione Gaussiana della lezione sopra citata.\\
+Supponiamo per semplicità di metterci nella situazione $\overline{x} = 0 $, in questo modo il valor medio di $x^2$ sarà già il valor medio della fluttuazione:
+\[
+	\overline{x^2}= \sqrt{\frac{B}{2\pi}} \int_{-\infty}^{\infty} x^2 \exp\left( -\frac{1}{2}\beta x^2 \right) dx = \frac{1}{\beta}
+.\] 
+Questa è la trattazione da cui partiamo, vediamo se si riesce a dare una formulazione generale della ampiezza delle fluttzioni che ci permetta anche di individuare quali fluttuazioni sono correlate l'una all'altra e quali invece sono indipendenti.\\
+Partiamo dalla probabilità di avere la fluttuazione \footnote{Adesso la fluttuazione è proprio $\Delta x = x - \overline{x} = x$}: 
+\[
+	W\left( x \right) \propto \exp\left( \frac{\Delta S_{t}\left( x \right) }{k} \right) 
+.\] 
+Dove $\Delta S_{t}\left( x \right) = S_{t}\left( x \right) - S_{t}\left( 0 \right) $, con $S_{t} = S + S'$ entropia dell'universo. \\
+La variazione di entropia del bagno termico può essere calcolata, visto che lui resta sempre all'equilibrio nelle nostre approssimazioni. Questa sarà:
+\[
+	\Delta S ' = \frac{\Delta E' + P \Delta V'}{T} = 
+	- \frac{\Delta E + P \Delta V}{T}
+.\]
+Questo perchè l'universo in considerazione è isolato, quindi le quantità complessive del sistemino con il bagno termico si devono conservare. Avendo l'entropia del bagno termico possiamo calcolare l'entropia dell'universo: $\Delta S_{t} = \Delta S + \Delta S'$\\
+Quindi la probabilità di avere questa fluttuazione di energia e volume sarà proporzionale a:
+\[
+	W \ \alpha \ \exp\left( - \frac{\Delta E -T \Delta S + P \Delta V}{kT} \right) 
+.\] 
+Visto che $W$ ha valore massimo nella posizione di equilibrio possiamo sviluppare $\Delta E$ al secondo ordine attorno al valore più probabile :
+\[
+	\Delta E = \frac{\partial E}{\partial S} \Delta S  
+	+ \frac{\partial E}{\partial V} \Delta V 
+	+ \frac{1}{2} \frac{\partial ^2 E}{\partial S^2} \left( \Delta S \right) ^2 
+	+ \frac{\partial ^2 E}{\partial S \partial V} \Delta S \Delta V
+	+  \frac{1}{2} \frac{\partial ^2E}{\partial V^2} \left( \Delta V \right) ^2 
+.\] 
+Ci sono molti termini che possono essere riscritti come variabili termodinamiche: 
+\[
+	\frac{\partial E}{\partial S} = T
+.\] 
+\[
+	\frac{\partial E}{\partial V} = -P
+.\] 
+Di conseguenza nell'espansione dell'esponenziale i termini al primo ordine vanno via e rimane solo la dipendenza dal secondo ordine:
+\begin{align}
+	\Delta E - T \Delta S + P \Delta V = &
+	\frac{1}{2}\left[
+		\frac{\partial ^2 E }{\partial S^2} \left( \Delta S \right) ^2 +
+		2 \frac{\partial ^2 E}{\partial S \partial V} \Delta S \Delta V  +
+		\frac{\partial ^2 E}{\partial V^2} \left( \Delta V \right) ^2
+	\right] =\\
+	=&\frac{1}{2}\left[ 
+		\Delta S \left( 
+			\frac{\partial ^2E}{\partial S^2} \Delta S +
+			\frac{\partial ^2E}{\partial S \partial V}\Delta V  
+		\right) 
+		+ \Delta V \left( 
+			\frac{\partial ^2 E}{\partial S \partial V} \Delta S + 
+			\frac{\partial ^2 E }{\partial V^2} \Delta V 
+		\right) 
+	\right] 
+.\end{align}
+Il termine nella prima parentesi tonda è la variazione della derivata di $E$ rispetto a  $S$, Quello nella seconda parentesi tonda invece è la variazione della derivata di E rispetto a V, allora rimane:
+\[
+	\Delta E - T \Delta S + P \Delta V = 
+	\Delta S \Delta\left( \frac{\partial E}{\partial S}  \right) + \Delta V \Delta \left( \frac{\partial E}{\partial V}  \right) =
+	\Delta S \Delta T - \Delta V \Delta P
+.\] 
+Reinserendo nell'esponenziale per $W$ si ha:
+\[
+	W \ \alpha \ \exp\left( -\frac{\Delta T \Delta S - \Delta P \Delta V}{2kT} \right) 
+.\] 
+Abbiamo ottenuto una espressione di quattro variabili termodinamiche, tuttavia noi sappiamo che ne bastano due per descrivere l'intero sistema. Usando le relazioni di Maxwell o i calori specifici possiamo trovare ad esempio quanto valgono $\Delta P$ e $\Delta S$ in funzione di $\Delta T$ e $\Delta V$:
+\[
+	\Delta T \Delta S - \Delta P \Delta V = 
+	\frac{c_{V}}{T}\left( \Delta T \right) ^2 + \frac{1}{Vk_{T}}\left( \Delta V \right) ^2
+.\] 
+Quindi la probabilità di avere una fluttuazione $\Delta T$ e $\Delta V$ è proporzionale a: 
+\[
+	W\left( \Delta T, \Delta V \right) \propto \exp\left[ -\frac{c_{V} \left( \Delta T \right)^2 }{2kT^2}- \frac{\left( \Delta V \right) ^2}{2kTVk_{T}} \right]
+.\] 
+Abbiamo il prodotto di due Gaussiane indipendenti! Quindi possiamo fattorizzare la distribuzione nel prodotto di due distribuzioni, qundi facendo il calcolo del valor medio un pezzo diventa unitario, l'altro invece da il valore cercato:
+\[
+	\overline{\left( \Delta T \right) ^2} = \frac{kT^2}{c_{V}}
+.\] 
+\[
+	\overline{\left( \Delta V \right) ^2} = kTVk_{T}
+.\] 
+Inoltre abbiamo anche l'informazione che le fluttuazioni su $T$ e $V$ sono scorrelate \footnote{Nel sistema in cui può variare tutto.}:
+\[
+	\overline{\left( \Delta T \right) \left( \Delta V \right) }= 0
+.\] 
+In modo analogo, se avessimo usato altre relazioni avremmo ottenuto che $P$ ed $S$ sono indipendenti.
+\[
+	\overline{\left( \Delta S \right) ^2} = kC_{P}
+.\] 
+\[
+	\overline{\left( \Delta P \right) ^2} = - \frac{kT}{V}k_{S}
+.\] 
+Tipicamente variabili intensive ed estensive sono indipendenti l'una dall'altra.

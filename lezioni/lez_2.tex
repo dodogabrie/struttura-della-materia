@@ -1,0 +1,355 @@
+\lez{2}{19-02-2020}{}
+Nella scorsa lezione abbiamo introdotto i \textit{sistemi all'equilibrio} (con le relative due ipotesi di lavoro), l'entropia ed i potenziali termodinamici.\\
+Concentriamoci adesso su una delle equazioni dei potenziali termodinamici: quella della temperatura.
+\subsection{Temperatura}
+Abbiamo visto nella scorsa lezione che \[
+	T = \left.\frac{\partial E}{\partial S} \right|_{V,N}
+.\] 
+Cerchiamo di capire il significato fisico della quantità a destra nella equazione.\\
+La temperatura ci permette di valutare la possibilità che un corpo scambi energia con altri sistemi.\\
+Prendiamo due sistemi isolati:\\
+\begin{figure}[H]
+    \centering
+    \incfig{due-sistemi-isolati}
+    \caption{Due sistemi isolati}
+    \label{fig:due-sistemi-isolati}
+\end{figure}
+\noindent Dove $\Gamma_{i}$ è il numero di configurazioni possibili (microstati) di ciascun sistema.\\
+Il numero totale di configurazioni possibili quando i due corpi sono staccati sarà (semplici regole di probabilità):
+\[
+	\Gamma_{T} = \Gamma_1\cdot  \Gamma_2
+.\] 
+L'energia totale invece:
+\[
+	E_{T}= E_1+E_2
+.\] 
+Mettiamo adesso a contatto i due sistemi: la temperatura iniziale dei due sistemi sarà indice del flusso di energia che scorre tra questi ultimi. Ad esempio se non c'è flusso di energia se le due temperature sono le stesse. 
+\begin{figure}[H]
+    \centering
+    \incfig{sistemi-collegati}
+    \label{fig:sistemi-collegati}
+\end{figure}
+\noindent Ipotizziamo che dopo un tempo $t$ stacchiamo nuovamente i corpi, vogliamo vedere cosa avviene a $\Gamma_{T}$ dopo la separazione una volta raggiunto un nuovo equilibrio. Per generalità diciamo che alla fine del processo tutte le variabili di stato elencate in \hyperref[fig:due-sistemi-isolati]{Figura 2} sono primate (esempio: $T_1'$).\\
+Prendiamo ad esempio l'energia finale dei due sistemi: $E_1', \ E_2'$, entrambe avranno una certa probabilità di esistere quando i sistemi sono nuovamente staccati. Tale probabilità sarà proporzionale al numero di microstati che esistono con tali energie per ciascun sistema: $\Gamma_1', \ \Gamma_2'$.\\ 
+Quindi la probabilità di trovare il primo sistema con l'energia $E_1'$ ed il secondo con l'energia $E_2'$ sarà proporzionale a $\Gamma_1'\cdot \Gamma_2'$.\\
+Quindi quando li stacco l'energie più probabili sono quelle che massimizzano il prodotto tra i microstati corrispettivi: $\Gamma_1'\cdot \Gamma_2'$.\\
+L'entropia del sistema sarà allora:
+\[
+	S' = k \ln \Gamma_1'\cdot \Gamma_2'
+.\] 
+O in alternativa:
+\[
+	S' = S_1' + S_2'
+.\] 
+Come conseguenza della prima equazione l'entropia dopo la separazione sarà la massima possibile!\\
+Supponiamo che vi sia una differenza di energia tra istante finale ed istante iniziale per ogni sistema, possiamo esprimerla come:
+\begin{align}
+	&\delta E_1= E_1'-E_1 = T_1 \delta S_1\\
+	&\delta E_2 = E_2' - E_2 = T_2 \delta S_2
+.\end{align}
+L'ultima uguaglianza deriva dal fatto che possiamo considerare variazioni infinitesime e applicare la prima equazione di questa sezione.\\
+Essendo tutto isolato dall'esterno si ha anche che:
+\[
+	\delta \left( E_1 + E_2 \right) = 0 \implies \delta E_1 = - \delta E_2
+.\] 
+E sostituendo con quanto ottenuto sopra:
+\[
+	T_1 \delta S_1 + T_2 \delta S_2 = 0
+.\] 
+Cerchiamo adesso la configurazione in cui non c'è stato flusso di energia durante il contatto: tale configurazione sarà quella per cui l'entropia prima del contatto era già su un massimo. Di conseguenza in questa situazione:
+\[
+	\delta S = \delta S_1 + \delta S_2 = 0
+.\] 
+Di conseguenza non vi è flusso di energia proprio quando le temperature dei due corpi erano inizialmente le stesse:
+\[
+	T_1 = T_2
+.\] 
+Allo stesso modo possiamo imporre $\delta S\ge 0$ e vedere che in tal caso $\delta E_{i}$ sarà positivo per un corpo e negativo per l'altro e quindi dedurre una disuguaglianza tra le due temperature iniziali.
+
+\begin{framed}
+\noindent \textbf{Nota}: \\
+Potremmo fare gli stessi ragionamenti
+\begin{itemize}
+	\item per la pressione: prendiamo due sistemi isolati e li mettiamo a contatto, adesso questi due potranno scambiare volume.
+	\item per il potenziale chimico $\mu$: prendiamo due sistemi isolati e mettiamoli a contatto, apriamo poli tra le membrane per permettere lo scambio di sole particelle.
+\end{itemize}
+\end{framed}
+\noindent 
+Se fossimo in grado di calcolare il $\Gamma$ saremmo in grado di calcolare $E\left( S \right)$, di conseguenza potremmo sapere tutto del nostro sistema, infatti:
+\[
+	T\left( S,V,N \right)  = \left.\frac{\partial E}{\partial S} \right|_{V,N}
+.\] 
+\[
+	- P \left( S,V,N \right) = \left.\frac{\partial E}{\partial V} \right|_{S,V}
+.\] 
+Dalla prima possiamo ricavare $S\left( T \right)$ ed inserirla nella seconda ottenendo $P\left( T,V,N \right)$. Nel caso dei gas perfetti si ottiene proprio l'equazione di stato $P\cdot V = nRT$.\\
+Il metodo esposto, per quanto ragionevole, non è affatto pratico. Tuttavia ci dà molte informazioni su come procedere operativamente in varie situazioni, ad esempio se abbiamo il numero di particelle ci bastano due variabili per descrivere il sistema (ad esempio V e T).\\ 
+\paragraph{Indeterminazione dell'energia}%
+Nel ragionamenti per mostrare che la temperatura si comporta effettivamente come ci aspettiamo ci siamo persi qualche passaggio.\\ 
+Siamo partiti da due sistemi all'equilibrio con ciascuno le sue variabili di stato, anche solo considerando $T_1= T_2$ (quindi mettendoli a contatto anche dal punto di vista macroscopico non succede niente) dopo "l'interazione" ci siamo persi la variabile di stato energia: non sarà più unicamente determinata per i due corpi ma avrà una distribuzione (che massimizza il prodotto $\Gamma_1\cdot \Gamma_2$), quindi qualcosa è cambiato!\\ 
+Siamo quindi passati da energie ben definite e fissate a quelle più probabili: abbiamo introdotto una indeterminazione.\\
+Fortunatamente per sistemi macroscopici la configurazione che massimizza l'entropia è più probabile di tutte le altre configurazioni messe insieme, questo giustifica il nostro ragionamento ed il fatto che consideriamo le energie finali unicamente definite.\\
+In realtà abbiamo indeterminazione anche nell'energia di partenza, questa non viene dal nulla: è stata passata ai corpi in qualche istante molto precedente a quello considerato. Quindi anche le energie iniziali non sono in realtà semplici numeri ma distribuzioni, proprio come le energie finali.\\
+Abbiamo inoltre una ulteriore indeterminazione nel conto del $\Gamma$: il fatto che il nostro sistema non ha nemmeno una energia ben definita per via della meccanica quantistica. \\
+Abbiamo dato come necissità che il nostro sistema possa passare da uno stato ad un altro, anche se le particelle non interagiscono, allora il nostro microstato quantistico del sistema ha un tempo di vita media $\tau$, quindi per il principio di indeterminazione:
+\[
+	\delta E \gtrsim \frac{\hbar}{\tau}
+.\] 
+Anche l'energia stessa avrà quindi una indeterminazione aggiuntiva dovuta alla meccanica quantistica, questo comporta un problema nel calcolo di $\Gamma$.
+Fortunatamente le incertezze introdotte dalla meccanica quantistica nei conti termodinamici non contano molto grazie alla definizione di entropia:
+\[
+	S = k \ln\Gamma
+.\] 
+Il numero di configurazioni entra con un logaritmo, sbagliando di un'ordine di grandezza su $\Gamma$ sbaglio di un fattore misero il conto dell'entropia.\\
+C'è un altro modo per aggirare il problema dell'indeterminazione dell'energia (utile perchè maggiormente applicabile a sistemi non isolati \footnote{tratteremo in genere sistemi che sono all'equilibrio termico con il mondo che li circonda}).
+Sarà utile a questo scopo la funzione 
+\[
+	\rho_{E} = \frac{\mbox{d} \Gamma}{\mbox{d} E} 
+.\] 
+Ovvero la densità di stati in energia, piuttosto che $\Gamma$. La funzione $\rho_{E}$ ci dice quanti stati ci sono per unità di energia.
+\begin{framed}
+\noindent \textbf{Nota}: \\
+Stiamo implicitamente assumendo che l'entropia S non sia nulla: in tal caso avremmo un solo stato accessibile al sistema, il sistema si trova necessariamente nello stato fondamentale.
+Analogamente se il sistema ha temperatura nulla, in tal caso il sistema non può cedere energia al mondo esterno, quindi è necessariamente nel fondamentale.
+\end{framed}
+\noindent 
+Torniamo ai nostri due oggetti di temperatura diversa, il sistema è un genere fuori equilibrio globalmente ma possiamo considerarlo composto (localmente) a tanti piccoli sistemi che sono localmente all'equilibrio. Per questi sistemi locali sono ben definiti i concetti di entropia, temperatura, ecc\ldots
+\begin{framed}
+\noindent \textbf{Nota}: \\
+Il concetto di equilibrio non è una configurazione fissa e immutabile: il sistema, raggiunto l'equilibrio, sarà soggetto a fluttuazioni attorno ad una configurazione media. Il concetto di equilibrio è quindi un concetto dinamico.
+\end{framed}
+\noindent 
+\subsection{Principi classici della termodinamica sotto l'ottica statistica}
+Vediamo adesso il rapporto tra gli argomenti visti ed i principi classici della termodinamica.
+\paragraph{Principio 1}%
+La variazione di energia è data dal calore scambiato dal sistema più il lavoro fatto dal sistema.
+\[
+	dE = dQ + dL
+.\] 
+Affrontiamo adesso una \textit{Trasformazione adiabatica}.
+Prendiamo il classico esempio del pistone:
+\begin{figure}[H]
+    \centering
+    \incfig{cilindro-con-pistone}
+    \caption{Cilindro con pistone}
+    \label{fig:cilindro-con-pistone}
+\end{figure}
+\noindent Supponiamo di spostare il pistone del tratto infinitesimo $\Delta x$, questo richiede una forza $F$. Il lavoro fatto sul sistema sarà 
+ \[
+	dL = F \Delta x
+.\] 
+d'altra parte la pressione è definita da
+\[
+	P = \frac{F}{A}
+.\] 
+Quindi 
+\[
+	dL = P\left( A \Delta x \right) = -PdV
+.\] 
+Se il sistema è rimasto isolato per tutta la durata della spinta del pistone si ha che $dQ=0$, quindi:
+\[
+	\left.\frac{\mbox{d} E}{\mbox{d} V}\right|_{Q} = -P
+.\] 
+Confrontandolo con il differenziale dell'energia:
+\[
+	dE = TdS - P dV + \mu dN
+.\] 
+Sembrerebbe che una trasformazione adiabatica sia una trasformazione isoentropica \footnote{dN non varia perchè ipotizziamo che il cilindro non abbia perdite di particelle dalle pareti}. Diamone una interpretazione statistica.\\
+Prendiamo un sistema che si trova in un macrostato con energia E, entropia S, N, V ecc\ldots e scriviamo i livelli energetici delle sue singole molecole, ad esempio:
+\begin{figure}[H]
+    \centering
+    \incfig{distribuzione-livelli-molecole}
+    \label{fig:distribuzione-livelli-molecole}
+\end{figure}
+\noindent
+Se facciamo la trasformazione adiabatica molto lentamente quello che facciamo è semplicemente spostare i livelli verso l'alto (aumentiamo l'energia di ogni singolo livello), senza modificarne la struttura.
+\begin{figure}[H]
+    \centering
+    \incfig{livelli-energetici-alzati}
+    \label{fig:livelli-energetici-alzati}
+\end{figure}
+\noindent
+Quindi il numero di livelli ed il numero di configurazioni possibile resta lo stesso, da cui la conservazione dell'entropia iniziale.\\
+Vediamo adesso il processo speculare: una trasformazione con il \textit{solo scambio di calore}. \\
+Non essendoci lavoro sul sistema si ha, dal primo principio:
+\[
+	dE = dQ = TdS
+.\] 
+\paragraph{Principio 2}%
+Il sistema fuori equilibrio termodinamico tende ad evolvere verso una configurazione che massimizza l'entropia.
+\paragraph{Principio 3}%
+Tutti i corpi a temperatura uguale zero hanno entropia nulla.\\
+\begin{framed}
+\noindent \textbf{Nota}: \\
+Temperatura nulla significa che il nostro sistema non è in grado di cedere energia ad un altro sistema, quindi il sistema si trova nello stato fondamentale (minima energia) e per definizione in questo stato l'entropia è nulla. Ma entropia nulla significa che $\Gamma=1$, questo vuol dire che lo stato fondamentale non può essere degenere.
+\end{framed}
+\noindent 
+
+\paragraph{Estensione del concetto di variabili termodinamiche}%
+Partiamo da un sistema con un numero di particelle fissato, l'energia diventa una semplice funzione di S e V
+\[
+	dE = TdS - PdV
+.\] 
+\begin{framed}
+\noindent \textbf{Nota}: \\
+Nella equazione precedente abbiamo due termini accoppiati a destra: la temperatura è accoppiata con l'entropia e la pressione con il volume.\\
+Le grandezze così accoppiate come quelle sopra sono dette in termodinamica \textit{Grandezze Coniugate} e tipicamente sono una estensiva ed una intensiva.
+\begin{itemize}
+	\item Grandezza estensiva: raddoppiando le dimensioni del sistema raddoppia anche la grandezza (Volume, Entropia).
+	\item Grandezza intensiva: Grandezze che non ci diconon nulla sulla dimensione del sistema (Temperatura, Pressione).
+\end{itemize}
+\end{framed}
+\noindent 
+Se riusciamo a scrivere $E\left( S,V,N \right)$ abbiamo risolto il problema termodinamico, (S,V, N) sono dette in generale le variabili proprie del sistema. Nel nostro caso ci bastano (S,V) perchè abbiamo fissato il numero di particelle. \\
+Potremmo dire lo stesso con (T,V)? No, non sono sufficienti, non hanno abbastanza informazioni.\\
+Abbiamo allora un problema sperimentale: l'entropia non è facilmente misurabile, dobbiamo definire l'energia a partire da oggetti che possano essere misurati con semplicità. Sulla base di questo problema nascono gli altri potenziali termodinamici. 
+\subsection{Utili potenziali termodinamici}
+\paragraph{Energia libera di Halmotz}%
+\[
+	F = E - TS
+.\] 
+Differenziando questa quantità si ottiene:
+\[
+	dF = -SdT - PdV
+.\] 
+Quindi F = $F\left( T,V \right)$ e si ricava facilmente che:
+\[
+	F\left( T,V \right) \implies 
+	\begin{cases}
+	S = - \left.\frac{\partial F}{\partial T} \right|_{V} \\ 
+		\\
+	P = - \left.\frac{\partial F}{\partial V} \right|_{T}
+	\end{cases}
+.\] 
+Questa è molto utile per studiare sistemi non isolati e mantenuti ad esempio a temperatura T.\\
+Si può inoltre verificare che 
+\[
+	\left.\delta F\right|_{T} = -P \left.\delta V\right|_{T} = \delta L
+.\] 
+F ci toglie il problema di trovare l'entropia del sistema e capire come è legata all'energia (che è complicato). Sfortunatamente con F ci perdiamo la connessione con il numero di microstati, quindi questa legge è utile al livello macroscopico ma è complicato poi trarne conclusioni a livello microscopico.
+\paragraph{Energia libera di Gibbs}%
+\[
+	\phi = F + PV
+.\] 
+\[
+	d\phi = -SdT + VdP
+.\] 
+Quindi si ricavano le relazioni:
+\begin{align}
+	&S = -\left.\frac{\partial \phi}{\partial T}\right|_{P}\\
+	&V = \left.\frac{\partial \phi}{\partial P} \right|_{T}
+.\end{align}
+Questa è utile se si va a studiare l'equilibrio tra fasi diverse (esempio: evaporazione di un liquido: Avremo curve caratteristiche in pressione quando andiamo ad imporre che il $\phi$ del liquido sia uguale al $\phi$ del gas).\\
+\paragraph{Entalpia}%
+\[
+	W = \phi + TS
+.\] 
+\[
+	dW = TdS + VdP
+.\] 
+Quindi si hanno le relazioni:
+\begin{align}
+	&T = \left.\frac{\partial W}{\partial S}\right|_{P}\\
+	&V = \left.\frac{\partial W}{\partial P} \right|_{S}
+.\end{align}
+e si ha anche:
+\[
+	 \left.\delta W\right|_{P} = T \left.\delta S\right|_{P}= \left.\delta Q\right|_{P}
+.\] 
+In questa abbiamo uno scambio di calore a pressione costante, è nota come funzione del calore.\\
+Alle volte è comodo non passare direttamente dai potenziali termodinamici ma fare delle derivate seconde incrociate, ad esempio:
+\[
+	\left.\frac{\partial P}{\partial T} \right|_{V}=
+	\left.\frac{\partial }{\partial T} \left.\left( -\frac{\partial F}{\partial V}\right|_{T}  \right) \right|_{V}
+	= -\left.\frac{\partial }{\partial V}\left(  \left.\frac{\partial F}{\partial T} \right|_{V}  \right) \right|_{T} =
+	-\left.\frac{\partial S}{\partial V} \right|_{T} 
+.\] 
+E in questo modo possiamo trovare delle utili relazioni dette \textit{Relazioni di Maxwell}.\\
+Effettuando una \textit{Trasformazione di scala} (vedi Goldstein) si conclude che:
+\[
+	d\mu = - \frac{S}{N}dT + \frac{V}{N}dP 
+.\]
+Quindi abbiamo che:
+\[
+	\phi\left( P,T \right) = \mu N
+.\] 
+e possiamo concludere un'altra importante relazione tra i potenziali termodinamici:
+\[
+	\left.\delta E\right|_{S,V} = \left.\delta F\right|_{T,V} = \left.\delta \phi\right|_{T,P} = \left.\delta W\right|_{S, P}
+.\] 
+\paragraph{Potenziale di Landau}%
+\[
+	\Omega = F - \mu N
+.\] 
+\[
+	d\Omega = -SdT - PdV - Nd\mu
+.\] 
+Si dimostra anche che $\Omega = -PV$ e che:
+\[
+	\left.\delta \Omega\right|_{T,V,\mu} = \left.\delta E\right|_{S, V, N}= \ldots
+.\] 
+Rivediamo adesso il nostro principio variazionale e la nostra posizione di equilibrio studiando un caso specifico:
+\paragraph{Corpo immerso in un bagno termico}%
+Consideriamo un sistema immerso in un bagno termico (un sistema con caratteristiche tali da rimanere imperturbato a livello energetico dal contatto con il sistema immerso al suo interno).
+\begin{figure}[H]
+    \centering
+    \incfig{bagno-termico}
+    \caption{Bagno termico}
+    \label{fig:bagno-termico}
+\end{figure}
+\noindent
+Tutto quanto è mantenuto alla temperatura T.\\
+Per il bagno termico possiamo scrivere che:
+\[
+	dE' = TdS'
+.\] 
+Sappiamo inoltre che il tutto è isolato, quindi:
+\[
+	\delta\left( E+E' \right) = 0 \implies
+	\delta E + \delta E' = 0
+.\]
+Per quanto visto sopra abbiamo:
+\[
+	\delta E + T\delta S' = 0 
+.\] 
+quindi \[
+	\delta S' = - \frac{\delta E}{T}
+.\] 
+Il nostro sistema inizialmente era fuori equilibrio (tutto: sistemino + bagno termico) allora avremo che $\delta S \ge 0$:
+\[
+	\delta S + \delta S' \ge  0
+.\] 
+E sostituendo l'equazione ricavata prima:
+\[
+	T\delta S - \delta E \ge 0 \implies
+	\delta \left( E- TS \right) \le 0
+.\] 
+Ma $E-TS = F$, quindi abbiamo che: 
+\[
+	\delta F \le 0
+.\] 
+Quindi per un sistema fuori equilibrio immerso in un bagno termico la condizione di equilibrio è quella che minimizza l'energia libera di Halmotz.
+Nel caso in cui può variare anche N si avrebbe più in generale che:
+\[
+	\Omega = F - \mu N \implies \delta \Omega \le  0
+.\] 
+
+\subsection{Capacità termica e compressibilità}%
+Si arriva alla capacità termica ed alla compressibilità a partire dalle derivate seconde di alcuni potenziali termodinamici:
+\[
+	C_{V} = T\cdot \left.\frac{\partial S}{\partial T} \right|_{V} = \left.\frac{\partial E}{\partial T} \right|_{V}=
+			- T \left.\frac{\partial ^2 F}{\partial T^2 } \right|_{V}
+.\] \label{eq:capacita-termica}
+\[
+	C_{p} = T \left.\frac{\partial S}{\partial T} \right|_{P} = \ldots = - T \left.\frac{\partial ^2 \phi}{\partial T^2} \right|_{P}
+.\] 
+Analogamente per la compressibilità isoterma o adiabatica:
+\[
+	k_{P}= -\frac{1}{V} \left.\frac{\partial V}{\partial P} \right|_{T} =
+	-\frac{1}{V} \left.\frac{\partial ^2 \phi}{\partial P^2} \right|_{T}
+.\] 
+\[
+	k_{S} = -\frac{1}{V}\left.\frac{\partial V}{\partial P} \right|_{S}=
+	\left[ V\cdot \left.\frac{\partial^2 E}{\partial V^2} \right|_{S} \right] ^{-1}
+.\] 
+Questi sono importanti dal punto di vista pratico: la capacità termica e la compressibilità sono cose che si misurano molto bene.

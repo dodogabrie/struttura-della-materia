@@ -75,3 +75,13 @@
 \contentsline {subsection}{\numberline {1.8.2}Spin nel calcolo della $\rho ( \mathcal {E} ) $}{52}{subsection.526}% 
 \contentsline {subsection}{\numberline {1.8.3}Correzione al secondo ordine per l'equazione di stato dei gas ideali}{52}{subsection.531}% 
 \contentsline {subsection}{\numberline {1.8.4}Gas di Fermioni: elettroni di conduzione in un metallo}{54}{subsection.551}% 
+\contentsline {section}{\numberline {1.9}Lezione 9}{57}{section.581}% 
+\contentsline {subsection}{\numberline {1.9.1}Gas di elettroni con campo magnetico}{59}{subsection.599}% 
+\contentsline {subsection}{\numberline {1.9.2}Emissione termoionica.}{61}{subsection.612}% 
+\contentsline {section}{\numberline {1.10}Lezione 10}{63}{section.631}% 
+\contentsline {subsection}{\numberline {1.10.1}Effetto termoionico in presenza di un campo elettrico}{63}{subsection.632}% 
+\contentsline {subsection}{\numberline {1.10.2}Effetto fotoelettrico}{64}{subsection.645}% 
+\contentsline {paragraph}{Fotoni molto pi\IeC {\`u} energetici del potenziale effettivo della buca}{65}{section*.656}% 
+\contentsline {paragraph}{Elettroni meno energetici della altezza della buca.}{65}{section*.660}% 
+\contentsline {paragraph}{Fotoni con l'esatta energia della barriera di potenziale effettiva}{66}{section*.663}% 
+\contentsline {subsection}{\numberline {1.10.3}Condizione sulla massa di una nana bianca per il collasso gravitazionale.}{66}{subsection.666}% 

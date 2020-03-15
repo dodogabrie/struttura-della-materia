@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.14)  6 MAR 2020 00:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.14)  14 MAR 2020 18:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -834,11 +834,36 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 \c@mdf@env@ii=\count322
 \c@mdf@zref@counter=\count323
 Package zref Info: New property: mdf@pagevalue on input line 895.
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/import/import.sty
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/thmtools/thmtools.sty
+Package: thmtools 2019/07/31 v67
+\thmt@toks=\toks45
+\c@thmt@dummyctr=\count324
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/thmtools/thm-patch.sty
+Package: thm-patch 2019/07/31 v67
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/thmtools/parseargs.sty
+Package: parseargs 2019/07/31 v67
+\@parsespec=\toks46
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/thmtools/thm-kv.sty
+Package: thm-kv 2019/07/31 v67
+Package thm-kv Info: Theorem names will be uppercased on input line 39.
+Package thm-kv Info: kvsetkeys patch (v1.16 or later) on input line 155.
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/thmtools/thm-autoref.sty
+Package: thm-autoref 2019/07/31 v67
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/thmtools/aliasctr.sty
+Package: aliasctr 2019/07/31 v67
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/thmtools/thm-listof.sty
+Package: thm-listof 2019/07/31 v67
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/thmtools/thm-restate.sty
+Package: thm-restate 2019/07/31 v67
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
+Package: thm-amsthm 2019/07/31 v67
+\thmt@style@headstyle=\toks47
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/import/import.sty
 Package: import 2009/03/23  v 5.1
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/xifthen/xifthen.sty
 Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
- (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
 Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
@@ -853,34 +878,34 @@ Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
 File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box92
-\AM@global@opts=\toks45
-\AM@toc@title=\toks46
-\c@AM@survey=\count324
+\AM@global@opts=\toks48
+\AM@toc@title=\toks49
+\c@AM@survey=\count325
 \AM@templatesizebox=\box93
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/transparent.sty
 Package: transparent 2018/11/18 v1.3 Transparency via pdfTeX's color stack (HO)
 ) (./boxtheo.tex
-\c@fact=\count325
-\c@defn=\count326
+\c@fact=\count326
+\c@defn=\count327
 ) (./master.aux)
 \openout1 = `master.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Info: Redefining \it@ocap on input line 63.
-LaTeX Info: Redefining \it@ccap on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Info: Redefining \it@ocap on input line 64.
+LaTeX Info: Redefining \it@ccap on input line 64.
 
 
 File italian.ldf warning: 
@@ -888,21 +913,21 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 63.
+italian.ldf    on input line 64.
 
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count327
+\scratchcounter=\count328
 \scratchdimen=\dimen286
 \scratchbox=\box94
-\nofMPsegments=\count328
-\nofMParguments=\count329
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count330
+\nofMPsegments=\count329
+\nofMParguments=\count330
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count331
 \MPscratchDim=\dimen287
-\MPnumerator=\count331
-\makeMPintoPDFobject=\count332
-\everyMPtoPDFconversion=\toks48
+\MPnumerator=\count332
+\makeMPintoPDFobject=\count333
+\everyMPtoPDFconversion=\toks51
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -950,13 +975,13 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Package chemgreek Info: Activating mapping `default' on line 63.
+Package chemgreek Info: Activating mapping `default' on line 64.
 
 \AtBeginShipoutBox=\box95
-Package hyperref Info: Link coloring OFF on input line 63.
-LaTeX Info: Redefining \ref on input line 63.
-LaTeX Info: Redefining \pageref on input line 63.
-LaTeX Info: Redefining \nameref on input line 63.
+Package hyperref Info: Link coloring OFF on input line 64.
+LaTeX Info: Redefining \ref on input line 64.
+LaTeX Info: Redefining \pageref on input line 64.
+LaTeX Info: Redefining \nameref on input line 64.
 (./master.out) (./master.out)
 \@outlinefile=\write4
 \openout4 = `master.out'.
@@ -968,11 +993,11 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 65.
+LaTeX Font Info:    Try loading font information for U+msa on input line 66.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 65.
+LaTeX Font Info:    Try loading font information for U+msb on input line 66.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -1000,13 +1025,13 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
  [2
 
 ] (./figures/scatola-l3.pdf_tex
-<./figures/scatola-l3.pdf, id=242, page=1, 682.86612pt x 142.26378pt>
+<./figures/scatola-l3.pdf, id=277, page=1, 682.86612pt x 142.26378pt>
 File: ./figures/scatola-l3.pdf Graphic file (type pdf)
 <use ./figures/scatola-l3.pdf, page 1>
 Package pdftex.def Info: ./figures/scatola-l3.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 100.77136pt.
 ) [3 <./figures/scatola-l3.pdf>]) (./lezioni/lez_2.tex [4] (./figures/due-sistemi-isolati.pdf_tex
-<./figures/due-sistemi-isolati.pdf, id=276, page=1, 682.86612pt x 142.26378pt>
+<./figures/due-sistemi-isolati.pdf, id=311, page=1, 682.86612pt x 142.26378pt>
 File: ./figures/due-sistemi-isolati.pdf Graphic file (type pdf)
 <use ./figures/due-sistemi-isolati.pdf, page 1>
 Package pdftex.def Info: ./figures/due-sistemi-isolati.pdf , page1 used on input line 56.
@@ -1017,7 +1042,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--16
  []
 
 (./figures/sistemi-collegati.pdf_tex
-<./figures/sistemi-collegati.pdf, id=277, page=1, 682.86612pt x 113.81102pt>
+<./figures/sistemi-collegati.pdf, id=312, page=1, 682.86612pt x 113.81102pt>
 File: ./figures/sistemi-collegati.pdf Graphic file (type pdf)
 <use ./figures/sistemi-collegati.pdf, page 1>
 Package pdftex.def Info: ./figures/sistemi-collegati.pdf , page1 used on input line 56.
@@ -1031,19 +1056,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--87
  []
 
 [6] (./figures/cilindro-con-pistone.pdf_tex
-<./figures/cilindro-con-pistone.pdf, id=307, page=1, 682.86612pt x 142.26378pt>
+<./figures/cilindro-con-pistone.pdf, id=343, page=1, 682.86612pt x 142.26378pt>
 File: ./figures/cilindro-con-pistone.pdf Graphic file (type pdf)
 <use ./figures/cilindro-con-pistone.pdf, page 1>
 Package pdftex.def Info: ./figures/cilindro-con-pistone.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 100.77136pt.
 ) [7 <./figures/cilindro-con-pistone.pdf>] (./figures/distribuzione-livelli-molecole.pdf_tex
-<./figures/distribuzione-livelli-molecole.pdf, id=324, page=1, 682.86612pt x 85.35829pt>
+<./figures/distribuzione-livelli-molecole.pdf, id=359, page=1, 682.86612pt x 85.35829pt>
 File: ./figures/distribuzione-livelli-molecole.pdf Graphic file (type pdf)
 <use ./figures/distribuzione-livelli-molecole.pdf, page 1>
 Package pdftex.def Info: ./figures/distribuzione-livelli-molecole.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 60.46283pt.
 ) (./figures/livelli-energetici-alzati.pdf_tex
-<./figures/livelli-energetici-alzati.pdf, id=325, page=1, 682.86612pt x 113.81102pt>
+<./figures/livelli-energetici-alzati.pdf, id=360, page=1, 682.86612pt x 113.81102pt>
 File: ./figures/livelli-energetici-alzati.pdf Graphic file (type pdf)
 <use ./figures/livelli-energetici-alzati.pdf, page 1>
 Package pdftex.def Info: ./figures/livelli-energetici-alzati.pdf , page1 used on input line 56.
@@ -1062,13 +1087,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 241--243
  []
 
 [9] (./figures/bagno-termico.pdf_tex
-<./figures/bagno-termico.pdf, id=358, page=1, 682.86612pt x 170.71654pt>
+<./figures/bagno-termico.pdf, id=393, page=1, 682.86612pt x 170.71654pt>
 File: ./figures/bagno-termico.pdf Graphic file (type pdf)
 <use ./figures/bagno-termico.pdf, page 1>
 Package pdftex.def Info: ./figures/bagno-termico.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 120.92564pt.
 ) [10 <./figures/bagno-termico.pdf>]) (./lezioni/lez_3.tex [11] (./figures/cvpositiva.pdf_tex
-<./figures/cvpositiva.pdf, id=401, page=1, 682.86612pt x 170.71654pt>
+<./figures/cvpositiva.pdf, id=437, page=1, 682.86612pt x 170.71654pt>
 File: ./figures/cvpositiva.pdf Graphic file (type pdf)
 <use ./figures/cvpositiva.pdf, page 1>
 Package pdftex.def Info: ./figures/cvpositiva.pdf , page1 used on input line 56.
@@ -1084,19 +1109,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--69
  []
 
 (./figures/sistema-isolato.pdf_tex
-<./figures/sistema-isolato.pdf, id=424, page=1, 682.86612pt x 113.81102pt>
+<./figures/sistema-isolato.pdf, id=459, page=1, 682.86612pt x 113.81102pt>
 File: ./figures/sistema-isolato.pdf Graphic file (type pdf)
 <use ./figures/sistema-isolato.pdf, page 1>
 Package pdftex.def Info: ./figures/sistema-isolato.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 80.61708pt.
 ) (./figures/diagramma-di-fase-generico.pdf_tex
-<./figures/diagramma-di-fase-generico.pdf, id=425, page=1, 682.86612pt x 227.62204pt>
+<./figures/diagramma-di-fase-generico.pdf, id=460, page=1, 682.86612pt x 227.62204pt>
 File: ./figures/diagramma-di-fase-generico.pdf Graphic file (type pdf)
 <use ./figures/diagramma-di-fase-generico.pdf, page 1>
 Package pdftex.def Info: ./figures/diagramma-di-fase-generico.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 161.23419pt.
 ) [13 <./figures/sistema-isolato.pdf>] (./figures/sistema-diviso-in-due-fasi.pdf_tex
-<./figures/sistema-diviso-in-due-fasi.pdf, id=440, page=1, 682.86612pt x 113.81102pt>
+<./figures/sistema-diviso-in-due-fasi.pdf, id=475, page=1, 682.86612pt x 113.81102pt>
 File: ./figures/sistema-diviso-in-due-fasi.pdf Graphic file (type pdf)
 <use ./figures/sistema-diviso-in-due-fasi.pdf, page 1>
 Package pdftex.def Info: ./figures/sistema-diviso-in-due-fasi.pdf , page1 used on input line 56.
@@ -1107,7 +1132,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--121
  []
 
 (./figures/punto-critico.pdf_tex
-<./figures/punto-critico.pdf, id=442, page=1, 682.86612pt x 341.43306pt>
+<./figures/punto-critico.pdf, id=477, page=1, 682.86612pt x 341.43306pt>
 File: ./figures/punto-critico.pdf Graphic file (type pdf)
 <use ./figures/punto-critico.pdf, page 1>
 Package pdftex.def Info: ./figures/punto-critico.pdf , page1 used on input line 56.
@@ -1116,13 +1141,13 @@ Package pdftex.def Info: ./figures/punto-critico.pdf , page1 used on input line 
 
 pdfTeX warning: pdflatex (file ./figures/sistema-diviso-in-due-fasi.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./figures/diagramma-pv.pdf_tex
-<./figures/diagramma-pv.pdf, id=456, page=1, 682.86612pt x 227.62204pt>
+<./figures/diagramma-pv.pdf, id=491, page=1, 682.86612pt x 227.62204pt>
 File: ./figures/diagramma-pv.pdf Graphic file (type pdf)
 <use ./figures/diagramma-pv.pdf, page 1>
 Package pdftex.def Info: ./figures/diagramma-pv.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 161.23419pt.
 ) (./figures/curve-isoterme-pt-pv.pdf_tex
-<./figures/curve-isoterme-pt-pv.pdf, id=457, page=1, 682.86612pt x 227.62204pt>
+<./figures/curve-isoterme-pt-pv.pdf, id=492, page=1, 682.86612pt x 227.62204pt>
 File: ./figures/curve-isoterme-pt-pv.pdf Graphic file (type pdf)
 <use ./figures/curve-isoterme-pt-pv.pdf, page 1>
 Package pdftex.def Info: ./figures/curve-isoterme-pt-pv.pdf , page1 used on input line 56.
@@ -1131,19 +1156,19 @@ Package pdftex.def Info: ./figures/curve-isoterme-pt-pv.pdf , page1 used on inpu
 
 pdfTeX warning: pdflatex (file ./figures/diagramma-pv.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./figures/diagramma-di-fase-dell'acqua.pdf_tex
-<./figures/diagramma-di-fase-dell'acqua.pdf, id=469, page=1, 682.86612pt x 227.62204pt>
+<./figures/diagramma-di-fase-dell'acqua.pdf, id=504, page=1, 682.86612pt x 227.62204pt>
 File: ./figures/diagramma-di-fase-dell'acqua.pdf Graphic file (type pdf)
 <use ./figures/diagramma-di-fase-dell'acqua.pdf, page 1>
 Package pdftex.def Info: ./figures/diagramma-di-fase-dell'acqua.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 161.23419pt.
 ) (./figures/diagramma-di-fase-dell'elio.pdf_tex
-<./figures/diagramma-di-fase-dell'elio.pdf, id=470, page=1, 682.86612pt x 199.1693pt>
+<./figures/diagramma-di-fase-dell'elio.pdf, id=505, page=1, 682.86612pt x 199.1693pt>
 File: ./figures/diagramma-di-fase-dell'elio.pdf Graphic file (type pdf)
 <use ./figures/diagramma-di-fase-dell'elio.pdf, page 1>
 Package pdftex.def Info: ./figures/diagramma-di-fase-dell'elio.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 141.07991pt.
 ) (./figures/punto-sulla-separazione-gas-liquido-per-l'acqua.pdf_tex
-<./figures/punto-sulla-separazione-gas-liquido-per-l'acqua.pdf, id=471, page=1, 682.86612pt x 227.62204pt>
+<./figures/punto-sulla-separazione-gas-liquido-per-l'acqua.pdf, id=506, page=1, 682.86612pt x 227.62204pt>
 File: ./figures/punto-sulla-separazione-gas-liquido-per-l'acqua.pdf Graphic file (type pdf)
 <use ./figures/punto-sulla-separazione-gas-liquido-per-l'acqua.pdf, page 1>
 Package pdftex.def Info: ./figures/punto-sulla-separazione-gas-liquido-per-l'acqua.pdf , page1 used on input line 56.
@@ -1173,13 +1198,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 235.
 
 (./figures/sistema-nel-bagno-termico-per-il-conteggio-degli-stati.pdf_tex
-<./figures/sistema-nel-bagno-termico-per-il-conteggio-degli-stati.pdf, id=485, page=1, 682.86612pt x 227.62204pt>
+<./figures/sistema-nel-bagno-termico-per-il-conteggio-degli-stati.pdf, id=520, page=1, 682.86612pt x 227.62204pt>
 File: ./figures/sistema-nel-bagno-termico-per-il-conteggio-degli-stati.pdf Graphic file (type pdf)
 <use ./figures/sistema-nel-bagno-termico-per-il-conteggio-degli-stati.pdf, page 1>
 Package pdftex.def Info: ./figures/sistema-nel-bagno-termico-per-il-conteggio-degli-stati.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 161.23419pt.
 ) [17 <./figures/punto-sulla-separazione-gas-liquido-per-l'acqua.pdf>] [18 <./figures/sistema-nel-bagno-termico-per-il-conteggio-degli-stati.pdf>] [19] [20]) (./lezioni/lez_4.tex [21] (./figures/andamento-energia-sistemino.pdf_tex
-<./figures/andamento-energia-sistemino.pdf, id=573, page=1, 682.86612pt x 256.0748pt>
+<./figures/andamento-energia-sistemino.pdf, id=608, page=1, 682.86612pt x 256.0748pt>
 File: ./figures/andamento-energia-sistemino.pdf Graphic file (type pdf)
 <use ./figures/andamento-energia-sistemino.pdf, page 1>
 Package pdftex.def Info: ./figures/andamento-energia-sistemino.pdf , page1 used on input line 56.
@@ -1200,19 +1225,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--217
  []
 
 (./figures/entropia-per-sistema-con-due-spin.pdf_tex
-<./figures/entropia-per-sistema-con-due-spin.pdf, id=646, page=1, 682.86612pt x 227.62204pt>
+<./figures/entropia-per-sistema-con-due-spin.pdf, id=682, page=1, 682.86612pt x 227.62204pt>
 File: ./figures/entropia-per-sistema-con-due-spin.pdf Graphic file (type pdf)
 <use ./figures/entropia-per-sistema-con-due-spin.pdf, page 1>
 Package pdftex.def Info: ./figures/entropia-per-sistema-con-due-spin.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 161.23419pt.
 ) (./figures/demagnetizzazione-magnetica.pdf_tex
-<./figures/demagnetizzazione-magnetica.pdf, id=647, page=1, 682.86612pt x 227.62204pt>
+<./figures/demagnetizzazione-magnetica.pdf, id=683, page=1, 682.86612pt x 227.62204pt>
 File: ./figures/demagnetizzazione-magnetica.pdf Graphic file (type pdf)
 <use ./figures/demagnetizzazione-magnetica.pdf, page 1>
 Package pdftex.def Info: ./figures/demagnetizzazione-magnetica.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 161.23419pt.
 ) (./figures/demagnetizzazione-adiabatica-1.pdf_tex
-<./figures/demagnetizzazione-adiabatica-1.pdf, id=651, page=1, 682.86612pt x 227.62204pt>
+<./figures/demagnetizzazione-adiabatica-1.pdf, id=687, page=1, 682.86612pt x 227.62204pt>
 File: ./figures/demagnetizzazione-adiabatica-1.pdf Graphic file (type pdf)
 <use ./figures/demagnetizzazione-adiabatica-1.pdf, page 1>
 Package pdftex.def Info: ./figures/demagnetizzazione-adiabatica-1.pdf , page1 used on input line 56.
@@ -1231,7 +1256,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--15
  []
 
 [29] (./figures/distribuzione-di-boltzmann.pdf_tex
-<./figures/distribuzione-di-boltzmann.pdf, id=723, page=1, 623.29762pt x 125.13809pt>
+<./figures/distribuzione-di-boltzmann.pdf, id=758, page=1, 623.29762pt x 125.13809pt>
 File: ./figures/distribuzione-di-boltzmann.pdf Graphic file (type pdf)
 <use ./figures/distribuzione-di-boltzmann.pdf, page 1>
 Package pdftex.def Info: ./figures/distribuzione-di-boltzmann.pdf , page1 used on input line 56.
@@ -1242,7 +1267,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--94
  []
 
 [31 <./figures/distribuzione-di-boltzmann.pdf>] (./figures/spazio-delle-fasi-proiettato-in-due-dimensioni.pdf_tex
-<./figures/spazio-delle-fasi-proiettato-in-due-dimensioni.pdf, id=751, page=1, 639.53572pt x 208.90866pt>
+<./figures/spazio-delle-fasi-proiettato-in-due-dimensioni.pdf, id=787, page=1, 639.53572pt x 208.90866pt>
 File: ./figures/spazio-delle-fasi-proiettato-in-due-dimensioni.pdf Graphic file (type pdf)
 <use ./figures/spazio-delle-fasi-proiettato-in-due-dimensioni.pdf, page 1>
 Package pdftex.def Info: ./figures/spazio-delle-fasi-proiettato-in-due-dimensioni.pdf , page1 used on input line 56.
@@ -1284,13 +1309,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--91
  []
 
 (./figures/calcolo-delle-fluttuazioni.pdf_tex
-<./figures/calcolo-delle-fluttuazioni.pdf, id=834, page=1, 515.09682pt x 141.08383pt>
+<./figures/calcolo-delle-fluttuazioni.pdf, id=869, page=1, 515.09682pt x 141.08383pt>
 File: ./figures/calcolo-delle-fluttuazioni.pdf Graphic file (type pdf)
 <use ./figures/calcolo-delle-fluttuazioni.pdf, page 1>
 Package pdftex.def Info: ./figures/calcolo-delle-fluttuazioni.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 132.48318pt.
 ) [37] [38 <./figures/calcolo-delle-fluttuazioni.pdf>] (./figures/andamento-della-distribuzione-di-energia-al-variare-di-n.pdf_tex
-<./figures/andamento-della-distribuzione-di-energia-al-variare-di-n.pdf, id=879, page=1, 626.44997pt x 143.65225pt>
+<./figures/andamento-della-distribuzione-di-energia-al-variare-di-n.pdf, id=914, page=1, 626.44997pt x 143.65225pt>
 File: ./figures/andamento-della-distribuzione-di-energia-al-variare-di-n.pdf Graphic file (type pdf)
 <use ./figures/andamento-della-distribuzione-di-energia-al-variare-di-n.pdf, page 1>
 Package pdftex.def Info: ./figures/andamento-della-distribuzione-di-energia-al-variare-di-n.pdf , page1 used on input line 56.
@@ -1335,7 +1360,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 259.
-<figures/fermi_dirac.png, id=1067, 987.2082pt x 489.9906pt>
+<figures/fermi_dirac.png, id=1103, 987.2082pt x 489.9906pt>
 File: figures/fermi_dirac.png Graphic file (type png)
 <use figures/fermi_dirac.png>
 Package pdftex.def Info: figures/fermi_dirac.png  used on input line 263.
@@ -1347,13 +1372,13 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 304.
-<figures/bose_einstein.png, id=1082, 987.2082pt x 489.9906pt>
+<figures/bose_einstein.png, id=1117, 987.2082pt x 489.9906pt>
 File: figures/bose_einstein.png Graphic file (type png)
 <use figures/bose_einstein.png>
 Package pdftex.def Info: figures/bose_einstein.png  used on input line 308.
 (pdftex.def)             Requested size: 459.51054pt x 228.07504pt.
 ) (./lezioni/lez_8.tex [50 <./figures/bose_einstein.png>] (./figures/bose-einstein-con-t-tendente-a-zero-e-numero-di-particelle-fissato.pdf_tex
-<./figures/bose-einstein-con-t-tendente-a-zero-e-numero-di-particelle-fissato.pdf, id=1097, page=1, 672.21524pt x 199.59383pt>
+<./figures/bose-einstein-con-t-tendente-a-zero-e-numero-di-particelle-fissato.pdf, id=1132, page=1, 672.21524pt x 199.59383pt>
 File: ./figures/bose-einstein-con-t-tendente-a-zero-e-numero-di-particelle-fissato.pdf Graphic file (type pdf)
 <use ./figures/bose-einstein-con-t-tendente-a-zero-e-numero-di-particelle-fissato.pdf, page 1>
 Package pdftex.def Info: ./figures/bose-einstein-con-t-tendente-a-zero-e-numero-di-particelle-fissato.pdf , page1 used on input line 56.
@@ -1378,47 +1403,120 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [51 <./figures/bose-einstein-con-t-tendente-a-zero-e-numero-di-particelle-fissato.pdf>] [52] [53] [54]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 182.
+(mdframed)              on input line 186.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 185.
+(mdframed)              on input line 189.
  [55] (./figures/correzione-per-il-potenziale-di-landau-nella-statistica-di-fermi-dirac.pdf_tex
-<./figures/correzione-per-il-potenziale-di-landau-nella-statistica-di-fermi-dirac.pdf, id=1172, page=1, 526.76003pt x 170.7911pt>
+<./figures/correzione-per-il-potenziale-di-landau-nella-statistica-di-fermi-dirac.pdf, id=1209, page=1, 526.76003pt x 170.7911pt>
 File: ./figures/correzione-per-il-potenziale-di-landau-nella-statistica-di-fermi-dirac.pdf Graphic file (type pdf)
 <use ./figures/correzione-per-il-potenziale-di-landau-nella-statistica-di-fermi-dirac.pdf, page 1>
 Package pdftex.def Info: ./figures/correzione-per-il-potenziale-di-landau-nella-statistica-di-fermi-dirac.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 156.83002pt.
-) (./figures/g1-e-g0.pdf_tex
-<./figures/g1-e-g0.pdf, id=1173, page=1, 548.7733pt x 167.81926pt>
+) [56 <./figures/correzione-per-il-potenziale-di-landau-nella-statistica-di-fermi-dirac.pdf>] (./figures/g1-e-g0.pdf_tex
+<./figures/g1-e-g0.pdf, id=1224, page=1, 548.7733pt x 167.81926pt>
 File: ./figures/g1-e-g0.pdf Graphic file (type pdf)
 <use ./figures/g1-e-g0.pdf, page 1>
 Package pdftex.def Info: ./figures/g1-e-g0.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 147.9221pt.
-) [56 <./figures/correzione-per-il-potenziale-di-landau-nella-statistica-di-fermi-dirac.pdf>]) [57 <./figures/g1-e-g0.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
+)) (./lezioni/lez_9.tex [57 <./figures/g1-e-g0.pdf>] [58] (./figures/spin-up-per-gas-di-elettroni-nel-campo-magnetico.pdf_tex
+<./figures/spin-up-per-gas-di-elettroni-nel-campo-magnetico.pdf, id=1259, page=1, 768.50963pt x 105.69821pt>
+File: ./figures/spin-up-per-gas-di-elettroni-nel-campo-magnetico.pdf Graphic file (type pdf)
+<use ./figures/spin-up-per-gas-di-elettroni-nel-campo-magnetico.pdf, page 1>
+Package pdftex.def Info: ./figures/spin-up-per-gas-di-elettroni-nel-campo-magnetico.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 483.69687pt x 66.5257pt.
+) (./figures/energia-degli-elettroni-senza-campo-b-in-funzione-della-densita-di-stati.pdf_tex
+<./figures/energia-degli-elettroni-senza-campo-b-in-funzione-della-densita-di-stati.pdf, id=1261, page=1, 589.54971pt x 160.139pt>
+File: ./figures/energia-degli-elettroni-senza-campo-b-in-funzione-della-densita-di-stati.pdf Graphic file (type pdf)
+<use ./figures/energia-degli-elettroni-senza-campo-b-in-funzione-della-densita-di-stati.pdf, page 1>
+Package pdftex.def Info: ./figures/energia-degli-elettroni-senza-campo-b-in-funzione-della-densita-di-stati.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 483.69687pt x 131.38812pt.
+) [59 <./figures/spin-up-per-gas-di-elettroni-nel-campo-magnetico.pdf>] (./figures/energia-degli-elettroni-con-campo-b-in-funzione-della-densita-di-stati.pdf_tex
+<./figures/energia-degli-elettroni-con-campo-b-in-funzione-della-densita-di-stati.pdf, id=1275, page=1, 581.86746pt x 173.7666pt>
+File: ./figures/energia-degli-elettroni-con-campo-b-in-funzione-della-densita-di-stati.pdf Graphic file (type pdf)
+<use ./figures/energia-degli-elettroni-con-campo-b-in-funzione-della-densita-di-stati.pdf, page 1>
+Package pdftex.def Info: ./figures/energia-degli-elettroni-con-campo-b-in-funzione-della-densita-di-stati.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 483.69687pt x 144.45425pt.
+) (./figures/calcolo-del-numero-di-particelle-negli-stati-up-e-down-sciftando-le-aree.pdf_tex
+<./figures/calcolo-del-numero-di-particelle-negli-stati-up-e-down-sciftando-le-aree.pdf, id=1277, page=1, 536.52509pt x 161.70685pt>
+File: ./figures/calcolo-del-numero-di-particelle-negli-stati-up-e-down-sciftando-le-aree.pdf Graphic file (type pdf)
+<use ./figures/calcolo-del-numero-di-particelle-negli-stati-up-e-down-sciftando-le-aree.pdf, page 1>
+Package pdftex.def Info: ./figures/calcolo-del-numero-di-particelle-negli-stati-up-e-down-sciftando-le-aree.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 483.69687pt x 145.78894pt.
+) [60 <./figures/energia-degli-elettroni-senza-campo-b-in-funzione-della-densita-di-stati.pdf> <./figures/energia-degli-elettroni-con-campo-b-in-funzione-della-densita-di-stati.pdf
+
+pdfTeX warning: pdflatex (file ./figures/energia-degli-elettroni-con-campo-b-in-funzione-della-densita-di-stati.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./figures/calcolo-del-numero-di-particelle-negli-stati-up-e-down-sciftando-le-aree.pdf
+
+pdfTeX warning: pdflatex (file ./figures/calcolo-del-numero-di-particelle-negli-stati-up-e-down-sciftando-le-aree.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 141--144
+
+ []
+
+(./figures/modello-di-buca-di-potenziale-per-un-metallo.pdf_tex
+<./figures/modello-di-buca-di-potenziale-per-un-metallo.pdf, id=1296, page=1, 649.5062pt x 52.38814pt>
+File: ./figures/modello-di-buca-di-potenziale-per-un-metallo.pdf Graphic file (type pdf)
+<use ./figures/modello-di-buca-di-potenziale-per-un-metallo.pdf, page 1>
+Package pdftex.def Info: ./figures/modello-di-buca-di-potenziale-per-un-metallo.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 483.69687pt x 39.0144pt.
+) [61 <./figures/modello-di-buca-di-potenziale-per-un-metallo.pdf>]) (./lezioni/lez_10.tex [62] (./figures/buca-in-presenza-di-un-campo-elettrico.pdf_tex
+<./figures/buca-in-presenza-di-un-campo-elettrico.pdf, id=1332, page=1, 571.18184pt x 85.61124pt>
+File: ./figures/buca-in-presenza-di-un-campo-elettrico.pdf Graphic file (type pdf)
+<use ./figures/buca-in-presenza-di-un-campo-elettrico.pdf, page 1>
+Package pdftex.def Info: ./figures/buca-in-presenza-di-un-campo-elettrico.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 483.69687pt x 72.50078pt.
+) (./figures/buca-in-presenza-di-un-campo-elettrico-considerando-la-carica-immagine.pdf_tex
+<./figures/buca-in-presenza-di-un-campo-elettrico-considerando-la-carica-immagine.pdf, id=1334, page=1, 545.57433pt x 90.35907pt>
+File: ./figures/buca-in-presenza-di-un-campo-elettrico-considerando-la-carica-immagine.pdf Graphic file (type pdf)
+<use ./figures/buca-in-presenza-di-un-campo-elettrico-considerando-la-carica-immagine.pdf, page 1>
+Package pdftex.def Info: ./figures/buca-in-presenza-di-un-campo-elettrico-considerando-la-carica-immagine.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 483.69687pt x 80.11185pt.
+) (./figures/corrente-termoionica-in-funzione-del-campo-elettrico.pdf_tex
+<./figures/corrente-termoionica-in-funzione-del-campo-elettrico.pdf, id=1335, page=1, 420.76424pt x 85.74185pt>
+File: ./figures/corrente-termoionica-in-funzione-del-campo-elettrico.pdf Graphic file (type pdf)
+<use ./figures/corrente-termoionica-in-funzione-del-campo-elettrico.pdf, page 1>
+Package pdftex.def Info: ./figures/corrente-termoionica-in-funzione-del-campo-elettrico.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 483.69687pt x 98.56834pt.
+) [63 <./figures/buca-in-presenza-di-un-campo-elettrico.pdf> <./figures/buca-in-presenza-di-un-campo-elettrico-considerando-la-carica-immagine.pdf
+
+pdfTeX warning: pdflatex (file ./figures/buca-in-presenza-di-un-campo-elettrico-considerando-la-carica-immagine.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [64 <./figures/corrente-termoionica-in-funzione-del-campo-elettrico.pdf>] (./figures/elettroni-pi-energetici-della-buca-di-potenziale.pdf_tex
+<./figures/elettroni-pi-energetici-della-buca-di-potenziale.pdf, id=1369, page=1, 573.58597pt x 169.46788pt>
+File: ./figures/elettroni-pi-energetici-della-buca-di-potenziale.pdf Graphic file (type pdf)
+<use ./figures/elettroni-pi-energetici-della-buca-di-potenziale.pdf, page 1>
+Package pdftex.def Info: ./figures/elettroni-pi-energetici-della-buca-di-potenziale.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 483.69687pt x 142.91316pt.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
+
+ []
+
+[65 <./figures/elettroni-pi-energetici-della-buca-di-potenziale.pdf>] [66] [67] [68]) [69]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
  (./master.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 6F455DF46E84FE15E961803CFF7F51B7;3498.
+(rerunfilecheck)             Checksum: 51FAA45BABDD12C1B00FFE68DB65A113;4076.
  ) 
 Here is how much of TeX's memory you used:
- 31396 strings out of 492609
- 599571 string characters out of 6129033
- 686409 words of memory out of 5000000
- 34145 multiletter control sequences out of 15000+600000
+ 31974 strings out of 492609
+ 613955 string characters out of 6129033
+ 695000 words of memory out of 5000000
+ 34523 multiletter control sequences out of 15000+600000
  542364 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,15n,76p,791b,986s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,15n,76p,791b,990s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.119} has been referenced but does not exist, replaced by a fixed one
 
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfon
 ts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on master.pdf (58 pages, 761051 bytes).
+Output written on master.pdf (70 pages, 862464 bytes).
 PDF statistics:
- 1416 PDF objects out of 1440 (max. 8388607)
- 1277 compressed objects within 13 object streams
- 636 named destinations out of 1000 (max. 500000)
- 496 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1694 PDF objects out of 1728 (max. 8388607)
+ 1531 compressed objects within 16 object streams
+ 775 named destinations out of 1000 (max. 500000)
+ 597 words of extra memory for PDF output out of 10000 (max. 10000000)
 

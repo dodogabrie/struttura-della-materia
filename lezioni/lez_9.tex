@@ -1,0 +1,223 @@
+\lez{9}{09-03-2020}{}
+Procediamo al calcolo del secondo integrale nella precedente, abbiamo le espressioni per le funzioni $g_{i}$ dalle \ref{eq:g_1} e \ref{eq:g_0} :
+\[
+	\int_{0}^{\infty} zg_1 dz - \int_{-\infty}^{0} zg_0 dz = + 2\int_{0}^{\infty} \frac{z}{e^{z}+1} dz = \frac{\pi^2}{6}
+.\] 
+Questo integrale ci permette di trovare la correzione alla tipologia di integrali che volevamo risolvere nella lezione precedente (che avevamo nominato $I$):
+\[
+	I = \int_{0}^{\mu } f( \mathcal{E} ) d\mathcal{E} + \frac{\pi^2}{6}f'( \mu ) \left( kT \right) ^2 
+.\] 
+Di questo tipo era il potenziale di Landau della \ref{eq:landau-lez-8}, sostituendo in quella equazione:
+\[
+	\Omega = - \frac{2}{3}\frac{4\pi V g \sqrt{2} m ^{3 /2}}{\left( 2\pi \hbar \right)^3 }
+	\left[ \frac{2}{5}\mu ^{5 /2} + \frac{\pi^2}{4}\mu ^{1 /2} \left( kT \right) ^2 \right] 
+.\] 
+Grazie a questo risultato si trova anche il numero di particelle in funzione della temperatura:
+\[
+	N = - \frac{\partial \Omega }{\partial \mu }  = - \frac{2}{3}\frac{4\pi V g \sqrt{2} m ^{3 /2} }{\left( 2\pi \hbar \right)^3 }
+	\left[ \mu ^{3 /2}+ \frac{\pi^2}{8} \frac{\left( kT \right)^2}{\mu ^{1 /2}} \right] 
+.\] 
+Possiamo scriverlo un funzione del numero di particelle a $T = 0$:
+\[
+	N_0 = - \frac{2}{3}\frac{4\pi V g \sqrt{2} m ^{3 /2}\mu ^{3 /2}}{\left( 2\pi \hbar \right)^3 }
+.\] 
+In questo modo si ottiene una forma più compatta del numero di particelle:
+\[
+	N = N_0 \left[ 1 + \frac{\pi^2}{8}\left( \frac{kT}{\mu } \right) ^2 \right] 
+.\] 
+Questo è il caso in cui gli elettroni sono liberi di lasciare il metallo, in realtà succede più spesso che il numero di particelle resti costante nel caso di elettroni liberi in un metallo. Quindi al variare della temperatura dovrà variare il potenziale chimico.\\
+In realtà l'espressione trovata è sufficiente per trovare il potenziale chimico: chiamiamo $\mu_0$ il potenziale chimico a $T = 0$, si ha che
+\[
+	N_0 = \left.N\right|_{T=0, \mu_0}
+.\] 
+Se cambiamo la temperatura avremo la seguente espressione per il numero di particelle:
+\[
+	N( T, \mu_0)  = N_0\left[ 1 + \frac{\pi^2}{8}\left( \frac{kT}{\mu_0} \right)^2  \right] 
+.\]
+Potremmo fare la stessa cosa con un $\mu $ diverso ottenendo (ricordiamo che $N_0$ dipende da $\mu_0^{3 /2}$ ):
+\[
+	N( T = 0, \mu )  = N( T=0, \mu_0) \left( \frac{\mu}{\mu_0} \right) ^{3 /2} = N_0\cdot \left( \frac{\mu}{\mu_0} \right) ^{3 /2}
+.\] 
+Di conseguenza abbiamo:
+\[
+	N( T,\mu ) = N_0\cdot \left( \frac{\mu }{\mu_0} \right)^{3 /2} \left[ 1 + \frac{\pi^2}{8}\left( \frac{kT}{\mu } \right) ^2 \right] 
+.\] 
+Se eguagliamo $N( T, \mu ) = N( T=0, \mu_0) = N_0 $ troveremo il nostro $\mu $ rispetto a $\mu_0$ che mantiene il numero di particelle costanti:
+\[
+	N_0 = N_0\left[ 1 + \frac{\pi^2}{8}\left( \frac{kT}{\mu } \right) ^2 \right] \left( \frac{\mu }{\mu_0} \right) ^{3 /2}
+.\] 
+Possiamo ora fare l'approssimazione 
+\[
+\left( \frac{kT}{\mu } \right)  \to \left( \frac{kT}{\mu_0} \right) 
+\]
+Poichè l'errore introdotto facendo questo va all'ordine successivo nella temperatura. Si ottiene:
+\[
+	\mu = \mu_0\left[ 1- \frac{\pi^2}{12}\left( \frac{kT}{\mu_0} \right)^2 \right] 
+.\] 
+Questo vale per temperature $T \ll T_{F}$.\\
+Quindi abbiamo trovato la correzione per $\mu $, è come ci aspettavamo: la correzione deve essere negativa per mantenere $N$ costante. \\
+In realtà questa vale per il gas perfetto di elettroni liberi, in particolare dipende da come è fatta la densità di stati all'interno del sistema (che abbiamo infatti usato).\\
+In particolare il potenziale chimico diminuisce all'aumentare dell'energia perchè la densità di stati è una funzione crescente dell'energia, vedremo che non è vero per tutti sistemi. Questo spiegherà perchè in alcuni cristalli il potenziale chimico aumenta con la temperatura.\\
+Possiamo adesso trovare l'entropia del gas di fermioni:
+\[
+	S = - \left.\frac{\partial \Omega }{\partial T} \right|_{V,\mu } = 
+		\frac{4\pi V g \sqrt{2} m ^{3 /2}}{h^3} \frac{\pi^2}{3}\mu ^{1 /2} k^2 T
+.\] 
+Questa in realtà è $S( T, V , \mu ) $ mentre noi vorremmo $S( T,V,N) $ ma se teniamo $N$ costante allora il cambiamento nell'entropia in $\mu $ sarebbe dell'ordine di $T^3$, visto che l'entropia ha andamento in $T$ senza effettuare il conto possiamo concludere che:
+\[
+	S = \frac{\pi^2}{2}Nk \frac{T}{T_{F}}
+.\] 
+Mentre per trovare $C_{V}$ basta fare:
+\[
+	C_{V} = T \left.\frac{\partial S}{\partial T} \right|_{V} = \frac{\pi^2}{2} Nk \frac{T}{T_{F}}
+.\] 
+Di conseguenza troviamo essenzialmete lo stesso trovato con un ragionamento molto qualitativo nella \ref{eq:stima-Cv-9}, possiamo vederla come verifica di quanto fatto.\\
+Quanto visto fin'ora trova buon riscontro nei dati sperimentali, l'unica cosa che non "matcha" benissimo è che nella espressione della temperatura di fermi non avremo più la massa dell'elettrone libero ma avremo una massa efficace dovuta al fatto  che la legge di dispersione dell'elettrone non sarà più quella dell'elettrone libero ma subirà delle sensibili modifiche. \\
+La massa efficace è una quantità che può essere misurata anche in modo indipendente: si può sfruttare l'effetto Hall (misura della risonanza di ciclotrone). Si applica un campo magnetico costante al metallo del quale vogliamo conoscere la massa efficace degli elettroni, sappiamo che se applichiamo uno di questi campi gli elettroni orbitano nel piano perpendicolare alla direzione di $B$ con una frequenza angolare:
+\[
+	\omega_{c}= \frac{eH}{ m ^{*}c}
+.\] 
+Successivamente con la spettroscopia possiamo misurare la distanza tra i livelli energetici e tiriamo fuori il valore della massa da questi.
+
+\subsection{Gas di elettroni con campo magnetico}%
+Vediamo cosa avviene al gas di elettroni con l'aggiunta di un campo magnetico $B$. Siamo nelle ipotesi in cui il campo magnetico influenzi soltanto lo spin (al momento), abbiamo già visto un esempio con la magnetizzazione diamagnetica. \\
+In questo caso stiamo parlando di Fermioni con spin $1 /2$, quindi avremo due livelli possibili (up e down) con energie $\pm \mu_{m} B$ \footnote{Chiamiamo $\mu _{m}$ il momento magnetico per non confonderci con $\mu $ che è il potenziale chimico.}. L'energia della particella sarà data allora da:
+\[
+	E_{\uparrow \downarrow} = \frac{p^2}{2m} \pm \mu_{m}B
+.\] 
+Possiamo allora distinguere due popolazioni di particelle aventi diversa energia. Visto che si tratta di elettroni in un metallo dovremmo usare la statistica di Fermi-Dirac. \\
+Le due popolazioni andranno a distribuirsi popolando il livelli energetici partendo da $\pm \mu_{m}B$ fino ad arrivare a $\mu$ come in figura:
+\begin{figure}[H]
+    %This is a custom LaTeX template!
+    \centering
+    \incfig{spin-up-per-gas-di-elettroni-nel-campo-magnetico}
+    \caption{\scriptsize Posizione dei livelli energetici per le due popolazioni di elettroni.}
+    \label{fig:spin-up-per-gas-di-elettroni-nel-campo-magnetico}
+\end{figure}
+\noindent
+Possiamo quindi trattare il gas di elettroni come due gas di particelle diverse aventi il medesimo potenziale chimico.\\
+Mettiamoci adesso nel caso in cui la distribuzione di Fermi-Dirac può essere trattata come gradino ($T = 0$) ed indichiamo $g\uparrow$, $g\downarrow$ come la densità di stati dei due gas. Possiamo graficare l'energia al variare di questa densità di stati, nel caso $B = 0$ si ha \footnote{Abbiamo visto questo caso nelle lezioni precedenti, in questo caso $g( \mathcal{E} ) = \rho ( \mathcal{E} ) \propto \sqrt{\mathcal{E} } $}:
+\begin{figure}[H]
+    %This is a custom LaTeX template!
+    \centering
+    \incfig{energia-degli-elettroni-senza-campo-b-in-funzione-della-densita-di-stati}
+    \caption{\scriptsize Energia degli elettroni senza campo B in funzione della densità di stati}
+    \label{fig:energia-degli-elettroni-senza-campo-b-in-funzione-della-densita-di-stati}
+\end{figure}
+Applicando il campo magnetico questo grafico si modifica in questo modo:
+\begin{figure}[H]
+    %This is a custom LaTeX template!
+    \centering
+    \incfig{energia-degli-elettroni-con-campo-b-in-funzione-della-densita-di-stati}
+    \caption{\scriptsize Energia degli elettroni con campo B in funzione della densità di stati}
+    \label{fig:energia-degli-elettroni-con-campo-b-in-funzione-della-densita-di-stati}
+\end{figure}
+\noindent
+L'integrale della curva in figura ci da il numero di particelle in ciascuna delle due popolazioni ($N_{\uparrow}$, $N_{\downarrow}$) perchè abbiamo assunto che la Fermi-Dirac fosse il gradino unitario.\\
+Se invece vogliamo la magnetizzazione avremo:
+\[
+	M = \left( N_{\uparrow}-N_{\downarrow} \right)\mu_{B}
+.\] 
+Procediamo quindi al calcolo dell'integrale, per farlo è più facile sciftare le aree in Figura \ref{fig:energia-degli-elettroni-con-campo-b-in-funzione-della-densita-di-stati} nel seguente modo:
+\begin{figure}[H]
+    %This is a custom LaTeX template!
+    \centering
+    \incfig{calcolo-del-numero-di-particelle-negli-stati-up-e-down-sciftando-le-aree}
+    \caption{\scriptsize Calcolo del numero di particelle negli stati Up e Down sciftando le aree}
+    \label{fig:calcolo-del-numero-di-particelle-negli-stati-up-e-down-sciftando-le-aree}
+\end{figure}
+\noindent
+Tipicamente l'energia di fermi è molto grande rispetto a $\mu_{m}B$, questo ci permette di approssimare l'area grigia in Figura \ref{fig:calcolo-del-numero-di-particelle-negli-stati-up-e-down-sciftando-le-aree} con un rettangolo. Inoltre possiamo considerare la $g( \mathcal{E} ) $ costante in tale area \footnote{Si considera adesso la $g( \mathcal{E} ) $ per i singoli spin.} (sempre grazie alla approssimazione di cui sopra), quindi il valore di tale area sarà:
+\[
+	N_{\uparrow}- N_{\downarrow} = 2\mu _{m}B \cdot g( E_{F}) 
+.\] 
+Sapendo il valore di $g( E_{F})$ dalla \ref{eq:densita-stati-con-E-fermi} possiamo riscrivere il $\Delta N$ come:
+\[
+	\Delta N = \frac{3N}{2}\frac{\mu _{m}B}{E_{F}}
+.\] 
+Abbiamo quindi la magnetizzazione $M = \mu_{m}\Delta N$ e la suscettività 
+\[
+	\chi = \frac{M}{B} = \frac{3}{2}N \frac{\mu_{m}^2}{E_{F}} \label{eq:suscettivita-pauli}
+.\] 
+L'equazione \ref{eq:suscettivita-pauli} è detta Espressione classica del paramagnetismo di Pauli ed indica il paramagnetismo di un gas di elettroni liberi.\\
+Questa $\chi$ è indipendente dalla temperatura, tuttavia tale dipendenza è data dal fatto che ci siamo fissati a $T=0$. Possiamo comunque assumere che questa resti valida anche per temperature $T\ll T_{F}$, dove ricordiamo aver definito la temperatura di Fermi in modo che  $kT_{F}=E_{F}$.\\
+\subsection{Emissione termoionica.}%
+Il fenomeno dell'emissione termoionica era alla base dei tubi termoionici, i predecessori dei transistor nell'elettronica. \\
+Il meccanismo era basato su sistemi sottovuoto in cui da un elettrodo di metallo opportunamente riscaldato e con un campo applicato si aveva emissione di elettroni.\\
+Calcoliamo adesso il Rate di elettroni emessi in un metallo ad una certa temperatura.
+\[
+	R = \frac{N_{\text{emessi}}}{A\cdot dt}
+.\] 
+Schematizziamo il metallo come una buca di potenziale:
+\begin{figure}[H]
+    %This is a custom LaTeX template!
+    \centering
+    \incfig{modello-di-buca-di-potenziale-per-un-metallo}
+    \caption{\scriptsize Modello di buca di potenziale per un metallo}
+    \label{fig:modello-di-buca-di-potenziale-per-un-metallo}
+\end{figure}
+\noindent 
+Dove $W$ è l'energia che serve per staccare un elettrone da un metallo. Gli elettroni in grado di uscire sono quelli tali che, alla data temperatura, hanno un impulso $p_{z}$ tale che:
+\[
+	\frac{p_{z}^2}{2m} > W \implies p_{z} > \sqrt{2mW} 
+.\] 
+Possiamo calcolare il Rate integrando sullo spazio delle fasi sui soli elettroni aventi tali energie, visto che vogliamo una quantità che sia per unità di superficie evitiamo di integrare in $x$ e $y$. Gli elettroni che escono nell'unità di tempo $dt$ sono quelli che stano ad una distanza $dz$ dalla superficie. Quindi abbiamo nel Rate che:
+\[
+	R = \frac{N}{Adt} = \frac{N}{Adt}dz = \frac{N}{A}v_{z}= \frac{Np_{z}}{Am} 
+.\] 
+Quando si integra sullo spazio delle fasi spaziale infatti si ha:
+\[
+	R_{xyz} = \int\int\int \frac{dxdydz}{Adt} = \frac{A}{A}\int \frac{dz}{dt}
+.\] 
+Quindi l'integrale per il Rate diventerà:
+\[
+	R = \int_{\sqrt{2mW}}^{\infty}dp_{z} \int\int dp_{x}dp_{y} \frac{p_{z}}{m} \frac{1}{\exp\left( \frac{\mathcal{E} -\mu }{kT} \right) +1} \cdot \frac{2}{h^3} 
+.\] 
+Passiamo quindi ad un integrale planare:
+\[
+	R = \int_{\sqrt{2mW} }^{\infty} \frac{dp_{z}p_{z}}{h^3m}\int_{p_{\parallel}=0}^{p_{\parallel} = \infty} \frac{2\pi p_{\parallel} dp_{\parallel}}{\exp\left\{ \left[ \frac{p_{\parallel}^2}{2m} + \frac{p_{z}^2}{2m} -\mu  \right]/kT \right\} + 1} 
+.\] 
+L'integrale in $p_{\parallel}$ è risolvibile analiticamente, se risolto si ottiene:
+\[
+	R = \frac{4\pi kT}{h^3}\int_{\sqrt{2mW} }^{\infty} p_{z} dp_{z} \ln\left[ 1+\exp\left\{ \left( \mu - \frac{p_{z}^2}{2m} \right)/kT \right\}  \right]  
+.\] 
+Si passa all'integrale da $p_{z}$ all'energia $\mathcal{E} _{z}$:
+\[
+	R = \frac{4\pi m kT}{h^3} \int_{\mathcal{E}_{z}=W}^{\infty} d\mathcal{E} _{z} \ln\left\{ 1+\exp\left[ \left( \mu -\mathcal{E} _{z} \right) /kT \right]  \right\}  
+.\] 
+Mettiamoci adesso nelle ipotesi in cui il potenziale della buca sia molto maggiore dell'energia del livello di Fermi \footnote{Quindi immaziniamo i nostri elettroni che stanno proncipalmente schiacciati sul fondale della buca}:
+\[
+	\frac{W-\mu }{kT} \gg 1
+.\] 
+L'approssimazione è ragionevole, significa che gli elettroni sono vincolati a stare dentro il metallo ed in generale non escono. In queste ipotesi approssimiamo il logaritmo: $\ln( 1+x) \approx x$.
+\begin{align}
+	R =& \frac{4\pi m kT}{h^3}\int_{W}^{\infty} d\mathcal{E}_{z} \exp\left[ \frac{\mu -\mathcal{E}_{z}}{kT} \right] = \\
+	=&\frac{4\pi m k^2T^2}{h^3}\exp\left[ \frac{\mu -W}{kT} \right] 
+.\end{align}
+Per avere anche la corrente termoionica è sufficiente moltiplicare l'ultima per la carica elettronica:
+\[
+	J = eR
+.\] 
+Abbiamo quindi una corrente $J \propto T^2 \exp\left(-\frac{\varphi}{kT} \right)$ avendo definito $\varphi = W - \mu$: un potenziale effettivo della barriera che tiene di conto del fatto che gli elettroni occupano tutti i livelli fino a $\mu = E_{F}$. \\
+Possiamo confrontare quest'ultima con l'espressione classica, per ottenerla basta sostituire l'approssimazione classica di $\exp\left( \frac{\mu }{kT} \right)$ \footnote{Quella che avevamo chiamato Fugacità}:
+\[
+	\exp\left( \frac{\mu }{kT} \right) \ce{ ->[\text{ classico }] } \frac{N}{V}\frac{\Lambda ^3}{g}
+.\] 
+Sostituendo questa abbiamo l'andamento per la corrente classica:
+\[
+	J_\text{class}= \frac{N}{V}\left( \frac{k}{2\pi m} \right) ^{1 /2} T ^{1 /2} \exp\left( - \frac{W}{kT} \right) 
+.\] 
+Che è un andamento completamente diverso nella temperatura e all'esponenziale troviamo la barriera piena e non la barriera ridotta dalla distribuzione di Fermi-Dirac.
+\[
+	\varphi_{\text{class}} = W
+.\] 
+Questo fu uno dei primi esperimenti che evidenziarono il mal funzionamento della teoria classica.\\
+Il modello adottato è una approssimazione grossolana degli elettroni in un metallo, infatti ci sono alcune ipotesi da noi usate che sono piuttosto discutibili:
+\begin{itemize}
+	\item Non possiamo considerare gli elettroni esattamente liberi nel metallo.
+	\item La Fermi-Dirac si usa nel caso in cui gli elettroni sono all'equilibrio termodinamico, se qualche elettrone esce dal metallo allora significa che non possiamo essere in tale equilibrio.
+	\item Dalla nostra formulazione sembra che aspettando del tempo prima o poi gli elettroni del metallo si esauriranno.
+\end{itemize}
+Per correggere la seconda dobbiamo assumere che il numero di elettroni che esce sia piccolo rispetto alla popolazione totale, in questo modo il sistema può essere approssimato all'equilibrio.\\
+La terza invece si agiusta pensando che in realtà dopo un pò di tempo il sistema raggiungerà un nuovo equilibrio tra elettroni che entrano ed elettroni che escono dal metallo.\\
+Possiamo anche ripensare alla necessità di avere una buca "profonda", se facciamo cadere questa ipotesi allora abbiamo la possibilità che avvenga un effetto tunnel. Se applichiamo un campo elettrico esterno siamo in grado di vedere questo ultimo effetto.

@@ -34,7 +34,7 @@ Visto che noi parliamo di fermioni e bosoni le nostre correzioni sono relativame
 Infatti nel caso dei fononi abbiamo tre degenerazioni dovute ai gradi di liberta vibrazionali, mentre per i fotoni sappiamo invece che abbiamo due degenerazioni dovute alle possibili polarizzazioni.\\
 La densità di stati che continueremo ad usare per qualche lezione è quella ricavata nella sezione citata sopra:
 \[
-	\rho ( \mathcal{E} ) d\mathcal{E} = \frac{4\pi\sqrt{2} V m_{3 /2}}{\left( 2\pi \hbar \right)^3 } \mathcal{E} ^{1 /2} g d\mathcal{E} 
+	\rho ( \mathcal{E} ) d\mathcal{E} = \frac{4\pi\sqrt{2} V m_{3 /2}}{\left( 2\pi \hbar \right)^3 } \mathcal{E} ^{1 /2} g d\mathcal{E} \label{eq:densita-stati}
 .\] 
 Relativa ad un sistema tridimensionale di particelle con energia $p^2/2m$.
 
@@ -147,8 +147,12 @@ Quindi possiamo, anzichè integrare la $\rho ( \mathcal{E} ) $ brutta, possiamo 
 .\] 
 Possiamo ricavare $p_{F}$ da quest'ultima oppure direttamente $\mathcal{E} _{F}$ dall'integrale, quello che si ottiene è sempre:
 \[
-	\mu _{0} = \mu ( 0) = \mathcal{E} _{F} = \frac{\left( 2\pi \hbar  \right) ^2}{2m} \left( \frac{N}{V} \right) ^{2 /3} \left( \frac{3}{4\pi q} \right) ^{2 /3}
+	\mu _{0} = \mu ( 0) = \mathcal{E} _{F} = \frac{\left( 2\pi \hbar  \right) ^2}{2m} \left( \frac{N}{V} \right) ^{2 /3} \left( \frac{3}{4\pi g} \right) ^{2 /3}
 .\]
+Esprimendo la densità di stati $\rho ( \mathcal{E} ) $ di \ref{eq:densita-stati} in funzione di questa $\mathcal{E} _{F}$ si ottiene:
+\[
+	\rho ( \mathcal{E} ) = \frac{3}{2}\frac{N}{\left( \mathcal{E} _{F} \right)^{3 / 2}}\sqrt{\mathcal{E}}  g  \label{eq:densita-stati-con-E-fermi}
+.\] 
 Possiamo trovare l'energia media a $T\to 0$:
 \[
 	\overline{\mathcal{E} } = \frac{\int_{0}^{\mathcal{E} _{F}} \mathcal{E} \rho ( \mathcal{E} ) d\mathcal{E} }{\int_{0}^{\mathcal{E} _{F}} \rho ( \mathcal{E} ) d\mathcal{E}  }=
@@ -211,12 +215,12 @@ Il guadagno di energia di questi elettroni per fare un salto di energia sarà:
 .\] 
 Quindi per definizione di calore specifico si ha che:
 \[
-	C_{V} \approx \frac{\Delta E}{\Delta  T} = \alpha \frac{T}{T_{F}} 
+	C_{V} \approx \frac{\Delta E}{\Delta  T} = \alpha \frac{T}{T_{F}} \label{eq:stima-Cv-9}
 .\] 
 In effetti si riscontra che il calore specifico nei metalli ha proprio questo andamento lineare nella temperatura.\\
 Cerchiamo di sviluppare le proprietà termiche del gas di elettroni, le useremo per esempio per descrivere il calore specifico. Non faremo più gli integrali in modo da approssimare la Fermi-Dirac come funzione a gradino ma ci teniamo l'espressione con la dipendenza dalla temperatura.
 \[
-	\Omega = -\frac{2}{3} \frac{4\pi V g \sqrt{2}  m ^{3 /2}  }{\left( 2\pi\hbar  \right) ^3} \int_{0}^{\infty} \frac{\mathcal{E} ^{3 /2}d\mathcal{E} }{\exp\left( \frac{\mathcal{E} -\mu }{kT} \right) +1 } 
+	\Omega = -\frac{2}{3} \frac{4\pi V g \sqrt{2}  m ^{3 /2}  }{\left( 2\pi\hbar  \right) ^3} \int_{0}^{\infty} \frac{\mathcal{E} ^{3 /2}d\mathcal{E} }{\exp\left( \frac{\mathcal{E} -\mu }{kT} \right) +1 } \label{eq:landau-lez-8}
 .\] 
 Siamo comunque nelle ipotesi in cui $T\ll T_{F}$, quindi cercheremo di riscrivere l'integrale di sopra con una correzione all'ordine opportuno in questo modo:
 \[
@@ -241,17 +245,17 @@ Prima di procedere dobbiamo chiederci se ci basta una correzione al primo ordine
 \noindent
 La variazione sull'area $I$ cercata sarà la differenza tra la curva tratteggata e la curva continua, possiamo vedere intuitivamente come al primo ordine questa differenza debba annullarsi per simmetria. Per questo la correzione al primo ordine si annulla, quindi al primo ordine $N$ resta costante.\\ 
 Per calcolare le correzioni al secondo ordine facciamo un cambio di variabile: passiamo da $\mathcal{E} $ a $z = \exp\left( \frac{\mathcal{E} -\mu }{kT} \right) $ ed introduciamo due funzioni: 
- \begin{align*}
-	&g_1( z)  = \begin{cases}
+ \begin{align}
+	&g_1( z)  = \begin{cases} 
 		0 \quad z <0\\
-		\frac{1}{e^{z}+1} \quad z > 0
+		\frac{1}{e^{z}+1} \quad z > 0 \label{eq:g_1}
 	\end{cases}\\
 	&g_0( z) =
  \begin{cases}
-		\frac{1}{e^{-z}+1} \quad z < 0 \\
+		\frac{1}{e^{-z}+1} \quad z < 0 \label{eq:g_0}\\
 		0 \quad z >0
 	\end{cases}
-.\end{align*}
+.\end{align}
 Vediamo che queste non sono altro che le due "fette" che differiscono tra la distribuzione a temperatura nulla e quella a temperatura molto bassa, soltanto che la $g_0$ è la parte in alto ribaltata:
 \begin{figure}[H]
     %This is a custom LaTeX template!

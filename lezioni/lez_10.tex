@@ -1,0 +1,315 @@
+\lez{10}{11-03-2020}{}
+\subsection{Effetto termoionico in presenza di un campo elettrico}%
+Assumeremo oggi implicitamente di essere sempre a temperature molto inferiori a quella di Fermi, quindi anche quando facciamo variare la temperatura sarà sempre valido che $\mu \approx \epsilon _{F}$. \\
+Inserendo un campo elettrico $F$ al modello fatto nella scorsa lezione la forma della buca si modifica nel seguente modo:
+\begin{figure}[H]
+    %This is a custom LaTeX template!
+    \centering
+    \incfig{buca-in-presenza-di-un-campo-elettrico}
+    \caption{\scriptsize Buca in presenza di un campo elettrico}
+    \label{fig:buca-in-presenza-di-un-campo-elettrico}
+\end{figure}
+\noindent
+L'altezza della barriera $\Delta ( x) $ per $x > 0$ sarà data da:
+\[
+	\Delta ( x) = W - eFx - \frac{e^2}{4x}
+.\] 
+L'ultimo termine deriva dal fatto che il metallo tende a richiamare l'elettrone: l'elettrone appena esce dal metallo sente un richiamo verso l'interno \footnote{Ricordiamo che questa interazione si ottiene con il modello della carica immagine (carica di fronte ad un piano infinito), in cui si deve dividere per due per via del fatto che quella riflessa è una carica virtuale.}. L'effetto di quest'ultimo termine sulla buca è uno smussamento dello spigolo:
+\begin{figure}[H]
+    %This is a custom LaTeX template!
+    \centering
+    \incfig{buca-in-presenza-di-un-campo-elettrico-considerando-la-carica-immagine}
+    \caption{\scriptsize Buca in presenza di un campo elettrico considerando la carica immagine}
+    \label{fig:buca-in-presenza-di-un-campo-elettrico-considerando-la-carica-immagine}
+\end{figure}
+La posizione del massimo del profilo del potenziale può esere trovata derivando, si ottiene:
+\[
+	x_{\text{max}}= \left( \frac{e}{4F} \right) ^{1 /2}
+.\] 
+Quindi:
+\[
+	\Delta ( x_{\text{max}}) = W - e^{3 /2}F^{1 /2}
+.\] Quindi la densità di corrente con campo $F$ applicato sarà la stessa ricavata nella lezione precedente con una correzione dovuta al campo $F$:
+\[
+	J_{F}= J_0\cdot \exp\left( e^{3 /2}F^{1 /2} /kT \right) 
+.\] 
+La correzione diventa importante quando $e^{3 /2}F^{1 /2} \sim kT$.\\
+Aumentando ancora il campo $F$ diventa importante anche l'effetto tunnel attraverso la barriera, in tal caso (con un pò di quantistica) si trova che:
+\[
+	I_{\text{tunnel}} = \alpha F^2\exp\left( -\frac{B}{F} \right) 
+.\] 
+con il coefficiente $B$ che vale:
+\[
+	B = \frac{4}{3}\left( \frac{\sqrt{2m} }{e \hbar} \right) \phi_{b}^{3 /2}
+.\] 
+Dove abbiamo ridefinito l'altezza effettiva della buca come $\phi _{B} = \Delta ( x_{\text{max}}) $.\\
+Possiamo quindi adesso avere un quadro di come va la corrente termoionica al variare del campo elettrico applicato:
+\begin{figure}[H]
+    %This is a custom LaTeX template!
+    \centering
+    \incfig{corrente-termoionica-in-funzione-del-campo-elettrico}
+    \caption{\scriptsize Corrente termoionica in funzione del campo elettrico in scala semilogaritmica (per diverse temperature abbiamo diverse curve)}
+    \label{fig:corrente-termoionica-in-funzione-del-campo-elettrico}
+\end{figure}
+\noindent
+Nella parte alta del plot domina l'effetto tunnel, mentre per lavorare in un regime "simil-transistor" conviene stare nella parte a campi deboli \footnote{È evidente infatti l'analogia con le curve caratteristiche dei transistor.}, l'ultimo plot disegnato è detto grafico di Fowler-Nordheim in onore a quelli che hanno studiato l'effetto tunnel \footnote{Si trova in rete riportato in funzione di $1 /E$.}.\\
+Questo andamento dell'effetto termoionico è applicabile anche ai semiconduttori, infatti grazie  questo possiamo vedere come sono allineati i livelli di diversi semiconduttori quando facciamo una giunzione. Infatti mandando campi "grandi" su una giunzione di semiconduttori è possibile misurare la corrente che passa e ricavare informazioni sulla barriera di potenziale tra i materiali, ottenendo così una verifica qualitativa dell'alineamento dei livelli energetici tra quest'ultimi. 
+
+\subsection{Effetto fotoelettrico}%
+Bombardando il nostro metallo con una radiazione di energia $h \nu $ nella direzione $z$ possiamo vedere come si modifica il modello di buca di potenziale studiato fin'ora. \\
+Stiamo assumento che tutti gli elettroni del metallo siano eccitati dalla radiazione e che tale radiaizoine non disturbi il moto lungo $x$ e $y$. \\
+In questa situazione un elettrone può uscire dal metallo se:
+\[
+	\frac{p_{z}^2}{2m} + h\nu > W
+.\] 
+Possiamo calcolarci nuovamente il Rate:
+\[
+	R = \frac{4\pi m kT}{h^3}\int_{\mathcal{E} _{z} = W - h\nu }^{\mathcal{E}_{z}=\infty} d\mathcal{E} _{z} \ln\left[ 1 +\exp\left( \frac{\mu -\mathcal{E} _{z}}{kT} \right)  \right] 
+.\] 
+Nella scorsa lezione per risolvere tale integrale abbiamo approssimato il logaritmo consideranto l'esponenziale molto più piccolo di 1, in questo caso non è più possibile farlo. Infatti $h\nu $ potrebbe essere dell'ordine di $W$, facendo partire l'estremo di integrazione addirittura da zero. Per questo è necessario risolvere l'integrale, facciamo il cambio di variabile:
+\[
+	x = \frac{\mathcal{E} _{z}- \mu + h\nu }{kT}
+.\] 
+In questo modo l'integrale va da $-\infty$ a $\infty$:
+\[
+	R = \frac{4\pi m }{h^3} \left( kT \right) ^2 \int_{0}^{\infty} dx \ln\left[ 1+\exp\left( \frac{h\left( \nu -\nu_0 \right) }{kT} - x \right)  \right]  
+.\] 
+Dove abbiamo definito anche 
+\[
+	h\nu_0=W-\nu 
+\]
+Che ci dà una idea della profondità effettiva della buca. Visto che siamo a temperature molto basse (rispetto a quella di Fermi) possiamo scrivere questa costante come:
+\[
+	h\nu_0 = W - \mathcal{E}_{F} = U
+.\] 
+Per completare la nostra semplificazione della notazione introduciamo anche
+\[
+	\delta = \frac{h\left( \nu -\nu_0 \right) }{kT}
+\]
+In conclusione l'integrale si riscrive in modo compatto come:
+\[
+	J = eR = \frac{4\pi m e}{h^3} k^2T^2 \int_{0}^{\infty} dx \ln\left[ 1 + \exp\left( \delta -x \right)  \right]  
+.\] 
+Questo integrale si può risolvere analiticamente per parti, il risultato è noto e si chiama
+\[
+	f_{2}(e^{\delta}) = \int_{0}^{\infty} dx \ln\left[ 1 + \exp\left( \delta - x \right)  \right]  
+\]
+In questo modo riscriviamo la densità di corrente come:
+\[
+	J =  \frac{4\pi m e}{h^3} k^2T^2 f_2(e^{\delta }) 
+.\] 
+Vediamo adesso alcuni limiti di questa corrente interessanti.
+\paragraph{Fotoni molto più energetici del potenziale effettivo della buca}
+Questa condizione corrisponde ad avere $h\left( \nu -\nu_0 \right) \gg kT$:
+\begin{figure}[H]
+    %This is a custom LaTeX template!
+    \centering
+    \incfig{elettroni-pi-energetici-della-buca-di-potenziale}
+    \caption{\scriptsize Elettroni più energetici della buca di potenziale}
+    \label{fig:elettroni-pi-energetici-della-buca-di-potenziale}
+\end{figure}
+\noindent
+In questa situazione anche $e^{\delta }\gg 1$, quindi la funzione speciale $f_2( e^{\delta }) $ diventa:
+\[
+	f_2( e^{\delta }) \approx \frac{\delta ^2}{2}
+.\] 
+Di conseguenza la corrente diventa circa:
+\[
+	J \approx \frac{2\pi m e}{h} \left( \nu -\nu_0 \right)^2
+.\] 
+Scopriamo che la corrente non dipende dalla temperatura, questo ha senso perchè i fotoni hanno tutti l'energia utile a far uscire qualunque elettrone dalla buca. Non è più importante conoscere la temperatura in questo limite.\\
+\paragraph{Elettroni meno energetici della altezza della buca.}
+siamo adesso nel caso in cui $\nu < \nu_0$, quindi $h\left| \nu -\nu_0 \right| \ll kT$. In questo caso $e^{\delta }\ll 1$ e:
+\[
+	f_2( e^{\delta }) \approx e^{\delta }
+.\] 
+Per questo motivo la corrente in uscita per l'effetto fotoelettrico diventa:
+\[
+	J \approx \frac{4\pi m e k^2}{h^3}T^2 \exp\left(  \frac{h\nu - \varphi}{kT}\right) 
+.\] 
+Dove si definisce $\varphi = W - \mu $.\\
+Notiamo che se $h\nu = 0$ troviamo l'espressione per l'effetto termoionico, soltanto che il potenziale efficiace adesso è diminuito dell'energia del fotone che arriva: È come aver ridotto la barriera di $h\nu $.
+\paragraph{Fotoni con l'esatta energia della barriera di potenziale effettiva}
+In questo caso abbiamo $h\nu = h\nu_0$, quindi la funzione speciale:
+\[
+	f_2( 1) = \frac{\pi^2}{12}
+.\] 
+E la densità di corrente vale:
+\[
+	J = \frac{\pi^3 m e k^2}{3h^3}T^2 \propto T^2
+.\] 
+\subsection{Condizione sulla massa di una nana bianca per il collasso gravitazionale.}%
+Nell'ultima fase della loro vita le stelle sono principalmente composte di elio, le masse tipiche sono dell'ordine di $10^{33}$ g, le densità $10^{7}$ g/cm$^3$ e le temperature nel nucleo $T \sim 10^{7}$ K.  Siamo nell'ordine di energie di elettroni dell'$keV$, quindi possiamo considerare l'elio completamente ionizzato nella stella. \\
+Possiamo azzardare che la massa della stella è dell'ordine:
+\[
+	M \approx N\left( m + 2m_{p} \right) \approx 2Nm_{p} 
+.\] 
+La densità di elettroni sarà:
+\[
+	n = \frac{N}{V} \approx \frac{M /2m_{p}}{M / \rho }= \frac{\rho}{2m_{p}} \sim 10^{30} \text{ elettroni}/cm^3
+.\] 
+Teniamo presente che in un metallo abbiamo circa $10^{20}$ el/cm$^3$, quindi gli elettroni sono molto compressi tra di loro nella stella.\\
+L'impulso di ferrmi per questo gas sarà dell'ordine (guardando al volume dello spazio delle fasi):
+\[
+	p_{F} = \left( \frac{3n}{4\pi g} \right) ^{1 /3} h = \left( \frac{3n}{8\pi} \right) ^{1 /3} h \sim 10^{-17} \frac{\text{g} \cdot \text{ cm}}{s}
+.\] 
+Ci aspettiamo che l'energia di fermi sia dell'ordine di $\mathcal{E} _{F} \sim  mc^2$ per l'elettrone (a riposo). 
+\[
+	\mathcal{E} _{F} \sim  10^{6} \text{eV (grandi)}
+.\] 
+Quindi le temperature di fermi associate sarebbero dell'ordine: $T_{F} \sim 10^{10}$ K.\\
+Anche in questo sistema $T_{F} \gg T$, quindi siamo autorizzati ad assumere il nostro gas come un gas degenere ed applicare la statistica di Fermi vista fin'ora.\\
+Calcoliamo la pressione facendo un modellino di stella che considera solo gli elettroni, ci aspettiamo che i nuclei (essendo fermioni) non abbiamo un contributo imprtante alla pressione.\\
+Così facendo cercheremo la pressione di espansione che stabilizza la stella, quella che compensa l'interazione gravitazionale che tende a farla collassare.\\
+Dobbiamo adesso tener di conto che questo adesso è un gas di particelle relativistiche: è necessario cambiare la la legge di dispersione per l'energia.\\
+Troviamo dapprima il numero di particelle totali facendo l'integrale sul volumetto di spazio delle fasi (prendendo come $\overline{n}_{q}$ la Fermi Dirac a gradino):
+\[
+	N = \int \overline{n}_{q}d^3p d^3r= \frac{8\pi V}{h^3}\int_{0}^{p_{F}} p^2dp = \frac{8\pi V}{3h^3}p_{F}^3 
+.\] 
+L'energia cinetica della particella relativistica si scrive come:
+\[
+	\mathcal{E} = mc^2\left[ \sqrt{1 + \left( \frac{p}{mc} \right)^2} - 1 \right] 
+.\] 
+Volendo con questa possiamo calcolare la velocità degli elettroni:
+\[
+	v = \frac{d\mathcal{E} }{dp} = c \frac{p / mc }{\left[ 1 + \left( p /mc  \right)^2 \right] ^{1 /2}}
+.\] 
+Inoltre possiamo adesso trovare l'energia mettendo $\mathcal{E} $ nell'integrale "dello spazio delle fasi" pesato con il volume della cella unitaria $h^3$:
+\[
+	E = \int\mathcal{E} _{q} \overline{n}_{q}d^3p d^3r = \frac{8\pi V}{h^3}\int_{0}^{p_{F}} mc^2\left[ \left\{ 1 + \left( \frac{p}{mc} \right)^{2} \right\}^{1 /2} -1 \right] p^2dp 
+.\] 
+Procediamo adesso al calcolo della pressione, possiamo ricavarcela da $\Omega $:
+\[
+	\Omega = - PV = - kT \sum_{q}^{} \ln\left( 1+\exp\left( \frac{\mathcal{E} _{q}-\mu }{kT} \right)  \right) 
+.\] 
+Quindi passando all'integrale:
+\[
+	\Omega = - \frac{8\pi kTV}{h^3}\int_{}^{} p^2\ln\left[ 1 + \exp\left( - \frac{\mathcal{E} - \mu }{kT} \right)  \right] dp 
+.\] 
+L'avevamo già calcolata, solo che adesso abbiamo un'altra legge di dispersione ($\mathcal{E} = \frac{p^2}{2m}$ ), adesso invece è più complessa. Successivamente troveremo semplicemente $P = - \frac{\Omega }{V}$.\\
+Possiamo fare l'integrale si $\Omega $ per parti, usiamo $p^2$ la funzione da integrare mentre la parte con il logaritmo quella da derivare.
+\[
+	\Omega = \frac{8\pi kTV}{h^3}\left( - \left.\frac{p^3}{3}\ln\left[ \ldots \right] \right|_{0}^{\infty} + \frac{1}{3}\int_{0}^{\infty} p^2\cdot p \frac{\exp\left( -\frac{\mathcal{E} -\mu }{kT} \right) }{1 + \exp\left( -\frac{\mathcal{E} -\mu }{kT} \right) } \frac{1}{kT} \frac{\mbox{d} \mathcal{E} }{\mbox{d} p}  dp
+ \right) 
+ .\] 
+IL primo pezzo tende a $0$ in entrambi gli estremi, quindi lo eliminiamo. All'interno dell'integrale invece riconosciamo proprio la Fermi-Dirac che ritorna grazie alla derivata del logaritmo. Di conseguenza per risolvere possiamo riapprossimarla come gradino lasciando l'integrale tra $0$ e $p_{F}$. \\
+Inoltre sempre nell'integrale riconosciamo la velocità $v$ che proviene dalla legge di derivazione a catena. Quindi risolviamo direttamente per $P$:
+\[
+	P = \frac{8\pi}{3h^3}\int_{0}^{p_{F}} mc^2 \frac{\left( \frac{p}{mc} \right) ^2}{\left[ 1+ \left( \frac{p}{mc} \right) ^2 \right] ^{1 /2}} p^2 dp
+.\]
+In quest'ultima abbiamo anche inglobato un $p$ all'interno della espressione della velocità, moltiplicando e dividendo anche il tutto per $mc$.\\
+Per calcolare questo integrale introduciamo la variabile adimensionale $\theta $:
+\[
+	\theta \implies p = mc\sinh( \theta ) 
+.\] 
+Essenzialmente ci dice quanto siamo vicini al limite relativistico in cui $p = mc$. Possiamo allora riscrivere l'energia come:
+\[
+	\mathcal{E} = mc^2\left( \cosh( \theta ) -1  \right) 
+.\] 
+E anche la velocità si scrive come:
+\[
+	v = c \tanh( \theta ) 
+.\] 
+Chiamiamo allora anche:
+\[
+	x = \sinh( \theta_{F})  = \frac{p_{F}}{mc}
+.\] 
+Otteniamo che le nostre funzioni ricavate finora si semplificano così:
+\[
+	N = \frac{8\pi V m^3c^3}{3h^3}x^3
+.\] 
+\[
+	E = \frac{8\pi V m^3c^5}{3h^3}B (x ) 
+.\] 
+\[
+	P = \frac{\pi m^{4}c ^{5}}{3h^3}A ( x) 
+.\] 
+con $A( x) $ e $B ( x)$ funzioni risultato degli integrali in $dp$ passando agli integrali in $d\theta $:
+\[
+	A( x) = x\left( x^2+1 \right) ^{1 /2}\left( 2x^2 - 3 \right) + 3 \sinh^{-1}x 
+.\] 
+\[
+	B( x) = 8x^3\left[ \left( x^2+ 1 \right)^{1 /2}-1 \right] - A( x) 
+.\] 
+È interessante notare che il rapporto $A$/$B$ È correlato al rapporto tra Pressione ed Energia del nostro gas. Se facciamo tendere $x \to 0$ tale rapporto tende a 2/3, quindi abbiamo anche che:
+\[
+	\frac{PV}{E} \to  \frac{2}{3}
+.\] 
+Questo va bene perchè questa è la nota espressione per il gas perfetto con $\frac{P^2}{2m} = \mathcal{E} $:
+\[
+	P = \frac{2}{3}\frac{E}{V}
+.\] 
+Nel limite non relativistico. \\
+Nel limite ultrarelativistico $x \to \infty $ si ha:
+\[
+	\frac{A}{B} \to \frac{1}{3}
+.\] 
+E quindi si ottiene 
+\[
+	PV = \frac{1}{3}E
+.\] 
+Questo lo abbiamo già ottenuto per un gas di fermioni nel limite in cui la dispersione è $\mathcal{E} = pc$.\\
+Supponiamo adesso che il gas sia all'interno di una sfera e cerchiamo la variazione di energia $dE$:
+\[
+	dE = - P( n) dV = -P( R) 4\pi R^2dR
+.\] 
+Con $R$ che è il raggio della stella, $n$ la densità degli elettroni nella stella. \\
+A compensare la pressione del gas ci sarà la pressione gravitazionale, calcoliamo l'energia dovuta a tale pressione:
+\[
+	dE_{g}= \left( \frac{\mbox{d} E_{g}}{\mbox{d} R}  \right) dR = 
+	\alpha \frac{GM^2}{R^2}dR
+.\] 
+Dove la costante di proporzionalità dalla distribuzione di massa all'interno della stella. Non è interessante la stima del coefficiente, ci basto sapere che l'ordine di grandezza di tale energia è quello.\\
+Ugualiando $dE = dE_{g}$ ricaviamo la pressione sulla pressione per mantenere l'equilibrio:
+\[
+	P( R) = \frac{\alpha }{4\pi}\frac{GM^2}{R^4}
+.\] 
+Dobbiamo adesso trovare il modo di legare questa pressione alle costanti del problema, visto che in precedenza l'abbiamo calcolata in termini di $x$ cerchiamo di riscrivere quest'ultima per poi sostituirla in $P( x) $:
+\[
+	x = \frac{P_{F}}{mc} = \left( \frac{9N}{32 \pi^2} \right) ^{\frac{1}{3}}
+	\frac{\frac{\hbar}{mc}}{R} =
+	\left( \frac{9\pi M}{8mp}\right)^{1 /3} \frac{\hbar /mc}{R} 
+.\] 
+In questo modo vediamo che essa è funzione della massa totale della stella, del suo raggio e della massa dell'elettrone.\\
+Alla fine abbiammo la condizione di equilibrio:
+\[
+	A( \left( \frac{9\pi M}{8mp}\right)^{1 /3} \frac{\hbar /mc}{R} ) =
+	\frac{3\alpha h^3GM^2}{4\pi^2m ^{4}c^{5}R^{4}} = 
+	6\pi\alpha \left[ \frac{h /mc}{R} \right] ^3 \frac{GM^2 /R}{mc^2}
+.\] 
+È interessante notare i rapporti all'interno della relazione: quello tra l'energia gravitazionale della stella e l'energia a riposo dell'elettrone, il rapporto tra la lunghezza d'onda Compton e il raggio della stella. Possiamo vedere i casi estremi per questa relazione, abbiamo che:
+Ricordiamo che:
+\[
+	M \approx 10^{33} g
+.\] 
+\[
+	m_{p}\sim 10^{-14}g
+.\] 
+\[
+	\frac{\hbar}{mc}\sim 10^{-11} cm
+.\] 
+Inoltre $x \approx 1$ se $R \sim 10^{8}$ cm, questo è un pò lo spartiacque tra i due casi estremi.\\
+Se $R \gg 10^{8}$ ($x \ll 1$) allora abbiamo che:
+\[
+	A( x) \approx \frac{8}{5}x^{5}
+.\] 
+Quindi abbiamo l'espressione per il raggio:
+\[
+	R = \frac{3 \left( 9\pi \right) ^{2 /3}}{40\alpha }\frac{\hbar^2}{Gm_{e}m_{p}}M^{-1 /3}
+.\] 
+Nell'ipotesi in cui il raggio sia abbastanza grande allora $R \propto M^{-1 /3}$, questo ci dice che in questo limite maggiore è la massa e minore è il raggio.
+Nel caso opposto se $R \ll 10^{8}$ cm si ha $x \gg 1$ quindi 
+\[
+	A( x)  \approx 2x^{4} - 2 x^2
+.\] Se sostituiamo di nuovo troviamo che
+\[
+	R \sim \frac{\left( 9\pi \right) ^{1 /3}}{2} \frac{\hbar}{mc} \left( \frac{M}{mp} \right) ^{1 /3} \left[ 1- \left( \frac{M}{M_0} \right) ^{2 /3} \right] ^{1 /2}
+.\] 
+Dove 
+ \[
+	 M_0 = \frac{9}{64} \left( \frac{3\pi}{\alpha } \right) ^{1 /2} \frac{\left( \frac{\hbar c}{G} \right) ^{3 /2}}{m_{p}^2}
+.\] 
+Di nuovo troviamo un raggio che tende a diventare sempre più piccolo all'incrementare della massa, questa volta però troviamo che vi è un limite: quando $M \sim M_0$ allora $R \to 0$ e non è possibile avere $M > M_0$ perchè altrimenti la radice diventerebbe puramente immaginaria.\\
+Quindi il sistema ci dice che l'equilibrio tra la pressione e la attrazione gravitazionale fa si che maggiore è la massa della stella e più diventa piccola e soprattutto abbiamo un limite oltre al quale la stella semplicemente smette di esistere!\\
+Si trova che $M_0 \sim 2.5 $ e $3$ $M_{\odot}$. \\
+Se la massa è superiore a $M_0$ allora la pressione del gas di fermi è insufficiente a sostenere la pressione gravitazionale e tutto collassa.

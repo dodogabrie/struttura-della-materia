@@ -1,0 +1,291 @@
+\lez{12}{16-03-2020}{}
+Descriviamo oggi la densità di energia del campo elettromagnetico all'equilibrio termico con la sua sorgente. Arriveremo alle famose leggi frutto del lavoro di Plank, Bose, Einstein, Wien, Rayleigh e Jeans. Stiamo ovviamente parlando di corpo nero.\\
+Tale nome nasce dal modo in cui Plank iniziò ad interessarsi allo studio della radiazione della materia all'equilibrio: lui notò che le finestre delle case aperte in giornate soleggiate non permettevano di vedere cosa vi fosse all'interno, all'interno vi era il buio nonostante magari qualcuno lì dentro ci vedesse benissimo! Con questo esempio completamente senza senso venne coniata l'idea di chiamarlo corpo nero.
+\subsection{Radiazione di Corpo Nero}%
+Possiamo descrivere il campo elettromagnetico come un insieme di oscillatori armonici aventi ciascuno la sua frequenza di oscillazione oppure introducendo il concetto di quasi particella che può distribuirsi su tutti gli stati possibili del campo elettromagnetico secondo una Bose-Einstein avente $\mu = 0$. \\
+Abbiamo visto che l'energia media del singolo oscillatore è:
+\[
+	\mathcal{E} = \frac{1}{2}\hbar\omega 
+	\left( 1 + \frac{1}{\exp\left( \frac{\hbar \omega _{s}}{kT}-1 \right)} \right) 
+.\] 
+con $\left< n_{s} \right>$ descritto da una Bose-Einstein senza il $\mu $: \[
+	\left<n_{s} \right> = \frac{1}{\exp\left( \frac{\hbar \omega _{s}}{kT}-1 \right) }
+.\] 
+Quando Plank studiò questi sistemi non inserì il termine di punto zero dell'energia $1 /2 \hbar\omega _{s}$  perché non ne aveva conoscenza. \\
+Noi invece trascureremo questo termine perché porterà al massimo soltanto un offset e soprattutto non abbiamo accesso a questo termine nelle misure\footnote{Vi si accede solo quando si misura la differenza di energia "nel vuoto" per il nostro sistema}, possiamo misurare soltanto l'energia contenente il termine $\left<n_{s} \right>$.
+\[
+	\left<\mathcal{E}  \right> = \frac{\hbar \omega _{s}}{\exp\left( \frac{\hbar \omega _{s}}{kT} \right) -1}
+.\] 
+Calcoliamo il numero di modi compresi in frequenza tra $\omega $ e $\omega + \delta \omega $, questa è la densità di stati del campo elettromagnetico. Tale conto è stato fatto da Rayleigh mettendo le condizioni al contorno su una scatola di lato $L$, il suo risultato fu: 
+\[
+	N_{\text{modi}}=\frac{\omega ^2 d\omega }{\pi^2 c^3} \label{eq:densita-stati}
+.\] 
+Pensandoci bene questo è esattamente lo stesso conto che facciamo nello spazio delle fasi, in questo modo ad esempio Bose è arrivato alla sua distribuzione, ragionando sul campo elettromagnetico.\\
+Per calcolarci la densità di stati è necessario conoscere la dispersione del fotone
+\[
+	\omega = ck 
+.\] 
+Ma visto che $\mathcal{E} = \hbar\omega $ e $p = \hbar k$ si ha per i fotoni:
+\[
+	\mathcal{E} = cp
+.\] 
+A noi serve fare il conto con l'elemento infinitesimo dello spazio delle fasi:
+\[\begin{aligned}
+	\rho ( \omega ) 
+	=&
+	2 \cdot \frac{2d^3r d^3p}{\left( 2\pi \hbar \right)^3}=\\
+	=& \frac{2V 4\pi p^2 dp}{\left( 2\pi\hbar  \right) ^3} =\\
+	=& \frac{V\mathcal{E}^2 d\mathcal{E} }{\pi^2c^3\hbar^3}=\\
+	=& \frac{V\omega ^2 d\omega }{\pi^2c^3}
+.\end{aligned}\]
+Possiamo allora scrivere la densità di energia del campo elettromagnetico per unità di volume come:
+\[
+	u( \omega ) d\omega = \frac{\omega ^2 d\omega }{\pi^2 c^3}\cdot \frac{\hbar\omega }{\exp\left( \frac{\hbar\omega }{kT} \right) -1}  
+.\] 
+In questo modo abbiamo ricavato la nota formula di Plank:
+\[
+	u( \omega ) d\omega = \frac{\hbar}{\pi^2 c^3}
+	\frac{\omega ^3}{\exp\left( \frac{\hbar\omega }{kT} \right) -1}d\omega 
+.\] 
+A questo risultato arrivò anche Bose in contemporanea a Plank, introducendo già il suo concetto di "quasi particelle". Trovò il numero di particelle medio in ogni stato di energia $\hbar\omega $ utilizzando la distribuzione di Boltzmann :
+\[
+	\left<n \right> = \frac{\sum_{n}^{} n \exp\left( \frac{n \hbar \omega }{kT} \right) }{\sum_{n}^{}\exp\left( \frac{n \hbar \omega }{kT} \right)}
+.\] 
+In questo modo Bose aveva già implicitamente considerato le particelle indistinguibili cercando la probabilità di avere un livello occupato da $n$ particelle.\\
+Invece Einstein pensò ad un modo di distribuire  $n$ particelle all'interno degli stati senza imporre alcun vincolo sul numero totale di particelle. Tutti e tre arrivarono alla giusta conclusione quasi contemporaneamente.\\
+L'espressione ricavata dal punto di vista della meccanica quantistica è molto chiara: abbiamo preso una singola particelle con energia $\hbar\omega $, abbiamo trovato la densità di stati e in fine abbiamo moltiplicato questa per il numero medio di particelle in ciascun livello di energia $\omega $:
+\[
+	\hbar \omega  \rho ( \omega ) \left<n( \omega )  \right> = u( \omega ) 
+.\] 
+Abbiamo così ottenuto la densità di energia tra $\omega $ e $\omega + d\omega $. La forma di questa distribuzione è la seguente:
+\begin{figure}[H]
+    \centering
+    \incfig{distribuzione-di-plank}
+    \caption{Distribuzione di Plank}
+    \label{fig:distribuzione-di-plank}
+\end{figure}
+\noindent
+Il massimo si sposta a temperature sempre più alte aumentando la densità di energia:
+\[
+	\omega _{\text{max}} \sim T
+.\] 
+Questa è la famosa legge di spostamento di Wien. \\
+Possiamo fare alcuni esempi per vedere in che posizione sta il massimo per varie temperature:
+\begin{itemize}
+	\item Temperatura ambiente: T=300 K $\to $ medio infrarosso: $\lambda \sim \mu$m \footnote{Questo lo si ha nella nostra esperienza quotidiana, mettendoci in una stanza completamente buia per vedere qualcosa dobbiamo andare nell'infrarosso}.
+	\item Temperatura del sole: T=6000 K $\to $ Visibile: siamo nel giallo.
+	\item Radiazione cosmica: T=3K $\to $ lontano infrarosso: $\lambda = 100$ $\mu$m, dell'ordine dei GHz in frequenza.
+\end{itemize}
+Se sviluppiamo la distribuzione di Plank per
+\[
+	\frac{\hbar \omega }{kT} \ll 1
+.\] 
+In tal caso si ha che:
+\[
+	\exp\left( \frac{\hbar \omega }{kT} \right) = 1 - \frac{\hbar \omega }{kT}
+.\] 
+Quindi la distribuzione diventa circa quadratica: esce fuori la legge di Rayleigh-Jeans
+\[
+	u( \omega ) \propto \omega ^2 kT 
+.\] 
+Questa legge varrebbe se i fotoni fossero oggetti classici, infatti con questa stiamo semplicemente moltiplicando la densità di stati\footnote{Proporzionale $\omega ^2$ come nella \ref{eq:densita-stati}} per l'energia media del singolo oscillatore $\left<\mathcal{E}  \right> \sim kT$.\\
+Questa formula non può funzionare per tutte le frequenze, infatti come ben sappiamo se la distribuzione di energia fosse stata effettivamente questa allora si andrebbe incontro alla famosa catastrofe ultravioletta.\\
+Nel nostro conto non abbiamo assunto nessuna condizione al contorno dipendente dalla frequenza, questo equivale a dire che la risposta della nostra scatola sia indipendente dalla frequenza, in particolare la nostra scatola potrebbe essere completamente assormente a tutte le frequenze (questo è un motivo migliore per chiamare il sistema corpo nero).\\
+Una volta che pensiamo in termini di fotoni all'equilibrio termodinamico il potenziale chimico nullo adesso assume un significato ben preciso, infatti togliendo il vincolo di avere la conservazione delle particelle ci resta solo la conservazione dell'energia: Tanta ne viene emessa e tanta ne viene assorbita ad esempio dalla scatola.\\
+Di conseguenza potrebbe benissimo capitare che si abbia l'assorbimento di un fotone di energia $E$ e l'emissione di tre fotoni di energia $E /3$.\\
+Definiamo adesso l'energia totale media per unità di volume:
+\begin{align}
+	\frac{\overline{E}}{V}=& \int_{0}^{\infty} u ( \omega ) d\omega  =\\
+	=&\frac{\left( kT \right) ^{4}}{\pi^2\hbar^3c^3}\int_{0}^{\infty} \frac{x^3}{e^{x}-1}dx =\\ \label{eq:energia-totale-media-fotoni}
+	=&\frac{\pi^2 k^{4}}{15 \hbar^3 c^3}T^{4}
+.\end{align}
+Che è la legge di Stephan-Boltzmann:
+\[
+	E = \sigma T^{4}
+.\] 
+Con questa si ricava l'andamento del calore specifico
+\[
+	C_{V} = \frac{\partial E}{\partial T} \propto T^{3}
+.\] 
+Possiamo adesso chiederci perchè all'aumentare della temperatura non torna il calore specifico classico del tipo $3Nk$, la risposta è semplice: il nostro gas non è mai classico.\\
+Infatti il nostro sistema è costituito da gas di fotoni che infiniti modi di propagazione del campo elettromagnetico, non ho una frequenza massima dei modi all'interno della scatola. Infatti la densità di stati è proporzionale a $\omega ^2$ e noi possiamo aumentare la frequenza a piacimento, non è vincolata.\\
+Quindi in maniera del tutto indipendente dalla temperatura ho sempre tantissimi modi che rispettano la relazione:
+\[
+	\frac{\hbar\omega }{kT}\gg 1
+.\] 
+Vedremo inoltre più avanti un sistema del tutto analogo a questo che invece è limitato in enegia da un $\hbar\omega _{\text{max}}$.
+In tal caso i modi sono finiti e il calore specifico tenderà a quello classico:
+\[
+	C_{v} \to 3Nk
+.\] 
+In questo caso $N$ non sarà il numero di particelle all'equilibrio, bensi il numero di oscillatori armonici.\\
+Tornando al gas di fotoni possiamo calcolare la pressione passando dalla $\Omega $, in questo modo otteniamo il risultato:
+\[
+	PV = \frac{1}{3}E \propto \left( kT \right) ^{4}
+.\] 
+Questo è un risultato generale, lo abbiamo calcolato per il gas perfetto con particelle massive nel caso di legge di dispersione $E = cp$ e infatti torna analogo in questo caso.
+Il calore specifico invece per il gas di fotoni invece:
+\[
+	C_{P} \to \infty
+.\] 
+Perché il nostro sistema è infinitamente comprimibile
+\[
+	\left( \frac{\partial P}{\partial V}  \right) ^{-1} 
+	\text{ è infinitamente larga per gli oscillatori armonici}
+.\] 
+Il fatto che la compressibilità diverga ha come conseguenza che le fluttuazioni nel numero di particelle siano molto grandi, possiamo aspettarci anche questo dal fatto che i fotoni non conservano il numero di particelle.\\
+Vediamo adesso un altro sistema che si presta ad essere trattato come un gas di oscillatori armonici:
+\subsection{Vibrazioni all'interno dei solidi}%
+È naturale pensare alle vibrazioni di un solido come delle oscillazioni di ogni atomo attorno alla posizione di equilibrio. Possiamo pensare il nostro atomo come in una buca di potenziale quadratica (per quanto possa essere complicata una volta sviluppata avrà questa forma), quindi si ha 
+\[
+	u( \overline{r}) = u_0+ \frac{\alpha }{2}r^2
+.\] 
+In tre dimensioni avremo $3N$ oscillatori, $u_0$ sarà una costante negativa che tiene ben legati gli atomi tra loro. Classicamente abbiamo ricavato tutto, usiamo il teorema di equipartizione per ottenere:
+\[
+	E = 3N kT \implies C_{V} = 3Nk
+.\] 
+L'ultima è la legge di Duolong e Depetit.\\
+Questa funziona bene per il calore specifico a temperatura ambiente, viene meno a temperature molto basse dove il calore specifico risulta sperimentalmente andare a zero.\\
+Einstein suggerì di trattare gli oscillatori armonici in modo quantistico, associando ad ogni oscillatore una energia media 
+\[
+	E_1=\mathcal{E} _{0,\omega } + \hbar\omega \overline{n}
+\]
+dove $\overline{n}$ è la distribuzione di Bose-Einstein.
+\[
+	\overline{n} = \frac{1}{\exp\left( \frac{\hbar \omega }{kT} \right) -1}
+.\] 
+Mentre l'energia di punto zero vale: 
+\[
+	E_{0, \omega } = \frac{\hbar \omega }{2} + \frac{u_0}{3}
+\]
+L'energia media dell'intero sistema sarà $3N$ volte questa, quindi possiamo direttamente trovare il calore specifico in questo modello di Einstein:
+\[
+	C_{V} = 3Nk\left( \frac{\hbar\omega }{kT} \right) ^2 
+	\frac{\exp\left( \frac{\hbar\omega }{kT} \right) }{\left[ \exp\left( \frac{\hbar\omega }{kT} \right) -1 \right] ^2}
+.\] 
+Plottando questa in funzione di $T$ ci si rende conto che per alte temperature ($kT \gg \hbar \omega $) torna la formula che conosciamo di calore specifico costante. 
+Tuttavia, anche se con questa formula il calore specifico va a zero a basse temperature, si notò che questo non andava a zero nel modo osservato nei dati sperimentali ($\sim T^{3}$) ma con il modello di Einstei andava giù come un esponenziale.\\
+Se ricordiamo sopra un andamento per $C_{V}$ cubico lo abbiamo già trovato per il gas di fotoni, evidentemente a basse temperature deve esserci qualcosa che rende molto simile il nostro sistema di vibrazioni in un solido ad un gas di fotoni.\\
+La differenza tra questo sistema ed il gas di fotoni la fa sicuramente la densità di stati: abbiamo assunto qua che i $3N$ oscillatori armonici abbiano tutti la stessa frequenza di oscillazione, quindi la stessa $\hbar\omega $. Nel caso dei fotoni invece non era cosi, abbiamo preso degli $\hbar\omega $ diversi per ogni fotone, in particolar modo avevamo  $\hbar\omega = c \hbar k$.\\
+Sembrerebbe sensato assumere anche per questo sistema di vibrazioni nei solidi degli oscillatori armonici con una frequenza che è linearmoente proporzionale al vettore d'onda, si tratterebbe quindi di trattarli gli oscillatori come onde. In questo modo troveremo l'andamento giusto del calore specifico a bassa temperatura.\\
+Debye suggerì che considerare ogni oscillatore armonico indipendente con un potenziale uguale per tutti gli atomi non fosse una buona trattazione. A basse energie non si possono trattare le oscillazioni degli atomi indipendenti l'una dall'altra \footnote{Notiamo che nel modello iniziale si considera già, mediante le molle, l'interazione tra gli atomi del solido, soltanto che adesso facciamo cadere l'ipotesi che dopo una perturbazione il potenziale $u( r) $ resti invariato.}.\\
+Avevamo assunto che tutti gli atomi avessero una frequenza di oscillazione $\omega _{E}$ ed una energia di legame $n_0$ ben definiti, avevamo assunto anche che gli atomi fossero indipendenti l'uno dall'altro. Con queste assunzioni si ha che le due quantità non dovrebbero dipendere dalla densità del materiale. Questo sarebbe problematico nel calcolo dell'emergia libera \footnote{La seguente formula è riferita a 3N oscillatori tutti con la stessa frequenza ed aggiungendo la parte relativa all'oscillazione}:
+\[
+	F = N n_0 + \frac{3}{2}N\hbar \omega _{E} + 3 N kT\ln\left[ 1-\exp\left( -\frac{\hbar \omega _{E}}{kT} \right)  \right] 
+.\] 
+Andando a calcolare la pressione e la compressibilità si otterrebbero i due risultati assurdi:
+
+\[
+	P = \frac{\partial P}{\partial V} = 0
+.\] 
+\[
+	k = - \frac{1}{V} \left( \frac{\partial V}{\partial P}  \right) 
+.\] 
+Di conseguenza non possiamo trattare le vibrazioni come oscillazioni di singoli atomi in cui ognuno non vede gli atomi vicini, questo funziona solo a temperature alte.\\
+Raffiniamo la nostra trattaizione iniziando a cercare i modi normali del nostro sistema di N particelle in una dimensione legate da molle. I modi normali che contribuiscono al calore specifico ed all'energia a temperature basse saranno quelli di energia più bassa possibile. Dimostriamo questa affermazione.\\
+Cerchiamo questi modi in una dimensione, prendiamo la seguente catena di atomi legati insieme da molle:
+\begin{figure}[H]
+    \centering
+    \incfig{catena-di-atomi-in-una-dimensione}
+    \caption{Catena di atomi in una dimensione}
+    \label{fig:catena-di-atomi-in-una-dimensione}
+\end{figure}
+\noindent
+Il modo di oscillazione meno energetico che possiamo ottenere con questo sistema è quello in cui un solo atomo viene spostato dalla sua posizione di equilibrio, generando una sempre minore perturbazione sugli atomi a lui limitrofi:
+\begin{figure}[H]
+    \centering
+    \incfig{perturbazione-meno-energetica-per-una-catena-di-atomi}
+    \caption{Perturbazione meno energetica per una catena di atomi}
+    \label{fig:perturbazione-meno-energetica-per-una-catena-di-atomi}
+\end{figure}
+\noindent
+Nella figura il grafico di sotto corrisponde ad un passaggio al cotinuo degli atomi eccitati, la curva dello spostamento prenderebbe quella forma. Infatti se chiamiamo $a$ il passo reticolare e $\lambda $ la lunghezza d'onda generata dalla perturbazione questo è il limite in cui 
+\[
+	\lambda \gg a
+.\] 
+Il nostro solido diventa così un mezzo elastico non più discreto ma continuo, non ci accorgiamo della struttura discreta degli atomi. In questo modo valgolo le leggi di propagazione in un mezzo continuo.\\
+Il vettore d'onda del sistema così perturbato sarà:
+\[
+	k_{\text{min}} = \frac{\pi}{Na}
+.\] 
+Il modo avente energia più alta possibile sarà invece quello in cui gli atomi si spostano ognuno nella direzione opposta al precedente:
+\begin{figure}[H]
+    \centering
+    \incfig{perturbazione-più-energetica-per-una-catena-di-atomi}
+    \caption{Perturbazione più energetica per una catena di atomi}
+    \label{fig:perturbazione-più-energetica-per-una-catena-di-atomi}
+\end{figure}
+\noindent
+Questa corrisponde alla frequenza massima di oscillazione. In questo caso non è possibile considerare il nostro cristallo come un mezzo elastoco continuo. \\
+Se volessimo comunque associare anche a questo moto un vettore d'onda allora avremmo che:
+\[
+	k_{\text{max}} = \frac{\pi}{a}
+.\] 
+Essendo l'energia $\mathcal{E} = c_s \hbar k$ abbiamo che il primo caso corrisponde senza dubbio all'energia massima, il secondo a quella minima.\\
+Ci aspettiamo quindi di poter decrivere i nostri modi normali di oscillazione come delle onde aventi $k$ limitato superiormente dal passo reticolare del cristallo ed inferiormente dalle dimensioni globali di quest'ultimo.\\
+Tornando adesso al caso di Figura \ref{fig:perturbazione-meno-energetica-per-una-catena-di-atomi}, possiamo considerare in questo caso valida la legge di dispersione:
+\[
+	\omega = c_sk
+.\] 
+Dove $c_s$ è proprorzionale alla velocità del suono.\\
+Tornando adesso in 3 dimensioni per questo primo caso si ha che sono possibili 3 polarizzazioni: le due tipiche dei campi EM più quella longitudinale.\\
+Parliamo adesso di quella longitudinale. Sia $\rho$ la densità di un elementino di solido, $P$ la sua pressione e $v$ la sua velocità. La prima equazione cardinale può essere scritta come:
+\[
+	\frac{\partial P}{\partial x} + \rho \frac{\partial v}{\partial t} = 0
+.\] 
+Da combinare con l'equazione di continuità per la densità:
+\[
+	\frac{\partial \rho }{\partial t} +
+	\frac{\partial }{\partial x} \left( \rho v \right) 
+	= 
+	0 
+.\]  
+Sappiamo che interpolando queste due equazioni si arriva alla legge di dispersione $\omega = c k$. \\
+Per arrivarci era necessario fare un calcolo perturbativo sulla pressione e sulla densità:
+\[
+	\rho = \rho_0+ \rho ' 
+.\] 
+\[
+	P = P_0 + P'
+.\] 
+Successivamente dovevamo introdurre queste due quantità nelle equazioni precedenti scartando i termini al secondo ordine, si ottiene:
+\[
+	\frac{\partial P'}{\partial x} +
+	\rho_0 \frac{\partial v'}{\partial t} 
+	=
+	0
+.\] 
+\[
+	\frac{\partial \rho '}{\partial t} + 
+	\rho_0 \frac{\partial v' }{\partial x} 
+	=
+	0  
+.\] 
+Queste sono onde longitudinali, di pressione e densità. Vedremo che queste sono le uniche che possono propagare nei liquidi. \\
+Se assumiamo anche che la densità sia funzione solo della pressione allora si ha che:
+\[
+	\rho 
+	=
+	\rho ( P_0) +
+	\frac{\partial \rho }{\partial P} P'
+.\] 
+Si introduce in questo modo:
+\[
+	\rho'
+	= 
+	\frac{\partial \rho }{\partial P} P' 
+	=
+	\frac{1}{c^2} P'
+.\] 
+con $c^2 = 1 / k\rho $ che rappresenta la velocità di propagazione, in tale espressione si ha $k$ che è la compressibilità. \\
+Sostituendo questa $\rho '$ nelle equazioni sopra si arriva alla equazione di propagazione delle onde:
+\[
+	\frac{\partial ^2 \rho '}{\partial x^2} - 
+	\frac{1}{c^2} \frac{\partial ^2\rho '}{\partial t^2} 
+	= 
+	0
+.\] 
+Questa derivazione vale solo per le onde longitudinali.\\
+Al di là della digressione sulle onde longitudinali si ha che questo solido a basse energie (e quindi basse temperature) ha una legge di dispersione del tipo  $\omega = c k$ proprio come i fotoni che abbiamo già trattato, per questo motivo in questo regime dobbiamo aspettarci un andamento del calore specifico analogo a quel caso: $\sim T^3$.\\
+Ribadiamo che nel solido, a differenza che nel sistema di fotoni, i modi vibrazionali non sono infiniti per via della finitezza del passo reticolare. Tali modi saranno in tutto $3N$.\\
+Quindi se vogliamo che il calore specifico vada al limite di Duolong Depetit dobbiamo limitare i modi ad un $\omega _{\text{max}}$, questo valore lo troveremo imponendo che il numero totale dei modi sia esattamente $3N$.

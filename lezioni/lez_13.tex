@@ -1,0 +1,411 @@
+\lez{13}{18-03-2020}{}
+\subsection{Onde nei solidi.}
+\label{subsec:Onde nei solidi.}
+\subsubsection{Analogie e differenze con la statistica del corpo nero.}
+\label{subsubsec:Analogie e differenze con la statistica del corpo nero.}
+Continunuiamo la ricerca della soluzione del problema delle onde nei solidi considerando il sistema composto da N particelle accoppiate con delle molle e studiando i modi normali collettivi.\\ 
+In particolare ci concentriamo sui modi di bassa energia, quelli che, nella scorsa lezione, abbiamo visto rispettare la relazione $\lambda \gg a$.
+Per queste energie abbiamo la legge di dispersione tipica della propagazione delle onde in un mezzo:
+\[
+	\omega = c_s k
+.\] 
+Che moltiplicata per $\hbar$ ci restituisce la legge di dispersione che abbiamo affrontato nello studio della radiazione di corpo nero\footnote{Con una diversa velocità di propagazione, parente adesso della velocità della luce.}:
+\[
+	\mathcal{E} = c_s p
+.\] 
+L'analogia con la radiazione elettromagnetica è forte, abbiamo anche in questo caso $3N$ oscillatori caratterizzati ciascuno dal proprio $k$ e ciascuno dalla propria frequenza.\\
+Anche in questo caso potremmo definire delle quasi particelle per studiare il sistema che saranno chiamate Fononi e varrà la stessa statistica costruita per i Fotoni.\\
+La differenza con il caso del campo elettromagnetico sta nel fatto che adesso i possibili modi di oscillazione non sono infiniti ma sono 3N. Questo porrà il limite superiore al calore specifico dato dalla legge di Doulong-Depetit che non è presente nella trattazione elettromagnetica dove $C_V \propto T^{3}$ (ed i modi normali sono infiniti).\\
+\subsubsection{Ricerca della frequenza massima di oscillazione del solido.}
+\label{subsubsec:Ricerca della frequenza massima di oscillazione del solido.}
+A basse energie, dove vale $\omega = c_s k$, abbiamo visto che si può utilizzare la distribuzione di Bose-einstein per le quasi particelle:
+\[
+	\overline{n}
+	=
+	\frac{1}{e^{\hbar\omega /kT}-1}
+.\] 
+Imponiamo adesso che si possa applicare questa distribuzione indipendentemente dal $k$ del sistema, assumendo quindi che al di sotto della $T_F$ gli unici stati popolati siano quelli di energia tale da poter utilizzare sempre la funzione di distribuzione lineare.\\
+Con questa assunzione sappiamo che il numero totale di stati ($3N$) sarà dato da:
+\[
+	3N 
+	=
+	\int_{0}^{\omega _\text{max} }
+	\rho ( \omega ) d\omega  
+	\label{eq:n-stati-onde-solidi}
+.\] 
+In cui la $\rho ( \omega ) $ è la stessa del caso EM con l'eccezione che adesso abbiamo 3 possibili polarizzazioni: 2 trasversali ed una longitudinali. 
+Questi due casi avranno diverse velocità di propagazione che chiamiamo $c_T$ e $c_L$, nella nostra trattazione considerreremo tuttavia una velocità media di propagazione per semplicità: $\overline{c}$ \footnote{Se usiamo questa velocità media dobbiamo comunque aggiungere un fattore 3 dovuto al fatto che introduciamo una degenerazione considerando tutte le velocità uguali}.
+\[\begin{aligned}
+	 \rho ( \omega ) 
+	 =&
+	 \frac{4\pi V}{\left( 2\pi \right) ^3}
+	 \omega^2d\omega 
+	 \left( 
+	 \frac{1}{c_L^3} + \frac{2}{c_T^3}	
+	 \right) =\\
+	 =& 
+	 \frac{4\pi V}{\left( 2\pi \right) ^3\overline{c}^3}
+	 3\omega^2d\omega = \\
+	 =& \frac{12\pi V}{\left( 2\pi \overline{c}\right)^3}
+	 \omega^2d\omega 
+.\end{aligned}\]
+\paragraph{Le onde longitudinali sono più veloci di quelle trasverse}
+Lo spostamendo longitudinali richiede più energia, gli atomi fanno spostamenti medi maggiori rispetto al caso trasversale, questo comporta intuitivamente una velocità longitudinale.\\
+Possiamo ricavare $\omega _\text{max} $ risolvendo l'integrale nella \ref{eq:n-stati-onde-solidi} con l'espressione di $\rho ( \omega ) $ scritta sopra, svolgendo l'integrale si ottiene:
+\begin{defn}[Frequenza di Debye]{def:Frequenza di Debye}
+	\[
+	\omega _\text{max} 
+	=
+	2\pi \overline{c} 
+	\left( \frac{3N}{4\pi V} \right)^{1/3}
+	.\]
+\end{defn}
+Si usa definire anche la temperatura di Debye "associata" a questa frequenza tramite la relazione:
+\[
+	\hbar\omega _\text{max} 
+	=
+	k \theta _D
+.\] 
+Questa temperatura varia tra quella ambiente e qualche migliaglio di K.\\
+Con queste nuove definizioni l'integrale calcolato sopra può essere riscritto in funzione di questo nuovo parametro:
+\[
+	3N \propto \int_{0 }^{k \theta _D} \mathcal{E} ^2 d\mathcal{E}  
+.\] 
+Ed anche la densità di stati può essere espressa a posteriori come:
+\[
+	\rho ( \mathcal{E} ) 
+	=
+	\frac{9N}{\left( k\theta _D \right)^3}\mathcal{E}^2
+.\] 
+\subsubsection{Calcolo della energia media e verifica dei limiti asintodici del calore specifico.}
+\label{subsubsec:Calcolo della energia media e verifica dei limiti asintodici del calore specifico.}
+Calcoliamo l'energia media del sistema di oscillatori\footnote{Con la solita sostituzione $\mathcal{E} /kT = x$}:
+\[\begin{aligned}
+	E 
+	=&
+	\int_{0}^{k\theta _D} 
+	\mathcal{E} \rho (\mathcal{E} ) 
+	\overline{n}( \mathcal{E} ) 
+	d\mathcal{E} = \\
+	=& 
+	9NkT 
+	\left( \frac{T}{\theta _D} \right)
+	\int_{0}^{\theta _D /T} 
+	\frac{x^3}{e^x-1}
+	dx
+.\end{aligned}\]
+L'ultimo integrale è un numero adimensionale dipendente da $T /\theta _D$. Con questa ultima relazione troviamo risultati compatibili con le misure sperimentali:
+\begin{description}
+	\item[A temperature basse $C_V$ è proporzionale al cubo della temperatura:]
+		Se $T \ll \theta _D$ possiamo mandare l'estremo di integrazione
+		all'infinito e l'integrale diventa lo stesso del caso dei fotoni 
+		(\ref{eq:energia-totale-media-fotoni}) quindi riusciamo ad ottenere
+		come allora $C_V \propto T^3$. 
+	\item[A temperature alte abbiamo Doulong-Depetit:] 
+		Se $T \gg \theta _D$ possiamo sviluppare $e^x-1 \approx x$ 
+		ricavando $E = 3NkT$.
+\end{description}
+In conclusione possiamo disegnare l'andamento di questo calore specifico in funzione della temperatura:
+\begin{figure}[H]
+    \centering
+    \incfig{calore-specifico-in-un-solido-al-variare-della-temperatura}
+    \caption{Calore specifico in un solido al variare della temperatura}
+    \label{fig:calore-specifico-in-un-solido-al-variare-della-temperatura}
+\end{figure}
+\noindent
+Notiamo che il nostro modello descrrive bene le due zone asidntodiche, la parte centrale del grafico invece è quella dove con la nostra descrizione commettiamo un errore maggiore.
+\subsection{Proprietà di conducibilità del gas di elettroni liberi conun campo elettrico esterno}
+\label{subsec:Proprietà di conducibilità del gas di elettroni liberi conun campo elettrico esterno}
+Prendiamo un gas di elettroni all'interno del nostro solido.\\
+Il sistema in questione non è all'equilibrio quando applichiamo il campo elettrico. Vogliamo sviluppare un sistema che tenga di conto del fatto che il sistema sia fuori equilibrio assumendo che la perturbazione dall'equilibrio sia piccola.
+\subsection{Modello del trasporto semi-classico.}
+\label{subsubsec:Modello del trasporto semi-classico.}
+Questo modello consiste nel trattare classicamente il moto degli elettroni tenendo anche di conto della statistica di Fermi-Dirac.\\
+Indichiamo con $f( t, r, v) $ il numero di particelle presenti una celletta nello spazio delle fasi \footnote{Senza il campo elettrico esterno questo sarebbe proprio il numero di particelle $n_q$}.\\
+Prendiamo inoltre un sistema descritto dalla Hamiltoniana:
+\[
+	H = \frac{p^2}{2m} + eEr
+.\] 
+Per il teorema di Liuville il numero di particelle $f$ rimane costane nel tempo \footnote{Implicitamente consideriamo il sistema non dissipativo.}.
+\[
+	f( t+dt,\bs{r}+\bs{dr}, \bs{v}+\bs{dv})
+	= 
+	f( t, \bs{r}, \bs{v}) 
+.\] 
+Il gas di elettroni è in grado di cedere energia al cristallo sotto forma di urti, tuttavia ne può riacquistare per via della presenza del campo elettrico, dopo un tempo di transito dall'accenzione di quest'ultimo si raggiungerà un nuovo equilibrio.\\
+Notiamo che la collisione degli elettroni può esser vista da due punti di vista differenti:
+\begin{itemize}
+	\item Classicamente: gli elettroni urtano contro gli atomi facendoli vibrare.
+	\item Quantisticamente: gli elettroni urtano contro i fononi, ovvero contro le
+		vibrazioni del cristallo.
+\end{itemize}
+\paragraph{Correzione collisionale}
+Trascuriamo per un attimo il campo elettrico esterno, spostiamo dalla posizione di equilibrio termodinamico il sistema e valutiamo come torna all'equilibrio perdendo energia per collisioni.\\
+A questo scopo introduciamo fenomenologicamente un termine collisionale nel teorema di Liuville:
+\[
+	\left.\frac{\partial f}{\partial t} \right|_{\text{coll}} 
+		=
+	- \frac{f-f_0}{\tau }
+.\] 
+Con $f$ che descrive lo stato attuale, $f_0$ quello all'equilibrio termodinamico e $\tau $ è il tempo medio di collisione.\\
+L'andamento di ritorno ad una situazione di equilibrio sarà quindi di tipo esponenziale:
+\[
+	\left( f-f_0 \right)_t = \left( f-f_0 \right)_{t=0} e^{-t /\tau }
+.\] 
+Di conseguenza il teorema di Liuville può essere modificato nel seguente modo:
+\[
+	\frac{f( t+dt,\bs{r}+\bs{dr}, \bs{v}+\bs{dv}) - f( t,\bs{r},\bs{v}) }{dt}
+	=
+	\left.\frac{\partial f}{\partial t} \right|_{\text{coll}}
+.\] 
+Calcoliamo la derivata a destra con la regola di derivazione a catena, si ottiene così
+\begin{defn}[Equazione del trasporto di Boltzmann]{def:Equazione del trasporto di Boltzmann}
+	\[
+	\left.\frac{\partial f}{\partial t} \right|_{\text{coll}}
+		=
+	\frac{\partial f}{\partial t} 
+	+ \bs{v}\cdot\nabla_{\bs{r}} f 
+	+ \bs{a} \cdot \nabla _{\bs{v}} f  
+	.\]
+\end{defn}
+\subsection{Conduzione elettrica}
+\label{subsubsec:Conduzione elettrica}
+Vediamo come si modifica la distribuzione del numero di particelle negli stati in presenza di un campo elettico.\\
+Per semplicità consideriamo un caso unidimenzionale, applichiamo il campo elettrico e imponiamo anche di aver raggiunto la stazionarietà \footnote{Non significa essere all'equilibrio termodinamico.} $\partial f / \partial t = 0$, l'equazione diventa:
+\[
+	a \frac{\partial f}{\partial v_x} 
+	+ v_x \frac{\partial f}{\partial x} 
+	=
+	- \frac{f-f_0}{\tau}
+.\] 
+Ricaviamo quindi la $f$:
+\[
+	f 
+	=
+	f_0 - \tau 
+	\left( 
+	a \frac{\partial f}{\partial v_n} 
+	+ 
+	v \frac{\partial f}{\partial x}  \right) 
+.\]
+Considerando piccole perturbazioni $f \approx f_0$ si ha al primo ordine che possiamo inserire $f_0$ all'interno delle derivate parziali commettendo un errore dell'ordine successivo. Si arriva a:
+\[
+	f 
+	=
+	f_0 
+	- 
+	\tau 
+	\left( 
+	a \frac{\partial f_0}{\partial v_x} 
+	+ 
+	v_x \frac{\partial f_0}{\partial x}  
+	\right) \label{eq:soluzione-trasporto-conducibilita-elettica}
+.\] 
+Ricordando che $f_0$ è la distribuzione all'equilibrio termodinamico (la Fermi-Dirac):
+\[
+	f_0
+	=
+	n_0
+	=
+	\frac{1}{e^{\left( \mathcal{E} - \mu  \right) /kT}+1}
+.\] 
+Possiamo esplicitare le derivate nella \ref{eq:soluzione-trasporto-conducibilita-elettica}:
+\[\begin{aligned}
+	\frac{\partial f_0}{\partial x} 
+	=
+	\frac{\partial f_0}{\partial \mu } \frac{\partial \mu }{\partial x} 
+	+
+	\frac{\partial f_0}{\partial T} \frac{\partial T}{\partial x} 
+	\label{eq:temperatura-non-omo}
+.\end{aligned}\]
+Supponiamo che il nostro gas sia omogeneo in temperatura e che il potenziale chimico sia indipendente dalla posizione \footnote{Questo significa che il gas di elettroni resta distribuito in maniera omogenea nel cristallo.}, con queste assunzioni $\frac{\partial f_0}{\partial x} = 0$. 
+L'altra derivata invece:
+\[\begin{aligned}
+	\frac{\partial f_0}{\partial v_x} 
+	=&
+	\frac{\partial f_0}{\partial \mathcal{E} } 
+	\frac{\partial \mathcal{E} }{\partial v_x} 
+	= \\
+	=& mv_x 
+	\frac{\partial f_0}{\partial \mathcal{E} } 
+.\end{aligned}\]
+Sostituendo nella \ref{eq:soluzione-trasporto-conducibilita-elettica}:
+\[\begin{aligned}
+	f
+	=&
+	f_0
+	-
+	\tau \frac{eE}{m}
+	mv_x \frac{\partial f_0}{\partial \mathcal{E} }
+	=\\
+	=& f_0
+	-
+	\tau e E v_x
+	\frac{\partial f_0}{\partial \mathcal{E} } 
+.\end{aligned}\]
+Se siamo a $T\ll T_F$ la Fermi-Dirac è un gradino attorno a $\mu_F$, dalla teoria delle distribuzioni:
+\[
+	\frac{\partial f_0}{\partial \mathcal{E} } 
+	=
+	\frac{\partial \overline{n}}{\partial \mathcal{E} } 
+	=
+	- \delta ( \mathcal{E} - \mu_F) 
+.\] 
+\begin{fact}[Funzione di distribuzione in presenza di un campo elettrico]{fact:Funzione di distribuzione in presenza di un campo elettrico}
+	\[
+		f 
+		= 
+		f_0
+		+
+		\tau e E v_x 
+		\delta ( \mathcal{E} - \mu_F) 
+	.\] 
+\end{fact}
+La densità di corrente è \footnote{Come per l'effetto termoionico gli integrali in $d^3r$ sono stati assorbiti}:
+\[\begin{aligned}
+	J_c 
+	=&
+	\int e f v_x \frac{d^3p}{h^3}= \\
+	=& 
+	\int e f_0 v_x \frac{d^3p}{h^3}
+	+ 
+	e^2 E 
+	\int v_x^2 \delta ( \mathcal{E} -\mu_F) \frac{d^3p}{h^3}=\\
+	=&
+	e^2 E 
+	\int \tau v_x^2 \delta ( \mathcal{E} -\mu_F) \frac{d^3p}{h^3}
+.\end{aligned}\]
+Il primo integrale si annulla perché all'equilibrio temico la corrente deve esser nulla, matematicamente si ha che $f_0$ è pari in $v_x$, moltiplicato per $v_x$ che è dispari si ottiene una funzione dispari.
+Passando in coordinate polari:
+\[
+	J_c 
+	=
+	e^2 E 
+	\int \tau v^2\cos^2\theta \delta ( \mathcal{E} -\mu_F) 
+		\frac{\sin\theta d\theta 2\pi p^2 dp }{h^3}
+.\] 
+Considerando le note relazioni:
+\begin{align}
+	& p = \sqrt{2m\mathcal{E} } &
+	& v=\frac{p}{2m}
+\end{align}
+Si ottiene la seguente:
+\[
+	J_c 
+	=
+	\frac{2e^2E}{4\pi^2\hbar^3}
+	\int \frac{2\mathcal{E} }{m}
+		\cos^2\theta  \delta ( \mathcal{E} -\mu _F) 
+		\sin\theta d\theta p^2 dp
+.\] 
+Il fattore $\tau $ (il tempo collisionale) potrebbe dipendere dall'energia, per questo non è stato portato fuori dall'integrale.
+\[\begin{aligned}
+	J_c 
+	=&
+	\frac{2}{3}\frac{e^2E}{m\pi^2\hbar^3}
+	\int \mathcal{E} \tau \delta ( \mathcal{E} -\mu_F) 
+	p^2 dp=\\
+	=&
+	\frac{2}{3}\frac{e^2E}{m\pi^2\hbar^3}
+	\int \tau \mathcal{E} \delta ( \mathcal{E} -\mu_F) 
+	2\sqrt{2} m^{3 /2} \mathcal{E}^{1 /2} d\mathcal{E} =\\
+	=&
+	\frac{e^2E\tau ( \mu_F) }{\pi^2\hbar^3}
+	\frac{2\sqrt{2} }{3}\sqrt{m} \left( \mu_F \right) ^{3 /2}=\\
+	=&
+	\frac{e^2E\tau }{m}\left( \frac{N}{V} \right) =\\
+	=& 
+	\sigma E
+.\end{aligned}\]
+Dove si è definita la conducibilità $\sigma $ come:
+\[
+	\sigma 
+	=
+	\frac{e^2 n }{m}\tau ( \mu_F)  
+.\] 
+Alla stessa formula si poteva arrivare anche con un ragionamento classico. Supponiamo di avere una distribuzione delle velocità degli elettroni, vediamo come questa cambia in presenza di un campo elettrico:
+\[
+	\frac{\mbox{d} \Delta v_x}{\mbox{d} t} = \frac{eE}{m}-\frac{\Delta v_x}{\tau}
+.\] 
+Il secondo pezzo è il termine collisionale fenomenologico, imponendo la stazionarietà abbiamo:
+\[
+	\Delta v_x 
+	=
+	\frac{eE\tau }{m}
+.\] 
+La densità di corrente si trova come:
+\[
+	J_c
+	=
+	e \Delta v_x n = e^2n \frac{E \tau }{m}
+.\] 
+Quindi abbiamo un bizzarro risultato: $\sigma _\text{Fermi-Dirac} = \sigma _\text{Classica} $. Nel secondo caso non abbiamo nemmeno dovuto chiamare in causa la distribuzione degli elettroni!\\
+In realtà chiamando in causa la Fermi-Dirac abbiamo un'informazione importante che classicamente non possiamo vedere: alla conduzione contribuiscono soltanto gli elettroni che sono sul livello energetico di Fermi. Classicamente invece non si è in grado di dire quale energia devono avere gli elettroni per essere partecipi attivamente della conduzione.\\
+Notiamo che un sistema con $\rho ( \mathcal{E}_F) = 0 $ non può condurre, questo sarà proprio il caso di materiali isolanti (questo classicamente non è spiegabile).
+\subsection{Conduzione termica}
+\label{subsubsec:conduzione termica}
+Possiamo definire una conducibilità termica $k$ a partire dalla corrente di calore:
+\[
+	J_Q 
+	=
+	-k \frac{\mbox{d} T}{\mbox{d} x} 
+.\] 
+Per calcolare questa conducibilità riprendiamo l'equazione del trasporto di Boltzmann ed introduciamo una disomogeneità nella temperatura (il termine posto a zero nella \ref{eq:temperatura-non-omo})
+\[
+	f 
+	= 
+	f_0
+	-
+	\tau v_x 
+	\frac{\partial f_0}{\partial T} \frac{\partial T}{\partial x} 
+.\] 
+La corrente di calore sarà quindi definita come:
+\[
+	J_Q 
+	=
+	\int f v_x \left( \mathcal{E} - \mu  \right)  
+	\frac{d^3 p}{h^3}
+.\] 
+All'interno dell'integrale è stato inserito il termine $\mathcal{E} - \mu $ anzichè l'intera energia libera perchè noi vogliamo il trasporto di calore:
+\[
+	TdS= dE - \mu dN
+.\] 
+Con le stesse argomentazioni per la conducibilità elettrica si annulla l'integrale con $f_0$, resta solo:
+\[
+	J_Q 
+	=
+	-\int v_x^2\tau 
+		\frac{\partial f_0}{\partial T} \frac{\partial T}{\partial x} 
+		\left( \mathcal{E} -\mu  \right) 
+		\frac{d^3 p}{h^3}
+.\] 
+Questa volta non si può mettere la distribuzione $\delta $ al posto della derivata perchè all'interno dell'integrale abbiamo il termine $( \mathcal{E} - \mu)$ che renderebbe l'integrale identicamente nullo. 
+È quindi necessario fare il conto derivando senza approssimazioni la distribuzione di Fermi-Dirac e risolvendo l'integrale, i conti si trovano sulle dispense di Arimondo. 
+Ci resta da risolvere l'integrale \footnote{$x = \left( \mathcal{E} - \mu_F \right) /kT$}:
+\[
+	J_Q 
+	\propto 
+	\int_{-\mu_F /kT}^{\infty} \frac{x^2 e^x}{\left( e^x + 1 \right)^2}dx
+	\approx
+	\int_{-\infty}^{\infty} \frac{x^2 e^x}{\left( e^x + 1 \right)^2}dx
+.\] 
+Dove l'approssimazione sta nel fatto che l'integrale è non nullo solo per energie prossime a $\mu_F$, troviamo in conclusione per $k$ l'espressione:
+\[
+	k = \frac{\pi^2}{3} \frac{n}{m} k_B^2 T \tau ( \mu_F) 
+.\] 
+Abbiamo anche una relazione tra la conducibilità termica ed elettrica:
+\begin{defn}[Legge di Wiedman-Franz]{def:Legge di Wiedman-Franz}
+	\[
+		- \frac{k}{T\sigma } 
+		=
+		\frac{\pi^2}{3}\left( \frac{k_B}{e} \right)^2
+	.\] 
+\end{defn}
+Dobbiamo notare che se si ha $\partial T /\partial x  \neq 0$ allora $J_c \neq 0$, questo è l'effetto termoelettrico. \\
+Per colpa di questo effetto le misure di conducibilità termica possono essere sfalzate, infatti tale quantità si misura a "circuito aperto" (con $J_c = 0$) quindi stiamo bloccando il passaggio degli elettroni che invece con $\partial T / \partial x \neq 0 $ vorrebbero spostarsi.\\
+Notiamo che in natura esistono materiali che non conducono elettricamente ma che hanno una elevata conducibilità termica (diamante), per questi materiali non saranno gli elettroni i "portatori" di calore \footnote{Se la densità di stati al livello di fermi è nulla non è possibile che gli elettroni conducano nemmeno calore} ma saranno i fononi. \\
+Possiamo fare un modello sempre tramite l'equazione del trasporto di Boltzmann considerando adesso i fononi (metteremo la Bose-einstein senza $\mu $), dobbiamo stare però attenti al fatto che i fononi collidono con altri fononi\footnote{Descrivere queste collisioni è necessario per conoscere $\tau$}: questo è un processo di scattering complicato che necessita di considerare le non linearità del modello vibrazionale.
+\subsection{Calore specifico in meno di 3 dimensioni}
+\label{subsec:Calore specifico in meno di 3 dimensioni}
+Per un cristallo bidimensionale come il Grafene il calore specifico a bassa temperatura il calore specifico non va come $T^2$, ad alta temperatura si ritrova inoltre $3Nk$.
+Questo perché il sistema è immerso in un mondo di tre dimensioni, quindi gli atomi hanno ancora tutti e tre i possibili modi vibrazionali.

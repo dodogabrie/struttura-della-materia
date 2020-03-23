@@ -1,4 +1,5 @@
 # Fdb version 3
+<<<<<<< HEAD
 ["pdflatex"] 1584265757 "lez_11.tex" "lez_11.pdf" "lez_11" 1584265757
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1572595918 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1584087611 4572998 f9631eebba48c3ee98e5d310044b0a09 ""
@@ -8,3 +9,15 @@
   (generated)
   "lez_11.pdf"
   "lez_11.log"
+=======
+["pdflatex"] 1584099092 "lez_11.tex" "lez_11.pdf" "lez_11" 1584099092
+  "/usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf" 1566248362 39543 a0bd1f17d0daea30a3905c0b020d0959 ""
+  "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1568489242 4647627 8711725592bd950be4ea205516b104bb ""
+  "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1568489280 4264896 2d6915d1730fc78da2f7cfbb9f1f110f ""
+  "/usr/local/texlive/2019/texmf.cnf" 1568489236 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
+  "lez_11.aux" 1584094902 8 a94a2480d3289e625eea47cd1b285758 ""
+  "lez_11.tex" 1584099090 6208 e6b47305a01c4e9c6e400994c1ad9a93 ""
+  (generated)
+  "lez_11.log"
+  "lez_11.pdf"
+>>>>>>> c57e305dcf154bc0fe0bc4d93bbf4bf0c93083ef

@@ -1,7 +1,17 @@
 PWD /home/edoardo/università/struttura_materia/appunti/lezioni
+<<<<<<< HEAD
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT lez_11.tex
 OUTPUT lez_11.log
 OUTPUT lez_11.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+=======
+INPUT /usr/local/texlive/2019/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT lez_11.tex
+OUTPUT lez_11.log
+OUTPUT lez_11.pdf
+INPUT /usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+>>>>>>> c57e305dcf154bc0fe0bc4d93bbf4bf0c93083ef

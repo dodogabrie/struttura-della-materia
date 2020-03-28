@@ -1,7 +1,0 @@
-PWD /home/edoardo/università/struttura_materia/appunti/lezioni
-INPUT /usr/share/texmf-dist/web2c/texmf.cnf
-INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT lez_13.tex
-OUTPUT lez_13.log
-OUTPUT lez_13.pdf
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map

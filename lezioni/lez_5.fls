@@ -1,6 +1,0 @@
-PWD /home/edoardo/università/struttura_materia/appunti/lezioni
-INPUT /usr/local/texlive/2019/texmf.cnf
-INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
-INPUT /usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT lez_5.tex
-OUTPUT lez_5.log

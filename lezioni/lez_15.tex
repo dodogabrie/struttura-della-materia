@@ -1,0 +1,603 @@
+\lez{15}{23-03-2020}{}
+\subsection{Distribuzione spettrale delle fluttuazioni}
+\label{subsec:Distribuzione spettrale delle fluttuazioni}
+Supponiamo di avere la tensione di rumore ai capi di una resistenza $V(t)$, effettiamo una misura di tale tensione in un tempo $T$. Sviluppiamo tale tensione nelle sue componenti spettrali:
+\[
+	V( t) 
+	=
+	\sum_{n=1}^{\infty} 
+	\left( a_n \cos( 2\pi f_n t) + b_n \sin( 2\pi f_n t)  \right) 
+.\] 
+Dove $f_n = n /T$.
+Supponiamo che per $n=0$ si abbia $\overline{V(t)}=0$ (mediato nel tempo).\\
+La notazione che adotteremo per questa lezione è:
+\begin{itemize}
+	\item $\overline{x}$: media temporale di $x$.
+	\item $\left<x \right>$: media statistica di $x$.
+\end{itemize}
+La potenza dissipata nella resistenza sarà:
+\[
+	P_\text{diss} 
+	=
+	\frac{V^2( t) }{R}
+.\] 
+Separando la potenza media relativa alla frequenza $n$-esima:
+\[\begin{aligned}
+	P_n 
+	=&
+	\frac{\left( a_n \cos( 2\pi f_n t) + b_n\sin( 2\pi f_n t)^2  \right)^2}{R}=\\
+	=&
+	\frac{1}{2R}\left( a_n^2+b_n^2 \right) 
+.\end{aligned}\]
+Quindi la notazione per fare anche la media statistica sarà la seguente:
+\[
+	\left<P_n \right> 
+	=
+	\frac{1}{R}
+	\frac{\left<a_n^2 \right>+ \left<b_n ^2\right>}{2}
+.\] 
+Quindi la potenza totale dissipata di rumore si potrà esprimere come:
+\[
+	\frac{\left<\overline{V^2}(t)\right>}{R} 
+	=
+	\sum_{n}^{} P_n
+.\] 
+\begin{defn}[Densità spettrale di rumore]{def:Densità spettrale}
+	La densità spettrale di rumore $G(f_n)$ nell'intervallo di frequenze: 
+	$\Delta f=(n-1/2)/T$ e $(n+1/2)/T$
+	è definita come il valor medio dei quadrati delle ampiezze delle componenti 
+	di Fourier, nel nostro caso:
+	 \[
+		 G(f_n) \Delta f 
+		 =
+		 \frac{\left<a_n^2 \right>+\left<b_n^2 \right>}{R}
+	.\] 
+\end{defn}
+Nel caso del rumore Jonson dobbiamo arrivare a dimostrare che $G( f) = 4k_B T$.\\
+Utilizzando questa nuova definizione possiamo riscrivere:
+\[
+	\frac{\left<\overline{V^2}(t)\right>}{R} 
+	=
+	\sum_{n}^{} G( f_n) \Delta f
+.\] 
+\subsection{Teorema di fluttuazione-dissipazione}
+\label{subsec:Teorema di fluttuazione-dissipazione}
+
+Sia $x( t) $ una variabile tale che
+\[
+	x(t) \neq 0 \Longleftrightarrow - \frac{T}{2}<t<\frac{T}{2}
+.\] 
+
+scriviamo la sua trasformata di Fourier:
+\[
+	x( t) 
+	=
+	\int_{-\infty}^{\infty} \hat{x}_{_T}(f) e^{2\pi i f t} df
+.\] 
+Supponiamo che $x(t)$ sia una grandezza reale:
+\[\begin{aligned}
+	x( t) 
+	=&
+	x^*( t)=\\
+	=& 
+	\int_{-\infty}^{\infty} \hat{x}^*_{_T} ( f) e^{-2i\pi f t}df=\\
+	=&
+	\int_{-\infty}^{\infty} \hat{x}^*_{_T} ( -f) e^{2i\pi f t}df
+.\end{aligned}\]
+Di conseguenza abbiamo che:
+\[
+	\hat{x}_{_T}(f)=\hat{x}^*_{_T}(-f)
+.\] 
+Che può anche essere riparafrasato dicendo che $\left| \hat{x}_{_T}(f) \right|^2$ è pari.\\
+Appltichiamo adesso il teorema di Parseval:
+\[\begin{aligned}
+	\int_{-T/2}^{T/2}x^2(t)dt
+	=&
+	\int_{-\infty}^{\infty} \left| \hat{x}_{_T}(f)\right|^2 df =\\
+	=&
+	2 \int_{0}^{\infty} \left| \hat{x}_{_T}(f)\right|^2df 
+.\end{aligned}\]
+Mediamo temporalmente:
+\[\begin{aligned}
+	\overline{x^2}
+	=& 
+	\lim_{T \to \infty} \frac{1}{T}\int_{- T /2}^{T /2} x^2( t) dt=\\
+	=&
+	\lim_{T \to \infty} \int_{0}^{\infty}\left|\hat{x}_{_T}(f)\right|^2 df 
+.\end{aligned}\]
+Facciamo anche la media statistica:
+\[\begin{aligned}
+	\left< \overline{x} \right> 
+	=&
+	\lim_{T \to \infty} \frac{2}{T}\int_{0}^{\infty} 
+	\left<\left| \hat{x}_{_T}(f) \right|^2\right>df=\\
+	=&
+	\int_{0}^{\infty}  
+	\underbrace{
+	\lim_{T \to \infty}\frac{2}{T}
+	\left<\left| \hat{x}_{_T}(f) \right| \right>
+	}_{G(f)}
+	df
+.\end{aligned}\]
+In concluisione abbiamo trovato una versione più generale di $G(f)$:
+\[
+	\left<\overline{x} \right> = \int_{0}^{\infty} G( f) df 
+.\] 
+Il teorema di fluttuazione dissipazione ci lega la densità spettrale con la funzione di correlazione:
+\begin{defn}[Funzione di correlazione]{def:Funzione di correlazione}
+	La funzione di correlazione per una grandezza $x(t)$ dipendende dal tempo è:
+	\[
+		c(\tau) = \overline{\left<x(t)x(t+\tau)\right>}
+	.\] 
+\end{defn}
+Vediamo il legame di questa quantità con la densità spettrale esplicitando $c(\tau)$:
+\[\begin{aligned}
+	c( \tau ) 
+	=&
+		\overline{\left<x( t) x( t+\tau ) \right>}= \\
+	=&
+		\left<
+		\lim_{T \to \infty} \frac{1}{T}
+		\int_{-T /2}^{T /2} x( t) x( t + \tau ) 
+		\right>dt =\\
+	=&
+		\left<
+		\lim_{T \to \infty} \frac{1}{T}
+		\int_{-\infty}^{\infty}df
+		\int_{-\infty}^{\infty}df'
+		\int_{-T /2}^{T /2}dt
+		\hat{x}_{_T} ( f) 
+		e^{2i\pi f t}\cdot \hat{x}_{_T} ( f') 
+		e^{2i\pi f' \left( t +\tau  \right) }
+		\right>=\\
+	=&
+		\lim_{T \to \infty} \frac{1}{T} 
+		\int_{-\infty}^{\infty} df'e^{i 2\pi f'\tau }
+		\int_{-\infty}^{\infty}df\hat{x}_{_T}(f)\hat{x}_{_T}(f')
+		\underbrace{
+			\int_{-T/2}^{T/2}e^{2\pi i \left( f+f' \right)t}dt
+		}_{\delta(f+f')}=\\
+	=&
+		\lim_{T \to \infty} \frac{1}{T}
+		\int_{-\infty}^{\infty}
+		\underbrace{
+		\hat{x}_{_T}( f') \hat{x}_{_T}(-f')
+		}_{\left| \hat{x}_{_T}(f) \right|^2}
+		e^{2i\pi f' \tau }df'=\\
+	=&
+		\lim_{T \to \infty} \frac{1}{T}
+		\int_{-\infty}^{\infty} 
+		\left| \hat{x}_{_T}( f')  \right| ^2 
+		e^{2\pi i f'\tau }df' =\\
+	=&
+		\lim_{T \to \infty} \frac{2}{T}
+		\int_{0}^{\infty}
+		\left| \hat{x}_{_T}(f) \right|^2 
+		\cos(2\pi ft) df 
+.\end{aligned}\]
+Quindi per come abbiamo definito la $G(f)$ si ha una espressione del teorema di fluttuazione-dissipazione:
+\begin{fact}[Teorema di Fluttuazione-dissipazione]{fact:Teorema di Fluttuazione-dissipazione}
+	La relazione tra densità spettrale delle fluttuazioni e la correlazione temporale (contenente informazioni sulla dissipazione del sistema) è data da:
+	\[
+	c(\tau)=\int_{0}^{\infty} G(f)\cos(2\pi\tau)df  
+	.\] 
+	O dalla sua inversa:
+	\[
+	G( f) = 4\int_{0}^{\infty}c(\tau)\cos(2\pi f\tau)d\tau   
+	.\]
+\end{fact}
+Un esempio di caso tipico dissipativo ha una correlazione temporale di tipo esponenziale.
+\[
+	c( \tau ) = c( 0) e^{- t/\tau _c}
+.\] 
+Dove $\tau_c$ è una costante temporale che misura il tempo in cui si perde la correlazione della grandezza fisica in questone\footnote{Nel caso degli elettroni in una resistenza sarà indice delle collisioni con in fononi, delle impurezze, dei difetti, del reticolo.}.\\
+Nel caso degli elettroni in un metallo il $\tau_c$ ci fa perdere la correlazione sulla velocità degli elettroni: dopo un tempo $\tau_c$ la velocità di ogni elettrone è completamente scorrelata da quella che aveva un $\tau_c$ prima.\\
+Assuendo questa correlazione di decadimento esponenziale troviamo la densità spettrale di rumore:
+\[\begin{aligned}
+	G(f ) 
+	=&
+	4 \int_{0}^{\infty} c( 0) e^{-\tau/\tau_c}\cos(2\pi f\tau)d\tau =\\
+	=&
+	4c(0)\frac{1/\tau_c}{1/\tau_c^2+4\pi^2f^2}=\\
+	=&
+	\frac{4c(0)\tau_c}{1+\left(2\pi f\tau_c\right)^2} 
+	\label{eq:densita-spettrale-esponenziale}
+.\end{aligned}\]
+Dove si è usato il noto integrale \[
+	\int_{0}^{\infty} e^{-ax} \cos(mx)dx 
+	=
+	\frac{a}{a^2+m^2}
+.\] 
+La densità spettrale della Equazione \ref{eq:densita-spettrale-esponenziale} ha l'andamento di Figura \ref{fig:densita-spettrale-per-una-correlazione-esponenziale}.
+\begin{figure}[ht]
+    \centering
+    \incfig{densita-spettrale-per-una-correlazione-esponenziale}
+    \caption{Densità spettrale per una correlazione esponenziale}
+    \label{fig:densita-spettrale-per-una-correlazione-esponenziale}
+\end{figure}
+Quindi se ho una grandezza con un tempo di correlazione $\tau_c$ allora le componenti spettrali del rumore conterranno tutte le frequenze inferiori a $1/2\pi\tau_c$ e non le superiori.\\
+Notiamo che questo è un comportamento generale per tutti i sistemi aventi correlazione che decade esponenzialmente nel tempo \footnote{Nel corso di Fondamenti di interazione Radiazione-Materia si può approfondire il fatto che è lo stesso tipo di comportamento che si ha per la luce caotica emessa nei processi di emissione spontanea.}.
+\subsection{Applicazione del teorema Fluttuazione-dissipazione al rumore Jonshon}
+\label{subsec:Applicazione del teorema Fluttuazione-dissipazione al rumore Jonshon}
+Per il rumore Jonshon abbiamo trovato una $G(f) = 4k_B T$ indipendente dalla frequenza, ricordiamo che il regime di applicazione di quest'ultima era $hf \ll kT$.\\
+Il regime in cui vale il rumore Jonshon trovato nella lezione precedente era quindi quello con $f\ll 1/2\pi\tau_c$,
+dove adesso $\tau_c$ è il tempo di correlazione degli elettroni in un metallo che può essere addirittura dell'ordine del ps 
+(quindi a meno di lavorare con le decine di GHz, cosa molto difficile in elettronica, l'approssimazione è sensata).\\
+Supponiamo di essere in un regime classico ($\overline{n}\ll 1$) e adottiamo la seguente notazione:
+\begin{itemize}
+	\item $n$: Densità di elettroni.
+	\item $S$: Area della resistenza.
+	\item $l$: La lunghezza della resistenza.
+	\item $R$: La resistenza.
+	\item $\sigma$: La conducibilità della resistenza.
+	\item $\tau_c$: Il tempo collisionale degli elettroni.
+\end{itemize}
+Il numero totale di elettroni sarà:
+\[
+	N= Sl n
+.\] 
+Usando il modello classico della conducibilità di Drude la variazione di velocità sarà:
+\[
+	\Delta v_x= \frac{eE \tau _c}{m}
+.\] 
+Quindi avremo una corrente:
+\[\begin{aligned}
+	J 
+	=&
+	e\Delta v_x n=\\
+	=&
+	\underbrace{\frac{e^2n\tau_c}{m}}_{\sigma}E =\\
+	=&
+	\sigma E
+.\end{aligned}\]
+La resistenza invece può essere scritta come:
+\[
+	R = \frac{l}{S\sigma}
+	=
+	\frac{l m}{n e^2 \tau_c S}
+.\] 
+Per quanto riguarda il potenziale applicato si ha:
+\[\begin{aligned}
+	V
+	=&
+	RI=\\
+	=& 
+	RSJ=\\  
+	=& 
+	RS ne\Delta v_x=\\
+	=&
+	\frac{Re}{l}Vn\Delta v_x=\\
+	=&
+	\frac{Re}{l} \sum_{i =1}^{N} \Delta v_{x,i}=\\
+	=&
+	\sum_{i=1}^{N} V_i=\\
+	=&0
+.\end{aligned}\]
+Dove abbiamo assunto che gli elettroni non debbano avere necessariamente tutti la stessa velocità, questo discostamento dal modello classico di Drude è ovviamente necessario per la nostra analisi. Inoltre visto che non si applica alcun campo esterno si ha ovviamene un segnale a media nulla, a noi interessano le fluttuazioni di questo segnale.\\
+Il valore che cerchiamo è lo scarto quadratico medio:
+\[
+	\overline{V_{_{\Delta f}}^2} = \sum_{i=1}^{N} \frac{R^2e^2}{l^2}G_i( f) \Delta f
+.\] 
+Dove $G_i(f)$ è la densità spettrale delle velocità $v_{x,i}$ degli elettroni.\\
+La funzione di correlazione per le velocità sarà invece:
+\[
+	c( \tau ) 
+	=
+	\left<v_{x,i}( t) v_{x,i}( t+\tau )\right> 
+	=
+	v_{x,i}^2 e^{-t/\tau_c}
+.\] 
+Applicando il teorema di fluttuazione-dissipazione:
+\[
+	G_i(f) = 
+	\frac{4\left<v_{x,i}^2 \right>\tau _c}{1 + \left( 2\pi f \tau _c \right)^2}
+	\overset{\scriptstyle f\tau_c \ll 1}{=} 4 \left<v_{x,i}^2\right> \tau _c
+.\] 
+Essendo all'equilibrio termodinamico avremo anche che:
+\[
+	\left<\frac{mv_{x,i}^2}{2} \right> = \frac{k_B T}{2}
+.\] 
+Per cui riscrivendo l'equazione preccedente:
+\[
+	G_i(f)
+	=
+	4 \frac{k_BT}{m}\tau_c
+.\] 
+Il potenziale medio nell'intervallo di frequenze $\Delta f$ è dato da:
+\[\begin{aligned}
+	\overline{V^2}_{\Delta f} 
+	=&
+	\sum_{i = 1}^{N} 
+	\frac{R^2e^2}{l^2}4 
+	\frac{k_B T}{m}\tau_c\Delta f=\\
+	=&
+	nlS\frac{Re^2}{l^2}
+	\frac{lm}{e^2nS\tau_c}4 
+	\frac{k_B T}{m}\tau_c\Delta f=\\
+	=&
+	4Rk_BT\Delta f
+.\end{aligned}\]
+Questa è proprio la formula di Nyquist che avevamo dimostrato imponendo l'equilibrio termodinamico tra il campo elettromagnetico e le resistenze.\\
+Tale risultato resta valido per qualunque statistica, non solo per la Boltzmann che abbiamo invece assunto qui.\\
+Dimostriamo quest'ultima affermazione con un ragionamento termodinamico: supponiamo di avere un circuito all'equilibrio termico come in Figura \ref{fig:circuito-alternativo-per-dimostrare-nyquist}. 
+\begin{figure}[ht]
+    \centering
+    \incfig{circuito-alternativo-per-dimostrare-nyquist}
+    \caption{Circuito alternativo per dimostrare Nyquist}
+    \label{fig:circuito-alternativo-per-dimostrare-nyquist}
+\end{figure}
+In tale circuito dobbiamo immaginare una resistenza che segue la statistica di Boltzmann ed una che segue invece la statistica di Fermi-Dirac.\\
+Abbiamo già discusso la resistenza alla Boltzmann, per questa possiamo dire che:
+\[
+	\overline{I^2}_{B, \Delta f}
+	= 
+	\frac{\overline{V^2}_{B, \Delta f}}{\left( R_{MB}+ R_{FD} \right)s^2}
+.\] 
+Quindi la potenza dissipata sulla resistenza Fermi-Dirac sarà data da:
+\[
+	P_{FD,\Delta f}
+	=
+	R_{FD} 
+	\frac{\overline{V^2}_{B, \Delta f}}{\left( R_B + R_{FD} \right)^2}
+.\] 
+Potremmo invertire il ragionamento prendendo la densità di rumore generata dalla resistenza Fermi-Dirac, trovare la corrente generata da questa e successivamente la potenza dissipata nella resistenza classica da tale corrente. In questo modo si troverebbe:
+\[
+	P_{B,\Delta f}
+	=
+	\frac{R_B \overline{V^2}_{FD,\Delta f}}{\left( R_B + R_{FD} \right)^2} 
+.\] 
+All'equilibrio termodinamico le due potenze dissipate devono essere le stesse, quindi abbiamo che:
+\[
+	\frac{\overline{V^2}_{B, FD}}{R_B} 
+	= 
+	\frac{\overline{V^2}_{FD,\Delta f}}{R_{FD}}
+	=
+	4k_B T \Delta f
+.\] 
+\subsection{Rumore shot}
+\label{subsec:Rumore shot}
+A correnti piccole abbiamo anche un altro tipo di rumore, questo si ha per le correnti che rendono evidente la natura corpuscolare degli elettroni. 
+Se mi immagino un filo percorso da una piccola corrente e ne taglio una sezione trasversa ho che gli elettroni la attraversano a tempi diversi, distribuiti più o meno casualmente.\\ 
+Quindi non ho un flusso uniforme di elettroni e questo può generare la forma di rumore detta rumore Shot.\\
+\subsubsection{Distribuzione temporale del rumore Shot.}
+\label{subsubsec:Distribuzione temporale del rumore Shot.}
+Chiamiamo il tempo di misura $T_m$, se faccio l'esperimento $n$ volte passano in media $\left<n \right>$ elettroni, allora la corrente media sarà:
+\[
+	\left<I\right>
+	=
+	\left<n\right>\frac{e}{T_m}
+.\] 
+Di conseguenza lo scarto quadratico medio della corrente è sicuramente legato a quello del numero di particelle:
+\[
+	\left< \left( \Delta I \right)^2  \right>  \sim \left<\left(n\right)^2\right>
+.\] 
+Possiamo stimare lo SQM sulla corrente suddividendo in $N$ intervalli il nostro tempo di misura $T_m$ in modo tale che in ogni intervallo possa passare al massimo un elettrone. \\
+Chiamiamo $P$ la probabilità che un elettrone passi in un determinato intervallino $T_m/N$.La probabilità di avere $n$ elettroni nel tempo di misura $T_m$ sarà:
+\[
+	P( n, T_m) = \binom{N}{n} P^n \left( 1- P \right)^{N-n}
+.\] 
+Dove abbiamo seguito le regole della distribuzione binomiale. Visto che nel nostro caso si ha:
+\[\begin{aligned}
+	N\gg 1\\
+	P\ll 1
+.\end{aligned}\]
+La prima è ovvia, la seconda deriva dal fatto che il numero medio di elettroni è dato da $NP = \left<n \right>$ e deve rimanere finito. \\
+Con queste approssimazioni la distribuzione di probabilità è approssimabile con una Poissoniana:
+\[
+	P( n,T) 
+	=
+	\frac{\left<n \right>n}{n!}e^{-\left<n \right>}
+.\] 
+Per lad distribuzione Poissoniana sappiamo anche che:
+\[
+	\left<\left( \Delta n\right) ^2 \right> = \left<n \right>
+.\] 
+Questt'ultima ci dà le fluttuazioni nel numero medio di particelle per una poissoniana:
+\[
+	\frac{\left<\left( \Delta n \right)^2 \right>}{\left<n \right>^2}
+	=
+	\frac{1}{\left<n \right>}
+.\] 
+In questo modo abbiamo anche risolto per la corrente:
+\[
+	\frac{\left<\left(\Delta I\right)^2\right>}{\left<I\right>^2}
+	=
+	\frac{e}{T_m \left< I \right>}
+.\] 
+E quindi:
+\[
+	\left<\left( \Delta I \right) ^2 \right> 
+	= 
+	\frac{e}{T_m}\left<I \right>
+.\] 
+Questa è una caratteristica del rumore shot: la fluttuazione quadratica media della corrente va come le media della corrente stessa. È anche proporzionale alla carica dell'elettrone. Facciamo un esempio numerico per valutare l'ampiezza di questo rumore:
+\begin{itemize}
+	\item $e=1.6 \cdot 10^{-19}$ C.
+	\item $\left<I \right>\sim$ mA.
+	\item $T_m\sim$ s.
+\end{itemize}
+Con questi parametri si ha $\sqrt{\left<\left( \Delta I \right)^2\right>} \sim 10$ $\mu$ A, questo è un numero piccolo ma misurabile.\\
+La densità spettrale la si potrebbe ottenere scrivendo la distribuzione spettrale della corrente, abbiamo che la corrente che passa in un intervallo di tempo $T_m$ sarà data da:
+\[
+	I_{T_m}( t) =
+	\sum_{i=1}^{N} F( t-t_i) 
+.\] 
+Dove $F(t)$ è una certa funzione che desccrive il passaggio temporale del singolo elettrone, ce la possiamo immaginare come una curva piccata in un certo istante temporale. In particolare questa funzione avrà la proprietà:
+\[
+	\int_{- \tau_c/2}^{\tau_c/2} F( t) dt = e 
+.\] 
+Dove $\tau_c$ è il tempo di correlazione del passaggio del singolo elettrone (la durata del pacchetto).\\
+La funzione di correlazione si calcolerà così:
+\[
+	\overline{\left<I_T( t) T_T( t + \tau )  \right>}
+	=
+	\sum_{i = 1}^{\left<n \right>} \overline{F( t) F( t + \tau ) }
+.\] 
+Tipicamente i tempi di correlazione del passaggio dell'elettrone sono molto piccoli, quindi ci aspettiamo che lo spettro $G(f)$ sia quasi bianco (la frequenza "di taglio" è lontana), nelle dispense di Arimondo troviamo il conto per una determinata funzione $F(t)$, il risultato di questo conto è:
+\[
+	G(f) = 2e \left<I\right> 
+.\] 
+Se confrontiamo questa densità spettrale con quella del rumore Jonshon notiamo che il rumore shot domina quando il voltaggio medio è:
+ \[
+	\left<V\right> > \frac{2k_BT}{e}
+.\] 
+A temperatura ambiente di ha che per prevalere il rumore shot è necessario $\left<V \right> > 50$ mV. 
+Questo sembra strano perchè il rumore shot ci si aspetta che sia dominante per basse correnti, quindi bassi voltaggi. 
+Tuttavia dobbiamo stare attenti al fatto che le correnti sono comunque vincolate, nonostante il voltaggio dia alto: la nostra trattazione vale solo per correnti piccole.
+
+\subsection{Introduzione ai solidi.}
+\label{subsec:Solidi}
+I solidi sono in genere sistemi molto complicati: nuclei, elettroni interagiscono tra di loro. In linea di principio possiamo scrivere una Hamiltoniana e trovare le sue Autofunzioni.
+\[
+	H \psi = E \psi
+.\] 
+Tale Hamiltoniana ha tantissimi contributi:
+\[
+	H = T_e + T_N + V_{N-N} + V_{N-e} + V_{e-e} + C_e^{\text{rel}}
+.\] 
+Dove abbiamo:
+\begin{description}
+	\item[Termine cinetico per gli elettroni] 
+		 \[
+			T_e = \sum_{e}^{} \frac{p_e^2}{2m} 
+			= -\sum_{e}^{} \frac{-\hbar ^2 \nabla_i^2}{2m}
+		.\] 
+
+	\item[Termine cinetico per i nuclei] 
+		\[
+			T_N 
+			=
+			-\sum_{I}^{} \frac{-\hbar ^2 \nabla_{R_I}^2}{2M}
+		.\] 
+	\item[Termine di interazione Nucleo-Nucleo]
+		\[
+			V_{N-N} = 
+			\frac{1}{2}\sum_{i\neq j}^{} 
+			\frac{Z_iZ_je^2}{\left| R_i - R_j \right| }
+		.\]  
+	\item[Termine di interazione Nucleo-Nucleo]
+		\[
+			V_{e-e} = 
+			\frac{1}{2}\sum_{i\neq j}^{} 
+			\frac{e^2}{\left| r_i - r_j \right| }
+		.\]
+	\item[Termine di interazione Nucleo-Nucleo]
+		\[
+			V_{N-e} = 
+			\frac{1}{2}\sum_{i,I}^{} 
+			\frac{Z_ie^2}{\left| r_i - r_j \right| }
+		.\]
+	\item[Correzioni relativistiche per gli elettroni]
+		\[
+			C_e^{\text{rel}} 
+			=
+			\sum_{e}^{} \left[ \underbrace{-\frac{p_e^4}{2m^3c^2}}_
+			{\substack{\text{Correzione al}\\ 
+			\text{primo ordine}\\ 
+			\text{su $T_e$}}}
+			+ 
+			\underbrace{\frac{\hbar ^2 \nabla_e^2 V_e}{8m^2c^2}}_
+			{\substack{\text{L'elettrone vede}\\
+			\text{un potenziale}\\
+			\text{medio esteso su}\\
+			\text{una certa dim.}}}
+			+
+			\underbrace{\frac{\hbar }{4m^2c^2}
+			\left( \nabla \bs{v}_e \wedge\bs{p}_e\right) 
+			\bs{\sigma}_e}_
+			{\substack{\text{Termine}\\
+			\text{Spin-Orbita}}}
+			\right] 
+		.\] 
+		Il termine spin orbita deriva dal fatto che un elettrone che si muove
+		all'interno di un campo elettrico vede nel suo sistema di riferimento
+		un campo magnetico:
+		\[
+			\bs{B} = -\frac{\bs{v}\wedge \bs{E}}{c}
+		.\] 
+		l'elettrone ha un momento magnetico:
+		\[
+			\bs{\mu} = - \frac{e\hbar }{2mc} \bs{\sigma}_e
+		.\] 
+		Quindi esce fuori il termine:
+		\[
+			-\bs{B}\bs{\mu} 
+			=
+			\frac{\hbar ^2}{2m^2c^2}\left( \nabla v_e \wedge \bs{p}_e \right)
+			\bs{\sigma}_e
+		.\] 
+\end{description}
+Risolvere una Hamiltoniana del genere in modo esplicito è un grosso casino viste le dipendenze di ognuno dei termini precedenti:
+\[
+	H(\left\{ \bs{r} \right\}, \left\{ \bs{R} \right\})
+	=
+	E \psi(\left\{ \bs{r} \right\} , \left\{ \bs{R} \right\} )
+.\] 
+Per risolvere questo problema facciamo l'approssimazione adiabatica o di Born-Oppenheimer che consiste nel supporre il moto dei nuclei molto più lento di quello degli elettroni. \\
+Si cerca di risolvere il moto degli elettroni assomendo i nuclei praticamente fermi.\\
+A tale scopo si scrive la funzione d'onda nel seguente modo:
+\[
+	\psi(\left\{ \bs{r} \right\}, \left\{ \bs{R} \right\} )
+	=
+	\underbrace{F(\left\{ \bs{R} \right\})}_
+	{\substack{\text{Moto nuclei}}}
+	\underbrace{\varphi(\left\{\bs{r}\right\},\left\{\bs{R}\right\} )}_
+	{\substack{\text{Moto elettroni}}}
+.\] 
+Sostituendo questa nella Hamiltoniana i termini riguardanti gli elettroni restano invariati, il termine cinetico nucleare invece cambia nel laplaciano:
+\[\begin{aligned}
+& 			&		&\varphi(\left\{ \bs{r} \right\}, \left\{ \bs{R} \right\})\nabla^2_R F(\left\{ R \right\} ) +\\
+\nabla^2_R \psi&\to 	& 		&\cancel{2\nabla_RF(\left\{ \bs{R} \right\})\nabla_R\varphi(\left\{ \bs{r} \right\},\left\{ \bs{R} \right\} )}+\\
+&			&		&\cancel{F(\left\{ \bs{R} \right\} )\nabla_R^2\varphi(\left\{ \bs{r} \right\},\left\{ \bs{R} \right\} )}
+.\end{aligned}\]
+L'approssimazione consiste nel trascurare i termini in cui vi è la derivata rispetto a $\bs{R}$ di $\varphi$. Questo significa considerare nella $\varphi$ le coordinate dei nuclei fissati.\\
+L'equazione di Shrodinger diventa:
+\[\begin{aligned}
+	&-\frac{\hbar ^2}{2m}F(\bs{r})\nabla _r^2\varphi(\bs{R},\bs{r}) +\\
+	&+\left( V_{ee} + V_{eN} + C_e^{\text{rel}} \right)
+	F(\bs{R})\varphi(\bs{R},\bs{r})+\\
+	&- \frac{\hbar ^2}{2M}\varphi(\bs{r},\bs{R})\nabla_R^2F(\bs{R}) +\\
+	&+V_{NN}F(\bs{R})\varphi(\bs{r},\bs{R}) =\\
+	&=EF(\bs{R})\varphi(\bs{r},\bs{R})
+.\end{aligned}\]
+Cerchiamo di renderla separabile: dividiamo per la funzione d'onda stessa. Abbatendo ulteriormente la notazione possiamo scriverre:
+\[
+	-\frac{\hbar ^2}{2m}\frac{\nabla_r^2\varphi}{\varphi} +
+	V_{ee} + V _{eN} + C_e^{\text{rel}} -
+	\frac{\hbar ^2}{2M}\frac{\nabla_R^2F}{F} = E
+.\] 
+A questo punto l'ultimo termine prima dell'uguale è solo una costante per gli elettroni, non contribuirà alla distribuzione dei livelli energetici se non come un offset, quindi abbiamo che possiamo risolvere per le enrgie dei livelli elettronici nel potenziale dei nuclei $E_n(\bs{R})$:
+\[
+	-\frac{\hbar ^2}{2m}
+	\frac{\nabla_r^2 \varphi(\bs{r},\bs{R})}{\varphi(\bs{r},\bs{R})} +
+	V_{eN} + V_{ee} + C_e^{\text{rel}} = E_n(\bs{R})
+.\] 
+Oppure possiamo riscriverla meglio come:
+\[
+	-\frac{\hbar ^2}{2m}
+	\nabla_r^2 \varphi(\bs{r},\bs{R}) +
+	\left( V_{eN} + V_{ee} + C_e^{\text{rel}} \right)
+	\varphi(\bs{r},\bs{R}) = E_n(\bs{R})\varphi(\bs{r}, \bs{R})
+.\] 
+Trovate le soluzioni per gli elettroni possiamo sostituire per la parte di equazione che risolveva i nuclei:
+\[
+	-\frac{\hbar ^2}{2M}\nabla_R^2F(\bs{R})+
+	\left[ V_{NN}+E_n(\bs{R}) \right] F(\bs{R})=
+	E F(\bs{R})
+.\] 
+Senza il funzionale $E_n$ il cristallo non starebbe insieme: tutti gli altri termini in equazione sono repulsivi.\\
+Risolvere l'equzione per gli elettroni è molto complicato, dobbiamo semplificare ancora per ricavarne qualche informazione: scriviamo la funzione d'onda per gli N elettroni come un prodotto di funzioni d'onda a singolo elettrone (deve essere un prodotto antisimmetrico perché sono fermioni):
+\[
+	\varphi(\bs{r},\bs{R}) =
+	\frac{1}{\sqrt{n}}
+	\begin{vmatrix}
+		\varphi_1(r_1) 	& \ldots 	& \varphi_1(r_n)\\
+		\ldots		& \ldots	&\ldots	\\
+		\varphi_n(r_1)	&\ldots		& \varphi_n(r_n)
+	\end{vmatrix}
+.\] 
+Il determinante nella precedente equazione si chiama determinante di Slater. Sostituendo questa troveremo una Hamiltoniana a singola particella:
+\[
+	H_{F}(r_i)\varphi_i(r_i) = 
+	E_i \varphi_i(r_i)
+.\] 

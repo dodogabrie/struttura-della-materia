@@ -1,74 +1,23 @@
 \BOOKMARK [0][-]{chapter.2}{Termodinamica}{}% 1
-\BOOKMARK [1][-]{section.3}{Lezione 1}{chapter.2}% 2
-\BOOKMARK [2][-]{subsection.4}{Introduzione ed argomenti}{section.3}% 3
-\BOOKMARK [2][-]{subsection.10}{Principi di Termodinamica Statistica}{section.3}% 4
-\BOOKMARK [1][-]{section.25}{Lezione 2}{chapter.2}% 5
-\BOOKMARK [2][-]{subsection.26}{Temperatura}{section.25}% 6
-\BOOKMARK [2][-]{subsection.46}{Principi classici della termodinamica sotto l'ottica statistica}{section.25}% 7
-\BOOKMARK [2][-]{subsection.61}{Utili potenziali termodinamici}{section.25}% 8
-\BOOKMARK [2][-]{subsection.96}{Capacit\340 termica e compressibilit\340}{section.25}% 9
-\BOOKMARK [1][-]{section.101}{Lezione 3}{chapter.2}% 10
-\BOOKMARK [2][-]{subsection.107}{Segno delle capacit\340 termiche}{section.101}% 11
-\BOOKMARK [2][-]{subsection.125}{Transizioni di fase di un sistema}{section.101}% 12
-\BOOKMARK [2][-]{subsection.150}{Conteggio degli stati }{section.101}% 13
-\BOOKMARK [1][-]{section.189}{Lezione 4}{chapter.2}% 14
-\BOOKMARK [2][-]{subsection.192}{Probabilit\340 di trovare il sistema in uno stato vs probabilit\340 di trovarlo con una certa energia.}{section.189}% 15
-\BOOKMARK [2][-]{subsection.201}{Passagio al continuo per le energie del sistemino}{section.189}% 16
-\BOOKMARK [2][-]{subsection.224}{Conteggio degli stati con particelle interagenti e non interagenti}{section.189}% 17
-\BOOKMARK [2][-]{subsection.236}{Solido cristallino con campo magnetico}{section.189}% 18
-\BOOKMARK [2][-]{subsection.256}{Correzione al conteggio degli stati eliminando i conteggi ripetuti.}{section.189}% 19
-\BOOKMARK [1][-]{section.282}{Lezione 5}{chapter.2}% 20
-\BOOKMARK [2][-]{subsection.287}{Distribuzione di Boltzmann}{section.282}% 21
-\BOOKMARK [2][-]{subsection.303}{Conteggio degli stati nel passagio al continuo}{section.282}% 22
-\BOOKMARK [2][-]{subsection.315}{La costante di Plank nel conteggio degli stati}{section.282}% 23
-\BOOKMARK [2][-]{subsection.321}{Calcolo della \( E \)}{section.282}% 24
-\BOOKMARK [2][-]{subsection.335}{Calcolo dell'energia media di singola particella}{section.282}% 25
-\BOOKMARK [1][-]{section.343}{Lezione 6}{chapter.2}% 26
-\BOOKMARK [2][-]{subsection.344}{Gas ideale con particelle interagenti.}{section.343}% 27
-\BOOKMARK [2][-]{subsection.365}{Fluttuazioni}{section.343}% 28
-\BOOKMARK [2][-]{subsection.422}{Fluttuazioni dipendenti ed indipendenti}{section.343}% 29
-\BOOKMARK [1][-]{section.443}{Lezione 7}{chapter.2}% 30
-\BOOKMARK [2][-]{subsection.444}{Indeterminazione dell'entropia}{section.443}% 31
-\BOOKMARK [2][-]{subsection.452}{Tempo di vita media degli stati}{section.443}% 32
-\BOOKMARK [2][-]{subsection.457}{Stati equiprobabili e teoria degli Ensamble}{section.443}% 33
-\BOOKMARK [2][-]{subsection.465}{Oltre il modello di gas ideale.}{section.443}% 34
-\BOOKMARK [2][-]{subsection.476}{Significato quantistico della approssimazione classica ed espressione completa di .}{section.443}% 35
-\BOOKMARK [2][-]{subsection.497}{Sistemi fuori da approssimazione di gas ideale.}{section.443}% 36
-\BOOKMARK [1][-]{section.520}{Lezione 8}{chapter.2}% 37
-\BOOKMARK [2][-]{subsection.524}{Fluttuazioni quantistiche vs fluttuazioni termodinamiche}{section.520}% 38
-\BOOKMARK [2][-]{subsection.526}{Spin nel calcolo della \( E \) }{section.520}% 39
-\BOOKMARK [2][-]{subsection.531}{Correzione al secondo ordine per l'equazione di stato dei gas ideali}{section.520}% 40
-\BOOKMARK [2][-]{subsection.551}{Gas di Fermioni: elettroni di conduzione in un metallo}{section.520}% 41
-\BOOKMARK [1][-]{section.581}{Lezione 9}{chapter.2}% 42
-\BOOKMARK [2][-]{subsection.599}{Gas di elettroni con campo magnetico}{section.581}% 43
-\BOOKMARK [2][-]{subsection.612}{Emissione termoionica.}{section.581}% 44
-\BOOKMARK [1][-]{section.631}{Lezione 10}{chapter.2}% 45
-\BOOKMARK [2][-]{subsection.632}{Effetto termoionico in presenza di un campo elettrico}{section.631}% 46
-\BOOKMARK [2][-]{subsection.645}{Effetto fotoelettrico}{section.631}% 47
-\BOOKMARK [2][-]{subsection.666}{Condizione sulla massa di una nana bianca per il collasso gravitazionale.}{section.631}% 48
-<<<<<<< HEAD
-\BOOKMARK [1][-]{section.705}{Lezione 11}{chapter.2}% 49
-\BOOKMARK [2][-]{subsection.706}{Condensazione di Bose-Einsein}{section.705}% 50
-\BOOKMARK [2][-]{subsection.741}{Oscillatore armonico}{section.705}% 51
-\BOOKMARK [1][-]{section.765}{Lezione 12}{chapter.2}% 52
-\BOOKMARK [2][-]{subsection.766}{Radiazione di Corpo Nero}{section.765}% 53
-\BOOKMARK [2][-]{subsection.796}{Vibrazioni all'interno dei solidi}{section.765}% 54
-\BOOKMARK [1][-]{section.824}{Lezione 13}{chapter.2}% 55
-\BOOKMARK [2][-]{subsection.825}{Onde nei solidi.}{section.824}% 56
-\BOOKMARK [2][-]{subsection.845}{Propriet\340 di conducibilit\340 del gas di elettroni liberi conun campo elettrico esterno}{section.824}% 57
-\BOOKMARK [2][-]{subsection.846}{Modello del trasporto semi-classico.}{section.824}% 58
-\BOOKMARK [2][-]{subsection.857}{Conduzione elettrica}{section.824}% 59
-\BOOKMARK [2][-]{subsection.880}{Conduzione termica}{section.824}% 60
-\BOOKMARK [2][-]{subsection.893}{Calore specifico in meno di 3 dimensioni}{section.824}% 61
-\BOOKMARK [1][-]{section.894}{Lezione 14}{chapter.2}% 62
-\BOOKMARK [2][-]{subsection.895}{Fluttuazioni nelle statistiche quantistiche}{section.894}% 63
-\BOOKMARK [2][-]{subsection.903}{Fluttuazioni del numero medio di particelle per un insieme di stati}{section.894}% 64
-\BOOKMARK [2][-]{subsection.907}{Significato fisico della correzione quantistica alle fluttuazioni}{section.894}% 65
-\BOOKMARK [2][-]{subsection.924}{Numero di celle coinvolte nelle fluttuazioni del numero di fotoni}{section.894}% 66
-\BOOKMARK [2][-]{subsection.939}{Esempio numerico di numero di celle occupate.}{section.894}% 67
-\BOOKMARK [2][-]{subsection.940}{Coerenza dei fotoni ed esperimento di Young}{section.894}% 68
-\BOOKMARK [2][-]{subsection.945}{Ottenere la coerenza dalla radiazione stellare}{section.894}% 69
-\BOOKMARK [2][-]{subsection.949}{Correlazione tra fasci di particelle: esperimento di Hanbury Brown e Twiss.}{section.894}% 70
-\BOOKMARK [2][-]{subsection.956}{Dinamica delle flutuazioni: Rumore Jonshon nei circuiti elettrici}{section.894}% 71
-=======
->>>>>>> c57e305dcf154bc0fe0bc4d93bbf4bf0c93083ef
+\BOOKMARK [1][-]{section.3}{Lezione 14}{chapter.2}% 2
+\BOOKMARK [2][-]{subsection.4}{Fluttuazioni nelle statistiche quantistiche}{section.3}% 3
+\BOOKMARK [2][-]{subsection.12}{Fluttuazioni del numero medio di particelle per un insieme di stati}{section.3}% 4
+\BOOKMARK [2][-]{subsection.16}{Significato fisico della correzione quantistica alle fluttuazioni}{section.3}% 5
+\BOOKMARK [2][-]{subsection.33}{Numero di celle coinvolte nelle fluttuazioni del numero di fotoni}{section.3}% 6
+\BOOKMARK [2][-]{subsection.48}{Esempio numerico di numero di celle occupate.}{section.3}% 7
+\BOOKMARK [2][-]{subsection.49}{Coerenza dei fotoni ed esperimento di Young}{section.3}% 8
+\BOOKMARK [2][-]{subsection.54}{Ottenere la coerenza dalla radiazione stellare}{section.3}% 9
+\BOOKMARK [2][-]{subsection.58}{Correlazione tra fasci di particelle: esperimento di Hanbury Brown e Twiss.}{section.3}% 10
+\BOOKMARK [2][-]{subsection.65}{Dinamica delle flutuazioni: Rumore Jonshon nei circuiti elettrici}{section.3}% 11
+\BOOKMARK [1][-]{section.79}{Lezione 15}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.80}{Distribuzione spettrale delle fluttuazioni}{section.79}% 13
+\BOOKMARK [2][-]{subsection.89}{Teorema di fluttuazione-dissipazione}{section.79}% 14
+\BOOKMARK [2][-]{subsection.110}{Applicazione del teorema Fluttuazione-dissipazione al rumore Jonshon}{section.79}% 15
+\BOOKMARK [2][-]{subsection.127}{Rumore shot}{section.79}% 16
+\BOOKMARK [2][-]{subsection.143}{Introduzione ai solidi.}{section.79}% 17
+\BOOKMARK [0][-]{chapter.165}{Solidi}{}% 18
+\BOOKMARK [1][-]{section.166}{Lezione 16}{chapter.165}% 19
+\BOOKMARK [2][-]{subsection.173}{Reticoli nei solidi}{section.166}% 20
+\BOOKMARK [2][-]{subsection.183}{Prima zona di Brilloiun}{section.166}% 21
+\BOOKMARK [2][-]{subsection.185}{Osservazione della struttura periodica del cristallo}{section.166}% 22
+\BOOKMARK [2][-]{subsection.202}{Teorema di Bloch}{section.166}% 23

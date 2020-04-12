@@ -11,7 +11,7 @@
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \usepackage{xcolor}
 \usepackage{amsthm}
-\usepackage{mhchem}
+\usepackage[version=4]{mhchem}
 \usepackage[hypertexnames=false]{hyperref}
 \usepackage{nameref}
 \usepackage{multicol}
@@ -20,6 +20,7 @@
 \usepackage[framemethod=TikZ]{mdframed}
 \usepackage{thmtools}
 \usepackage[makeroom]{cancel}
+\usepackage{upgreek}
 
 % figure support
 \usepackage{import}
@@ -32,12 +33,14 @@
 	\def\svgwidth{\columnwidth}
 	\import{./figures/}{#1.pdf_tex}
 }
+\newcommand{\ffrac}[2]{\ensuremath{\frac{\displaystyle #1}{\displaystyle #2}}}
 \newcommand{\bs}{\boldsymbol}
+\renewcommand{\v}{\boldsymbol}
 \newcommand{\numberset}{\mathcal}
 \renewcommand{\L}{\numberset{L}}
 \renewcommand{\[}{\begin{equation}}
 \renewcommand{\]}{\end{equation}}
-
+\newcommand{\angstrom}{\mbox{\normalfont\AA}}
 \renewcommand{\theequation}{\thesection.\arabic{equation}}
 \counterwithin*{equation}{section}
 
@@ -68,21 +71,28 @@
 \tableofcontents
 %\clearpage
 \chapter{Termodinamica}
-%\input{lezioni/lez_1.tex}
-%\input{lezioni/lez_2.tex}
-%\input{lezioni/lez_3.tex}
-%\input{lezioni/lez_4.tex}
-%\input{lezioni/lez_5.tex}
-%\input{lezioni/lez_6.tex}
-%\input{lezioni/lez_7.tex}
-%\input{lezioni/lez_8.tex}
-%\input{lezioni/lez_9.tex}
-%\input{lezioni/lez_10.tex}
-%\input{lezioni/lez_11.tex}
-%\input{lezioni/lez_12.tex}
-%\input{lezioni/lez_13.tex}
+\input{lezioni/lez_1.tex}
+\input{lezioni/lez_2.tex}
+\input{lezioni/lez_3.tex}
+\input{lezioni/lez_4.tex}
+\input{lezioni/lez_5.tex}
+\input{lezioni/lez_6.tex}
+\input{lezioni/lez_7.tex}
+\input{lezioni/lez_8.tex}
+\input{lezioni/lez_9.tex}
+\input{lezioni/lez_10.tex}
+\input{lezioni/lez_11.tex}
+\input{lezioni/lez_12.tex}
+\input{lezioni/lez_13.tex}
 \input{lezioni/lez_14.tex}
 \input{lezioni/lez_15.tex}
 \chapter{Solidi}
 \input{lezioni/lez_16.tex}
+\input{lezioni/lez_17.tex}
+\input{lezioni/lez_18.tex}
+\chapter{Liquidi}
+\input{lezioni/lez_19.tex}
+\input{lezioni/lez_20.tex}
+\input{lezioni/lez_21.tex}
+\input{lezioni/lez_22.tex}
 \end{document}

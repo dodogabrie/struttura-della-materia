@@ -50,16 +50,21 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.34340188)%
+  \begin{picture}(1,0.39134771)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf}}%
-    \put(0.78578135,0.00538645){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$k$\end{tabular}}}}%
+    \put(0.78578135,0.00347069){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$k$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf}}%
     \put(0.33600954,0.00263872){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$-\frac{\pi}{a}$\end{tabular}}}}%
     \put(0.56108033,0.00354078){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\frac{\pi}{a}$\end{tabular}}}}%
-    \put(0.48508097,0.03977801){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$n=1$\end{tabular}}}}%
-    \put(0.48914034,0.17599323){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$n=2$\end{tabular}}}}%
-    \put(0.47335383,0.30905118){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$n=3$\end{tabular}}}}%
+    \put(0.65422244,0.03526751){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$n=1$\end{tabular}}}}%
+    \put(0.65730012,0.05490653){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$n=2$\end{tabular}}}}%
+    \put(0.65918375,0.16832553){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$n=3$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf}}%
+    \put(0.65467332,0.20900581){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$n=4$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf}}%
+    \put(0.4684495,0.33765546){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathcal{E}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf}}%
   \end{picture}%
 \endgroup%

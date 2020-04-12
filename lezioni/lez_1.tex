@@ -74,11 +74,11 @@ Per poter caratterizzare meglio la situazione ci servono delle ipotesi:
 	\item Se il sistema ha raggiunto l'equilibrio tutti i microstati sono equiprobabili.
 \end{itemize}
 \paragraph{Apparente contraddizione} %
-Con le due ipotesi sopra sembrerebbe che lo stato in cui tutta l'energia E sta in una particella è egualmente probabile allo stato in cui tutte le particelle hanno la stessa energia. \\
-In realtà la probabilità di ottenere uno dei due casi è la stessa, soltanto che il numero dei microstati in cui ogni particella ha una energia di circa $E / N$ è molto maggiore del numero dei microstati in cui una particella ha tutta l'energia.\\
+Con le due ipotesi sopra sembrerebbe che lo stato in cui tutta l'energia E sta in una particella sia equiprobabile allo stato in cui tutte le particelle hanno la stessa energia. \\
+La probabilità di ottenere uno dei due casi è efffettivamente la stessa, tuttavia il numero dei microstati in cui ogni particella ha una energia di circa $E / N$ è molto maggiore del numero dei microstati in cui una particella ha tutta l'energia.\\
 Cerchiamo di costruire un metodo per trovare le configurazioni "più probabili" (più popolate), queste ci consentiranno di trovare le proprietà macroscopiche del materiale. Ci serve, in fin dei conti, solo un metodo per contare. 
 \subsection{Entropia}%
-Boltzmann introduce il concetto di entropia a partire dal numero di microstati $\Gamma$ per un sistema (noti E, N, V). La sua definizione è:
+Boltzmann introduce il concetto di entropia a partire dal numero di microstati $\Gamma$ per un sistema (noti E, N, V):
 \begin{defn}[Entropia]{def:Entropia}
 	\[
 	S = k\cdot \ln\Gamma
@@ -104,6 +104,8 @@ Se l'energia è finita possiamo farne una variazione infinitesima ed ottenere gl
 \end{align}
 Queste relazioni sono all'equilibrio (a meno che non venga specificata una perturbazione simile al campo elettrico, in qui troveremo comunque soluzioni stazionarie).
 \subsection{Potenziale chimico $\mu$}%
-Il potenziale chimico è la variazione dell'energia del sistema all'aumentare del numero di particelle.\\
-Saremmo portati a pensare che tale valore debba essere positivo in realtà è generalmente negativo: è la variazione di energia a \textit{Volume ed Entropia} costante, se l'entropia è costante allora resta costante anche il numero totale di configurazioni possibili. Per mantenere costante quest'ultimo devo diminurire necessariamente l'energia, da cui il fatto che esso sia negativo.
+\begin{defn}[Potenziale chimico]{def:Potenziale chimico}
+	Il potenziale chimico è la variazione dell'energia del sistema all'aumentare del numero di particelle.
+\end{defn}
+Tale quantità è generalmente negativa: è la variazione di energia a \textit{Volume ed Entropia} costante, se l'entropia è costante allora resta costante anche il numero totale di configurazioni possibili. Per mantenere costante quest'ultima devo diminurire necessariamente l'energia, da cui il fatto che esso sia negativo.
 \footnote{Può essere positivo quando il sistema non può diminuire la sua energia (fermioni a bassa temperatura, grazie al principio di esclusione di Pauli).}

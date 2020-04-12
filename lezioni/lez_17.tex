@@ -1,0 +1,386 @@
+\lez{17}{28-03-2020}{}
+Abbiamo visto la struttura a bande del cristallo nel caso di elettrone libero, vediamo come si modifica tale modello inserendo il potenziale $U_c$ tramite l'uso del metodo perturbativo.\\
+\subsection{Metodo perturbativo per la struttura a bande dei solidi.}
+\label{subsec:Metodo perturbativo per la struttura a bande dei solidi.}
+Prendiamo la funzione d'onda di Bloch $\psi(\bs{r})$ e sviluppiamola sulle onde piane. 
+Ovviamente questa dovrà ancora rispettare il teorema di Bloch e dovrà essere quidi identificata da un vettore d'onda $\bs{k}$ appartenente alla prima zona di Brillouin. 
+Di conseguenza dovremmo inserire in tale funzione d'onda tutte le onde piane che corrispondono allo stesso $\bs{k}$ (le $n$ indicate in Figura \ref{fig:livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico})\\
+Ad ogni valore di $n$ in tale figura corrisponde un punto su una parabola diversa nello spazio dei $\bs{K}$, una parabola traslata rispetto a quella disegnata nell'origine come in Figura \ref{fig:struttura-a-bande-parabole-traslate}.\\
+\begin{figure}[ht]
+    \centering
+    \incfig{struttura-a-bande-parabole-traslate}
+    \caption{Struttura a bande: parabole traslate}
+    \label{fig:struttura-a-bande-parabole-traslate}
+\end{figure}
+Le parabole limitrofe a quella centrata nell'orgine corrisponderanno ad onde piane 
+\[
+	e^{i\left( \bs{k}\pm\bs{K} \right) \cdot\bs{r}}
+.\] 
+Se consideriamo solo la parabola a destra nella Figura \ref{fig:struttura-a-bande-parabole-traslate} abbiamo che resta ovviamente soltanto il segno negativo nella precedente equazione all'esponente, tale autofunzione indica una energia:
+Quindi avranno anche:
+\[
+	\mathcal{E}_1=\frac{\hbar ^2\left( \bs{k}-\bs{K} \right)^2}{2m}
+.\] 
+Considerando tutte le possibili curve otteniamo la funzione d'onda che utilizzeremo per fare teoria delle perturbazioni:
+\[
+	\psi_{\bs{k}}(\bs{r}) = 
+	\sum_{\bs{K}}^{} c_{_{\bs{k}-\bs{K}}}
+	e^{i\left( \bs{k}-\bs{K} \right)\cdot\bs{r}}
+.\] 
+Mettiamo tale sviluppo nella equazione di Shrodinger di singola particella, proietteremo successivamente su una onda piana specifica con una onda piana da noi scelta $\bs{k}$ \footnote{ashcroft e marmin: pagina 138, versione 1976.}:
+\[
+	\left[ \frac{\hbar ^2}{2m}\left( \bs{k}-\bs{K} \right)^2 - \mathcal{E} \right] 
+	c_{_{\bs{k}-\bs{K}}}+
+	\sum_{\bs{K}'}^{} U_{\bs{K}'-\bs{K}}c_{_{\bs{k}-\bs{K}'}} = 0
+	\label{eq:shrodi-bande}
+.\] 
+Dove $U_{_{\bs{K}'-\bs{K}}}$ è la trasformata di Fourier di $U_{c}(\bs{r})$:
+\[
+	U_{\bs{K}} 
+	= 
+	\frac{1}{v}
+	\int_{\text{cella}} d \bs{r} 
+	e^{-i\bs{K}\cdot\bs{r}} U_c(\bs{r})
+.\] 
+Nella trasformata $v$ indica il volume della cella unitaria. Per le regole della trasformata vale anche che:
+\[
+	U_c(\bs{r}) = \sum_{\bs{K}}^{} U_{\bs{K}}e^{i\bs{K}\cdot\bs{r}}
+.\] 
+L'equazione \ref{eq:shrodi-bande} ci fornisce un set di equazioni, una per ognuno dei $\bs{K}$: possiamo proiettare su qualunque onda piana avente uno dei possibili $\bs{k}-\bs{K}$.
+Le soluzioni di tale equazione di Shrodinger, per ogni $\bs{k}$ fissato, saranno le nostre bande. 
+\subsubsection{Potenziale nullo}
+\label{subsubsec:Potenziale nullo}
+Prendendo $U_{\bs{K}} = 0$ troveremo di nuovo l'elettrone libero come atteso. Ci sarà quindi un $\bs{k}$ per cui si avrà:
+\[
+	\mathcal{E}  
+	=
+	\mathcal{E}^0_{_{\bs{k}-\bs{K}}} 
+	=
+	\frac{\hbar^2}{2m}\left( \bs{k}-\bs{K} \right)^2
+.\] 
+Tale vettore d'onda avrà:
+\[\begin{aligned}
+	&c_{_{\bs{k}-\bs{K}}}\neq 0 \\
+	& c_{_{\bs{k}-\bs{K}'}} = 0 \quad \forall \bs{K}' \neq \bs{K}
+.\end{aligned}\]
+Di conseguenza la funzione d'onda per tale energia sarà:
+\[
+	\psi_{\bs{k}}=e^{i\left( \bs{k}-\bs{K} \right) \cdot\bs{r}}
+.\] 
+Ci saranno delle zone (quelle al bordo) in cui vi è una degenerazione:
+\[
+	\mathcal{E}^0_{\bs{k}-\bs{K}_1} = \mathcal{E}^0_{\bs{k}-\bs{K}_2}
+.\] 
+In questo modo i $c_{_{\bs{k}-\bs{K}}}$ non saranno più tutti indipendenti, avremo infatti che tutti i $c_{_{\bs{k}-\bs{K}_1}}$ ed i $c_{_{\bs{k}-\bs{K}_2}}$ saranno diversi da zero. Le nostre soluzioni saranno delle combinazioni lineari delle due onde piane con dei coefficienti dipendenti da queste $c$. 
+\subsubsection{Potenziale non nullo con vettore d'onda non degenere}
+\label{subsubsec:Potenziale non nullo con vettore d'onda non degenere}
+Supponiamo adesso che il potenziale $U_c$ sia piccolo ma non nullo per poter applicare il metodo perturbativo. \\
+Prendiamo un $\bs{k}$ per cui non si abbia una degenerazione (non devo prendere gli spigoli in Figura \ref{fig:livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico}), in tal caso abbiamo che $\mathcal{E}^0_{_{\bs{k}-\bs{K}_1}}$ è molto diverso da tutti gli altri $\mathcal{E}^0_{_{\bs{k}-\bs{K}}}$. Di conseguenza di ha anche che
+\[
+	\left| \mathcal{E}^0_{_{\bs{k}-\bs{K}_1}} - 
+	\mathcal{E}^0_{_{\bs{k}-\bs{K}}}  \right| \gg 
+	U_c \quad
+	\forall \bs{K}
+.\]	
+Scriviamo una equazione per $c_{_{\bs{k}-\bs{K}_1}}$ :
+\[
+	\left( \mathcal{E}  - \mathcal{E}^0_{_{\bs{k}-\bs{K}_1}} \right)
+	c_{_{\bs{k}-\bs{K}_1}} 
+	=
+	\sum_{\bs{K}}^{} U_{_{\bs{K}-\bs{K}_1}}c_{_{\bs{k}-\bs{K}}} 
+	\label{eq:equazione-per-i-coeffficienti-K}
+.\] 
+La parte a destra nella equazione va a zero con ordine $U$ \footnote{Questa è una ipotesi che si assume prendendo un potenziale piccolo.},
+i $c_{_{\bs{k}-\bs{K}_1}}$ non va a zero solo "nei pressi" di $\mathcal{E}^0_{_{\bs{k}-\bs{K}_1}}$,
+gli altri $c_{_{\bs{k}-\bs{K}}}$ vanno a zero con ordine $U$; dimostriamo quest'ultima affermazione.\\
+Prendiamo l'equazione per un $c_{_{\bs{k}-\bs{K}_i}}$ generico,
+questa è simile alla \ref{eq:equazione-per-i-coeffficienti-K}:
+\[
+	\left( \mathcal{E}  - \mathcal{E}^0_{_{\bs{k}-\bs{K}_i}} \right)
+	c_{_{\bs{k}-\bs{K}_i}} 
+	=
+	\sum_{\bs{K}}^{} U_{_{\bs{K}-\bs{K}_i}}c_{_{\bs{k}-\bs{K}}} 
+.\] 
+tuttavia nella equazione possiamo assumere $\mathcal{E}  \sim \mathcal{E}^0_{_{\bs{k}-\bs{K}_1}}$\footnote{Anche questo fa parte della teoria perturbativa al primo ordine.} ,
+questo ci dice che sicuramente $\mathcal{E}  \neq \mathcal{E}^0_{_{\bs{k}-\bs{K}_i}}$ $\forall \bs{K}$. Questo già ci dice che tutti i coefficienti aventi $\bs{K} \neq \bs{K}_1$ sono di ordine $O(U)$. \\
+Rendiamo tali coefficienti espliciti dividento l'ultima equazione in modo da isolare il coefficiente $c$, si ottiene:
+\[
+	c_{_{\bs{k}-\bs{K}_i}} = 
+	\underbrace{
+	\frac{U_{_{\bs{K}_1-\bs{K}_i}}c_{_{\bs{k}-\bs{K}_1}}}
+	{\mathcal{E}-\mathcal{E}^0_{_{\bs{k}-\bs{K}_i}}}
+	}_{
+	O(U)}
+	+
+	\underbrace{
+	\sum_{\bs{K}' \neq \bs{K}_1}^{} 
+	\frac{
+	\overbrace{
+	U_{_{\bs{K}'-\bs{K}_i}}
+	}^{O(U)}
+	\overbrace{
+	c_{_{\bs{k}-\bs{K}'}}
+	}^{O(U)}}
+	{\mathcal{E}-\mathcal{E}^0_{_{\bs{k}-\bs{K}_i}}}
+	}_{\left( O(U) \right) ^2}
+.\] 
+Abbiamo spezzato la sommatoria esplicitando il termine avente $\bs{K} = \bs{K}_1$. In questo modo è evidente che la somma nella precedente equazione è di ordine $O(U)^2$, possiamo quindi utilizzare come coefficienti soltanto il primo termine che è funzione di $\bs{K}_1$. Riscriviamolo alleggerendo la notazione, $\bs{K}_i \to \bs{K}$:
+\[
+	c_{_{\bs{k}-\bs{K}}} = 
+	\frac{U_{_{\bs{K}_1-\bs{K}}}c_{_{\bs{k}-\bs{K}_1}}}
+	{\mathcal{E}-\mathcal{E}^0_{_{\bs{k}-\bs{K}}}}
+.\] 
+Sostituiamo questo risultato nella equazione di Shrodinger per $\bs{K}_1$:
+\[
+	\left( \mathcal{E}-\mathcal{E}^0_{_{\bs{k}-\bs{K}_1}} \right) 
+	c_{_{\bs{k}-\bs{K}_1}} 
+	=
+	\underbrace{
+	\sum_{\bs{K}}^{} \frac{U_{_{\bs{K}-\bs{K}_1}U_{_{\bs{K}_1-\bs{K}}}}}
+	{\mathcal{E}-\mathcal{E}^0_{_{\bs{k}-\bs{K}}}}
+	c_{_{\bs{k}-\bs{K}_1}}
+	}_{O(U^2)}
+	 + o(U^3)
+.\] 
+In conclusione possiamo scrivere l'energia del livello come quella sella particella libera con una correzione al secondo ordine:
+\[
+	\mathcal{E} 
+	=
+	\mathcal{E}^0_{_{\bs{k}-\bs{K}_1}} 
+	+
+	\sum_{\bs{K}}^{} \frac{\left| U_{_{\bs{K}-\bs{K}_1}} \right|^2}
+	{\mathcal{E}^0_{_{\bs{k}-\bs{K}_1}}-\mathcal{E}^0_{_{\bs{k}-\bs{K}}}}
+.\] 
+Questo ci fa capire come i livelli si modificano con l'aggiunta di un potenziale, ci immaginiamo che questo tenda a far sparire la degenerazione al bordo. Una idea della situazione è data in Figura \ref{fig:effetto-sulle-bande-del-metodo-perturbativo}. 
+\begin{figure}[ht]
+    \centering
+    \incfig{effetto-sulle-bande-del-metodo-perturbativo}
+    \caption{Effetto sulle bande del metodo perturbativo}
+    \label{fig:effetto-sulle-bande-del-metodo-perturbativo}
+\end{figure}
+Vediamo che il contributo più grande alla correzione è dato dai termini più vicini, il segno della correzione dipende da quale energia è più vicina: se quella del piano di sopra o quella del piano di sotto. In questo modo le bande si appiattiscono.
+\subsubsection{Potenziale non nullo con vettore d'onda degenere}
+\label{subsubsec:Potenziale-non-nullo-con-vettore-dondadegenere}
+Sostandoci verso il "bordo" della zona di Brilluin abbiamo che avremo un certo numero di vettori d'onda che corrispondono alla stessa energia di livello: $\bs{K}_1, \bs{K}_m$. Tutti questi vettori hanno quindi:
+\[
+	\mathcal{E}^0_{_{\bs{k}-\bs{K}_1}} \approx
+	\ldots
+	\approx
+	\mathcal{E}^0_{_{\bs{k}-\bs{K}_m}}
+.\] 
+La differenza tra tali bande rispetterà la disuguaglianza opposta del caso precedente:
+\[
+	\left| \mathcal{E}^0_{_{\bs{k}-\bs{K}_i}} 
+	-
+	\mathcal{E}^0_{_{\bs{k}-\bs{K}_j}} \right| 
+	\ll U
+.\] 
+Tutti gli altri $\bs{K}$ che non appartengono a quelli citati sopra ($\bs{K}_1, \ldots, \bs{K}_m$) avranno energie $\mathcal{E}^0_{_{\bs{k}-\bs{K}}}$ che rispettano ancora la disuguaglianza della sottosezione precedente.\\
+La sostanziale differenza dal caso precedente è quindi che con la degenerazione abbiamo un set di coefficienti $c_{_{\bs{k}-\bs{K}_j}}$, $J \in [1,\ldots, m] $ non di ordine $O(U)$ nello sviluppo perturbativo in $U$. \\
+Per i livelli degeneri $\left[ 1,\ldots,m \right] $ possiamo scrivere una equazione che sarà del tipo:
+\[
+	\left( \mathcal{E}  - \mathcal{E}^0_{_{\bs{k}-\bs{K}_i}} \right) 
+	c_{_{\bs{k}-\bs{K}_i}} 
+	=
+	\underbrace{
+	\sum_{j = 1}^{m} U_{_{\bs{K}_j-\bs{K}_i}}c_{_{\bs{k}-\bs{K}_j}}
+	}_{O(U)}
+	+
+	\underbrace{
+	\sum_{\bs{K} \neq \bs{K}_i}^{}
+	U_{_{\bs{K}-\bs{K}_i}}c_{_{\bs{k}-\bs{K}}}
+	}_{O(U^2)}
+	\quad
+	i \in \left[ 1,\ldots,m \right] 
+	\label{eq:degenerazione-perturbazioni}
+.\]
+Per i vettori non degeneri è possibile dividere entrambi i membri per $\mathcal{E}-\mathcal{E}^0_{_{\bs{k}-\bs{K}}}$ ($\bs{K} \neq \bs{K}_i$, $\forall \bs{i} \in \left[ 1,\ldots,m \right] $):
+\[
+	c_{_{\bs{k}-\bs{K}}} =
+	\frac{1}{\mathcal{E}-\mathcal{E}^0_{_{\bs{k}-\bs{K}}}}
+	\left( \sum_{j=1}^{m} U_{_{\bs{K}_j-\bs{K}}}c_{_{\bs{k}-\bs{K}_j}} 
+	+
+	\sum_{\bs{K}' \neq \bs{K}_i}^{} U_{_{\bs{K}'-\bs{K}}}c_{_{\bs{k}-\bs{K}'}}	
+	\right) 
+.\] 
+Per gli ordini che abbiamo esplicitato nella \ref{eq:degenerazione-perturbazioni} sappiamo che il primo termine è $O(U)$, il secondo è $O(U^2)$. Teniamo allora soltanto il primo termine e sostituiamo sempre nella \ref{eq:degenerazione-perturbazioni}. \\
+In questo modo si ha che resta soltanto il primo termine, quello in $O(U)$, l'altro dopo la sostituzione diventa di ordine $O(U^3)$:
+\[
+	\left( \mathcal{E}-\mathcal{E}^0_{_{\bs{k}-\bs{K}_i}} \right) 
+	c_{_{\bs{k}-\bs{K}_i}} 
+	=
+	\sum_{j-1}^{} U_{_{\bs{K}_j-\bs{K}_i}}c_{_{\bs{k}-\bs{K}_j}}
+.\] 
+In un caso undimensionale possiamo avere al massimo due onde piane degeneri, in 3 dimensioni invece potrebbero essere di più. Tipicamente tuttavia è molto difficile anche in 3 dimensioni che si abbiano più di due onde piane degeneri. Consideriamo il caso in cui sono soltanto due.
+\[
+	\begin{cases}
+		&\left(\mathcal{E}-\mathcal{E}^0_{_{\bs{k}-\bs{K}_1}} \right) 
+		c_{_{\bs{k}-\bs{K}_1}} 
+		=
+		U_{_{\bs{K}_2-\bs{K}_1}}c_{_{\bs{k}-\bs{K}_2}} \\
+		&\left(\mathcal{E}-\mathcal{E}^0_{_{\bs{k}-\bs{K}_2}} \right) 
+		c_{_{\bs{k}-\bs{K}_2}} 
+		=
+		U_{_{\bs{K}_1-\bs{K}_2}}c_{_{\bs{k}-\bs{K}_1}} 
+	\end{cases}
+.\] 
+Per semplicità adesso chiamiamo 
+\[\begin{aligned}
+	&\bs{q} = \bs{k}-\bs{K}_1\\
+	&\bs{K} = \bs{K}_2-\bs{K}_1 
+.\end{aligned}\]
+In questo modo le equazioni sono analoge al caso semplice in cui lavoriamo con due onde piane consegutive nella prima zona di Brillouin \footnote{Questa è solo una apparenza perchè i vettori $\bs{K}_1$ e $\bs{K}_2$ possono essere qualunque.}. Le due equazioni diventano:
+\[\begin{aligned}
+	&\left( \mathcal{E}-\mathcal{E}^0_{\bs{q}} \right) c_{\bs{q}}
+	=
+	U_{_{\bs{K}}}c_{\bs{q}-_{\bs{K}}}\\
+	&\left( \mathcal{E}-\mathcal{E}^0_{\bs{q}-\bs{K}} \right) c_{\bs{q}-_{\bs{K}}}
+	=
+	U_{_{-\bs{K}}}c_{\bs{q}} = U^*_{_{\bs{K}}}c_{\bs{q}}
+	\label{eq:sistema-equazioni-degenere}
+.\end{aligned}\]	
+La degenerazione $\mathcal{E}^0_{\bs{q}}\sim \mathcal{E}^0_{\bs{q}-\bs{K}}$ ci dice che, dal momento che le onde sono piane:
+\[
+	\left| \bs{q} \right| \approx \left| \bs{q}-\bs{K} \right| 
+.\] 
+Questo significa che il punto identificato da $\bs{q}$ appartiene al piano che biseca $\bs{K}$. \\
+La degenerazione riguarda quindi la riflessione di Bragg. Nel caso di diffrazione il $\bs{k}$ della radiazione uscente differisce dal $\bs{k}$ della radiazione entrante per un vettore del reticolo reciproco. Se $\bs{k}$ sta sul piano che biseca tale vettore del reticolo reciproco abbiamo la condizione per cui l'onda uscente sia totalmente riflessa.\\
+Tornando al problema delle due equazioni in \ref{eq:sistema-equazioni-degenere}, per risolverlo consideriamone il determinante:
+\[
+	\begin{vmatrix}
+		\mathcal{E}-\mathcal{E}^0_{\bs{q}} & -U_{\bs{K}} \\
+		-U_{\bs{K}} & \mathcal{E}-\mathcal{E}^0_{\bs{q}-\bs{K}}
+	\end{vmatrix} 
+	=
+	0
+.\] 
+Le soluzioni che otteniamo sono:
+\[\begin{aligned}
+	\mathcal{E}  = \frac{1}{2}\left( \mathcal{E}^0_{\bs{q}} 
+		+ 
+	\mathcal{E}^0_{\bs{q}-\bs{K}} \right) 
+	\pm
+	\sqrt{\left( 
+	\frac{\mathcal{E}^0_{\bs{q}}-\mathcal{E}^0_{\bs{q}-\bs{K}}}{2} \right) ^2
+		+ 
+	\left( U_{\bs{K}} \right)^2} 
+.\end{aligned}\]
+quindi la degenerazione si modifica come in Figura  \ref{fig:rottura-degenerazione-dei-livelli-con-il-potenziale}, il potenziale cristallino rompe la degenerazione spostandosi di $ \pm \left| U_{\bs{K}} \right|$. Allontanansodi dalla zona di perfetta degenerazione si torna nel caso della sottosezione precedente.
+\begin{figure}[ht]
+    \centering
+    \incfig{rottura-degenerazione-dei-livelli-con-il-potenziale}
+    \caption{Rottura degenerazione dei livelli con il potenziale}
+    \label{fig:rottura-degenerazione-dei-livelli-con-il-potenziale}
+\end{figure}
+Quindi le bande assumono la forma vista in figura \ref{fig:struttura-a-bande-parabole-traslate}, adesso comprendiamo perchè i livelli sono disegnati "splittati".\\
+Naturalmente il modello di perturbazione al primo ordine non è adatto a desccrivere l'intero cristallo, funzionerà per zone molto piccole di quest'ultimo e da una descrizione qualitativa dell'andamento dei livelli.\\
+Tornando al modello perturbativo al primo ordine abbiamo che ogni banda $\mathcal{E}_n(\bs{k})$ che ci permette di descrivere gli elettroni nei solidi come un gas perfetto, tale gas invece di avere la funzione di dispersione 
+\[
+	\mathcal{E}  = \frac{\hbar ^2 \bs{k}^2}{2m}
+.\] 
+Avranno un'altra dispersione descritta qualitativamente dalla curva in Figura \ref{fig:struttura-a-bande-parabole-traslate}, in generale anche più complicata. \\
+Oltre che al bordo vi possono essere altre degenerazioni per gli elettroni nel cristallo, queste possono essere individuate ragionando sulle simmetrie. Nel cristallo cubico abbiamo, oltre alla simmetria per traslazioni già affrontata, anche tutte le rotazioni di 90$^o$, le riflessioni. \\
+\subsection{Conduzione nei metalli}
+\label{subsec:Conduzione nei metalli}
+\subsubsection{Materiali isolanti}
+\label{subsubsec:Materiali isolanti}
+Possiamo adesso concludere che se il potenziale chimico cade in una zona di "gap" dell'energia il cristallo sarà un isolante. Infatti abbiamo visto che la conducibilità è determinata dalla densità di stati al livello di Fermi, se il livello di fermi (quindi anche $\mu$) si trovano in un gap allora tale densità di stati è nulla, quindi il materiale non conduce. 
+\begin{figure}[ht]
+    \centering
+    \incfig{solido-isolante-e-potenziale-chimico}
+    \caption{Solido isolante e potenziale chimico}
+    \label{fig:solido-isolante-e-potenziale-chimico}
+\end{figure}
+Fisicamente questo significa che le bande al di sotto del potenziale chimico sono tutte piene, quelle al di sopra invece sono tutte vuote. Quindi ne quelle sopra ne quelle sotto possono contribuire alla conduzione degli elettroni. \\ 
+L'unico modo che ho per far condurre un solido di questo tipo è di applicare un campo sufficentemente forte da permettere agli elettroni di saltare dall'ultima banda a quella sopra (ho rotto la resistenza dielettrica dell'oggetto). \\
+Tale campo elettrico deve consentire agli elettroni di guadagnare una energia dell'ordine del Gap, tale salto è tipicamente dell'ordine dell'eV. Per fare un campo elettrico dobbiamo decidere anche su che scale di lunghezze tale energia verrà fornita, tali scale saranno intuitivamente dell'ordine del passo reticolare $a \sim 10^{-10}$ m. Di conseguenza il campo necessario a mandare in conduzione il metallo sarà dell'ordine di:
+\[
+	E_{_{\text{cond}}} \sim \frac{V}{a} \sim 10^10 \text{ V/m}
+.\] 
+Questi campi sono elevati da generare.
+\subsubsection{Materiali conduttori}
+\label{subsubsec:Materiali conduttori}
+Nei materiali conduttori il livello di fermi taglerà una o più bande
+\begin{figure}[ht]
+    \centering
+    \incfig{solido-conduttore-e-potenziale-chimico}
+    \caption{Solido conduttore e potenziale chimico}
+    \label{fig:solido-conduttore-e-potenziale-chimico}
+\end{figure}
+In questo modo applicando anche un piccolo campo elettrico gli elettroni potranno andare in conduzione passando attraverso i livelli di energia limitrofi e ridistribuendosi.
+\subsection{Conducibilità dei materiali del gruppo 1}
+\label{subsec:Conducibilità dei materiali del gruppo 1}
+I materiali del primo gruppo, quindi Na,K,Li, sono tutti metalli. Possiamo spiegare questa cosa ricordando che ogni banda contiene $N$ stati nella prima zona di Brillouin. Gli elementi del gruppo 1 formano tutti un cristallo in cui vi è un atomo per cella unitaria, quindi per la conduzione abbiamo $N$ elettroni liberi. \\
+Tuttavia in ogni banda possono entrare 2$N$ elettroni liberi per via della degenerazione di spin, quindi non saremo in grado di occupare una banda intera con soli $N$ elettroni liberi, una banda resterà sicuramente a metà. Questo significa che il potenziale chimico taglierà a metà una banda, rendendo così gli elementi del primo gruppo conduttori. 
+\subsection{Velocità media dell'elettrone}
+\label{subsec:Velocità media dell'elettrone}
+Considerando che $\mathcal{E}  = \hbar \omega $ si ha che nei punti sul bordo della prima zona di Brillouin tipicamente è vero che: 
+\[
+	\frac{\partial \omega }{\partial k} = 0
+.\] 
+Questa quantità è strettamente legata alla velocità media dell'elettrone, lo possiamo vedere prendendo le funzioni di Bloch (che sono autostati della Hamiltoniana):
+\[
+	H\psi_{n,\bs{k}} = E_n(\bs{k})\psi_{n,\bs{k}}
+.\] 
+Inserendo in tale funzione la forma precisa delle autofunzioni:
+\[
+	\psi_{n,\bs{k}} = e^{i\bs{k}\cdot\bs{r}} u_{n,\bs{k}}(\bs{r})
+.\] 
+Otteniamo che le $u_{n,\bs{k}}$ sono autofunzioni di una Hamiltoniana efficace che può essere scritta come:
+\[
+	H_{\bs{k}} u_{n,\bs{k}} = 
+	\left[ \frac{\hbar ^2}{2m}\left( \frac{\nabla}{i} + \bs{k} \right)^2 
+	+U_c(\bs{r})\right] u_{n,\bs{k}} = \mathcal{E}(\bs{k})u_{n,\bs{k}}
+.\] 
+Possiamo fare uno sviluppo attorno ad un estremo della energia delle bande: prendiamo un $\mathcal{E}_n(\bs{k}+\bs{q})$ dove $\bs{q}$ differisce di poco da $\bs{k}$, sviluppando questa energia:
+\[
+	\mathcal{E}_n(\bs{k}+\bs{q}) =
+	\mathcal{E}_n(\bs{k})+
+	\sum_{i}^{} \frac{\partial \mathcal{E}_n}{\partial k_i} q_i +
+	\frac{1}{2}\sum_{i,j}^{} \frac{\partial ^2 \mathcal{E}_n}
+	{\partial k_i \partial  k_j} q_i q_j+ \ldots
+.\] 
+Facendo teoria delle perturbazioni sulla Hamiltoniana efficace:
+\[
+	H_{\bs{k}+\bs{q}}
+	=
+	H_{\bs{k}} +
+	\frac{\hbar ^2}{2m}\bs{q}\left( \frac{\nabla}{i}+\bs{k} \right) 
+	+
+	\frac{\hbar ^2}{2m} q^2
+.\]
+Facendo perturbazioni sul secondo termine dopo l'uguale. La correzione che ci viene da questa teoria delle perturbazioni la andremo a confrontare con lo sviluppo della energia delle bande. Confrontando il primo ordine:
+\[
+	\sum_{i}^{} \frac{\partial \mathcal{E}_n}{\partial k_i}=
+	\sum_{i}^{} \int d\bs{r} u_{n,\bs{k}}^* \frac{\hbar ^2}{m}
+	\left( \frac{\nabla}{i} + \bs{k} \right) q_i u_{n,\bs{k}}
+.\] 
+Oppure riscrovendo in maniera più compatta:
+\[
+	\frac{\partial \mathcal{E}_n}{\partial \bs{k}} =
+	\frac{\hbar ^2}{m} \int d \bs{r} u_{n,\bs{k}}^* 
+	\left( \frac{\nabla}{i} + \bs{k} \right) u_{n,\bs{k}}
+.\] 
+Gli $u_{n,\bs{k}}$ possono essere scritti nella forma:
+\[
+	u_{n,\bs{k}} = \psi_{n,\bs{k}} e^{-i \bs{k}\cdot\bs{r}}
+.\] 
+In questo modo si ottiene:
+\[
+	\frac{\partial \mathcal{E}}{\partial \bs{k}} =
+	\frac{\hbar ^2}{m} \int d \bs{r} \psi_{n,\bs{k}}^* \frac{\nabla}{i} \psi_{n,\bs{k}}
+.\]
+In tale formula riconosciamo l'operatore velocità:
+\[
+	\frac{1}{m} \frac{\hbar }{i}\nabla  = \frac{\bs{p}}{m}
+.\]
+La veolcità media dell'elettrone nel punto $\bs{k}$ per la banda $n$ è:
+\[
+	\bs{v}_n(\bs{k}) =
+	\frac{1}{\hbar } \nabla_{\bs{k}} \mathcal{E}_n (\bs{k})
+.\] 
+A bordo zona di Brillouin la banda tende ad essere piatta significa che la velocità media in tali punti tende a 0. 
+\[
+	\left< v \right>_\text{bordo} = 0
+.\] 
+Questo significa, a livello di onde, che sono stazionarie. Questo torna perché tali onde al bordo sono sovrapposizioni di onde con $\bs{k}$ e con $-\bs{k}$ (quelle dalla parte opposta). Gli elettroni che arrivano al bordo vengono diffratti elasticamente dalla presenza del reticolo, le funzioni d'onda di tali elettroni si sovrappongono e formano "onde stazionarie".

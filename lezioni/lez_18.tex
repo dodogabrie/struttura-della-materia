@@ -1,0 +1,291 @@
+\lez{18}{30-03-2020}{}
+\subsection{Semimetalli e Semiconduttori}
+\label{subsec:Semiconduttori}
+Nella scorsa lezione abbiamo accennato al fatto che il Gap tra i livelli è dell'ordine di grandezza dell'eV per i materiali isolanti. Esistono alcuni materiali per i quali questo Gap è molto più piccolo (meV), addirittura tale Gap si può anche azzerare. I materiali per i quali tali Gap sono piccoli o addirittura nulli si dicono semimetalli. \\
+I semiconduttori invece sono tipicamente isolanti, questi hanno la caratteristica di contenere delle impurezze che sono in grado di spostare la posizione del potenziale chimico in alto o in basso nel plot delle bande. È possibile che tale potenziale si sposti a tal punto da far si che la banda più vicina sia distante meno di $kT$. \\
+In questo modo le proprietà di conducibilità del materiale diventano fortemente dipendenti dalla temperatura, questo ha permesso lo sviluppo dei primi transistor.
+\subsection{Massa efficace dell'elettrone}
+\label{subsec:Massa efficace dell'elettrone}
+Abbiamo visto che la velocità media può essere ottenuta confrontando lo sviluppo al primo ordine della dispersione con la teoria delle perturbazioni al primo ordine. \\
+Facendo il confronto al secondo ordine avremmo ottenuto che la derivata seconda è invece legata alla curvatura delle bande e ad un qualche concetto di massa.\\
+Infatti se sviluppiamo attorno alla conca della banda energetica come in Figura \ref{fig:conca-della-banda-energetica}.
+\begin{figure}[ht]
+    \centering
+    \incfig{conca-della-banda-energetica}
+    \caption{Conca della banda energetica}
+    \label{fig:conca-della-banda-energetica}
+\end{figure}
+\[
+	\frac{\partial ^2\mathcal{E}}{\partial k^2} \propto \frac{1}{m_\text{eff} }
+.\] 
+Questo perché nel caso di elettrone la dispersione sarebbe stata $\hbar ^2k^2/2m$, quindi in un intorno del punto in cui la dispersione è circa parabolica può essere approssimato come 
+\[
+	\mathcal{E}  \approx \frac{\hbar ^2 k^2}{2m_\text{eff} }
+.\] 
+Poter trattare le bande come parabole è molto utile perché ci consente di trattare gli elettroni come se fossero liberi semplicemente correggendo la massa con un fattore dato dalla curvatura della massa nell'intorno del $\bs{k}$.\\
+Il valore della massa efficace dell'elettrone dipende dal tipo di metallo, tipicamente nei semiconduttori la massa efficace è più piccola della massa elettronica.\\
+La massa efficace dipende anche dalla banda che stiamo considerando: salendo in alto con le bande avremo curve con concavità sempre più rigide.\\
+Lo sviluppo perturbativo funzionerà bene per elettroni nelle bande di energia più alte, ovvero gli elettroni che sono già praticamente quasi liberi.
+\subsection{Conduzione elettronica nel dettaglio: oscillazioni di Bloch.}
+\label{subsec:Conduzione elettronica nel dettaglio.}
+Nel caso in cui vi è un campo elettrico applicato ci aspettiamo che la distribuzione in impulso degli elettroni all'interno della banda di conduzione si modifichi. In assenza di camp elettrico applicato gli elettroni si trovano al di sotto del potenziale chimico $\mu$ come in figura \ref{fig:banda-semi-occupata-nel-caso-di-materiale-conduttore}.
+\begin{figure}[H]
+    \centering
+    \incfig{banda-semi-occupata-nel-caso-di-materiale-conduttore}
+    \caption{Banda semi-occupata nel caso di materiale conduttore}
+    \label{fig:banda-semi-occupata-nel-caso-di-materiale-conduttore}
+\end{figure}
+\noindent
+Applicando il campo ci si aspetta invece una situazione del tipo:
+\begin{figure}[H]
+    \centering
+    \incfig{spostamento-degli-elettroni-con-campo-elettrico-applicato}
+    \caption{Spostamento degli elettroni con campo elettrico applicato}
+    \label{fig:spostamento-degli-elettroni-con-campo-elettrico-applicato}
+\end{figure}
+\noindent
+Potrebbe succedere anche che la distribuzione di elettroni diventa talmente sbilanciata che gli elettroni raggiungono il bordo della prima zona di Brillouin.\\
+In assenza di collisioni ogni singolo elettrone verrebbe costantemente accelerato dal campo elettrico. Quando questo arriva a bordo zona di Brillouin abbiamo visto che l'elettrone si ferma. Ricordando che i due bordi della zona di Brillouin sono collegati si ha che l'elettrone sbuca dalla parte opposta.\\
+Nella parte negativa del grafico in funzione di $\bs{k}$ abbiamo che la velocità media è negativa, questo significa che gli elettroni oscilleranno avanti e indietro. Queste sono le oscillazioni di Bloch.\\
+Fisicamente l'elettrone viene accelerato dal campo elettrico fino a che non raggiunge un vettore d'onda sufficiente a fare riflessione di Bragg. Fatta la riflessione il campo elettrico lentamente lo frena di nuovo fino a che non urta nel reticolo e ritorna indietro ciclicamente. 
+\subsubsection{Super reticolo}
+\label{subsubsec:Super reticolo}
+Normalmente non si riesce a creare campi elettrici così intensi da osservare le oscillazioni di Bloch: il tempo  collisionale non permette agli elettroni di accelerare fino a raggiungere il bordo della zona di Brillouin.
+Per poterle osservare sono stati costruiti dei cristalli artificiali aventi passo reticolare $d$ molto grande: $d \gg a$. In questo modo il reticolo reciproco diventa molto piccolo. \\
+Per far questo si prendono due cristalli di composizione diversa e si alterna la cella unitaria dell'uno con quella dell'altro. Un oggetto così costruito si chiama Super reticolo.
+\subsection{Soluzione per i nuclei del reticolo}
+\label{subsec:Soluzione per i nuclei del reticolo}
+Abbiamo visto che l'Hamiltoniana che descrive il moto dei nuclei è della forma:
+\[
+	H 
+	=
+	\sum_{J}^{} \frac{P_{J}^2}{2M_J} 
+	+
+	\underbrace{
+	\sum_{JJ'}^{} 
+	\frac{1}{2}\frac{Z_J Z_{J'}e^2}{\left| \bs{R}_J - \bs{R}_{J'} \right| }
+	+
+	E_e(\bs{R}_1,\ldots,\bs{R_N})
+	}_
+	{U}
+.\] 
+Possiamo sviluppare il potenziale $U$ attorno alle posizioni di equilibrio ordinate dei nuclei all'interno del reticolo $\bs{R}_{0,J}$ con uno spostamento $\bs{u}_{J}$.\\
+Visto che le sviluppiamo attorno alle posizioni di equilibrio è naturale che lo sviluppo al primo ordine sarà nullo, sarà necessario andare almeno al secondo ordine: approssimazione armonica. \\
+Risolviamo quindi per gli spostamenti rispetto alla posizione di equilibrio $\bs{u}$.
+Supponendo che sia possibile avere più di un atomo nella cella unitaria chiamiamo $u_K$ lo spostamento dell'atomo $K$-esimo in tale cella $l$; l'Hamiltoniana negli spostamenti sarà:
+\[
+	\frac{1}{2} M_{K}
+	\underbrace{
+	\left( \frac{\mbox{d} \bs{u}_{_{K,l}}}{\mbox{d} t}  \right)^2
+	}_{v^2}
+	+
+	\sum_{K',l'}^{} \bs{u}_{_{K,l}}\phi(K,l,K',l')\bs{u}_{_{K',l'}}
+.\] 
+Dove $\phi$ sono le costanti di forza delle interazioni tra tutti gli atomi: $\phi(K,l.K',l')$ è la costante di forza tra l'interazione dell'atomo $K$ nella cella $l$ e l'atomo $K'$ nella cella $l'$.\\
+Il lavoro da fare è quindi calcolare tale matrice $\phi$ per risolvere negli spostamenti $\bs{u}$ degli atomi rispetto alla posizione di equilibrio. \\
+Il potenziale del cristallo non è unicamente Coluombiano ma ha anche un contributo dato dagli elettroni: se spostiamo un atomo questi si riarrangiano modificando il potenziale. 
+Nella matrice delle costanti di forza saranno più rilevanti i termini che derivano da atomi limitrofi rispetto ai termini che derivano da atomi lontani.\\
+Possiamo allora cercare delle proprietà generali dovute alla simmetria del cristallo. Dalla simmetria traslazionale possiamo dire che le soluzioni $u_{_{K,l}}$ dovranno soddisfare il teorema di Bloch: il nostro potenziale resta periodico con la periodicità del cristallo:
+\[
+	\bs{u}_{_{K,l}} = 
+	\underbrace{
+		\bs{u}_{_{K,0}} 
+	}_{\text{cost}}
+	e^{i\bs{q}\cdot\bs{R}_l -i\omega t}
+	\label{eq:onda-bloch}
+.\] 
+Dove $\bs{R}_l$	è la posizione di equilibrio di quell'atomo in quella cella. 
+La funzione $\bs{u}_{K}$ in questo caso è una funzione costante, stiamo infatti parlando di spostamento di atomi rispetto alla posizione di equilibrio,
+quindi le $\bs{u}_{K}$ non sono funzioni che dipendono dalla coordinata $\bs{r}$ ma sono degli oggetti che esistono solo nelle posizioni dove ci sono gli atomi.\\
+Questa cosa implica anche che le soluzioni saranno onde periodiche con lunghezza d'onda minima dettata dal passo reticolare: essendo definita nella posizione degli atomi questo problema è del tutto analogo a quello delle masse legate tra loro da molle. 
+Le soluzioni avente lunghezze d'onda più piccole del passo reticolare non avranno allora senso. \\
+Le soluzioni che otterremo per i fononi non sono infinite, ne avremo un numero ben preciso tale che il numero totale di stati possibili sia il numero di modi normali di un sistema composto da N atomi.\\
+In 3 dimensioni ad esempio con $N$ atomi avremo $3N$ modi normali, questo ci dice anche che se in ogni banda avevamo $N$ stati allora avremo solo 3 bande, tutte quelle che possiamo creare ad energia più alta non hanno senso visto che corrispondono ad un moto degli atomi esattamente identico a quello con lunghezze d'onda maggiori.\\
+Prendendo la soluzione in \ref{eq:onda-bloch} possiamo sostituirla nella equazione del moto:
+\[
+	m\dot{\bs{v}} = -\frac{\partial U}{\partial r} 
+.\] 
+e troviamo delle soluzioni del tipo
+\[
+	M_{K} \omega ^2 u_{_{K,0}} 
+	=
+	\sum_{K',l'}^{} \phi(K,m,K',0) e^{-i \bs{q}\cdot\bs{R}_m} \bs{u}_{_{K,0}}
+.\] 
+Possiamo introdurre la trasformata di Fourier della $\phi$: la matrice dinamica:
+\[
+	D_{K,K'}(\bs{q}) = 
+	\sum_{m}^{} 
+	\phi(mK,0K')(M_{K}M_{K'})^{-1/2}
+	\exp\left( -i\bs{q}\cdot\bs{R}_m \right) 
+.\] 
+In questo modo l'equazione del moto diventa la seguente:
+\[
+	\left[ \sum_{K}^{} D_{K,K'}(\bs{q}) - \omega ^2  \delta_{K,K'} \right]
+	\bs{u}_{_{K,0}}=0
+.\] 
+Imponiamo adesso che il determinante del sistema sia nullo in modo da non avere soluzioni triviali:
+\[
+	det\left| D_{K,K'}(\bs{q}) -\omega ^2 \delta_{K,K'} \right| =0
+.\] 
+Da questa possiamo ricavare le $\omega (\bs{q})$: la dipendenza della frequenza delle vibrazioni dal vettore d'onda.
+\subsection{Frequenza di vibrazione di un cristallo unidimensionale}
+\label{subsec:Frequenza di vibrazione di un cristallo unidimensionale}
+Per poter risolvere il caso tridimensionale è necessario conoscere le costanti di forza, per semplicità trattiamo il caso unidimensionale.
+\subsubsection{Catena monoatomica di passo $a$}
+\label{subsec:Catena monoatomica di passo $a$}
+Consideriamo una catena monoatomica di passo $a$ contenente un solo atomo per cella, se consideriamo soltanto l'interazione di un atomo con i vicini l'equazione del moto per l'atomo $p$-esimo della catena sarà:
+\[
+	m \ddot{u}_p 
+	=
+	c\left( u_{p+1} -u_{p} + u_{p-1} - u_{p} \right) 
+.\] 
+Dove $c$ è la costante di forza presente nella equazione.
+Cerchiamo una soluzione del tipo onda piana:
+\[
+	u_p = u_0 e^{i\left( q \left( pa \right)  -\omega t \right) }
+.\] 
+Inserendo nella equazione del moto abbiamo :
+\[
+	-\omega ^2 m u_p 
+	=
+	c\left[ e^{iqa} + e^{-iqa} - 2 \right] u_p
+.\] 
+Per non avere soluzioni banali avremo che:
+\[
+	-\omega ^2 = \frac{c}{m}\left\{ 2\cos(qa) - 2 \right\} 
+	\implies
+	\omega  = \sqrt{\frac{4c}{m}} \left| \sin\left( \frac{qa}{2} \right)  \right| 
+.\] 
+La forma di queste soluzioni è:
+\begin{figure}[H]
+    \centering
+    \incfig{soluzioni-per-cristallo-monoatomico-unidimensionale}
+    \caption{Soluzioni per cristallo monoatomico unidimensionale}
+    \label{fig:soluzioni-per-cristallo-monoatomico-unidimensionale}
+\end{figure}
+\noindent
+Notiamo che per piccoli valori di $q$ la soluzione è lineare, otteniamo per tali valori:
+\[
+	v_g = \sqrt{\frac{ca^2}{m}} 
+.\] 
+L'andamento lineare è un andamento atteso: questo è il campo delle grandi lunghezze d'onda, ovvero quelle in cui l'onda non si accorge della struttura fine del cristallo. Ritroviamo quindi la propagazione delle onde acustiche trattata con un mezzo continuo: onde elastiche con dispersione lineare.\\
+Se prendiamo invece $q$ dell'ordine del passo reticolare allora la funzione si piega. \\
+Abbiamo trovato quindi dei modi normali di oscillazione, se volessimo associare delle quasi particelle a questi modi allora saremmo davanti a quelli che oggi chiamiamo fononi. I fononi che propagano a piccoli $q$ sono detti \textit{fononi acustici}.\\
+Notiamo che abbiamo $N$ particelle in una dimensione ed abbiamo trovato $N$ modi normali come atteso (questi corrispondono ad una singola banda), nel caso 3-dimensionale avremo trovato un valore atteso di  $3N$ modi normali, quindi ci aspettiamo di avere 3 bande.\\
+Ricordiamo che ci aspettiamo $3N$ modi normali per via delle possibili polarizzazioni di oscillazione in un solido. Visto che la polarizzazione longitudinale ha una energia in genere maggiore di quelle trasverse possiamo aspettarci un andamento del tipo:
+\begin{figure}[H]
+    \centering
+    \incfig{modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico}
+    \caption{Modi longitudinali e trasversali in un solido tridimensionale monoatomico}
+    \label{fig:modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico}
+\end{figure}
+\noindent
+In tre dimensioni non è detto che le onde trasverse siano esattamente isoenergetiche in tutte le direzioni dello spazio $\v{k}$, dipenderà dalle simmetrie del cristallo. \\
+Grazie a queste soluzioni possiamo capire anche il funzionamento del modello di Debye, il motivo per cui funziona a basse temperature è che per bassi $q$ la legge di dispersione delle vibrazioni è correttamente lineare mentre per le energie più alte si distorce. La distorsione della curva fa si che il modello di Debye non possa essere utilizzato ad alte energie. \\
+Possiamo adesso capire anche perché vi è una frequenza massima di oscillazione che ricavammo, questa è dovuta al fatto che abbiamo un $k_{max} = \pi/a$.\\
+Le oscillazioni hanno una energia tipica dell'ordine del millesimo di eV, questo è conforme con l'approssimazione che abbiamo fatto all'inizio: poter separare il moto dei nuclei dal moto degli elettroni, se avessimo trovato lo stesso ordine delle energie allora sarebbe caduta la approssimazione adiabatica.\\
+\subsubsection{Catena biatomica di passo $a$}
+\label{subsubsec:Catena biatomica di passo $a$}
+Possiamo assumere il cristallo unidimensionale della forma:
+\begin{figure}[H]
+    \centering
+    \incfig{cristallo-biatomico-unidimensionale}
+    \caption{Cristallo biatomico unidimensionale}
+    \label{fig:cristallo-biatomico-unidimensionale}
+\end{figure}
+\noindent 
+Questa volta il passo reticolare sarà $d = 2a$. Supponiamo che i due atomi differiscano in massa.
+Scriviamo l'equazione del moto per gli atomi pari del reticolo:
+\[
+	m_1 \ddot{u}_{2p} 
+	=
+	c \left( u_{2p +1} - u_{2p} + u_{2p -1} - u_{2p} \right) 
+.\] 
+Per gli atomi dispari invece:
+\[
+	m_2 \ddot{u}_{2p+1} 
+	=
+	c \left( u_{2p +2} - u_{2p+1} + u_{2p} - u_{2p+1} \right) 
+.\] 
+Cerchiamo analogamente a prima soluzioni del tipo:
+\[\begin{aligned}
+	&u_{2p} = u_1 e^{i\left( 2qap -\omega t \right) }\\
+	&u_{2p+1} = u_2 e^{i\left( qa\left( 2p+1 \right)  -\omega t \right) }
+.\end{aligned}\]
+Sostituendo si ha:
+\[
+	\begin{cases}
+		&-\omega^2u_1m_1= c\left[u_2\left(e^{iaq}+e^{-iaq}\right)-2 u_1 \right] \\
+		&-\omega^2u_2m_2= c\left[u_1\left(e^{iaq}+e^{-iaq}\right)-2 u_2 \right] 
+	\end{cases}
+.\] 
+Facendo il determinante si ha:
+\[
+	\begin{vmatrix}
+		\frac{2c}{m_1}-\omega ^2 & - \frac{2c}{m_1} \cos(aq) \\
+		-\frac{2c}{m_2}\cos(aq) & \frac{2c}{m_2} - \omega ^2
+	\end{vmatrix}
+	= 0
+.\] 
+Le soluzioni di tale sistema sono 
+\[
+	\omega ^2 
+	=
+	c\left\{ \left( \frac{1}{m_1} + \frac{1}{m_2} \right) 
+	\pm \sqrt{\left( \frac{1}{m_1} + \frac{1}{m_2} \right) ^2 
+	-\frac{4\sin^2(aq)}{m_1m_2} }  \right\} 
+.\] 
+La cosa importante da ricordare è la forma di queste soluzioni:
+\begin{figure}[H]
+    \centering
+    \incfig{soluzioni-per-le-vibrazioni-nel-caso-biatomico}
+    \caption{Soluzioni per le vibrazioni nel caso biatomico}
+    \label{fig:soluzioni-per-le-vibrazioni-nel-caso-biatomico}
+\end{figure}
+\noindent
+Il disegno contiene 3 bande sovrapposte per ciascuno dei due livelli di energia, questo perchè si riferisce al caso 3D. La banda superiore è più piatta di quella inferiore, tale banda è quella dei \textit{fononi ottici}. \\
+Per capire il senso dei fononi ottici immaginiamo di incidere sul nostro materiale con della radiazione elettromagnetica, tale radiazione avrebbe una legge di dispersione lineare che si collocherebbe nella figura in questo modo:
+\begin{figure}[H]
+    \centering
+    \incfig{radiazione-elettromagnetica-su-atomi-di-cristallo-biatomico}
+    \caption{Radiazione elettromagnetica su atomi di cristallo biatomico}
+    \label{fig:radiazione-elettromagnetica-su-atomi-di-cristallo-biatomico}
+\end{figure}
+\noindent
+Sicuramente la curva della legge di dispersione per la radiazione elettromagnetica non interseca mai quella per i fononi acustici: la velocità del suono è sempre inferiore a quella della luce, intersecherà solo quella dei fononi ottici. 
+Quindi escludendo la presenza di fononi ottici l'assorbimento diretto dei fotoni non rispetterebbe la conservazione dell'impulso, mentre sappiamo che il nostro cristallo può assorbire i fotoni.\\
+I fononi devono essere eccitabili dalla radiazione elettromagnetica, dovranno quindi corrispondere ad un qualche dipolo. Possiamo allora immaginare queste oscillazioni nel seguente modo:
+\begin{figure}[H]
+    \centering
+    \incfig{oscillazioni-degli-atomi-nel-cristallo-biatomico}
+    \caption{Oscillazioni degli atomi nel cristallo biatomico}
+    \label{fig:oscillazioni-degli-atomi-nel-cristallo-biatomico}
+\end{figure}
+\noindent
+\subsubsection{Dal caso biatomico al caso monoatomico}
+\label{subsubsec:Dal caso biatomico al caso monoatomico}
+Nel caso in cui $m_1=m_2$ si ha che le curve di dispersione assumono la seguente forma:
+\begin{figure}[H]
+    \centering
+    \incfig{dispersione-di-solido-biatomico-con-masse-uguali}
+    \caption{Dispersione di solido biatomico con masse uguali}
+    \label{fig:dispersione-di-solido-biatomico-con-masse-uguali}
+\end{figure}
+\noindent
+Soltanto che, con le masse uguali, il problema diventa esattamente lo stesso del caso monoatomico. All'apparenza la forma della dispersione sembra differente da quella ottenuta sopra, tuttavia ragionando in questo modo stiamo omettendo di considerare una cosa importante: il passo reticolare.\\
+Se vogliamo tornare al caso monoatomico infatti dobbiamo aumentare le dimensioni del reticolo reciproco, in questo modo la piega del secondo livello (del caso biatomico) si "spiega" lasciandoci con un singolo livello come atteso.\\
+Anche per i fononi ottici abbiamo energie delle bande longitudinali maggiori di quelle dell bande trasverse (non è stato esplicitato nelle figure per non incasinare i disegni), la cosa interessante è che questo comporta energie in corrispondenza di $q=0$ diverse per le due oscillazioni: $\omega _L(0) \neq \omega _T(0)$.\\
+Tuttavia a $q=0$ diventa impossibile distinguere tra onde longitudinali ed onde trasversali, in questo regime non si ha più nemmeno propagazione \footnote{Notiamo che invece per i fononi acustici tutte le curve vanno nell'origine come ci si aspetta.}. \\
+Il motivo per questa situazione viene dal fatto che il fonone ottico longitudinale si porta dietro un campo elettrico macroscopico, il risultato della differenza di energia è dovuto a questa differenza di energia. \\
+Questo risultato a $q=0$ è leggermente "finto": il problema si elude quando consideriamo la velocità di propagazione del campo elettromagnetico. 
+\subsection{Misurare i fononi}
+\label{subsec:Misurare i fononi}
+\subsubsection{Misura della propagazione lineare dei fononi acustici}
+\label{subsubsec:Misura della propagazione lineare dei fononi acustici}
+Per misurare i fononi possiamo utilizzare un cristallo piezoelettrico \footnote{Un cristallo non centro-simmetrico per il quale l'applicazione di un campo elettrico corrisponde alla creazione di una vibrazione o viceversa.} montato sul cristallo del quale vogliamo misurare i fononi. Facciamo propagare l'impulso delle vibrazioni nel cristallo finito, una volta raggiunto il fondo del cristallo le vibrazioni si rifletteranno tornando indietro. In questo modo possiamo misurare la velocità di propagazione del fonone nel  cristallo. \\
+Questa tecnica ci permette di misurare la parte di propagazione lineare dei fononi acustici. 
+\subsubsection{Misura della interazione con la radiazione dei fononi: scattering Raman}
+\label{subsubsec:Misura della interazione con la radiazione dei fononi}
+Mandando fotoni con un certo $\omega , k$ questi usciranno scatterati dal cristallo, questo tipo di scattering è inelastico, l'energia viene trasmessa al fonone del cristallo.\\
+Andando a vedere come è distribuita l'energia della particella uscente possiamo dedurre qual'è la $\omega '$ ed il $k'$ del fonone.\\
+Per evitare interazioni con elementi carichi all'interno del solido è comodo utilizzare anzichè radiazione EM dei fasci di neutroni.

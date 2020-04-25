@@ -1,0 +1,466 @@
+\lez{26}{23-04-2020}{}
+I ragionamenti fatti nella lezione scorsa avevano come ipotesi il fatto che le popolazioni dei due livelli rimanesse invariata indipendentemente dalla radiazione incidente sul materiale, tuttavia questa non è la configurazione più "naturale" di un sistema. Per esempio può capitare di avere un oggetto completamente passivo che viene fatto attraversare dalla radiazione, in questa situazione ci aspettiamo che più è alta l'intensità della radiazione e più atomi verranno eccitati, in questo caso il numero delle popolazioni cambia.\\
+Ci saranno poi dei processi che tengono a riportare il sistema in una condizione di equilibrio termodinamico (emissione spontanea, collisioni con i fononi o con le pareti del contenitore).\\
+Cerchiamo di modellizzare questo sistema, vedremo che il coefficiente di assorbimento in questo caso dipenderà dalla intensità.\\
+Il coefficiente trovato nella scorsa lezione è:
+\[
+    k = \frac{h\nu}{c}g(\nu-\nu_{12}) \left(N_2-N_1\right)
+.\] 
+Nel quale il livello superiore è (1) mentre il livello inferiore è il (2).
+Se la popolazione del livello può variare allora possiamo scrivere che:
+\[
+    \frac{\text{d} N_1}{\text{d} t} = B_{21}N_2g(\nu-\nu_{12}) u 
+    -B_{12}N_1 u g(\nu-\nu_{12}) =
+    \left(B_{21}N_2- B_{12}N_1\right)ug(\nu-\nu_{12}) 
+.\] 
+Ovviamente per l'altro livello abbiamo che:
+\[
+    \frac{\text{d} N_2}{\text{d} t} = -\frac{\text{d} N_1}{\text{d} t}
+.\] 
+Quindi la differenza tra le due ci da:
+\[
+    \frac{\text{d} \left(N_2-N_1\right)}{\text{d} t} =
+    2\left|B_{21}N_2-B_{12}N_2\right|u g(\nu-\nu_{12}) 
+.\] 
+Dobbiamo tener di conto di un qualche processo che riporta il sistema all'equilibrio, introduciamo quindi il parametro $\gamma_{\parallel}$. Descriviamo la configurazione di equilibrio con le popolazioni $N_1^0$ e $N_2^0$ che seguono la distribuzione di Boltzmann:
+\[
+    \frac{N_2^0}{N_1^0} = \frac{g_2}{g_1}e^{-\left(E_2-E_1\right) /kT}
+.\] 
+Supponendo che questo nuovo rate descriva dei processi che tendono a far tornare il sistema all'equilibrio in modo esponenziale aggiungiamo un termine alla equazione del trasporto del tipo:
+\[
+    \frac{\text{d} \left(N_2-N_1\right)}{\text{d} t} =
+    2\left|B_{21}N_2-B_{12}N_2\right|u g(\nu-\nu_{12}) 
+    +\gamma_{\parallel}\left[\left(N_2^0-N_1^0\right)-
+    \left(N_2-N_1\right)\right]
+.\] 
+Il termine aggiunto è un termine lineare in tale equazione che tiene di conto della differenza tra la situazione di equilibrio e quella fuori equilibrio che consideriamo.\\
+Possiamo quindi riscrivere l'equazione di Rate assumendo anche $B_{12}=B_{21}$:
+\[
+    \frac{\text{d} \left(N_2-N_1\right)}{\text{d} t} =
+    \Gamma_{\parallel}\left[N_2^0-N_1^0 - \left(N_2-N_1\right)\right]
+    -2g(\nu-\nu_{12}) \frac{I}{c}B_{21}\left(N_2-N_1\right)
+.\] 
+Introducendo questo parametro di rate adesso possiamo di nuovo assumere che la derivata sia nulla (abbiamo bilanciato) quindi possiamo ricavare che:
+\[
+    N_2-N_1 = \frac{N_2^0-N_1^0}{1+2g(\nu-\nu_{12})
+    \frac{B}{\gamma_{\parallel}c}I}=
+    \frac{N_2^0-N_1^0}{1+\frac{I}{I_s(\nu)}}
+.\] 
+In cui per compattare l'espressione si introduce:
+\[
+    I_s = \frac{\gamma_\parallel c}{2B_{21}g(\nu-\nu_{12})}
+.\] 
+All'aumentare dell'intensità la differenza di popolazioni tra il fondamentale ed il livello di sopra diventa più piccolo, questo perché a stazionarietà ho sempre più processi che tengono ad eccitare gli atomi quindi il $\gamma_\parallel$  non riesce a riportare il sistema esattamente all'equilibrio. \\
+Se l'intensità tende a $\infty$ allora i due livelli tendono ad avere la stessa popolazione ($N_2-N_1\to 0$)
+\footnote{Questo indipendentemente dalle dimensioni di $\gamma_\parallel$.}.
+quindi possiamo al massimo rendere i due livelli equipopolati, non riesco mai a fare una inversione in questo caso.
+Dobbiamo notare che questo approccio non contraddice le oscillazioni di Rabi, in questo caso siamo a stazionarietà mentre con tali oscillazioni non siamo stazionari. \\
+Quando si interagisce con campi elettromagnetici forti in regime di oscillazioni di Rabi se utilizziamo un impulso di campo molto breve (di durata pari a $\frac{\pi}{\Omega_R}$) possiamo "flippare" completamente le popolazioni, questo tipo di impulso è detto impulso $\pi$. \\
+Possiamo riscrivere il coefficiente di assorbimento inserendo il nuovo valore di $N_2-N_1$:
+\[
+    k= \frac{h\nu}{c}g(\nu-\nu_{12})B_{21} \frac{N_2^0-N_1^0}{1+\frac{I}{I_s}}=
+    \frac{k_0}{1+\frac{I}{I_S}}
+.\]
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+	\begin{axis}[
+	    xmin= 0, xmax= 11,
+	    ymin= 0, ymax = 11,
+	    xlabel={$I$},
+	    ylabel={$k$},
+	    axis lines = middle,
+	    ytick={10},
+	    yticklabel={$k_0$},
+	    xtick={0}
+	]
+	\addplot[domain=0:10, samples=100]{10*1/(1+x)};
+	\end{axis}
+    \end{tikzpicture}
+    \caption{Andamento di $k_0$ al variare della intensità.}
+    \label{Andamento di k_0 al variare della intensità.}
+\end{figure}
+Questo fenomeno si chiama saturazione: aumentando l'intensità esauriscono gli atomi nel fondamentale. Adesso nella equazione per la propagazione abbiamo una esponenziale che non è più l'intensità ma:
+\[
+    \text{d}I=-\frac{k_0}{1+\frac{I}{I_s}}I \text{d}z
+.\] 
+Il coefficiente di assorbimento è molto utilizzato da chi studia solidi, chi invece studia atomi o impurezze usa la sezione d'urto. Quest'ultima è in relazione al coefficiente di assorbimento tramite la seguente:
+\[
+    K = \sigma\left(\frac{B_{21}}{B_{12}}N_2-N_1\right)
+.\] 
+Possiamo anche riscrivere la $\sigma_0$:
+\[
+    \sigma_0=\frac{h\nu}{c}Bg(\nu-\nu_{12}) =
+    \left[\frac{\lambda_{12}}{2}\right]^2Ag(\nu-\nu_{12}) 
+.\] 
+Siamo interessati a sistemi in cui $N_1>N_2$ in modo tale che il nostro mezzo sia in grado di amplificare la radiazione (coefficiente di assorbimento negativo). Possiamo far questo senza usare una eccitazione ottica (utilizzando ad esempio una eccitazione elettrica). Per poter fare processi di questo tipo abbiamo bisogno di almeno 3 livelli, vediamo la configurazione  più semplice da pensare per avere due livelli che sono invertiti tra di loro.
+\subsection{Maser}%
+\label{sub:Maser}
+Prendiamo un sistema a 3 livelli
+\begin{figure}[ht]
+    \centering
+    \incfig{sistema-a-3-livelli}
+    \caption{Sistema a 3 livelli}
+    \label{fig:sistema-a-3-livelli}
+\end{figure}
+Supponiamo di essere nelle microonde e di avere tutte le differenze di energia minori di $kT$:
+\[\begin{aligned}
+    &h\nu_{12}\ll kT\\
+    &h\nu_{23}\ll kT
+.\end{aligned}\] 
+Andiamo a pompare dall'esterno tra i livelli (3) e (1), in questo modo se la pompa è molto intensa il livello (3) può raggiungere il livello (1).\\
+Supponiamo che la popolazione del livello (2) sia legata agli altri due semplicemente dall'equilibrio termodinamico 
+\footnote{(2) si accorge della popolazione di (1) e (3) per via dei processi di rilassamento che tendono a riportare il sistema in equilibrio.}.
+Possiamo quindi dire che (sviluppando al primo ordine gli esponenziali con $h\nu\ll kT$) :
+\[\begin{aligned}
+    &N_3^0 = N_2^0\left(1+ \frac{h\nu_{23}}{kT}\right)\\
+    &N_1^0 = N_2^0\left(1-\frac{h\nu_{12}}{kT}\right)
+.\end{aligned}\]
+Nella ipotesi in cui $N_1\sim N_3$ possiamo fare una media:
+\[
+    N_1\sim N_3 = N_2^0\left(1+ h \frac{\nu_{23}+\nu_{12}}{kT}\right)
+.\] 
+Se siamo nella ipotesi in cui $\nu_{23}>\nu_{12}$ allora abbiamo che $N_1>N_2$ e si ha inversione di popolazione nel seguente punto:
+\begin{figure}[H]
+    \centering
+    \incfig{inversione-di-popolazione-1-2}
+    \caption{Inversione di popolazione 1-2}
+    \label{fig:inversione-di-popolazione-1-2}
+\end{figure}
+\noindent
+viceversa se $\nu_{23}<\nu_{12}$ abbiamo che $N_2>N_3$, quindi:
+\begin{figure}[H]
+    \centering
+    \incfig{inversione-di-popolazione-2-3}
+    \caption{Inversione di popolazione 2-3}
+    \label{fig:inversione-di-popolazione-2-3}
+\end{figure}
+\noindent
+Quindi pompando i livelli (1) e (3) possiamo invertire la popolazione di altri due livelli. 
+Con questa ulteriore inversione abbiamo che $k<0$, quindi nel propagarsi della radiazione nel nostro mezzo essa cresce esponenzialmente (almeno fino a che la popolazione non satura nel nuovo livello). \\
+Un sistema con tale inversione di popolazione è alla base di un sistema che amplifichi la radiazione. Se prendiamo inoltre un oscillatore con feedback possiamo avere un dispositivo auto-oscillante dal momento che il guadagno diventa maggiore od uguale delle perdite.\\
+Utilizzando degli specchi è quindi possibile, sfruttando l'inversione di popolazione, creare un sistema auto-oscillante molto selettivo in frequenza: un laser
+\footnote{Light Amplification by Stimulated Emission of Radiation} 
+(o maser nelle micro-onde). \\ 
+Notiamo che si chiama Laser nonostante questo sia solo un oscillatore, non un amplificatore. L'amplificatore è un oggetto identico al laser ma senza gli specchi
+\footnote{Il nome corretto sarebbe stato Loser, non era tuttavia un nome carino da dare ad una tecnologia tanto preziosa\ldots}.
+Un laser per poter auto-oscillare deve avere un mezzo che guadagna (che abbiamo descritto) e dobbiamo inserire un circuito di Feedback (la cavità).\\
+Un esempio di cavità può essere un sistema di 4 specchi
+\begin{figure}[H]
+    \centering
+    \incfig{sistema-di-specchi-per-il-laser}
+    \caption{Sistema di specchi per il Laser}
+    \label{fig:sistema-di-specchi-per-il-laser}
+\end{figure}
+Uno di questi specchi dovrebbe essere semitrasparente se vogliamo che esca qualcosa da questo dispositivo. Notiamo che è la cavità che determina la frequenza di emissione.\\
+C'è poi un ulteriore tipo di cavità ottica che sfrutta soltanto 2 specchi facendo passare la radiazione 2 volte per periodo nell'amplificatore, concentriamoci su questo tipo di cavità.\\
+Supponiamo che la cavità abbia volume $V$ (con gli specchi di superficie $S$ ed una distanza $L$ tra questi)  e che all'interno la densità di energia del campo EM sia uniforme, in questo modo l'energia totale all'interno della cavità sarà
+\[
+W = V\cdot u = S\cdot L\cdot u
+.\] 
+Questa cavità avrà delle perdite,la potenza persa dalla cavità sarà
+\[
+P_d+P_u
+.\] 
+In cui $P_d$  è quella dissipata da aria, dagli specchi imperfetti ecc\ldots mentre $P_u$  è la potenza persa a causa dello specchio semitrasparente.
+Possiamo inglobare queste informazioni introducendo un tempo medio in cui la radiazione esce dalla cavità $\tau$:
+\[
+\frac{\text{d} W}{\text{d} t} = - \frac{W}{\tau}
+.\] 
+Assumiamo quindi fenomenologicamente che l'energia nella cavità venga persa in modo esponenziale. Solitamente anziché usare $\tau$  si usa il fattore di qualità:
+\[
+Q = \omega\tau
+.\] 
+Nella quale $\omega$ è la frequenza di risonanza determinata dalla fase (per avere un sistema auto-oscillante bisogna che dopo un giro nella cavità ottica il campo sia in fase per avere interferenza costruttiva). \\
+Quindi l'uguaglianza $G=P$ (Guadagno = Perdite) ci dirà la condizione di soglia per la quale il sistema può auto-oscillare mentre la frequenza sarà fissata dalla fase che sarà determinata dalla lunghezza della cavità.\\
+Ovviamente $\omega$ è data dai modi risonanti del campo elettromagnetico che esistono nella cavità permessi dalle condizioni al contorno (dipendenti dalla lunghezza).\\
+Di conseguenza possiamo scrivere il campo elettrico nella cavità supponendo che sia uniforme:
+\[
+    E(t) = E(0) e^{-i\omega t- \frac{t}{2\tau}}
+.\] 
+Dove abbiamo inserito un fattore 2 perché $\tau$ è definito sull'energia che va come il quadrato del campo.\\
+Adesso possiamo trasformare tale dipendenza temporale:
+\[\begin{aligned}
+    E(\Omega) =& \frac{1}{\sqrt{2\pi} }\int_{0}^{\infty} E(t) e^{i\Omega t}dt=\\
+    =&
+    \frac{1}{\sqrt{2\pi}}E(0)\int_{0}^{\infty} 
+    e^{\left[\left(\Omega -\omega\right)+ \frac{i}{2\tau}\right]t}=\\
+    =&
+    \frac{1}{\sqrt{2\pi}}
+    \frac{E(0)}{i\left[\left(\Omega-\omega\right)+\frac{i}{2\tau}\right]}
+.\end{aligned}\]
+Quindi se prendiamo la $u(\Omega)$:
+\[
+    u(\Omega) = \frac{\left|E(\Omega)\right|^2}{8\pi} = \frac{1}{16\pi} 
+    \frac{\left|E(0)\right|^2}{\left(\Omega-\omega\right)^2+ \frac{1}{4\tau^2}}
+.\] 
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+	\begin{axis}[
+	    xmin= 0, xmax= 13,
+	    ymin= 0, ymax = 10,
+	    axis lines = middle,
+	    xlabel={$\Omega$},
+	    ylabel={$u(\Omega)$},
+	    xtick={0,5},
+	    ytick={0},
+	    xticklabel={$\omega$},
+	    %yticklabel={$$},
+	]
+	\addplot[domain=0+9/10*0:10+9/10*10, samples=100]{1/((x-5)^2+1/9)};
+	\addplot +[mark=none,black,dotted] coordinates {(5, 0) (5, 9)};
+	\end{axis}
+    \end{tikzpicture}
+    \caption{Distribuzione in frequenza di $u(\Omega)$.}
+    \label{Lorentziana}
+\end{figure}
+Avere un tempo $\tau$ di decadimento dei fotoni dalla cavità si traduce in una distribuzione Lorentziana piccata attorno ai modi risonanti $\omega$ e larga $\Delta\omega_c = \frac{1}{\tau}=\frac{\omega}{Q}$, di conseguenza possiamo scrivere anche che il fattore di qualità è:
+\[
+Q = \frac{\omega}{\Delta\omega}
+.\] 
+Quindi migliori sono gli specchi e più la distribuzione tende ad una $\delta$.\\
+Se ci fossero solo le perdite per riflessione possiamo chiederci come andrebbe il fattore di qualità, supponiamo che il coefficiente di perdita sia $R$.
+L'energia che incide per unità di tempo sullo specchio è:
+\[
+E_\text{specchio} = \frac{Su\text{d}z}{\text{d}t} = Suc
+.\] 
+L'energia persa sarà allora:
+\[
+E_\text{Lost} = SucR
+.\] 
+Quindi il fattore di qualità è:
+\[\begin{aligned}
+    Q &= \omega\tau = \\
+      &= \omega  \frac{W}{P_u} =\\
+      &=\omega\frac{SLu}{\left(1-R\right)Scu} =\\
+      2\pi \frac{L}{\lambda } \frac{1}{1-R}
+.\end{aligned}\]
+Infatti abbiamo che $W= \left(1-R\right)Scu$. Quindi se la riflettività $R\to 1$ allora il fattore di qualità tende ad 1 (nessuna perdita).
+Notiamo che se invece $R\to 0$ si ha $Q\to 2\pi \frac{L}{\lambda}$. Inoltre il fattore $Q$ è direttamente proporzionale a $L$, questo perché più è lunga la cavità e meno volte la radiazione va a sbattere nello specchio, se la radiazione rimbalza meno volte le perdite saranno minori.\\
+Facciamo un esempio numerico:
+\begin{itemize}
+    \item $L=50$ cm.
+    \item $L = 0.5 \mu$m.
+    \item $R = 0.98$. 
+\end{itemize}
+Con questi valori riusciamo ad ottenere $Q = 3\cdot 10^8$.\\
+Vediamo adesso quali sono le condizioni di oscillazione: data l'inversione di popolazione dobbiamo capire quanto deve essere il fattore di qualità perché il sistema oscilli. Viceversa possiamo chiederci dato il fattore di qualità quanto debba essere l'inversione di popolazione perché il sistema oscilli. \\
+Normalmente il modo giusto di porsi la domanda è il secondo, infatti possiamo cambiare $N_1-N_2$ (con pompaggio) mentre $Q$ una volta costruito il Laser è definito.\\
+La condizione di oscillazione per noi sarà che il guadagno deve compensare le perdite, scriviamoci allora il guadagno. L'equazione per l'intensità della radiazione che attraversa il mezzo attivo è:
+\[
+\text{d}I= -kI\text{d}z
+.\] 
+Moltiplicando tutto per la superficie e ricordiamo che $I=cu$:
+\[
+    \text{d}\left(Scu\right)=\left|k\right|Scu\text{d}z=
+    \frac{\hbar \omega}{c}g(\nu-\nu_{12})B_{12}\left(N_1-N_2\right)Scu\text{d}z
+.\] 
+Ricordiamoci che in questo caso abbiamo $N_1>N_2$. Consideriamo un mezzo attivo di lunghezza $l$ e supponiamo che il guadagno sia ragionevolmente piccolo, in particolare che siamo nel limite in cui $\left|k\right|l\ll 1$, in questo modo invece di inserire nella equazione gli esponenziali possiamo scrivere che dopo aver attraversato il mezzo attivo la variazione di $Scu$ è data da:
+\[
+    \Delta\left(Scu\right)= \hbar \omega g(\nu-\nu_{12}) B_{12}
+    \left(N_1-N_2\right)Sul
+.\] 
+Possiamo introdurre il fattore di riempimento della cavità (la frazione di cavità che è piena di mezzo attivo) $\eta$:
+\[
+\eta = \frac{l}{L} 
+.\] 
+Possiamo quindi riscrivere la variazione di $Scu$:
+\[
+    \Delta (Scu) = \hbar \omega g(\nu-\nu_{12}) B_{12}\left(N_1-N_2\right)
+    \eta W
+.\] 
+Quindi abbiamo la variazione di potenza dovuta alla amplificazione del mezzo attivo, questa deve eguagliare la variazione di potenza dovuta alle perdite che abbiamo trovato in precedenza (la potenza persa):
+\[
+P_u = \omega\frac{W}{Q}
+.\] 
+Uguagliando le due quantità si ha che:
+\[
+    N_1-N_2 = \frac{1}{\eta\hbar  g(\nu-\nu_{12})B_{12}Q}
+.\] 
+Questa è la condizione di soglia. Questa ci dice quanto deve essere l'inversione di popolazione a $Q$ fissato per avere una auto-oscillazione del sistema (o se invertiamo per $Q$ abbiamo il viceversa).\\
+Possiamo vedere in funzione di $N_1-N_2$ che cosa esce dal Laser (la $P_\text{out}$ ) .
+Fino a che siamo al di sotto della condizione di soglia dal laser non esce nulla. Quando arriviamo alla condizione di soglia abbiamo che l'inversione di popolazione non può più crescere perché in tal caso avremo un guadagno più grande delle perdite facendo divergere la $P_\text{out}$.\\
+Se pompiamo di più il sistema allora l'energia va nella emissione stimolata dei fotoni che escono dalla cavità. Non ha quindi senso scrivere la potenza in funzione di $N_1-N_2$  non ha senso, la possiamo scrivere in funzione del pompaggio $J$ 
+\footnote{Potrebbe essere una densità di corrente oppure un altro laser da qualche parte, insomma una forma di pompaggio.}. In questo modo l'andamento che si ottiene è il seguente:
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+	\begin{axis}[
+	    xmin= 0, xmax= 10,
+	    ymin= 0, ymax = 6,
+	    axis lines = middle,
+	    xlabel={$J$},
+	    ylabel={$P_\text{out}$},
+	    xtick={0,5},
+	    ytick={0},
+	    xticklabel={$sh$},
+	    yticklabel={$$},
+	]
+	    \addplot[domain=0:5, samples=100, red]{0};
+	    \addplot[domain=5:9, samples=100, red]{x-5};
+	\end{axis}
+    \end{tikzpicture}
+    \caption{Andamento della potenza uscente in funzione di $J$.}
+    \label{Pompaggio}
+\end{figure}
+Una proprietà interessante dei Laser è che i fotoni uscenti sono tutti identici tra di loro, appartengono quindi tutti (circa) alla stessa cella dello spazio delle fasi. \\
+Abbiamo trascurato fin'ora l'emissione spontanea, questa nei Laser gioca due importanti ruoli:
+\begin{itemize}
+    \item Perché si inneschi il processo di oscillazione ci deve essere un fotone, tale rumore è dato dalla emissione spontanea 
+    \footnote{Non serve che sia dall'emissione spontanea della zona attiva, può anche esserci un fotone emesso dalla radiazione di corpo nero ad innestare.}.
+\item La larghezza di riga, infatti anche se sono pochi i processi in grado di emettere esattamente nel modo "giusto" che viene amplificato ogni tanto qualcuno può finire dentro. Questo causa delle fluttuazioni nelle densità della radiazione emessa e nella frequenza.
+\end{itemize}
+Quindi il Laser avrà sempre una minima larghezza di riga per via di questi processi, questo è il limite "quantum" della larghezza di riga.\\
+I laser tendono a diventare sempre più stretti tanto più ci avviciniamo alla soglia (quella trovata per $N_1-N_2$).\\
+\subsection{Trattazione completa della equazione di Rate nella interazione radiazione-materia}%
+\label{sub:Trattazione completa della equazione di Rate nella interazione radiazione-materia}
+Abbiamo detto nella scorsa lezione che andando a parlare di popolazioni ci si perde la parte coerente della interazione, ci siamo infatti ristretti a parlare dei moduli quadri delle ampiezze di probabilità perdendo informazioni sulla fase.\\
+C'è la necessità di trovare un formalismo che ci permetta di mantenere la descrizione della evoluzione coerente derivante dalla equazione di Schrodinger ma di poter inserire dentro questo formalismo anche la termodinamica (Ensemble di sistemi, popolazioni che seguono l'equilibrio ecc\ldots). \\
+Quando si tratta di mischiare termodinamica e MQ tipicamente si usa la matrice densità $\rho$, questo è uno operatore che, scritto su una serie di stati restituisce:
+\[
+    \rho_{mn}(t) = \frac{1}{\eta}\sum_{k=1}^{\eta} \left\{a^k_m(t) a^k_n(t) \right\}
+.\] 
+In quale $\eta$ è il numero di sistemi presenti nella Ensemble. Nell'integrale abbiamo le ampiezze di probabilità per ciascun singolo sistema di essere nello stato $m$ o $n$. \\
+Abbiamo quindi $\eta$ copie dello stesso sistema e ciascuna copia può trovarsi in una qualunque sovrapposizione degli autostati $\varphi_n$ con ampiezza di probabilità $a_n(t)$, la matrice di densità rappresenta una media pesata delle probabilità di trovarsi in ciascuno di questi autostati pesata su tutti gli atomi. \\
+Possiamo ricordare alcune proprietà di tale matrice:
+\begin{itemize}
+    \item $Tr(\rho) = 1$: le ampiezze di probabilità sono normalizzate, gli stati $\ket{\psi_k}$  sono normalizzati, le probabilita $P_k$ sono normalizzate in maniera che la somma delle probabilità faccia 1. 
+    \item L'evoluzione della matrice di densità è descritta da:
+	\[
+	    i\hbar \dot{\hat{\rho}} = \left[\hat{H},\hat{\rho}\right]
+	.\] 
+	Chiaramente se siamo nelle ipotesi in cui $\dot{\hat{\rho}}=0$ (sistema all'equilibrio) allora significa che l'Ensemble deve essere stazionario e quindi $\hat{\rho}= \hat{\rho}(\hat{H})$.
+    \item IL valore di aspettazione di una certa grandezza fisica si può scrivere come:
+	\[
+	    \left<G\right>= Tr(\hat{\rho}\hat{G}) 
+	.\] 
+	Per valore di aspettazione si attende valore di aspettazione quantistico (pesato con le ampiezze di probabilità quantistiche) e poi mediato sull'Ensemble.
+    \item Gli elementi diagonali della matrice densità si chiamano popolazioni, infatti possiamo scrivere per il livello i-esimo:
+	\[
+		N_i = N\rho_{ii}
+	.\] 
+\end{itemize}
+Consideriamo una Ensemble di atomi con due livelli (i soliti due), la matrice di densità sarà ovviamente una matrice $2x 2$. \\
+Gli elementi fuori diagonale di questa matrice
+\[
+\rho_{12} \quad \quad \rho_{21}
+.\]
+vengono chiamati Coerenze. Possiamo vedere il perché di questo nome considerando uno stato puro (in cui non c'è una media quantistica definita), vediamo chiaramente che per avere questi elementi fuori diagonale diversi da zero devono essere diverse da zero entrambe le occupazioni $a_1$ e $a_2$ (perché essenzialmente contengono i complessi coniugati di tali occupazioni).\\
+Questa cosa resta vera anche se lo stato non è puro, per avere le coerenze non nulle è necessario che gli $a_1$ e $a_2$ siano entrambi non nulli. Deve essere quindi vero che ogni atomo si trovi in uno stato che è sovrapposizione degli autostati. \\
+Quando il sistema si trova in una sovrapposizione quantistica degli autostati allora abbiamo gli effetti di coerenza di oscillazione di evoluzione temporale che ci permettono il passaggio da uno stato all'altro. \\
+Possiamo vedere il ruolo delle coerenze studiando l'operatore di dipolo $\hat{P}$:
+\[
+    \hat{P}= N\hat{e}p\left(\ket{1}\bra{2}+ \ket{2}\bra{1}\right)
+.\]
+Dove $\hat{e}$ è il versore del campo elettrico, mentre $p$ è l'elemento di matrice di dipolo:
+\[
+    p = \bra{1}e\v{r}\cdot \hat{e}\ket{2} \label{eq:mat-dip-el}
+.\] 
+Facciamo adesso il valor medio dell'operatore di dipolo sull'Ensemble di atomi:
+\[
+    \left<\hat{P}\right>= Tr\left(\rho\hat{P}\right) =
+    Np\hat{e}\left(\rho_{12}+\rho_{21}\right)
+.\] 
+Quindi il valor medio dell'operatore di dipolo è legato strettamente alle coerenze. Quindi se gli atomi sono in uno stato che è sovrapposizione quantistica degli stati (1) e (2) il dipolo è diverso da zero, altrimenti
+\footnote{Quindi se si trovano in uno solo dei due stati} il dipolo è nullo
+\footnote{Dobbiamo stare attenti al fatto che questo è il valore medio del dipolo calcolato sull'Ensemble e sugli stati del nostro sistema, non è l'elemento di matrice di equazione \ref{eq:mat-dip-el}}.\\
+Notiamo che in assenza di campo elettrico il valor medio del nostro dipolo deve essere nullo ($\left<\hat{P}\right>=0$ ), per uno stato puro significa che gli elementi di matrice fuori diagonale sono nulli, quindi significa che $a_1$  oppure $a_2$  e nullo. Tuttavia quest'ultima non può essere una condizione di equilibrio termodinamico (in cui noi vogliamo avere una certa probabilità che il nostro sistema di trovi nello stato (1) ed un'altra probabilità che il sistema stia nello stato (2) con entrambe le prob. non nulle).\\
+Quindi uno stato puro non può avere sia dipolo nullo che equilibrio termodinamico, fortunatamente quando siamo in uno stato non puro allora possiamo avere le coerenze nulle ed avere le $\rho_{11}$ e $\rho_{22}$  non nulle (un esempio si trova nell'arimondo).\\
+Questo preambolo ci dice che questo è il modo giusto di trattare le "cose". Vorremmo adesso sviluppare questo formalismo utilizzando la matrice densità e mostrando che nei limiti di stati puri troviamo le oscillazioni di Rabi oppure verso il formalismo in cui abbiamo le equazioni di rate con le popolazioni ecc\ldots. In questo modo possiamo capire come si passa da un caso all'altro.\\
+Scriviamo allora l'equazione della matrice di densità:
+\[
+\frac{\text{d} \rho}{\text{d} t} = \frac{1}{i \hbar}\left[H,\rho\right]
+.\] 
+L'Hamiltoniana sarà come sempre in presenza di un campo elettrico:
+\[
+H= H_0+V
+.\]
+dove $H_0$ descrive i livelli energetici:
+\[
+H_0=E_1\ket{1}\bra{1}+E_2\ket{2}\bra{2}
+.\] 
+Mentre $V$ è l'Hamiltoniana di interazione con il campo elettromagnetico (facciamo già l'approssimazione di onda rotante
+\footnote{Per ricordare, questa toglie gli elementi di matrice anti-oscillanti.}):
+\[
+V=-\frac{1}{2}pE_0e^{-i\omega t}\ket{1}\bra{2}-\frac{1}{2}pE_0e^{i\omega t}\ket{2}\bra{1}
+.\] 
+A questo punto possiamo riscrivere la derivata della $\rho$ (con il conto già svolto):
+\[\begin{aligned}
+    &\frac{\text{d} \rho_{11}}{\text{d} t} =
+	-\frac{1}{i\hbar }\frac{pE_0}{2}e^{-i\omega t}\rho_{21}
+	+\frac{1}{i\hbar }\frac{pE_0}{2}e^{i\omega t}\rho_{12} \\
+    &\frac{\text{d} \rho_{22}}{\text{d} t} = 
+    -\frac{\text{d} \rho_{11}}{\text{d} t} \\
+    &\frac{\text{d} \rho_{12}}{\text{d} t} =
+    \frac{1}{i\hbar }\left(E_1-E_2\right)\rho_{12}
+    -\frac{1}{i\hbar}p\frac{E_0}{2}e^{-i\omega t}
+    \left(\rho_{22}-\rho_{11}\right)
+.\end{aligned}\]
+Naturalmente si ha che $\rho_{12}=\rho_{21}^*$. Per scrivere in modo più compatto le derivate possiamo introdurre un vettore $\v{R}$ così definito:
+\[\begin{aligned}
+    &R_1=2Re\left(\rho_{12}e^{i\omega t}\right)=\rho_{12}e^{i\omega t}+ CC\\
+    &R_2= -2 Im\left(\rho_{12}e^{i\omega t}\right)=i\rho_{12}e^{i\omega t}- CC\\
+    &R_3 = \rho_{11}-\rho_{22}
+.\end{aligned}\]
+In questo modo otteniamo delle equazioni:
+\[\begin{aligned}
+    \frac{\text{d} R_1}{\text{d} t} = \left(\omega-\omega_{12}\right)R_2\\
+    & \frac{\text{d} R_2}{\text{d} t} = -\left(\omega-\omega_{12}\right)R_1+
+    p \frac{E_0}{\hbar }R_3\\
+    &\frac{\text{d} R_3}{\text{d} t} =-p \frac{E_0}{\hbar }R_2
+.\end{aligned}\]
+Possiamo usare la notazione vettoriale per compattare ancora di più le equazioni:
+\[
+    \frac{\text{d} \v{R}}{\text{d} t} = \v{R} \times \v{B} 
+    \label{eq:precessione}
+.\] 
+Dove si introduce il vettore $\v{B}$ :
+\[
+    \v{B} = \left(\underbrace{p \frac{E_0}{\hbar}}_{\Omega_R} \ , \  0 \,
+    ,\ \underbrace{\omega-\omega_{12}}_{\delta}\right)
+.\] 
+Un vettore la cui equazione del moto è scritta come la \ref{eq:precessione} fa una precessione, il vettore $\v{R}$ precede attorno al vettore $\v{B}$ (la sua derivata è sempre ortogonale a $\v{R}\times \v{B}$), la velocità angolare di precessione è proprio $\left|\v{B}\right|$. \\
+Vediamo questa precessione nello spazio $x-y-z$, il vettore $\v{B}$ è così fatto:
+\begin{figure}[H]
+    \centering
+    \incfig{vettore-b-della-precessione}
+    \caption{Moto di precessione di $\v{R}$.}
+    \label{fig:vettore-b-della-precessione}
+\end{figure}
+\noindent
+Il vettore $\v{R}$ precede attorno alla direzione individuata da $\v{B}$. Il vettore $\v{R}$ è detto vettore di Feynmann.\\
+È necessario definire per il vettore $\v{R}$ le condizioni iniziali, supponiamo che all'istante iniziale si accenda il campo EM, in tal caso siamo inizialmente all'equilibrio termodinamico (coerenze nulle $\v{R}_1^0 = \v{R}_2^0=0$) quindi $\v{R}$ è diretto lungo l'asse $z$ all'istante iniziale.
+In particolare si ha che:
+\[
+    R_1^0 = \frac{1}{N}\left(N_1^0 -N_2^0\right)
+.\] 
+Dove:
+\[\begin{aligned}
+    &N_1^0 = \frac{N}{Z}e^{-E_1 /kT}\\
+    &N_2^0 = \frac{N}{Z}e^{-E_2 /kT}
+.\end{aligned}\]
+Supponiamo di essere nella situazione più tipica dell'ottica: $E_{12}\gg kT$, in questo caso possiamo assumere che all'equilibrio termodinamico:
+\[\begin{aligned}
+&N_1^0\sim 0\\
+&N_2^0 \sim N
+.\end{aligned}\]
+In questo modo abbiamo che:
+\[\begin{aligned}
+    \rho_{11}^0\sim 0\\
+    \rho_{22}^0\sim 1
+.\end{aligned}\]
+Supponiamo di essere inoltre nella situazione $R_3^0\sim -1$ e che $\delta =0$  per semplicità, in questo modo $\omega = \omega_{12}$ ed il grafico si semplifica: la componente lungo $z$ di $\v{R}$ ruota con velocità angolare $\Omega_R$. 
+\begin{figure}[H]
+    \centering
+    \incfig{condizioni-iniziali-su-r}
+    \caption{Condizioni iniziali su R}
+    \label{fig:condizioni-iniziali-su-r}
+\end{figure}
+\noindent
+Quindi in particolare dopo un tempo $\pi /\Omega_R$  il vettore $\v{R}$ arriva in $z=+1$ e prosegue con la sua precessione. Queste sono proprio le oscillazioni di Rabi.\\
+Ci siamo infatti messi con tutti gli atomi nel fondamentale e abbiamo soltanto l'interazione con il campo EM.\\
+Se avessimo $\delta\neq 0$ allora avremmo che $\v{B}$ si inclina e quindi la precessione ci descrive un cerchio nel piano ortogonale alla direzione di $\v{B}$ e smette di arrivare in $z=+1$ esattamente come quando le oscillazioni di Rabi non ci portavano più esattamente ad $z=1$.\\
+La frequenza a cui gira in questo caso è: $\sqrt{\Omega_R^2+\delta^2}$. Il formalismo quindi riproduce quindi esattamente le oscillazioni di Rabi.\\
+Nella prossima lezione mettiamo la termodinamica: dei processi di rilassamento che ci riportano alla configurazione di equilibrio.
+

@@ -1,0 +1,328 @@
+\lez{24}{19-04-2020}{}
+\subsection{Introduzione alla interazione radiazione materia}%
+\label{sub:Introduzione alla interazione radiazione materia}
+Riprendiamo la teoria delle perturbazioni (anche dipendenti dal tempo), supponiamo di avere una Hamiltoniana per il nostro sistema $H_0$ e di inserire una perturbazione $V(t) $ tale che:
+\[
+    \overline{V}(t) = \begin{cases}
+	&W(t)  \quad  0<t<\tau\\
+	&0 	\quad \quad t<0 \text{ e } t>\tau
+    \end{cases}
+.\] 
+L'Hamiltoniana completa sarà la somma di queste due quantità: $H=H_0+\overline{V}(t)$.\\
+Cerchiamo le soluzioni alla equazione di Shrodinger dipendente dal tempo:
+\[
+    i\hbar \frac{\text{d} \psi(t)}{\text{d} t} 
+    = \left[H_0+\overline{V}(t) \right]\psi (t) 
+.\] 
+Sviluppiamo la funzione d'onda sugli autostati di $H_0$ :
+\[
+    \ket{\psi(t)}=\sum_{n}^{} a_n(t) e^{-i E_n t /\hbar }\ket{\varphi_n}
+.\] 
+Ipotizziamo inoltre che per tutti i $t<0$ il sistema si trovi in un autostato $\ket{\varphi_m}$ dato. Vogliamo trovare lo stato del sistema all'istante $ \tau$: quello in cui termina la perturbazione.\\
+Per $t\le 0$ abbiamo che 
+\[\begin{aligned}
+    &\ket{\psi_m}(t) = e^{-iE_n t /\hbar } \ket{\varphi_m}\\
+    &a_n(t) = \delta_{mn}
+.\end{aligned}\]
+AL termine della perturbazione mi troverò in uno stato dato dalla sovrapposizione degli altri autostati, tali autostati continueranno ad evolvere (con l'esponenziale della loro energia) e gli $a_n(t)$ per $t\ge \tau$ rimarranno costanti ed uguali a $a(\tau)$.\\
+Possiamo chiamare le ampiezze di probabilità $a_n(\tau)$ come $a_{m\to n}(\tau) $ essendo questa l'ampiezza di probabilità dello stato $\varphi_m$ di passare allo stato n-esimo.\\
+La probabilità di andare dallo stato $m$ allo stato $n$ sarà data da:
+\[
+    W_{m\to n}(\tau)=\left|a_{m\to n}(\tau) \right|^2
+.\] 
+Per trovare tali ampiezze sostituiamo nella equazione di Schrodinger lo sviluppo della $\psi$ e proiettiamo su un generico $\bra{\varphi_n}$.\\
+\[
+    H\frac{\text{d} }{\text{d} t} a_{m\to n}(t) 
+    = \sum_{l}^{} \bra{n}W(H)\ket{l}e^{i\omega_{n,l} t}a_{m\to l}(t) 
+.\] 
+Nella quale $\omega_{n,l}$  vale:
+\[
+\omega_{n,l}=\frac{E_n-E_l}{\hbar }
+.\] 
+Ci mettiamo nel caso in cui l'elemento di matrice è nullo tra stati uguali $\bra{n}W\ket{n} = 0$ (lo possiamo sempre fare con una base opportuna degli stati) e risolviamo queste equazioni con la condizione 
+\[
+    a_{m\to n}(t=0) = \delta_{mn}
+.\] 
+Possiamo riscrivere l'equazione di Schrodinger al primo ordine come:
+\[
+    i\hbar \frac{\text{d} a_{m\to n}(t) }{\text{d} t} 
+    =
+    \bra{n}W(t) \ket{m}e^{i\omega_{nm}t }
+.\] 
+Possiamo integrare questa espressione (mettiamo un pedice per ) 
+\[
+    a_{m\to n}^{(1) } (t) =
+    \frac{1}{i\hbar }
+    \int_{0}^{t} \bra{n}W(t')\ket{m}e^{i\omega_{mn}t'} dt'
+.\] 
+Agli ordini successivi abbiamo che
+\[
+    a_{m\to n}^{(2)}(t)=
+    \frac{1}{i\hbar }
+    \sum_{m}^{} \int_{0}^{t}  
+    \int_{0}^{t} \bra{k}W(t')\ket{n}e^{i\omega_{kn}t'}a_{m\to n}^{(1)}(t')  dt'
+.\] 
+Come primo esempio possiamo prendere la $W(t) = V$  indipendente dal tempo. In questo caso abbiamo che:
+\[
+    a_{m\to n}^{(1)}(t) =
+    \frac{1}{i\hbar }\bra{n}W \ket{m} \int_{0}^{t} e^{i\omega_{nm}t'}dt'
+.\] 
+Quindi possiamo trovare la probabilità di transizione da $m$ a $n$ al tempo $\tau$:
+\[
+    W^{(1)}_{m\to n}(\tau)=
+    \left|a_{m\to n}^{(1)}(\tau) \right|^2 = \frac{2}{\hbar }\left|\bra{n}W \ket{m}\right|^2F(\tau,E_n-E_m) 
+.\] 
+Questa $F$ è:
+\[
+    F(\tau,x) = \frac{2}{\left(\frac{x}{\hbar }\right)^2}\sin^2\left(\frac{x\tau}{2\hbar }\right) 
+.\] 
+Questa funzione ha la seguente forma:
+\begin{figure}[H]
+    \centering
+    \incfig{f-interazione-radiazione-materia}
+    \caption{F interazione radiazione materia}
+    \label{fig:f-interazione-radiazione-materia}
+\end{figure}
+In cui 
+\[
+\left|x\right|=\frac{2\pi\hbar }{\tau}n
+.\] 
+Maggiore è $\tau$ e più si stringe il massimo della funzione. Se vale
+\[
+\tau \gg \frac{2\pi\hbar }{\left|x\right|} 
+.\] 
+Possiamo approssimare tale funzione ad una $\delta$, in tal caso vale la relazione:
+\[
+    \int_{-\infty}^{\infty} F(x) dx = \tau \hbar \pi 
+.\] 
+Con questa normalizzazione possiamo scrivere la funzione $F(\tau,x)$: 
+\[
+    F(\tau,x) =2\pi\hbar \delta (x)  
+.\] 
+Se la perturbazione dura un tempo infinito ($\tau\to \infty$ ) allora l'ultima formula ci dice che il sistema non può cambiare energia. \\
+Abbiamo trattato il sistema concentrandoci sulla transizione di due livelli $m$ e $n$, in generale possiamo avere una distribuzione di stati continua (come ad esempio la $\rho_e$ nei cristalli ) in tal caso possiamo normalizzare:
+\[
+    \int\rho(E_n) dE_n = 1
+.\] 
+Possiamo immaginare che questa densità di stati sia distribuita con un picco largo $\Delta E_n = \hbar \Delta\omega_n $. \\
+Possiamo calcolare la probabilità di transizione complessiva come:
+\[
+    W^{(1)}_{m\to n}(\tau) =
+    \frac{2}{\hbar ^2}\int\left|\bra{n}W \ket{m}\right|^2 F(\tau, E_n-E_m)\rho(E_n) dE_n 
+.\] 
+Tipicamente nei sistemi che trattiamo il primo termine (che è un modulo quadro di un elemento di matrice) non dipende da quali dei singoli stati $m$ o $n$  che andiamo a considerare, quindi può essere tirato fuori dall'integrale.
+\[
+    W^{(1)}_{m\to n}(\tau) =
+    \frac{2}{\hbar ^2}\left|\bra{n}W \ket{m}\right|^2\int\frac{2}{\left(\frac{x}{\hbar }\right)^2}\sin^2\left(\frac{x\tau}{2\hbar }\right) \rho(E_n) dE_n
+.\] 
+Nell'ipotesi in cui $\tau\gg_2\pi /\Delta\omega$ (nello spazio delle frequenze la $F$ è molto più stretta di $\rho$  ), portiamo allora fuori dall'integrale la $\rho$, ci resta un integrale noto:
+\[
+    W^{(1)}_{m\to n}(\tau) =
+    \frac{2\pi}{\hbar}\left|\bra{\overline{n}}W \ket{m}\right|^2\rho(E_{\overline{n}})\tau 
+.\] 
+Questa è la regola d'oro di Fermi. Grazie a questa possiamo definire una probabilità $P_{m\to n}$ per unità di tempo dividendo semplicemente per $\tau$.
+\[
+    \overline{P}_{m\to n}^{(1) } =
+    \frac{2\pi}{\hbar}\left|\bra{\overline{n}}W \ket{m}\right|^2\rho(E_{\overline{n}})
+.\] 
+Possiamo imporre che tale probabilità prima di essere integrata fosse la $\delta$, quindi:
+\[
+    P_{m\to n}^{(1) } =
+    \frac{2\pi}{\hbar}\left|\bra{\overline{n}}W \ket{m}\right|^2\delta (E_n-E_m) 
+.\] 
+Nel caso opposto invece $\tau\ll\frac{\hbar }{\Delta\omega}$, in tal caso portiamo fuori la $F$ e resta l'integrale della $\rho$. Facendo in questo modo si ottiene 
+\[
+\overline{P} \propto \tau^4
+.\] 
+Abbiamo parlato fin'ora di un potenziale a "impulso quadro", ovvero un potenziale che sale fino ad un $W$  costante e poi torna a 0 al tempo $\tau$. Se interagiamo con il campo elettromagnetico dobbiamo prendere una interazione con un potenziale oscillante, supponiamo di avere una onda piana
+\[
+V=W^+ e^{-i\omega t} + W^- e^{i\omega t} 
+.\] 
+Se la perturbazione è di questo tipo possiamo riprendere tutti i passaggi fatti in precedenza e aggiungere all'esponenziale complessa che avevamo prima il pezzo oscillante del campo EM:
+\[
+    e^{i\omega_{mn}t} \to e^{i(\omega_{mn}-\omega)t }
+.\] 
+Quindi possiamo utilizzare il caso costante anche per descrivere la situazione oscillante a patto di inserire questo termine.\\
+Vediamo il contributo dei due singoli pezzi di $V$:
+\[
+    a_{m\to n}^{(1)}(t) =
+    \frac{1}{i\hbar }\bra{n}W^+ \ket{m} \frac{e^{i(\omega_{nm}-\omega )t}-1}{i\left( \omega_{mn}-\omega\right)}
+.\] 
+Quindi si ha che:
+\[
+    W^{(1) }_{m\to n}(\tau) =
+    \left|a^{(1)}_{m\to n}(\tau) \right|^2 =
+    \frac{2}{\hbar }\left|\bra{n}W^+ \ket{m}\right|^2 F(\tau,E_n-E_m - \hbar \omega) 
+.\] 
+Nelle ipotesi della regola d'oro di fermi abbiamo che:
+\[
+    \overline{P}^{(1)}_{m\to n} = \frac{2\pi}{\hbar }\left|\bra{n}W^+ \ket{m}\right|^2\rho(E_n=E_m+\hbar \omega) 
+.\] 
+Oppure possiamo scrivere senza integrare:
+\[
+    P^{(1)}_{m\to n} = \frac{2\pi}{\hbar }\left|\bra{n}W^+ \ket{m}\right|^2\delta (E_n-E_m-\hbar \omega) 
+.\] 
+Prendendo il secondo pezzo di $V$ abbiamo:
+\[
+    \overline{P}^{(1)}_{m\to n} = \frac{2\pi}{\hbar }\left|\bra{n}W^- \ket{m}\right|^2\rho(E_n=E_m-\hbar \omega) 
+.\] 
+Quindi i due termini ci descrivono due processi diversi: uno ci fa guadagnare energia e l'altro ce la fa perdere (questo indicano i - e il +). Quindi questi rappresentano il processo di emissione stimolata ed assorbimento, inoltre i due termini $W^+$ e $W^-$ classicamente sono identici. Abbiamo quindi una simmetria completa tra i processi di emissione stimolata ed assorbimento.\\
+Spesso non solo gli stati finali hanno una distribuzione iniziale ma ce l'hanno anche gli stati finali, si utilizza quindi spesso la densità di stati ridotta o congiunta:
+\[
+    \rho_\text{congiunta} (E_n-E_m) 
+.\] 
+Che ci dice il numero di stati separati da una energia $E_n-E_m$. In questo modo possiamo anche riscrivere la probabilità di transizione:
+\[
+    \overline{P}^{(1)}_{m\to n} = \frac{2\pi}{\hbar }\left|\bra{n}W^+ \ket{m}\right|^2\rho(E_n-E_m=\hbar \omega) 
+.\] 
+Dobbiamo adesso capire quando è possibile fermarci allo sviluppo al primo ordine, sarà necessario che:
+\[
+    W^{(1) }_{m\to n}(\tau) \ll 1
+.\] 
+Questo significa che:
+\[
+\frac{1}{\hbar }\left|\bra{n}W^{\pm} \ket{m}\right|^2\tau \ll 1
+.\] 
+L'elemento di matrice sarà proporzionale al fattore $\v{E}\cdot \v{d}$ quindi sarà necessario considerare tempi di interazione lunghi rispetto alla larghezza di distribuzione dei livelli ma devono essere corti rispetto al reciproco della intensità del campo.\\
+Abbiamo fin'ora assunto una onda elettromagnetica monocromatica, vedremo cosa succede quando abbiamo invece una distribuzione di campo elettromagnetico (che è quello che succede tipicamente). In generale avremo una densità di energia $u(\nu)d\nu$, in questo caso dovremmo fare la convoluzione della probabilità monocromatica che abbiamo calcolato con tale densità di energia.\\
+Prima di far questo vediamo che succede andando agli ordini successivi, prendiamo $a^{(1)}(t) $ e le rimettiamo nella parte destra della equazione differenziale e troviamo com'è fatta la probabilità di transizione. In questo caso senza effettuare i conti vediamo il risultato:
+\[
+    a^{(2)}_{m\to n}(t) =
+    \frac{1}{\hbar ^2} \sum_{n}^{} 
+    \frac{\bra{k}W^{\pm}\ket{n} \bra{n}W^{\pm} \ket{m}}{\omega_{nm}\pm \omega}
+    \cdot 
+    \left\{
+	\frac{e^{i(\omega_{km}\pm_2\omega)t}-1}{\omega_{km}\pm_2\omega}
+    - \frac{e^{i(\omega_{km}\pm \omega)t}-1}{\omega_{kn}\pm\omega}\right\}
+.\] 
+La cosa importante è il fatto che abbiamo una somma su tutti gli n. Inoltre la nostra $F$ adesso è piccata nel punto in cui la differenza dei due stati è il doppio di $\omega$ del campo magnetico, quindi una volta passato al secondo ordine ho dei processi in cui posso scambiare nergia con il campo magnetico assorbendo o emettendo 2 quanti di energia (o 2 $\hbar \omega$ ), per questo prendono il nome di processi a due fotoni.\\
+Questi argomenti agli ordini superiori sono argomenti di ottica non lineare (il numero di fotoni coinvolti è maggiore di 1).\\
+Vediamo adesso come può essere scritto l'elemento di matrice, per far questo possiamo metterci ad esempio nella Gauge di Coulomb:
+\[
+\v{P}- \frac{e}{n}\v{A}\cdot \v{P}
+.\] 
+In tale Gauge abbiamo che il potenziale diventa:
+\[
+    \hat{V}(t) = -\frac{e}{mc}\v{A}\cdot \v{P} + \ldots
+.\] 
+Dove non consideriamo il termine al secondo ordine. Il caso più interessante o semplice che possiamo trattare è quello in cui $\v{A}$ è una onda piana:
+\[
+    \v{A}=A_0 \hat{e}\cos(\v{k}\cdot \v{r}-\omega t) 
+.\] 
+Nel vuoto inoltre il campo elettrico può essere scritto come:
+\[
+\v{E}= -\frac{1}{c}\frac{\text{d} \v{A}}{\text{d} t} 
+.\] 
+Quindi possiamo riscrivere il $\hat{V}(t) $  come 
+\[
+    \hat{V}(t) = \frac{eE_0}{m\omega} \frac{1}{2}\left(e^{i(\v{k}\cdot \v{r}-\omega t)} + e^{-i(\v{k}\cdot \v{r}-\omega t) }\right) \hat{e}\cdot \v{P}
+.\] 
+Dove il termine $E_0$  è legato al potenziale vettore tramite:
+\[
+E_0=-A_0 \frac{\omega}{c}
+.\] 
+Quindi possiamo scrivere la probabilità con l'elemento di matrice esplicitato:
+\[
+    \overline{P}^{(1)}_{m\to n}=
+    \frac{2\pi}{\hbar }\frac{e^2}{m^2\omega^2}E_0^2 \frac{1}{4}
+    \left|
+    \bra{\overline{n}}
+    e^{\pm i \v{k}\cdot \v{r}}\hat{e}\cdot \v{P} 
+    \ket{\overline{m}}
+    \right|\rho(E_n = E_m \pm \hbar \omega) 
+.\] 
+Ci mettiamo adesso in una situazione in cui la lunghezza d'onda della radiazione è maggiore della estensione dei livelli che consideriamo (o anche del parametro della funzione d'onda che descrive i nostri livelli) :
+\[
+\lambda  \gg a
+.\] 
+ovvero $ka \ll 1$, questa è l'approssimazione di dipolo. \\
+Tale approssimazione funziona bene anche per i solidi nelle ipotesi in cui $a$ è il passo reticolare. In questo modo si arriva alla espressione più classica per la regola d'oro di fermi per le transizioni nel campo elettromagnetico:
+\[
+    P^{(1) }_{m\to n}= 
+    \frac{2\pi}{\hbar }\frac{e^2}{m^2\omega^2}\frac{E_0^2}{4}
+    \left|\bra{n}\hat{e}\cdot \overline{P} \ket{m}\right|^2
+    \rho(E_n=E_m \pm \hbar \omega) 
+.\] 
+Tipicamente l'elemento di matrice dato dal dipolo lo possiamo riscrivere sfruttando il commutatore tra $\v{r}$ ed $H_0$, in questo modo l'elemento di matrice diventa:
+\[
+    P^{(1) }_{m\to n}= 
+    \frac{2\pi}{\hbar }\frac{e^2}{m^2\omega^2}\frac{E_0^2}{4}
+    \left|\bra{n}\hat{r}\cdot \v{d} \ket{m}\right|^2
+    \rho(E_n=E_m \pm \hbar \omega) 
+.\] 
+Possiamo adesso trattare un campo elettromagnetico non monocromatico, consideriamo la densità di energia:
+\[
+    u(\nu) d\nu = \frac{\epsilon E_0^2}{2} = n_\text{fot}\hbar \omega 
+.\] 
+Con $n_\text{fot} $ che è il numero di fotoni per unità di volume.\\
+Possiamo adesso riscrivere la densità di stati congiunta come:
+\[
+    \rho(E_{mn}) = \frac{1}{2\pi\hbar }g(\nu_{nm}) 
+.\] 
+Mentre la probabilità non integrata di andare dallo stato m a quello n diventa:
+\[
+    P^{(1)}_{m\to n} =
+    \frac{2\pi}{\hbar ^2}\left|\bra{n}\hat{n}\cdot \v{d} \ket{m}\right|^2
+    \delta (\nu_{nm}\pm \nu) u(\nu) d\nu g(\nu_{nm}) 
+.\] 
+Nel caso in cui interagiamo con radiazione non polarizzata dobbiamo mediare il termine nel Bracket sulle orientazioni del dipolo (visto che viene fuori un $\cos^2$ alla fine della media resterà un fattore $1 /3$), quindi:
+\[
+    P^{(1)}_{m\to n} =
+    \frac{2\pi}{3\hbar ^2}\left|\bra{n}d \ket{m}\right|^2
+    \delta (\nu_{nm}\pm \nu) u(\nu) d\nu g(\nu_{nm}) 
+.\]
+Possiamo adesso integrare in $\nu$:
+\[
+    P^{(1) }_{m\to n}= \frac{2\pi}{3\hbar ^2}\left|\bra{n}d \ket{m}\right|^2
+    u(\nu_{nm}) g(\nu_{nm}) 
+.\] 
+Se integriamo adesso su $\nu_{nm}$ considerando una $u$ molto larga rispetto alla $g$  (campo elettromagnetico estremamente non monocromatico) possiamo considerare la $g$ costante:
+\[
+    \overline{P}^{(1)}_{m\to n} =
+    u(\nu_{nm}) B_{m\to n}
+.\]
+In cui il coefficiente $B$ vale:
+\[
+B_{m\to n} =
+\frac{2\pi}{3\hbar ^2}\left|\bra{n}d \ket{m}\right|^2
+.\] 
+Che è un coefficiente introdotto da Einstein, introdotto assumendo che la probabilità di assorbimento e di emissione stimolata sia proporzionale alla densità di energia del campo elettromagnetico presente. \\
+Possiamo notare che questa teoria è valida nel limite perturbativo con la regola d'oro di fermi e con un campo elettromagnetico molto largo rispetto alla distribuzione di energia dei livelli energetici (valida per campi elettromagnetici a banda larga).\\
+Ovviamente i coefficienti $B_{m\to n}$ sono simmetrici, Einstein trovò questa simmetria con un sistema a due livelli all'equilibrio termodinamico con la radiazione, egli impose che tale sistema soddisfacesse la condizione di Boltzmann. In questo modo introdusse anche un coefficiente $A$ di emissione spontanea:
+\[
+P_{n\to m} = B_{n\to m} u + A
+.\] 
+Tale nuovo termine è indipendente dal campo elettromagnetico.\\
+Dalla forma della equazione per la probabilità possiamo notare una simmetria tra la densità del campo elettromagnetico $u$ e la $g$ che è la densità di stati congiunta del sistema materiale, questo ci dice che la regola d'oro di fermi vale anche se abbiamo due stati ben definiti (su un singolo atomo) purché $\tau$ sia molto maggiore della larghezza di riga del campo elettromagnetico.\\
+Possono anche esserci dei casi in cui la trattazione perturbativa non funziona a causa della ampiezza del campo magnetico, quindi non sarà più vero che
+\[
+    W^{(1)}\ll 1
+.\] 
+Vediamo in un sistema semplice cosa succede se non possiamo trattare il campo magnetico perturbativamente:
+\begin{figure}[ht]
+    \centering
+    \incfig{livelliarimondo}
+    \caption{Livelli energetici del sistema. In questo caso il livello 2 è il fondamentale.}
+    \label{fig:livelliarimondo}
+\end{figure}
+Incidiamo con una onda elettromagnetica di ampiezza $E_0$ e frequenza $\omega$ mentre i due livelli sono separati da una energia $\hbar \omega_{12}$. La perturbazione $\hat{V}(t) $ sarà:
+\[
+    \hat{V}(t) = \frac{e}{m\omega} \frac{E_0}{2}\left(\hat{e}\cdot \v{p}\right)
+    \left(e^{-i\omega t}+e^{i\omega t}\right)
+.\] 
+Gli elementi di matrice:
+\[
+\bra{1}W^+ \ket{2}= \frac{e}{m\omega}\frac{E_0}{2}\bra{1}\hat{e}\cdot \v{p}\ket{2}=
+i \frac{E_0}{2}\hat{e}\cdot \v{d}_{12} 
+.\] 
+Nella quale $\v{d}_{12} = \bra{1}\v{d} \ket{2}$. L'altro elemento invece:
+\[
+\bra{2}W^+ \ket{1}=
+i \frac{E_0}{2}\hat{e}\cdot \v{d}_{21} 
+.\] 
+Assumiamo inoltre la simmetria: $\v{d}_{12}=\v{d}_{21}$. Senza fare calcolo perturbativo cerchiamo di risolvere l'equazione di Schrodinger a due livelli sostituendovi la seguente $\psi$.
+\[
+    \ket{\psi(t) }=
+    a_1(t) e^{-iE_1t /\hbar }\ket{1}+a_2(t) e^{-i E_2t /\hbar }\ket{2}
+.\] 
+Useremo inoltre l'approssimazione di onda rotante.

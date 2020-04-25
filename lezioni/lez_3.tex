@@ -17,7 +17,7 @@ Questa relazione può essere riscritta in anche altri termini considerando la pe
 .\] 
 Per esempio possiamo eliminare una delle variabili per scrivere alcune relazioni che mettono in corrispondenza i calori specifici con la compressibilità:
 \[
-	C_{P}- C_{V}= TVk_{T} \left[ \left( \left.\frac{\partial P}{\partial T} \right|_{V} \right)  \right] ^2 
+	C_{P}- C_{V}= TVk_{T} \left[ \left.\frac{\partial P}{\partial T} \right|_{V} \right] ^2 
 		= \frac{T}{V k_{T}} \left[ \left.\frac{\partial V}{\partial T} \right|_{P} \right]^2
 .\]
 \subsection{Segno delle capacità termiche}%
@@ -42,19 +42,19 @@ Cerchiamo adesso la derivata dell'energia libera totale rispetto a $V_1$:
 \[
 	\frac{\partial F}{\partial V_1} = \frac{\partial \left( F_1+F_2 \right) }{\partial V_1} = \frac{\partial F_1}{\partial V_1} - \frac{\partial F_2}{\partial V_2}= P_1 - P_2 
 .\] 
-Essendo all'equilibrio la quantità che stiamo calcolando deve essere nulla, quindi all'equilibrio:
+Essendo all'equilibrio la quantità che stiamo calcolando deve essere nulla:
 \[
 	P_1 = P_2
 .\] 
-Visto che sappiamo che è un minimo possiamo imporre non solo l'annullarsi della derivata prima ma anche che la derivata seconda risulti positiva:
+Avendo imposto che sia un minimo la derivata seconda deve essere positiva:
 \[
 	\frac{\partial ^2 F}{\partial V_1^2} = \frac{\partial }{\partial V_1} \left( P_2-P_1 \right) = - \frac{\partial P_1}{\partial V_1} - \frac{\partial P_2}{\partial V_2} >0
 .\] 
-Visto che $\frac{\partial P}{\partial V} = K_{T}$ per definizione si ha:
+Visto che $\frac{\partial P}{\partial V} = -VK_{T}$ (definizione) si ha:
 \[
 	\frac{1}{K_{T_1}V_1} + \frac{1}{k_{T_2}V_2} >0
 .\] 
-Se il gas nei due setti è lo stesso allora abbiamo anche che $k_{T_1}$ = $k_{T_t}$
+Se il gas nei due setti è lo stesso allora abbiamo anche che $k_{T_1}$ = $k_{T_2}$
 \[
 	k_{T} >0
 .\] 
@@ -110,7 +110,9 @@ Prendiamo un generale diagramma di fase di un materiale: un Plot (P,T).
 Le linee che separano le fasi ci indicano zone in cui due fasi sono in equilibrio tra loro, quindi in queste condizioni varie fasi possono coesistere. \\
 Se ad esempio abbiamo fase liquida e solida in una zona di coesistena allora fissata la temperatura sarà fissata automaticamente anche la pressione, essa sarà vincolata su una curva dipendente da T.\\
 Tipicamente le curve hanno una "Slope" positiva, i casi in cui questo non è vero sono pochi, vedremo qualche esempo più tardi.\\
+\begin{defn}[Punto Triplo]{defn:Punto Triplo}
 Il punto in cui coesistono tutte le fasi è detto \textit{punto triplo}.
+\end{defn}
 
 \paragraph{Curve di coesistenza}%
 Per studiare le zone di coesistenza possiamo possiamo prendere un sistema composto da un recipiente di N atomi dello stesso elemento diviso in due sottosistemi contenente le due fasi: ad esempio liquida e gassosa\\
@@ -220,14 +222,19 @@ Possiamo allora esprimere la pendenza della curva di separazione tra gli stati n
 	\frac{\mbox{d} P}{\mbox{d} T} = \frac{s_1-s_2}{v_1-v_2}
 .\] 
 Che è la relazione di \textit{Klausius-Clapeiron}.\\
-Possiamo definire anche un calore latente quando avviene una transizione di fase: \[
+Possiamo definire anche un calore latente quando avviene una transizione di fase: 
+\begin{defn}[Calore latente]{defn:Calore latente}
+\[
 	L = T \Delta s = T \left( s_1-s_2 \right) 
 .\]
+\end{defn}
 Che è la quantità di calore per particella da fornire per far avvenire la transizione di fase.\\
 Tramite $L$ possiamo scrivere la relazione di Klausius-Clapeiron in modo più compatto:
+\begin{fact}[Relazione di Clausius-Klapeiron]{fact:relazione di Clausius-Klapeiron}
 \[
 	\frac{\mbox{d} P}{\mbox{d} T} = \frac{L}{T\left( v_1-v_2 \right) }
 .\] 
+\end{fact}
 Adesso possiamo capire perchè questa quantità è in generale positiva: ci aspettiamo ad esempio che andando da gas (stato 1) verso il liquido (stato 2) l'entropia ed il volume specifico diminuiscano. Quindi nella relazione sopra numeratore e denominatore sono nella maggior parte dei casi positivi.\\
 Per l'acqua la Slope solido-liquido è negativa per il semplice motivo che il ghiaccio è meno denso dell'acqua liquida, questo inverte il segno al denominatore nella equazione sopra.\\
 Nel caso dell'elio invece abbiamo una transiozione da solido a superfluido con dei punti in cui la slope è zero. Qui la densità non c'entra: è una questione di entropia. \\
@@ -235,7 +242,7 @@ Si ha infatti che il superfluido può avere entropia minore del solido! Questo s
 
 \subsection{Conteggio degli stati $\Gamma$}%
 Preso il sistema con (E,V,N) abbiamo definito l'entropia $S = k \ln\Gamma$, da qui abbiamo costruito tutta la nostra teoria termodinamica partendo dal concetto di equilibrio. Adesso dobbiamo trovare come calcolare il numero di stati associato con le variabili di stato.\\
-In linea di principio se avessimo un gas perfetto composto da particelle indipendenti, non interagenti, all'equilibrio termodinamico, senza gradi di libertà interni ecc\ldots potremmo prendere gli stati gli stati di una singola particella nella scatola di volume V e vedere come sono distribuite queste N particelle negli stati in modo tale che la loro energia sia complessivamente E.\\
+In linea di principio se avessimo un gas perfetto composto da particelle indipendenti, non interagenti, all'equilibrio termodinamico, senza gradi di libertà interni ecc\ldots potremmo prendere gli stati di una singola particella nella scatola di volume V e vedere come sono distribuite queste N particelle negli stati in modo tale che la loro energia sia complessivamente E.\\
 Questo funziona quando abbiamo poche particelle, se abbiamo $10^{23}$ particelle inizia ad essere complicato. \\
 Inoltre potrebbero nascere dei problemi dalle indeterminazioni intrinseche dei livelli energetici come abbiamo discusso. \\
 Un ulteriore problema è dato dal fatto che non possiamo considerare sistemi isolati a livello pratico, quindi è pressochè impossibile tenere l'energia fissata.\\
@@ -302,42 +309,49 @@ Tornando all'equilibrio, in cui tutti gli stati sono equiprobabili, la probabili
 \[
 	W_{\alpha}= \frac{\Gamma_{T,\alpha}}{\Gamma_0}= \frac{\Gamma_{\alpha}'}{\Gamma_0}
 .\] 
-Questo numero è incredibilmente utile perchè se volessimo calcolare una qualunque grandezza fisica $f$ del sistemino, imponendo che sia all'equilibrio termico con il bagno termico, troveremo un balore medio per la grandezza dato da:
+Questo numero è incredibilmente utile perché se volessimo calcolare una qualunque grandezza fisica $f$ del sistemino, imponendo che sia all'equilibrio termico con il bagno termico, troveremo un valore medio per la grandezza dato da:
+\begin{fact}[Valore medio di una qualunque grandezza]{fact:Valore medio di una qualunque grandezza}
 \[
 	\overline{f}= \sum_{\alpha}^{} W_{\alpha}f_{\alpha} \quad \quad \quad \sum_{\alpha}^{} W_\alpha= 1
 .\] 
-Dove $f_{\alpha}$ è il valore della grandezza sullo stato $\alpha$.\\
+Dove $f_{\alpha}$ è il valore della grandezza sullo stato $\alpha$.
+\end{fact}
 Dobbiamo concentrarci adesso sulla ricerca della $W_{\alpha}$, è interessante notare che per far ciò adesso non serve più fare i conti sul sistemino, bensì sul bagno termico grazie alla dipendenza da $\Gamma'_{\alpha}$.\\
 Troviamo l'entropia del bagno termico quando il sistemino si trova nello stato $\alpha$ :
 \[
 	S_{\alpha}'= k\ln\Gamma_{\alpha}'
 .\] 
-Ma questa è uguale anche a 
+Sicuramente tale energia sarà funzione di 
 \[
 	S_{\alpha}'= S'\left( E_0-E_{\alpha}, N_0-N_{\alpha} \right) 
 .\] 
-L'entropia del'universo invece:
+L'entropia dell'universo invece:
 \[
 	S_0= k \ln \Gamma_0
 .\] 
 Quindi possiamo scrivere che:
 \[
 	S_0-S_{\alpha}'= -k \ln \frac{\Gamma_{\alpha}'}{\Gamma_0}
+	\label{eq:Walpha}
 .\] 
-Dobbiamo notare che questa $S_0- S_{\alpha}$ non è l'entropia del nostro sistemino, l'entropia del sistemino nello stato fissato $\alpha$ è nulla: $S_{\text{sistemino}} = k\ln1 = 0$
-Però possiamo fare all'equilibrio 
+Questa $S_0- S_{\alpha}$ non è l'entropia del nostro sistemino, l'entropia del sistemino nello stato fissato $\alpha$ è nulla ($S_{\text{sistemino}} = k\ln1
+=0$). Tuttavia l'energia media del sistemino in generale non è nulla:
 \[
 	S_0- \overline{S_{\alpha}'}= - \overline{k\ln W_{\alpha}}= -\sum_{\alpha}^{} W_{\alpha} \left( k\ln W_{\alpha} \right)  
 .\] 
-Dove abbiamo esplicitato l'operazione di media utilizzando la funzione $W_{\alpha}$. Quella che abbiamo scritto in fondo è l'entropia media del sistemino.\\
-Se facciamo l'esponenziale della relazione non mediata possiamo trovare $W_{\alpha}$ :
+Dove abbiamo esplicitato l'operazione di media utilizzando la funzione $W_{\alpha}$. 
+Possiamo esplicitare il termine $W_\alpha$ nell'Equazione \ref{eq:Walpha}:
 \[
-	W_{\alpha}= e^{\left( -\frac{S_0-S_{\alpha}'}{k} \right)}  .\] 
-	Consideriamo il fatto che $S_0$ è l'entropia dell'universo all'infinito, non dipende da $\alpha$ e lo possiamo quindi rimuovere perchè è una costante e non intaccherà il conto finale.
+	W_{\alpha}= e^{\left( -\frac{S_0-S_{\alpha}'}{k} \right)}  
+.\] 
+Visto che $S_0$ (l'entropia dell'universo) non dipende da $\alpha$ lo possiamo considerare come una costante ottenendo una importante definizione.
+\begin{defn}[Probabilità di stato $\alpha$]{defn:Probabilità di stato alpha}
+La probabilità di trovare il nostro sistema in uno stato $\alpha$ quando il sistemino è all'equilibrio nel bagno termico a teperatura T e potenziale chimico $\mu$ è:
 \[
 	W_{\alpha}= A \exp{\left( \frac{S_{\alpha}'}{k} \right) }
 .\] 
-Ricordiamo che questa è la probabilità di trovare uno stato $\alpha$ nel nostro sistema quando questo è all'equilibrio nel bagno termico a teperatura T e potenziale chimico $\mu$. \\
+Dove $S'_\alpha$ è l'entropia del bagno termico quando il sistemino si trova nello stato $\alpha$.
+\end{defn}
 Se siamo nelle ipotesi che $N_{\alpha}$ e $E_{\alpha}$ siano piccoli possiamo sviluppare $S_{\alpha}'$ vicino all'equilibrio e scrivere:
 \[
 	S_{\alpha}' = S'\left( E_0- E_{\alpha}, N_0- N_{\alpha} \right) \approx S' \left( E_0, N_0 \right) -
@@ -367,7 +381,7 @@ Abbiamo in linea di principio finito, tuttavia abbiamo la soluzione in termini d
 Va meglio se partiamo invece dal valor medio dell'entropia:
 \[
 	S = -k \sum_{\alpha}^{} W_{\alpha} \ln W_\alpha.\] 
-Che se vi sostituiamo il valore di $W_{\alpha}$ trovato prima ci porta a:
+Che se vi sostituiamo il valore di $W_{\alpha}$ e delle quantità $E$ ed $N$ in forma di sommatorie ci porta a:
 \[
 	S=-k \ln B + \frac{E-\mu N}{T}
 .\] 
@@ -375,10 +389,13 @@ Quindi abbiamo la relazione per trovare il potenziale $\Omega$ :
 \[
 	kT \ln B = E - TS - \mu N = \Omega
 .\] 
+\begin{defn}[Potenziale di Landau in termini di energia degli stati]{defn:Potenziale di Landau in termini di energia degli stati}
 \[
 	\Omega = -kT \ln \sum_{\alpha}^{} \exp\left( -\frac{E_{\alpha}-\mu N_{\alpha}}{kT} \right) 
 .\] 
-Questa ci va bene perchè è funzione di ($T, \mu, V$) che sono variabili buone per descrivere il sistema. A livello formale abbiamo una soluzione, lavoreremo più avanti per semplificarla e renderla utilizzabile.\\
+\end{defn}
+Questa ci va bene perché è funzione di ($T, \mu, V$)\footnote{Infatti l'energia $E_\alpha$ è funzione del volume (se pensiamo ad una particella confinata
+nella scatola si ha ad esempio $ E_\alpha\propto L^{-2} \propto V^{-\frac{2}{3}}$)} che sono variabili buone per descrivere il sistema. A livello formale abbiamo una soluzione, lavoreremo più avanti per semplificarla e renderla utilizzabile.\\
 Se assumiamo che $N_{\alpha}$ è fissato allora possiamo supporre che per ogni stato $N_{\alpha}$ sia sempre lo stesso e, ricordando la forma di F, si ha:
 \[
 	F = -kT \ln\left( \sum_{\alpha}^{} \exp\left( -\frac{E_{\alpha}}{kT} \right)  \right) 
@@ -387,15 +404,20 @@ E inoltre anche $W_{\alpha}$ si semplifica moltissimo.
 \[
 	W_{\alpha}= c \exp\left( -\frac{E_{\alpha}}{kT} \right) 
 .\] 
-Si possono definire la funzioni di partizione:
+Per normalizzare questa funzione si possono definire le seguenti quantità a seconda del contesto:
+\begin{defn}[Funzione di partizione]{defn:Funzione di partizione}
+    Se il sistema non scambia particelle con il mondo esterno:
 \[
 	Z = \sum_{\alpha}^{} \exp\left( -\frac{E_{\alpha}}{kT} \right) 
 .\] 
-E la funzione di gran partizione (se il sistema può scambiare particelle):
+\end{defn}
+\begin{defn}[Funzione di gran partizione]{defn:Funzione di gran partizione}
+    Se il sistema non scambia particelle con il mondo esterno:
 \[
 	\L = \sum_{\alpha}^{} \exp\left( - \frac{E_{\alpha}-\mu N_{\alpha}}{kT} \right) 
 .\] 
-Da cui i potenziali termodinamici sono:
+\end{defn}
+In questo modo i potenziali termodinamici si scrivono nella forma compatta:
 \[
 	F = -kT \ln Z
 .\] \label{eq:F_Z}

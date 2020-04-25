@@ -1,6 +1,6 @@
 %% Creator: Inkscape inkscape 0.92.5, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'calcolo-delle-fluttuazioni.pdf' (pdf, eps, ps)
+%% Accompanies image file 'vettore-b-della-precessione.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{625.14136127bp}%
+    \setlength{\unitlength}{505.42689046bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,9 +50,18 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.33149808)%
+  \begin{picture}(1,0.35534249)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{calcolo-delle-fluttuazioni.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{vettore-b-della-precessione.pdf}}%
+    \put(0.3990822,0.34406834){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$z$\end{tabular}}}}%
+    \put(0.33527338,0.00218089){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x$\end{tabular}}}}%
+    \put(0.63706298,0.10815456){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$y$\end{tabular}}}}%
+    \put(0.36050284,0.0302757){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Omega_R$\end{tabular}}}}%
+    \put(0.43339076,0.24382359){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\delta$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{vettore-b-della-precessione.pdf}}%
+    \put(0.38594478,0.16018544){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\v{B}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{vettore-b-della-precessione.pdf}}%
+    \put(0.40276289,0.08315526){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\v{R}$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

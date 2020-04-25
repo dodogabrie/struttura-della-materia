@@ -205,9 +205,11 @@ Potremmo dire lo stesso con (T,V)? No, non sono sufficienti, non hanno abbastanz
 Abbiamo allora un problema sperimentale: l'entropia non è facilmente misurabile, dobbiamo definire l'energia a partire da oggetti che possano essere misurati con semplicità. Sulla base di questo problema nascono gli altri potenziali termodinamici. 
 \subsection{Utili potenziali termodinamici}
 \paragraph{Energia libera di Halmotz}%
+\begin{defn}[Energia libera di Halmotz]{defn:Energia libera di Halmotz}
 \[
 	F = E - TS
-.\] 
+.\]
+\end{defn}
 Differenziando questa quantità si ottiene:
 \[
 	dF = -SdT - PdV
@@ -228,9 +230,11 @@ Si può inoltre verificare che
 .\] 
 F ci toglie il problema di trovare l'entropia del sistema e capire come è legata all'energia (che è complicato). Sfortunatamente con F ci perdiamo la connessione con il numero di microstati, quindi questa legge è utile al livello macroscopico ma è complicato poi trarne conclusioni a livello microscopico.
 \paragraph{Energia libera di Gibbs}%
+\begin{defn}[Energia libera di Gibbs]{defn:Energia libera di Gibbs}
 \[
 	\phi = F + PV
 .\] 
+\end{defn}
 \[
 	d\phi = -SdT + VdP
 .\] 
@@ -241,9 +245,11 @@ Quindi si ricavano le relazioni:
 .\end{align}
 Questa è utile se si va a studiare l'equilibrio tra fasi diverse (esempio: evaporazione di un liquido: Avremo curve caratteristiche in pressione quando andiamo ad imporre che il $\phi$ del liquido sia uguale al $\phi$ del gas).\\
 \paragraph{Entalpia}%
+\begin{defn}[Entalpia]{defn:Entalpia}
 \[
 	W = \phi + TS
 .\] 
+\end{defn}
 \[
 	dW = TdS + VdP
 .\] 
@@ -257,7 +263,9 @@ e si ha anche:
 	 \left.\delta W\right|_{P} = T \left.\delta S\right|_{P}= \left.\delta Q\right|_{P}
 .\] 
 In questa abbiamo uno scambio di calore a pressione costante, è nota come funzione del calore.\\
-Alle volte è comodo non passare direttamente dai potenziali termodinamici ma fare delle derivate seconde incrociate, ad esempio:
+\paragraph{Relazioni di Maxwell}%
+\label{par:Relazioni di Maxwell}
+Facendo le derivate incrociate delle variabili termodinamiche e sfruttando le definizioni dei potenziali è possibile ricavare delle utili relazioni:
 \[
 	\left.\frac{\partial P}{\partial T} \right|_{V}=
 	\left.\frac{\partial }{\partial T} \left.\left( -\frac{\partial F}{\partial V}\right|_{T}  \right) \right|_{V}
@@ -266,9 +274,11 @@ Alle volte è comodo non passare direttamente dai potenziali termodinamici ma fa
 .\] 
 E in questo modo possiamo trovare delle utili relazioni dette \textit{Relazioni di Maxwell}.\\
 Effettuando una \textit{Trasformazione di scala} (vedi Goldstein) si conclude che:
+\begin{fact}[Differenziale del potenziale chimico]{fact:Differenziale del potenziale chimico}
 \[
 	d\mu = - \frac{S}{N}dT + \frac{V}{N}dP 
 .\]
+\end{fact}
 Quindi abbiamo che:
 \[
 	\phi\left( P,T \right) = \mu N
@@ -278,9 +288,11 @@ e possiamo concludere un'altra importante relazione tra i potenziali termodinami
 	\left.\delta E\right|_{S,V} = \left.\delta F\right|_{T,V} = \left.\delta \phi\right|_{T,P} = \left.\delta W\right|_{S, P}
 .\] 
 \paragraph{Potenziale di Landau}%
+\begin{defn}[Potenziale di Landau]{defn:Potenziale di Landau}
 \[
 	\Omega = F - \mu N
 .\] 
+\end{defn}
 \[
 	d\Omega = -SdT - PdV - Nd\mu
 .\] 
@@ -289,8 +301,8 @@ Si dimostra anche che $\Omega = -PV$ e che:
 	\left.\delta \Omega\right|_{T,V,\mu} = \left.\delta E\right|_{S, V, N}= \ldots
 .\] 
 Rivediamo adesso il nostro principio variazionale e la nostra posizione di equilibrio studiando un caso specifico:
-\paragraph{Corpo immerso in un bagno termico}%
-Consideriamo un sistema immerso in un bagno termico (un sistema con caratteristiche tali da rimanere imperturbato a livello energetico dal contatto con il sistema immerso al suo interno).
+\subsection{Principio variazionale e $\Omega < 0$}%
+Consideriamo un sistema immerso in un bagno termico \footnote{un sistema con caratteristiche tali da rimanere imperturbato a livello energetico dal contatto con il sistema immerso al suo interno} mantenuto a temperatura $T$ costante.
 \begin{figure}[H]
     \centering
     \incfig{bagno-termico}
@@ -298,7 +310,6 @@ Consideriamo un sistema immerso in un bagno termico (un sistema con caratteristi
     \label{fig:bagno-termico}
 \end{figure}
 \noindent
-Tutto quanto è mantenuto alla temperatura T.\\
 Per il bagno termico possiamo scrivere che:
 \[
 	dE' = TdS'
@@ -341,11 +352,11 @@ Si arriva alla capacità termica ed alla compressibilità a partire dalle deriva
 			- T \left.\frac{\partial ^2 F}{\partial T^2 } \right|_{V}
 .\] \label{eq:capacita-termica}
 \[
-	C_{p} = T \left.\frac{\partial S}{\partial T} \right|_{P} = \ldots = - T \left.\frac{\partial ^2 \phi}{\partial T^2} \right|_{P}
+	C_{p} = T \left.\frac{\partial S}{\partial T} \right|_{P} = \left.\frac{\partial W}{\partial T}\right|_{P} = - T \left.\frac{\partial ^2 \phi}{\partial T^2} \right|_{P}
 .\] 
 Analogamente per la compressibilità isoterma o adiabatica:
 \[
-	k_{P}= -\frac{1}{V} \left.\frac{\partial V}{\partial P} \right|_{T} =
+	k_{T}= -\frac{1}{V} \left.\frac{\partial V}{\partial P} \right|_{T} =
 	-\frac{1}{V} \left.\frac{\partial ^2 \phi}{\partial P^2} \right|_{T}
 .\] 
 \[

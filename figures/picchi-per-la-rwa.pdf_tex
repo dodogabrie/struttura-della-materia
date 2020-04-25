@@ -1,6 +1,6 @@
 %% Creator: Inkscape inkscape 0.92.5, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'calcolo-delle-fluttuazioni.pdf' (pdf, eps, ps)
+%% Accompanies image file 'picchi-per-la-rwa.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{625.14136127bp}%
+    \setlength{\unitlength}{688.79441629bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,9 +50,13 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.33149808)%
+  \begin{picture}(1,0.2596839)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{calcolo-delle-fluttuazioni.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{picchi-per-la-rwa.pdf}}%
+    \put(0.97368967,0.01999147){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\hbar \omega$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{picchi-per-la-rwa.pdf}}%
+    \put(0.68655876,0.01904791){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E_f-E_i$\end{tabular}}}}%
+    \put(0.22282892,0.02014306){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E_i-E_f$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

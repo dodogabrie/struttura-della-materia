@@ -6,11 +6,11 @@ Abbiamo concluso nella lezione precedente che la probabilità di trovare il sist
 .\] 
 Se si conserva il numero di particelle invece:
 \[
-	W_{\alpha} = \frac{\exp(-\frac{E_{\alpha}-\mu N_{\alpha}}{kT})}{Z}
+	W_{\alpha} = \frac{\exp\left(-\frac{E_{\alpha}}{kT}\right)}{Z}
 .\] 
 \subsection{Probabilità di trovare il sistema in uno stato vs probabilità di trovarlo con una certa energia.}%
 Quindi la probabilità di trovare il sistema con una energia $E_{\alpha}$ decresce esponenzialmente con l'energia. \\
-Nonostante questo sembri controintuitivo dobbiamo tener di conto che più energia mettiamo all'interno del sistemino meno energia sarà disponibile per il bagno termico \footnote{Visto che la totale si deve conservare} e quindi meno cofigurazioni ($\Gamma_{\alpha}$) saranno disponibili a quest'ultimo. \\
+Nonostante questo sembri controintuitivo dobbiamo tener di conto che più energia mettiamo all'interno del sistemino meno energia sarà disponibile per il bagno termico \footnote{Visto che la totale si deve conservare} e quindi meno configurazioni ($\Gamma'_{\alpha}$) saranno disponibili a quest'ultimo. \\
 L'esperienza ci dice l'esatto contrario: non sembra plausibile che lo stato, ad una certa temperatura T, abbia grandi possibilità di trovarsi nello stato meno energetico (fondamentale). Tuttavia queste due ultime affermazioni non si escludono.\\
 La confusione generata nelle ultime due affermazioni deriva da una possibile cattiva interpretazione della $W_{\alpha}$:\\
  $W_{\alpha}$ è la probabilità di trovare il sistema in uno stato specifico, non la probabilità di trovare il sistema con l'energia $E_{\alpha}$. La differenza è che ci sono un sacco di stati $\varphi$ aventi energia $E_{\alpha}$, mentre $W_{\alpha}$ mira proprio al singolo stato scelto $\alpha$. \\
@@ -21,7 +21,9 @@ Se volessimo invece la probabilità di avere l'energia $E_{\alpha}$ il conto da 
 con $\varrho_{E_{\alpha}}$  il numero di configurazioni aventi energia  $E_{\alpha}$.\\
 Con questa cosa si risolve un problema:\\
 La probabilità provate $W_{\alpha}$ sembrava dipendere soltanto dalla energia dello stato $\alpha$. Tuttavia il bagno termico conosce soltanto l'energia che lui ha a disposizione ed il numero di stati associati a tale energia nel sistemino.\\
-Dal punto di vista del bagno termico dire che il sistemino ha energia $E_{\alpha}$ o che il sistemino sta in uno stato preciso $\alpha$ è la stessa cosa, non sembra quindi chiaro facendo il conto sul bagno termico \footnote{Come nella lezione precedente.} da dove venga fuori la sottile differenza tra le probabilità discussa in questo paragrafo.\\
+Dal punto di vista del bagno termico dire che il sistemino ha energia $E_{\alpha}$ o che il sistemino sta in uno stato preciso $\alpha$ è la stessa cosa $\Gamma'_\alpha  = \Gamma'_{E_\alpha}$
+\footnote{Il bagno termico non è influenzato dal sistemino per via delle nostre assunzioni, quindi non ha accesso a tutte le informazioni del sistemino}
+, non sembra quindi chiaro facendo il conto sul bagno termico \footnote{Come nella lezione precedente.} da dove venga fuori la sottile differenza tra le probabilità discussa in questo paragrafo.\\
 La soluzione sta nel fatto che è l'universo a portare le informazioni necessarie ad arrivare alla $W_{\alpha}$, infatti il numero di configurazioni dell'universo $\Gamma_{t}$ non sono le stesse nei due casi citati sopra:
 \begin{itemize}
 	\item Se il bagno termico conosce solo lo stato preciso $\alpha$ del sistemino allora il numero di stati possibili dell'universo è: $\Gamma_{t}= \Gamma_{\alpha}'$
@@ -43,7 +45,7 @@ La probabilità di essere nello stato $\alpha$ decresce con $E_{\alpha}$, invece
 Vedremo che la distribuzione in figura è molto piccata attorno al valore medio nel limite di tante particelle. Andremo inoltre a quantificare le fluttuazioni attorno a tale valore in alcuni casi.\\
 Quindi la probabilita di avere una energia $E_{\alpha}$ sarà \footnote{Togliamo la variazione del numero di particelle.}:
 \[
-	W_{\alpha} = \frac{1}{Z} \varrho_{E_{\alpha}} \exp\left( -\frac{E_{\alpha}}{kT} \right) 
+    W({\alpha}) = \frac{1}{Z} \varrho_{E_{\alpha}} \exp\left( -\frac{E_{\alpha}}{kT} \right) 
 .\]
 Quindi $Z$ si può scrivere anche in modo tale da normalizzare quest'ultima 
 \[
@@ -66,13 +68,13 @@ La nuova definizione di Z sarà:
 	Z = \int_{0}^{\infty}\rho\left( \epsilon \right) \exp\left( -\frac{\epsilon}{kT} \right) 
 .\] \label{eq:DefZ}
 Quindi adesso non ci serve più conoscere il numero di stati esattamente per unità di energia ma semplicemente conoscere come sono distribuiti, questo rinforza anche la struttura teorica che, come abbiamo visto, aveva un pò di problemi quando si andava a parlare di indeterminazione dell'energia.\\
-Data una grandezza fisica possiamo riscivere il suo valore medio come:
+Data una grandezza fisica possiamo riscrivere il suo valore medio come:
 \[
-	\overline{f} = \int_{0}^{\infty} f\left( \epsilon \right) \rho\left( \epsilon \right) \exp\left( -\frac{\epsilon}{kT} \right) 
+    \overline{f} = \int_{0}^{\infty} f\left( \epsilon \right)\rho(\epsilon)\exp\left( -\frac{\epsilon}{kT} \right) 
 .\] 
 Analogamente possiamo fare per l'energia libera:
 \[
-	F = -kT \ln \int_{o}^{\infty} f\left( \epsilon \right) \exp\left( - \frac{\epsilon}{kT} \right) 
+	F = -kT \ln \int_{o}^{\infty} \rho\left( \epsilon \right) \exp\left( - \frac{\epsilon}{kT} \right) 
 .\] 
 Cercheremo di calcolarci la densità di stati per varie situazioni: gas di fotoni, gas di elettroni in un metallo, vibrazioni di un cristallo ecc\ldots\\
 Notiamo che abbiamo integrato da 0 a $\infty$ sulle energie del sistemino nonostante queste fossero limitate dalla approssimazione fatta per argomentare sul bagno termico nella scorsa lezione \footnote{Dovedano essere molto minori dell'energia totale dell'universo}.\\
@@ -80,7 +82,7 @@ Ci è permesso usare l'estremo di integrazione $\infty$ se assumiamo che la dist
 Cerchiamo di capire come sono distribuite le proprietà di alcune grandezze principali attorno al valore massimo dell'energia. \\
 Se il nostro sistema ha una energia $E_{\alpha}$ allora l'entropia dell'universo sarà:
 \[
-	S_{t}\left( E_{\alpha} \right) = k \ln \varrho_{E_{\alpha}} \Gamma'_{\alpha}
+    S_{t}\left( E_{\alpha} \right) = k \ln (\varrho_{E_{\alpha}} \Gamma'_{\alpha})
 .\] 
 E come la scorsa lezione possiamo scrivere:
 \[
@@ -89,15 +91,16 @@ E come la scorsa lezione possiamo scrivere:
 \[
 	W\left( E_{\alpha} \right) = A \exp \left( \frac{S_{t}\left( E_{\alpha} \right) }{k} \right) 
 .\] 
-Con $A$ che è la stessa costante della scorsa lezione. Quindi potremmo arrivare a questa equazione per quallunque grandezza del sistema piccolo $x$ :
+Con $A$ che è la stessa costante della scorsa lezione. Quindi potremmo arrivare a questa equazione per qualunque grandezza del sistema piccolo $x$:
 \[
 	W\left( x \right) = A \exp\left( \frac{S_{t}\left( x \right) }{k} \right) 
 .\] 
-Dal momento che abbiamo una distribuzione molto piccata sul valor medio possiamo assumere che:
+Dal momento che abbiamo una distribuzione molto piccata sul valor medio sarà necessario che la derivata di $W(x)$ calcolata in $\overline{x}$ si annulli,
+questo comporta che:
 \[
 	\left.\frac{\partial S_{t}}{\partial x} \right|_{x = \overline{x}}=0
 .\] 
-Perchè si ha un massimo in tale valore. Mentre per la derivata seconda si avrà:
+Mentre per la derivata seconda si avrà:
 \[
 	\left.\frac{\partial ^2 S_{t}}{\partial x^2 } \right|_{x = \overline{x}} < 0
 .\] 
@@ -107,7 +110,7 @@ Quindi nelle vicinanze del picco siamo autorizzati a fare lo sviluppo:
 .\] 
 Con:
 \[
-	\beta = - \left.\frac{\partial ^2 S_{t}}{\partial x^2} \right|_{x =\overline{x}}
+	\beta = \left|\left.\frac{\partial ^2 S_{t}}{\partial x^2} \right|_{x =\overline{x}}\right|
 .\] 
 Abbiamo fatto questa cosa perchè in un intorno di $\overline{x}$ possiamo approssimare $W\left( x \right) $ con una gaussiana:
 \[
@@ -184,12 +187,12 @@ Con la funzione totale che è invece:
 .\] 
 Possiamo trovare allora le popolazioni: il numero di particelle con un determinato spin.
 \[
-	N_{\downarrow} = \frac{1}{Z_1}\exp{\left( \frac{\mu B}{kT} \right) }
+	N_{\downarrow} = \frac{N}{Z_1}\exp{\left( \frac{\mu B}{kT} \right) }
 .\] 
 \[
-	N_{\uparrow} = \frac{1}{Z_1}\exp{\left( \frac{-\mu B}{kT} \right) }
+	N_{\uparrow} = \frac{N}{Z_1}\exp{\left( \frac{-\mu B}{kT} \right) }
 .\] 
-Supponiamo di essere nella condizione di piccoli campi magnetic per approssiamare $Z_1$ :
+Supponiamo di essere nella condizione di piccoli campi magnetici per approssimare $Z_1$ :
 \[
 	\frac{\mu B}{kT}\ll 1 \implies Z\sim 2
 .\] 
@@ -203,7 +206,7 @@ E la magnetizzazione media all'equilibrio sarà:
 \[
 	M = \mu N_{\downarrow} -\mu N_{\uparrow}= N \frac{\mu^2 B}{kT}
 .\] 
-Potremmo trovare ad esempio l'energia media del sistema:
+Potremmo trovare ad esempio l'energia media del sistema (senza approssimazione):
 \[
 	E = N_{\uparrow}\mu B- N_{\downarrow} \mu B = \mu B N \tanh \left( \frac{\mu B}{kT} \right) 
 .\]  
@@ -302,7 +305,7 @@ Possiamo calcolare anche la pressione:
 .\] 
 Tenendo conto del fatto che $V = L^3$ e che l'energia della singola particella è $\mathcal{E}_{\alpha}= \alpha L^{-2} = c \cdot V^{-2 /3}$ possiamo trovare $\partial Z_1 /\partial V $ :
 \[
-	\frac{\partial Z_1}{\partial V}  = - \frac{1}{kT} \frac{\partial \mathcal{E}_{q}}{\partial V} \exp\left( - \frac{\mathcal{E}_{q}}{kT} \right) = 
+	\frac{\partial Z_1}{\partial V}  = - \frac{1}{kT}\sum_{q}^{} \frac{\partial \mathcal{E}_{q}}{\partial V} \exp\left( - \frac{\mathcal{E}_{q}}{kT} \right) = 
 	\frac{2 /3}{VkT} \sum_{q}^{} \mathcal{E}_{q}\exp\left( -\frac{\mathcal{E}_{q}}{kT} \right) 
 .\] 
 dove abbiamo fatto:

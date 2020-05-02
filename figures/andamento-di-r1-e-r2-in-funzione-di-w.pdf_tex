@@ -1,6 +1,6 @@
 %% Creator: Inkscape inkscape 0.92.5, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'demagnetizzazione-magnetica.pdf' (pdf, eps, ps)
+%% Accompanies image file 'andamento-di-r1-e-r2-in-funzione-di-w.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{680.31496063bp}%
+    \setlength{\unitlength}{569.18037955bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,10 +50,15 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.33333333)%
+  \begin{picture}(1,0.19848277)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{demagnetizzazione-magnetica.pdf}}%
-    \put(0.60674116,0.19231474){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$B_2 > B_1$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{andamento-di-r1-e-r2-in-funzione-di-w.pdf}}%
+    \put(0.73523496,0.06394692){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega$\end{tabular}}}}%
+    \put(0.55218164,0.16947886){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega_{12}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{andamento-di-r1-e-r2-in-funzione-di-w.pdf}}%
+    \put(0.33533163,0.0495537){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R_2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{andamento-di-r1-e-r2-in-funzione-di-w.pdf}}%
+    \put(0.32340538,0.13303749){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R_1$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

@@ -15,7 +15,7 @@
    viewBox="0 0 224.7711 73.422997"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="spazio-delle-fasi-proiettato-in-due-dimensioni.svg">
   <defs
      id="defs2">
@@ -308,9 +308,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.406257"
-     inkscape:cx="441.25722"
-     inkscape:cy="161.57755"
+     inkscape:zoom="5.625028"
+     inkscape:cx="434.52234"
+     inkscape:cy="128.98042"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -428,36 +428,9 @@
        height="4.523366"
        x="119.49317"
        y="259.51669" />
-    <rect
-       style="opacity:0.98699999;fill:#000000;fill-opacity:0.12000002;fill-rule:nonzero;stroke:#000000;stroke-width:0.14044084;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:none;marker-end:none"
-       id="rect1342-9"
-       width="4.7894459"
-       height="4.523366"
-       x="121.88789"
-       y="256.42276" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 119.49317,259.51669 2.39472,-3.09393"
-       id="path1359"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 124.28261,259.51669 2.39473,-3.09393"
-       id="path1363"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 124.28261,264.04007 2.39473,-3.09393"
-       id="path1365"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 119.49317,264.04007 2.39472,-3.09393"
-       id="path1367"
-       inkscape:connector-curvature="0" />
     <g
        id="surface1-7"
-       transform="matrix(0.4309013,0,0,0.4309013,122.36092,253.19892)">
+       transform="matrix(0.4309013,0,0,0.4309013,119.86797,254.37484)">
       <g
          id="g1383"
          style="fill:#000000;fill-opacity:1">

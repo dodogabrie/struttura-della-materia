@@ -54,9 +54,11 @@ Possiamo trovare allora nelle ipotesi di gas ideale quanto vale $n_{\overline{q}
 	\overline{n}_{q}= \frac{\sum_{n_{q}}^{} n_{q}\exp\left( -\frac{n_{q}\left( \mathcal{E}_{q}-\mu \right) }{kT} \right) }
 	{\sum_{n_{q}}^{} \exp\left( -\frac{n_{q}\left( \mathcal{E}_{q}-\mu \right) }{kT} \right) } .\] 
 Nella approssimazione di gas ideali la somma al numeratore può essere approssimata al secondo termine con $n_{q} = 1$, mentre al denominatore di prende solo il primo termine che è unitario:
+\begin{defn}[Distribuzione di Boltzmann]{defn:Distribuzione di Boltzmann}
 \[
 	\overline{n}_{q} \approx \frac{\exp\left( - \frac{\mathcal{E}_{q}-\mu}{kT} \right) }{1} = \exp\left[ -\frac{\mathcal{E}_{q}-\mu}{kT} \right] 
 .\] 
+\end{defn}
 Questo è il numero medio di particelle che possiamo trovare in uno stato di energia $\mathcal{E}_{q}$, noto con il nome di distribuzione di Boltzmann.\\
 Non è il numero medio di particelle aventi energia $\mathcal{E}_{q}$ perchè potrebbero esserci tanti stati con tale energia!\\
 In questa approssimazione possiamo trovare anche $\Omega_{q}$ :
@@ -102,34 +104,34 @@ Una volta assegnati questi possiamo trovare l'energia totale $\mathcal{E}_{0}$ d
 \[
 	\mathcal{E}_{0} = \mathcal{E}_{0}\left( \left\{ p_{i} \right\} , \left\{ q_{i} \right\}  \right) 
 .\] 
-Ad esempio se abbiamo $N_0$ particelle in totale allora abbiamo $3N_0$ impulsi e $3N_0$ coordinate nel nostro spazio in considerazione. Possiamo chiamare allora $f_0$ il numero di gradi di libertà del sistema diviso 2; nel nostro caso sarà $3N_0$.\\
+Ad esempio se abbiamo $N_0$ particelle in totale allora abbiamo $3N_0$ impulsi e $3N_0$ coordinate nel nostro spazio in considerazione. Possiamo chiamare allora $f_0$ la metà dei gradi di libertà del sistema; nel nostro caso sarà $3N_0$.\\
 Data una energia $E_0$ del sistema il numero di stati classici possibili aventi tale energia è infinito, in ambito classico non vi è un modo per contarli. Possiamo fare una costruzione matematica che parte dal considerare il sistema classico per poi arrivare al sistema quantistico che ci permette effettivamente di contare gli stati $\Gamma_0$.\\
 Consideriamo il nostro spazio delle fasi 6-dimensionale e disegnamone una proiezione:
 \begin{figure}[H]
     \centering
     \incfig{spazio-delle-fasi-proiettato-in-due-dimensioni}
-    \caption{\scriptsize Spazio delle fasi proiettato in due dimensioni, si disegna sovrapposto un elementino di volume dello spazio tridimensionale solo per fissare le idee del prossimo passaggio.}
+    \caption{\scriptsize Spazio delle fasi proiettato in due dimensioni, si disegna sovrapposto un elementino di volume dello spazio.}
     \label{fig:spazio-delle-fasi-proiettato-in-due-dimensioni}
 \end{figure}
 \noindent
-Noi dovremmo contare quanti stati ci sono sulla superficie $6N_0-1$ dimensionale, a tale scopo serve un numero proporzionale all'area della superficie interessata. \\
+Noi dovremmo contare quanti stati ci sono sulla superficie $6N_0-1$ dimensionale infatti tale superficie descrive gli stati aventi energia $\mathcal{E}_0$, a tale scopo serve un numero proporzionale all'area della superficie interessata. \\
 Quindi si divide lo spazio $6N_0$ dimensionale in tante cellette unitarie aventi dimensioni proiettate bidimensionalmente di: 
 \[
 \Delta r_{k} \Delta p_{k} = \tau
 .\]
 Dove $\tau$ è il volume (o meglio, l'area) del cubetto.\\
 Quindi dividiamo il nostro spazio accoppiando ciascuna coordinata ed impulso nella stessa direzione della stessa particella ed attribuendogli un volumetto $\tau$. Il nostro mondo è quindi diviso in tanti volumetti di dimensione $\tau^{3N_0} = \tau^{f_0}$.\\
-In questo modo è possibile definire il numero di stati $\Gamma_0$ considerando che esso sarà proporzionale al volume della superficie $6N_0-1$ dimensionale diviso il volumetto di ciascuna cella unitaria.
+In questo modo è possibile definire il numero di stati $\Gamma_0$ aventi energia $\mathcal{E}_0$ considerando che esso sarà proporzionale al volume della superficie $6N_0-1$ dimensionale diviso il volumetto di ciascuna cella unitaria.
 \[
-	\Gamma_0 = \frac{1}{\tau^{f_0}} \int\int\int\int_{f_0}^{'}d\left\{ p_{i} \right\} d\left\{ r_{i} \right\} 
+	\Gamma_0 = \frac{1}{\tau^{f_0}} \int\int\ldots\int\int_{f_0}^{'}d\left\{ p_{i} \right\} d\left\{ r_{i} \right\} 
 .\] 
-Il valore in apice all'integrale " ' " sta ad indicare che l'integrale è fatto solo sulla superficie, mentre il pedice indica il numero di gradi di libertà su cui viene fatto l'intetgrale.\\
+Il valore in apice all'integrale " ' " sta ad indicare che l'integrale è fatto solo sulla superficie, mentre il pedice indica il numero di gradi di libertà su cui viene fatto l'integrale.\\
 Facendo questo conto di fatto stiamo assumendo che tale volumetto $\tau$ contenga un singolo stato, quindi contare il numero di stati diventa calcolare il volumetto della Shell definita sopra e dividerlo per il volume della cella unitaria.\\
 Visto che per fare il conteggio facciamo la somma dei volumetti che stanno sulla superficie avremo che questa superficie avrà un certo spessore, come se fosse una buccia di un frutto. Proprio per questo motivo si introduce una piccola indeterminazione dell'energia pari al volume della cella unitaria.\\
 Quindi potremmo fare il conto dell'integrale e poi fare il limite per $\tau \rightarrow 0$. Vedremo che questo limite non ci darà informazioni sul sistema, inducendoci a pensare che sia necessario un approccio diverso al conteggio degli stati, che è appunto quello quantistico.\\
 Definiamo intanto l'entropia e le altre quantità tenendo conto della nuova definizione di $\Gamma_0$ :
 \[
-	S_0 = kT \ln\Gamma_0 = k\ln \int\int_{f_0}^{'} d\left\{ p_{i} \right\} d\left\{ q_{i} \right\} - k \ln \left( \tau^{f_0} \right) 
+	S_0 = kT \ln\Gamma_0 = k\ln \int\ldots\int_{f_0}^{'} d\left\{ p_{i} \right\} d\left\{ q_{i} \right\} - k \ln \left( \tau^{f_0} \right) 
 .\] 
 Possiamo trovare anche l'entropia del bagno termico quando il sistema che stiamo considerando è nello stato $\alpha$: $S_{\alpha}'$. \\
 Dovremmo fare l'integrale su un'altra superficie " $''$ " che corrisponde ad una energia del bagno termico 
@@ -138,15 +140,15 @@ Dovremmo fare l'integrale su un'altra superficie " $''$ " che corrisponde ad una
 .\]
 e su dei gradi di libertà $f'$. Questi saranno i gradi di libertà del bagno termico quando il nostro sistema è nello stato $\alpha$; quindi l'entropia del bagno:
 \[
-	S_{\alpha}' = k\ln \int\int_{f'}^{''}d\left\{ p_{i} \right\} d\left\{ q_{i} \right\} - k \ln \left( \tau^{f'} \right) 
+	S_{\alpha}' = k\ln \int\ldots\int_{f'}^{''}d\left\{ p_{i} \right\} d\left\{ q_{i} \right\} - k \ln \left( \tau^{f'} \right) 
 .\] 
 Allora siamo anche in grado di trovare l'entropia del sistema semplicemente facendo la seguente sottrazione:
 \[
-	S = S_0- \overline{S'}_{\alpha}= k \ln \int\int_{f_0}^{'}d\left\{ p_{i} \right\} d\left\{ q_{i} \right\} - k\ln \int\int_{f'}^{''}d\left\{ p_{i} \right\} d \left\{ q_i \right\} - k \ln \left( \tau^{\left( f_0-f' \right) } \right)
+	S = S_0- \overline{S'}_{\alpha}= k \ln \int\ldots\int_{f_0}^{'}d\left\{ p_{i} \right\} d\left\{ q_{i} \right\} - k\ln \int\ldots\int_{f'}^{''}d\left\{ p_{i} \right\} d \left\{ q_i \right\} - k \ln \left( \tau^{\left( f_0-f' \right) } \right)
 .\] 
 Possiamo notare che $f_0- f' = f$ è proprio il numero di gradi di libertà del sistema. Noto questo compattiamo l'ultima come:
 \[
-	S = S_0- \overline{S'}_{\alpha}= k \ln \int\int_{f_0}^{'}d\left\{ p_{i} \right\} d\left\{ q_{i} \right\} - k\ln \int\int_{f'}^{''}d\left\{ p_{i} \right\} d \left\{ q_i \right\} - fk\ln\left( \tau \right) \label{eq:entropia1}
+	S = S_0- \overline{S'}_{\alpha}= k \ln \int\ldots\int_{f_0}^{'}d\left\{ p_{i} \right\} d\left\{ q_{i} \right\} - k\ln \int\ldots\int_{f'}^{''}d\left\{ p_{i} \right\} d \left\{ q_i \right\} - fk\ln\left( \tau \right) \label{eq:entropia1}
 .\] 
 Adesso risultano evidenti i problemi legati al fatto che non è lecito mandare  $\tau$ a zero, l'entropia diverge. Inoltre questo $\tau$ in linea di principio non dipende dal tipo di sistema, sembra un numero fondamentale non nullo. Si vede quindi che $\tau$ assomiglia molto alla costante di Plank $h$. \\
 Vorremmo allora passare da un oggetto che fa la somma sugli stati ad un integrale nella densità di energia, per fare questo passaggio sfruttiamo la meccanica classica:
@@ -171,7 +173,7 @@ Quindi facendo il differenziale della relazione sopra per $p$ abbiamo una relazi
 .\] 
 Di conseguenza il numero di stati $\Delta l$ sempre tra $p$ e $p + \Delta p$ lo possiamo scrivere anche come:
 \[
-	\Delta l = \frac{L}{2\pi \hbar\Delta p}
+	\Delta l = \frac{\Delta pL}{2\pi \hbar}
 .\]
 Quindi la somma sugli stati è di fatto già fatta. Questo è il numero di stati nel volume dello spazio delle fasi di dimensioni $L$ e $\Delta p$.\\
 Facciamolo classicamente:
@@ -235,7 +237,7 @@ Prendiamo delle particelle aventi la seguente legge di dispersione $\mathcal{E} 
 .\] 
 Mentre con il caso precente si aveva:
 \[
-	\rho\left( \mathcal{E} \right) = \frac{4\pi \sqrt{2} V m ^{2 /3}}{h^3} \mathcal{E}^{1 /2}
+	\rho\left( \mathcal{E} \right) = \frac{4\pi \sqrt{2} V m ^{2 /3}}{h^3} \mathcal{E}^{1 /2}d\mathcal{E}
 .\] 
 L'ultima legge di dispersione è utile per elettroni in un campo elettrico oppure per le vibrazioni in un cristallo a lunghezze d'onda lunghe (onde sonore, onde elastiche).\\
 \subsection{Calcolo dell'energia media di singola particella}%

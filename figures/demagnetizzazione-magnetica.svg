@@ -15,7 +15,7 @@
    viewBox="0 0 240 80"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="demagnetizzazione-magnetica.svg">
   <defs
      id="defs2">
@@ -317,9 +317,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.99437388"
-     inkscape:cx="467.80885"
-     inkscape:cy="222.94687"
+     inkscape:zoom="1.406257"
+     inkscape:cx="432.03078"
+     inkscape:cy="186.38933"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1-5"
      showgrid="false"
@@ -349,7 +349,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -527,65 +527,28 @@
              height="100%" />
         </g>
       </g>
-      <g
-         id="surface1-59"
-         transform="matrix(0.516154,0,0,0.516154,133.16166,254.22156)">
-        <g
-           id="g1174"
-           style="fill:#000000;fill-opacity:1">
-          <use
-             id="use1172"
-             y="20.125"
-             x="11.955"
-             xlink:href="#glyph0-1-7"
-             width="100%"
-             height="100%" />
-        </g>
-        <g
-           id="g1178"
-           style="fill:#000000;fill-opacity:1">
-          <use
-             id="use1176"
-             y="21.917999"
-             x="20.848"
-             xlink:href="#glyph1-1-23"
-             width="100%"
-             height="100%" />
-        </g>
-        <g
-           id="g1182"
-           style="fill:#000000;fill-opacity:1">
-          <use
-             id="use1180"
-             y="20.125"
-             x="28.900999"
-             xlink:href="#glyph0-2-2"
-             width="100%"
-             height="100%" />
-        </g>
-        <g
-           id="g1186"
-           style="fill:#000000;fill-opacity:1">
-          <use
-             id="use1184"
-             y="20.125"
-             x="41.329624"
-             xlink:href="#glyph0-1-7"
-             width="100%"
-             height="100%" />
-        </g>
-        <g
-           id="g1190"
-           style="fill:#000000;fill-opacity:1">
-          <use
-             id="use1188"
-             y="21.917999"
-             x="50.220001"
-             xlink:href="#glyph1-2-7"
-             width="100%"
-             height="100%" />
-        </g>
-      </g>
+      <text
+         id="text962"
+         xml:space="preserve"
+         style="font-size:2.64583325px;font-family:'Iosevka Term';-inkscape-font-specification:'Iosevka Term, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="4.5972099"
+         y="217.90239"><tspan
+           id="tspan960"
+           sodipodi:role="line"
+           x="4.5972099"
+           y="220.24333"
+           style="stroke-width:0.26458332" /></text>
+      <text
+         id="text948"
+         xml:space="preserve"
+         style="font-size:2.64583325px;font-family:'Iosevka Term';-inkscape-font-specification:'Iosevka Term, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="150.21509"
+         y="251.74686"><tspan
+           id="tspan946"
+           sodipodi:role="line"
+           x="150.21509"
+           y="251.74686"
+           style="stroke-width:0.26458332">$B_2 &gt; B_1$</tspan></text>
     </g>
   </g>
 </svg>

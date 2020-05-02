@@ -14,10 +14,10 @@ Vediamo allora fino a che punto possiamo spingerci nel trattare sistemi generici
 Partiamo dalla funzione di partizione, questa si scrive in generale come:
 
 \[
-	Z = \frac{1}{\left( 2\pi \hbar  \right) ^{3N}N!} \int \int \exp\left( -\frac{\mathcal{E}}{kT} \right) d\left\{ p_{i} \right\} d\left\{ r_{i} \right\} 
+	Z = \frac{1}{\left( 2\pi \hbar  \right) ^{3N}N!} \int \int \exp\left( -\frac{E}{kT} \right) d\left\{ p_{i} \right\} d\left\{ r_{i} \right\} 
 .\] 
-Dove abbiamo inserito l'energia grande perchè questa è riferita a molti corpi, non a singola particella.\\
-Adesso quindi consideriamo come energia totoale del sistema la seguente:
+Dove abbiamo inserito l'energia grande perché questa è riferita a molti corpi, non a singola particella.\\
+Adesso quindi consideriamo come energia totale del sistema la seguente:
 \[
 	E=\sum_{i =1}^{3N} \frac{p_{i}^2}{2m} + U\left(  r_{i}  \right) 
 .\] 
@@ -87,8 +87,8 @@ Nell'ultima abbiamo introdotto la z che è detta fugacità. La fugacità è defi
 .\] 
 \subsection{Fluttuazioni}%
 Parliamo adesso delle fluttuazioni, abbiamo detto che il nostro metodo funziona nel limite in cui i valori medi ed i più probabili delle nostre grandezze termodinamiche coincidono e che la distribuzione di probabilità sia estremamente piccata nel punto di maggiore probabilità.\\
-Quindi cerchiamo di stimare quali sono il limiti di applicabilità del nostro modello. Indaghiamo inoltre qual'è la probabilità di trovare una fluttuazione: una differenza rispetto al volore medio atteso.\\
-\paragraph{FLuttuazioni dell'energia.}%
+Quindi cerchiamo di stimare quali sono il limiti di applicabilità del nostro modello. Indaghiamo inoltre qual'è la probabilità di trovare una fluttuazione: una differenza rispetto al valore medio atteso.\\
+\paragraph{Fluttuazioni dell'energia.}%
 Ad esempio possiamo isolare il nostro sistema, fin'ora all'equilibrio con il bagno termico, misuriamo la sua energia. Ci aspettiamo di trovare sempre la stessa energia tranne qualche fluttuazione che adesso andiamo appunto a stimare. \\
 Abbiamo detto che l'energia totale è
 \[
@@ -98,7 +98,7 @@ Ipotizziamo adesso di fissare una energia per il sistema. Come abbiamo visto, ne
 \[
 	\left( P^* \right)^2 = 2mE = \sum_{i}^{} p_{i}^2
 .\] 
-La probabilità di trovare il nostro sistema conuna certa energia è la stessa della scorsa lezione:
+La probabilità di trovare il nostro sistema con una certa energia è la stessa della scorsa lezione:
 \[
 	W\left( E \right) = \frac{1}{Z}\rho\left( E \right) \exp\left( -\frac{E}{kT} \right) 
 .\] 
@@ -119,7 +119,7 @@ Quindi se il raggio di tale sfera nello spazio delle fasi è $P^*$ allora possia
 .\] 
 Se consideriamo un $\delta E$ sufficientemente piccolo allora possiamo sviluppare $\delta V^{*}$:
 \begin{align}
-	\rho\left( E \right) \delta E \propto& \frac{\partial V^*}{\partial E}  \propto\\
+	\rho\left( E \right) \delta E \propto& \frac{\partial V^*}{\partial E}\delta E  \propto\\
 	\propto &\left( P^* \right) ^{3N-1}\frac{\partial P^*}{\partial E} \delta E \propto\\
 	\propto &\left( E^{1 / 2} \right) ^{3N-1}E^{- 1 / 2} \delta E
 .\end{align}
@@ -127,7 +127,7 @@ Dove nell'ultimo passaggio si è sfruttato il fatto che $\left( P^{*} \right) \p
 \[
 	\rho\left( E \right) \delta E \propto E ^{\frac{3N}{2} -1}\delta E 
 .\] 
-Questo risultato è coerente con il fatto che inserendo una singola particella riotteniamo $\rho\left( E \right) \propto E^{1 /2}$ come discusso nella lezione precedente.\\
+Questo risultato è coerente con il fatto che inserendo una singola particella ri-otteniamo $\rho\left( E \right) \propto E^{1 /2}$ come discusso nella lezione precedente.\\
 Quindi il nostro $W \left( E \right) $ può essere scritto come:
 \[
 	W\left( E \right)  = C^{N} E^{\left( \frac{3N}{2}-1 \right)}\exp\left( -\frac{E}{kT} \right) 

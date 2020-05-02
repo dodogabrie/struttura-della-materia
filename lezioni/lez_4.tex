@@ -172,7 +172,7 @@ Ci sono dei modi per correggere la situazione invece nel caso di particelle indi
 Sarebbe comunque bello vedere se ci sono dei regimi in cui sia possibile usare la nostra Z introducendo una convenzione per rimuovere il doppio conteggio, oppure trovare delle situazioni in cui le particelle sono davvero distinguibili.\\
 Vediamo adesso il secondo caso: quello delle particelle distinguibili.\\
 \subsection{Solido cristallino con campo magnetico}%
-Prendiamo un solido cristallino, le particelle sono fissate a stare all'interno del cristallo in una certa posizione fissa. Proviamo a fare i conti per questo sistema considerando un sistema di spin nucleari in un solido. Supponiamo che in nuclei abbiano Spin $\pm 1 /2$ e ci mettiamo un campo magnetico. Le particelle, fissate sul reticolo cristallino, saranno distinguibili perchè si orienteranno a seconda del loro spin!\\
+Prendiamo un solido cristallino, le particelle sono fissate a stare all'interno del cristallo in una certa posizione fissa. Proviamo a fare i conti per questo sistema considerando un sistema di spin nucleari in un solido. Supponiamo che in nuclei abbiano Spin $\pm 1 /2$ e ci mettiamo un campo magnetico. Le particelle, fissate sul reticolo cristallino, saranno distinguibili perché si orienteranno a seconda del loro spin!\\
 I livelli energetici saranno:
 \[
 	E = \pm \mu B
@@ -234,7 +234,8 @@ L'andamento della funzione è il seguente:
     \label{fig:entropia-per-sistema-con-due-spin}
 \end{figure}
 \noindent
-L'abbiamo graficata in funzione di $T$, è interessante vedere quello che succede alla curva al variare di $B$:
+L'abbiamo graficata in funzione di $T$, notiamo che il limite asintotico è quello in cui $Z_1 = 2$, ovvero le temperature diventano così grandi da poter considerare $kT \gg \mu B$. \\
+Possiamo vedere cosa succede alla curva al variare di $B$:
 \begin{figure}[H]
     \centering
     \incfig{demagnetizzazione-magnetica}
@@ -243,8 +244,8 @@ L'abbiamo graficata in funzione di $T$, è interessante vedere quello che succed
 \end{figure}
 \noindent
 Se il campo magnetico è maggiore vuol dire che i due livelli sono maggiormente separati e l'entropia è minore\footnote{O meglio, per avere la stessa entropia con i due campi magnetici dovrei essere a temperatura maggiore, vista la dipendenza di S. Tuttavia qua T è fissata\ldots}.\\
-La demagnetizzazione adiabatica funziona in queso modo: prendiamo un oggetto alla temperatura $T_{\text{in}}$ a contatto con un bagno termico,  aumentiamo il campo magnetico facendo una traslazione verticale nel grafico precedente (Trasformazione (1) in \hyperref[fig:demagnetizzazione-adiabatica-1]{Figura 19}).\\
-A questo punto scolleghiamo il cristallo dal mondo esterno isoldolo, spengiamo il campo magnetico fino a tornare a quello di partenza. \\
+La demagnetizzazione adiabatica funziona in questo modo: prendiamo un oggetto alla temperatura $T_{\text{in}}$ a contatto con un bagno termico, aumentiamo il campo magnetico facendo una traslazione verticale nel grafico precedente (Trasformazione (1) in \hyperref[fig:demagnetizzazione-adiabatica-1]{Figura 19}).\\
+A questo punto scolleghiamo il cristallo dal mondo esterno isolandolo, spegniamo il campo magnetico fino a tornare a quello di partenza. \\
 Quest'ultima trasformazione è adiabatica, quindi isoentropica. Per tornare alla situazione iniziale quindi abbiamo necessariamente raffreddato il cristallo (trasformazione (2) in \hyperref[fig:demagnetizzazione-adiabatica-1]{Figura 19}).
 \begin{figure}[H]
     \centering
@@ -253,7 +254,7 @@ Quest'ultima trasformazione è adiabatica, quindi isoentropica. Per tornare alla
     \label{fig:demagnetizzazione-adiabatica-1}
 \end{figure}
 \noindent
-Il rapporto seguente sarà lasicato invariato dalla trasformazione:
+Il rapporto seguente sarà lasciato invariato dalla trasformazione:
 \[
 	\frac{B_2}{T_{in}} = \frac{B_1}{T_{fin}}
 .\] 
@@ -261,16 +262,19 @@ Quindi
 \[
 	T_{f} = T_{i}\cdot \frac{B_1}{B_2}
 .\] 
-La fregatura è che $B_1=0$ non si può fare, anche se mettiamo il campo esterno a zero nella posizine di ogni singolo magnete non avremo mai $B = 0$ per via della magnetizzazione interna nel solido che non può essere spenta.\\
+Praticamente si trasferisce energia convertendo il disordine del sistema: da disordine termico a disordine "magnetico" di orientazione dei dipoli, si capisce bene che si tratta di una tecnica molto raffinata ed ingegnosa.\\
+La fregatura è che $B_1=0$ non si può fare, anche se mettiamo il campo esterno a zero nella posizione di ogni singolo magnete non avremo mai $B = 0$ per via della magnetizzazione interna nel solido che non può essere spenta.\\
 \subsection{Correzione al conteggio degli stati eliminando i conteggi ripetuti.}%
+\subsubsection{Conteggio delle particelle}%
+\label{subsub:Conteggio delle particelle}
 Cerchiamo adesso di correggere il modo di contare cercando di evitare gli stati che contiamo più di una volta.\\
 Prendiamo un sistema contenente N particelle, utilizzando la tecnica che ci ha portati alla funzione di partizione Z conteremo gli stati più di una volta e come accennato prima questo conteggio risulta incorretto sulla base della meccanica quantistica.\\
-Per provare a buttare giu una correzione al metodo continuiamo a considerare particelle distinguibili.\\
+Per provare a buttare giù una correzione al metodo continuiamo a considerare particelle distinguibili.\\
 Mettiamoci in condizione di avere l'energia media del sistema molto grande, tale che:
 \[
 	\frac{E}{N} = \mathcal{E} 
 .\] 
-Quindi dobbiamo essere nella situazione in cui il numero di stati per singola particella avente energia $\mathcal{E}$ sia molto maggiore del numero di particelle \footnote{Essenzialmente tutte le particelle potrebbero stare sus tati diversi.}, questo significa avere poche particelle per unità di volume e temperature elevate.\\
+Quindi dobbiamo essere nella situazione in cui il numero di stati per singola particella avente energia $\mathcal{E}$ sia molto maggiore del numero di particelle \footnote{Essenzialmente tutte le particelle potrebbero stare su stati diversi.}, questo significa avere poche particelle per unità di volume e temperature elevate.\\
 Se prendiamo un qualunque stato la probabilità di trovarlo occupato è bassa, mentre è nulla quella di trovarlo con più di una particella.\\
 In questo caso sappiamo come correggere il conto: ad ogni particella attribuiamo uno stato diverso, ad esempio associando un numero a ciascuna particella possiamo disporle come si dispongono N palline su uno scaffale pieno di spazio senza poterne mettere due sullo stesso posto:
 \begin{align}
@@ -281,10 +285,12 @@ In questo caso sappiamo come correggere il conto: ad ogni particella attribuiamo
 	&N \implies 1 \text{ possibilità}
 .\end{align}
 Quindi abbiamo la correzione nel caso di particelle indistinguibili.
+\begin{defn}[Funzione di partizione di Boltzmann]{deft:Funzione di partizione di Boltzmann}
 \[
 	Z_{N} = \frac{Z_1^{N}}{N!}
 .\] 
-Quella che facciamo è una approssimazione, stiam correggendo per tutti gli stati nella funzione di partizione, anche ad esempo per il fontamentale in cui non c'era da corregere niente. Inoltre stiamo ancora guardando al picco della nostra distribuzione in energia nel conteggio degli stati.\\
+\end{defn}
+Quella che facciamo è una approssimazione, stiamo correggendo per tutti gli stati nella funzione di partizione, anche ad esempio per il fondamentale in cui non c'era da correggere niente. Inoltre stiamo ancora guardando al picco della nostra distribuzione in energia nel conteggio degli stati.\\
 Questo tipo di funzione di partizione si chiama funzione classica o funzione di partizione di Boltzmann. Un sistema in queste condizioni si chiama \textit{Gas ideale}.
 \begin{itemize}
 	\item Gas perfetto: assenza di interazioni.
@@ -294,7 +300,7 @@ Quindi avremo per esempio che
 \[
 	F = -NkT \ln \left( Z_1 \right) + kT \ln N!
 .\] 
-Con cui possiamo calcolare l'entropia:
+Con la quale sarebbe possibile ad esempio calcolare l'entropia:
 \[
 	S = - \frac{\partial F}{\partial T} 
 .\] 
@@ -310,25 +316,28 @@ Tenendo conto del fatto che $V = L^3$ e che l'energia della singola particella �
 .\] 
 dove abbiamo fatto:
 \[
-	\frac{\partial \mathcal{E}_{q}}{\partial V} = -\frac{2}{3}\frac{V^{-2 /3}}{V}\cdot \alpha\cdot  \mathcal{E}_{q}
+    \frac{\partial \mathcal{E}_{q}}{\partial V} = -\frac{2}{3}\frac{V^{-2 /3}}{V}\cdot \alpha \propto -\frac{2}{3}\frac{\mathcal{E}_{q}}{V} 
 .\] 
 proseguendo il conto
+\begin{fact}[Relazione dei gas ideali]{fact:Relazione dei gas ideali}
 \[
 	P = \frac{2}{3}\frac{N}{V}\overline{\mathcal{E}} \quad \quad \text{con} \quad \quad \overline{\mathcal{E}} = \frac{\sum_{q}^{\infty} \mathcal{E}_{q}\exp\left( - \frac{\mathcal{E}_{q}}{kT} \right) }{Z_1}
 .\] 
-Abbiamo una relazione per P che vale per tutti i gas ideali.\\
+\end{fact}
 Possiamo passare al caso continuo  imponendo degli integrali su $\mathcal{E}$ per una singola particella:
 \[
 	\overline{\mathcal{E}} = \frac{\int_{0}^{\infty} \mathcal{E}\cdot  \rho\left( \mathcal{E} \right) \exp\left( -\frac{\mathcal{E}}{kT} \right) d\mathcal{E}}{\int_{0}^{\infty}\rho\left( \mathcal{E} \right) \exp \left( -\frac{\mathcal{E}}{kT} \right) d\mathcal{E}}
 .\] 
+\subsubsection{Conteggio degli stati}%
+\label{subsub:Conteggio degli stati}
 Facciamo adesso il conto con un altro metodo: contando per ogni stato di singola particella quante particelle ci sono.\\
-Adesso abbiamo considerato il sistema di N particelle come un insieme di tanti sistemini composti da una singola particella e applicando le opportune correzioni. Adesso invece di prendere come insiemi la singola particella prendiamo insiemi di un singolo stato. In questo modo il nostro sistema risulta idenditficato dal $\overline{q}$.\\
-In questo caso ragioniamo per un numero di particelle di un sottosistema variabile $N_{\overline{q}}$, l'energia dello stato di questo sistema sarà:
+Adesso abbiamo considerato il sistema di N particelle come un insieme di tanti sistemino composti da una singola particella e applicando le opportune correzioni. Invece di prendere come insiemi la singola particella prendiamo insiemi di un singolo stato. In questo modo il nostro sistema risulta identificato dal $\overline{q}$.\\
+In questo caso ragioniamo per un numero di particelle di un sottosistema variabile $n_{\overline{q}}$, l'energia dello stato di questo sistema sarà:
 \[
 	 \mathcal{E}_{\overline{q}}\cdot n_{\overline{q}}
 .\] 
 Ovvero l'energia dello stato per il numero di particelle che ci stanno dentro. Quali saranno gli stati per questo sotto-sistema \footnote{Che ricordiamo essere uno stato.}?\\
-Saranno (1 particella, 2 particelle, ecc\ldots) ovvero quante particelle ci sono nello statto  $\overline{q}$.\\
+Saranno (1 particella, 2 particelle, ecc\ldots) ovvero quante particelle ci sono nello stato  $\overline{q}$.\\
 Il potenziale di Landau $\Omega_{\overline{q}}$ del singolo sottosistema $\overline{q}$ sarà:
 \[
 	\Omega_{\overline{q}} = - kT 
@@ -339,7 +348,7 @@ A questo punto la $\Omega$ del sistema completo sarà la somma delle $\Omega_{\o
 	\Omega = \sum_{q}^{} \Omega_{q}
 .\] 
 Le ultime due che abbiamo scritto sono "corrette" per particelle indistinguibili e le useremo per tutti i regimi, quantistici e classici.\\ 
-Facciamo su queste le approssiamazioni di gas ideale, per ogni $q$ :
+Facciamo su queste le approssimazioni di gas ideale, per ogni $q$ :
 \[
 	W\left( n_{q}=0 \right) \sim 1 
 .\] 

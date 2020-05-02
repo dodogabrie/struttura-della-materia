@@ -1,0 +1,355 @@
+\lez{27}{25-04-2020}{}
+Abbiamo visto nella scorsa lezione il moto di precessione del vettore $\v{R}$
+\[
+    \frac{\text{d} \v{R}}{\text{d} t} = \v{R}\times \v{B}
+.\] 
+attorno al vettore $\v{B}$:
+\[
+\v{B}=\begin{pmatrix} \Omega_R \\ 0 \\ \delta \end{pmatrix}
+.\] 
+Dobbiamo adesso aggiungere alla equazione dei termini fenomenologicamente per tornare alla condizione di equilibrio in modo esponenziale.\\
+Per le due componenti $R_1$ e $R_2$ il termine di rilassamento lo chiamiamo $\gamma_{\perp}$ e lo mettiamo uguale per entrambe:
+\[\begin{aligned}
+    &\frac{\text{d} R_1}{\text{d} t} = -\gamma_\perp R_1\\
+    &\frac{\text{d} R_2}{\text{d} t} = -\gamma_{\perp}R_2
+.\end{aligned}\]
+Visto che $R_1$  e $R_2$  sono parte reale e parte immaginaria delle coerenze (i termini fuori diagonale della matrice densità), hanno a che fare con la fase del sistema quantistico quindi $\gamma_\perp$ sono i Rate per cui il sistema perde informazioni sulla fase. \\
+Abbiamo scritto due equazioni che danno un decadimento esponenziale in $t$, questo ha senso perché ci aspettiamo che per $t\to \infty$  i termini fuori diagonale della matrice densità siano zero (dipolo nullo all'equilibrio termodinamico).\\
+Per le popolazioni $R_3$  (il termine diagonale della matrice densità) introduciamo un $\gamma_{\parallel}$:
+\[
+    \frac{\text{d} R_3}{\text{d} t} =-\gamma_\parallel \left(R_3-R_3^0\right)
+.\] 
+Questo perché possiamo aspettarci che il rate per cui si perde l'informazione sulla coerenza del sistema sia diverso dal rate di dissipazione per cui si perde energia. \\
+Nella equazione abbiamo che $R_3^0$ è la differenza di popolazioni $\rho_{11}$  e $\rho_{22}$  all'equilibrio termodinamico.
+In generale ci aspettiamo che $\gamma_{\perp}>\gamma_\parallel$, questo perché la fase si perde molto più rapidamente dell'energia in generale. Esistono dei sistemi in cui non è vero, ed esempio se il processo che ci  riporta all'equilibrio è soltanto l'emissione spontanea. Tale emissione è regolata dal parametro $A_{12}$:
+\[\begin{aligned}
+&\frac{\text{d} N_1}{\text{d} t} = -A_{12}N_1\\
+&\frac{\text{d} N_2}{\text{d} t} = -A_{21}N_2	
+.\end{aligned}\]
+In questo caso quindi possiamo assumere $\gamma_\parallel = -A_{12}$:
+\[
+    \frac{\text{d} R_3}{\text{d} t} = -A_{12}\left(R_3+1\right)
+.\] 
+In cui abbiamo preso frequenze ottiche (visibile) ed abbiamo approssimato tutti gli atomi nel fondamentale quindi $R_3^0 = -1$. 
+$A_{12}$  è il decadimento del modulo quadro dell'ampiezza, per la singola ampiezza invece:
+\[
+\frac{\text{d} a_1}{\text{d} t} = \frac{A_{12}}{2}a_1
+.\] 
+Inserendo questa forma di decadimento per le ampiezze di probabilità troviamo che per $R_1$  e $R_2$  si ha che $\gamma_\perp  = \gamma_\parallel /2$ (ricordiamo che vale solo nel caso di emissione spontanea questo) .\\
+Le equazioni complete sono allora le seguenti:
+\begin{defn}[Equazioni di Bloch ottiche]{defn:Equazioni di Bloch ottiche}
+\[\begin{aligned}
+    &\frac{\text{d} R_1}{\text{d} t} = \left(\omega-\omega_{12}\right)R_2
+    - \gamma_\perp R_1\\
+    &\frac{\text{d} R_2}{\text{d} t} = - \left(\omega-\omega_{12}\right)R_1 +
+    \frac{pE_0}{\hbar }R_3-\gamma_\perp R_2\\
+    &\frac{\text{d} R_3}{\text{d} t} = -\frac{pE_0}{\hbar }R_2 - 
+    \gamma_\parallel\left(R_3-R_3^0\right)
+.\end{aligned}\]
+\end{defn}
+Queste descrivono l'evoluzione di un sistema a due livelli termodinamico in interazione che il campo elettromagnetico e con dei processi di rilassamento che lo riportano verso l'equilibrio. 
+Queste sono più generali dei processi di Rate perché ci dicono anche come evolvono gli elementi fuori diagonale.\\
+Le soluzioni in funzioni del tempo dipenderanno dalle condizioni iniziali, l'evoluzione dipenderà dalla interazione con il campo elettromagnetico combinata con l'effetto dei termini di rilassamento che tendono a riportare il sistema verso l'equilibrio.\\
+Qualitativamente se partiamo all'istante iniziale con $R_1^0=0$, $R_2^0 = 0$ e $R_3^0= -1$ ci aspettiamo che inizi una evoluzione stile oscillazioni di Rabi ma nel frattempo agisca anche il rilassamento che tenderà a smorzare questo andamento oscillatorio. A tempi lunghi ci si aspetta che tale andamento sia scomparso e che avremo delle soluzioni stazionarie, tali soluzioni ci diranno come sono cambiate le popolazioni e le coerenze del nostro sistema dovute alle interazioni con il campo elettromagnetico e saranno diverse dai valori che avevamo prima all'equilibrio termodinamico. \\
+Possiamo trovare tali soluzioni a tempi lunghi imponendo che il sistema sia stazionario:
+\[
+\frac{\text{d} R_1}{\text{d} t} =\frac{\text{d} R_2}{\text{d} t} = 
+\frac{\text{d} R_3}{\text{d} t} =0
+.\] 
+In questo modo si trova 
+\[\begin{aligned}
+    &R_1 = \frac{1}{\gamma_\parallel}\left(\omega-\omega_{12}\right)R_2\\
+    &R_2=\frac{pE_0}{\hbar }
+    \frac{\gamma_\perp}{\gamma_\perp^2+\left(\omega-\omega_{12}\right)^2}R_3\\
+    &R_3+1=-\frac{pE_0}{\hbar  }\frac{1}{\gamma_\parallel}R_2 =
+    -\frac{\left(\frac{pE_0}{\hbar }\right)^2
+	\frac{\gamma_\perp}
+    {\gamma_\parallel}}{\gamma_\perp +\left(\omega-\omega_{12}^2\right)}R_3
+.\end{aligned}\]
+Possiamo risolvere queste 3 equazioni ottenendo:
+\[\begin{aligned}
+    &R_1= \frac{-\frac{pE_0}{\hbar  }\frac{1}{\gamma_\perp^2}
+    \left(\omega-\omega_{12}\right)}
+    {1+\frac{1}{\gamma_\perp^2}\left(\omega-\omega_{12}\right)^2 
+    + \left(\frac{pE_0}{\hbar }\right)^2 
+	\frac{1}{\gamma_\perp\gamma_\parallel}}\\
+    &R_2 = \frac{- \frac{pE_0}{\hbar }\frac{1}{\gamma_\perp}}
+{1+\frac{1}{\gamma_\perp^2}\left(\omega-\omega_{12}\right)^2 
+    + \left(\frac{pE_0}{\hbar }\right)^2 
+	\frac{1}{\gamma_\perp\gamma_\parallel}}\\
+    &R_3 = - \frac{1+ \frac{1}{\gamma_\perp^2\left(\gamma-\gamma_{12}\right)^2}}
+    {1+\frac{1}{\gamma_\perp^2}\left(\omega-\omega_{12}\right)^2 
+    + \left(\frac{pE_0}{\hbar }\right)^2 
+	\frac{1}{\gamma_\perp\gamma_\parallel}}
+.\end{aligned}\]
+Possiamo anche scriverle in maniera più compatta con il parametro che ci caratterizza l'intensità della radiazione che incide sul sistema, ricordiamo intanto che valgono le formule:
+\[\begin{aligned}
+&u = \frac{E_0^2}{8\pi}\\
+&I = cu = c \frac{E_0^2}{8\pi}
+.\end{aligned}\]
+Definiamo allora l'intensità di saturazione:
+\[
+I_s = \frac{\hbar ^2}{8\pi}\frac{c\gamma_\perp\gamma_\parallel}{p^2}
+.\] 
+Otteniamo così le nuove $R_i$:
+\[\begin{aligned}
+    &R_1= \frac{-\frac{\omega-\omega_{12}}{\gamma_\perp^2}}
+    {1+ \frac{\left(\omega-\omega_{12}\right)^2}{\gamma_\perp^2}
+    + \frac{I}{I_s}} 
+    \frac{pE_0}{\hbar }\\
+    &R_2 = \frac{-\frac{1}{\gamma_\perp}}
+    {1+ \frac{\left(\omega-\omega_{12}\right)^2}{\gamma_\perp^2}
+    + \frac{I}{I_s}}
+    \frac{pE_0}{\hbar }\\
+    &R_3= 
+    \frac{-\left(1+ 
+    \frac{\left(\omega-\omega_{12}\right)^2}{\gamma_\perp^2}\right)}
+    {1+ \frac{\left(\omega-\omega_{12}\right)^2}{\gamma_\perp^2}
+    + \frac{I}{I_s}}
+.\end{aligned}\]
+Partiamo da $R_3$: la differenza delle due popolazioni. In assenza di campo EM abbiamo $R_3^0 = -1$ quindi $N_1^0 =0$ e $N_2^0 = N$.\\
+In generale abbiamo che la formula per $R_3$ diventa:
+\[
+    R_3= 
+    \frac{
+    1+\frac{\left(\omega-\omega_{12}\right)^2}{\gamma_\perp^2}}
+    {1+ \frac{\left(\omega-\omega_{12}\right)^2}{\gamma_\perp^2}
+    + \frac{I}{I_s}}
+    \frac{N_1^0-N_2^0}{N}
+.\]
+Possiamo allora trovare la differenza delle popolazioni moltiplicando a destra e sinistra di quest'ultima equazione per $N$:
+\[
+N_1-N_2 = 
+    \frac{
+    1+\frac{\left(\omega-\omega_{12}\right)^2}{\gamma_\perp^2}}
+    {1+ \frac{\left(\omega-\omega_{12}\right)^2}{\gamma_\perp^2}
+    + \frac{I}{I_s}}
+    \left(N_1^0-N_2^0\right)
+.\] 
+Se siamo a risonanza (frequenza della radiazione esattamente uguale a quella della transizione) allora i termini con $\omega_{12}$  si annullano e rimane l'andamento di saturazione trovato con le equazioni di rate.
+\[
+N_1-N_2= \frac{N_1^0 -N_2^0}{1+\frac{I}{I_s}}
+.\] 
+Se invece abbiamo che $\omega\neq \omega_{12}$ allora abbiamo lo stesso andamento di sopra ma l'intensità di saturazione $I_s$ va aumentata di un fattore:
+\[
+    I_s \to
+    I_s \left(1+ \frac{\left(\omega-\omega_{12}\right)^2}{\gamma_\perp^2}\right)
+.\] 
+Quindi l'intensità di saturazione se $\omega$ non è risonante con l'energia della transizione diventa sempre più grande, questo torna perché più siamo distanti dalla energia della transizione e meno il nostro sistema assorbe la radiazione e quindi ci vuole una maggiore intensità a saturarlo.\\
+Vediamo adesso cosa succede a $R_1$ ed $R_2$ in funzione di $\omega$:
+\begin{figure}[ht]
+    \centering
+    \incfig{andamento-di-r1-e-r2-in-funzione-di-w}
+    \caption{Andamento di $R_1$  e $R_2$  in funzione di $\omega$.}
+    \label{fig:andamento-di-r1-e-r2-in-funzione-di-w}
+\end{figure}
+Vediamo che $R_2$ ha la forma di una Lorentziana invertita, mentre $R_1$ è una Lorentziana moltiplicata per $\omega_{12}-\omega$. La larghezza della Lorentziana è:
+\[
+    \Delta\omega =2\gamma_\perp\sqrt{1+\left(\frac{pE_0}{\hbar }\right)^2 
+    \frac{1}{\gamma_\perp\gamma_\parallel}} =
+    2\gamma_\perp  \sqrt{1+ \frac{I}{I_s}} 
+.\] 
+Nel limite in cui il campo elettro magnetico è poco intenso ($\frac{I}{I_s}\to 0$) la Lorentziana è larga $2\gamma_\perp$. Se aumentiamo l'intensità la Lorentziana si allarga progressivamente. \\
+Queste forme sono interessanti perché $R_1$ ed $R_2$ sono legate al valore di aspettazione del dipolo:
+\[
+    \left<\v{p}\right> = Np\left(\rho_{12}+\rho_{21}\right)\hat{e}
+.\] 
+Quindi se lo riscriviamo in termini di $R_1$ ed $R_2$ si ha:
+\[
+    \left<\v{p}\right>= p \frac{N}{2} 
+    \left[\left(R_1+iR_2\right)e^{i\omega t}
+    +
+    \left(R_1-iR_2\right)e^{-i\omega t}\right]
+.\] 
+Visto che il valor medio del dipolo in un sistema è la polarizzazione abbiamo che questa può essere scritta come:
+\[
+\v{P}= \frac{1}{2}P_0e^{i\omega t} + CC
+.\] 
+Quindi confrontando il valor medio del dipolo con questa (che si ottiene invece dalle equazioni di Maxwell):
+\[\begin{aligned}
+    &Re(P) =P_{0,R}= pN R_1\\
+    &Imm(P) =P_{0,I}= pNR_2
+.\end{aligned}\]
+Quindi $R_1$ e $R_2$ sono la parte reale e la parte immaginaria della polarizzazione del materiale investito dall'onda elettromagnetica. \\
+Nel caso generale possiamo allora scrivere che:
+\[\begin{aligned}
+    &P_{0,R} = \frac{N_1^0-N_2^0}{\hbar }p^2E_0 
+    \frac{\frac{\left(\omega-\omega_{12}\right)}{\gamma_\perp^2}}
+    {1+\frac{\left(\omega-\omega_{12}\right)^2}{\gamma_\perp^2}
+    + \frac{I}{I_s}}\\
+    &P_{0,I} = \frac{N_1^0-N_2^0}{\hbar }p^2E_0 
+    \frac{\frac{1}{\gamma_\perp}}
+    {1+\frac{\left(\omega-\omega_{12}\right)^2}{\gamma_\perp^2}
+    + \frac{I}{I_s}}
+.\end{aligned}\]
+Nelle equazioni di Maxwell possiamo scrivere la polarizzazione come 
+\[
+    P_0 = \epsilon\left(\chi'-i\chi''\right)E_0
+.\] 
+In cui le $\chi$ che abbiamo introdotto (la suscettività) non sono termini lineari (abbiamo la dipendenza dall'intensità), troviamo quindi tali suscettività tramite le nostre equazioni.\\
+Quindi le quantità $R_1$  e $R_2$   ci dicono come è fatto l'indice di rifrazione e l'assorbimento del materiale visto che si ha:
+\[
+    \epsilon = \epsilon_0\left(1+\chi\right)
+.\] 
+Inoltre:
+\[
+n+in = \sqrt{\epsilon} 
+.\] 
+Quindi la $\chi'$  che è la parte reale della polarizzazione ci dice come cambia la propagazione (come cambia il $\v{k}$ della radiazione mentre si propaga nella materia), la parte immaginaria ($R_2$) ci dice come è fatto il coefficiente di assorbimento del materiale. \\
+Abbiamo allora che il coefficiente di assorbimento è una Lorentziana in funzione di $\omega$ con larghezza $2\gamma_\perp$
+\footnote{Questa volta non ribaltata ovviamente} (che aumenta per intensità elevate), invece il contributo alla parte reale della $\epsilon$ è la Lorentziana truccata vista nella immagine precedente, quest'ultima ci dice come si modifica l'indice di rifrazione del materiale.\\
+Le soluzioni stazionarie delle equazioni di Bloch ci dicono come sono fatte le popolazioni e come si modificano rispetto a quelle senza campo elettrico ma ci dicono anche come sono fatte le costanti ottiche del materiale e come si modifica di conseguenza la propagazione del campo elettromagnetico.\\
+Nel modello che abbiamo costruito
+\footnote{Valido per i sistemi a due livelli} devono essere contenute le equazioni di Rate (che sono le approssimazioni di questo modello che scartano la parte coerente). Il principio base delle equazioni di rate era il fatto che:
+\[
+    \frac{\text{d} \left(N_1-N_2\right)}{\text{d} t} = 
+    -2 P_{1\to 2}\left(N_1-N_2\right)
+.\] 
+Nella ipotesi che $P_{1\to 2}= P_{2\to 1}$ (si trascura quindi l'emissione spontanea). Confrontiamo questa con quella trovata per $R_3$:
+\[
+\frac{\text{d} R_3}{\text{d} t} =
+\frac{1}{N} \frac{\text{d} \left(N_1-N_2\right)}{\text{d} t} =
+- p \frac{E_0}{\hbar }R_2-\gamma_\parallel\left(R_3+1\right)
+.\] 
+Dove ci siamo messi nella ipotesi in cui $R_3^0 = 1$, il termine con $\gamma_\parallel$ è il rilassamento, ne segue che il nostro $P_{1\to 2}$ deve essere il termine con $R_2$.\\
+Per recuperare l'equazione di Rate dobbiamo supporre che $R_2$ sia stazionario.
+Ricordiamo che siamo già nelle ipotesi in cui $\gamma_\perp\gg\gamma_\parallel$, quindi gli elementi fuori diagonale sono già a stazionarietà prima che vi arrivino gli elementi diagonali ($R_3$). Possiamo allora mettere nell'ultima equazione di rate il valore di $R_2$ a stazionarietà:
+\[
+    R_2 = \frac{pE_0}{\hbar } 
+    \frac{\gamma_\perp}{\gamma_\perp^2 + \left(\omega-\omega_{12}\right)^2}R_3
+.\] 
+Si lavora inoltre nelle ipotesi $I\ll I_s$.\\
+Abbiamo allora che:
+\[
+\frac{\text{d} R_3}{\text{d} t} =
+\left(p \frac{E_0}{\hbar }\right)^2 
+\frac{\gamma_\perp}
+{\gamma_\perp^2+\left(\omega-\omega_{12}\right)^2}
+R_3-\gamma_\parallel\left(R_3+1\right)
+.\] 
+Confrontando questo oggetto con l'equazione di rate il primo termine dopo l'uguale deve essere la probabilità $P_{1\to 2}$, raccogliendo un $2\pi /\hbar ^2$ si ha:
+\[
+    P_{1\to 2}=P_{2\to 1} =
+    \frac{2\pi}{\hbar ^2} 
+    \frac{2\gamma_\perp}
+    {\gamma_\perp^2+\left(\omega-\omega_{12}\right)^2}
+    p^2 \frac{E_0^2}{8\pi}
+.\] 
+Confrontando questa con l'espressione per la regola d'oro di Fermi
+\footnote{Sempre nelle ipotesi di coerenze stazionarie con $\gamma_\perp\gg\gamma_\parallel$}
+ si ottiene che:
+\[
+    g(\omega-\omega_{12}) = \frac{1}{\pi}
+    \frac{\gamma_\perp}
+    {\gamma_\perp^2+\left(\omega-\omega_{12}\right)^2}
+.\] 
+Oppure possiamo scriverla per la frequenza:
+\[
+    g(\nu-\nu_{12}) = 
+    \frac{2\gamma_\perp}
+    {\gamma_\perp^2+\left(\nu-\nu_{12}\right)^24\pi^2}
+.\] 
+Abbiamo quindi una espressione per la larghezza di riga $g(\nu-\nu_{12})$ che avevamo fenomenologicamente inserito nella nostra espressione della regola d'oro di Fermi. Quando abbiamo introdotto tale regola abbiamo detto che questa $g$ descriveva la distribuzione degli stati mentre qui abbiamo trovato che esiste una $g$ anche in presenza di due soli stati.\\
+In questo caso la $g$ deriva dalla indeterminazione che abbiamo nella energia per il fatto che il sistema interagisce con un bagno termico ecc\ldots\\
+Una cosa notevole è il fatto che la larghezza di riga $g$ trovata è una funzione di $\gamma_\perp$ (il prof ha detto che è proprio $\gamma_\perp$ quello che otteniamo), quindi alla fine più che l'indeterminazione dell'energia quello che pesa di più è l'indeterminazione della fase (dovuta all'interazione con il bagno termico).\\
+In questo caso quando in una misura troviamo una riga Lorentziana in funzione della frequenza (con una sua larghezza che è essenzialmente $\gamma_\perp$ ) si parla di allargamento omogeneo.
+Questo tipo di forma di riga è una conseguenza naturale del fatto che il nostro sistema perde informazione sulla coerenza (sulla fase del sistema). \\
+Possiamo considerare questa cosa "intrinseca" al sistema, anche con due livelli singoli (che però possono interagire con il bagno termico che li riporta all'equilibrio) il rate di interazione con tale bagno (per la parte sulla fase) è quello che determina la larghezza di riga della misura spettroscopica.\\
+In un sistema di atomi il meccanismo che da origine al $\gamma_\perp$ sono tipicamente le collisioni. Possiamo stimare quanto è il tempo collisionale (il rate sarà l'inverso di questo tempo $T_c$), il tempo medio tra due collisioni sarà:
+\[
+    T_c = \frac{\lambda}{v}
+.\] 
+In cui $\lambda$ è il libero cammino medio. Supponiamo che l'atomo sia una pallina di raggio $d$ che muovendosi nel volume di un tratto $\lambda$ spazza un cilindretto di volume $\hat{V} = \pi d^2\lambda$. Per definizione quando l'atomo si sposta di $\lambda$ incontra una particella, quindi nel volumetto spazzato deve incontrare una particella. All'interno di tale volume ci sono $\hat{V}n$ (con $n$ densità di particelle), dobbiamo allora imporre che:
+\[
+    \hat{V}n = 1
+.\] 
+Di conseguenza si ottiene che:
+\[
+    \lambda  \propto \frac{1}{\pi nd^2}
+.\] 
+Facendo un conto più dettagliato si ottiene che:
+\[
+    \lambda  = \frac{1}{\sqrt{2}}\frac{1}{\pi nd^2}
+.\] 
+La velocità relativa tra i due atomi (mediata sulla distribuzione di atomi) $v$.Questa seguirà quindi una Maxell-Boltzmann:
+\[
+    \overline{v} \propto e^{-(1 /2mv^2)/kT} 
+.\] 
+In cui $m$ è la massa ridotta. Quindi $\overline{v}$ sarà una gaussiana con massimo a $v = 0$. Visto che possiamo aspettarci 
+\[
+    \frac{1}{2}mv^2 \sim kT
+.\] 
+$\overline{v}$  sarà proporzionale a:
+\[
+    \overline{v} \propto \sqrt{\frac{kT}{m}} 
+.\] 
+Un conto più dettagliato può dirci che:
+\[
+    \overline{v} = \sqrt{\frac{8kT}{\pi m}} 
+.\] 
+In conclusione si ottiene che il tempo di collisioni è:
+\[
+    T_c = \frac{1}{\sqrt{2}}\frac{1}{\pi n d^2}
+    \sqrt{\frac{\pi m}{8kT}} 
+.\] 
+Abbiamo già supposto di essere in un gas classico, avremo allora che 
+\[
+    n = \frac{P}{kT}
+.\] 
+Dove $P$ è la pressione, abbiamo allora che:
+\[
+    T_c = \sqrt{\frac{mkT}{\pi}} \frac{1}{4d^2}\frac{1}{P}
+.\] 
+La larghezza di riga della nostra lorentziana sarà:
+\[
+    \Delta\omega =\frac{2}{T_c}
+.\] 
+Quindi abbiamo la formuletta della larghezza di riga di un gas di atomi classico:
+\[
+    \Delta\omega  = \sqrt{\frac{\pi}{ mkT}} 8d^2P
+.\] 
+Per un gas classico si ha quindi che $\Delta\omega\propto P$  con valori tipici di 50-60 MHz/Torr.\\
+Consideriamo adesso un allargamento disomogeneo, si intende per disomogeneo un allargamento non dovuto alla larghezza di riga intrinseca ma dovuta al fatto che i nostri $N$  atomi non hanno tutti la stessa energia di risonanza.\\
+Un caso particolare di allargamento gaussiano disomogeneo è quello dovuto all'effetto doppler per un gas di atomi classico.\\
+Supponiamo che l'atomo si muova ad una certa velocità $v_z$  non trascurabile rispetto a $c$, questo vedrà una frequenza del campo elettromagnetico diversa da quella che vedrebbe se fosse fermo $\nu_0$, al primo ordine sappiamo che la frequenza che tale atomo vede è data da:
+\[
+    \nu  = \nu_0\left(1+\frac{v_z}{c}\right)
+.\] 
+Di conseguenza è $\nu$ che deve essere uguale a $\nu_{12}$  perché possa avvenire la transizione tra i livelli.\\
+Dal punto di vista della radiazione abbiamo una distribuzione di atomi aventi tutte frequenze di transizione diverse dipendenti dalla $v_z$. Quindi possono assorbire un determinato $\nu_0 $ solo gli atomi che hanno un $v_z$  tale da
+\[
+    \nu\left(1+\frac{V-z}{c}\right) = \nu_{12}
+.\] 
+Assumiamo che per queste particelle valga la distribuzione di Boltzmann, quindi per la velocità:
+\[
+    f(v_z) dz = 
+    \sqrt{\frac{m}{2\pi kT}} \exp\left(- \frac{mv_z^2}{2kT}\right)dv_z
+.\] 
+Dalla espressione scritta prima per l'effetto doppler si ha che:
+\[
+    v_z = c \frac{\nu_0-\nu_{12}}{\nu_{12}}
+.\] 
+Si ha quindi che il differenziale della velocità è:
+\[
+    dv_z = c \frac{d\nu_0}{\nu_{12}}
+.\] 
+La larghezza di riga è quindi fatta, possiamo scrivere $g(\nu_0-\nu_{12})d\nu_0$ :
+\[
+    g(\nu_0-\nu_{12}) d\nu_0 = 
+    \sqrt{\frac{m}{2\pi kT}}
+    \exp\left(-\frac{m}{2kT}
+    \frac{c^2\left(\nu_0^2-\nu_{12}\right)^2}{\nu_{12}^2}\right)
+    \frac{c}{\nu_{12}}d\nu_0
+.\] 
+La forma di riga diventa una gaussiana grazie a Boltzmann. La larghezza di riga doppler è quindi:
+\[
+    \Delta\nu _\text{Doppler} = \frac{\nu_{12}}{c}\sqrt{\ln (2)  \frac{2kT}{m}}
+.\] 
+Possiamo allora riscrivere la forma di riga:
+\[
+    g(\nu_0-\nu_{12}) = \sqrt{\frac{\ln (2) }{\pi}}
+    \frac{1}{\Delta\nu_\text{D} }
+    \exp\left[- 
+    \frac{\left(\nu_0-\nu_{12}\right)^2}{\Delta\nu_\text{D} ^2}\ln (2)
+    \right]
+.\]

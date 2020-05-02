@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.4.16)  24 APR 2020 12:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.4.16)  29 APR 2020 19:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1058,143 +1058,79 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 Capitolo 1.
-[2
+(./lezioni/lez_6.tex [2
 
 ]
-Capitolo 2.
-[3
 
-]
-Capitolo 3.
-(./lezioni/lez_26.tex [4
+LaTeX Warning: Hyper reference `eq:DefZ' on page 3 undefined on input line 52.
 
-] (./figures/sistema-a-3-livelli.pdf_tex
-<./figures/sistema-a-3-livelli.pdf, id=80, page=1, 462.43878pt x 76.09814pt>
-File: ./figures/sistema-a-3-livelli.pdf Graphic file (type pdf)
-<use ./figures/sistema-a-3-livelli.pdf, page 1>
-Package pdftex.def Info: ./figures/sistema-a-3-livelli.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 483.69687pt x 79.59534pt.
-) [5] (./figures/inversione-di-popolazione-1-2.pdf_tex
-<./figures/inversione-di-popolazione-1-2.pdf, id=100, page=1, 462.43878pt x 76.09814pt>
-File: ./figures/inversione-di-popolazione-1-2.pdf Graphic file (type pdf)
-<use ./figures/inversione-di-popolazione-1-2.pdf, page 1>
-Package pdftex.def Info: ./figures/inversione-di-popolazione-1-2.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 483.69687pt x 79.59534pt.
-<./figures/inversione-di-popolazione-1-2.pdf, id=101, page=2, 462.43878pt x 76.09814pt>
-File: ./figures/inversione-di-popolazione-1-2.pdf Graphic file (type pdf)
-<use ./figures/inversione-di-popolazione-1-2.pdf, page 2>
-Package pdftex.def Info: ./figures/inversione-di-popolazione-1-2.pdf , page2 used on input line 60.
-(pdftex.def)             Requested size: 483.69687pt x 79.59534pt.
-) (./figures/inversione-di-popolazione-2-3.pdf_tex
-<./figures/inversione-di-popolazione-2-3.pdf, id=102, page=1, 462.43878pt x 76.09814pt>
-File: ./figures/inversione-di-popolazione-2-3.pdf Graphic file (type pdf)
-<use ./figures/inversione-di-popolazione-2-3.pdf, page 1>
-Package pdftex.def Info: ./figures/inversione-di-popolazione-2-3.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 483.69687pt x 79.59534pt.
-<./figures/inversione-di-popolazione-2-3.pdf, id=103, page=2, 462.43878pt x 76.09814pt>
-File: ./figures/inversione-di-popolazione-2-3.pdf Graphic file (type pdf)
-<use ./figures/inversione-di-popolazione-2-3.pdf, page 2>
-Package pdftex.def Info: ./figures/inversione-di-popolazione-2-3.pdf , page2 used on input line 60.
-(pdftex.def)             Requested size: 483.69687pt x 79.59534pt.
-) (./figures/sistema-di-specchi-per-il-laser.pdf_tex
-<./figures/sistema-di-specchi-per-il-laser.pdf, id=106, page=1, 594.68953pt x 156.62254pt>
-File: ./figures/sistema-di-specchi-per-il-laser.pdf Graphic file (type pdf)
-<use ./figures/sistema-di-specchi-per-il-laser.pdf, page 1>
-Package pdftex.def Info: ./figures/sistema-di-specchi-per-il-laser.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 483.69687pt x 127.38931pt.
-) [6 <./figures/sistema-a-3-livelli.pdf> <./figures/inversione-di-popolazione-1-2.pdf
 
-pdfTeX warning: pdflatex (file ./figures/inversione-di-popolazione-1-2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./figures/inversione-di-popolazione-1-2.pdf
-
-pdfTeX warning: pdflatex (file ./figures/inversione-di-popolazione-1-2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./figures/inversione-di-popolazione-2-3.pdf
-
-pdfTeX warning: pdflatex (file ./figures/inversione-di-popolazione-2-3.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./figures/inversione-di-popolazione-2-3.pdf
-
-pdfTeX warning: pdflatex (file ./figures/inversione-di-popolazione-2-3.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [7 <./figures/sistema-di-specchi-per-il-laser.pdf>]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 243.
- (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 243.
- [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 314--316
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
-[10] [11] (./figures/vettore-b-della-precessione.pdf_tex
-<./figures/vettore-b-della-precessione.pdf, id=190, page=1, 507.32224pt x 180.27315pt>
-File: ./figures/vettore-b-della-precessione.pdf Graphic file (type pdf)
-<use ./figures/vettore-b-della-precessione.pdf, page 1>
-Package pdftex.def Info: ./figures/vettore-b-della-precessione.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 483.69687pt x 171.88017pt.
-<./figures/vettore-b-della-precessione.pdf, id=191, page=2, 507.32224pt x 180.27315pt>
-File: ./figures/vettore-b-della-precessione.pdf Graphic file (type pdf)
-<use ./figures/vettore-b-della-precessione.pdf, page 2>
-Package pdftex.def Info: ./figures/vettore-b-della-precessione.pdf , page2 used on input line 62.
-(pdftex.def)             Requested size: 483.69687pt x 171.88017pt.
-<./figures/vettore-b-della-precessione.pdf, id=192, page=3, 507.32224pt x 180.27315pt>
-File: ./figures/vettore-b-della-precessione.pdf Graphic file (type pdf)
-<use ./figures/vettore-b-della-precessione.pdf, page 3>
-Package pdftex.def Info: ./figures/vettore-b-della-precessione.pdf , page3 used on input line 64.
-(pdftex.def)             Requested size: 483.69687pt x 171.88017pt.
-) [12] (./figures/condizioni-iniziali-su-r.pdf_tex
-<./figures/condizioni-iniziali-su-r.pdf, id=208, page=1, 528.11812pt x 190.7486pt>
-File: ./figures/condizioni-iniziali-su-r.pdf Graphic file (type pdf)
-<use ./figures/condizioni-iniziali-su-r.pdf, page 1>
-Package pdftex.def Info: ./figures/condizioni-iniziali-su-r.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 483.69687pt x 174.71078pt.
-<./figures/condizioni-iniziali-su-r.pdf, id=209, page=2, 528.11812pt x 190.7486pt>
-File: ./figures/condizioni-iniziali-su-r.pdf Graphic file (type pdf)
-<use ./figures/condizioni-iniziali-su-r.pdf, page 2>
-Package pdftex.def Info: ./figures/condizioni-iniziali-su-r.pdf , page2 used on input line 60.
-(pdftex.def)             Requested size: 483.69687pt x 174.71078pt.
-<./figures/condizioni-iniziali-su-r.pdf, id=210, page=3, 528.11812pt x 190.7486pt>
-File: ./figures/condizioni-iniziali-su-r.pdf Graphic file (type pdf)
-<use ./figures/condizioni-iniziali-su-r.pdf, page 3>
-Package pdftex.def Info: ./figures/condizioni-iniziali-su-r.pdf , page3 used on input line 63.
-(pdftex.def)             Requested size: 483.69687pt x 174.71078pt.
-) [13 <./figures/vettore-b-della-precessione.pdf> <./figures/vettore-b-della-precessione.pdf
+[3] (./figures/calcolo-delle-fluttuazioni.pdf_tex
+<./figures/calcolo-delle-fluttuazioni.pdf, id=98, page=1, 627.48564pt x 208.01028pt>
+File: ./figures/calcolo-delle-fluttuazioni.pdf Graphic file (type pdf)
+<use ./figures/calcolo-delle-fluttuazioni.pdf, page 1>
+Package pdftex.def Info: ./figures/calcolo-delle-fluttuazioni.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 483.69687pt x 160.34615pt.
+) [4 <./figures/calcolo-delle-fluttuazioni.pdf>] (./figures/andamento-della-distribuzione-di-energia-al-variare-di-n.pdf_tex
+<./figures/andamento-della-distribuzione-di-energia-al-variare-di-n.pdf, id=123, page=1, 626.44997pt x 143.65225pt>
+File: ./figures/andamento-della-distribuzione-di-energia-al-variare-di-n.pdf Graphic file (type pdf)
+<use ./figures/andamento-della-distribuzione-di-energia-al-variare-di-n.pdf, page 1>
+Package pdftex.def Info: ./figures/andamento-della-distribuzione-di-energia-al-variare-di-n.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 483.69687pt x 110.91724pt.
+) [5 <./figures/andamento-della-distribuzione-di-energia-al-variare-di-n.pdf>]
 
-pdfTeX warning: pdflatex (file ./figures/vettore-b-della-precessione.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./figures/vettore-b-della-precessione.pdf
+LaTeX Warning: Hyper reference `eq:capacita-termica' on page 6 undefined on input line 221.
 
-pdfTeX warning: pdflatex (file ./figures/vettore-b-della-precessione.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./figures/condizioni-iniziali-su-r.pdf
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 237--239
 
-pdfTeX warning: pdflatex (file ./figures/condizioni-iniziali-su-r.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./figures/condizioni-iniziali-su-r.pdf
+ []
 
-pdfTeX warning: pdflatex (file ./figures/condizioni-iniziali-su-r.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./figures/condizioni-iniziali-su-r.pdf
 
-pdfTeX warning: pdflatex (file ./figures/condizioni-iniziali-su-r.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]) [14]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
+LaTeX Warning: Hyper reference `eq:potenziale-Landau1' on page 7 undefined on input line 241.
+
+[7]
+
+LaTeX Warning: Hyper reference `eq:Gauss-approx' on page 8 undefined on input line 296.
+
+[8]) [9]
+Capitolo 2.
+[10
+
+]
+Capitolo 3.
+[11
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
  (./master.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 103.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 103.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 104.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 104.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 28BA327A1633F22E0AF8E4C45DDDD0EC;367.
+(rerunfilecheck)             Checksum: D22526AE1D02F490DCA145666B8F9E1E;420.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 41650 strings out of 492167
- 933125 string characters out of 6131558
- 1168818 words of memory out of 5000000
- 45294 multiletter control sequences out of 15000+600000
- 546999 words of font info for 78 fonts, out of 8000000 for 9000
+ 41019 strings out of 492167
+ 914920 string characters out of 6131558
+ 1124341 words of memory out of 5000000
+ 44668 multiletter control sequences out of 15000+600000
+ 543716 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,20n,105p,791b,2019s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on master.pdf (15 pages, 271128 bytes).
+ 68i,10n,98p,791b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on master.pdf (12 pages, 261427 bytes).
 PDF statistics:
- 317 PDF objects out of 1000 (max. 8388607)
- 264 compressed objects within 3 object streams
- 96 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 318 PDF objects out of 1000 (max. 8388607)
+ 278 compressed objects within 3 object streams
+ 117 named destinations out of 1000 (max. 500000)
+ 79 words of extra memory for PDF output out of 10000 (max. 10000000)
 

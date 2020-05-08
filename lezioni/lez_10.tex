@@ -30,10 +30,12 @@ Quindi:
 \[
 	\Delta ( x_{\text{max}}) = W - e^{3 /2}F^{1 /2}
 .\] Quindi la densità di corrente con campo $F$ applicato sarà la stessa ricavata nella lezione precedente con una correzione dovuta al campo $F$:
+\begin{fact}[Effetto termoionico in presenza di un campo elettrico $F$ costante]{fact:Effetto termoionico in presenza di un campo elettrico F costante}
 \[
 	J_{F}= J_0\cdot \exp\left( e^{3 /2}F^{1 /2} /kT \right) 
 .\] 
-La correzione diventa importante quando $e^{3 /2}F^{1 /2} \sim kT$.\\
+\end{fact}
+L'effetto del campo elettrico diventa rilevante quando $e^{3 /2}F^{1 /2} \sim kT$.\\
 Aumentando ancora il campo $F$ diventa importante anche l'effetto tunnel attraverso la barriera, in tal caso (con un pò di quantistica) si trova che:
 \[
 	I_{\text{tunnel}} = \alpha F^2\exp\left( -\frac{B}{F} \right) 
@@ -48,35 +50,38 @@ Possiamo quindi adesso avere un quadro di come va la corrente termoionica al var
     %This is a custom LaTeX template!
     \centering
     \incfig{corrente-termoionica-in-funzione-del-campo-elettrico}
-    \caption{\scriptsize Corrente termoionica in funzione del campo elettrico in scala semilogaritmica (per diverse temperature abbiamo diverse curve)}
+    \caption{\scriptsize Corrente termoionica in funzione del campo elettrico in scala semi-logaritmica (per diverse temperature abbiamo diverse curve)}
     \label{fig:corrente-termoionica-in-funzione-del-campo-elettrico}
 \end{figure}
 \noindent
-Nella parte alta del plot domina l'effetto tunnel, mentre per lavorare in un regime "simil-transistor" conviene stare nella parte a campi deboli \footnote{È evidente infatti l'analogia con le curve caratteristiche dei transistor.}, l'ultimo plot disegnato è detto grafico di Fowler-Nordheim in onore a quelli che hanno studiato l'effetto tunnel \footnote{Si trova in rete riportato in funzione di $1 /E$.}.\\
-Questo andamento dell'effetto termoionico è applicabile anche ai semiconduttori, infatti grazie  questo possiamo vedere come sono allineati i livelli di diversi semiconduttori quando facciamo una giunzione. Infatti mandando campi "grandi" su una giunzione di semiconduttori è possibile misurare la corrente che passa e ricavare informazioni sulla barriera di potenziale tra i materiali, ottenendo così una verifica qualitativa dell'alineamento dei livelli energetici tra quest'ultimi. 
+Nella parte alta del plot domina l'effetto tunnel, mentre per lavorare in un regime "simil-transistor" conviene stare nella parte a campi deboli \footnote{È evidente infatti l'analogia con le curve caratteristiche dei transistor.}, l'ultimo plot disegnato è detto \textit{grafico di Fowler-Nordheim} in onore a quelli che hanno studiato l'effetto tunnel \footnote{Si trova in rete riportato in funzione di $1 /E$.}.\\
+Questo andamento dell'effetto termoionico è applicabile anche ai semiconduttori, infatti grazie  questo possiamo vedere come sono allineati i livelli di diversi semiconduttori quando facciamo una giunzione. Infatti mandando campi "grandi" su una giunzione di semiconduttori è possibile misurare la corrente che passa e ricavare informazioni sulla barriera di potenziale tra i materiali, ottenendo così una verifica qualitativa dell'allineamento dei livelli energetici tra quest'ultimi. 
 
 \subsection{Effetto fotoelettrico}%
-Bombardando il nostro metallo con una radiazione di energia $h \nu $ nella direzione $z$ possiamo vedere come si modifica il modello di buca di potenziale studiato fin'ora. \\
-Stiamo assumento che tutti gli elettroni del metallo siano eccitati dalla radiazione e che tale radiaizoine non disturbi il moto lungo $x$ e $y$. \\
-In questa situazione un elettrone può uscire dal metallo se:
+Bombardiamo il metallo con una radiazione di energia $h \nu $ nella direzione $z$. Se procediamo con le seguenti assunzioni:
+\begin{itemize}
+    \item Gli elettroni del metallo sono tutti eccitati dalla radiazione.
+    \item La radiazione non interferisce con il moto degli elettroni nella direzione $x$ e $y$.
+\end{itemize}
+Allora gli elettroni possono uscire dal metallo se:
 \[
-	\frac{p_{z}^2}{2m} + h\nu > W
+	\frac{p_{z}^2}{2m} + h\nu > W \implies \mathcal{E}_z > W - h\nu
 .\] 
 Possiamo calcolarci nuovamente il Rate:
 \[
 	R = \frac{4\pi m kT}{h^3}\int_{\mathcal{E} _{z} = W - h\nu }^{\mathcal{E}_{z}=\infty} d\mathcal{E} _{z} \ln\left[ 1 +\exp\left( \frac{\mu -\mathcal{E} _{z}}{kT} \right)  \right] 
 .\] 
-Nella scorsa lezione per risolvere tale integrale abbiamo approssimato il logaritmo consideranto l'esponenziale molto più piccolo di 1, in questo caso non è più possibile farlo. Infatti $h\nu $ potrebbe essere dell'ordine di $W$, facendo partire l'estremo di integrazione addirittura da zero. Per questo è necessario risolvere l'integrale, facciamo il cambio di variabile:
+Nella scorsa lezione per risolvere tale integrale abbiamo approssimato il logaritmo considerando l'esponenziale molto più piccolo di 1, tale approssimazione non è lecita in questo caso. Infatti $h\nu $ potrebbe essere dell'ordine di $W$, facendo partire l'estremo di integrazione addirittura da zero. Per questo è necessario risolvere l'integrale, facciamo il cambio di variabile:
 \[
-	x = \frac{\mathcal{E} _{z}- \mu + h\nu }{kT}
+	x = \frac{\mathcal{E} _{z} - W + h\nu }{kT}
 .\] 
-In questo modo l'integrale va da $-\infty$ a $\infty$:
+In questo modo l'integrale va da $0$ a $\infty$:
 \[
 	R = \frac{4\pi m }{h^3} \left( kT \right) ^2 \int_{0}^{\infty} dx \ln\left[ 1+\exp\left( \frac{h\left( \nu -\nu_0 \right) }{kT} - x \right)  \right]  
 .\] 
 Dove abbiamo definito anche 
 \[
-	h\nu_0=W-\nu 
+	h\nu_0=W-\mu 
 \]
 Che ci dà una idea della profondità effettiva della buca. Visto che siamo a temperature molto basse (rispetto a quella di Fermi) possiamo scrivere questa costante come:
 \[
@@ -90,7 +95,7 @@ In conclusione l'integrale si riscrive in modo compatto come:
 \[
 	J = eR = \frac{4\pi m e}{h^3} k^2T^2 \int_{0}^{\infty} dx \ln\left[ 1 + \exp\left( \delta -x \right)  \right]  
 .\] 
-Questo integrale si può risolvere analiticamente per parti, il risultato è noto e si chiama
+L'integrale nella espressione è una funzione speciale:
 \[
 	f_{2}(e^{\delta}) = \int_{0}^{\infty} dx \ln\left[ 1 + \exp\left( \delta - x \right)  \right]  
 \]
@@ -117,9 +122,9 @@ Di conseguenza la corrente diventa circa:
 \[
 	J \approx \frac{2\pi m e}{h} \left( \nu -\nu_0 \right)^2
 .\] 
-Scopriamo che la corrente non dipende dalla temperatura, questo ha senso perchè i fotoni hanno tutti l'energia utile a far uscire qualunque elettrone dalla buca. Non è più importante conoscere la temperatura in questo limite.\\
+Scopriamo che la corrente non dipende dalla temperatura, questo ha senso perché i fotoni hanno tutti l'energia utile a far uscire qualunque elettrone dalla buca. Non è più importante conoscere la temperatura in questo limite.\\
 \paragraph{Elettroni meno energetici della altezza della buca.}
-siamo adesso nel caso in cui $\nu < \nu_0$, quindi $h\left| \nu -\nu_0 \right| \ll kT$. In questo caso $e^{\delta }\ll 1$ e:
+siamo adesso nel caso in cui $\nu < \nu_0$, quindi $h\left| \nu -\nu_0 \right| \gg kT$. In questo caso $e^{\delta }\ll 1$ e:
 \[
 	f_2( e^{\delta }) \approx e^{\delta }
 .\] 
@@ -127,8 +132,8 @@ Per questo motivo la corrente in uscita per l'effetto fotoelettrico diventa:
 \[
 	J \approx \frac{4\pi m e k^2}{h^3}T^2 \exp\left(  \frac{h\nu - \varphi}{kT}\right) 
 .\] 
-Dove si definisce $\varphi = W - \mu $.\\
-Notiamo che se $h\nu = 0$ troviamo l'espressione per l'effetto termoionico, soltanto che il potenziale efficiace adesso è diminuito dell'energia del fotone che arriva: È come aver ridotto la barriera di $h\nu $.
+Dove si ri-definisce $\varphi = W - \mu $ in modo tale da evidenziare che se $h\nu = 0$ troviamo l'espressione per l'effetto termoionico.\\
+In generale invece il potenziale efficace è diminuito dell'energia del fotone che arriva, la barriera si riduce di un fattore $h\nu $.
 \paragraph{Fotoni con l'esatta energia della barriera di potenziale effettiva}
 In questo caso abbiamo $h\nu = h\nu_0$, quindi la funzione speciale:
 \[
@@ -139,17 +144,23 @@ E la densità di corrente vale:
 	J = \frac{\pi^3 m e k^2}{3h^3}T^2 \propto T^2
 .\] 
 \subsection{Condizione sulla massa di una nana bianca per il collasso gravitazionale.}%
-Nell'ultima fase della loro vita le stelle sono principalmente composte di elio, le masse tipiche sono dell'ordine di $10^{33}$ g, le densità $10^{7}$ g/cm$^3$ e le temperature nel nucleo $T \sim 10^{7}$ K.  Siamo nell'ordine di energie di elettroni dell'$keV$, quindi possiamo considerare l'elio completamente ionizzato nella stella. \\
-Possiamo azzardare che la massa della stella è dell'ordine:
+Nell'ultima fase della loro vita le stelle sono principalmente composte di elio, questi sistemi hanno le seguenti grandezze tipiche:
+\begin{itemize}
+    \item $M \sim 10^{33}$.
+    \item $\rho  \sim 10^7$ g/cm$^3$.
+    \item $T\sim 10^7$ K.
+\end{itemize}
+L'elio si ritrova  completamente ionizzato nella stella, gli elettroni sono liberi di muoversi nel background positivo. \\
+Valutiamo quindi la massa della stella in funzione del numero di elettroni totali $N$, per ogni elettrone abbiamo un neutrone ed un protone:
 \[
-	M \approx N\left( m + 2m_{p} \right) \approx 2Nm_{p} 
+	M \approx N\left( m + m_{p} \right) \approx 2Nm_{p} 
 .\] 
 La densità di elettroni sarà:
 \[
 	n = \frac{N}{V} \approx \frac{M /2m_{p}}{M / \rho }= \frac{\rho}{2m_{p}} \sim 10^{30} \text{ elettroni}/cm^3
 .\] 
-Teniamo presente che in un metallo abbiamo circa $10^{20}$ el/cm$^3$, quindi gli elettroni sono molto compressi tra di loro nella stella.\\
-L'impulso di ferrmi per questo gas sarà dell'ordine (guardando al volume dello spazio delle fasi):
+Teniamo presente che in un metallo abbiamo circa $10^{20}$ el/cm$^3$, quindi gli elettroni sono molto compressi tra di loro.
+L'impulso di Fermi per questo gas sarà dell'ordine (guardando al volume dello spazio delle fasi):
 \[
 	p_{F} = \left( \frac{3n}{4\pi g} \right) ^{1 /3} h = \left( \frac{3n}{8\pi} \right) ^{1 /3} h \sim 10^{-17} \frac{\text{g} \cdot \text{ cm}}{s}
 .\] 
@@ -159,7 +170,7 @@ Ci aspettiamo che l'energia di fermi sia dell'ordine di $\mathcal{E} _{F} \sim  
 .\] 
 Quindi le temperature di fermi associate sarebbero dell'ordine: $T_{F} \sim 10^{10}$ K.\\
 Anche in questo sistema $T_{F} \gg T$, quindi siamo autorizzati ad assumere il nostro gas come un gas degenere ed applicare la statistica di Fermi vista fin'ora.\\
-Calcoliamo la pressione facendo un modellino di stella che considera solo gli elettroni, ci aspettiamo che i nuclei (essendo fermioni) non abbiamo un contributo imprtante alla pressione.\\
+Calcoliamo la pressione facendo un modellino di stella che considera solo gli elettroni, ci aspettiamo che i nuclei (essendo fermioni) non abbiamo un contributo importante alla pressione.\\
 Così facendo cercheremo la pressione di espansione che stabilizza la stella, quella che compensa l'interazione gravitazionale che tende a farla collassare.\\
 Dobbiamo adesso tener di conto che questo adesso è un gas di particelle relativistiche: è necessario cambiare la la legge di dispersione per l'energia.\\
 Troviamo dapprima il numero di particelle totali facendo l'integrale sul volumetto di spazio delle fasi (prendendo come $\overline{n}_{q}$ la Fermi Dirac a gradino):

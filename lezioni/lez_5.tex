@@ -1,17 +1,42 @@
 \lez{5}{26-02-2020}{}
-Alla fine della scorsa lezione abbiamo cambiato punto di vista, prendendo come insiemi anzichè la singola particella il singolo stato di singola particella. \\
-Per far questo abbiamo usato il potenziale di Landau. Infatti per poter contare tutti gli stati possibili \footnote{Avendo presi come insiemi gli stati stessi} è necessario considerare il numero di particelle all'interno degli stati stessi variabile, quindi il potenziale adatto è quello sopra citato. Il risultato che abbiamo ottenuto è:
+\subsection{Contare gli stati}%
+\label{subsub:Conteggio degli stati}
+Abbiamo fin'ora considerato il sistema di N particelle come un insieme di tanti sistemino composti da una singola particella e applicando le opportune correzioni. Invece di prendere come insiemi la singola particella prendiamo insiemi di un singolo stato. In questo modo il nostro sistema risulta identificato dal $\overline{q}$.\\
+In questo caso ragioniamo per un numero di particelle di un sottosistema variabile $n_{\overline{q}}$, l'energia dello stato di questo sistema sarà:
 \[
-	\Omega_{\overline{q}} = - kT \ln \left[ \sum_{\text{stati con $n_{q}$}}^{} \exp\left( -\frac{\mathcal{E}_{q}n_{q}-\mu n_{q}}{kT} \right)\right] 
-.\] \label{eq:potenziale-Landau1}
-La somma è fatta sugli stati del nostro sottosistema, che sono gli stati di singola particella e sono definiti da quante particelle sono dentro allo stato di singola particella.\\
-Inoltre il potenziale di Landau totale abbiamo visto essere la somma dei precedenti sugli stati $q$.\\
-Questo conteggio evita di contare gli stati due volte, perchè conta attribuendo quante particelle ci sono in ogni singolo stato \footnote{Quindi di fatto considerando gia le particelle indistinguibili} e poi conta quanti stati di singola particella ci sono.\\
-La probabilità di trovare il sistema complessivo di $N$ particelle in uno stato $\alpha$ abbiamo visto essere:
-\[
-	W_\alpha= B\cdot \exp\left( -\frac{E_{\alpha}-\mu N_{\alpha}}{kT} \right)  
+	 \mathcal{E}_{\overline{q}}\cdot n_{\overline{q}}
 .\] 
-Dove le lettere maiuscole si riferiscono al sistema, le minuscole (come nella espressione sopra) si riferiscono alle quantità della singola particella, oppure alle quantità dello stato di singola particella.\\
+Ovvero l'energia dello stato per il numero di particelle che ci stanno dentro. Quali saranno gli stati per questo sotto-sistema \footnote{Che ricordiamo essere uno stato.}?\\
+Saranno (1 particella, 2 particelle, ecc\ldots) ovvero quante particelle ci sono nello stato  $\overline{q}$.\\
+Il potenziale di Landau $\Omega_{\overline{q}}$ del singolo sottosistema $\overline{q}$ sarà:
+\[
+	\Omega_{\overline{q}} = - kT 
+	\ln \left[ \sum_{\text{stati con $n_{q}$}}^{} \exp\left( -\frac{\mathcal{E}_{q}n_{q}-\mu n_{q}}{kT} \right) 
+\right] .\] \label{eq:Landau_gas_ideale}
+A questo punto la $\Omega$ del sistema completo sarà la somma delle $\Omega_{\overline{q}}$ di tutti i sottosistemi \footnote{che sono i singoli stati di singola particella.}:
+\[
+	\Omega = \sum_{q}^{} \Omega_{q}
+.\] 
+Le ultime due che abbiamo scritto sono "corrette" per particelle indistinguibili e le useremo per tutti i regimi, quantistici e classici.\\ 
+Facciamo su queste le approssimazioni di gas ideale, per ogni $q$ :
+\[
+	W\left( n_{q}=0 \right) \sim 1 
+.\] 
+\[
+	W\left( n_{q}=1 \right) \ll 1
+.\] 
+\[
+	W\left( n_{q}=2 \right) \sim 0
+.\] 
+Ricordiamo che $\Omega = kT \ln B$ e che
+\[
+	W_{\alpha}= B \exp\left( -\frac{E_{\alpha-\mu N_{\alpha}}}{kT} \right) 
+.\] 
+Dalle quali possiamo scrivere che:
+\[
+	W_{\alpha} = \exp\left[ \frac{\Omega-\left( E_{\alpha}-\mu N_{\alpha} \right) }{kT} \right] 
+.\] 
+
 \subsection{Distribuzione di Boltzmann}%
 \label{sec:Boltzmann_distrib}
 Possiamo anche chiederci la probabilità del sottosistema di trovarsi in uno dei suoi stati, ovvero la probabilità di avere $n_{q}$ particelle nello stato $q$:
@@ -275,3 +300,90 @@ E visto che nella scorsa lezione avevamo ricavato la legge:
 .\] 
 Possiamo ricavare l'equazione di stato $PV = NkT$ direttamente dalla espressione calcolata con la funzione di partizione classica invece che fare l'approssimazione della $\Omega$.\\
 Cercheremo di ricondurre ogni sistema ad un gas ideale in questo modo sarà possibile ricavare informazioni su tali sistemi semplicemente tramite il modello teorico che abbiamo costruito adesso.
+\subsection{Gas ideale con particelle interagenti.}%
+Abbiamo concluso la scorsa lezione dicendo che cercheremo di descrivere i sistemi che incontreremo per analogia con i gas perfetti, è necessario notare che non sarà sempre possibile far questo. Un esempio di sistema per cui non è possibile sono i liquidi.\\
+Abbiamo introdotto il concetto di densità di stati come l'elemento di volume dello spazio delle fasi pesato sulla dimensione della celletta unitaria:
+\[
+	\rho\left( \mathcal{E} \right) d\mathcal{E} = \frac{d\left\{ p_{i} \right\}d\left\{ r_{i} \right\}   }{\left( 2\pi h \right)^{f}}
+.\] 
+con $f = 3N$.\\
+Nella descrizione ci siamo "dimenticati" del fatto che se il nostro sistema contiene N particelle stiamo contando gli stati nuovamente male: infatti abbiamo preso una restrizione a tanti spazi separati, ognuno etichettato con la sua particella; non abbiamo considerato l'indistinguibilità di ogni particella dalle altre. Per questo motivo se vogliamo fare il conto per la funzione di partizione dovremo dividere per $N!$:
+\[
+	\rho\left( \mathcal{E} \right) d\mathcal{E} =\frac{1}{N!} \frac{d\left\{ p_{i} d\left\{ r_{i} \right\}  \right\} }{\left( 2\pi h \right)^{f}}
+.\]
+Vediamo allora fino a che punto possiamo spingerci nel trattare sistemi generici per capire quando è possibile rientrare nella approssimazione di gas ideale, proviamo a prendere sistemi che composti da particelle aventi una correzione all'energia totale data da un termine potenziale di interazione e vediamo come cambiano le principali quantità termodinamiche.\\
+Partiamo dalla funzione di partizione, questa si scrive in generale come:
+
+\[
+	Z = \frac{1}{\left( 2\pi \hbar  \right) ^{3N}N!} \int \int \exp\left( -\frac{E}{kT} \right) d\left\{ p_{i} \right\} d\left\{ r_{i} \right\} 
+.\] 
+Dove abbiamo inserito l'energia grande perché questa è riferita a molti corpi, non a singola particella.\\
+Adesso quindi consideriamo come energia totale del sistema la seguente:
+\[
+	E=\sum_{i =1}^{3N} \frac{p_{i}^2}{2m} + U\left(  r_{i}  \right) 
+.\] 
+In cui rispetto alla trattazione fatta fin'ora abbiamo inserito il termine correttivo $U\left( r_{i} \right) $ che tiene di conto del fatto che il nostro sistema non è un gas perfetto. Tale termine dipenderà in generale dalle coordinate di tutte le particelle. \\
+La funzione di partizione si decompone allora in due termini:
+\[
+	Z = \frac{1}{\left( 2\pi \hbar  \right) ^{3N}N!} \int \int \exp\left( - \sum_{}^{} \frac{p_{i}^2}{2m} \right) d\left\{ p_{i} \right\} 
+	\int\int \exp\left( -\frac{U}{kT} \right) d\left\{ r_{i} \right\} 
+.\] 
+Quest'ultima espressione, sebbene si riferisca ad un gas ideale avente le particelle interagenti, approssima abbastanza bene anche liquidi ideali.\\
+Restringiamoci adesso per fare i conti al caso tridimensionale, abbiamo che l'energia cinetica di una singola particella può essere scritta come:
+\[
+	\mathcal{E} = \frac{p^2}{2m} = \frac{p_{x}^2+p_{y}^2+ p_{z}^2}{2m}
+.\] 
+Quindi ipotizzando le particelle ancora indistinguibili questa energia sarà la stessa per tutte le particelle, allora la parte cinetica dell'integrale precedente può essere scomposta nel prodotto di N integrali tutti uguali, da cui il seguente:
+\[
+	Z = \frac{1}{N! \left( 2\pi\hbar \right)^{3N} }
+	\left[ \int\exp\left( -\frac{p^2}{kT2m} \right) d^3p \right] ^{N} 
+	\int\exp\left( -\frac{U}{kT} \right) d^3r 
+.\] 
+Dividendo e moltiplicando per $V^{N} =  \left[\int d^3r \right]^{N}$:
+\[
+	Z = \frac{1}{N! \left( 2\pi\hbar \right)^{3N} V^{N}}
+	\left[\int \int d^3r \exp\left( -\frac{p^2}{kT2m} \right) d^3p \right] ^{N} 
+	\int\exp\left( -\frac{U}{kT} \right) d^3 r 
+.\] 
+Abbiamo fatto questa ultima operazione in modo da poter alleggerire la notazione: adesso il termine
+\[
+	Z_{IG} = \frac{1}{N! \left( 2\pi\hbar \right)^{3N}}
+	\left[\int \int d^3r \exp\left( -\frac{p^2}{kT2m} \right) d^3p \right] ^{N}
+.\] 
+È la funzione di partizione per il gas ideale ricavata nella \hyperref[eq:DefZ]{Lezione 4}, con l'accortezza di sostituire all'energia la sola energia cinetica ed alla $\rho\left( \mathcal{E} \right)$ quella ricavata tramite la meccanica classica.\\
+Definendo inoltre la parte di energia potenziale come $Q$ si conclude che:
+\[
+	Z = \frac{Z_{IG}}{V^{N}}Q
+.\] 
+Quindi abbiamo la stessa Z di un gas ideale con la correzione del volume e di Q. \\
+Possiamo esplicitare ulteriormente la $Z_{IG}$ facendo uso della funzione $\Gamma$ di Eulero introdotta alla fine della lezione 5:
+\begin{align}
+	Z_{IG} \propto& \int \exp\left( -\frac{\mathcal{E}}{kT} \right) d^3p = \\
+	=& 4\pi\sqrt{2} \left( mkT \right) ^{3 /2} \int \exp\left( -x \right) x^{1 /2}dx=\\
+	=&4\pi\sqrt{2} \left( mkT \right) ^{3 /2} \Gamma\left( \frac{3}{2} \right) 
+.\end{align}
+Quindi se reinseriamo i termini davanti alla espressione \footnote{E considerando che l'integrale della $\Gamma\left( 3 / 2 \right)$ fa $\sqrt{\pi}/2$} possiamo riscriverla introducendo una nuova funzione:
+ \[
+	 Z_{IG} = \frac{1}{N!} \frac{V^{N}}{\Lambda^{3N}} = \left( \frac{V}{\Lambda^3} \right)^{N} \frac{1}{N!} 
+.\] 
+dove $\Lambda$ è la lunghezza d'onda termica di De Broglie: 
+\[
+	\Lambda = \frac{2\pi \hbar }{\sqrt{2\pi m kT} }
+.\] 
+Con questa nuova notazione riscriviamo la Z del fluido:
+\[
+	Z = \frac{Q}{N! \Lambda^{3N}}
+.\] 
+Allo stesso modo possiamo scrivere l'energia libera:
+\[
+	F = F_{IG}- NkT \ln V - kT \ln Q
+.\] 
+Estendendo la trattazione al caso in cui il numero di particelle non è conservato tramite $\L$, la funzione di gran partizione può essere scritta:
+\[
+	\L = \sum_{N}^{} \frac{z^{N} Q_{N}}{N! \Lambda^{3N}}
+.\] 
+Nell'ultima abbiamo introdotto la z che è detta fugacità. La fugacità è definita come: 
+\[
+	z = \exp\left( \frac{\mu}{kT} \right) 
+.\] 
+

@@ -328,42 +328,4 @@ Possiamo passare al caso continuo  imponendo degli integrali su $\mathcal{E}$ pe
 \[
 	\overline{\mathcal{E}} = \frac{\int_{0}^{\infty} \mathcal{E}\cdot  \rho\left( \mathcal{E} \right) \exp\left( -\frac{\mathcal{E}}{kT} \right) d\mathcal{E}}{\int_{0}^{\infty}\rho\left( \mathcal{E} \right) \exp \left( -\frac{\mathcal{E}}{kT} \right) d\mathcal{E}}
 .\] 
-\subsubsection{Conteggio degli stati}%
-\label{subsub:Conteggio degli stati}
-Facciamo adesso il conto con un altro metodo: contando per ogni stato di singola particella quante particelle ci sono.\\
-Adesso abbiamo considerato il sistema di N particelle come un insieme di tanti sistemino composti da una singola particella e applicando le opportune correzioni. Invece di prendere come insiemi la singola particella prendiamo insiemi di un singolo stato. In questo modo il nostro sistema risulta identificato dal $\overline{q}$.\\
-In questo caso ragioniamo per un numero di particelle di un sottosistema variabile $n_{\overline{q}}$, l'energia dello stato di questo sistema sarà:
-\[
-	 \mathcal{E}_{\overline{q}}\cdot n_{\overline{q}}
-.\] 
-Ovvero l'energia dello stato per il numero di particelle che ci stanno dentro. Quali saranno gli stati per questo sotto-sistema \footnote{Che ricordiamo essere uno stato.}?\\
-Saranno (1 particella, 2 particelle, ecc\ldots) ovvero quante particelle ci sono nello stato  $\overline{q}$.\\
-Il potenziale di Landau $\Omega_{\overline{q}}$ del singolo sottosistema $\overline{q}$ sarà:
-\[
-	\Omega_{\overline{q}} = - kT 
-	\ln \left[ \sum_{\text{stati con $n_{q}$}}^{} \exp\left( -\frac{\mathcal{E}_{q}n_{q}-\mu n_{q}}{kT} \right) 
-\right] .\] \label{eq:Landau_gas_ideale}
-A questo punto la $\Omega$ del sistema completo sarà la somma delle $\Omega_{\overline{q}}$ di tutti i sottosistemi \footnote{che sono i singoli stati di singola particella.}:
-\[
-	\Omega = \sum_{q}^{} \Omega_{q}
-.\] 
-Le ultime due che abbiamo scritto sono "corrette" per particelle indistinguibili e le useremo per tutti i regimi, quantistici e classici.\\ 
-Facciamo su queste le approssimazioni di gas ideale, per ogni $q$ :
-\[
-	W\left( n_{q}=0 \right) \sim 1 
-.\] 
-\[
-	W\left( n_{q}=1 \right) \ll 1
-.\] 
-\[
-	W\left( n_{q}=2 \right) \sim 0
-.\] 
-Ricordiamo che $\Omega = kT \ln B$ e che
-\[
-	W_{\alpha}= B \exp\left( -\frac{E_{\alpha-\mu N_{\alpha}}}{kT} \right) 
-.\] 
-Dalle quali possiamo scrivere che:
-\[
-	W_{\alpha} = \exp\left[ \frac{\Omega-\left( E_{\alpha}-\mu N_{\alpha} \right) }{kT} \right] 
-.\] 
 

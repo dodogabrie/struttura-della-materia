@@ -1,90 +1,4 @@
 \lez{6}{28-02-2020}{}
-\subsection{Gas ideale con particelle interagenti.}%
-Abbiamo concluso la scorsa lezione dicendo che cercheremo di descrivere i sistemi che incontreremo per analogia con i gas perfetti, è necessario notare che non sarà sempre possibile far questo. Un esempio di sistema per cui non è possibile sono i liquidi.\\
-Abbiamo introdotto il concetto di densità di stati come l'elemento di volume dello spazio delle fasi pesato sulla dimensione della celletta unitaria:
-\[
-	\rho\left( \mathcal{E} \right) d\mathcal{E} = \frac{d\left\{ p_{i} \right\}d\left\{ r_{i} \right\}   }{\left( 2\pi h \right)^{f}}
-.\] 
-con $f = 3N$.\\
-Nella descrizione ci siamo "dimenticati" del fatto che se il nostro sistema contiene N particelle stiamo contando gli stati nuovamente male: infatti abbiamo preso una restrizione a tanti spazi separati, ognuno etichettato con la sua particella; non abbiamo considerato l'indistinguibilità di ogni particella dalle altre. Per questo motivo se vogliamo fare il conto per la funzione di partizione dovremo dividere per $N!$:
-\[
-	\rho\left( \mathcal{E} \right) d\mathcal{E} =\frac{1}{N!} \frac{d\left\{ p_{i} d\left\{ r_{i} \right\}  \right\} }{\left( 2\pi h \right)^{f}}
-.\]
-Vediamo allora fino a che punto possiamo spingerci nel trattare sistemi generici per capire quando è possibile rientrare nella approssimazione di gas ideale, proviamo a prendere sistemi che composti da particelle aventi una correzione all'energia totale data da un termine potenziale di interazione e vediamo come cambiano le principali quantità termodinamiche.\\
-Partiamo dalla funzione di partizione, questa si scrive in generale come:
-
-\[
-	Z = \frac{1}{\left( 2\pi \hbar  \right) ^{3N}N!} \int \int \exp\left( -\frac{E}{kT} \right) d\left\{ p_{i} \right\} d\left\{ r_{i} \right\} 
-.\] 
-Dove abbiamo inserito l'energia grande perché questa è riferita a molti corpi, non a singola particella.\\
-Adesso quindi consideriamo come energia totale del sistema la seguente:
-\[
-	E=\sum_{i =1}^{3N} \frac{p_{i}^2}{2m} + U\left(  r_{i}  \right) 
-.\] 
-In cui rispetto alla trattazione fatta fin'ora abbiamo inserito il termine correttivo $U\left( r_{i} \right) $ che tiene di conto del fatto che il nostro sistema non è un gas perfetto. Tale termine dipenderà in generale dalle coordinate di tutte le particelle. \\
-La funzione di partizione si decompone allora in due termini:
-\[
-	Z = \frac{1}{\left( 2\pi \hbar  \right) ^{3N}N!} \int \int \exp\left( - \sum_{}^{} \frac{p_{i}^2}{2m} \right) d\left\{ p_{i} \right\} 
-	\int\int \exp\left( -\frac{U}{kT} \right) d\left\{ r_{i} \right\} 
-.\] 
-Quest'ultima espressione, sebbene si riferisca ad un gas ideale avente le particelle interagenti, approssima abbastanza bene anche liquidi ideali.\\
-Restringiamoci adesso per fare i conti al caso tridimensionale, abbiamo che l'energia cinetica di una singola particella può essere scritta come:
-\[
-	\mathcal{E} = \frac{p^2}{2m} = \frac{p_{x}^2+p_{y}^2+ p_{z}^2}{2m}
-.\] 
-Quindi ipotizzando le particelle ancora indistinguibili questa energia sarà la stessa per tutte le particelle, allora la parte cinetica dell'integrale precedente può essere scomposta nel prodotto di N integrali tutti uguali, da cui il seguente:
-\[
-	Z = \frac{1}{N! \left( 2\pi\hbar \right)^{3N} }
-	\left[ \int\exp\left( -\frac{p^2}{kT2m} \right) d^3p \right] ^{N} 
-	\int\exp\left( -\frac{U}{kT} \right) d^3r 
-.\] 
-Dividendo e moltiplicando per $V^{N} =  \left[\int d^3r \right]^{N}$:
-\[
-	Z = \frac{1}{N! \left( 2\pi\hbar \right)^{3N} V^{N}}
-	\left[\int \int d^3r \exp\left( -\frac{p^2}{kT2m} \right) d^3p \right] ^{N} 
-	\int\exp\left( -\frac{U}{kT} \right) d^3 r 
-.\] 
-Abbiamo fatto questa ultima operazione in modo da poter alleggerire la notazione: adesso il termine
-\[
-	Z_{IG} = \frac{1}{N! \left( 2\pi\hbar \right)^{3N}}
-	\left[\int \int d^3r \exp\left( -\frac{p^2}{kT2m} \right) d^3p \right] ^{N}
-.\] 
-È la funzione di partizione per il gas ideale ricavata nella \hyperref[eq:DefZ]{Lezione 4}, con l'accortezza di sostituire all'energia la sola energia cinetica ed alla $\rho\left( \mathcal{E} \right)$ quella ricavata tramite la meccanica classica.\\
-Definendo inoltre la parte di energia potenziale come $Q$ si conclude che:
-\[
-	Z = \frac{Z_{IG}}{V^{N}}Q
-.\] 
-Quindi abbiamo la stessa Z di un gas ideale con la correzione del volume e di Q. \\
-Possiamo esplicitare ulteriormente la $Z_{IG}$ facendo uso della funzione $\Gamma$ di Eulero introdotta alla fine della lezione 5:
-\begin{align}
-	Z_{IG} \propto& \int \exp\left( -\frac{\mathcal{E}}{kT} \right) d^3p = \\
-	=& 4\pi\sqrt{2} \left( mkT \right) ^{3 /2} \int \exp\left( -x \right) x^{1 /2}dx=\\
-	=&4\pi\sqrt{2} \left( mkT \right) ^{3 /2} \Gamma\left( \frac{3}{2} \right) 
-.\end{align}
-Quindi se reinseriamo i termini davanti alla espressione \footnote{E considerando che l'integrale della $\Gamma\left( 3 / 2 \right)$ fa $\sqrt{\pi}/2$} possiamo riscriverla introducendo una nuova funzione:
- \[
-	 Z_{IG} = \frac{1}{N!} \frac{V^{N}}{\Lambda^{3N}} = \left( \frac{V}{\Lambda^3} \right)^{N} \frac{1}{N!} 
-.\] 
-dove $\Lambda$ è la lunghezza d'onda termica di De Broglie: 
-\[
-	\Lambda = \frac{2\pi \hbar }{\sqrt{2\pi m kT} }
-.\] 
-Con questa nuova notazione riscriviamo la Z del fluido:
-\[
-	Z = \frac{Q}{N! \Lambda^{3N}}
-.\] 
-Allo stesso modo possiamo scrivere l'energia libera:
-\[
-	F = F_{IG}- NkT \ln V - kT \ln Q
-.\] 
-Estendendo la trattazione al caso in cui il numero di particelle non è conservato tramite $\L$, la funzione di gran partizione può essere scritta:
-\[
-	\L = \sum_{N}^{} \frac{z^{N} Q_{N}}{N! \Lambda^{3N}}
-.\] 
-Nell'ultima abbiamo introdotto la z che è detta fugacità. La fugacità è definita come: 
-\[
-	z = \exp\left( \frac{\mu}{kT} \right) 
-.\] 
 \subsection{Fluttuazioni}%
 Parliamo adesso delle fluttuazioni, abbiamo detto che il nostro metodo funziona nel limite in cui i valori medi ed i più probabili delle nostre grandezze termodinamiche coincidono e che la distribuzione di probabilità sia estremamente piccata nel punto di maggiore probabilità.\\
 Quindi cerchiamo di stimare quali sono il limiti di applicabilità del nostro modello. Indaghiamo inoltre qual'è la probabilità di trovare una fluttuazione: una differenza rispetto al valore medio atteso.\\
@@ -387,3 +301,60 @@ In modo analogo, se avessimo usato altre relazioni avremmo ottenuto che $P$ ed $
 	\overline{\left( \Delta P \right) ^2} = - \frac{kT}{V}k_{S}
 .\] 
 Tipicamente variabili intensive ed estensive sono indipendenti l'una dall'altra.
+\subsection{Indeterminazione dell'entropia}%
+Cerchiamo di stimare le indeterminazioni \ldots dal punto di vista di un qualche parametro fisico del sistema.\\
+Preso un sistema isolato con energia $\mathcal{E} _0$ avente un'incertezza su tale energia $\delta \mathcal{E} _0$, ci aspettiamo che la densità di stati $\rho ( \mathcal{E} ) $ sia monotona crescente nella energia \footnote{Più energia abbiamo nel sistema più abbiamo modi per distribuirla tra le varie particelle e quindi aumenta il numero di stati possibili e di conseguenza la densità di stati. Che succede se invece la densità di stati decresce con l'energia? (domanda di esame). Servirebbe un sistema con dei "Gap" tali di energia per cui, all'interno del Gap, $\rho ( \mathcal{E} ) $ diminuisce.}. \\
+Se tale funzione è crescente in $\mathcal{E} $ allora possiamo scrivere:
+\[
+	\rho ( \mathcal{E}_{0}) \ge \frac{1}{\mathcal{E} _{0}} \int_{0}^{\mathcal{E}_{0}} \rho( \mathcal{E} ) d\mathcal{E}   
+.\] 
+Visto che il numero di stati nella shell spessa $\delta \mathcal{E} _{0}$ è $\rho ( \mathcal{E} _{0}) \delta \mathcal{E} _{0}$ allora l'entropia in tale regione sarà data da:
+\[
+	S = k\ln\left[ \rho ( \mathcal{E} _{0}) \delta \mathcal{E} _{0} \right] \ge
+	k\ln \frac{\delta \mathcal{E} _{0}}{\mathcal{E} _{0}} + k\ln \int_{0}^{\mathcal{E} _{0}}\rho ( \mathcal{E} ) d\mathcal{E} 
+.\] 
+ci aspettiamo inoltre che
+\[
+	\int_{0}^{\mathcal{E} _{0}}  \rho ( \mathcal{E} ) d\mathcal{E} \ge \rho ( \mathcal{E} _{0}) \delta \mathcal{E} _{0}
+.\] 
+Ovvero che il volume della sfera che sta tra $0$ ed $\mathcal{E} _{0}$ sia maggiore del volumino della sola shell al bordo, per verificare questa basta prendere $\mathcal{E} _{0}$ sufficientemente grande.\\
+Ci aspettiamo quindi che l'entropia sia limitata dalle precedenti disuguaglianze:
+\[
+	k\ln\left[ \int_{0}^{\mathcal{E} _{0}} \rho ( \mathcal{E} ) d\mathcal{E} - \ln \frac{\mathcal{E} _{0}}{\delta \mathcal{E} _{0}} \right] 
+	\le S 
+	\le k \ln\left[ \int_{0}^{\mathcal{E} _{0}} \rho ( \mathcal{E} ) d\mathcal{E}   \right] 
+.\] 
+allora l'incertezza sull'entropia dovuta all'incertezza $\delta \mathcal{E} _{0}$ sull'energia è:
+\[
+	\delta  S \sim k\ln \frac{\mathcal{E} _{0}}{\delta \mathcal{E} _{0}}
+.\] 
+Abbiamo un aspetto poco intuitivo: diminuendo l'incertezza sull'energia $\delta  \mathcal{E}_{0}$ aumenta l'incertezza sull'entropia. Questo è vero per piccole incertezze:
+\[
+	\frac{\mathcal{E} _{0}}{\delta  \mathcal{E} _{0}} \ll \exp\left( \frac{S}{k} \right)  
+.\]
+dove essenzialmente tale incertezza è un effetto di bordo. 
+L'incertezza al bordo della superficie introduce una indeterminazione nel conteggio sul numero di celle che vengono attraversate dalla nostra superficie, quindi l'errore nel conteggio diventa più pesante mano a mano che restringiamo l'incertezza sull'energia. 
+Siccome l'entropia è in un certo senso "l'addetta" a tale conteggio, aumenterà il suo errore restringendo lo spessore del bordo.\\
+\subsection{Tempo di vita media degli stati}%
+Cerchiamo di stimare $\delta \mathcal{E} _{0}$ legandola ad un parametro fisico, per far questo possiamo usufruire del principio di indeterminazione:
+\[
+	\delta \mathcal{E} _{0} \tau  \sim \hbar
+.\] 
+$\tau $ è il tempo di vita media degli stati all'interno del nostro sistema.
+Quindi abbiamo dalla relazione scritta sopra:
+\[
+	\tau \ll \frac{\hbar}{\mathcal{E}_{0} }\exp\left( \frac{S}{k} \right) 
+.\] 
+Quindi il tempo di vita media degli stati non può essere infinito.\\
+Tuttavia l'ultima non è una restrizione molto stringente, infatti in genere si ha che $S \gg k$, quindi l'esponenziale è un numero enorme. \\
+Di conseguenza possiamo assumere che i tempi di vita degli stati termodinamici da noi considerati non siano infiniti ma comunque ragionevolmente lunghi. \\
+D'altra parte noi ci aspettiamo che l'incertezza quantistica debba essere molto minore dell'incertezza termodinamica del nostro sistema, altrimenti tutte le considerazioni fatte sulla forma delle distribuzioni andrebbero completamente rivisitate (se non demolite). Quindi facendo le misure non saremo in grado di vedere $\delta \mathcal{E} _{0}$, si avrà:
+\[
+	\delta \mathcal{E} _{0}\ll \sqrt{\overline{\left( \Delta E \right) ^2}} = \sqrt{k C_{V}} T
+.\] 
+Quindi abbiamo gli estremi del tempo di vita medio $\tau $:
+\[
+	\frac{\hbar}{T\sqrt{k C_{V}} } \ll \tau \ll \frac{\hbar}{\mathcal{E}_{0} } \exp\left( \frac{S}{K} \right) 
+.\] 
+Anche quest'ultima non è particolarmente stringente, noi opereremo in sistemi aventi sempre tempi di vita così vincolati.\\
+

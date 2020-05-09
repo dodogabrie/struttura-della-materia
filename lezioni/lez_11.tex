@@ -6,9 +6,8 @@ Abbiamo nelle scorse lezioni ampiamente discusso la distribuzione di Fermi-Dirac
 .\]
 Ricordiamo che per un gas di Bosoni il potenziale chimico $\mu $ deve essere necessariamente negativo e che l'occupazione degli stati non è necessariamente inferiore di 1 come invece avviene nel caso della Fermi-Dirac. Per questa distribuzione è possibile avere $\overline{n}_{q} \gg 1$, vedremo che questo ci porterà al condensato di Bose-Einstein.\\
 \paragraph{Densità critica e temperatura critica.}
-Quando aumenta $\overline{n}_q$ il potenziale chimico si muove verso l'origine "shiftando" l'intera curva di $\overline{n}_{q}$ verso destra: il sistema si popola. \\
-Chiediamoci allora fino a che punto è possibile aumentare il numero di particelle, il caso limite è con $\mu = 0$.\\
-Essendo il potenziale chimico una funzione monotona del numero di particelle ci aspettiamo che $\mu \to 0$ quando $N\to \infty$. Calcolando il numero di particelle $N$ per il sistema di bosoni con ci si rende conto che tale intuizione non risulta rispettata:
+Quando aumenta $\overline{n}_q$ il potenziale chimico si muove verso l'origine "shiftando" l'intera curva di $\overline{n}_{q}$ verso destra: il sistema si popola fino a che $\mu$ non raggiunge il suo valore massimo ($\mu =0$). \\
+Essendo il potenziale chimico una funzione monotona del numero di particelle ci aspettiamo che $\mu \to 0$ quando $N\to \infty$. Calcolando il numero di particelle $N$ per il sistema di bosoni ci si rende conto che tale intuizione non risulta rispettata:
 \[
 	N = \frac{4\pi V g \sqrt{2} m ^{3 /2}}{h^3}
 	\int_{0}^{\infty} \frac{\mathcal{E} ^{1 /2}d\mathcal{E} }
@@ -19,13 +18,15 @@ Vediamo questo come diventa con $\mu = 0$, dovrebbe divergere $N$ per avere il r
 	\lim_{\mu \to 0} N = N_{\text{max}}= \frac{4\pi V g \sqrt{2} m ^{3 /2}}{h^3} \left( kT \right)^{3 /2} \int_{0}^{\infty} \frac{x^{1 /2}dx}{e^{x}-1} \label{eq:N-critico}
 .\] 
 Sfortunatamente l'integrale non diverge, esso fa: $ \sqrt{\pi} /2 \cdot 2.612$. Possiamo allora definire una densità critica
-\[
-	\left( \frac{N}{V} \right)_{\text{c}}= \frac{2.612}{\Lambda ^3}
-.\] 
+\[\begin{aligned}
+    \left( \frac{N}{V} \right)_{\text{c}} &= \left(\frac{\sqrt{2\pi m kT}}{h}\right)^{3} 2.612 =\\ 
+					  &=\frac{2.612}{\Lambda ^3}
+.\end{aligned}\]
 Viceversa possiamo tenere la densità $N /V$ costante ed abbassare la temperatura, in questo modo scopriamo che c'è anche una temperatura critica:
 \[
 	T_{c} = \frac{1}{2.31 m k} \left( \frac{N}{V} \right)^{2 /3} \frac{\left( 2\pi \hbar  \right) ^2}{\left( 4\pi \sqrt{2}  \right) ^{2 /3}}
 .\] 
+Dove abbiamo semplicemente invertito la precedente formula.
 Sembra quindi che vi sua un limite nella quantità di particelle che posso inserire nel volume disponibile e nella temperatura minima raggiungibile per il gas di Bosoni. \\
 Questa stranezza è dovuta alla condensazione di Bose-Einstein, per comprenderne le caratteristiche concentriamoci da prima sulla condensazione classica. 
 Per un gas classico vale sempre:
@@ -92,40 +93,6 @@ Vista l'espressione della $N^{*}$ che è funzione di $T^{3 /2}$ si dovrà avere 
 	&N^{*} = N \left( \frac{T}{T_{c}} \right)^{3 /2}& & \text{con } T<T_{c}
 .\end{align}
 Se approssimiamo inoltre le particelle divise tra quelle che non stanno nel fondamenta e e quelle che vi stanno abbiamo anche che $N = N_0 + N^{*}$, di conseguenza:
-%=======
-%Dove il secondo pezzo sono le separazioni tra i livelli energetici.
-%Per $T = T_{c}$ si ha che:
-%\[
-%	N^{2 /3} \gg \frac{2.31 \left( 4\pi\sqrt{2}  \right)^{2 /3}}{2}
-%.\] 
-%Che è sicuramente rispettata. Allora forse si tratta della densità di stati $\rho ( \mathcal{E} ) $, sappiamo che 
-%\[
-%	\rho ( \mathcal{E} ) \propto \mathcal{E} ^{1 /2}
-%.\] 
-%
-%IN oltre sappiamo che $\rho \to 0$ con $\mathcal{E} \to 0$, tuttavia noi sappiamo che in questo caso vi è lo stato fondamentale. In questo caso nel limite $\mu \to 0$ si ha che diverge $\overline{n}_{q}( \mathcal{E}  = 0 ) \to \infty$. Quindi la densità di stati va a zero ma esplode il numero di particelle. Per questo converge l'integrale! Quindi ci stiamo perdendo, con il conto tutte le particelle che stanno nel fontamentale $N^{*}$, allora  possiamo correggere 
-%\[
-%	N = N_0 + N^{*}
-%.\] 
-%con :
-%\[
-%	N^{*} = \int_{0}^{\infty} \frac{f( \mathcal{E} ) d\mathcal{E} }{\exp\left( \frac{\mathcal{E} }{kT} \right) -1} 
-%.\] 
-%Il numero medio di partielle nel fondamentale sarebbe:
-%\[
-%	\overline{n}_{0} = \frac{\rho }{\exp\left( -\frac{\ldots}{kT} \right) }
-%.\] sviluppando e \ldots\\
-%Questo fenomeno di chiama condensazione di Bose-Einstein.\\
-%Il numero $N$ che abbiamo trovato sopra corrisponde al numero di particelle negli stati eccitati:
-%\[
-%	N^{*} =.. 
-%.\] 
-%Con $T< T_{c}$ \ldots Possiamo allora riscrivere che :
-%\[
-%	N^{*} = N \left( \frac{T}{T_{c}} \right)^{3 /2}
-%.\] 
-%Sempre in queste temperature il numero di particelle nel fondamentale sarà:
-%>>>>>>> c57e305dcf154bc0fe0bc4d93bbf4bf0c93083ef
 \[
 	N_0 = N\left( 1 -\left( \frac{T}{T_{c}} \right)^{3 /2}
  \right) 
@@ -150,7 +117,7 @@ non è corretto dire che $\mu $ sia esattamente zero sotto a $T_{c}$, è zero so
 	N_0( T_{c}) \approx 0 \implies \mu \approx 0
 .\] 
 \paragraph{Energia}
-Nonostante le divergenze con gli usuali sistemi studiati fin'ora anche in questo caso vale la formula per l'energia:
+La formula per l'energia a noi nota rimane valida anche in questo caso (notiamo che si ha $\mu=0$):
 \[
 	E = \int_{0}^{\infty} 
 	\frac{\mathcal{E} \rho ( \mathcal{E} ) d\mathcal{E} }
@@ -203,7 +170,7 @@ Notiamo che la zona di condensato non è raggiungibile se non per $T= 0$, quindi
 \subsection{Oscillatore armonico}%
 Vediamo dal punto di vista termodinamico un sistema di oscillatori armonici, partiamo da un caso semplice.
 \paragraph{Oscillatore armonico classico}
-L'Hamiltoniano per un singolo oscillatore questo caso sarà:
+L'Hamiltoniana per un singolo oscillatore questo caso sarà:
 \[
 	H( p,q) = \frac{1}{2}m\omega ^2q^2 + \frac{1}{2m}p^2
 .\] 
@@ -220,7 +187,7 @@ Se il sistema è composto da $N$ di questi oscillatori indipendenti allora avrem
 	Z = Z_{1}^{N}
 .\] 
 Notiamo che con questa funzione di partizione stiamo assumendo gli oscillatori come distinguibili. La distinguibilità questa volta è giustificata dal fatto che tratteremo sistemi in cui ogni singolo oscillatore sarà l'equivalente di un livello di energia o di un modo normale di oscillazione. Questi due ultimi saranno sicuramente distinguibili, per i modi normali ad esempio ognuno avrà la sua frequenza.\\
-Notiamo che essendo separabile l'integrale per $Z_1$ questi oscillatori indipendenti tra loro potrebbero essere le 3 direzioni spaziali, in questo caso si avrebbe che:
+Visto che l'integrale per $Z_1$ è "separabile" possiamo generalizzare ad un caso 3D:
 \[
 	Z = Z^{3D}= \left( Z^{1D} \right)^3 = Z_1^{3N}
 .\] 
@@ -235,7 +202,7 @@ In tre dimensioni si ha semplicemente:
 Possiamo adesso calcolare la pressione, in questo caso non avendo dipendenza dal volume per l'energia libera si avrà $P = 0$. \\
 È inoltre possibile calcolare l'entropia:
  \[
-	 S = \left.\frac{\partial F}{\partial T} \right|_{V, N} = Nk \left[ \ln \left( \frac{kT}{\omega \hbar} \right)  \right] 
+	 S = -\left.\frac{\partial F}{\partial T} \right|_{V, N} = Nk \left[ \ln \left( \frac{kT}{\omega \hbar} \right) +1  \right] 
 .\] 
 L'energia media invece sarà:
 \[
@@ -245,7 +212,7 @@ Il calore specifico:
 \[
 	C_{V} = \frac{\partial E}{\partial T} = Nk
 .\] 
-Quindi come risultato abbiamo che ogni oscillatore si porta con se un contributo all'energia di $kT$, questo è il noto risultato del teorema di equipartizione dell'energia.
+Quindi ogni oscillatore (termine cinetico e termine potenziale) porta con se un contributo all'energia di $kT$.
 \begin{defn}[Teorema di equipartizione dell'energia]{def:Teorema di equipartizione dell'energia}
 	Ogni termine quadratico dell'Hamiltoniana porta un contributo all'energia media di $kT /2$.
 \end{defn}
@@ -266,11 +233,11 @@ Qundi la funzione di partizione totale sarà:
 .\] 
 Con gli stessi passaggi di prima troviamo che:
 \[
-	F = NkT\ln\left[ 2\sinh\left( \frac{\beta \hbar\omega }{2} \right)  \right] = N \left[ \frac{1}{2}\hbar\omega + kT \ln\left\{ 1-\exp\left( -\beta \hbar\omega  \right)  \right\}  \right] 
+    	F = NkT\ln\left[ 2\sinh\left( \frac{\beta \hbar\omega }{2} \right)  \right] = N \left[ \frac{1}{2} \hbar\omega + kT \ln\left( 1-\exp\left( -\beta \hbar\omega  \right)  \right)  \right] 
 .\] 
 Anche nel caso quantistico abbiamo $P=0$ come nel caso classico. L'entropia invece sarà:
 \[
-	S = Nk\left[ \frac{\beta \hbar\omega }{\exp\left( \beta \hbar\omega  \right) -1} - \ln\left( 1-\exp\left( \beta \hbar\omega  \right)  \right)  \right] 
+	S = Nk\left[ \frac{\beta \hbar\omega }{\exp\left( -\beta \hbar\omega  \right) -1} - \ln\left( 1-\exp\left( -\beta \hbar\omega  \right)  \right)  \right] 
 .\] 
 Quindi l'energia
 \[
@@ -287,17 +254,17 @@ Quindi possiamo interpretare il secondo termine tra parantesi come il livello di
 	\overline{n} = \frac{1}{\exp\left( \frac{\hbar\omega }{kT} \right) -1}
 .\] 
 Tuttavia possiamo anche avere una visione completamente diversa: $\overline{n}$ come il numero medio di "quasi particelle" che si trovano nello stato con energia $\hbar\omega $. \\
-Stiamo quindi costruendo una analogia tra l'oscillatore armonico quantistico e la statistica studiata fin'ora definendo il numero medio di particele che in realtà non di sono.\\
-In questa lettura l'oscillatore armonico corrisponde al livello di energia $\hbar\omega $ popolato da un numero medio di particelle $\overline{n}$. Queste quasi particelle porteranno le informazioni fisiche per descrivere lo stato di eccitazione dell'oscillatore armonico. Studiamo allora questi quanti di eccitazione dell'oscillatore armonico.\\
-Questi hanno un numero di popolamento medio che segue la Bose-Einstein, quindi sono Bosoni un pò particolari: non hanno potenziale chimico\footnote{Sono descritti da una Bose-Einstein che non contiene la $\mu $.}.\\
+Stiamo quindi costruendo una analogia tra l'oscillatore armonico quantistico e la statistica studiata fin'ora definendo il numero medio di particele che in realtà non ci sono.\\
+In questa lettura l'oscillatore armonico corrisponde al livello di energia $\hbar\omega $ popolato da un numero medio di particelle $\overline{n}$. Queste quasi particelle porteranno le informazioni fisiche per descrivere lo stato di eccitazione dell'oscillatore stesso. \\
+I quanti discussi hanno un popolamento medio che segue la Bose-Einstein, quindi sono Bosoni un pò particolari: non hanno potenziale chimico\footnote{Sono descritti da una Bose-Einstein che non contiene la $\mu $.}.\\
 Non avere il potenziale chimico indica che non c'è una legge di conservazione del numero di particelle globali.\\
-Si ha infatti che il potenziale chimico può essere definito come il moltiplicatore di Lagrange indotto dal vincolo di avere un numero di particelle costanti nell'universo. Non avere il potenziale significa far cadere tale vincolo (Patrhia).\\ 
-Essendo quanti di eccitazione non c'è niente di male nel far cadere la conservazione del numero di particelle, queste non sono vere particelle.\\
+Si ha infatti che il potenziale chimico può essere definito come il moltiplicatore di Lagrange indotto dal vincolo di avere un numero di particelle costanti nell'universo. Non avere il potenziale significa far cadere tale vincolo (Patrhia).
+Essendo quanti di eccitazione è lecito far cadere la conservazione del numero di particelle.\\
 L'energia di punto zero:
 \[
 	E_0 = \frac{N}{2}\hbar\omega 
 .\] 
-È importante perchè ci fa andare l'energia media al limite asintodico fisicamente corretto tornando nel limite classico. 
+é importante perché fa andare l'energia media al limite asintotico fisicamente corretto tornando nel limite classico. 
 Tuttavia tale energia non è spesso accessibile dalle misure, il caso tipico in cui lo si capisce sarà la descrizione fisica del campo elettromagnetico: le misure su questo campo riescono a campionare soltanto l'eccitazione, non si riesce ad avere accesso all'energia di punto zero con le misure pratiche.\\
 Questo risolve il problema del fatto che l'energia del punto zero nel campo elettromagnetico diverge. Vuol dire che probabilmente c'è nuova fisica laggiù?
 

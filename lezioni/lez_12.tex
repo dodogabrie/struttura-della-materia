@@ -5,8 +5,8 @@ Tale nome nasce dal modo in cui Plank iniziò ad interessarsi allo studio della 
 Possiamo descrivere il campo elettromagnetico come un insieme di oscillatori armonici aventi ciascuno la sua frequenza di oscillazione oppure introducendo il concetto di quasi particella che può distribuirsi su tutti gli stati possibili del campo elettromagnetico secondo una Bose-Einstein avente $\mu = 0$. \\
 Abbiamo visto che l'energia media del singolo oscillatore è:
 \[
-	\mathcal{E} = \frac{1}{2}\hbar\omega 
-	\left( 1 + \frac{1}{\exp\left( \frac{\hbar \omega _{s}}{kT}-1 \right)} \right) 
+	\mathcal{E} = \hbar\omega 
+	\left( \frac{1}{2} + \frac{1}{\exp\left( \frac{\hbar \omega _{s}}{kT}-1 \right)} \right) 
 .\] 
 con $\left< n_{s} \right>$ descritto da una Bose-Einstein senza il $\mu $: \[
 	\left<n_{s} \right> = \frac{1}{\exp\left( \frac{\hbar \omega _{s}}{kT}-1 \right) }
@@ -16,7 +16,7 @@ Noi invece trascureremo questo termine perché porterà al massimo soltanto un o
 \[
 	\left<\mathcal{E}  \right> = \frac{\hbar \omega _{s}}{\exp\left( \frac{\hbar \omega _{s}}{kT} \right) -1}
 .\] 
-Calcoliamo il numero di modi compresi in frequenza tra $\omega $ e $\omega + \delta \omega $, questa è la densità di stati del campo elettromagnetico. Tale conto è stato fatto da Rayleigh mettendo le condizioni al contorno su una scatola di lato $L$, il suo risultato fu: 
+Calcoliamo il numero di modi compresi in frequenza tra $\omega $ e $\omega + \delta \omega $:la densità di stati del campo elettromagnetico. Tale conto è stato fatto da Rayleigh mettendo le condizioni al contorno su una scatola di lato $L$, il suo risultato fu: 
 \[
 	N_{\text{modi}}=\frac{\omega ^2 d\omega }{\pi^2 c^3} \label{eq:densita-stati}
 .\] 
@@ -29,11 +29,11 @@ Ma visto che $\mathcal{E} = \hbar\omega $ e $p = \hbar k$ si ha per i fotoni:
 \[
 	\mathcal{E} = cp
 .\] 
-A noi serve fare il conto con l'elemento infinitesimo dello spazio delle fasi:
+A noi serve fare il conto con l'elemento infinitesimo dello spazio delle fasi, dobbiamo tener di conto delle due polarizzazioni dell'onda elettromagnetica con un fattore 2:
 \[\begin{aligned}
 	\rho ( \omega ) 
 	=&
-	2 \cdot \frac{2d^3r d^3p}{\left( 2\pi \hbar \right)^3}=\\
+	\frac{2d^3r d^3p}{\left( 2\pi \hbar \right)^3}=\\
 	=& \frac{2V 4\pi p^2 dp}{\left( 2\pi\hbar  \right) ^3} =\\
 	=& \frac{V\mathcal{E}^2 d\mathcal{E} }{\pi^2c^3\hbar^3}=\\
 	=& \frac{V\omega ^2 d\omega }{\pi^2c^3}
@@ -82,7 +82,7 @@ Se sviluppiamo la distribuzione di Plank per
 .\] 
 In tal caso si ha che:
 \[
-	\exp\left( \frac{\hbar \omega }{kT} \right) = 1 - \frac{\hbar \omega }{kT}
+	\exp\left( \frac{\hbar \omega }{kT} \right) = 1 + \frac{\hbar \omega }{kT}
 .\] 
 Quindi la distribuzione diventa circa quadratica: esce fuori la legge di Rayleigh-Jeans
 \[
@@ -90,9 +90,9 @@ Quindi la distribuzione diventa circa quadratica: esce fuori la legge di Rayleig
 .\] 
 Questa legge varrebbe se i fotoni fossero oggetti classici, infatti con questa stiamo semplicemente moltiplicando la densità di stati\footnote{Proporzionale $\omega ^2$ come nella \ref{eq:densita-stati}} per l'energia media del singolo oscillatore $\left<\mathcal{E}  \right> \sim kT$.\\
 Questa formula non può funzionare per tutte le frequenze, infatti come ben sappiamo se la distribuzione di energia fosse stata effettivamente questa allora si andrebbe incontro alla famosa catastrofe ultravioletta.\\
-Nel nostro conto non abbiamo assunto nessuna condizione al contorno dipendente dalla frequenza, questo equivale a dire che la risposta della nostra scatola sia indipendente dalla frequenza, in particolare la nostra scatola potrebbe essere completamente assormente a tutte le frequenze (questo è un motivo migliore per chiamare il sistema corpo nero).\\
-Una volta che pensiamo in termini di fotoni all'equilibrio termodinamico il potenziale chimico nullo adesso assume un significato ben preciso, infatti togliendo il vincolo di avere la conservazione delle particelle ci resta solo la conservazione dell'energia: Tanta ne viene emessa e tanta ne viene assorbita ad esempio dalla scatola.\\
-Di conseguenza potrebbe benissimo capitare che si abbia l'assorbimento di un fotone di energia $E$ e l'emissione di tre fotoni di energia $E /3$.\\
+Nel nostro conto non abbiamo assunto nessuna condizione al contorno dipendente dalla frequenza, questo equivale a dire che la risposta della nostra scatola è indipendente da $f$, in particolare la scatola potrebbe essere completamente assorbente a tutte le frequenze (questo è un motivo migliore per chiamare il sistema corpo nero).\\
+Ragionando in termini di fotoni all'equilibrio termodinamico (con la scatola) avere un potenziale chimico nullo assume un significato ben preciso, infatti togliendo il vincolo della conservazione del numero di particelle resta solo la conservazione dell'energia: Tanta ne viene emessa e tanta ne viene assorbita ad esempio dalla scatola.\\
+Ad esempio potrebbe capitare che un fotone di energia $E$ venga assorbito e di conseguenza tre fotoni di energia $E /3$ vengano emessi.\\
 Definiamo adesso l'energia totale media per unità di volume:
 \begin{align}
 	\frac{\overline{E}}{V}=& \int_{0}^{\infty} u ( \omega ) d\omega  =\\
@@ -108,12 +108,13 @@ Con questa si ricava l'andamento del calore specifico
 	C_{V} = \frac{\partial E}{\partial T} \propto T^{3}
 .\] 
 Possiamo adesso chiederci perchè all'aumentare della temperatura non torna il calore specifico classico del tipo $3Nk$, la risposta è semplice: il nostro gas non è mai classico.\\
-Infatti il nostro sistema è costituito da gas di fotoni che infiniti modi di propagazione del campo elettromagnetico, non ho una frequenza massima dei modi all'interno della scatola. Infatti la densità di stati è proporzionale a $\omega ^2$ e noi possiamo aumentare la frequenza a piacimento, non è vincolata.\\
+Infatti il nostro sistema è costituito da gas di fotoni: i modi di propagazione del campo elettromagnetico sono infiniti. \\
+Infatti la densità di stati è proporzionale a $\omega ^2$ e noi possiamo aumentare la frequenza a piacimento, non è vincolata.\\
 Quindi in maniera del tutto indipendente dalla temperatura ho sempre tantissimi modi che rispettano la relazione:
 \[
 	\frac{\hbar\omega }{kT}\gg 1
 .\] 
-Vedremo inoltre più avanti un sistema del tutto analogo a questo che invece è limitato in enegia da un $\hbar\omega _{\text{max}}$.
+Vedremo inoltre più avanti un sistema del tutto analogo a questo che invece è limitato in enegia da un $\hbar\omega _{\text{max}}$ (fononi).
 In tal caso i modi sono finiti e il calore specifico tenderà a quello classico:
 \[
 	C_{v} \to 3Nk
@@ -145,7 +146,9 @@ In tre dimensioni avremo $3N$ oscillatori, $u_0$ sarà una costante negativa che
 	E = 3N kT \implies C_{V} = 3Nk
 .\] 
 L'ultima è la legge di Duolong e Depetit.\\
-Questa funziona bene per il calore specifico a temperatura ambiente, viene meno a temperature molto basse dove il calore specifico risulta sperimentalmente andare a zero.\\
+Questa funziona bene per il calore specifico a temperatura ambiente, viene meno a temperature molto basse dove il calore specifico risulta sperimentalmente andare a zero.
+\subsubsection{Ipotesi di Einstein}%
+\label{subsub:Ipotesi di Einstein}
 Einstein suggerì di trattare gli oscillatori armonici in modo quantistico, associando ad ogni oscillatore una energia media 
 \[
 	E_1=\mathcal{E} _{0,\omega } + \hbar\omega \overline{n}
@@ -164,26 +167,31 @@ L'energia media dell'intero sistema sarà $3N$ volte questa, quindi possiamo dir
 	\frac{\exp\left( \frac{\hbar\omega }{kT} \right) }{\left[ \exp\left( \frac{\hbar\omega }{kT} \right) -1 \right] ^2}
 .\] 
 Plottando questa in funzione di $T$ ci si rende conto che per alte temperature ($kT \gg \hbar \omega $) torna la formula che conosciamo di calore specifico costante. 
-Tuttavia, anche se con questa formula il calore specifico va a zero a basse temperature, si notò che questo non andava a zero nel modo osservato nei dati sperimentali ($\sim T^{3}$) ma con il modello di Einstei andava giù come un esponenziale.\\
+Tuttavia, anche se con questa formula il calore specifico va a zero a basse temperature, si notò che questo non andava a zero nel modo osservato nei dati sperimentali ($\sim T^{3}$) ma con il modello di Einstein andava giù come un esponenziale.\\
 Se ricordiamo sopra un andamento per $C_{V}$ cubico lo abbiamo già trovato per il gas di fotoni, evidentemente a basse temperature deve esserci qualcosa che rende molto simile il nostro sistema di vibrazioni in un solido ad un gas di fotoni.\\
 La differenza tra questo sistema ed il gas di fotoni la fa sicuramente la densità di stati: abbiamo assunto qua che i $3N$ oscillatori armonici abbiano tutti la stessa frequenza di oscillazione, quindi la stessa $\hbar\omega $. Nel caso dei fotoni invece non era cosi, abbiamo preso degli $\hbar\omega $ diversi per ogni fotone, in particolar modo avevamo  $\hbar\omega = c \hbar k$.\\
-Sembrerebbe sensato assumere anche per questo sistema di vibrazioni nei solidi degli oscillatori armonici con una frequenza che è linearmoente proporzionale al vettore d'onda, si tratterebbe quindi di trattarli gli oscillatori come onde. In questo modo troveremo l'andamento giusto del calore specifico a bassa temperatura.\\
+Sembrerebbe sensato assumere anche per questo sistema di vibrazioni nei solidi degli oscillatori armonici con una frequenza che è linearmente proporzionale al vettore d'onda, si tratterebbe quindi di trattarli gli oscillatori come onde. In questo modo troveremo l'andamento giusto del calore specifico a bassa temperatura.
+\subsubsection{Ipotesi di Debye}%
+\label{subsub:Ipotesi di Debye}
 Debye suggerì che considerare ogni oscillatore armonico indipendente con un potenziale uguale per tutti gli atomi non fosse una buona trattazione. A basse energie non si possono trattare le oscillazioni degli atomi indipendenti l'una dall'altra \footnote{Notiamo che nel modello iniziale si considera già, mediante le molle, l'interazione tra gli atomi del solido, soltanto che adesso facciamo cadere l'ipotesi che dopo una perturbazione il potenziale $u( r) $ resti invariato.}.\\
-Avevamo assunto che tutti gli atomi avessero una frequenza di oscillazione $\omega _{E}$ ed una energia di legame $n_0$ ben definiti, avevamo assunto anche che gli atomi fossero indipendenti l'uno dall'altro. Con queste assunzioni si ha che le due quantità non dovrebbero dipendere dalla densità del materiale. Questo sarebbe problematico nel calcolo dell'emergia libera \footnote{La seguente formula è riferita a 3N oscillatori tutti con la stessa frequenza ed aggiungendo la parte relativa all'oscillazione}:
+Le problematiche del modello di Einstein vengono a galla quando proviamo a calcolare la pressione e la compressibilità del sistema. Abbiamo assunto tutti gli atomi aventi una frequenza di oscillazione $\omega_{E}$ ed una energia di legame $n_0$ ben definiti con l'ulteriore ipotesi di atomi indipendenti tra loro. Con queste assunzioni si ha che queste due quantità non dovrebbero dipendere dalla densità del materiale. \\
+Proviamo a calcolare l'energia libera \footnote{La seguente formula è riferita a 3N oscillatori tutti con la stessa frequenza ed aggiungendo la parte relativa all'oscillazione}:
 \[
 	F = N n_0 + \frac{3}{2}N\hbar \omega _{E} + 3 N kT\ln\left[ 1-\exp\left( -\frac{\hbar \omega _{E}}{kT} \right)  \right] 
 .\] 
 Andando a calcolare la pressione e la compressibilità si otterrebbero i due risultati assurdi:
 
 \[
-	P = \frac{\partial P}{\partial V} = 0
+	P = \frac{\partial F}{\partial V} = 0
 .\] 
 \[
-	k = - \frac{1}{V} \left( \frac{\partial V}{\partial P}  \right) 
+	k_P = - \frac{1}{V} \left( \frac{\partial V}{\partial P}  \right) \to \infty
 .\] 
-Di conseguenza non possiamo trattare le vibrazioni come oscillazioni di singoli atomi in cui ognuno non vede gli atomi vicini, questo funziona solo a temperature alte.\\
-Raffiniamo la nostra trattaizione iniziando a cercare i modi normali del nostro sistema di N particelle in una dimensione legate da molle. I modi normali che contribuiscono al calore specifico ed all'energia a temperature basse saranno quelli di energia più bassa possibile. Dimostriamo questa affermazione.\\
-Cerchiamo questi modi in una dimensione, prendiamo la seguente catena di atomi legati insieme da molle:
+Di conseguenza non possiamo trattare le vibrazioni come oscillazioni di singoli atomi in cui ognuno non vede gli atomi vicini, questo funziona solo a temperature alte.
+\subsubsection{Modi normali del sistema.}%
+\label{subsub:Modi normali del sistema.}
+Cerchiamo i modi normali di un sistema di $N$ particelle 1D legate da molle. I modi normali che contribuiscono al calore specifico ed all'energia a basse temperature saranno quelli di energia più bassa.
+Possiamo dimostrarlo cercando questi modi, prendiamo la seguente catena di atomi legati insieme da molle:
 \begin{figure}[H]
     \centering
     \incfig{catena-di-atomi-in-una-dimensione}
@@ -191,24 +199,24 @@ Cerchiamo questi modi in una dimensione, prendiamo la seguente catena di atomi l
     \label{fig:catena-di-atomi-in-una-dimensione}
 \end{figure}
 \noindent
-Il modo di oscillazione meno energetico che possiamo ottenere con questo sistema è quello in cui un solo atomo viene spostato dalla sua posizione di equilibrio, generando una sempre minore perturbazione sugli atomi a lui limitrofi:
+Il modo di oscillazione meno energetico è quello in cui un solo atomo viene spostato dalla sua posizione di equilibrio, generando una sempre minore perturbazione sugli atomi a lui limitrofi:
 \begin{figure}[H]
     \centering
     \incfig{perturbazione-meno-energetica-per-una-catena-di-atomi}
-    \caption{Perturbazione meno energetica per una catena di atomi}
+    \caption{\scriptsize Perturbazione meno energetica per una catena di atomi: il grafico di sotto corrisponde ad un passaggio al continuo degli atomi eccitati (vedi la condizione sotto) .}
     \label{fig:perturbazione-meno-energetica-per-una-catena-di-atomi}
 \end{figure}
 \noindent
-Nella figura il grafico di sotto corrisponde ad un passaggio al cotinuo degli atomi eccitati, la curva dello spostamento prenderebbe quella forma. Infatti se chiamiamo $a$ il passo reticolare e $\lambda $ la lunghezza d'onda generata dalla perturbazione questo è il limite in cui 
+Se chiamiamo $a$ il passo reticolare e $\lambda $ la lunghezza d'onda generata dalla perturbazione questo è il limite in cui 
 \[
 	\lambda \gg a
 .\] 
-Il nostro solido diventa così un mezzo elastico non più discreto ma continuo, non ci accorgiamo della struttura discreta degli atomi. In questo modo valgolo le leggi di propagazione in un mezzo continuo.\\
+Il solido diventa così un mezzo elastico nel quale valgono le leggi di propagazione in un mezzo continuo uniforme.\\
 Il vettore d'onda del sistema così perturbato sarà:
 \[
 	k_{\text{min}} = \frac{\pi}{Na}
 .\] 
-Il modo avente energia più alta possibile sarà invece quello in cui gli atomi si spostano ognuno nella direzione opposta al precedente:
+Il modo con energia massima sarà quello in cui gli atomi si spostano ognuno nella direzione opposta al precedente:
 \begin{figure}[H]
     \centering
     \incfig{perturbazione-più-energetica-per-una-catena-di-atomi}
@@ -221,15 +229,17 @@ Se volessimo comunque associare anche a questo moto un vettore d'onda allora avr
 \[
 	k_{\text{max}} = \frac{\pi}{a}
 .\] 
-Essendo l'energia $\mathcal{E} = c_s \hbar k$ abbiamo che il primo caso corrisponde senza dubbio all'energia massima, il secondo a quella minima.\\
-Ci aspettiamo quindi di poter decrivere i nostri modi normali di oscillazione come delle onde aventi $k$ limitato superiormente dal passo reticolare del cristallo ed inferiormente dalle dimensioni globali di quest'ultimo.\\
+Essendo l'energia $\mathcal{E} = c_s \hbar k$ il primo caso corrisponde all'energia minima, il secondo a quella minima.\\
+Ci aspettiamo quindi di poter descrivere i  modi normali di oscillazione come delle onde aventi $k$ limitato superiormente dal passo reticolare del cristallo ed inferiormente dalle dimensioni globali di quest'ultimo.\\
 Tornando adesso al caso di Figura \ref{fig:perturbazione-meno-energetica-per-una-catena-di-atomi}, possiamo considerare in questo caso valida la legge di dispersione:
 \[
 	\omega = c_sk
 .\] 
 Dove $c_s$ è proprorzionale alla velocità del suono.\\
-Tornando adesso in 3 dimensioni per questo primo caso si ha che sono possibili 3 polarizzazioni: le due tipiche dei campi EM più quella longitudinale.\\
-Parliamo adesso di quella longitudinale. Sia $\rho$ la densità di un elementino di solido, $P$ la sua pressione e $v$ la sua velocità. La prima equazione cardinale può essere scritta come:
+Considerando un sistema 3D ci saranno 3 possibili polarizzazioni: le due tipiche dei campi EM più quella longitudinale.\\
+\subsubsection{Propagazione di onde longitudinali nei solidi.}%
+\label{subsub:Propagazione di onde longitudinali nei solidi.}
+Sia $\rho$ la densità di un elementino di solido, $P$ la sua pressione e $v$ la sua velocità. La prima equazione cardinale può essere scritta come:
 \[
 	\frac{\partial P}{\partial x} + \rho \frac{\partial v}{\partial t} = 0
 .\] 
@@ -241,14 +251,14 @@ Da combinare con l'equazione di continuità per la densità:
 	0 
 .\]  
 Sappiamo che interpolando queste due equazioni si arriva alla legge di dispersione $\omega = c k$. \\
-Per arrivarci era necessario fare un calcolo perturbativo sulla pressione e sulla densità:
+Per arrivarci è necessario fare un calcolo perturbativo sulla pressione e sulla densità:
 \[
 	\rho = \rho_0+ \rho ' 
 .\] 
 \[
 	P = P_0 + P'
 .\] 
-Successivamente dovevamo introdurre queste due quantità nelle equazioni precedenti scartando i termini al secondo ordine, si ottiene:
+Successivamente dobbiamo introdurre queste due quantità nelle equazioni precedenti scartando i termini al secondo ordine, si ottiene:
 \[
 	\frac{\partial P'}{\partial x} +
 	\rho_0 \frac{\partial v'}{\partial t} 

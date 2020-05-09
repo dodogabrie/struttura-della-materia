@@ -3,7 +3,7 @@
 \label{subsec:Onde nei solidi.}
 \subsubsection{Analogie e differenze con la statistica del corpo nero.}
 \label{subsubsec:Analogie e differenze con la statistica del corpo nero.}
-Continunuiamo la ricerca della soluzione del problema delle onde nei solidi considerando il sistema composto da N particelle accoppiate con delle molle e studiando i modi normali collettivi.\\ 
+Continuiamo la ricerca della soluzione del problema delle onde nei solidi considerando il sistema composto da N particelle accoppiate con delle molle e studiando i modi normali collettivi.\\ 
 In particolare ci concentriamo sui modi di bassa energia, quelli che, nella scorsa lezione, abbiamo visto rispettare la relazione $\lambda \gg a$.
 Per queste energie abbiamo la legge di dispersione tipica della propagazione delle onde in un mezzo:
 \[
@@ -24,7 +24,7 @@ A basse energie, dove vale $\omega = c_s k$, abbiamo visto che si può utilizzar
 	=
 	\frac{1}{e^{\hbar\omega /kT}-1}
 .\] 
-Imponiamo adesso che si possa applicare questa distribuzione indipendentemente dal $k$ del sistema, assumendo quindi che al di sotto della $T_F$ gli unici stati popolati siano quelli di energia tale da poter utilizzare sempre la funzione di distribuzione lineare.\\
+Imponiamo adesso che si possa applicare questa distribuzione indipendentemente dal $k$ del sistema, assumendo quindi che al di sotto della $T_F$ gli unici stati popolati siano quelli di energia tale da poter utilizzare sempre la funzione di distribuzione lineare (valeva per sistemi con energia bassa).\\
 Con questa assunzione sappiamo che il numero totale di stati ($3N$) sarà dato da:
 \[
 	3N 
@@ -34,7 +34,7 @@ Con questa assunzione sappiamo che il numero totale di stati ($3N$) sarà dato d
 	\label{eq:n-stati-onde-solidi}
 .\] 
 In cui la $\rho ( \omega ) $ è la stessa del caso EM con l'eccezione che adesso abbiamo 3 possibili polarizzazioni: 2 trasversali ed una longitudinali. 
-Questi due casi avranno diverse velocità di propagazione che chiamiamo $c_T$ e $c_L$, nella nostra trattazione considerreremo tuttavia una velocità media di propagazione per semplicità: $\overline{c}$ \footnote{Se usiamo questa velocità media dobbiamo comunque aggiungere un fattore 3 dovuto al fatto che introduciamo una degenerazione considerando tutte le velocità uguali}.
+Questi due casi avranno diverse velocità di propagazione $c_T$ e $c_L$,  considereremo per semplicità una velocità media di propagazione: $\overline{c}$ \footnote{Se usiamo questa velocità media dobbiamo comunque aggiungere un fattore 3 dovuto al fatto che introduciamo una degenerazione considerando tutte le velocità uguali}.
 \[\begin{aligned}
 	 \rho ( \omega ) 
 	 =&
@@ -89,7 +89,7 @@ Calcoliamo l'energia media del sistema di oscillatori\footnote{Con la solita sos
 	d\mathcal{E} = \\
 	=& 
 	9NkT 
-	\left( \frac{T}{\theta _D} \right)
+	\left( \frac{T}{\theta _D} \right)^3
 	\int_{0}^{\theta _D /T} 
 	\frac{x^3}{e^x-1}
 	dx
@@ -113,13 +113,11 @@ In conclusione possiamo disegnare l'andamento di questo calore specifico in funz
     \label{fig:calore-specifico-in-un-solido-al-variare-della-temperatura}
 \end{figure}
 \noindent
-Notiamo che il nostro modello descrrive bene le due zone asidntodiche, la parte centrale del grafico invece è quella dove con la nostra descrizione commettiamo un errore maggiore.
-\subsection{Proprietà di conducibilità del gas di elettroni liberi conun campo elettrico esterno}
-\label{subsec:Proprietà di conducibilità del gas di elettroni liberi conun campo elettrico esterno}
-Prendiamo un gas di elettroni all'interno del nostro solido.\\
-Il sistema in questione non è all'equilibrio quando applichiamo il campo elettrico. Vogliamo sviluppare un sistema che tenga di conto del fatto che il sistema sia fuori equilibrio assumendo che la perturbazione dall'equilibrio sia piccola.
+Notiamo che il nostro modello descrive bene le due zone asintotiche, la parte centrale del grafico invece è quella dove con la nostra descrizione commettiamo un errore maggiore.
 \subsection{Modello del trasporto semi-classico.}
 \label{subsubsec:Modello del trasporto semi-classico.}
+Prendiamo un gas di elettroni all'interno del nostro solido ed applichiamo un campo elettrico esterno. Grazie alla perturbazione gli elettroni non sono più all'equilibrio termodinamico.
+Il modello di trasporto semiclassico tiene di conto del fatto che il sistema è fuori equilibrio assumendo che la perturbazione dall'equilibrio sia piccola.\\
 Questo modello consiste nel trattare classicamente il moto degli elettroni tenendo anche di conto della statistica di Fermi-Dirac.\\
 Indichiamo con $f( t, r, v) $ il numero di particelle presenti una celletta nello spazio delle fasi \footnote{Senza il campo elettrico esterno questo sarebbe proprio il numero di particelle $n_q$}.\\
 Prendiamo inoltre un sistema descritto dalla Hamiltoniana:
@@ -132,7 +130,7 @@ Per il teorema di Liuville il numero di particelle $f$ rimane costane nel tempo 
 	= 
 	f( t, \bs{r}, \bs{v}) 
 .\] 
-Il gas di elettroni è in grado di cedere energia al cristallo sotto forma di urti, tuttavia ne può riacquistare per via della presenza del campo elettrico, dopo un tempo di transito dall'accenzione di quest'ultimo si raggiungerà un nuovo equilibrio.\\
+Il gas di elettroni è in grado di cedere energia al cristallo sotto forma di urti, tuttavia ne può riacquistare per via della presenza del campo elettrico, dopo un tempo di transito dall'accenzione di quest'ultimo si raggiunge un nuovo equilibrio.\\
 Notiamo che la collisione degli elettroni può esser vista da due punti di vista differenti:
 \begin{itemize}
 	\item Classicamente: gli elettroni urtano contro gli atomi facendoli vibrare.
@@ -140,7 +138,7 @@ Notiamo che la collisione degli elettroni può esser vista da due punti di vista
 		vibrazioni del cristallo.
 \end{itemize}
 \paragraph{Correzione collisionale}
-Trascuriamo per un attimo il campo elettrico esterno, spostiamo dalla posizione di equilibrio termodinamico il sistema e valutiamo come torna all'equilibrio perdendo energia per collisioni.\\
+Trascuriamo per un attimo il campo elettrico esterno, perturbiamo il sistema dall'equilibrio e valutiamo il tempo di estinzione della perturbazione (per collisioni).\\
 A questo scopo introduciamo fenomenologicamente un termine collisionale nel teorema di Liuville:
 \[
 	\left.\frac{\partial f}{\partial t} \right|_{\text{coll}} 
@@ -184,7 +182,7 @@ Ricaviamo quindi la $f$:
 	=
 	f_0 - \tau 
 	\left( 
-	a \frac{\partial f}{\partial v_n} 
+	a \frac{\partial f}{\partial v_x} 
 	+ 
 	v \frac{\partial f}{\partial x}  \right) 
 .\]

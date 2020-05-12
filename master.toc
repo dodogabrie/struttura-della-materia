@@ -114,7 +114,7 @@
 \contentsline {subsubsection}{Ricerca della frequenza massima di oscillazione del solido.}{88}{section*.859}%
 \contentsline {paragraph}{Le onde longitudinali sono più veloci di quelle trasverse}{88}{section*.864}%
 \contentsline {subsubsection}{Calcolo della energia media e verifica dei limiti asintodici del calore specifico.}{89}{section*.870}%
-\contentsline {subsection}{\numberline {4.4.2}Modello del trasporto semi-classico.}{90}{subsection.874}%
+\contentsline {subsection}{\numberline {4.4.2}Modello del trasporto semi-classico: equazione del trasporto di Boltzmann.}{90}{subsection.874}%
 \contentsline {paragraph}{Correzione collisionale}{90}{section*.879}%
 \contentsline {subsection}{\numberline {4.4.3}Conduzione elettrica}{90}{subsection.885}%
 \contentsline {subsection}{\numberline {4.4.4}Conduzione termica}{92}{subsection.908}%
@@ -124,130 +124,132 @@
 \contentsline {subsection}{\numberline {5.1.1}Fluttuazioni nelle statistiche quantistiche}{94}{subsection.924}%
 \contentsline {subsection}{\numberline {5.1.2}Fluttuazioni del numero medio di particelle per un insieme di stati}{95}{subsection.932}%
 \contentsline {subsection}{\numberline {5.1.3}Significato fisico della correzione quantistica alle fluttuazioni}{95}{subsection.936}%
-\contentsline {subsection}{\numberline {5.1.4}Numero di celle coinvolte nelle fluttuazioni del numero di fotoni}{97}{subsection.953}%
-\contentsline {subsection}{\numberline {5.1.5}Esempio numerico di numero di celle occupate.}{98}{subsection.968}%
-\contentsline {subsection}{\numberline {5.1.6}Coerenza dei fotoni ed esperimento di Young}{98}{subsection.969}%
-\contentsline {subsection}{\numberline {5.1.7}Ottenere la coerenza dalla radiazione stellare}{99}{subsection.974}%
-\contentsline {subsection}{\numberline {5.1.8}Correlazione tra fasci di particelle: esperimento di Hanbury Brown e Twiss.}{100}{subsection.978}%
-\contentsline {subsection}{\numberline {5.1.9}Dinamica delle flutuazioni: Rumore Jonshon nei circuiti elettrici}{100}{subsection.985}%
-\contentsline {section}{\numberline {5.2}Lezione 15}{102}{section.999}%
-\contentsline {subsection}{\numberline {5.2.1}Distribuzione spettrale delle fluttuazioni}{102}{subsection.1000}%
-\contentsline {subsection}{\numberline {5.2.2}Teorema di fluttuazione-dissipazione}{102}{subsection.1009}%
-\contentsline {subsection}{\numberline {5.2.3}Applicazione del teorema Fluttuazione-dissipazione al rumore Jonshon}{105}{subsection.1030}%
-\contentsline {subsection}{\numberline {5.2.4}Rumore shot}{107}{subsection.1047}%
-\contentsline {subsubsection}{Distribuzione temporale del rumore Shot.}{107}{section*.1048}%
-\contentsline {subsection}{\numberline {5.2.5}Introduzione ai solidi.}{109}{subsection.1063}%
-\contentsline {chapter}{\numberline {6}Solidi}{111}{chapter.1085}%
-\contentsline {section}{\numberline {6.1}Lezione 16}{111}{section.1086}%
-\contentsline {subsection}{\numberline {6.1.1}Reticoli nei solidi}{112}{subsection.1093}%
-\contentsline {subsubsection}{Esempio: reticolo cubico}{113}{section*.1101}%
-\contentsline {subsection}{\numberline {6.1.2}Prima zona di Brilloiun}{113}{subsection.1103}%
-\contentsline {subsection}{\numberline {6.1.3}Osservazione della struttura periodica del cristallo}{113}{subsection.1105}%
-\contentsline {subsection}{\numberline {6.1.4}Teorema di Bloch}{114}{subsection.1122}%
-\contentsline {subsubsection}{Operatore di traslazione}{115}{section*.1126}%
-\contentsline {subsubsection}{Dimostrazione del teorema di Bloch}{115}{section*.1132}%
-\contentsline {section}{\numberline {6.2}Lezione 17}{119}{section.1163}%
-\contentsline {subsection}{\numberline {6.2.1}Metodo perturbativo per la struttura a bande dei solidi.}{119}{subsection.1164}%
-\contentsline {subsubsection}{Potenziale nullo}{120}{section*.1173}%
-\contentsline {subsubsection}{Potenziale non nullo con vettore d'onda non degenere}{120}{section*.1178}%
-\contentsline {subsubsection}{Potenziale non nullo con vettore d'onda degenere}{121}{section*.1189}%
-\contentsline {subsection}{\numberline {6.2.2}Conduzione nei metalli}{123}{subsection.1204}%
-\contentsline {subsubsection}{Materiali isolanti}{123}{section*.1205}%
-\contentsline {subsubsection}{Materiali conduttori}{124}{section*.1208}%
-\contentsline {subsection}{\numberline {6.2.3}Conducibilità dei materiali del gruppo 1}{124}{subsection.1210}%
-\contentsline {subsection}{\numberline {6.2.4}Velocità media dell'elettrone}{124}{subsection.1211}%
-\contentsline {section}{\numberline {6.3}Lezione 18}{125}{section.1225}%
-\contentsline {subsection}{\numberline {6.3.1}Semimetalli e Semiconduttori}{125}{subsection.1226}%
-\contentsline {subsection}{\numberline {6.3.2}Massa efficace dell'elettrone}{125}{subsection.1227}%
-\contentsline {subsection}{\numberline {6.3.3}Conduzione elettronica nel dettaglio: oscillazioni di Bloch.}{126}{subsection.1231}%
-\contentsline {subsubsection}{Super reticolo}{127}{section*.1234}%
-\contentsline {subsection}{\numberline {6.3.4}Soluzione per i nuclei del reticolo}{127}{subsection.1235}%
-\contentsline {subsection}{\numberline {6.3.5}Frequenza di vibrazione di un cristallo unidimensionale}{128}{subsection.1244}%
-\contentsline {subsubsection}{Catena monoatomica di passo $a$}{128}{section*.1245}%
-\contentsline {subsubsection}{Catena biatomica di passo $a$}{130}{section*.1253}%
-\contentsline {subsubsection}{Dal caso biatomico al caso monoatomico}{132}{section*.1264}%
-\contentsline {subsection}{\numberline {6.3.6}Misurare i fononi}{132}{subsection.1267}%
-\contentsline {subsubsection}{Misura della propagazione lineare dei fononi acustici}{132}{section*.1268}%
-\contentsline {subsubsection}{Misura della interazione con la radiazione dei fononi: scattering Raman}{132}{section*.1270}%
-\contentsline {chapter}{\numberline {7}Liquidi}{133}{chapter.1271}%
-\contentsline {section}{\numberline {7.1}Lezione 19: Dagli appunti di Sara}{133}{section.1272}%
-\contentsline {subsection}{\numberline {7.1.1}Scattering elastico}{133}{subsection.1273}%
-\contentsline {subsection}{\numberline {7.1.2}Fattore di struttura statistica.}{134}{subsection.1277}%
-\contentsline {subsection}{\numberline {7.1.3}Densità ad uno e a due particelle.}{135}{subsection.1288}%
-\contentsline {subsection}{\numberline {7.1.4}Fattore di struttura statistica come trasformata di Fourier della densità a due particelle.}{136}{subsection.1295}%
-\contentsline {subsubsection}{Trasformata della densità ad una particella.}{136}{section*.1296}%
-\contentsline {subsubsection}{Trasformata della densità a due particelle.}{136}{section*.1298}%
-\contentsline {subsection}{\numberline {7.1.5}Fattore di struttura statistica per i liquidi}{137}{subsection.1306}%
-\contentsline {subsection}{\numberline {7.1.6}Fattore di struttura statistica per sistemi amorfi e cristallini}{138}{subsection.1314}%
-\contentsline {subsection}{\numberline {7.1.7}Digressione sulla FT}{138}{subsection.1320}%
-\contentsline {subsection}{\numberline {7.1.8}Cristallo poliatomico.}{139}{subsection.1325}%
-\contentsline {subsection}{\numberline {7.1.9}Fattore di struttura statistica per gas perfetto}{140}{subsection.1329}%
-\contentsline {section}{\numberline {7.2}Lezione 20}{140}{section.1330}%
-\contentsline {subsection}{\numberline {7.2.1}Hole function o funzione di correlazione totale.}{140}{subsection.1331}%
-\contentsline {subsection}{\numberline {7.2.2}Fattore di struttura statistica per un fluido poliatomico.}{141}{subsection.1337}%
-\contentsline {subsection}{\numberline {7.2.3}Caso speciale: l'acqua.}{141}{subsection.1339}%
-\contentsline {subsection}{\numberline {7.2.4}Analisi della $g(r)$ dell'Argon}{142}{subsection.1343}%
-\contentsline {subsubsection}{Argon liquido}{142}{section*.1344}%
-\contentsline {subsubsection}{Argon solido}{142}{section*.1346}%
-\contentsline {subsection}{\numberline {7.2.5}Struttura dell'argon e funzione $g(r)$.}{143}{subsection.1349}%
-\contentsline {subsection}{\numberline {7.2.6}Diagrammi di stato e $S(q)$}{144}{subsection.1352}%
-\contentsline {subsection}{\numberline {7.2.7}Relazione di Ornstein-Zernike}{144}{subsection.1355}%
-\contentsline {subsection}{\numberline {7.2.8}Limite asintotico di $S(K)$ nel caso di Gas perfetti}{146}{subsection.1368}%
-\contentsline {subsection}{\numberline {7.2.9}Limite asintotico di $S(K)$ nel caso di plasmi}{147}{subsection.1372}%
-\contentsline {subsection}{\numberline {7.2.10}Momenti di $g(r)$}{147}{subsection.1376}%
-\contentsline {section}{\numberline {7.3}Lezione 21}{148}{section.1379}%
-\contentsline {subsection}{\numberline {7.3.1}Collegamento tra $g(r)$ ed il potenziale tra le particelle $u(r)$.}{148}{subsection.1380}%
-\contentsline {subsubsection}{Teorie molticorpi.}{148}{section*.1382}%
-\contentsline {subsubsection}{Simulazioni al computer}{148}{section*.1383}%
-\contentsline {subsection}{\numberline {7.3.2}Unicità della relazione tra $g(r)$ e $u(r)$.}{148}{subsection.1384}%
-\contentsline {subsection}{\numberline {7.3.3}Energia interna di un fluido monoatomico classico con potenziale a 2 corpi.}{149}{subsection.1387}%
-\contentsline {subsubsection}{Digressione sulla derivazione della equazione di stato a partire dal Viriale.}{150}{section*.1398}%
-\contentsline {subsubsection}{Digressione su potenziali del tipo $u(r) \propto r^n$.}{150}{section*.1404}%
-\contentsline {subsubsection}{Digressione: legge di stato nel caso di gas quantistici.}{150}{section*.1406}%
-\contentsline {subsection}{\numberline {7.3.4}Ricerca di una relazione analitica tra $u(r)$ e $g(r)$.}{151}{subsection.1409}%
-\contentsline {subsection}{\numberline {7.3.5}Potenziali $u(r)$ e $w(r)$ in un fluido di Lennard Jones.}{152}{subsection.1426}%
-\contentsline {subsection}{\numberline {7.3.6}Chiusura di Born-Green.}{153}{subsection.1428}%
-\contentsline {subsection}{\numberline {7.3.7}Funzione di correlazione diretta.}{154}{subsection.1433}%
-\contentsline {subsection}{\numberline {7.3.8}Esempi di applicazione della Chiusura di Born-Green.}{154}{subsection.1441}%
-\contentsline {subsection}{\numberline {7.3.9}Modello a sfere dure.}{156}{subsection.1447}%
-\contentsline {subsubsection}{Approssimazione di Abe.}{157}{section*.1457}%
-\contentsline {paragraph}{L'approssimazione}{158}{section*.1461}%
-\contentsline {paragraph}{Applicazioni fisiche della approssimazione di Abe}{158}{section*.1463}%
-\contentsline {paragraph}{Legame della approssimazione con $c(r)$}{158}{section*.1464}%
-\contentsline {subsubsection}{Chiusura di Percus Yevick.}{158}{section*.1469}%
-\contentsline {paragraph}{Utilità fisica}{159}{section*.1472}%
-\contentsline {paragraph}{Risultato della approssimazione PY}{159}{section*.1473}%
-\contentsline {subsubsection}{Andamenti delle approssimazioni e RP.}{159}{section*.1475}%
-\contentsline {subsection}{\numberline {7.3.10}Modello di Lennard Jones per le sfere}{159}{subsection.1478}%
-\contentsline {subsection}{\numberline {7.3.11}Riscalamento di $S(q)$ e $g(r)$.}{161}{subsection.1492}%
-\contentsline {subsection}{\numberline {7.3.12}Riassunto di HG,HS,LJ.}{162}{subsection.1495}%
-\contentsline {subsection}{\numberline {7.3.13}Fluidi quantistici: trattazione della condensazione di Bose.}{162}{subsection.1497}%
-\contentsline {subsection}{\numberline {7.3.14}Colloidi.}{163}{subsection.1500}%
-\contentsline {subsection}{\numberline {7.3.15}Repulsione a lungo raggio: cristallo di Wiegner.}{164}{subsection.1505}%
-\contentsline {subsection}{\numberline {7.3.16}Interazioni a lungo raggio ed approssimazione di Random Phase.}{165}{subsection.1508}%
-\contentsline {subsection}{\numberline {7.3.17}Cosa devo sapere all'esame?}{166}{subsection.1517}%
-\contentsline {section}{\numberline {7.4}Lezione 22}{166}{section.1518}%
-\contentsline {subsection}{\numberline {7.4.1}Estensione dinamica: funzione di Van Hove.}{166}{subsection.1519}%
-\contentsline {subsubsection}{Riassunto sulla $G(r)$}{167}{section*.1525}%
-\contentsline {subsubsection}{Funzione di scattering intermediata.}{167}{section*.1530}%
-\contentsline {subsection}{\numberline {7.4.2}"Fononi" e fattore di struttura dinamico.}{168}{subsection.1535}%
-\contentsline {subsection}{\numberline {7.4.3}Approssimazione per le funzioni di struttura dinamica.}{169}{subsection.1538}%
-\contentsline {subsection}{\numberline {7.4.4}Collegamento con le funzioni di risposta del fluido}{169}{subsection.1541}%
-\contentsline {section}{\numberline {7.5}Lezione 23}{170}{section.1548}%
-\contentsline {subsection}{\numberline {7.5.1}Generalità sui fononi}{170}{subsection.1549}%
-\contentsline {subsection}{\numberline {7.5.2}Struttura del Silicio e del carburo di Silicio.}{170}{subsection.1553}%
-\contentsline {subsection}{\numberline {7.5.3}Onde longitudinali nei liquidi e nei gas}{171}{subsection.1556}%
-\contentsline {subsection}{\numberline {7.5.4}Teoria della elasticità: legge di Hooke}{171}{subsection.1562}%
-\contentsline {subsection}{\numberline {7.5.5}Funzione di risposta e teorema di fluttuazione dissipazione.}{172}{subsection.1567}%
-\contentsline {chapter}{\numberline {8}Interazione radiazione materia}{174}{chapter.1582}%
-\contentsline {section}{\numberline {8.1}Lezione 24}{174}{section.1583}%
-\contentsline {subsection}{\numberline {8.1.1}Introduzione alla interazione radiazione materia}{174}{subsection.1584}%
-\contentsline {section}{\numberline {8.2}Lezione 25}{179}{section.1647}%
-\contentsline {subsection}{\numberline {8.2.1}Approssimazione di onda rotante}{179}{subsection.1648}%
-\contentsline {subsection}{\numberline {8.2.2}Trattamento non perturbativo della interazione radiazione materia}{180}{subsection.1652}%
-\contentsline {subsection}{\numberline {8.2.3}Interazione radiazione materia collegata alla termodinamica}{183}{subsection.1671}%
-\contentsline {subsection}{\numberline {8.2.4}Applicazione dell'interazione radiazione materia: Laser}{185}{subsection.1694}%
-\contentsline {section}{\numberline {8.3}Lezione 26}{186}{section.1713}%
-\contentsline {subsection}{\numberline {8.3.1}Maser}{188}{subsection.1729}%
-\contentsline {subsection}{\numberline {8.3.2}Trattazione completa della equazione di Rate nella interazione radiazione-materia}{193}{subsection.1762}%
-\contentsline {section}{\numberline {8.4}Lezione 27}{196}{section.1789}%
+\contentsline {subsection}{\numberline {5.1.4}Numero di celle coinvolte nelle fluttuazioni del numero di fotoni}{97}{subsection.952}%
+\contentsline {subsection}{\numberline {5.1.5}Esempio numerico di numero di celle occupate.}{98}{subsection.967}%
+\contentsline {subsection}{\numberline {5.1.6}Coerenza dei fotoni ed esperimento di Young}{98}{subsection.968}%
+\contentsline {subsection}{\numberline {5.1.7}Ottenere la coerenza dalla radiazione stellare}{99}{subsection.973}%
+\contentsline {subsection}{\numberline {5.1.8}Correlazione tra fasci di particelle: esperimento di Hanbury Brown e Twiss.}{100}{subsection.977}%
+\contentsline {subsection}{\numberline {5.1.9}Dinamica delle flutuazioni: Rumore Jonshon nei circuiti elettrici}{100}{subsection.984}%
+\contentsline {section}{\numberline {5.2}Lezione 15}{102}{section.998}%
+\contentsline {subsection}{\numberline {5.2.1}Distribuzione spettrale delle fluttuazioni}{102}{subsection.999}%
+\contentsline {subsection}{\numberline {5.2.2}Teorema di fluttuazione-dissipazione}{102}{subsection.1008}%
+\contentsline {subsection}{\numberline {5.2.3}Applicazione del teorema Fluttuazione-dissipazione al rumore Jonshon}{105}{subsection.1029}%
+\contentsline {subsection}{\numberline {5.2.4}Rumore shot}{107}{subsection.1046}%
+\contentsline {subsubsection}{Distribuzione temporale del rumore Shot.}{107}{section*.1047}%
+\contentsline {chapter}{\numberline {6}Solidi}{109}{chapter.1062}%
+\contentsline {section}{\numberline {6.1}Lezione 16}{109}{section.1063}%
+\contentsline {subsection}{\numberline {6.1.1}Introduzione ai solidi.}{109}{subsection.1064}%
+\contentsline {subsubsection}{Hamiltoniana di un solido.}{109}{section*.1065}%
+\contentsline {subsubsection}{Approssimazione di Born-Oppenheimer.}{110}{section*.1077}%
+\contentsline {subsection}{\numberline {6.1.2}Reticoli nei solidi}{112}{subsection.1095}%
+\contentsline {subsubsection}{Esempio: reticolo cubico}{113}{section*.1103}%
+\contentsline {subsection}{\numberline {6.1.3}Prima zona di Brilloiun}{113}{subsection.1105}%
+\contentsline {subsection}{\numberline {6.1.4}Osservazione della struttura periodica del cristallo}{113}{subsection.1107}%
+\contentsline {subsection}{\numberline {6.1.5}Teorema di Bloch}{115}{subsection.1124}%
+\contentsline {subsubsection}{Operatore di traslazione}{115}{section*.1128}%
+\contentsline {subsubsection}{Dimostrazione del teorema di Bloch}{116}{section*.1134}%
+\contentsline {section}{\numberline {6.2}Lezione 17}{119}{section.1165}%
+\contentsline {subsection}{\numberline {6.2.1}Metodo perturbativo per la struttura a bande dei solidi.}{119}{subsection.1166}%
+\contentsline {subsubsection}{Potenziale nullo}{120}{section*.1175}%
+\contentsline {subsubsection}{Potenziale non nullo con vettore d'onda non degenere}{120}{section*.1180}%
+\contentsline {subsubsection}{Potenziale non nullo con vettore d'onda degenere}{122}{section*.1190}%
+\contentsline {subsection}{\numberline {6.2.2}Conduzione nei metalli}{123}{subsection.1205}%
+\contentsline {subsubsection}{Materiali isolanti}{123}{section*.1206}%
+\contentsline {subsubsection}{Materiali conduttori}{124}{section*.1209}%
+\contentsline {subsection}{\numberline {6.2.3}Conducibilità dei materiali del gruppo 1}{124}{subsection.1211}%
+\contentsline {subsection}{\numberline {6.2.4}Velocità media dell'elettrone}{125}{subsection.1212}%
+\contentsline {section}{\numberline {6.3}Lezione 18}{126}{section.1226}%
+\contentsline {subsection}{\numberline {6.3.1}Semimetalli e Semiconduttori}{126}{subsection.1227}%
+\contentsline {subsection}{\numberline {6.3.2}Massa efficace dell'elettrone}{126}{subsection.1228}%
+\contentsline {subsection}{\numberline {6.3.3}Conduzione elettronica nel dettaglio: oscillazioni di Bloch.}{126}{subsection.1232}%
+\contentsline {subsubsection}{Super reticolo}{127}{section*.1235}%
+\contentsline {subsection}{\numberline {6.3.4}Soluzione per i nuclei del reticolo}{127}{subsection.1236}%
+\contentsline {subsection}{\numberline {6.3.5}Frequenza di vibrazione di un cristallo unidimensionale}{128}{subsection.1245}%
+\contentsline {subsubsection}{Catena monoatomica di passo $a$}{129}{section*.1246}%
+\contentsline {subsubsection}{Catena biatomica di passo $a$}{130}{section*.1254}%
+\contentsline {subsubsection}{Dal caso biatomico al caso monoatomico}{132}{section*.1265}%
+\contentsline {subsection}{\numberline {6.3.6}Misurare i fononi}{132}{subsection.1268}%
+\contentsline {subsubsection}{Misura della propagazione lineare dei fononi acustici}{132}{section*.1269}%
+\contentsline {subsubsection}{Misura della interazione con la radiazione dei fononi: scattering Raman}{133}{section*.1271}%
+\contentsline {chapter}{\numberline {7}Liquidi}{134}{chapter.1272}%
+\contentsline {section}{\numberline {7.1}Lezione 19: Dagli appunti di Sara}{134}{section.1273}%
+\contentsline {subsection}{\numberline {7.1.1}Scattering elastico}{134}{subsection.1274}%
+\contentsline {subsection}{\numberline {7.1.2}Fattore di struttura statistica.}{135}{subsection.1278}%
+\contentsline {subsection}{\numberline {7.1.3}Densità ad uno e a due particelle.}{136}{subsection.1289}%
+\contentsline {subsection}{\numberline {7.1.4}Fattore di struttura statistica come trasformata di Fourier della densità a due particelle.}{137}{subsection.1296}%
+\contentsline {subsubsection}{Trasformata della densità ad una particella.}{137}{section*.1297}%
+\contentsline {subsubsection}{Trasformata della densità a due particelle.}{137}{section*.1299}%
+\contentsline {subsection}{\numberline {7.1.5}Fattore di struttura statistica per i liquidi}{138}{subsection.1307}%
+\contentsline {subsection}{\numberline {7.1.6}Fattore di struttura statistica per sistemi amorfi e cristallini}{139}{subsection.1315}%
+\contentsline {subsection}{\numberline {7.1.7}Digressione sulla FT}{139}{subsection.1321}%
+\contentsline {subsection}{\numberline {7.1.8}Cristallo poliatomico.}{140}{subsection.1326}%
+\contentsline {subsection}{\numberline {7.1.9}Fattore di struttura statistica per gas perfetto}{141}{subsection.1330}%
+\contentsline {section}{\numberline {7.2}Lezione 20}{141}{section.1331}%
+\contentsline {subsection}{\numberline {7.2.1}Hole function o funzione di correlazione totale.}{141}{subsection.1332}%
+\contentsline {subsection}{\numberline {7.2.2}Fattore di struttura statistica per un fluido poliatomico.}{142}{subsection.1338}%
+\contentsline {subsection}{\numberline {7.2.3}Caso speciale: l'acqua.}{142}{subsection.1340}%
+\contentsline {subsection}{\numberline {7.2.4}Analisi della $g(r)$ dell'Argon}{143}{subsection.1344}%
+\contentsline {subsubsection}{Argon liquido}{143}{section*.1345}%
+\contentsline {subsubsection}{Argon solido}{143}{section*.1347}%
+\contentsline {subsection}{\numberline {7.2.5}Struttura dell'argon e funzione $g(r)$.}{144}{subsection.1350}%
+\contentsline {subsection}{\numberline {7.2.6}Diagrammi di stato e $S(q)$}{145}{subsection.1353}%
+\contentsline {subsection}{\numberline {7.2.7}Relazione di Ornstein-Zernike}{145}{subsection.1356}%
+\contentsline {subsection}{\numberline {7.2.8}Limite asintotico di $S(K)$ nel caso di Gas perfetti}{147}{subsection.1369}%
+\contentsline {subsection}{\numberline {7.2.9}Limite asintotico di $S(K)$ nel caso di plasmi}{148}{subsection.1373}%
+\contentsline {subsection}{\numberline {7.2.10}Momenti di $g(r)$}{148}{subsection.1377}%
+\contentsline {section}{\numberline {7.3}Lezione 21}{149}{section.1380}%
+\contentsline {subsection}{\numberline {7.3.1}Collegamento tra $g(r)$ ed il potenziale tra le particelle $u(r)$.}{149}{subsection.1381}%
+\contentsline {subsubsection}{Teorie molticorpi.}{149}{section*.1383}%
+\contentsline {subsubsection}{Simulazioni al computer}{149}{section*.1384}%
+\contentsline {subsection}{\numberline {7.3.2}Unicità della relazione tra $g(r)$ e $u(r)$.}{149}{subsection.1385}%
+\contentsline {subsection}{\numberline {7.3.3}Energia interna di un fluido monoatomico classico con potenziale a 2 corpi.}{150}{subsection.1388}%
+\contentsline {subsubsection}{Digressione sulla derivazione della equazione di stato a partire dal Viriale.}{151}{section*.1399}%
+\contentsline {subsubsection}{Digressione su potenziali del tipo $u(r) \propto r^n$.}{151}{section*.1405}%
+\contentsline {subsubsection}{Digressione: legge di stato nel caso di gas quantistici.}{151}{section*.1407}%
+\contentsline {subsection}{\numberline {7.3.4}Ricerca di una relazione analitica tra $u(r)$ e $g(r)$.}{152}{subsection.1410}%
+\contentsline {subsection}{\numberline {7.3.5}Potenziali $u(r)$ e $w(r)$ in un fluido di Lennard Jones.}{153}{subsection.1427}%
+\contentsline {subsection}{\numberline {7.3.6}Chiusura di Born-Green.}{154}{subsection.1429}%
+\contentsline {subsection}{\numberline {7.3.7}Funzione di correlazione diretta.}{155}{subsection.1434}%
+\contentsline {subsection}{\numberline {7.3.8}Esempi di applicazione della Chiusura di Born-Green.}{155}{subsection.1442}%
+\contentsline {subsection}{\numberline {7.3.9}Modello a sfere dure.}{157}{subsection.1448}%
+\contentsline {subsubsection}{Approssimazione di Abe.}{158}{section*.1458}%
+\contentsline {paragraph}{L'approssimazione}{159}{section*.1462}%
+\contentsline {paragraph}{Applicazioni fisiche della approssimazione di Abe}{159}{section*.1464}%
+\contentsline {paragraph}{Legame della approssimazione con $c(r)$}{159}{section*.1465}%
+\contentsline {subsubsection}{Chiusura di Percus Yevick.}{159}{section*.1470}%
+\contentsline {paragraph}{Utilità fisica}{160}{section*.1473}%
+\contentsline {paragraph}{Risultato della approssimazione PY}{160}{section*.1474}%
+\contentsline {subsubsection}{Andamenti delle approssimazioni e RP.}{160}{section*.1476}%
+\contentsline {subsection}{\numberline {7.3.10}Modello di Lennard Jones per le sfere}{160}{subsection.1479}%
+\contentsline {subsection}{\numberline {7.3.11}Riscalamento di $S(q)$ e $g(r)$.}{162}{subsection.1493}%
+\contentsline {subsection}{\numberline {7.3.12}Riassunto di HG,HS,LJ.}{163}{subsection.1496}%
+\contentsline {subsection}{\numberline {7.3.13}Fluidi quantistici: trattazione della condensazione di Bose.}{163}{subsection.1498}%
+\contentsline {subsection}{\numberline {7.3.14}Colloidi.}{164}{subsection.1501}%
+\contentsline {subsection}{\numberline {7.3.15}Repulsione a lungo raggio: cristallo di Wiegner.}{165}{subsection.1506}%
+\contentsline {subsection}{\numberline {7.3.16}Interazioni a lungo raggio ed approssimazione di Random Phase.}{166}{subsection.1509}%
+\contentsline {subsection}{\numberline {7.3.17}Cosa devo sapere all'esame?}{167}{subsection.1518}%
+\contentsline {section}{\numberline {7.4}Lezione 22}{167}{section.1519}%
+\contentsline {subsection}{\numberline {7.4.1}Estensione dinamica: funzione di Van Hove.}{167}{subsection.1520}%
+\contentsline {subsubsection}{Riassunto sulla $G(r)$}{168}{section*.1526}%
+\contentsline {subsubsection}{Funzione di scattering intermediata.}{168}{section*.1531}%
+\contentsline {subsection}{\numberline {7.4.2}"Fononi" e fattore di struttura dinamico.}{169}{subsection.1536}%
+\contentsline {subsection}{\numberline {7.4.3}Approssimazione per le funzioni di struttura dinamica.}{170}{subsection.1539}%
+\contentsline {subsection}{\numberline {7.4.4}Collegamento con le funzioni di risposta del fluido}{170}{subsection.1542}%
+\contentsline {section}{\numberline {7.5}Lezione 23}{171}{section.1549}%
+\contentsline {subsection}{\numberline {7.5.1}Generalità sui fononi}{171}{subsection.1550}%
+\contentsline {subsection}{\numberline {7.5.2}Struttura del Silicio e del carburo di Silicio.}{171}{subsection.1554}%
+\contentsline {subsection}{\numberline {7.5.3}Onde longitudinali nei liquidi e nei gas}{172}{subsection.1557}%
+\contentsline {subsection}{\numberline {7.5.4}Teoria della elasticità: legge di Hooke}{172}{subsection.1563}%
+\contentsline {subsection}{\numberline {7.5.5}Funzione di risposta e teorema di fluttuazione dissipazione.}{173}{subsection.1568}%
+\contentsline {chapter}{\numberline {8}Interazione radiazione materia}{175}{chapter.1583}%
+\contentsline {section}{\numberline {8.1}Lezione 24}{175}{section.1584}%
+\contentsline {subsection}{\numberline {8.1.1}Introduzione alla interazione radiazione materia}{175}{subsection.1585}%
+\contentsline {section}{\numberline {8.2}Lezione 25}{180}{section.1648}%
+\contentsline {subsection}{\numberline {8.2.1}Approssimazione di onda rotante}{180}{subsection.1649}%
+\contentsline {subsection}{\numberline {8.2.2}Trattamento non perturbativo della interazione radiazione materia}{181}{subsection.1653}%
+\contentsline {subsection}{\numberline {8.2.3}Interazione radiazione materia collegata alla termodinamica}{184}{subsection.1672}%
+\contentsline {subsection}{\numberline {8.2.4}Applicazione dell'interazione radiazione materia: Laser}{186}{subsection.1695}%
+\contentsline {section}{\numberline {8.3}Lezione 26}{187}{section.1714}%
+\contentsline {subsection}{\numberline {8.3.1}Maser}{189}{subsection.1730}%
+\contentsline {subsection}{\numberline {8.3.2}Trattazione completa della equazione di Rate nella interazione radiazione-materia}{194}{subsection.1763}%
+\contentsline {section}{\numberline {8.4}Lezione 27}{197}{section.1790}%

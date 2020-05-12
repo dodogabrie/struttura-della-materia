@@ -114,10 +114,10 @@ In conclusione possiamo disegnare l'andamento di questo calore specifico in funz
 \end{figure}
 \noindent
 Notiamo che il nostro modello descrive bene le due zone asintotiche, la parte centrale del grafico invece è quella dove con la nostra descrizione commettiamo un errore maggiore.
-\subsection{Modello del trasporto semi-classico.}
+\subsection{Modello del trasporto semi-classico: equazione del trasporto di Boltzmann.}
 \label{subsubsec:Modello del trasporto semi-classico.}
 Prendiamo un gas di elettroni all'interno del nostro solido ed applichiamo un campo elettrico esterno. Grazie alla perturbazione gli elettroni non sono più all'equilibrio termodinamico.
-Il modello di trasporto semiclassico tiene di conto del fatto che il sistema è fuori equilibrio assumendo che la perturbazione dall'equilibrio sia piccola.\\
+Il modello di trasporto semi-classico tiene di conto del fatto che il sistema è fuori equilibrio assumendo che la perturbazione dall'equilibrio sia piccola.\\
 Questo modello consiste nel trattare classicamente il moto degli elettroni tenendo anche di conto della statistica di Fermi-Dirac.\\
 Indichiamo con $f( t, r, v) $ il numero di particelle presenti una celletta nello spazio delle fasi \footnote{Senza il campo elettrico esterno questo sarebbe proprio il numero di particelle $n_q$}.\\
 Prendiamo inoltre un sistema descritto dalla Hamiltoniana:
@@ -176,7 +176,7 @@ Per semplicità consideriamo un caso unidimenzionale, applichiamo il campo elett
 	=
 	- \frac{f-f_0}{\tau}
 .\] 
-Ricaviamo quindi la $f$:
+Isolando la $f$:
 \[
 	f 
 	=
@@ -184,7 +184,7 @@ Ricaviamo quindi la $f$:
 	\left( 
 	a \frac{\partial f}{\partial v_x} 
 	+ 
-	v \frac{\partial f}{\partial x}  \right) 
+	v_x \frac{\partial f}{\partial x}  \right) 
 .\]
 Considerando piccole perturbazioni $f \approx f_0$ si ha al primo ordine che possiamo inserire $f_0$ all'interno delle derivate parziali commettendo un errore dell'ordine successivo. Si arriva a:
 \[
@@ -364,7 +364,7 @@ La corrente di calore sarà quindi definita come:
 	\int f v_x \left( \mathcal{E} - \mu  \right)  
 	\frac{d^3 p}{h^3}
 .\] 
-All'interno dell'integrale è stato inserito il termine $\mathcal{E} - \mu $ anzichè l'intera energia libera perchè noi vogliamo il trasporto di calore:
+All'interno dell'integrale è stato inserito il termine $\mathcal{E} - \mu $ anziché l'intera energia perché noi vogliamo il trasporto di calore:
 \[
 	TdS= dE - \mu dN
 .\] 

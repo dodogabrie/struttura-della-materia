@@ -1,7 +1,7 @@
 \lez{14}{20-03-2020}{}
 \subsection{Fluttuazioni nelle statistiche quantistiche}
 \label{subsec:Fluttuazioni nelle statistiche quantistiche}
-Abbiamo visto nella lezione 6 che le fluttuazioni del numero di particelle in un sistema possono essere espresse come nella \ref{eq:flut-num-particelle}:
+Abbiamo visto nella lezione 6 che le fluttuazioni del numero di particelle in un sistema può essere espresso come nella \ref{eq:flut-num-particelle}:
 \[
 	\overline{\left( \Delta N \right)^2} 
 	=
@@ -12,15 +12,15 @@ Il numero medio di particelle si esprime invece a partire dalla definizione di p
 \[
 	\overline{N}
 	=
-	- \left.\frac{\partial \omega }{\partial \mu } \right|_{T,V}
+	- \left.\frac{\partial \Omega }{\partial \mu } \right|_{T,V}
 .\] 
-Se applichiamo queste al singolo stato quantistico $q$ avente la propria $\omega _q$ troviamo le fluttuazioni del numero di occupazione $\overline{N}$:
+Se applichiamo queste al singolo stato quantistico $q$ avente la propria $\omega_q$ (energia) troviamo le fluttuazioni del numero di occupazione $\overline{n}$:
 \[
 	\overline{\left( \Delta n \right)^2}
 	=
 	kT \frac{\partial \overline{n}}{\partial \mu } 
 .\] 
-Ovviamente stiamo parlando dell'Ensamble gran canonico. Sostituiamo a questo $\overline{n}$ le funzioni di distribuzione discusse nelle lezioni precedenti:
+Sostituiamo a $\overline{n}$ le funzioni di distribuzione di BE (segno di sotto) oppure di FD (segno di sopra): 
 \[
 	\overline{n} 
 	= 
@@ -39,7 +39,7 @@ E facciamo la derivata per $\overline{\left( \Delta n \right)^2}$:
 	\frac{1}{e^{\left( \mathcal{E} -\mu  \right) /kT} \pm 1 } \mp 
 	\frac{1}{\left( e^{\left( \mathcal{E} -\mu  \right) /kT} \pm 1  \right)^2}=\\
 	=& 
-	\overline{n}_q \mp \overline{n}^2
+	\overline{n}_q \mp \overline{n}_q^2
 .\end{aligned}\]
 Per essere più espliciti possiamo scrivere che:
 \[
@@ -60,9 +60,9 @@ Per i bosoni invece si ha che le fluttuazioni sono maggiori che nel caso classic
 Inoltre se $\overline{n}_q \gg 1$ allora per la Bose-Einstein $\overline{\left( \Delta n \right)^2} \propto \overline{n}_q^2$.
 \subsection{Fluttuazioni del numero medio di particelle per un insieme di stati}
 \label{subsec:Fluttuazioni del numero medio di particelle per un insieme di stati}
-Prendiamo un insieme di $g$ stati aventi tutti la stessa energia (si introduce così una degenerazione del numero di stati), le fluttuazioni del numero di particelle in questi stati saranno:
+Prendiamo un insieme di $g$ stati aventi tutti la stessa energia (degenerazione nel numero di stati), le fluttuazioni del numero di particelle per questi sarà:
 \[
-	\overline{\Delta N^2} 
+	\overline{\left(\Delta N\right)^2} 
 	=
 	-kT \left.\frac{\partial ^2 \Omega_g}{\partial \mu^2} \right|_{T,V}
 .\] 
@@ -80,15 +80,15 @@ Quindi possiamo scrivere:
 	=&
 	\overline{N} \mp \frac{\overline{N}^2}{g} \label{eq:fluttuazioni-g}
 .\end{aligned}\]
-Notiamo quindi che l'importanza della correzione diminuisce man a mano che prendiamo un numero di stati sempre maggiore, tale correzione è massima quando consideriamo la singola celletta dello spazio delle fasi.
+Notiamo quindi che l'importanza della correzione quantistica diminuisce man a mano che prendiamo un numero di stati isoenergetici sempre maggiore, tale correzione è massima quando consideriamo la singola celletta dello spazio delle fasi.
 \subsection{Significato fisico della correzione quantistica alle fluttuazioni}
 \label{subsec:Significato fisico della correzione quantistica alle fluttuazioni}
-Prendiamo un sistema composto da un numero di fotoni, per questo particolare sistema avremo che:
+Prendiamo un sistema composto da un certo numero di fotoni, sappiamo che per questi non vale mai la conservazione del numero di particelle nel sistema, tuttavia studiando la seconda quantizzazione otteniamo che:
 \[
 	n = \left< \left| E \right|^2 \right>
 .\] 
-Con $n$ numero medio di fotoni e $E$ ampiezza del campo elettromagnetico\footnote{Questo lo si vede quando si va a studiare la seconda quantizzazione.}. \\
-Di conseguenza cerchiamo di quantificare questa ampiezza del campo elettromagnetico per poi studiare le fluttuazioni quantistiche.\\
+Con $n$ numero medio di fotoni e $E$ ampiezza del campo elettromagnetico. \\
+Cerchiamo di quantificare questa ampiezza del campo elettromagnetico e trovarne le fluttuazioni quantistiche.\\
 Supponiamo di avere il seguente apparato sperimentale:
 \begin{figure}[H]
     \centering
@@ -112,7 +112,7 @@ Quindi si ha anche che:
 	+
 	\mathcal{E} ^2 \sum_{j \neq l}^{N} e^{i\left( \varphi_j - \varphi_l \right) }
 .\end{aligned}\]
-Se facciamo una media sull'Ensamble i termini con la fase si cancellano (essendo le fasi Random), quindi ci resta:
+Se facciamo una media sull'Ensamble (muovere gli emettitori durante la misura per variare la fase) il secondo termine si cancella per interferenza (essendo le fasi Random), quindi ci resta:
 \[
 	\left<\left| E \right|^2 \right> 
 	= 
@@ -130,7 +130,7 @@ Sappiamo che la fluttuazione del numero di particelle può essere scritta come:
 	= 
 	\frac{\left<n^2 \right>-\left<n \right>^2}{\left<n \right>^2}
 .\] 
-Visto che $\left<n^2\right> = \left< \left| E \right| ^4 \right>$ ci conviene calcolarci questa quantità per trovare le fluttuazioni:
+Visto che $\left<n^2\right> = \left< \left| E \right| ^4 \right>$ ci conviene calcolarci questa quantità per trovare le fluttuazioni (riprendendo il modulo quadro che conteneva le fasi):
 \[\begin{aligned}
 	\left<\left| E \right| ^4 \right> 
 	=&
@@ -165,8 +165,9 @@ Visto che $\left<n^2\right> = \left< \left| E \right| ^4 \right>$ ci conviene ca
 	4 \frac{N\left( N-1 \right)}{2} \frac{1}{2} 
 	\right] =\\
 	=&
-	2N^2 \mathcal{E}^4
+	2N^2 \mathcal{E}^4 
 .\end{aligned}\]
+Nell'ultimo passaggio ci siamo messi nella situazione di avere tante sorgenti ($N\gg 1$).
 In questo modo abbiamo che:
 \[
 	\frac{\left<\left( \Delta n \right) ^2 \right>}{\left< n \right>^2}
@@ -314,12 +315,12 @@ Questo significa che i punti $P_i$ devono stare all'interno di un area critica p
 
 \subsection{Ottenere la coerenza dalla radiazione stellare}
 \label{subsec:Ottenere la coerenza dalla radiazione stellare}
-e si utilizza come sorgente la radiazione stellare si hanno $\Delta \Omega $ (quindi anche $U$) molto più piccoli rispetto a qualunque sorgente che possiamo costruire sulla terra.\\
+Se si utilizza come sorgente la radiazione stellare si hanno $\Delta \Omega $ (quindi anche $U$) molto più piccoli rispetto a qualunque sorgente che possiamo costruire sulla terra.\\
 Con queste sorgenti possiamo avere una estensione del fascio simile a quella di coerenza. L'idea di questi esperimenti era la seguente:
 \begin{figure}[H]
     \centering
     \incfig{esperimento-per-raccogliere-la-radiazione-stellare}
-    \caption{Esperimento per raccogliere la radiazione stellare}
+    \caption{Esperimento per raccogliere la radiazione stellare: le due stelle sono in realtà una sola (vista da sue fotomoltiplicatori a distanda $d$).}
     \label{fig:esperimento-per-raccogliere-la-radiazione-stellare}
 \end{figure}
 \noindent
@@ -330,15 +331,15 @@ Per poter vedere interferenza dal nostro apparato dobbiamo avere:
 	 \sqrt{A_c} =\\
 	 =& \frac{2}{\sqrt{\pi}}\frac{R\lambda }{a}
 .\end{aligned}\]
-Se trovassimo il modo di far variare $d$ potremmo avere una misura del rapporto tra la distanza e le dimensioni della stella, anche detto parametero angolare della stella:
+In questo modo è possibile una misura del rapporto tra la distanza e le dimensioni della stella, anche detto parametro angolare della stella:
 \[
 	\alpha = \frac{a}{R}
 .\] 
-Ovviamente non si può far variare la distanza tra le due stelle, tuttavia è possibile costruire due fotomoltiplicatori che raccolgono la radiazione dalla stella e la amplificano verso il rilevatore nel percorso di Figura \ref{fig:esperimento-per-raccogliere-la-radiazione-stellare}.
+Per migliorare la misura è possibile costruire due fotomoltiplicatori che raccolgono la radiazione dalla stella e la amplificano verso il rilevatore nel percorso di Figura \ref{fig:esperimento-per-raccogliere-la-radiazione-stellare}.
 \subsection{Correlazione tra fasci di particelle: esperimento di Hanbury Brown e Twiss.}
 \label{subsec:Correlazione tra fasci di particelle}
 Gli esperimenti sulla radiazione stellare vennero resi più sofisticati da Hanbury Brown e Twiss che studiarono la radiazione proveniente da Sirio.\\
-Il loro scopo era una misura della correlazione tra i fotoni provenienti da questa stella raccolti da due fotomoltiplilcatori disposti sempre come in Figura \ref{fig:esperimento-per-raccogliere-la-radiazione-stellare} (ovviamente al posto della stella c'è il fotomoltiplicatore). \\
+Il loro scopo era una misura della correlazione tra i fotoni provenienti da questa stella raccolti da due fotomoltiplilcatori disposti sempre come in Figura \ref{fig:esperimento-per-raccogliere-la-radiazione-stellare}. \\
 Se nominiamo i due fotomoltiplicatori con il pedice $_1$ e  $_2$ allora possiamo definire la correlazione tra il numero dei conteggi di fotoni di questi due strumenti come:
 \[
 	C = \overline{\left( N_1 - \overline{N}_1\right) \left( N_2-\overline{N}_2 \right)}
@@ -376,7 +377,7 @@ Sviluppiamo adesso i quadrati a destra e semplifichiamo quest'ultima esperession
 .\end{aligned}\]
 Abbiamo in conclusione che la correlazione tra i numeri medi registrati dai due fotomoltiplicatori sarà:
 \[
-	\overline{C} = \frac{\overline{N}_1 \overline{N}_2}{g} 
+	C = \frac{\overline{N}_1 \overline{N}_2}{g} 
 .\] 
 Ricordiamo che in questo caso abbiamo assunto la totale coerenza spaziale, quindi la $g$ nella formula sarà la sola coerenza temporale. \\
 Potremmo anche fare il caso opposto: teniamo la distanza tra i fotomoltiplicatori costanti ed inseriamo una asincronicità $\tau $ nella misura tra i due strumenti, in questo modo la correlazione sarebbe:
@@ -411,9 +412,9 @@ Il fenomeno ha una dimostrazione macroscopica dovuta a Nyquist che aggira il con
     \label{fig:linea-di-trasmissione-di-nyquist}
 \end{figure}
 \noindent
-L'ipotesi di Nyquist consisteva nel considerare le resistenze all'equilibrio termodinamico con il campo elettromagnetico presente nella linea.Si può allora calcolare la potenza del campo elettromagnetico all'interno della linea, questa sarà data dalla teoria del corpo nero. \\
+L'ipotesi di Nyquist consisteva nel considerare le resistenze all'equilibrio termodinamico con il campo elettromagnetico presente nella linea. In queste ipotesi la potenza del campo elettrico all'interno della linea la si ottiene mediante la teoria di corpo nero.\\
 All'equilibrio tanta potenza viene assorbita dalle resistenze tramite effetto Joule quanta ne viene emessa dal campo elettromagnetico all'interno della linea. 
-Quindi anche le mie resistenze saranno in grado di emettere radiazione per effetto Joule, questo effetto sarà allora caratteristico della agitazione termica del materiale che compone la resitenza stessa. \\
+Quindi anche le resistenze saranno in grado di emettere radiazione per effetto Joule, questo effetto sarà allora caratteristico della agitazione termica del materiale che compone la resitenza stessa. \\
 Imponendo quindi l'equilibrio sul sistema troveremo la potenza dissipata per effetto joule dal sistema e questa sarà proprio la potenza di rumore.\\
 Consideriamo le onde EM all'interno della linea di trasmissione, la loro lunghezza d'onda sarà quantizzata:
 \[
@@ -433,7 +434,7 @@ Ogni modo alla frequenza $\nu $ avrà una energia:
 \[
 	h\nu \overline{n} = h\nu \frac{1}{e^{h\nu /kT}-1}
 .\] 
-Il rumore Jonshon si manisfesta a basse frequenze, possiamo tranquillamente assuere $h\nu /kT \ll 1$. Sviluppiamo allora la Bose-Einstein:
+Il rumore Jonshon si manifesta a basse frequenze, possiamo tranquillamente assuere $h\nu /kT \ll 1$. Sviluppiamo allora la Bose-Einstein:
 \[
 	h\nu \overline{n} \sim kT
 .\] 
@@ -441,7 +442,7 @@ L'energia contenuta nell'intervallo di frequenze $\Delta \nu $ sarà:
 \[
 	E_{\Delta \nu } \approx k_BT \frac{2L}{c}\Delta \nu 
 .\] 
-Il tempo che questa energia impiega ad arrivare alle due resistenze sarà $t\approx L /c$, quindi abbiamo che la potenza media che arriva alle due resistenze è:
+Il tempo che la radiazione impiega ad arrivare alle due resistenze sarà $t\approx L /c$, quindi abbiamo che la potenza media che arriva alle due resistenze è:
 \[
 	P_{\Delta \nu }= k_B T\Delta \nu 
 .\] 
@@ -455,7 +456,7 @@ Quindi il potenziale $V_{\Delta \nu}$ di rumore nella nostra resistenza deve ess
 .\] 
 Sostituendo con l'uguaglianza sopra abbiamo:
 \[
-	\overline{V_{\Delta \nu }}= 4Rk_BT\Delta \nu 
+	\overline{V_{\Delta \nu }^2}= 4Rk_BT\Delta \nu 
 .\] 
 Che è proprio il risultato che si ottiene anche sperimentalmente.
 

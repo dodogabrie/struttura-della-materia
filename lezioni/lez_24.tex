@@ -1,6 +1,7 @@
 \lez{24}{19-04-2020}{}
-\subsection{Introduzione alla interazione radiazione materia}%
-\label{sub:Introduzione alla interazione radiazione materia}
+\subsection{Regola d'oro di Fermi}%
+\label{sub:Regola d'oro di Fermi}
+
 Riprendiamo la teoria delle perturbazioni (anche dipendenti dal tempo), supponiamo di avere una Hamiltoniana per il nostro sistema $H_0$ e di inserire una perturbazione $V(t) $ tale che:
 \[
     \overline{V}(t) = \begin{cases}
@@ -9,7 +10,7 @@ Riprendiamo la teoria delle perturbazioni (anche dipendenti dal tempo), supponia
     \end{cases}
 .\] 
 L'Hamiltoniana completa sarà la somma di queste due quantità: $H=H_0+\overline{V}(t)$.\\
-Cerchiamo le soluzioni alla equazione di Shrodinger dipendente dal tempo:
+Cerchiamo le soluzioni alla equazione di Schrodinger dipendente dal tempo:
 \[
     i\hbar \frac{\text{d} \psi(t)}{\text{d} t} 
     = \left[H_0+\overline{V}(t) \right]\psi (t) 
@@ -21,10 +22,10 @@ Sviluppiamo la funzione d'onda sugli autostati di $H_0$ :
 Ipotizziamo inoltre che per tutti i $t<0$ il sistema si trovi in un autostato $\ket{\varphi_m}$ dato. Vogliamo trovare lo stato del sistema all'istante $ \tau$: quello in cui termina la perturbazione.\\
 Per $t\le 0$ abbiamo che 
 \[\begin{aligned}
-    &\ket{\psi_m}(t) = e^{-iE_n t /\hbar } \ket{\varphi_m}\\
+    &\ket{\psi_m}(t) = e^{-iE_m t /\hbar } \ket{\varphi_m}\\
     &a_n(t) = \delta_{mn}
 .\end{aligned}\]
-AL termine della perturbazione mi troverò in uno stato dato dalla sovrapposizione degli altri autostati, tali autostati continueranno ad evolvere (con l'esponenziale della loro energia) e gli $a_n(t)$ per $t\ge \tau$ rimarranno costanti ed uguali a $a(\tau)$.\\
+Al termine della perturbazione mi troverò in uno stato dato dalla sovrapposizione degli altri autostati, tali autostati continueranno ad evolvere (con l'esponenziale della loro energia) e gli $a_n(t)$ per $t\ge \tau$ rimarranno costanti ed uguali a $a(\tau)$.\\
 Possiamo chiamare le ampiezze di probabilità $a_n(\tau)$ come $a_{m\to n}(\tau) $ essendo questa l'ampiezza di probabilità dello stato $\varphi_m$ di passare allo stato n-esimo.\\
 La probabilità di andare dallo stato $m$ allo stato $n$ sarà data da:
 \[
@@ -32,8 +33,8 @@ La probabilità di andare dallo stato $m$ allo stato $n$ sarà data da:
 .\] 
 Per trovare tali ampiezze sostituiamo nella equazione di Schrodinger lo sviluppo della $\psi$ e proiettiamo su un generico $\bra{\varphi_n}$.\\
 \[
-    H\frac{\text{d} }{\text{d} t} a_{m\to n}(t) 
-    = \sum_{l}^{} \bra{n}W(H)\ket{l}e^{i\omega_{n,l} t}a_{m\to l}(t) 
+    i\hbar \frac{\text{d} }{\text{d} t} a_{m\to n}(t) 
+    = \sum_{l}^{} \bra{n}W(t)\ket{l}e^{i\omega_{n,l} t}a_{m\to l}(t) 
 .\] 
 Nella quale $\omega_{n,l}$  vale:
 \[
@@ -49,7 +50,7 @@ Possiamo riscrivere l'equazione di Schrodinger al primo ordine come:
     =
     \bra{n}W(t) \ket{m}e^{i\omega_{nm}t }
 .\] 
-Possiamo integrare questa espressione (mettiamo un pedice per ) 
+Possiamo integrare questa espressione (mettiamo un pedice per indicare il primo ordine):
 \[
     a_{m\to n}^{(1) } (t) =
     \frac{1}{i\hbar }
@@ -60,7 +61,7 @@ Agli ordini successivi abbiamo che
     a_{m\to n}^{(2)}(t)=
     \frac{1}{i\hbar }
     \sum_{m}^{} \int_{0}^{t}  
-    \int_{0}^{t} \bra{k}W(t')\ket{n}e^{i\omega_{kn}t'}a_{m\to n}^{(1)}(t')  dt'
+    \bra{k}W(t')\ket{n}e^{i\omega_{kn}t'}a_{m\to n}^{(1)}(t')  dt'
 .\] 
 Come primo esempio possiamo prendere la $W(t) = V$  indipendente dal tempo. In questo caso abbiamo che:
 \[
@@ -97,9 +98,9 @@ Possiamo approssimare tale funzione ad una $\delta$, in tal caso vale la relazio
 .\] 
 Con questa normalizzazione possiamo scrivere la funzione $F(\tau,x)$: 
 \[
-    F(\tau,x) =2\pi\hbar \delta (x)  
+    F(\tau,x) =\pi\tau\hbar \delta (x)  
 .\] 
-Se la perturbazione dura un tempo infinito ($\tau\to \infty$ ) allora l'ultima formula ci dice che il sistema non può cambiare energia. \\
+Se la perturbazione dura un tempo infinito ($\tau\to \infty$ ) allora l'ultima formula ci dice che il sistema non può cambiare energia: la probabilità non è normalizzabile. \\
 Abbiamo trattato il sistema concentrandoci sulla transizione di due livelli $m$ e $n$, in generale possiamo avere una distribuzione di stati continua (come ad esempio la $\rho_e$ nei cristalli ) in tal caso possiamo normalizzare:
 \[
     \int\rho(E_n) dE_n = 1
@@ -115,7 +116,7 @@ Tipicamente nei sistemi che trattiamo il primo termine (che è un modulo quadro 
     W^{(1)}_{m\to n}(\tau) =
     \frac{2}{\hbar ^2}\left|\bra{n}W \ket{m}\right|^2\int\frac{2}{\left(\frac{x}{\hbar }\right)^2}\sin^2\left(\frac{x\tau}{2\hbar }\right) \rho(E_n) dE_n
 .\] 
-Nell'ipotesi in cui $\tau\gg_2\pi /\Delta\omega$ (nello spazio delle frequenze la $F$ è molto più stretta di $\rho$  ), portiamo allora fuori dall'integrale la $\rho$, ci resta un integrale noto:
+Nell'ipotesi in cui $\tau\gg 2\pi /\Delta\omega$ (nello spazio delle frequenze la $F$ è molto più stretta di $\rho$  ), portiamo allora fuori dall'integrale la $\rho$, ci resta un integrale noto:
 \[
     W^{(1)}_{m\to n}(\tau) =
     \frac{2\pi}{\hbar}\left|\bra{\overline{n}}W \ket{m}\right|^2\rho(E_{\overline{n}})\tau 
@@ -130,10 +131,12 @@ Possiamo imporre che tale probabilità prima di essere integrata fosse la $\delt
     P_{m\to n}^{(1) } =
     \frac{2\pi}{\hbar}\left|\bra{\overline{n}}W \ket{m}\right|^2\delta (E_n-E_m) 
 .\] 
-Nel caso opposto invece $\tau\ll\frac{\hbar }{\Delta\omega}$, in tal caso portiamo fuori la $F$ e resta l'integrale della $\rho$. Facendo in questo modo si ottiene 
+Nel caso opposto invece $\tau\ll\frac{2\pi }{\Delta\omega}$, in tal caso portiamo fuori la $F$ e resta l'integrale della $\rho$. Facendo in questo modo si ottiene 
 \[
 \overline{P} \propto \tau^4
 .\] 
+\subsection{Interazione con campo EM}%
+\label{sub:Interazione con campo EM}
 Abbiamo parlato fin'ora di un potenziale a "impulso quadro", ovvero un potenziale che sale fino ad un $W$  costante e poi torna a 0 al tempo $\tau$. Se interagiamo con il campo elettromagnetico dobbiamo prendere una interazione con un potenziale oscillante, supponiamo di avere una onda piana
 \[
 V=W^+ e^{-i\omega t} + W^- e^{i\omega t} 
@@ -184,6 +187,14 @@ Questo significa che:
 \frac{1}{\hbar }\left|\bra{n}W^{\pm} \ket{m}\right|^2\tau \ll 1
 .\] 
 L'elemento di matrice sarà proporzionale al fattore $\v{E}\cdot \v{d}$ quindi sarà necessario considerare tempi di interazione lunghi rispetto alla larghezza di distribuzione dei livelli ma devono essere corti rispetto al reciproco della intensità del campo.\\
+In parole povere dobbiamo considerare campi piccoli:
+\[
+    E^2\tau  \ll 1
+.\] 
+Vale quindi la seguente disuguaglianza sui tempi di interazione per poter applicare lo sviluppo perturbativo al primo ordine e la regola d'oro di Fermi:
+\[
+    \frac{2\pi}{\Delta\omega}\ll \tau\ll \frac{1}{\left|\v{E}\right|^2}
+.\] 
 Abbiamo fin'ora assunto una onda elettromagnetica monocromatica, vedremo cosa succede quando abbiamo invece una distribuzione di campo elettromagnetico (che è quello che succede tipicamente). In generale avremo una densità di energia $u(\nu)d\nu$, in questo caso dovremmo fare la convoluzione della probabilità monocromatica che abbiamo calcolato con tale densità di energia.\\
 Prima di far questo vediamo che succede andando agli ordini successivi, prendiamo $a^{(1)}(t) $ e le rimettiamo nella parte destra della equazione differenziale e troviamo com'è fatta la probabilità di transizione. In questo caso senza effettuare i conti vediamo il risultato:
 \[
@@ -196,9 +207,13 @@ Prima di far questo vediamo che succede andando agli ordini successivi, prendiam
     - \frac{e^{i(\omega_{km}\pm \omega)t}-1}{\omega_{kn}\pm\omega}\right\}
 .\] 
 La cosa importante è il fatto che abbiamo una somma su tutti gli n. Inoltre la nostra $F$ adesso è piccata nel punto in cui la differenza dei due stati è il doppio di $\omega$ del campo magnetico, quindi una volta passato al secondo ordine ho dei processi in cui posso scambiare nergia con il campo magnetico assorbendo o emettendo 2 quanti di energia (o 2 $\hbar \omega$ ), per questo prendono il nome di processi a due fotoni.\\
-Questi argomenti agli ordini superiori sono argomenti di ottica non lineare (il numero di fotoni coinvolti è maggiore di 1).\\
-Vediamo adesso come può essere scritto l'elemento di matrice, per far questo possiamo metterci ad esempio nella Gauge di Coulomb:
+Questi argomenti agli ordini superiori sono argomenti di ottica non lineare (il numero di fotoni coinvolti è maggiore di 1).
+
+\subsection{Coefficienti di Einstein.}%
+\label{sub:Coefficienti di Einstein.}
+Vediamo adesso come può essere scritto l'elemento di matrice, per far questo possiamo metterci ad esempio nella Gauge di Coulomb, sostituiamo all'impulso:
 \[
+    \v{P} \to 
 \v{P}- \frac{e}{n}\v{A}\cdot \v{P}
 .\] 
 In tale Gauge abbiamo che il potenziale diventa:
@@ -229,7 +244,7 @@ Quindi possiamo scrivere la probabilità con l'elemento di matrice esplicitato:
     \bra{\overline{n}}
     e^{\pm i \v{k}\cdot \v{r}}\hat{e}\cdot \v{P} 
     \ket{\overline{m}}
-    \right|\rho(E_n = E_m \pm \hbar \omega) 
+    \right|^2\rho(E_n = E_m \pm \hbar \omega) 
 .\] 
 Ci mettiamo adesso in una situazione in cui la lunghezza d'onda della radiazione è maggiore della estensione dei livelli che consideriamo (o anche del parametro della funzione d'onda che descrive i nostri livelli) :
 \[

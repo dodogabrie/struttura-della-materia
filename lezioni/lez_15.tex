@@ -179,7 +179,7 @@ Quindi per come abbiamo definito la $G(f)$ si ha una espressione del teorema di 
 \begin{fact}[Teorema di Fluttuazione-dissipazione]{fact:Teorema di Fluttuazione-dissipazione}
 	La relazione tra densità spettrale delle fluttuazioni e la correlazione temporale (contenente informazioni sulla dissipazione del sistema) è data da:
 	\[
-	c(\tau)=\int_{0}^{\infty} G(f)\cos(2\pi\tau)df  
+	c(\tau)=\int_{0}^{\infty} G(f)\cos(2\pi\tau f)df  
 	.\] 
 	O dalla sua inversa:
 	\[
@@ -331,7 +331,7 @@ Abbiamo già discusso la resistenza alla Boltzmann, per questa possiamo dire che
 \[
 	\overline{I^2}_{B, \Delta f}
 	= 
-	\frac{\overline{V^2}_{B, \Delta f}}{\left( R_{MB}+ R_{FD} \right)s^2}
+	\frac{\overline{V^2}_{B, \Delta f}}{\left( R_{MB}+ R_{FD} \right)^2}
 .\] 
 Quindi la potenza dissipata sulla resistenza Fermi-Dirac sarà data da:
 \[
@@ -445,159 +445,4 @@ A temperatura ambiente di ha che per prevalere il rumore shot è necessario $\le
 Questo sembra strano perchè il rumore shot ci si aspetta che sia dominante per basse correnti, quindi bassi voltaggi. 
 Tuttavia dobbiamo stare attenti al fatto che le correnti sono comunque vincolate, nonostante il voltaggio dia alto: la nostra trattazione vale solo per correnti piccole.
 
-\subsection{Introduzione ai solidi.}
-\label{subsec:Solidi}
-I solidi sono in genere sistemi molto complicati: nuclei, elettroni interagiscono tra di loro. In linea di principio possiamo scrivere una Hamiltoniana e trovare le sue Autofunzioni.
-\[
-	H \psi = E \psi
-.\] 
-Tale Hamiltoniana ha tantissimi contributi:
-\[
-	H = T_e + T_N + V_{N-N} + V_{N-e} + V_{e-e} + C_e^{\text{rel}}
-.\] 
-Dove abbiamo:
-\begin{description}
-	\item[Termine cinetico per gli elettroni] 
-		 \[
-			T_e = \sum_{e}^{} \frac{p_e^2}{2m} 
-			= -\sum_{e}^{} \frac{-\hbar ^2 \nabla_i^2}{2m}
-		.\] 
 
-	\item[Termine cinetico per i nuclei] 
-		\[
-			T_N 
-			=
-			-\sum_{I}^{} \frac{-\hbar ^2 \nabla_{R_I}^2}{2M}
-		.\] 
-	\item[Termine di interazione Nucleo-Nucleo]
-		\[
-			V_{N-N} = 
-			\frac{1}{2}\sum_{i\neq j}^{} 
-			\frac{Z_iZ_je^2}{\left| R_i - R_j \right| }
-		.\]  
-	\item[Termine di interazione Nucleo-Nucleo]
-		\[
-			V_{e-e} = 
-			\frac{1}{2}\sum_{i\neq j}^{} 
-			\frac{e^2}{\left| r_i - r_j \right| }
-		.\]
-	\item[Termine di interazione Nucleo-Nucleo]
-		\[
-			V_{N-e} = 
-			\frac{1}{2}\sum_{i,I}^{} 
-			\frac{Z_ie^2}{\left| r_i - r_j \right| }
-		.\]
-	\item[Correzioni relativistiche per gli elettroni]
-		\[
-			C_e^{\text{rel}} 
-			=
-			\sum_{e}^{} \left[ \underbrace{-\frac{p_e^4}{2m^3c^2}}_
-			{\substack{\text{Correzione al}\\ 
-			\text{primo ordine}\\ 
-			\text{su $T_e$}}}
-			+ 
-			\underbrace{\frac{\hbar ^2 \nabla_e^2 V_e}{8m^2c^2}}_
-			{\substack{\text{L'elettrone vede}\\
-			\text{un potenziale}\\
-			\text{medio esteso su}\\
-			\text{una certa dim.}}}
-			+
-			\underbrace{\frac{\hbar }{4m^2c^2}
-			\left( \nabla \bs{v}_e \wedge\bs{p}_e\right) 
-			\bs{\sigma}_e}_
-			{\substack{\text{Termine}\\
-			\text{Spin-Orbita}}}
-			\right] 
-		.\] 
-		Il termine spin orbita deriva dal fatto che un elettrone che si muove
-		all'interno di un campo elettrico vede nel suo sistema di riferimento
-		un campo magnetico:
-		\[
-			\bs{B} = -\frac{\bs{v}\wedge \bs{E}}{c}
-		.\] 
-		l'elettrone ha un momento magnetico:
-		\[
-			\bs{\mu} = - \frac{e\hbar }{2mc} \bs{\sigma}_e
-		.\] 
-		Quindi esce fuori il termine:
-		\[
-			-\bs{B}\bs{\mu} 
-			=
-			\frac{\hbar ^2}{2m^2c^2}\left( \nabla v_e \wedge \bs{p}_e \right)
-			\bs{\sigma}_e
-		.\] 
-\end{description}
-Risolvere una Hamiltoniana del genere in modo esplicito è un grosso casino viste le dipendenze di ognuno dei termini precedenti:
-\[
-	H(\left\{ \bs{r} \right\}, \left\{ \bs{R} \right\})
-	=
-	E \psi(\left\{ \bs{r} \right\} , \left\{ \bs{R} \right\} )
-.\] 
-Per risolvere questo problema facciamo l'approssimazione adiabatica o di Born-Oppenheimer che consiste nel supporre il moto dei nuclei molto più lento di quello degli elettroni. \\
-Si cerca di risolvere il moto degli elettroni assomendo i nuclei praticamente fermi.\\
-A tale scopo si scrive la funzione d'onda nel seguente modo:
-\[
-	\psi(\left\{ \bs{r} \right\}, \left\{ \bs{R} \right\} )
-	=
-	\underbrace{F(\left\{ \bs{R} \right\})}_
-	{\substack{\text{Moto nuclei}}}
-	\underbrace{\varphi(\left\{\bs{r}\right\},\left\{\bs{R}\right\} )}_
-	{\substack{\text{Moto elettroni}}}
-.\] 
-Sostituendo questa nella Hamiltoniana i termini riguardanti gli elettroni restano invariati, il termine cinetico nucleare invece cambia nel laplaciano:
-\[\begin{aligned}
-& 			&		&\varphi(\left\{ \bs{r} \right\}, \left\{ \bs{R} \right\})\nabla^2_R F(\left\{ R \right\} ) +\\
-\nabla^2_R \psi&\to 	& 		&\cancel{2\nabla_RF(\left\{ \bs{R} \right\})\nabla_R\varphi(\left\{ \bs{r} \right\},\left\{ \bs{R} \right\} )}+\\
-&			&		&\cancel{F(\left\{ \bs{R} \right\} )\nabla_R^2\varphi(\left\{ \bs{r} \right\},\left\{ \bs{R} \right\} )}
-.\end{aligned}\]
-L'approssimazione consiste nel trascurare i termini in cui vi è la derivata rispetto a $\bs{R}$ di $\varphi$. Questo significa considerare nella $\varphi$ le coordinate dei nuclei fissati.\\
-L'equazione di Shrodinger diventa:
-\[\begin{aligned}
-	&-\frac{\hbar ^2}{2m}F(\bs{r})\nabla _r^2\varphi(\bs{R},\bs{r}) +\\
-	&+\left( V_{ee} + V_{eN} + C_e^{\text{rel}} \right)
-	F(\bs{R})\varphi(\bs{R},\bs{r})+\\
-	&- \frac{\hbar ^2}{2M}\varphi(\bs{r},\bs{R})\nabla_R^2F(\bs{R}) +\\
-	&+V_{NN}F(\bs{R})\varphi(\bs{r},\bs{R}) =\\
-	&=EF(\bs{R})\varphi(\bs{r},\bs{R})
-.\end{aligned}\]
-Cerchiamo di renderla separabile: dividiamo per la funzione d'onda stessa. Abbatendo ulteriormente la notazione possiamo scriverre:
-\[
-	-\frac{\hbar ^2}{2m}\frac{\nabla_r^2\varphi}{\varphi} +
-	V_{ee} + V _{eN} + C_e^{\text{rel}} -
-	\frac{\hbar ^2}{2M}\frac{\nabla_R^2F}{F} = E
-.\] 
-A questo punto l'ultimo termine prima dell'uguale è solo una costante per gli elettroni, non contribuirà alla distribuzione dei livelli energetici se non come un offset, quindi abbiamo che possiamo risolvere per le enrgie dei livelli elettronici nel potenziale dei nuclei $E_n(\bs{R})$:
-\[
-	-\frac{\hbar ^2}{2m}
-	\frac{\nabla_r^2 \varphi(\bs{r},\bs{R})}{\varphi(\bs{r},\bs{R})} +
-	V_{eN} + V_{ee} + C_e^{\text{rel}} = E_n(\bs{R})
-.\] 
-Oppure possiamo riscriverla meglio come:
-\[
-	-\frac{\hbar ^2}{2m}
-	\nabla_r^2 \varphi(\bs{r},\bs{R}) +
-	\left( V_{eN} + V_{ee} + C_e^{\text{rel}} \right)
-	\varphi(\bs{r},\bs{R}) = E_n(\bs{R})\varphi(\bs{r}, \bs{R})
-.\] 
-Trovate le soluzioni per gli elettroni possiamo sostituire per la parte di equazione che risolveva i nuclei:
-\[
-	-\frac{\hbar ^2}{2M}\nabla_R^2F(\bs{R})+
-	\left[ V_{NN}+E_n(\bs{R}) \right] F(\bs{R})=
-	E F(\bs{R})
-.\] 
-Senza il funzionale $E_n$ il cristallo non starebbe insieme: tutti gli altri termini in equazione sono repulsivi.\\
-Risolvere l'equzione per gli elettroni è molto complicato, dobbiamo semplificare ancora per ricavarne qualche informazione: scriviamo la funzione d'onda per gli N elettroni come un prodotto di funzioni d'onda a singolo elettrone (deve essere un prodotto antisimmetrico perché sono fermioni):
-\[
-	\varphi(\bs{r},\bs{R}) =
-	\frac{1}{\sqrt{n}}
-	\begin{vmatrix}
-		\varphi_1(r_1) 	& \ldots 	& \varphi_1(r_n)\\
-		\ldots		& \ldots	&\ldots	\\
-		\varphi_n(r_1)	&\ldots		& \varphi_n(r_n)
-	\end{vmatrix}
-.\] 
-Il determinante nella precedente equazione si chiama determinante di Slater. Sostituendo questa troveremo una Hamiltoniana a singola particella:
-\[
-	H_{F}(r_i)\varphi_i(r_i) = 
-	E_i \varphi_i(r_i)
-.\] 

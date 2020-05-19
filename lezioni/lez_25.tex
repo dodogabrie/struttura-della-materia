@@ -37,13 +37,13 @@ Cerchiamo una soluzione della equazione di Schrodinger che sia sovrapposizione d
 \[
     \ket{\psi(t) } = a_1(t) e^{-iE_1t /\hbar } + a_2(t) e^{-iE_2t /\hbar } 
 .\] 
-SI procede sostituendo questa nella equazione di Schrodinger dipendente dal tempo e proiettiamo su $\ket{1}$ e $\bra{2}$ ottenendo due equazioni: una per la derivata di $a_1$ ed una per la derivata di $a_2$ :
+Si procede sostituendo questa nella equazione di Schrodinger dipendente dal tempo e proiettiamo su $\ket{1}$ e $\bra{2}$ ottenendo due equazioni: una per la derivata di $a_1$ ed una per la derivata di $a_2$ :
 \[\begin{aligned}
-    &i\hbar   \frac{\text{d} a_1(t) }{\text{d} t} =
+    &\frac{\text{d} a_1(t) }{\text{d} t} =
     a_2 \frac{\bra{1}W^+\ket{2}}{i\hbar }e^{i(\omega_{12}-\omega) t}
     +
     \cancel{a_2\frac{\bra{1}W^-\ket{2}}{i\hbar }e^{i(\omega_{12}-\omega) t}}\\
-    &i\hbar   \frac{\text{d} a_2(t) }{\text{d} t} =
+    &\frac{\text{d} a_2(t) }{\text{d} t} =
     \cancel{a_1 \frac{\bra{1}W^+\ket{2}}{i\hbar }e^{i(\omega_{12}-\omega) t}}
     +
     a_1\frac{\bra{1}W^-\ket{2}}{i\hbar }e^{i(\omega_{12}-\omega) t}\\
@@ -51,7 +51,7 @@ SI procede sostituendo questa nella equazione di Schrodinger dipendente dal temp
 Nello spirito della RWA trascuriamo i termini antirisonanti nella transizione.\\
 Per risolvere questo sistema conviene introdurre due nuove ampiezze:
 \[\begin{aligned}
-    &\tilde{a_1}(t) \to a_1(t) = \tilde{a_1}(t) e^{i(\omega_{12}-\omega) t}\\
+    &\tilde{a_1}(t) \to a_1(t) e^{i(\omega_{12}-\omega) t}\\
     &\tilde{a_2}(t) \to a_2(t)
 .\end{aligned}\]
 Il sistema diventa:
@@ -261,7 +261,7 @@ Nel caso di Bosoni invece si ha che più particelle ci sono nello stato finale e
 Vediamo adesso quando domina il processo di emissione stimolata e quando invece domina quello di emissione spontanea. Per far questo consideriamo il rapporto:
 \[
     \frac{B_{1\to 2}u_\nu(\nu_{12})}{A_{1\to 2}} = \frac{1}{e^{h\nu_{12} /kT}-1}
-    = n_\text{ph}^{(\nu_{12})}
+    = n_\text{ph}^{(\nu_{12})} = n_{\nu_{12}}
 .\] 
 Questo è il numero medio di fotoni alla frequenza $\nu_{12}$  che è la frequenza della transizione. Quantizzando il campo magnetico troviamo che $P_\text{em} \propto n_\text{pH} + 1$, il primo termine sarà quello si emissione stimolata mentre quello di emissione spontanea è il secondo.\\
 Questo comporta che in una situazione in cui $n_{\nu_{12}}\ll 1$ allora domina l'emissione spontanea, viceversa domina la stimolata.\\
@@ -355,7 +355,7 @@ Inoltre
 .\] 
 Anche con la degenerazione invece $A$ resta lo stesso. Supponiamo adesso che le degenerazioni siano uguali, il coefficiente di assorbimento diventa
 \[
-    k=\frac{h\nu}{c}g(\nu-\nu_{12}) B(N_2-N_1) 
+    k=\frac{h\nu}{c}g(\nu-\nu_{12}) (N_2-N_1) 
 .\] 
 Quindi il coefficiente di assorbimento è positivo quando $N_2$ è maggiore di $N_1$. \\
 Se si riesce ad invertire la popolazione (cioè ad avere $N_1>N_2$) allora il coefficiente $k$ diventa negativo e la radiazione aumenta esponenzialmente nel passaggio nel materiale. 

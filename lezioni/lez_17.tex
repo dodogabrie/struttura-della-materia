@@ -82,7 +82,7 @@ Prendiamo un $\bs{k}$ per cui non si abbia una degenerazione (non devo prendere 
 	U_c \quad
 	\forall \bs{K}
 .\]	
-Scriviamo una equazione per $c_{_{\bs{k}-\bs{K}_1}}$ :
+Scriviamo l'equazione di Schrodinger proiettata su $c_{_{\bs{k}-\bs{K}_1}}$ :
 \[
 	\left( \mathcal{E}  - \mathcal{E}^0_{_{\bs{k}-\bs{K}_1}} \right)
 	c_{_{\bs{k}-\bs{K}_1}} 
@@ -90,8 +90,7 @@ Scriviamo una equazione per $c_{_{\bs{k}-\bs{K}_1}}$ :
 	\sum_{\bs{K}}^{} U_{_{\bs{K}-\bs{K}_1}}c_{_{\bs{k}-\bs{K}}} 
 	\label{eq:equazione-per-i-coeffficienti-K}
 .\] 
-La parte a destra nella equazione va a zero con ordine $U$ \footnote{Questa è una ipotesi che si assume prendendo un potenziale piccolo.},
-i $c_{_{\bs{k}-\bs{K}_1}}$ non va a zero solo "nei pressi" di $\mathcal{E}^0_{_{\bs{k}-\bs{K}_1}}$,
+La parte a destra nella equazione va a zero con ordine $U$ per ipotesi di potenziale piccolo, il coefficiente $c_{_{\bs{k}-\bs{K}_1}}$ non va a zero solo "nei pressi" di $ \mathcal{E} = \mathcal{E}^0_{_{\bs{k}-\bs{K}_1}}$,
 gli altri $c_{_{\bs{k}-\bs{K}}}$ vanno a zero con ordine $U$; dimostriamo quest'ultima affermazione.\\
 Prendiamo l'equazione per un $c_{_{\bs{k}-\bs{K}_i}}$ generico,
 questa è simile alla \ref{eq:equazione-per-i-coeffficienti-K}:
@@ -130,7 +129,7 @@ Abbiamo spezzato la sommatoria esplicitando il termine avente $\bs{K} = \bs{K}_1
 	\frac{U_{_{\bs{K}_1-\bs{K}}}c_{_{\bs{k}-\bs{K}_1}}}
 	{\mathcal{E}-\mathcal{E}^0_{_{\bs{k}-\bs{K}}}}
 .\] 
-Sostituiamo questo risultato nella equazione di Shrodinger per $\bs{K}_1$:
+Sostituiamo questo risultato nella equazione di Schrodinger per $\v{k}-\bs{K}_1$:
 \[
 	\left( \mathcal{E}-\mathcal{E}^0_{_{\bs{k}-\bs{K}_1}} \right) 
 	c_{_{\bs{k}-\bs{K}_1}} 
@@ -265,7 +264,7 @@ Le soluzioni che otteniamo sono:
 		+ 
 	\left( U_{\bs{K}} \right)^2} 
 .\end{aligned}\]
-quindi la degenerazione si modifica come in Figura  \ref{fig:rottura-degenerazione-dei-livelli-con-il-potenziale}, il potenziale cristallino rompe la degenerazione spostandosi di $ \pm \left| U_{\bs{K}} \right|$. Allontanansodi dalla zona di perfetta degenerazione si torna nel caso della sottosezione precedente.
+quindi la degenerazione si modifica come in Figura  \ref{fig:rottura-degenerazione-dei-livelli-con-il-potenziale}, il potenziale cristallino rompe la degenerazione spostandosi di $ \pm \left| U_{\bs{K}} \right|$. Allontanandosi dalla zona di perfetta degenerazione si torna nel caso della sottosezione precedente.
 \begin{figure}[ht]
     \centering
     \incfig{rottura-degenerazione-dei-livelli-con-il-potenziale}
@@ -273,7 +272,7 @@ quindi la degenerazione si modifica come in Figura  \ref{fig:rottura-degenerazio
     \label{fig:rottura-degenerazione-dei-livelli-con-il-potenziale}
 \end{figure}
 Quindi le bande assumono la forma vista in figura \ref{fig:struttura-a-bande-parabole-traslate}, adesso comprendiamo perchè i livelli sono disegnati "splittati".\\
-Naturalmente il modello di perturbazione al primo ordine non è adatto a desccrivere l'intero cristallo, funzionerà per zone molto piccole di quest'ultimo e da una descrizione qualitativa dell'andamento dei livelli.\\
+Naturalmente il modello di perturbazione al primo ordine non è adatto a descrivere l'intero cristallo, funzionerà per zone molto piccole di quest'ultimo e da una descrizione qualitativa dell'andamento dei livelli.\\
 Tornando al modello perturbativo al primo ordine abbiamo che ogni banda $\mathcal{E}_n(\bs{k})$ che ci permette di descrivere gli elettroni nei solidi come un gas perfetto, tale gas invece di avere la funzione di dispersione 
 \[
 	\mathcal{E}  = \frac{\hbar ^2 \bs{k}^2}{2m}
@@ -295,7 +294,7 @@ Fisicamente questo significa che le bande al di sotto del potenziale chimico son
 L'unico modo che ho per far condurre un solido di questo tipo è di applicare un campo sufficentemente forte da permettere agli elettroni di saltare dall'ultima banda a quella sopra (ho rotto la resistenza dielettrica dell'oggetto). \\
 Tale campo elettrico deve consentire agli elettroni di guadagnare una energia dell'ordine del Gap, tale salto è tipicamente dell'ordine dell'eV. Per fare un campo elettrico dobbiamo decidere anche su che scale di lunghezze tale energia verrà fornita, tali scale saranno intuitivamente dell'ordine del passo reticolare $a \sim 10^{-10}$ m. Di conseguenza il campo necessario a mandare in conduzione il metallo sarà dell'ordine di:
 \[
-	E_{_{\text{cond}}} \sim \frac{V}{a} \sim 10^10 \text{ V/m}
+	E_{_{\text{cond}}} \sim \frac{V}{a} \sim 10^{10} \text{ V/m}
 .\] 
 Questi campi sono elevati da generare.
 \subsubsection{Materiali conduttori}

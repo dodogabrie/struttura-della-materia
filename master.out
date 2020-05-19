@@ -154,6 +154,7 @@
 \BOOKMARK [2][-]{subsection.1568}{Funzione di risposta e teorema di fluttuazione dissipazione.}{section.1549}% 154
 \BOOKMARK [0][-]{chapter.1583}{Interazione radiazione materia}{}% 155
 \BOOKMARK [1][-]{section.1584}{Lezione 24}{chapter.1583}% 156
+<<<<<<< HEAD
 \BOOKMARK [2][-]{subsection.1585}{Regola d'oro di Fermi}{section.1584}% 157
 \BOOKMARK [2][-]{subsection.1612}{Interazione con campo EM}{section.1584}% 158
 \BOOKMARK [2][-]{subsection.1627}{Coefficienti di Einstein.}{section.1584}% 159
@@ -166,3 +167,15 @@
 \BOOKMARK [2][-]{subsection.1734}{Maser}{section.1718}% 166
 \BOOKMARK [2][-]{subsection.1767}{Trattazione completa della equazione di Rate nella interazione radiazione-materia}{section.1718}% 167
 \BOOKMARK [1][-]{section.1794}{Lezione 27}{chapter.1583}% 168
+=======
+\BOOKMARK [2][-]{subsection.1585}{Introduzione alla interazione radiazione materia}{section.1584}% 157
+\BOOKMARK [1][-]{section.1648}{Lezione 25}{chapter.1583}% 158
+\BOOKMARK [2][-]{subsection.1649}{Approssimazione di onda rotante}{section.1648}% 159
+\BOOKMARK [2][-]{subsection.1653}{Trattamento non perturbativo della interazione radiazione materia}{section.1648}% 160
+\BOOKMARK [2][-]{subsection.1672}{Interazione radiazione materia collegata alla termodinamica}{section.1648}% 161
+\BOOKMARK [2][-]{subsection.1695}{Applicazione dell'interazione radiazione materia: Laser}{section.1648}% 162
+\BOOKMARK [1][-]{section.1714}{Lezione 26}{chapter.1583}% 163
+\BOOKMARK [2][-]{subsection.1730}{Maser}{section.1714}% 164
+\BOOKMARK [2][-]{subsection.1763}{Trattazione completa della equazione di Rate nella interazione radiazione-materia}{section.1714}% 165
+\BOOKMARK [1][-]{section.1790}{Lezione 27}{chapter.1583}% 166
+>>>>>>> 1a7f08465fd125441eb83eca0ee7093f81abe3c5

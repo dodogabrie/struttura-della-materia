@@ -243,6 +243,7 @@
 \contentsline {subsection}{\numberline {7.5.5}Funzione di risposta e teorema di fluttuazione dissipazione.}{173}{subsection.1568}%
 \contentsline {chapter}{\numberline {8}Interazione radiazione materia}{175}{chapter.1583}%
 \contentsline {section}{\numberline {8.1}Lezione 24}{175}{section.1584}%
+<<<<<<< HEAD
 \contentsline {subsection}{\numberline {8.1.1}Regola d'oro di Fermi}{175}{subsection.1585}%
 \contentsline {subsection}{\numberline {8.1.2}Interazione con campo EM}{177}{subsection.1612}%
 \contentsline {subsection}{\numberline {8.1.3}Coefficienti di Einstein.}{178}{subsection.1627}%
@@ -255,3 +256,15 @@
 \contentsline {subsection}{\numberline {8.3.1}Maser}{189}{subsection.1734}%
 \contentsline {subsection}{\numberline {8.3.2}Trattazione completa della equazione di Rate nella interazione radiazione-materia}{194}{subsection.1767}%
 \contentsline {section}{\numberline {8.4}Lezione 27}{197}{section.1794}%
+=======
+\contentsline {subsection}{\numberline {8.1.1}Introduzione alla interazione radiazione materia}{175}{subsection.1585}%
+\contentsline {section}{\numberline {8.2}Lezione 25}{180}{section.1648}%
+\contentsline {subsection}{\numberline {8.2.1}Approssimazione di onda rotante}{180}{subsection.1649}%
+\contentsline {subsection}{\numberline {8.2.2}Trattamento non perturbativo della interazione radiazione materia}{181}{subsection.1653}%
+\contentsline {subsection}{\numberline {8.2.3}Interazione radiazione materia collegata alla termodinamica}{184}{subsection.1672}%
+\contentsline {subsection}{\numberline {8.2.4}Applicazione dell'interazione radiazione materia: Laser}{186}{subsection.1695}%
+\contentsline {section}{\numberline {8.3}Lezione 26}{187}{section.1714}%
+\contentsline {subsection}{\numberline {8.3.1}Maser}{189}{subsection.1730}%
+\contentsline {subsection}{\numberline {8.3.2}Trattazione completa della equazione di Rate nella interazione radiazione-materia}{194}{subsection.1763}%
+\contentsline {section}{\numberline {8.4}Lezione 27}{197}{section.1790}%
+>>>>>>> 1a7f08465fd125441eb83eca0ee7093f81abe3c5

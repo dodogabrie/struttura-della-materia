@@ -1,9 +1,14 @@
 # Fdb version 3
+<<<<<<< HEAD
 ["pdflatex"] 1589620307 "master.tex" "master.pdf" "master" 1589862032
   "/etc/texmf/web2c/texmf.cnf" 1589439689 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/edoardo/Modelli/latex/boxtheo.tex" 1589525896 1384 528b15dc79c99e211a33f100f705727a ""
   "/home/edoardo/Modelli/latex/fancyh.tex" 1589525947 103 804323a5273559f61f6efd5cfa9a836a ""
   "/home/edoardo/Modelli/latex/template.tex" 1589525964 1610 ea023eba205d10e9e03ff91c464efebe ""
+=======
+["pdflatex"] 1589295761 "master.tex" "master.pdf" "master" 1589295767
+  "/etc/texmf/web2c/texmf.cnf" 1588927457 475 c0e671620eb5563b2130f56340a5fde8 ""
+>>>>>>> 1a7f08465fd125441eb83eca0ee7093f81abe3c5
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -555,6 +560,7 @@
   "lezioni/lez_7.tex" 1588935113 22425 bcc8b2d0d1bfb2d6bb84cd48625490ee ""
   "lezioni/lez_8.tex" 1588930329 24612 315b94d945ff519732b5b8d2c92b78f5 ""
   "lezioni/lez_9.tex" 1589206184 16125 7993f57a8da99d014e0a2879f4e5f545 ""
+<<<<<<< HEAD
   "master.aux" 1589620313 110082 96988e7cbaa50e957b68c8766b022b8e "pdflatex"
   "master.out" 1589620313 14578 5a3ff1ec267283232241e29862850d14 "pdflatex"
   "master.tex" 1589797814 1251 b1ad89bcaccae3922e3e1ac957857e17 ""
@@ -565,3 +571,15 @@
   "master.pdf"
   "master.toc"
   "master.aux"
+=======
+  "master.aux" 1589295767 109691 69409398eba92c7c3197321d542931a0 "pdflatex"
+  "master.out" 1589295767 14446 4b7785150a702b6f251f21b3eb326e1d "pdflatex"
+  "master.tex" 1589257382 2856 3f90a7c7da9908ff038051a1e79d0a53 ""
+  "master.toc" 1589295767 24262 a3a534efd66c3240121563a1c4209bf4 "pdflatex"
+  (generated)
+  "master.aux"
+  "master.toc"
+  "master.log"
+  "master.out"
+  "master.pdf"
+>>>>>>> 1a7f08465fd125441eb83eca0ee7093f81abe3c5

@@ -1,0 +1,233 @@
+\section{21 maggio}%
+\label{sub:21 maggio}
+\subsection{Doulong Depetit è l'espressione di un teorema più generale.. Quale? Come spiega per l'oscillatore armonico il risultato $C_V = 3NkT$?}%
+Deriva dal principio di equipartizione dell'energia: ogni termine quadratico dell'Hamiltoniana porta un contributo all'energia di $1 /2 kT$. Per il solido armonico siamo in 3 dimensioni la somma dei termini quadratici cinetici e quelli potenziali ci porta 6 contributi per particella, se in tutto abbiamo $N$ oscillatori il risultato è:
+\[
+    C_V = 3NkT
+.\] 
+\paragraph{Perché per il corpo nero non si arriva mai al limite di Doulong Depetit? Perchè un gas di fotoni non ha un regime classico mentre un gas di fononi si?}%
+\label{par:Perchè per il corpo nero non si arriva mai al limite di Doulong Depetit?}
+Entrambe le particelle hanno la stessa dispersione $\mathcal{E}  = c P$ con diversa $c$, la funzione di distribuzione è la stessa (Bose-Einstein). 
+La differenza sta nel fatto che i fononi hanno una energia massima dettata dalla $\gamma_D$ (frequenza di Debye), i fotoni invece non hanno un limite in energia, per ogni temperatura si trova sempre dei modi con energia maggiore di $kT$.
+\subsection{Descrivere la distribuzione di energia del corpo nero.}%
+Si tratta della arcinota distribuzione di Plank.
+\begin{figure}[ht]
+    \centering
+    \incfig{black-body}
+    \caption{Black Body}
+    \label{fig:black-body}
+\end{figure}
+\paragraph{Dove si trova il massimo di tale distribuzione?}%
+Il massimo segue la legge di spostamento di Wien:
+\[
+    \omega_\text{max} \approx  T
+.\] 
+\paragraph{Nella stanza chiusa e buia in che regione dello spettro devo guardare?}%
+\label{par:Nella stanza chiusa e buia in che regione dello spettro devo guardare?}
+ $10 \mu m$.
+
+\subsection{Ricavare la distribuzione di energia del corpo nero.}%
+\label{sub:Ricavare la distribuzione di energia del corpo nero.}
+Si utilizzano l'oscillatore armonico, trascuriamo il termine di vuoto. Per trovare la $u (\omega)$  dobbiamo convertire la 
+\[
+    \rho (E) dE \to \rho (\omega) d\omega
+.\] 
+Utilizzando la legge di dispersione. Abbiamo che (per unità di volume) :
+\[
+    \rho (E) dE = 2\frac{4\pi P^2 dP}{\left(2\pi h\right)^3} = 2 \frac{4\pi  \omega^2 d\omega  \hbar ^3}{\left(2\pi h\right)^3c^3}
+.\] 
+In conclusione:
+\[
+    \rho (\omega) d\omega = \frac{\omega^2 d\omega}{\pi^2c^3}
+.\] 
+\[
+    u(\omega) d\omega  = 
+.\]  
+\paragraph{Supponiamo che questa curva sia data per una temperatura, come cambia al variare della temperatura?}%
+\label{par:Supponiamo che questa curva sia data per una temperatura, come cambia al variare della temperatura?}
+Il massimo sarà proporzionale alla temperatura, se la temperatura aumenta allora la curva sarà più piccata passando sopra alla curva precedente senza intersecarla:
+%\begin{figure}[ht]
+%    \centering
+%    \incfig{black-body-1}
+%    \caption{black body 1}
+%    \label{fig:black-body-1}
+%\end{figure}
+L'energia va come $T^4$ quindi $C_V \propto  T^3$. 
+\paragraph{Da dove prende il nome la distribuzione di corpo nero}%
+\label{par:Da dove prende il nome la distribuzione di corpo nero}
+Hint supponendo di avere un sistema di Bosoni, un gas dentro ad una scatola. Che cosa significa che la scatola è un corpo nero?\\
+Abbiamo un corpo in equilibrio con la radiazione elettromagnetica, possiamo considerare tale corpo perfettamente assorbente a tutte le frequenze.
+\paragraph{Perché la densità di stati si accorge di come sono le pareti?}%
+\label{par:Perché la densità di stati si accorge di come sono le pareti?}
+La densità di stati è un concetto quantistico, si accorge del "colore" delle pareti grazie alle condizioni al contorno. 
+\subsection{Perchè si mette $\mu =0$ nella Bose Einstein per i fotoni?}%
+\label{sub:Perchè si mette mu =0 nella Bose Einstein per i foo}
+Perché non si ha una legge di conservazione del numero di fotoni e l'energia è completamente indipendente dal numero di Fotoni.
+\paragraph{Si può fare una condensazione di Bose-Einstein con i fotoni oppure no?}%
+\label{par:Si può fare una condensazione di Bose-Einstein con i fotoni oppure no?}
+Hint: Lo stato fondamentale per i fotoni è problematico, supponiamo che abbia comunque un qualche significato..è possibile trovare una transizione di fase raffreddando il sistema?\\
+Non  ho la conservazione del numero di particelle, abbassando la temperatura il numero di fotoni nella scatola si riduce e quindi non ho la condensazione.
+\paragraph{Come posso abbassare la temperatura e tenere il numero di fotoni costante?}%
+\label{par:Come posso abbassare la temperatura e tenere il numero di fotoni costante?}
+Se ho un corpo nero non funziona. Dovrei circondare il sistema di oscillatori armonici, la scatola dovrebbe essere un cristallo con risposta dipendente dalla frequenza: un sistema di fotoni termalizzato con \ldots
+\subsection{Parlare della condensazione di Bose-Einstein.}%
+\label{sub:Parlare della condensazione di Bose-Einstein.}
+Prendendo la distribuzione di Bose-Einstein:
+\[
+    n = \frac{1}{\exp\left(\frac{\mathcal{E}-\mu}{kT}\right)-1}
+.\] 
+Proviamo a calcolare il numero di particelle al tendere di $\mu\to 0$:
+\[
+    N = \int r \rho (\mathcal{E}) n(\mathcal{E}) d\mathcal{E}
+.\] 
+Ci aspettiamo per la distribuzione che il numero di particella diverga, tuttavia l'integrale non diverge. L'unica soluzione è che nell'integrale (nella $\rho$ ) abbiamo escluso lo stato fondamentale. \\
+Come conseguenza le particelle che non stiamo considerando sono quelle che finiscono nel fondamentale che acquista una occupazione macroscopica.
+\paragraph{Perché non considero il fondamentale non vengono considerate nel calcolo con la $\rho$?}%
+Perché lo stato fondamentale non ha energia e $\rho  \propto\left(\mathcal{E}\right)^2$: lo stato fondamentale nel nostro modello ha densità nulla.
+\paragraph{Possiamo immaginare un sistema in cui la densità di stati diverge?}%
+\label{par:Possiamo immaginare un sistema in cui la densità di stati diverge?}
+Si, basta ridurre la dimensione del sistema.
+\paragraph{In 2D come va la $\rho$?}%
+Va come $\mathcal{E}^0$: è costante nella energia. Mettendo questa nella $N$ si ha che l'integrale non diverge ovvero niente condensazione.
+\subsection{Come va il calore specifico del gas di Bosoni in funzione della tempertura?}%
+Il conto da fare al di sotto della temperatura critica è:
+\[
+ F = \int_{0}^{\infty} \frac{\mathcal{E}^{3 /2}}{\exp\left(\frac{\mathcal{E}-\mu}{kT}\right)-1}d\mathcal{E} 
+.\] 
+Da questo esce una dipendenza di $F$ da $\left(kT\right)^{5 /2}$ quindi $C_V \propto \left(kT\right)^{3 /2}$.
+Dopo torniamo nella approssimazione di Doulong-Depetit.
+\subsection{Misurare il fattore di struttura dei liquidi e cosa significa.}%
+\label{sub:Misurare il fattore di struttura dei liquidi e cosa significa.}
+Scattering di fotoni a raggi X oppure neutroni. Si misura lo scattering di particelle su un centro diffusore.
+\[
+    S(q) = -N\delta_q + \frac{1}{N}\left< \sum_{i,j}^{} \exp\left(-i\v{q}\left(\v{r}_i-\v{r}_j\right)\right)\right>
+.\] 
+\paragraph{E per lo scattering inelastico che si fa?}%
+\label{par:E per lo scattering inelastico che si fa?}
+Si usa la $S(\v{k},\omega)$\ldots $G(r,t)$: la probabilità di trovare un'altra particella alla distanza $r$. Noi misuriamo la trasformata di Fourier di questa quantità (a parte fattori geometrici).
+La misura di scattering elastico si usa per trovare la legge di dispersione dei fononi nel materiale. 
+\paragraph{E in un liquido questa misura a cosa corrisponde? (qual'è il collegamento microscopico).}%
+\label{par:E in un liquido questa misura a cosa corrisponde? (qual'è il collegamento microscopico).}
+Nel liquido non abbiamo più le posizioni di equilibrio, possiamo pensare alla propagazione di onde di pressione. \\
+A numeri d'onda finiti posso vedere il fonone nel liquido come una fluttuazione di densità. 
+\subsection{Distribuzione dei Fermioni.}%
+\label{sub:Distribuzione dei Fermioni.}
+La distribuzione di fermi è la seguente:
+\[
+    \overline{n}_q = \frac{1}{\exp\left(\frac{\mathcal{E}-\mu}{kT}+1\right)}
+.\] 
+Il disegno è quello pseudo gradino  ecc\ldots\\
+A temperatura nulla possiamo definire il potenziale chimico $\mu (T=0) = \mathcal{E}_F$. 
+\paragraph{Se il nostro stato ha numero di particelle fissate che succede al potenziale chimico?}%
+\label{par:Se il nostro stato ha numero di particelle fissate che succede al potenziale chimico?}
+Il potenziale chimico diminuisce in maniera proporzionale a $\left(kT\right)^2$. Si riesce a tornare nel caso classico all'aumentare della temperatura.
+\paragraph{Per quali particelle è negativo?}%
+\label{par:Per quali particelle è negativo?}
+Per le particelle classiche.
+\paragraph{E perchè ci aspettiamo che il potenziale chimico torni negativo quindi?}%
+\label{par:E perchè ci aspettiamo che il potenziale chimico torni negativo quindi?}
+Perché per 
+\[
+    \frac{N}{V\Lambda} \ll 1
+.\] 
+Si torna classici, quindi all'aumentare della temperatura si torna classici.
+\paragraph{Situazione in cui il potenziale chimico cresce con la temperatura??}%
+\label{par:Situazione in cui il potenziale chimico cresce con la temperatura??}
+É il caso dei semiconduttori, il numero di particelle deve rimanere costante, quindi:
+\[
+    N = \int_{0}^{\infty} \rho (\mathcal{E})\overline{n}_q d\mathcal{E} 
+.\] 
+IL calcolo di $N$ a $T=0$ può essere eguagliato a quello a $T = T'$, in questo integrale l'unica cosa che cambia con la temperatura è la Fermi Dirac, quindi la variazione avviene soltanto in energie prossime a $\mathcal{E}_F$ con un intorno largo $kT$. Se il potenziale chimico diminuisce con $T$ è perché nel fare questo integrale a $T\neq 0$ viene leggermente inferiore a $T=0$, quindi per eguagliarli devo abbassare il potenziale chimico. Se voglio che succeda il contrario tale integrale voglio che diminuisca.\\
+Quindi oltre alla Fermi-Dirac devo lavorare sulla densità di stati: deve diminuire. $\rho  \propto  \left(\mathcal{E}\right)^{1 /2}$, se aumentiamo poco la temperatura aumenta l'energia ed aumenta anche la densità di stati, la Fermi dirac cambia di poco (il pezzo sopra si elude con il pezzo sotto), la densità di stati allora deve decrescere tra sotto e sopra il livello di fermi.
+\subsection{Calore specifico per il gas di elettroni}%
+\label{sub:Calore specifico per il gas di elettroni}
+Ci aspettiamo che il calore specifico vada con la temperatura come:
+\[
+    C_V \propto  \frac{T}{T_F}
+.\] 
+Lo possiamo vedere considerando che, se aumento l'energia del sistema sposto solo le particelle nel presso del livello di fermi, quindi:
+\[
+    \Delta E \sim kT \cdot N\frac{T}{T_F}
+.\] 
+Dove $N T /T_F$ sono gli elettroni che cambiano energia.
+Quindi abbiamo che:
+\[
+\frac{\Delta E}{\Delta T}  \approx  C_V \sim \frac{T}{T_F}
+.\] 
+Lineare nella temperatura.
+\subsection{In che range di temperatura devo fare una misura nei metalli per vedere questo calore specifico lineare?}
+Sicuramente sotto a $T_F$ perché altrimenti il metallo è sciolto, le temperature dovranno essere piccole rispetto alla temperatura di Debye.\\
+Infatti gli ioni contribuiscono al calore specifico con circa $3NK$ dal principio di equipartizione ad alta temperatura, mentre a bassa temperatura vanno con Debye ($T^3$). \\
+Abbiamo allora due possibilità: temperature del tipo $T>T_F$ ma il cristallo si scioglie, oppure vado a temperature basse dove l'andamento lineare diventa predominante su quello cubico e posso vedere l'andamento lineare.
+\subsection{In un gas di elettroni liberi con un campo magnetico come va la risposta degli elettroni ad un campo magnetico? (magnetizzazione).}%
+\label{sub:In un gas di elettroni liberi con un campo magnetico come va la risposta degli elettroni ad un campo magnetico? (magnetizzazione).}
+Abbiamo una energia del tipo:
+\[
+    E = \pm \mu  B + \frac{\hbar ^2q^2}{2m}
+.\] 
+Se metto sulle $x$ la distribuzione degli stati per gli elettroni (le popolazioni) e sulle $y$  l'energia posso fare una parabola. Si disegna la funzione in questo modo perché adesso l'area sottesa tra la parabola e la $x$  è proprio il popolamento $N\uparrow\downarrow$.
+\paragraph{Che succede se tolgo il termine cinetico?}%
+\label{par:Che succede se tolgo il termine cinetico?}
+Ho il sistema della diamagnetizzazione adiabatica. In questo caso si tratta di particelle ferme, impurezze\ldots
+\paragraph{Perchè abbiamo potuto trattarlo con Boltzmann e non con Fermi-Dirac pur avendo preso particelle con uno spin?}%
+\label{par:Perchè abbiamo potuto trattarlo con Boltzmann e non con Fermi-Dirac pur avendo preso particelle con uno spin?}
+Perché le particelle ferme hanno impulso nullo, le particelle classiche possono differenziarsi da quelle di fermi dirac tramite la relazione:
+\[
+    \frac{N}{V\Lambda^3}\ll 1
+.\] 
+Visto che non si ha impulso si ha che:
+\[
+    \Lambda  \sim \frac{\hbar }{p} \to \infty
+.\] 
+Inoltre dal punto di vista statistico queste particelle sono distinguibili e di conseguenza seguono Boltzmann.
+Allora la disuguaglianza per queste particelle risulta sempre rispettata.
+\subsection{Perché non possiamo usare la funzione di partizione $Z_1^N$  per le particelle quantistiche?}%
+Perché tali particelle sono indistinguibili, per le particelle classiche abbiamo assunto che $Z = Z_1^N$, non possiamo più farlo. Fare l'elevamento alla $N$  induce in errore perché stiamo di fatto contando lo "scambio di stato". 
+\subsection{Diamagnetizzazione adiabatica}%
+\paragraph{Perché l'entropia va a zero a temperatura nulla per questo sistema?}%
+\label{par:Perché l'entropia va a zero a temperatura nulla per questo sistema?}
+Per il terzo principio della termodinamica.
+\paragraph{Qual'è il limite per alte temperature della entropia?}%
+\label{par:Qual'è il limite per alte temperature della entropia?}
+Abbiamo che tale limite deriva dal fatto che $Z\to 2$  allora visto che:
+\[
+    S = k\ln (\Gamma) 
+.\] 
+Se abbiamo $Z_1=2$  si ha che gli stati possibili saranno $2^N$. Quindi:
+\[
+    S \to Nk\ln (2) 
+.\] 
+Tale entropia sarà una funzione di $\frac{\mu B}{kT}$.
+\paragraph{Funzionamento della demagnetizzazione adiabatica.}%
+\label{par:Funzionamento della demagnetizzazione adiabatica.}
+\paragraph{Qual'è il limite di questo metodo di raffreddamento?}%
+\label{par:Qual'è il limite di questo metodo di raffreddamento?}
+L'entropia prende la forma di una funzione a gradino nel limite di basse temperature, quindi in linea di principio si potrebbe procedere fino a $T=0$, tuttavia abbiamo che $B_1$  non è piccolo a piacere, ha un limite inferiore dovuto alla magnetizzazione interna residua del solido.
+\subsection{Bande elettroniche dei cristalli: cosa sono e da dove vengono fuori?}%
+\label{sub:Bande elettroniche dei cristalli: cosa sono e da dove vengono fuori?}
+Per il teorema di Bloch abbiamo che le autofunzioni nel nostro cristallo sono gli autostati delle traslazioni:
+\[
+    \psi_{k,n}=e^{i\v{k}\cdot \v{r}}u_{k,n}(\v{r}) 
+.\] 
+Dove $u$ ha la stessa periodicità del reticolo, mentre possiamo considerare $\v{k}$ continuo poiché suddivide la prima zona di Brilluin in numeri razionali:
+\[
+    \v{k}= \sum_{}^{} \frac{n_i}{N_I}\v{b}_i
+.\] 
+Quindi abbiamo che 
+\[
+    \left(\Delta\v{k}\right)^3 = \frac{\left(h\right)^3}{V}
+.\] 
+\ldots\\
+\paragraph{Struttura a Bande e proprietà di conducibilità del cristallo}%
+\paragraph{Oscillazioni di Bloch.}%
+\label{par:Oscillazioni di Bloch.}
+\paragraph{Conduzione dei metalli spiegata con il modello a bande.}%
+\label{par:Conduzione dei metalli spiegata con il modello a bande.}
+\subsection{Che succede alle bande se gli elettroni nel metallo fossero Bosoni??}%
+\label{sub:Che succede alle bande se gli elettroni nel metallo fossero Bosoni??}
+Hint: cosa ci sarebbe di particolare nella materia? Ci sarebbe qualcosa di strano? Si ha che i cristalli sarebbero tutti conduttori: non ci sono più bande occupate.
+\subsection{Per sistemi cristallini come sono fatte le bande di energia? (Tozzini).}%
+\paragraph{Cosa cambia tra fononi ottici ed acustici?}%
+\paragraph{Che proprietà devono avere gli atomi all'interno della cella per la oscillazione di fononi ottici?}%
+Deve essere un elemento dipolare quindi dovranno avere carica opposta.
+

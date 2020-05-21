@@ -154,7 +154,6 @@
 \BOOKMARK [2][-]{subsection.1568}{Funzione di risposta e teorema di fluttuazione dissipazione.}{section.1549}% 154
 \BOOKMARK [0][-]{chapter.1583}{Interazione radiazione materia}{}% 155
 \BOOKMARK [1][-]{section.1584}{Lezione 24}{chapter.1583}% 156
-<<<<<<< HEAD
 \BOOKMARK [2][-]{subsection.1585}{Regola d'oro di Fermi}{section.1584}% 157
 \BOOKMARK [2][-]{subsection.1612}{Interazione con campo EM}{section.1584}% 158
 \BOOKMARK [2][-]{subsection.1627}{Coefficienti di Einstein.}{section.1584}% 159
@@ -167,15 +166,21 @@
 \BOOKMARK [2][-]{subsection.1734}{Maser}{section.1718}% 166
 \BOOKMARK [2][-]{subsection.1767}{Trattazione completa della equazione di Rate nella interazione radiazione-materia}{section.1718}% 167
 \BOOKMARK [1][-]{section.1794}{Lezione 27}{chapter.1583}% 168
-=======
-\BOOKMARK [2][-]{subsection.1585}{Introduzione alla interazione radiazione materia}{section.1584}% 157
-\BOOKMARK [1][-]{section.1648}{Lezione 25}{chapter.1583}% 158
-\BOOKMARK [2][-]{subsection.1649}{Approssimazione di onda rotante}{section.1648}% 159
-\BOOKMARK [2][-]{subsection.1653}{Trattamento non perturbativo della interazione radiazione materia}{section.1648}% 160
-\BOOKMARK [2][-]{subsection.1672}{Interazione radiazione materia collegata alla termodinamica}{section.1648}% 161
-\BOOKMARK [2][-]{subsection.1695}{Applicazione dell'interazione radiazione materia: Laser}{section.1648}% 162
-\BOOKMARK [1][-]{section.1714}{Lezione 26}{chapter.1583}% 163
-\BOOKMARK [2][-]{subsection.1730}{Maser}{section.1714}% 164
-\BOOKMARK [2][-]{subsection.1763}{Trattazione completa della equazione di Rate nella interazione radiazione-materia}{section.1714}% 165
-\BOOKMARK [1][-]{section.1790}{Lezione 27}{chapter.1583}% 166
->>>>>>> 1a7f08465fd125441eb83eca0ee7093f81abe3c5
+\BOOKMARK [0][-]{chapter.1855}{Domande D'esame}{}% 169
+\BOOKMARK [1][-]{section.1856}{21 maggio}{chapter.1855}% 170
+\BOOKMARK [2][-]{subsection.1857}{Doulong Depetit \350 l'espressione di un teorema pi\371 generale.. Quale? Come spiega per l'oscillatore armonico il risultato CV = 3NkT?}{section.1856}% 171
+\BOOKMARK [2][-]{subsection.1860}{Descrivere la distribuzione di energia del corpo nero.}{section.1856}% 172
+\BOOKMARK [2][-]{subsection.1865}{Ricavare la distribuzione di energia del corpo nero.}{section.1856}% 173
+\BOOKMARK [2][-]{subsection.1873}{Perch\350 si mette =0 nella Bose Einstein per i fotoni?}{section.1856}% 174
+\BOOKMARK [2][-]{subsection.1876}{Parlare della condensazione di Bose-Einstein.}{section.1856}% 175
+\BOOKMARK [2][-]{subsection.1882}{Come va il calore specifico del gas di Bosoni in funzione della tempertura?}{section.1856}% 176
+\BOOKMARK [2][-]{subsection.1884}{Misurare il fattore di struttura dei liquidi e cosa significa.}{section.1856}% 177
+\BOOKMARK [2][-]{subsection.1888}{Distribuzione dei Fermioni.}{section.1856}% 178
+\BOOKMARK [2][-]{subsection.1896}{Calore specifico per il gas di elettroni}{section.1856}% 179
+\BOOKMARK [2][-]{subsection.1900}{In che range di temperatura devo fare una misura nei metalli per vedere questo calore specifico lineare?}{section.1856}% 180
+\BOOKMARK [2][-]{subsection.1901}{In un gas di elettroni liberi con un campo magnetico come va la risposta degli elettroni ad un campo magnetico? \(magnetizzazione\).}{section.1856}% 181
+\BOOKMARK [2][-]{subsection.1907}{Perch\351 non possiamo usare la funzione di partizione Z1N per le particelle quantistiche?}{section.1856}% 182
+\BOOKMARK [2][-]{subsection.1908}{Diamagnetizzazione adiabatica}{section.1856}% 183
+\BOOKMARK [2][-]{subsection.1915}{Bande elettroniche dei cristalli: cosa sono e da dove vengono fuori?}{section.1856}% 184
+\BOOKMARK [2][-]{subsection.1922}{Che succede alle bande se gli elettroni nel metallo fossero Bosoni??}{section.1856}% 185
+\BOOKMARK [2][-]{subsection.1923}{Per sistemi cristallini come sono fatte le bande di energia? \(Tozzini\).}{section.1856}% 186

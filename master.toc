@@ -65,7 +65,7 @@
 \contentsline {paragraph}{Fluttuazioni del numero di particelle.}{45}{section*.427}%
 \contentsline {paragraph}{Esempio: gas ideale}{46}{section*.437}%
 \contentsline {paragraph}{Fluttuazioni della temperatura}{46}{section*.441}%
-\contentsline {subsection}{\numberline {2.1.2}Fluttuazioni dipendenti ed indipendenti}{46}{subsection.444}%
+\contentsline {subsection}{\numberline {2.1.2}Fluttuazioni dipendenti ed indipendenti}{47}{subsection.444}%
 \contentsline {subsection}{\numberline {2.1.3}Indeterminazione dell'entropia}{48}{subsection.465}%
 \contentsline {subsection}{\numberline {2.1.4}Tempo di vita media degli stati}{49}{subsection.473}%
 \contentsline {chapter}{\numberline {3}Statistica di Fermi-Dirac e Bose-Einstein}{50}{chapter.478}%
@@ -243,7 +243,6 @@
 \contentsline {subsection}{\numberline {7.5.5}Funzione di risposta e teorema di fluttuazione dissipazione.}{173}{subsection.1568}%
 \contentsline {chapter}{\numberline {8}Interazione radiazione materia}{175}{chapter.1583}%
 \contentsline {section}{\numberline {8.1}Lezione 24}{175}{section.1584}%
-<<<<<<< HEAD
 \contentsline {subsection}{\numberline {8.1.1}Regola d'oro di Fermi}{175}{subsection.1585}%
 \contentsline {subsection}{\numberline {8.1.2}Interazione con campo EM}{177}{subsection.1612}%
 \contentsline {subsection}{\numberline {8.1.3}Coefficienti di Einstein.}{178}{subsection.1627}%
@@ -256,15 +255,49 @@
 \contentsline {subsection}{\numberline {8.3.1}Maser}{189}{subsection.1734}%
 \contentsline {subsection}{\numberline {8.3.2}Trattazione completa della equazione di Rate nella interazione radiazione-materia}{194}{subsection.1767}%
 \contentsline {section}{\numberline {8.4}Lezione 27}{197}{section.1794}%
-=======
-\contentsline {subsection}{\numberline {8.1.1}Introduzione alla interazione radiazione materia}{175}{subsection.1585}%
-\contentsline {section}{\numberline {8.2}Lezione 25}{180}{section.1648}%
-\contentsline {subsection}{\numberline {8.2.1}Approssimazione di onda rotante}{180}{subsection.1649}%
-\contentsline {subsection}{\numberline {8.2.2}Trattamento non perturbativo della interazione radiazione materia}{181}{subsection.1653}%
-\contentsline {subsection}{\numberline {8.2.3}Interazione radiazione materia collegata alla termodinamica}{184}{subsection.1672}%
-\contentsline {subsection}{\numberline {8.2.4}Applicazione dell'interazione radiazione materia: Laser}{186}{subsection.1695}%
-\contentsline {section}{\numberline {8.3}Lezione 26}{187}{section.1714}%
-\contentsline {subsection}{\numberline {8.3.1}Maser}{189}{subsection.1730}%
-\contentsline {subsection}{\numberline {8.3.2}Trattazione completa della equazione di Rate nella interazione radiazione-materia}{194}{subsection.1763}%
-\contentsline {section}{\numberline {8.4}Lezione 27}{197}{section.1790}%
->>>>>>> 1a7f08465fd125441eb83eca0ee7093f81abe3c5
+\contentsline {chapter}{\numberline {9}Domande D'esame}{204}{chapter.1855}%
+\contentsline {section}{\numberline {9.1}21 maggio}{204}{section.1856}%
+\contentsline {subsection}{\numberline {9.1.1}Doulong Depetit è l'espressione di un teorema più generale.. Quale? Come spiega per l'oscillatore armonico il risultato $C_V = 3NkT$?}{204}{subsection.1857}%
+\contentsline {paragraph}{Perché per il corpo nero non si arriva mai al limite di Doulong Depetit? Perchè un gas di fotoni non ha un regime classico mentre un gas di fononi si?}{204}{section*.1859}%
+\contentsline {subsection}{\numberline {9.1.2}Descrivere la distribuzione di energia del corpo nero.}{204}{subsection.1860}%
+\contentsline {paragraph}{Dove si trova il massimo di tale distribuzione?}{204}{section*.1862}%
+\contentsline {paragraph}{Nella stanza chiusa e buia in che regione dello spettro devo guardare?}{204}{section*.1864}%
+\contentsline {subsection}{\numberline {9.1.3}Ricavare la distribuzione di energia del corpo nero.}{204}{subsection.1865}%
+\contentsline {paragraph}{Supponiamo che questa curva sia data per una temperatura, come cambia al variare della temperatura?}{205}{section*.1870}%
+\contentsline {paragraph}{Da dove prende il nome la distribuzione di corpo nero}{205}{section*.1871}%
+\contentsline {paragraph}{Perché la densità di stati si accorge di come sono le pareti?}{205}{section*.1872}%
+\contentsline {subsection}{\numberline {9.1.4}Perchè si mette $\mu =0$ nella Bose Einstein per i fotoni?}{205}{subsection.1873}%
+\contentsline {paragraph}{Si può fare una condensazione di Bose-Einstein con i fotoni oppure no?}{205}{section*.1874}%
+\contentsline {paragraph}{Come posso abbassare la temperatura e tenere il numero di fotoni costante?}{205}{section*.1875}%
+\contentsline {subsection}{\numberline {9.1.5}Parlare della condensazione di Bose-Einstein.}{205}{subsection.1876}%
+\contentsline {paragraph}{Perché non considero il fondamentale non vengono considerate nel calcolo con la $\rho $?}{206}{section*.1879}%
+\contentsline {paragraph}{Possiamo immaginare un sistema in cui la densità di stati diverge?}{206}{section*.1880}%
+\contentsline {paragraph}{In 2D come va la $\rho $?}{206}{section*.1881}%
+\contentsline {subsection}{\numberline {9.1.6}Come va il calore specifico del gas di Bosoni in funzione della tempertura?}{206}{subsection.1882}%
+\contentsline {subsection}{\numberline {9.1.7}Misurare il fattore di struttura dei liquidi e cosa significa.}{206}{subsection.1884}%
+\contentsline {paragraph}{E per lo scattering inelastico che si fa?}{206}{section*.1886}%
+\contentsline {paragraph}{E in un liquido questa misura a cosa corrisponde? (qual'è il collegamento microscopico).}{206}{section*.1887}%
+\contentsline {subsection}{\numberline {9.1.8}Distribuzione dei Fermioni.}{206}{subsection.1888}%
+\contentsline {paragraph}{Se il nostro stato ha numero di particelle fissate che succede al potenziale chimico?}{206}{section*.1890}%
+\contentsline {paragraph}{Per quali particelle è negativo?}{206}{section*.1891}%
+\contentsline {paragraph}{E perchè ci aspettiamo che il potenziale chimico torni negativo quindi?}{207}{section*.1892}%
+\contentsline {paragraph}{Situazione in cui il potenziale chimico cresce con la temperatura??}{207}{section*.1894}%
+\contentsline {subsection}{\numberline {9.1.9}Calore specifico per il gas di elettroni}{207}{subsection.1896}%
+\contentsline {subsection}{\numberline {9.1.10}In che range di temperatura devo fare una misura nei metalli per vedere questo calore specifico lineare?}{207}{subsection.1900}%
+\contentsline {subsection}{\numberline {9.1.11}In un gas di elettroni liberi con un campo magnetico come va la risposta degli elettroni ad un campo magnetico? (magnetizzazione).}{207}{subsection.1901}%
+\contentsline {paragraph}{Che succede se tolgo il termine cinetico?}{207}{section*.1903}%
+\contentsline {paragraph}{Perchè abbiamo potuto trattarlo con Boltzmann e non con Fermi-Dirac pur avendo preso particelle con uno spin?}{208}{section*.1904}%
+\contentsline {subsection}{\numberline {9.1.12}Perché non possiamo usare la funzione di partizione $Z_1^N$ per le particelle quantistiche?}{208}{subsection.1907}%
+\contentsline {subsection}{\numberline {9.1.13}Diamagnetizzazione adiabatica}{208}{subsection.1908}%
+\contentsline {paragraph}{Perché l'entropia va a zero a temperatura nulla per questo sistema?}{208}{section*.1909}%
+\contentsline {paragraph}{Qual'è il limite per alte temperature della entropia?}{208}{section*.1910}%
+\contentsline {paragraph}{Funzionamento della demagnetizzazione adiabatica.}{208}{section*.1913}%
+\contentsline {paragraph}{Qual'è il limite di questo metodo di raffreddamento?}{208}{section*.1914}%
+\contentsline {subsection}{\numberline {9.1.14}Bande elettroniche dei cristalli: cosa sono e da dove vengono fuori?}{208}{subsection.1915}%
+\contentsline {paragraph}{Struttura a Bande e proprietà di conducibilità del cristallo}{208}{section*.1919}%
+\contentsline {paragraph}{Oscillazioni di Bloch.}{208}{section*.1920}%
+\contentsline {paragraph}{Conduzione dei metalli spiegata con il modello a bande.}{208}{section*.1921}%
+\contentsline {subsection}{\numberline {9.1.15}Che succede alle bande se gli elettroni nel metallo fossero Bosoni??}{209}{subsection.1922}%
+\contentsline {subsection}{\numberline {9.1.16}Per sistemi cristallini come sono fatte le bande di energia? (Tozzini).}{209}{subsection.1923}%
+\contentsline {paragraph}{Cosa cambia tra fononi ottici ed acustici?}{209}{section*.1924}%
+\contentsline {paragraph}{Che proprietà devono avere gli atomi all'interno della cella per la oscillazione di fononi ottici?}{209}{section*.1925}%

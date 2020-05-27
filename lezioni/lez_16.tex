@@ -60,7 +60,7 @@ Nella quale:
 			\text{una certa dim.}}}
 			+
 			\underbrace{\frac{\hbar }{4m^2c^2}
-			\left( \nabla \bs{v}_e \wedge\bs{p}_e\right) 
+			\left( \nabla V_e \wedge\bs{p}_e\right) 
 			\bs{\sigma}_e}_
 			{\substack{\text{Termine}\\
 			\text{Spin-Orbita}}}
@@ -69,10 +69,14 @@ Nella quale:
 		Il termine spin orbita deriva dal fatto che un elettrone che si muove
 		all'interno di un campo elettrico vede nel suo sistema di riferimento
 		un campo magnetico:
-		\[
-			\bs{B} = -\frac{\bs{v}\wedge \bs{E}}{c}
-		.\] 
-		l'elettrone ha un momento magnetico:
+		\[\begin{aligned}
+		    \bs{B} =& -\frac{\bs{v}\wedge \bs{E}}{c} =\\
+		    	   =& \frac{\v{E}\wedge \v{p}}{mc} =\\
+			   =& \frac{\nabla V \wedge \v{p}}{mc} = \\
+			   =& \frac{\nabla V_e \wedge \v{p}}{mce}
+		.\end{aligned}\]
+		Dove abbiamo definito l'energia potenziale dell'elettrone come: $V_e = Ve$.\\
+		L'elettrone ha un momento magnetico:
 		\[
 			\bs{\mu} = - \frac{e\hbar }{2mc} \bs{\sigma}_e
 		.\] 
@@ -80,7 +84,7 @@ Nella quale:
 		\[
 			-\bs{B}\bs{\mu} 
 			=
-			\frac{\hbar ^2}{2m^2c^2}\left( \nabla v_e \wedge \bs{p}_e \right)
+			\frac{\hbar}{2m^2c^2}\left( \nabla V_e \wedge \bs{p}_e \right)
 			\bs{\sigma}_e
 		.\] 
 \end{description}
@@ -122,13 +126,13 @@ L'equazione di Schrodinger diventa:
 	&+V_{NN}F(\bs{R})\varphi(\bs{r},\bs{R}) =\\
 	&=EF(\bs{R})\varphi(\bs{r},\bs{R})
 .\end{aligned}\]
-Cerchiamo di renderla separabile: dividiamo per la funzione d'onda stessa. Abbattendo ulteriormente la notazione possiamo scrivere:
+Cerchiamo di renderla separabile: dividiamo per la funzione d'onda stessa.
 \[
 	-\frac{\hbar ^2}{2m}\frac{\nabla_r^2\varphi}{\varphi} +
-	V_{ee} + V _{eN} + C_e^{\text{rel}} -
+	V_{ee} + V _{eN} + V_{NN} + C_e^{\text{rel}} -
 	\frac{\hbar ^2}{2M}\frac{\nabla_R^2F}{F} = E
 .\] 
-A questo punto l'ultimo termine prima dell'uguale è solo una costante per gli elettroni, non contribuirà alla distribuzione dei livelli energetici se non come un offset, quindi abbiamo che possiamo risolvere per le energie dei livelli elettronici $E_n(\bs{R})$ nel potenziale dei nuclei:
+A questo punto l'ultimo termine prima dell'uguale e $V_{NN}$ sono solo due costanti per gli elettroni, non contribuiranno alla distribuzione dei livelli energetici se non come un offset, quindi abbiamo che possiamo risolvere per le energie dei livelli elettronici $E_n(\bs{R})$ nel potenziale dei nuclei:
 \[
 	-\frac{\hbar ^2}{2m}
 	\frac{\nabla_r^2 \varphi(\bs{r},\bs{R})}{\varphi(\bs{r},\bs{R})} +
@@ -202,7 +206,7 @@ Vediamo adesso come trattare i vari termini della equazione. Per il termine Coul
 .\] 
 In questo modo il contributo alla Hamiltoniana diventa:
 \[
-	\int\frac{e^2n(\bs{r})}{\left| \bs{r}-\bs{r}' \right| }d \bs{r}
+	\int\frac{e^2n(\bs{r'})}{\left| \bs{r}-\bs{r}' \right| }d \bs{r'}
 .\] 
 tuttavia non conosciamo la densità degli elettroni in generale, una buona approssimazione consiste nel partire dalla somma delle densità degli elettroni prendendo come funzioni d'onda gli orbitali atomici. In questo modo troveremo un potenziale $U(\bs{r})$ da inserire nella Hamiltoniana. \\
 Per trattare il termine di scambio solitamente si utilizza un metodo detto Local Density: prendere la media sulle funzioni d'onda di $U(\bs{r})$ e per calcolarlo utilizzare come funzioni d'onda quelle gli elettroni liberi (onde piane).\\

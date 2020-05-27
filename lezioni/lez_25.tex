@@ -207,7 +207,7 @@ Infatti il bilancio dettagliato ci diceva che i singoli processi dai singoli sta
 Dal punto di vista quantistico questa è strettamente connessa con il time revelsal simmetry.\\
 Dal punto di vista classico (sistema alla Boltzmann) se prendiamo un sistema a due livelli sappiamo che all'equilibrio termico:
 \[
-    \frac{N_1^0}{N_2^0}= \exp\left(-\frac{E_{12}}{kT}\right)
+    \frac{N_1^0}{N_2^0}= \frac{g_1}{g_2}\exp\left(-\frac{E_{12}}{kT}\right)
 .\] 
 Se gli atomi possono interagire solo con il campo elettromagnetico allora si ha che:
 \[
@@ -225,18 +225,18 @@ Einstein risolse questo problema assumendo che le probabilità fossero proporzio
 Il secondo termine è indipendente dalla densità di energia del campo elettromagnetico. Questo coefficiente è quello di emissione spontanea \footnote{Quantizzando il campo EM si vedrà che tale elemento viene fuori direttamente dagli elementi di matrice della interazione.}.\\
 Possiamo ora scrivere le proprietà di equilibrio termodinamico:
 \[
-    \frac{N_1^0}{N_2^0} = \frac{B_{1\to 2 u_\nu(\nu_{12})}}{B_{1\to 2}u_\nu(\nu_{12}) + A_{1\to 2}} = e^{-h\nu_{12} /k_BT}
+    \frac{N_1^0}{N_2^0} = \frac{B_{1\to 2 u_\nu(\nu_{12})}}{B_{1\to 2}u_\nu(\nu_{12}) + A_{1\to 2}} = \frac{g_1}{g_2}e^{-h\nu_{12} /k_BT}
 .\] 
 Possiamo quindi calcolare $A$  in funzione di $T$  :
 \[
-    A_{12} = \left(B_{1\to 2}e^{h\nu_{12} /k_BT}-B_{1\to 2}\right)u_\nu(\nu_{12}) 
+    A_{12} = \left(B_{1\to 2}\frac{g_2}{g_1}e^{h\nu_{12} /k_BT}-B_{1\to 2}\right)u_\nu(\nu_{12}) 
 .\] 
 Se siamo all'equilibrio termico possiamo utilizzare l'espressione di plank:
 \[
 A_{1\to 2} =
-\frac{8\pi h\nu_{12}^3}{c^3}\left(\frac{B_{2\to 1}e^{h\nu_{12} /k_BT}-B_{1\to 2}}{e^{h\nu_{12} /k_BT}-1}\right)
+\frac{8\pi h\nu_{12}^3}{c^3}\left(\frac{B_{2\to 1}\frac{g_2}{g_1}e^{h\nu_{12} /k_BT}-B_{1\to 2}}{e^{h\nu_{12} /k_BT}-1}\right)
 .\] 
-Imponendo che tale coefficiente non dipenda dalla temperatura abbiamo che $B_{1\to 2}=B_{2\to 1}$, quindi rimane semplicemente:
+Imponendo che tale coefficiente non dipenda dalla temperatura abbiamo che $B_{1\to 2}g_1=B_{2\to 1}g_2$, quindi rimane semplicemente:
 \[
 A_{1\to 2}=\frac{4}{3\hbar }\frac{\omega_{12}^3}{c ^3}\left|\bra{1}d\ket{2}\right|^2
 .\] 

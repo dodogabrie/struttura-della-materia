@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="441.35678mm"
-   height="59.377911mm"
-   viewBox="0 0 441.35677 59.377912"
+   width="581.35681mm"
+   height="59.377907mm"
+   viewBox="0 0 581.3568 59.377908"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="oscillazioni-degli-atomi-nel-cristallo-biatomico.svg">
   <defs
      id="defs2">
@@ -367,8 +367,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7031285"
-     inkscape:cx="357.40722"
-     inkscape:cy="73.894318"
+     inkscape:cx="1077.083"
+     inkscape:cy="73.894315"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -377,13 +377,13 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:window-width="1920"
-     inkscape:window-height="1052"
+     inkscape:window-height="1001"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      fit-margin-top="0"
-     fit-margin-left="80"
-     fit-margin-right="80"
+     fit-margin-left="150"
+     fit-margin-right="150"
      fit-margin-bottom="0">
     <inkscape:grid
        type="xygrid"
@@ -393,7 +393,7 @@
        spacingy="10"
        empspacing="4"
        dotted="false"
-       originx="105.18852"
+       originx="175.1885"
        originy="-34.835649" />
   </sodipodi:namedview>
   <metadata
@@ -412,7 +412,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(105.18853,-202.78643)">
+     transform="translate(175.18853,-202.78644)">
     <rect
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.10024048;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:none;marker-end:none"
        id="rect816"
@@ -685,12 +685,12 @@
        id="text2756"
        xml:space="preserve"
        style="font-size:1.88847888px;font-family:'Iosevka Term';-inkscape-font-specification:'Iosevka Term, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.18884793"
-       y="204.22124"
-       x="13.842684"><tspan
+       y="215.88637"
+       x="13.090095"><tspan
          id="tspan2754"
          sodipodi:role="line"
-         x="13.842684"
-         y="204.22124"
+         x="13.090095"
+         y="215.88637"
          style="stroke-width:0.18884793">Ottici</tspan></text>
     <text
        id="text2770"

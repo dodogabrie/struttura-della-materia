@@ -1,4 +1,4 @@
-%% Creator: Inkscape inkscape 0.92.4, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.5, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf' (pdf, eps, ps)
 %%
@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{502.63320562bp}%
+    \setlength{\unitlength}{546.82584027bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,19 +50,19 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.41992673)%
+  \begin{picture}(1,0.28796961)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf}}%
-    \put(0.26352257,0.0320346){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$-\frac{\pi}{a}$\end{tabular}}}}%
+    \put(0.33952695,0.00303921){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$-\frac{\pi}{a}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf}}%
-    \put(0.65388241,0.03362624){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\frac{\pi}{a}$\end{tabular}}}}%
+    \put(0.64874878,0.00429942){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\frac{\pi}{a}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf}}%
-    \put(0.48045341,0.379541){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega $\end{tabular}}}}%
-    \put(0.7471964,0.03310063){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$q$\end{tabular}}}}%
+    \put(0.51136807,0.27831533){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega $\end{tabular}}}}%
+    \put(0.72266731,0.00388367){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$q$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf}}%
-    \put(0.65883142,0.27820813){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Trasversi\end{tabular}}}}%
-    \put(0.65844676,0.3587043){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Longitudinale\end{tabular}}}}%
-    \put(0.73981999,0.27820408){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sim $ meV\end{tabular}}}}%
+    \put(0.65267003,0.1980443){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Trasversi\end{tabular}}}}%
+    \put(0.65236439,0.26180963){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Longitudinale\end{tabular}}}}%
+    \put(0.74072003,0.19755373){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sim $ meV\end{tabular}}}}%
   \end{picture}%
 \endgroup%

@@ -1,7 +1,14 @@
 \lez{18}{30-03-2020}{}
 \subsection{Semimetalli e Semiconduttori}
 \label{subsec:Semiconduttori}
-Nella scorsa lezione abbiamo accennato al fatto che il Gap tra i livelli è dell'ordine di grandezza dell'eV per i materiali isolanti. Esistono alcuni materiali per i quali questo Gap è molto più piccolo (meV), addirittura tale Gap si può anche azzerare. I materiali per i quali tali Gap sono piccoli o addirittura nulli si dicono semimetalli. \\
+Nella scorsa lezione abbiamo accennato al fatto che il Gap tra i livelli è dell'ordine di grandezza dell'eV per i materiali isolanti. Esistono alcuni materiali per i quali questo Gap è molto più piccolo (meV), addirittura tale Gap si può anche azzerare. I materiali per i quali tali Gap sono piccoli o addirittura nulli si dicono semimetalli. 
+\begin{figure}[H]
+    \centering
+    \incfig{gap-azzerato}
+    \caption{Gap dei livelli azzerato nei semimetalli.}
+    \label{fig:gap-azzerato}
+\end{figure}
+\noindent
 I semiconduttori invece sono tipicamente isolanti, questi hanno la caratteristica di contenere delle impurezze che sono in grado di spostare la posizione del potenziale chimico in alto o in basso nel plot delle bande. È possibile che tale potenziale si sposti a tal punto da far si che la banda più vicina sia distante meno di $kT$. \\
 In questo modo le proprietà di conducibilità del materiale diventano fortemente dipendenti dalla temperatura, questo ha permesso lo sviluppo dei primi transistor.
 \subsection{Massa efficace dell'elettrone}
@@ -9,7 +16,7 @@ In questo modo le proprietà di conducibilità del materiale diventano fortement
 Abbiamo visto che la velocità media può essere ottenuta confrontando lo sviluppo al primo ordine della dispersione con la teoria delle perturbazioni al primo ordine. \\
 Facendo il confronto al secondo ordine avremmo ottenuto che la derivata seconda è invece legata alla curvatura delle bande e ad un qualche concetto di massa.\\
 Infatti se sviluppiamo attorno alla conca della banda energetica come in Figura \ref{fig:conca-della-banda-energetica}.
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
     \incfig{conca-della-banda-energetica}
     \caption{Conca della banda energetica}
@@ -52,7 +59,7 @@ Fisicamente l'elettrone viene accelerato dal campo elettrico fino a che non ragg
 \label{subsubsec:Super reticolo}
 Normalmente non si riesce a creare campi elettrici così intensi da osservare le oscillazioni di Bloch: il tempo  collisionale non permette agli elettroni di accelerare fino a raggiungere il bordo della zona di Brillouin.
 Per poterle osservare sono stati costruiti dei cristalli artificiali aventi passo reticolare $d$ molto grande: $d \gg a$. In questo modo il reticolo reciproco diventa molto piccolo. \\
-Per far questo si prendono due cristalli di composizione diversa e si alterna la cella unitaria dell'uno con quella dell'altro. Un oggetto così costruito si chiama Super reticolo.
+Per far questo si prendono due cristalli di composizione diversa e si alterna la cella unitaria dell'uno con quella dell'altro costruendo così un Super reticolo.
 \subsection{Soluzione per i nuclei del reticolo}
 \label{subsec:Soluzione per i nuclei del reticolo}
 Abbiamo visto che l'Hamiltoniana che descrive il moto dei nuclei è della forma:
@@ -69,19 +76,21 @@ Abbiamo visto che l'Hamiltoniana che descrive il moto dei nuclei è della forma:
 	}_
 	{U}
 .\] 
-Possiamo sviluppare il potenziale $U$ attorno alle posizioni di equilibrio ordinate dei nuclei all'interno del reticolo $\bs{R}_{0,J}$ con uno spostamento $\bs{u}_{J}$.\\
-Visto che le sviluppiamo attorno alle posizioni di equilibrio è naturale che lo sviluppo al primo ordine sarà nullo, sarà necessario andare almeno al secondo ordine: approssimazione armonica. \\
+\subsubsection{Soluzione di Approssimazione armonica.}%
+Possiamo sviluppare il potenziale $U$ attorno alle posizioni di equilibrio ordinate dei nuclei all'interno del reticolo $\bs{R}_{0,J}$ con uno spostamento $\bs{u}_{J}$. Procedendo in questo modo lo sviluppo al primo ordine sarà nullo e sarà quindi necessario andare almeno al secondo ordine.\\
 Risolviamo quindi per gli spostamenti rispetto alla posizione di equilibrio $\bs{u}$.
 Supponendo che sia possibile avere più di un atomo nella cella unitaria chiamiamo $u_K$ lo spostamento dell'atomo $K$-esimo in tale cella $l$; l'Hamiltoniana negli spostamenti sarà:
 \[
+    H_{\v{u}}=
 	\frac{1}{2} M_{K}
 	\underbrace{
 	\left( \frac{\mbox{d} \bs{u}_{_{K,l}}}{\mbox{d} t}  \right)^2
 	}_{v^2}
 	+
+	\frac{1}{2}
 	\sum_{K',l'}^{} \bs{u}_{_{K,l}}\phi(K,l,K',l')\bs{u}_{_{K',l'}}
 .\] 
-Dove $\phi$ sono le costanti di forza delle interazioni tra tutti gli atomi: $\phi(K,l.K',l')$ è la costante di forza tra l'interazione dell'atomo $K$ nella cella $l$ e l'atomo $K'$ nella cella $l'$.\\
+Dove $\phi$ sono le \textit{Costanti di forza} delle interazioni tra tutti gli atomi: $\phi(K,l.K',l')$ è la costante di forza tra l'interazione dell'atomo $K$ nella cella $l$ e l'atomo $K'$ nella cella $l'$.\\
 Il lavoro da fare è quindi calcolare tale matrice $\phi$ per risolvere negli spostamenti $\bs{u}$ degli atomi rispetto alla posizione di equilibrio. \\
 Il potenziale del cristallo non è unicamente Coluombiano ma ha anche un contributo dato dagli elettroni: se spostiamo un atomo questi si riarrangiano modificando il potenziale. 
 Nella matrice delle costanti di forza saranno più rilevanti i termini che derivano da atomi limitrofi rispetto ai termini che derivano da atomi lontani.\\
@@ -94,33 +103,38 @@ Possiamo allora cercare delle proprietà generali dovute alla simmetria del cris
 	e^{i\bs{q}\cdot\bs{R}_l -i\omega t}
 	\label{eq:onda-bloch}
 .\] 
-Dove $\bs{R}_l$	è la posizione di equilibrio di quell'atomo in quella cella. 
-La funzione $\bs{u}_{K}$ in questo caso è una funzione costante, stiamo infatti parlando di spostamento di atomi rispetto alla posizione di equilibrio,
-quindi le $\bs{u}_{K}$ non sono funzioni che dipendono dalla coordinata $\bs{r}$ ma sono degli oggetti che esistono solo nelle posizioni dove ci sono gli atomi.\\
-Questa cosa implica anche che le soluzioni saranno onde periodiche con lunghezza d'onda minima dettata dal passo reticolare: essendo definita nella posizione degli atomi questo problema è del tutto analogo a quello delle masse legate tra loro da molle. 
+Dove $\bs{R}_l$	è la posizione di equilibrio di quell'atomo in quella cella mentre $\v{q}$ gioca il ruolo di quello che abbiamo chiamato $\v{k}$ quando abbiamo espresso il teorema. \\
+La funzione $\bs{u}_{_{K,0}}$ in questo caso è una funzione costante, stiamo infatti parlando di spostamento di atomi rispetto alla posizione di equilibrio, quindi le $\bs{u}_{_{K,0}}$ non sono funzioni che dipendono dalla coordinata $\bs{r}$ ma sono degli oggetti che esistono solo nelle posizioni degli atomi.\\
+Questa cosa implica anche che le soluzioni saranno onde periodiche con lunghezza d'onda minima dettata dal passo reticolare: essendo definita nella posizione degli atomi questo problema è del tutto analogo a quello delle masse legate tra loro da molle. \\
 Le soluzioni avente lunghezze d'onda più piccole del passo reticolare non avranno allora senso. \\
-Le soluzioni che otterremo per i fononi non sono infinite, ne avremo un numero ben preciso tale che il numero totale di stati possibili sia il numero di modi normali di un sistema composto da N atomi.\\
+Come conseguenza tali soluzioni per i fononi non sono infinite, saranno un numero ben preciso tale che il numero totale di stati possibili sia il numero di modi normali di un sistema composto da N atomi.\\
 In 3 dimensioni ad esempio con $N$ atomi avremo $3N$ modi normali, questo ci dice anche che se in ogni banda avevamo $N$ stati allora avremo solo 3 bande, tutte quelle che possiamo creare ad energia più alta non hanno senso visto che corrispondono ad un moto degli atomi esattamente identico a quello con lunghezze d'onda maggiori.\\
 Prendendo la soluzione in \ref{eq:onda-bloch} possiamo sostituirla nella equazione del moto:
 \[
 	m\dot{\bs{v}} = -\frac{\partial U}{\partial r} 
 .\] 
 e troviamo delle soluzioni del tipo
-\[
-	M_{K} \omega ^2 u_{_{K,0}} 
+\[\begin{aligned}
+	M_{K} \omega ^2 u_{_{K,0}} e^{i\v{q}\cdot \v{R}_0}
 	=
-	\sum_{K',l'}^{} \phi(K,m,K',0) e^{-i \bs{q}\cdot\bs{R}_m} \bs{u}_{_{K,0}}
+	\sum_{K',m}^{} u_{_{K',0}}e^{-i\v{q}\cdot \v{R}_m}\phi (K',m,K,0) u_{_{K,0}}e^{i\v{q}\cdot \v{R}_0}
+.\end{aligned}\]
+Quindi possiamo inserire le costanti $u_{_{K',0}}$ all'interno della matrice di costanti di forza e semplificare l'espressione:
+\[
+	M_{K} \omega ^2 u_{_{K,0}}
+	=
+	\sum_{K',m}^{} \phi(K',m,K,0) e^{-i \bs{q}\cdot\bs{R}_m} \bs{u}_{_{K,0}}
 .\] 
-Possiamo introdurre la trasformata di Fourier della $\phi$: la matrice dinamica:
+Possiamo introdurre la trasformata di Fourier della $\phi$ anche nota con il nome di \textit{matrice dinamica}:
 \[
 	D_{K,K'}(\bs{q}) = 
 	\sum_{m}^{} 
-	\phi(mK,0K')(M_{K}M_{K'})^{-1/2}
+	\phi(K,m,K',0)(M_{K}M_{K'})^{-1/2}
 	\exp\left( -i\bs{q}\cdot\bs{R}_m \right) 
 .\] 
 In questo modo l'equazione del moto diventa la seguente:
 \[
-	\left[ \sum_{K}^{} D_{K,K'}(\bs{q}) - \omega ^2  \delta_{K,K'} \right]
+	\left[ \sum_{K'}^{} D_{K,K'}(\bs{q}) - \omega ^2  \delta_{K,K'} \right]
 	\bs{u}_{_{K,0}}=0
 .\] 
 Imponiamo adesso che il determinante del sistema sia nullo in modo da non avere soluzioni triviali:
@@ -164,9 +178,10 @@ La forma di queste soluzioni è:
     \label{fig:soluzioni-per-cristallo-monoatomico-unidimensionale}
 \end{figure}
 \noindent
-Notiamo che per piccoli valori di $q$ la soluzione è lineare, otteniamo per tali valori:
+\subsubsection{Fononi acustici}%
+Notiamo che per piccoli valori di $q$ la soluzione è lineare, si può sviluppare il $\sin\left(\frac{qa}{2}\right)$ e ricavare la velocità di gruppo delle onde in questo regime:
 \[
-	v_g = \sqrt{\frac{ca^2}{m}} 
+    \omega  \approx  \sqrt{\frac{4c}{m}} \left|\frac{qa}{2}\right| \implies \frac{\omega}{k}=v_g=\sqrt{\frac{ca^2}{m}} 
 .\] 
 L'andamento lineare è un andamento atteso: questo è il campo delle grandi lunghezze d'onda, ovvero quelle in cui l'onda non si accorge della struttura fine del cristallo. Ritroviamo quindi la propagazione delle onde acustiche trattata con un mezzo continuo: onde elastiche con dispersione lineare.\\
 Se prendiamo invece $q$ dell'ordine del passo reticolare allora la funzione si piega. \\
@@ -209,7 +224,7 @@ Per gli atomi dispari invece:
 .\] 
 Cerchiamo analogamente a prima soluzioni del tipo:
 \[\begin{aligned}
-	&u_{2p} = u_1 e^{i\left( 2qap -\omega t \right) }\\
+	&u_{2p} = u_1 e^{i\left( qa2p -\omega t \right) }\\
 	&u_{2p+1} = u_2 e^{i\left( qa\left( 2p+1 \right)  -\omega t \right) }
 .\end{aligned}\]
 Sostituendo si ha:
@@ -232,7 +247,7 @@ Le soluzioni di tale sistema sono
 	\omega ^2 
 	=
 	c\left\{ \left( \frac{1}{m_1} + \frac{1}{m_2} \right) 
-	\pm \sqrt{\left( \frac{1}{m_1} + \frac{1}{m_2} \right) ^2 
+	\pm \sqrt{\left( \frac{1}{m_1} - \frac{1}{m_2} \right) ^2 
 	-\frac{4\sin^2(aq)}{m_1m_2} }  \right\} 
 .\] 
 La cosa importante da ricordare è la forma di queste soluzioni:
@@ -243,7 +258,9 @@ La cosa importante da ricordare è la forma di queste soluzioni:
     \label{fig:soluzioni-per-le-vibrazioni-nel-caso-biatomico}
 \end{figure}
 \noindent
-Il disegno contiene 3 bande sovrapposte per ciascuno dei due livelli di energia, questo perchè si riferisce al caso 3D. La banda superiore è più piatta di quella inferiore, tale banda è quella dei \textit{fononi ottici}. \\
+Il disegno contiene 3 bande sovrapposte per ciascuno dei due livelli di energia, questo perchè si riferisce al caso 3D. La banda superiore è più piatta di quella inferiore, tale banda è quella dei \textit{fononi ottici}. 
+\subsubsection{Fononi ottici e momento di dipolo.}%
+\label{subsub:Fononi ottici e momento di dipolo.}
 Per capire il senso dei fononi ottici immaginiamo di incidere sul nostro materiale con della radiazione elettromagnetica, tale radiazione avrebbe una legge di dispersione lineare che si collocherebbe nella figura in questo modo:
 \begin{figure}[H]
     \centering
@@ -262,6 +279,8 @@ I fononi devono essere eccitabili dalla radiazione elettromagnetica, dovranno qu
     \label{fig:oscillazioni-degli-atomi-nel-cristallo-biatomico}
 \end{figure}
 \noindent
+Effettivamente le oscillazioni di atomi dello stessa cella (diversi) possono comportare un momento di dipolo elettromagnetico, quindi in questo caso il solido potrà assorbire radiazione e riemetterne. \\
+Se gli atomi nella stessa cella son uguali (diamante) allora i fononi ottici saranno ancora presenti ma non avranno associato un momento di dipolo elettromagnetico.
 \subsubsection{Dal caso biatomico al caso monoatomico}
 \label{subsubsec:Dal caso biatomico al caso monoatomico}
 Nel caso in cui $m_1=m_2$ si ha che le curve di dispersione assumono la seguente forma:
@@ -273,11 +292,55 @@ Nel caso in cui $m_1=m_2$ si ha che le curve di dispersione assumono la seguente
 \end{figure}
 \noindent
 Soltanto che, con le masse uguali, il problema diventa esattamente lo stesso del caso monoatomico. All'apparenza la forma della dispersione sembra differente da quella ottenuta sopra, tuttavia ragionando in questo modo stiamo omettendo di considerare una cosa importante: il passo reticolare.\\
-Se vogliamo tornare al caso monoatomico infatti dobbiamo aumentare le dimensioni del reticolo reciproco, in questo modo la piega del secondo livello (del caso biatomico) si "spiega" lasciandoci con un singolo livello come atteso.\\
+Se vogliamo tornare al caso monoatomico infatti dobbiamo aumentare le dimensioni del reticolo reciproco, in questo modo la piega del secondo livello (del caso biatomico) si "spiega" lasciandoci con un singolo livello come atteso. Notiamo che questo spiega anche perché i fononi ottici hanno delle bande piatte: sono il residuo di questa ripiegatura della cella unitaria scelta.\\
 Anche per i fononi ottici abbiamo energie delle bande longitudinali maggiori di quelle dell bande trasverse (non è stato esplicitato nelle figure per non incasinare i disegni), la cosa interessante è che questo comporta energie in corrispondenza di $q=0$ diverse per le due oscillazioni: $\omega _L(0) \neq \omega _T(0)$.\\
 Tuttavia a $q=0$ diventa impossibile distinguere tra onde longitudinali ed onde trasversali, in questo regime non si ha più nemmeno propagazione \footnote{Notiamo che invece per i fononi acustici tutte le curve vanno nell'origine come ci si aspetta.}. \\
 Il motivo per questa situazione viene dal fatto che il fonone ottico longitudinale si porta dietro un campo elettrico macroscopico, il risultato della differenza di energia è dovuto a questa differenza di energia. \\
-Questo risultato a $q=0$ è leggermente "finto": il problema si elude quando consideriamo la velocità di propagazione del campo elettromagnetico. 
+Questo risultato a $q=0$ è leggermente "finto": il problema si elude quando consideriamo la velocità (finita) di propagazione del campo elettromagnetico, diamo un accenno di questa faccenda.
+\subsubsection{Longitudinal Transfer Splitting collegata a Clausius-Mossotti}%
+\label{subsub:Longitudinal Transfer Splitting collegata a Clausius-Mossotti}
+Prendiamo un oscillatore armonico carico, dalla Fisica II abbiamo che i modi longitudinali e trasversi si propagano con leggi di dispersione differenti. Dalle equazioni di Maxwell si ricava che
+\footnote{Precisamente dalla equazione per $\nabla \times \v{E}$ facendo il rotore a destra e sinistra e sostituendo dalla equazione per $\nabla \times \v{B}$.}
+:
+\[
+    -\mu \frac{\partial ^2\v{D}}{\partial t^2} = \nabla \times \left(\nabla \times \v{E}\right)
+.\] 
+Prendendo un'onda EM monocromatica $\v{E} \propto e^{i\left(\omega t-kz\right)}$ si ottiene:
+\[
+    \v{k}\cdot \left(\v{k}\cdot \v{E}\right)-k^2\v{E}=-\epsilon_r(\v{k},\omega) \frac{\omega^2}{c^2}\v{E}
+.\] 
+A questo punto considerando le onde trasverse si ha $\v{k}\cdot \v{E}=0$ quindi:
+\[
+    k^2=\epsilon_r(\v{k},\omega) \frac{\omega^2}{c^2} \label{eq:dispersonnn}
+.\] 
+Mentre per le onde longitudinali l'equazione sopra corrisponde ad avere $\epsilon_r(\v{k},\omega) =0$ ($\v{k}\cdot \v{k}=k^2$), in tal caso è necessario passare attraverso la teoria dell'oscillatore armonico per il dipolo e valutare la risposta dielettrica. Si arriva ad una equazione del tipo:
+\[
+    \v{D}=\epsilon_0\left(1-\frac{\omega_p^2}{\omega^2+i\gamma\omega}\right)\v{E}
+.\] 
+Nella quale compare il coefficiente di smorzamento e la frequenza di Plasma $\omega_p$. In questo caso nel regime di $\omega\gg \omega_p$ abbiamo una risposta dielettrica reale (fare il limite di grandi $\omega$ nella parentesi, il termine complesso al denominatore se ne va):
+\[
+    \epsilon (\omega) = 1-\frac{\omega_p^2}{\omega^2}
+.\] 
+Sostituendo questa nella equazione \ref{eq:dispersonnn} si ottiene:
+\[
+    \omega^2=\omega^2_p+k^2c^2
+.\] 
+La cosa importante è che onde strasverse e longitudinali hanno due coefficienti di propagazione differenti, in particolare esiste una condizione che mette in relazione il rapporto tra le due dispersioni di tali onde (non sono riuscito a trovare la dimostrazione: Relazione di Lyddane–Sachs–Teller):
+\[
+    \frac{\omega_L^2}{\omega_T^2} = \frac{\epsilon_s}{\epsilon_\infty}
+.\] 
+In cui $\epsilon_\infty$ è la permettività per $\omega\gg \omega_p$ mentre $\epsilon_s$ è quella statica. \\
+\ldots\\
+Possiamo applicare tutto questo ai fononi semplicemente considerando le curve dei fononi ottici come piatte, in questo modo la loro dipendenza dalla frequenza svanisce e (per analogia a sopra) $\epsilon (\v{k},\omega) \to \epsilon (w)$, quindi abbiamo che l'andamento risultante sarà il mescolamento dell'onda elettromagnetica con la vibrazione (fonone) del cristallo:
+\begin{figure}[ht]
+    \centering
+    \incfig{polaritoni-fononici}
+    \caption{Polaritoni fononici}
+    \label{fig:polaritoni-fononici}
+\end{figure}
+\noindent
+Nella figura $\omega_T$ è la frequenza di risonanza della $\epsilon(\omega)$, questa immagine ci permette di comprendere meglio la propagazione dei fononi acustici. Notiamo che per $\v{q}\to 0$ si ha che le onde longitudinali tendono ad avere proprio la frequenza $\omega_L$ (la frequenza del modo longitudinale) dettata dal campo EM incidente.\\
+Vediamo che nelle frequenze tra $\omega_L$ e $\omega_T$ c'è una zona di non propagazione del campo elettromagnetico, questa zona sarà interessante per effettuare delle misure della dispersione dei fononi ottici.
 \subsection{Misurare i fononi}
 \label{subsec:Misurare i fononi}
 \subsubsection{Misura della propagazione lineare dei fononi acustici}
@@ -286,6 +349,10 @@ Per misurare i fononi possiamo utilizzare un cristallo piezoelettrico \footnote{
 Questa tecnica ci permette di misurare la parte di propagazione lineare dei fononi acustici. 
 \subsubsection{Misura della interazione con la radiazione dei fononi: scattering Raman}
 \label{subsubsec:Misura della interazione con la radiazione dei fononi}
+Possiamo osservare l'interazione del nostro cristallo con la radiazione osservando la figura \ref{fig:polaritoni-fononici}: abbiamo un range di frequenze in cui la radiazione non si propaga (Restramer Band), questa ci dice dove stanno i fononi ottici longitudinali o trasversi a $\v{k}=0$, in sostanza si misura $\omega_L$ e $\omega_T$. Ovviamente questa misura si fa a $\v{k}$ piccoli perché abbiamo l'impulso del fotone che è piccolo rispetto a quello del cristallo.\\
+Un'altro metodo utilizzato è lo scattering Raman: diffusione di fotoni da parte delle vibrazioni del cristallo. 
 Mandando fotoni con un certo $\omega , k$ questi usciranno scatterati dal cristallo, questo tipo di scattering è inelastico, l'energia viene trasmessa al fonone del cristallo.\\
 Andando a vedere come è distribuita l'energia della particella uscente possiamo dedurre qual'è la $\omega '$ ed il $k'$ del fonone.\\
-Per evitare interazioni con elementi carichi all'interno del solido è comodo utilizzare anzichè radiazione EM dei fasci di neutroni.
+Lo scattering si chiama Raman se riguarda fononi ottici oppure Brillouin se riguarda fononi acustici.\\
+Potremmo esser tentati di scatterare con i raggi X per vedere ad alti $\v{k}$, tuttavia questo è difficile per le interazioni della radiazione con gli elettroni e gli atomi carichi.\\
+Per evitare interazioni con elementi carichi all'interno del solido è comodo utilizzare anziché radiazione EM dei fasci di neutroni. L'unico punto in cui ho difficoltà a lavorare con i neutroni è per $\v{k}=0$, infatti in questo caso abbiamo che la maggior parte dei neutroni riesce ad uscire non scatterato e quindi acceca il punto che voglio osservare. Fortunatamente i metodi sopra descritti funzionano bene proprio in questo regime.

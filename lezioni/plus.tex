@@ -1,0 +1,44 @@
+\subsection{Longitudinal Transfer Splitting collegata a Clausius-Mossotti}%
+\label{subsub:Longitudinal Transfer Splitting collegata a Clausius-Mossotti}
+Prendiamo un oscillatore armonico carico, dalla Fisica II abbiamo che i modi longitudinali e trasversi si propagano con leggi di dispersione differenti. Dalle equazioni di Maxwell si ricava che
+\footnote{Precisamente dalla equazione per $\nabla \times \v{E}$ facendo il rotore a destra e sinistra e sostituendo dalla equazione per $\nabla \times \v{B}$.}
+:
+\[
+    -\mu \frac{\partial ^2\v{D}}{\partial t^2} = \nabla \times \left(\nabla \times \v{E}\right)
+.\] 
+Prendendo un'onda EM monocromatica $\v{E} \propto e^{i\left(\omega t-kz\right)}$ si ottiene:
+\[
+    \v{k}\cdot \left(\v{k}\cdot \v{E}\right)-k^2\v{E}=-\epsilon_r(\v{k},\omega) \frac{\omega^2}{c^2}\v{E}
+.\] 
+A questo punto considerando le onde trasverse si ha $\v{k}\cdot \v{E}=0$ quindi:
+\[
+    k^2=\epsilon_r(\v{k},\omega) \frac{\omega^2}{c^2} \label{eq:dispersonnn}
+.\] 
+Mentre per le onde longitudinali l'equazione sopra corrisponde ad avere $\epsilon_r(\v{k},\omega) =0$ ($\v{k}\cdot \v{k}=k^2$), in tal caso è necessario passare attraverso la teoria dell'oscillatore armonico per il dipolo e valutare la risposta dielettrica. Si arriva ad una equazione del tipo:
+\[
+    \v{D}=\epsilon_0\left(1-\frac{\omega_p^2}{\omega^2+i\gamma\omega}\right)\v{E}
+.\] 
+Nella quale compare il coefficiente di smorzamento e la frequenza di Plasma $\omega_p$. In questo caso nel regime di $\omega\gg \omega_p$ abbiamo una risposta dielettrica reale (fare il limite di grandi $\omega$ nella parentesi, il termine complesso al denominatore se ne va):
+\[
+    \epsilon (\omega) = 1-\frac{\omega_p^2}{\omega^2}
+.\] 
+Sostituendo questa nella equazione \ref{eq:dispersonnn} si ottiene:
+\[
+    \omega^2=\omega^2_p+k^2c^2
+.\] 
+\textcolor{red}{Questa vale nelle oscillazioni di Plasma, perché posso applicarla a questo caso?}\\
+La cosa importante è che onde strasverse e longitudinali hanno due coefficienti di propagazione differenti, in particolare esiste una condizione che mette in relazione il rapporto tra le due dispersioni di tali onde (non sono riuscito a trovare la dimostrazione: Relazione di Lyddane–Sachs–Teller):
+\[
+    \frac{\omega_L^2}{\omega_T^2} = \frac{\epsilon_s}{\epsilon_\infty}
+.\] 
+In cui $\epsilon_\infty$ è la permettività per $\omega\gg \omega_p$ mentre $\epsilon_s$ è quella statica. \\
+Possiamo applicare tutto questo ai fononi semplicemente considerando le curve dei fononi ottici come piatte \textcolor{red}{ma se le considero piatte cosa ottengo alla fine di questa analisi? Cosa sono quelle curve di $\omega$ in funzione di $q$?}, in questo modo la loro dipendenza dalla frequenza svanisce e (per analogia a sopra) $\epsilon (\v{k},\omega) \to \epsilon (w)$ \textcolor{red}{devono forse essere piatte per questo?}, quindi abbiamo che l'andamento risultante sarà il mescolamento dell'onda elettromagnetica con la vibrazione (fonone) del cristallo \textcolor{red}{non capisco la notazione che ha utilizzato nel grafico, la $\omega_T$ è la frequenza di risonanza della $\epsilon$, la $\omega_L$ da dove la tiro fuori? Sarebbe la $\omega_P$ che ho scritto sopra?}:
+\begin{figure}[H]
+    \centering
+    \incfig{polaritoni-fononici}
+    \caption{Polaritoni fononici}
+    \label{fig:polaritoni-fononici}
+\end{figure}
+\noindent
+\textcolor{red}{come posso ricavare questi andamenti?}\\
+Nella figura $\omega_T$ è la frequenza di risonanza della $\epsilon(\omega)$, questa immagine ci permette di comprendere meglio la propagazione dei fononi acustici. Notiamo che per $\v{q}\to 0$ si ha che le onde longitudinali tendono ad avere proprio la frequenza $\omega_L$ (la frequenza del modo longitudinale) dettata dal campo EM incidente \textcolor{red}{Ma quindi queste sono le vere curve dei fononi ottici nei pressi di $q=0$?}.

@@ -2,8 +2,8 @@
 Abbiamo visto la struttura a bande del cristallo nel caso di elettrone libero, vediamo come si modifica tale modello inserendo il potenziale $U_c$ tramite l'uso del metodo perturbativo.\\
 \subsection{Metodo perturbativo per la struttura a bande dei solidi.}
 \label{subsec:Metodo perturbativo per la struttura a bande dei solidi.}
-Prendiamo la funzione d'onda di Bloch $\psi(\bs{r})$ e sviluppiamola sulle onde piane. 
-Ovviamente questa dovrà ancora rispettare il teorema di Bloch e dovrà essere quidi identificata da un vettore d'onda $\bs{k}$ appartenente alla prima zona di Brillouin. 
+Prendiamo la funzione d'onda di Bloch $\psi(\bs{r})$ e sviluppiamola sulle onde piane, questo significa escludere dalla trattazione la funzione $u_{n,\v{k}}(\v{r})$.\\ 
+Ovviamente tale funzione dovrà ancora rispettare il teorema di Bloch e dovrà essere identificata da un vettore d'onda $\bs{k}$ appartenente alla prima zona di Brillouin. \\
 Di conseguenza dovremmo inserire in tale funzione d'onda tutte le onde piane che corrispondono allo stesso $\bs{k}$ (le $n$ indicate in Figura \ref{fig:livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico})\\
 Ad ogni valore di $n$ in tale figura corrisponde un punto su una parabola diversa nello spazio dei $\bs{K}$, una parabola traslata rispetto a quella disegnata nell'origine come in Figura \ref{fig:struttura-a-bande-parabole-traslate}.\\
 \begin{figure}[ht]
@@ -12,14 +12,18 @@ Ad ogni valore di $n$ in tale figura corrisponde un punto su una parabola divers
     \caption{Struttura a bande: parabole traslate}
     \label{fig:struttura-a-bande-parabole-traslate}
 \end{figure}
-Le parabole limitrofe a quella centrata nell'orgine corrisponderanno ad onde piane 
+\noindent
+Le parabole limitrofe a quella centrata nell'origine corrisponderanno ad onde piane 
 \[
 	e^{i\left( \bs{k}\pm\bs{K} \right) \cdot\bs{r}}
 .\] 
 Se consideriamo solo la parabola a destra nella Figura \ref{fig:struttura-a-bande-parabole-traslate} abbiamo che resta ovviamente soltanto il segno negativo nella precedente equazione all'esponente, tale autofunzione indica una energia:
-Quindi avranno anche:
 \[
 	\mathcal{E}_1=\frac{\hbar ^2\left( \bs{k}-\bs{K} \right)^2}{2m}
+.\] 
+Il livello avente $n=2$ subito sopra al precedente arriverà dal contributo della parabola di sinistra ed avrà energia:
+\[
+    \mathcal{E}_2=\frac{\hbar ^2\left(\v{k}+\v{K}\right)^2}{2m}
 .\] 
 Considerando tutte le possibili curve otteniamo la funzione d'onda che utilizzeremo per fare teoria delle perturbazioni:
 \[
@@ -27,7 +31,7 @@ Considerando tutte le possibili curve otteniamo la funzione d'onda che utilizzer
 	\sum_{\bs{K}}^{} c_{_{\bs{k}-\bs{K}}}
 	e^{i\left( \bs{k}-\bs{K} \right)\cdot\bs{r}}
 .\] 
-Mettiamo tale sviluppo nella equazione di Shrodinger di singola particella, proietteremo successivamente su una onda piana specifica con una onda piana da noi scelta $\bs{k}$ \footnote{ashcroft e marmin: pagina 138, versione 1976.}:
+Mettiamo tale sviluppo nella equazione di Schrodinger di singola particella, proietteremo successivamente su una onda piana specifica descritta dal vettore del reticolo reciproco $\bs{K}$ \footnote{ashcroft e marmin: pagina 138, versione 1976.}:
 \[
 	\left[ \frac{\hbar ^2}{2m}\left( \bs{k}-\bs{K} \right)^2 - \mathcal{E} \right] 
 	c_{_{\bs{k}-\bs{K}}}+
@@ -46,8 +50,8 @@ Nella trasformata $v$ indica il volume della cella unitaria. Per le regole della
 \[
 	U_c(\bs{r}) = \sum_{\bs{K}}^{} U_{\bs{K}}e^{i\bs{K}\cdot\bs{r}}
 .\] 
-L'equazione \ref{eq:shrodi-bande} ci fornisce un set di equazioni, una per ognuno dei $\bs{K}$: possiamo proiettare su qualunque onda piana avente uno dei possibili $\bs{k}-\bs{K}$.
-Le soluzioni di tale equazione di Shrodinger, per ogni $\bs{k}$ fissato, saranno le nostre bande. 
+L'equazione \ref{eq:shrodi-bande} ci fornisce un set di equazioni, una per ognuno dei $\bs{K}$: possiamo proiettare su qualunque onda piana avente uno dei possibili $\bs{k}-\bs{K}$.\\
+Le soluzioni di tale equazione di Schrodinger, per ogni $\bs{k}$ fissato, saranno le nostre bande. 
 \subsubsection{Potenziale nullo}
 \label{subsubsec:Potenziale nullo}
 Prendendo $U_{\bs{K}} = 0$ troveremo di nuovo l'elettrone libero come atteso. Ci sarà quindi un $\bs{k}$ per cui si avrà:
@@ -203,14 +207,15 @@ Per i vettori non degeneri è possibile dividere entrambi i membri per $\mathcal
 	\right) 
 .\] 
 Per gli ordini che abbiamo esplicitato nella \ref{eq:degenerazione-perturbazioni} sappiamo che il primo termine è $O(U)$, il secondo è $O(U^2)$. Teniamo allora soltanto il primo termine e sostituiamo sempre nella \ref{eq:degenerazione-perturbazioni}. \\
-In questo modo si ha che resta soltanto il primo termine, quello in $O(U)$, l'altro dopo la sostituzione diventa di ordine $O(U^3)$:
+In questo modo si ha che resta soltanto il primo termine, quello in $O(U)$ (il primo che è già scritto nella Equazione \ref{eq:degenerazione-perturbazioni}), l'altro dopo la sostituzione diventa di ordine $O(U^3)$:
 \[
 	\left( \mathcal{E}-\mathcal{E}^0_{_{\bs{k}-\bs{K}_i}} \right) 
 	c_{_{\bs{k}-\bs{K}_i}} 
 	=
-	\sum_{j-1}^{} U_{_{\bs{K}_j-\bs{K}_i}}c_{_{\bs{k}-\bs{K}_j}}
+	\sum_{j=1}^{m} U_{_{\bs{K}_j-\bs{K}_i}}c_{_{\bs{k}-\bs{K}_j}}
 .\] 
-In un caso undimensionale possiamo avere al massimo due onde piane degeneri, in 3 dimensioni invece potrebbero essere di più. Tipicamente tuttavia è molto difficile anche in 3 dimensioni che si abbiano più di due onde piane degeneri. Consideriamo il caso in cui sono soltanto due.
+In un caso unidimensionale possiamo avere al massimo due onde piane degeneri (siamo nella situazione che si può disegnare sul foglio: soltanto due parabole alla volta possono incontrarsi sul bordo), in 3 dimensioni invece potrebbero essere di più. \\
+Tipicamente  è molto difficile anche in 3 dimensioni che si abbiano più di due onde piane degeneri. Quindi consideriamo il caso in cui sono soltanto due.
 \[
 	\begin{cases}
 		&\left(\mathcal{E}-\mathcal{E}^0_{_{\bs{k}-\bs{K}_1}} \right) 
@@ -228,7 +233,7 @@ Per semplicità adesso chiamiamo
 	&\bs{q} = \bs{k}-\bs{K}_1\\
 	&\bs{K} = \bs{K}_2-\bs{K}_1 
 .\end{aligned}\]
-In questo modo le equazioni sono analoge al caso semplice in cui lavoriamo con due onde piane consegutive nella prima zona di Brillouin \footnote{Questa è solo una apparenza perchè i vettori $\bs{K}_1$ e $\bs{K}_2$ possono essere qualunque.}. Le due equazioni diventano:
+In questo modo le equazioni sono analoghe al caso semplice in cui lavoriamo con due onde piane consecutive nella prima zona di Brillouin \footnote{Questa è solo una apparenza perché i vettori $\bs{K}_1$ e $\bs{K}_2$ possono essere qualunque.}. Le due equazioni diventano:
 \[\begin{aligned}
 	&\left( \mathcal{E}-\mathcal{E}^0_{\bs{q}} \right) c_{\bs{q}}
 	=
@@ -248,7 +253,7 @@ Tornando al problema delle due equazioni in \ref{eq:sistema-equazioni-degenere},
 \[
 	\begin{vmatrix}
 		\mathcal{E}-\mathcal{E}^0_{\bs{q}} & -U_{\bs{K}} \\
-		-U_{\bs{K}} & \mathcal{E}-\mathcal{E}^0_{\bs{q}-\bs{K}}
+		-U_{\bs{K}}^* & \mathcal{E}-\mathcal{E}^0_{\bs{q}-\bs{K}}
 	\end{vmatrix} 
 	=
 	0
@@ -339,22 +344,22 @@ Possiamo fare uno sviluppo attorno ad un estremo della energia delle bande: pren
 	\frac{1}{2}\sum_{i,j}^{} \frac{\partial ^2 \mathcal{E}_n}
 	{\partial k_i \partial  k_j} q_i q_j+ \ldots
 .\] 
-Facendo teoria delle perturbazioni sulla Hamiltoniana efficace:
+Facendo teoria delle perturbazioni sulla Hamiltoniana efficace ($\v{k}\to \v{k}+\v{q}$ ) :
 \[
 	H_{\bs{k}+\bs{q}}
 	=
 	H_{\bs{k}} +
-	\frac{\hbar ^2}{2m}\bs{q}\left( \frac{\nabla}{i}+\bs{k} \right) 
+	\frac{\hbar ^2}{m}\bs{q}\left( \frac{\nabla}{i}+\bs{k} \right) 
 	+
 	\frac{\hbar ^2}{2m} q^2
 .\]
-Facendo perturbazioni sul secondo termine dopo l'uguale. La correzione che ci viene da questa teoria delle perturbazioni la andremo a confrontare con lo sviluppo della energia delle bande. Confrontando il primo ordine:
+Perturbiamo sul secondo elemento dopo l'uguale (che corrisponde al primo ordine in $\v{q}$), la correzione che si ottiene la confronteremo con con lo sviluppo della energia delle bande.
 \[
-	\sum_{i}^{} \frac{\partial \mathcal{E}_n}{\partial k_i}=
+	\sum_{i}^{} \frac{\partial \mathcal{E}_n}{\partial k_i}q_i=
 	\sum_{i}^{} \int d\bs{r} u_{n,\bs{k}}^* \frac{\hbar ^2}{m}
-	\left( \frac{\nabla}{i} + \bs{k} \right) q_i u_{n,\bs{k}}
+	\left( \frac{\nabla}{i} + \bs{k} \right)q_i u_{n,\bs{k}}
 .\] 
-Oppure riscrovendo in maniera più compatta:
+Oppure riscrivendo in maniera più compatta:
 \[
 	\frac{\partial \mathcal{E}_n}{\partial \bs{k}} =
 	\frac{\hbar ^2}{m} \int d \bs{r} u_{n,\bs{k}}^* 
@@ -373,7 +378,7 @@ In tale formula riconosciamo l'operatore velocità:
 \[
 	\frac{1}{m} \frac{\hbar }{i}\nabla  = \frac{\bs{p}}{m}
 .\]
-La veolcità media dell'elettrone nel punto $\bs{k}$ per la banda $n$ è:
+La velocità media dell'elettrone nel punto $\bs{k}$ per la banda $n$ è:
 \[
 	\bs{v}_n(\bs{k}) =
 	\frac{1}{\hbar } \nabla_{\bs{k}} \mathcal{E}_n (\bs{k})
@@ -382,4 +387,14 @@ A bordo zona di Brillouin la banda tende ad essere piatta significa che la veloc
 \[
 	\left< v \right>_\text{bordo} = 0
 .\] 
-Questo significa, a livello di onde, che sono stazionarie. Questo torna perché tali onde al bordo sono sovrapposizioni di onde con $\bs{k}$ e con $-\bs{k}$ (quelle dalla parte opposta). Gli elettroni che arrivano al bordo vengono diffratti elasticamente dalla presenza del reticolo, le funzioni d'onda di tali elettroni si sovrappongono e formano "onde stazionarie".
+Questo significa, a livello di onde, che sono stazionarie. Questo torna perché tali onde al bordo sono sovrapposizioni di onde con $\bs{k}$ e con $-\bs{k}$ (quelle dalla parte opposta). Gli elettroni che arrivano al bordo vengono diffratti elasticamente dalla presenza del reticolo, le funzioni d'onda di tali elettroni si sovrappongono e formano "onde stazionarie".\\
+Se prendiamo la perturbazione al secondo ordine invece:
+\[
+    \frac{1}{2}\sum_{i,j}^{} \frac{\partial ^2 \mathcal{E}_n}{\partial k_i \partial k_j} q_iq_j 
+    =
+    \sum_{i,j}^{} \int d\v{r}u^*_{n,k}\frac{\hbar ^2}{2m}q_iq_ju_{n,k}
+.\] 
+Quindi si ottiene che la curvatura della parabola da indicazioni sulla massa efficace degli elettroni nel materiale:
+\[
+    \frac{\partial ^2\mathcal{E}_n}{\partial ^2\v{k}} \propto  \frac{1}{m_\text{eff} }
+.\] 

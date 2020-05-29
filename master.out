@@ -106,81 +106,82 @@
 \BOOKMARK [2][-]{subsection.1292}{Scattering elastico}{section.1291}% 106
 \BOOKMARK [2][-]{subsection.1296}{Fattore di struttura statistica.}{section.1291}% 107
 \BOOKMARK [2][-]{subsection.1307}{Densit\340 ad uno e a due particelle.}{section.1291}% 108
-\BOOKMARK [2][-]{subsection.1314}{Fattore di struttura statistica come trasformata di Fourier della densit\340 a due particelle.}{section.1291}% 109
-\BOOKMARK [2][-]{subsection.1325}{Fattore di struttura statistica per i liquidi}{section.1291}% 110
-\BOOKMARK [2][-]{subsection.1333}{Fattore di struttura statistica per sistemi amorfi e cristallini}{section.1291}% 111
-\BOOKMARK [2][-]{subsection.1339}{Digressione sulla FT}{section.1291}% 112
-\BOOKMARK [2][-]{subsection.1344}{Cristallo poliatomico.}{section.1291}% 113
-\BOOKMARK [2][-]{subsection.1348}{Fattore di struttura statistica per gas perfetto}{section.1291}% 114
-\BOOKMARK [1][-]{section.1349}{Lezione 20}{chapter.1290}% 115
-\BOOKMARK [2][-]{subsection.1350}{Hole function o funzione di correlazione totale.}{section.1349}% 116
-\BOOKMARK [2][-]{subsection.1356}{Fattore di struttura statistica per un fluido poliatomico.}{section.1349}% 117
-\BOOKMARK [2][-]{subsection.1358}{Caso speciale: l'acqua.}{section.1349}% 118
-\BOOKMARK [2][-]{subsection.1362}{Analisi della g\(r\) dell'Argon}{section.1349}% 119
-\BOOKMARK [2][-]{subsection.1368}{Struttura dell'argon e funzione g\(r\).}{section.1349}% 120
-\BOOKMARK [2][-]{subsection.1371}{Diagrammi di stato e S\(q\)}{section.1349}% 121
-\BOOKMARK [2][-]{subsection.1374}{Relazione di Ornstein-Zernike}{section.1349}% 122
-\BOOKMARK [2][-]{subsection.1387}{Limite asintotico di S\(K\) nel caso di Gas perfetti}{section.1349}% 123
-\BOOKMARK [2][-]{subsection.1391}{Limite asintotico di S\(K\) nel caso di plasmi}{section.1349}% 124
-\BOOKMARK [2][-]{subsection.1395}{Momenti di g\(r\)}{section.1349}% 125
-\BOOKMARK [1][-]{section.1398}{Lezione 21}{chapter.1290}% 126
-\BOOKMARK [2][-]{subsection.1399}{Collegamento tra g\(r\) ed il potenziale tra le particelle u\(r\).}{section.1398}% 127
-\BOOKMARK [2][-]{subsection.1403}{Unicit\340 della relazione tra g\(r\) e u\(r\).}{section.1398}% 128
-\BOOKMARK [2][-]{subsection.1406}{Energia interna di un fluido monoatomico classico con potenziale a 2 corpi.}{section.1398}% 129
-\BOOKMARK [2][-]{subsection.1428}{Ricerca di una relazione analitica tra u\(r\) e g\(r\).}{section.1398}% 130
-\BOOKMARK [2][-]{subsection.1445}{Potenziali u\(r\) e w\(r\) in un fluido di Lennard Jones.}{section.1398}% 131
-\BOOKMARK [2][-]{subsection.1447}{Chiusura di Born-Green.}{section.1398}% 132
-\BOOKMARK [2][-]{subsection.1452}{Funzione di correlazione diretta.}{section.1398}% 133
-\BOOKMARK [2][-]{subsection.1460}{Esempi di applicazione della Chiusura di Born-Green.}{section.1398}% 134
-\BOOKMARK [2][-]{subsection.1466}{Modello a sfere dure.}{section.1398}% 135
-\BOOKMARK [2][-]{subsection.1497}{Modello di Lennard Jones per le sfere}{section.1398}% 136
-\BOOKMARK [2][-]{subsection.1511}{Riscalamento di S\(q\) e g\(r\).}{section.1398}% 137
-\BOOKMARK [2][-]{subsection.1514}{Riassunto di HG,HS,LJ.}{section.1398}% 138
-\BOOKMARK [2][-]{subsection.1516}{Fluidi quantistici: trattazione della condensazione di Bose.}{section.1398}% 139
-\BOOKMARK [2][-]{subsection.1519}{Colloidi.}{section.1398}% 140
-\BOOKMARK [2][-]{subsection.1524}{Repulsione a lungo raggio: cristallo di Wiegner.}{section.1398}% 141
-\BOOKMARK [2][-]{subsection.1527}{Interazioni a lungo raggio ed approssimazione di Random Phase.}{section.1398}% 142
-\BOOKMARK [2][-]{subsection.1536}{Cosa devo sapere all'esame?}{section.1398}% 143
-\BOOKMARK [1][-]{section.1537}{Lezione 22}{chapter.1290}% 144
-\BOOKMARK [2][-]{subsection.1538}{Estensione dinamica: funzione di Van Hove.}{section.1537}% 145
-\BOOKMARK [2][-]{subsection.1554}{"Fononi" e fattore di struttura dinamico.}{section.1537}% 146
-\BOOKMARK [2][-]{subsection.1557}{Approssimazione per le funzioni di struttura dinamica.}{section.1537}% 147
-\BOOKMARK [2][-]{subsection.1560}{Collegamento con le funzioni di risposta del fluido}{section.1537}% 148
-\BOOKMARK [1][-]{section.1567}{Lezione 23}{chapter.1290}% 149
-\BOOKMARK [2][-]{subsection.1568}{Generalit\340 sui fononi}{section.1567}% 150
-\BOOKMARK [2][-]{subsection.1572}{Struttura del Silicio e del carburo di Silicio.}{section.1567}% 151
-\BOOKMARK [2][-]{subsection.1575}{Onde longitudinali nei liquidi e nei gas}{section.1567}% 152
-\BOOKMARK [2][-]{subsection.1581}{Teoria della elasticit\340: legge di Hooke}{section.1567}% 153
-\BOOKMARK [2][-]{subsection.1586}{Funzione di risposta e teorema di fluttuazione dissipazione.}{section.1567}% 154
-\BOOKMARK [0][-]{chapter.1601}{Interazione radiazione materia}{}% 155
-\BOOKMARK [1][-]{section.1602}{Lezione 24}{chapter.1601}% 156
-\BOOKMARK [2][-]{subsection.1603}{Regola d'oro di Fermi}{section.1602}% 157
-\BOOKMARK [2][-]{subsection.1630}{Interazione con campo EM}{section.1602}% 158
-\BOOKMARK [2][-]{subsection.1645}{Coefficienti di Einstein.}{section.1602}% 159
-\BOOKMARK [1][-]{section.1670}{Lezione 25}{chapter.1601}% 160
-\BOOKMARK [2][-]{subsection.1671}{Approssimazione di onda rotante}{section.1670}% 161
-\BOOKMARK [2][-]{subsection.1675}{Trattamento non perturbativo della interazione radiazione materia}{section.1670}% 162
-\BOOKMARK [2][-]{subsection.1694}{Interazione radiazione materia collegata alla termodinamica}{section.1670}% 163
-\BOOKMARK [2][-]{subsection.1717}{Applicazione dell'interazione radiazione materia: Laser}{section.1670}% 164
-\BOOKMARK [1][-]{section.1736}{Lezione 26}{chapter.1601}% 165
-\BOOKMARK [2][-]{subsection.1752}{Maser}{section.1736}% 166
-\BOOKMARK [2][-]{subsection.1785}{Trattazione completa della equazione di Rate nella interazione radiazione-materia}{section.1736}% 167
-\BOOKMARK [1][-]{section.1812}{Lezione 27}{chapter.1601}% 168
-\BOOKMARK [0][-]{chapter.1873}{Domande D'esame}{}% 169
-\BOOKMARK [1][-]{section.1874}{21 maggio}{chapter.1873}% 170
-\BOOKMARK [2][-]{subsection.1875}{Doulong Depetit \350 l'espressione di un teorema pi\371 generale.. Quale? Come spiega per l'oscillatore armonico il risultato CV = 3NkT?}{section.1874}% 171
-\BOOKMARK [2][-]{subsection.1878}{Descrivere la distribuzione di energia del corpo nero.}{section.1874}% 172
-\BOOKMARK [2][-]{subsection.1883}{Ricavare la distribuzione di energia del corpo nero.}{section.1874}% 173
-\BOOKMARK [2][-]{subsection.1891}{Perch\350 si mette =0 nella Bose Einstein per i fotoni?}{section.1874}% 174
-\BOOKMARK [2][-]{subsection.1894}{Parlare della condensazione di Bose-Einstein.}{section.1874}% 175
-\BOOKMARK [2][-]{subsection.1900}{Come va il calore specifico del gas di Bosoni in funzione della tempertura?}{section.1874}% 176
-\BOOKMARK [2][-]{subsection.1902}{Misurare il fattore di struttura dei liquidi e cosa significa.}{section.1874}% 177
-\BOOKMARK [2][-]{subsection.1906}{Distribuzione dei Fermioni.}{section.1874}% 178
-\BOOKMARK [2][-]{subsection.1914}{Calore specifico per il gas di elettroni}{section.1874}% 179
-\BOOKMARK [2][-]{subsection.1918}{In che range di temperatura devo fare una misura nei metalli per vedere questo calore specifico lineare?}{section.1874}% 180
-\BOOKMARK [2][-]{subsection.1919}{In un gas di elettroni liberi con un campo magnetico come va la risposta degli elettroni ad un campo magnetico? \(magnetizzazione\).}{section.1874}% 181
-\BOOKMARK [2][-]{subsection.1925}{Perch\351 non possiamo usare la funzione di partizione Z1N per le particelle quantistiche?}{section.1874}% 182
-\BOOKMARK [2][-]{subsection.1926}{Diamagnetizzazione adiabatica}{section.1874}% 183
-\BOOKMARK [2][-]{subsection.1933}{Bande elettroniche dei cristalli: cosa sono e da dove vengono fuori?}{section.1874}% 184
-\BOOKMARK [2][-]{subsection.1940}{Che succede alle bande se gli elettroni nel metallo fossero Bosoni??}{section.1874}% 185
-\BOOKMARK [2][-]{subsection.1941}{Per sistemi cristallini come sono fatte le bande di energia? \(Tozzini\).}{section.1874}% 186
+\BOOKMARK [2][-]{subsection.1315}{Fattore di struttura statistica come trasformata di Fourier della densit\340 a due particelle.}{section.1291}% 109
+\BOOKMARK [2][-]{subsection.1326}{Fattore di struttura statistica per i liquidi}{section.1291}% 110
+\BOOKMARK [2][-]{subsection.1338}{Fattore di struttura statistica per sistemi amorfi e cristallini}{section.1291}% 111
+\BOOKMARK [2][-]{subsection.1344}{Digressione sulla FT}{section.1291}% 112
+\BOOKMARK [2][-]{subsection.1349}{Cristallo poliatomico.}{section.1291}% 113
+\BOOKMARK [2][-]{subsection.1353}{Fattore di struttura statistica per gas perfetto}{section.1291}% 114
+\BOOKMARK [1][-]{section.1354}{Lezione 20}{chapter.1290}% 115
+\BOOKMARK [2][-]{subsection.1355}{Hole function o funzione di correlazione totale.}{section.1354}% 116
+\BOOKMARK [2][-]{subsection.1361}{Fattore di struttura statistica per un fluido poliatomico.}{section.1354}% 117
+\BOOKMARK [2][-]{subsection.1363}{Caso speciale: l'acqua.}{section.1354}% 118
+\BOOKMARK [2][-]{subsection.1367}{Analisi della g\(r\) dell'Argon}{section.1354}% 119
+\BOOKMARK [2][-]{subsection.1373}{Struttura dell'argon e funzione g\(r\).}{section.1354}% 120
+\BOOKMARK [2][-]{subsection.1376}{Diagrammi di stato e S\(q\)}{section.1354}% 121
+\BOOKMARK [2][-]{subsection.1379}{Relazione di Ornstein-Zernike}{section.1354}% 122
+\BOOKMARK [2][-]{subsection.1392}{Limite asintotico di S\(K\) nel caso di Gas perfetti}{section.1354}% 123
+\BOOKMARK [2][-]{subsection.1396}{Limite asintotico di S\(K\) nel caso di plasmi}{section.1354}% 124
+\BOOKMARK [2][-]{subsection.1400}{Momenti di g\(r\)}{section.1354}% 125
+\BOOKMARK [1][-]{section.1403}{Lezione 21}{chapter.1290}% 126
+\BOOKMARK [2][-]{subsection.1404}{Collegamento tra g\(r\) ed il potenziale tra le particelle u\(r\).}{section.1403}% 127
+\BOOKMARK [2][-]{subsection.1408}{Unicit\340 della relazione tra g\(r\) e u\(r\).}{section.1403}% 128
+\BOOKMARK [2][-]{subsection.1411}{Energia interna di un fluido monoatomico classico con potenziale a 2 corpi.}{section.1403}% 129
+\BOOKMARK [2][-]{subsection.1433}{Ricerca di una relazione analitica tra u\(r\) e g\(r\).}{section.1403}% 130
+\BOOKMARK [2][-]{subsection.1450}{Potenziali u\(r\) e w\(r\) in un fluido di Lennard Jones.}{section.1403}% 131
+\BOOKMARK [2][-]{subsection.1452}{Chiusura di Born-Green.}{section.1403}% 132
+\BOOKMARK [2][-]{subsection.1457}{Funzione di correlazione diretta.}{section.1403}% 133
+\BOOKMARK [2][-]{subsection.1465}{Esempi di applicazione della Chiusura di Born-Green.}{section.1403}% 134
+\BOOKMARK [2][-]{subsection.1471}{Modello a sfere dure.}{section.1403}% 135
+\BOOKMARK [2][-]{subsection.1502}{Modello di Lennard Jones per le sfere}{section.1403}% 136
+\BOOKMARK [2][-]{subsection.1516}{Riscalamento di S\(q\) e g\(r\).}{section.1403}% 137
+\BOOKMARK [2][-]{subsection.1519}{Riassunto di HG,HS,LJ.}{section.1403}% 138
+\BOOKMARK [2][-]{subsection.1521}{Fluidi quantistici: trattazione della condensazione di Bose.}{section.1403}% 139
+\BOOKMARK [2][-]{subsection.1524}{Colloidi.}{section.1403}% 140
+\BOOKMARK [2][-]{subsection.1529}{Repulsione a lungo raggio: cristallo di Wiegner.}{section.1403}% 141
+\BOOKMARK [2][-]{subsection.1532}{Interazioni a lungo raggio ed approssimazione di Random Phase.}{section.1403}% 142
+\BOOKMARK [2][-]{subsection.1541}{Cosa devo sapere all'esame?}{section.1403}% 143
+\BOOKMARK [1][-]{section.1542}{Lezione 22}{chapter.1290}% 144
+\BOOKMARK [2][-]{subsection.1543}{Estensione dinamica: funzione di Van Hove.}{section.1542}% 145
+\BOOKMARK [2][-]{subsection.1559}{"Fononi" e fattore di struttura dinamico.}{section.1542}% 146
+\BOOKMARK [2][-]{subsection.1562}{Approssimazione per le funzioni di struttura dinamica.}{section.1542}% 147
+\BOOKMARK [2][-]{subsection.1565}{Collegamento con le funzioni di risposta del fluido}{section.1542}% 148
+\BOOKMARK [1][-]{section.1572}{Lezione 23}{chapter.1290}% 149
+\BOOKMARK [2][-]{subsection.1573}{Generalit\340 sui fononi}{section.1572}% 150
+\BOOKMARK [2][-]{subsection.1577}{Struttura del Silicio e del carburo di Silicio.}{section.1572}% 151
+\BOOKMARK [2][-]{subsection.1580}{Onde longitudinali nei liquidi e nei gas}{section.1572}% 152
+\BOOKMARK [2][-]{subsection.1586}{Teoria della elasticit\340: legge di Hooke}{section.1572}% 153
+\BOOKMARK [2][-]{subsection.1591}{Funzione di risposta e teorema di fluttuazione dissipazione.}{section.1572}% 154
+\BOOKMARK [0][-]{chapter.1606}{Interazione radiazione materia}{}% 155
+\BOOKMARK [1][-]{section.1607}{Lezione 24}{chapter.1606}% 156
+\BOOKMARK [2][-]{subsection.1608}{Regola d'oro di Fermi}{section.1607}% 157
+\BOOKMARK [2][-]{subsection.1635}{Interazione con campo EM}{section.1607}% 158
+\BOOKMARK [2][-]{subsection.1650}{Coefficienti di Einstein.}{section.1607}% 159
+\BOOKMARK [1][-]{section.1675}{Lezione 25}{chapter.1606}% 160
+\BOOKMARK [2][-]{subsection.1676}{Approssimazione di onda rotante}{section.1675}% 161
+\BOOKMARK [2][-]{subsection.1680}{Trattamento non perturbativo della interazione radiazione materia}{section.1675}% 162
+\BOOKMARK [2][-]{subsection.1699}{Interazione radiazione materia collegata alla termodinamica}{section.1675}% 163
+\BOOKMARK [2][-]{subsection.1722}{Applicazione dell'interazione radiazione materia: Laser}{section.1675}% 164
+\BOOKMARK [1][-]{section.1741}{Lezione 26}{chapter.1606}% 165
+\BOOKMARK [2][-]{subsection.1757}{Maser}{section.1741}% 166
+\BOOKMARK [2][-]{subsection.1790}{Trattazione completa della equazione di Rate nella interazione radiazione-materia}{section.1741}% 167
+\BOOKMARK [1][-]{section.1817}{Lezione 27}{chapter.1606}% 168
+\BOOKMARK [0][-]{chapter.1878}{Domande D'esame}{}% 169
+\BOOKMARK [1][-]{section.1879}{21 maggio}{chapter.1878}% 170
+\BOOKMARK [2][-]{subsection.1880}{Doulong Depetit \350 l'espressione di un teorema pi\371 generale.. Quale? Come spiega per l'oscillatore armonico il risultato CV = 3NkT?}{section.1879}% 171
+\BOOKMARK [2][-]{subsection.1883}{Descrivere la distribuzione di energia del corpo nero.}{section.1879}% 172
+\BOOKMARK [2][-]{subsection.1888}{Ricavare la distribuzione di energia del corpo nero.}{section.1879}% 173
+\BOOKMARK [2][-]{subsection.1896}{Perch\350 si mette =0 nella Bose Einstein per i fotoni?}{section.1879}% 174
+\BOOKMARK [2][-]{subsection.1897}{Si pu\362 fare una condensazione di Bose-Einstein con i fotoni oppure no?}{section.1879}% 175
+\BOOKMARK [2][-]{subsection.1899}{Parlare della condensazione di Bose-Einstein.}{section.1879}% 176
+\BOOKMARK [2][-]{subsection.1905}{Come va il calore specifico del gas di Bosoni in funzione della tempertura?}{section.1879}% 177
+\BOOKMARK [2][-]{subsection.1907}{Misurare il fattore di struttura dei liquidi e cosa significa.}{section.1879}% 178
+\BOOKMARK [2][-]{subsection.1912}{Distribuzione dei Fermioni.}{section.1879}% 179
+\BOOKMARK [2][-]{subsection.1920}{Calore specifico per il gas di elettroni}{section.1879}% 180
+\BOOKMARK [2][-]{subsection.1924}{In che range di temperatura devo fare una misura nei metalli per vedere questo calore specifico lineare?}{section.1879}% 181
+\BOOKMARK [2][-]{subsection.1925}{In un gas di elettroni liberi con un campo magnetico come va la risposta degli elettroni ad un campo magnetico? \(magnetizzazione\).}{section.1879}% 182
+\BOOKMARK [2][-]{subsection.1931}{Perch\351 non possiamo usare la funzione di partizione Z1N per le particelle quantistiche?}{section.1879}% 183
+\BOOKMARK [2][-]{subsection.1932}{Diamagnetizzazione adiabatica}{section.1879}% 184
+\BOOKMARK [2][-]{subsection.1939}{Bande elettroniche dei cristalli: cosa sono e da dove vengono fuori?}{section.1879}% 185
+\BOOKMARK [2][-]{subsection.1946}{Che succede alle bande se gli elettroni nel metallo fossero Bosoni??}{section.1879}% 186
+\BOOKMARK [2][-]{subsection.1947}{Per sistemi cristallini come sono fatte le bande di energia? \(Tozzini\).}{section.1879}% 187

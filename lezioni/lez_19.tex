@@ -56,18 +56,19 @@ Visto che i dipoli sono investiti con fasi differenti possiamo scrivere il campo
 	\phi(r) \sim &
 	\sum_{i}^{} 
 	\underbrace{
-	\phi_0 
+	\phi_{i,0} 
 	}_{\substack{\text{fase}\\ \text{iniziale}}}
 	\underbrace{
 	\frac{1}{\left| \v{r}-\v{r}_i \right|}
-	\exp\left( i \v{k}\left( \v{r}-\v{r}_i \right) \right) 
+	\exp\left( i \v{k}'\left( \v{r}-\v{r}_i \right) \right) 
 	}_{\substack{\text{Campo}\\ \text{di particella}\\ \text{i-esima}}} \sim\\ 
 	\sim &
-	\exp\left( i \v{k}'\v{r}' \right) \sum_{i}^{} \exp\left( i \left( \v{k}-\v{k}' \right) \v{r}_i \right) 
+	\exp\left( i \v{k}'\v{r} \right) \sum_{i}^{} \exp\left( i \left( \v{k}-\v{k}' \right) \v{r}_i \right) 
 .\end{aligned}\]
-Facendo quindi il modulo quadro di questa espressione abbiamo l'intensità di scattering \footnote{Ogni media tra parentesi $\left< \right>$ è da intendersi come media statistica}:
+Nei passaggi si sostituisce il fattore $\phi_{i,0}=e^{i\v{k}\cdot \v{r}_i}$ che corrisponde alla fase iniziale con il quale l'atomo i-esimo viene investito dalla radiazione "proiettile".\\
+Facendo quindi il modulo quadro di questa espressione abbiamo l'intensità di scattering \footnote{Ogni media tra parentesi $\left< \right>$ è da intendersi come media statistica temporale, si media sul tempo finito in cui si effettua una misura}:
 \[
-	I \sim I_0 \left< \left| \sum_{i}^{} \exp \left[ - i \v{q}\left( \v{r}_i - \v{r}_j \right)  \right]  \right|^2  \right>
+	I \sim I_0 \left< \left| \sum_{i}^{} \exp \left[ i \left(\v{k}-\v{k}'\right)\v{r}_i  \right]  \right|^2  \right>
 .\] 
 In quest'ultima è evidente che vi può essere interferenza tra i termini oscillanti all'interno della sommatoria, tale interferenza è quella che ci permette di avere informazioni sulla struttura interna. Normalizzando $I$ sulla intensità $I_0$ si ha:
 \[
@@ -88,7 +89,7 @@ Vorremmo trattare il termine con $\Delta\v{k}=0$ come un termine incoerente, tut
 	\[\begin{aligned}
 		S(\v{q}) 
 		=&
-		\frac{I(\v{q})}{N} - N \delta_{\v{q},0} 
+		\frac{I(\v{q})}{I_0N} - N \delta_{\v{q},0} 
 		=\\=&
 		\frac{1}{N}\left< \sum_{i,j}^{} \exp\left( -i \v{q}\left( \v{r}_i-\v{r}_j \right) \right) \right> - N\delta_{\v{q},0}
 	.\end{aligned}\]
@@ -100,12 +101,12 @@ Notiamo che questa quantità gode di alcune proprietà interessanti:
 	\item Se $q\to \infty$ i termini esponenziali per $i\neq j$ oscillano molto rapidamente mediando a zero, prevalgono quindi i termini in diagonale, per questo 
 		$S(\v{q}\to \infty)=1$.
 \end{itemize}
-Notiamo che se il sistema è composto da atomi di specie diverse ognuna di queste potrebbe avere intensità di scattering differente, quindi la sommatoria per $S(\v{q})$ dovrà essere pesata con i fattori di forma atomici.
+Notiamo che se il sistema è composto da atomi di specie diverse ognuna di queste potrebbe avere intensità di scattering differente, quindi la sommatoria per $S(\v{q})$ dovrà essere pesata con i fattori di forma atomici (nella sommatoria si mette $f_if_j$).
 \subsection{Densità ad uno e a due particelle.}
 \label{subsec:Densità ad uno e a due particelle.}
 Possiamo definire alcune quantità utili per l'analisi del fattore di struttura statistica: 
 \begin{defn}[Densità ad una particella]{def:Densità ad una particella}
-	Possiamo definire la densità di probabilità per una particella come:
+	Possiamo definire la densità di probabilità per una particella di trovarsi nella posizione $\v{r}$ come:
 	\[
 		\rho (\v{r}) = \left<\sum_{i}^{} \delta\left( \v{r}_i - \v{r} \right)\right>
 	.\] 
@@ -114,10 +115,11 @@ Possiamo definire alcune quantità utili per l'analisi del fattore di struttura 
 		\int\rho (\v{r})d \v{r} = N 
 	.\] 
 \end{defn}
-Notiamo che questa è una quantità molto generale, la si usa in fisica 2 quando si dimostrano i potenziali di Lienard Wiechert (con Pegoraro) e la si applica anche in altre dimostrazioni.
+Notiamo che questa è una quantità molto generale, la si usa in fisica 2 quando si dimostrano i potenziali di Lienard Wiechert (con Pegoraro) e la si applica anche in altre dimostrazioni. \\
+Se moltiplichiamo questa quantità per la massa invece si ottiene la densità del materiale.
 \newpage
-\begin{defn}[Densità di massa a due particelle]{def:Densità di massa a due particelle}
-	La densità di massa a due particelle è definita come la probabilità che una particella sia in $\v{r}$ ed una in $\v{r}'$:
+\begin{defn}[Densità a due particelle]{def:Densità di massa a due particelle}
+	La densità a due particelle è definita come la probabilità per unità di volume di trovare una particella in $\v{r}$ ed una in $\v{r}'$:
 	\[\begin{aligned}
 		\rho _2(\v{r},\v{r}') 
 		=&
@@ -131,9 +133,14 @@ Notiamo che questa è una quantità molto generale, la si usa in fisica 2 quando
 		+
 		\left<\sum_{i}^{} \delta\left( \v{r}_i-\v{r} \right)\delta\left( \v{r}_i-\v{r}' \right)   \right>
 	.\end{aligned}\]
+	Oppure rimaneggiando le precedenti:
+	\[
+	    \overline{\rho }_2(\v{r},\v{r}') = \rho_2(\v{r},\v{r}') - 
+		\left<\sum_{i}^{} \delta\left( \v{r}_i-\v{r} \right)\delta\left( \v{r}_i-\v{r}' \right)   \right>
+	.\] 
 \end{defn}
-Notiamo quindi che vi è una duplice definizione, una che tiene conto della probabilità di trovare le due particelle nello stesso punto: $\rho _2$ ed una che invece rimuove questo termine poco fisico: $\overline{\rho }_2$.\\
-La prima definizione ha una utilità puramente matematica, la seconda invece è accettabile fisicamente in ogni caso. Da notare che, nel limite termodinamico $N\to \infty$ le due quantità coincidono. Infine abbiamo che:
+Notiamo quindi che vi è una duplice definizione, una che tiene conto della probabilità di trovare la particela in due posizioni differenti: $\rho _2$ ed una che invece rimuove questo termine poco fisico: $\overline{\rho }_2$.\\
+La prima definizione ha una utilità puramente matematica, la seconda invece è accettabile fisicamente in ogni caso. Da notare che, nel limite termodinamico $N\to \infty$ le due quantità coincidono in quanto il termine "self" passando al continuo diventa $\delta (\v{r}-\v{r}')$. Infine abbiamo che:
 \[\begin{aligned}
 	&\int\rho _2(\v{r},\v{r}')d \v{r}d \v{r}' = N^2\\
 	&\int \overline{\rho } _2(\v{r},\v{r}')d \v{r}d \v{r}' = N^2 -N
@@ -145,11 +152,11 @@ La prima definizione ha una utilità puramente matematica, la seconda invece è 
 Effettuiamo prima questa trasformata:
 \[\begin{aligned}
 	FT(\rho (\v{r})) =&
-	\int e^{i \v{k}\v{r}}\rho (\v{r})d \v{r} =\\
+	\int e^{-i \v{k}\v{r}}\rho (\v{r})d \v{r} =\\
 	=&
-	\left<\sum_{i}^{} e^{i \v{k}\v{r}} \delta(\v{r}_i -\v{r})d \v{r} \right> =\\
+	\left<\sum_{i}^{} e^{-i \v{k}\v{r}} \delta(\v{r}_i -\v{r})d \v{r} \right> =\\
 	=&
-	\left<\sum_{i}^{} e^{i \v{k}\v{r}_i} \right>
+	\left<\sum_{i}^{} e^{-i \v{k}\v{r}_i} \right>
 .\end{aligned}\]
 Otteniamo una sommatoria su onde con fasi differenti.
 \subsubsection{Trasformata della densità a due particelle.}
@@ -191,7 +198,7 @@ Adesso facciamo una trasformata di Fourier rispetto ad $\v{R}$ e $\v{r}$:
 	}_{\sim S(\v{q})}
 	\underbrace{
 	e^{-i \v{Q}\left( \v{r}_i + \v{r}_j \right)/2 }
-	}_{\sim FT(\rho (\v{r}))}
+	}_{\sim FT(\rho (\v{R}))}
 	\right>=\\
 	=& \hat{S}(\v{q},\v{Q})
 .\end{aligned}\]
@@ -218,7 +225,7 @@ Di conseguenza si ha che $\rho _2$ dipenderà soltanto dalla distanza $r = \left
 \[
 	\rho _2 (\v{r}_1, \v{r}_2) 
 	=
-	\rho ^2\left[ g(r)+V\delta(r) \right] 
+	\rho ^2\left[ g(r)+VN\delta(\v{r}) \right] 
 .\] 
 Dove la $g(r)$ è detta funzione di correlazione di coppia e tiene di conto del contributo a $\rho _2$ di particelle distinte mentre $V\delta(r)$ tiene di conto del contributo "self".\\
 Notiamo anche che la funzione di correlazione di coppia è la funzione che ci permette di calcolare anche il numero di particelle nella shell sferica a distanza $r$ da una particella data:
@@ -228,15 +235,36 @@ Notiamo anche che la funzione di correlazione di coppia è la funzione che ci pe
 	\caption{Numero di particelle nella shell di raggio $r$.}
 	\label{fig:-figures-Istantanea_2020-04-04_09-36-23-png}
 \end{figure}
+\noindent
+Se rinominiamo $\v{r}=\v{r}_1-\v{r}_2$ possiamo scrivere un altro modo di definire la $g(\v{r})$:
 \[
-	dN = \rho 4\pi r^2 g(r)dr
+    dN = \rho g(\v{r}) d^3r = \rho 4\pi r^2 g(r)dr
+.\] 
+Grazie a questa ultima relazione possiamo ricavare una forma analitica per la $g(r)$ (Wikipedia), contiamo il numero di particelle che stanno nel volumetto $4\pi r^2dr$ attorno all'origine:
+\[
+    n = \frac{dN}{d^3r} = g(\v{r}) \rho  = \left<\sum_{i\neq 1}^{} \delta (\v{r}-\v{r}_i) \right>
+.\] 
+Dove abbiamo preso una particella (la numero 1) fissata nell'origine del sistema di riferimento (come in figura \ref{fig:-figures-Istantanea_2020-04-04_09-36-23-png}), in questo modo la $g(\boldsymbol{r})$ assume il ruolo di definire il numero medio di particelle ad una distanza $r$ da quella nell'origine (tra le $N-1$ particelle rimanenti). \\
+L'ultima uguaglianza è la traduzione analitica della frase sopra: se c'è una particella alla distanza $\v{r}_i$ dalla particella che sta a distanza $\v{r}$ allora conterà "+1" grazie alle $\delta$.\\
+Procedendo possiamo scrivere che:
+\[
+    g(\v{r}) = \frac{1}{\rho}\left<\sum_{i\neq 1}^{} \delta (\v{r}-\v{r}_i) \right>
+.\] 
+Se il liquido è uniforme ed omogeneo allora non è possibile alcuna distinzione tra le $N$ particelle, tali particelle sono equivalenti per la sommatoria. Possiamo esplicitare tale espressione quindi svolgendo la somma dei $N-1$ termini, rimarrà una singola $\delta$:
+\[
+    g(\v{r}) = V \frac{N-1}{N}\left<\delta (\v{r}-\v{r}_2) \right> 
+.\] 
+Notiamo che è la notazione di questa parte è incasinata: la $\v{r}$ corrisponde ancora a $\v{r}_1-\v{r}_2$ nel vecchio sistema di coordinate, quindi l'ultima equazione ha senso soltanto nell'ottica di particelle indistinguibili.\\
+Se riscriviamo la $g(\v{r})$ in forma scalare:
+\[
+    g(r) = V \frac{N-1}{N}\left<\delta (r) \right> 
 .\] 
 Per questi sistemi possiamo scrivere il fattore di struttura statistica come:
 \[\begin{aligned}
 	S(q) =&
-	\frac{\rho }{V} \int \left[ g(r) + V\delta(\v{r}) \right] e^{-i \v{q}\v{r}}d \v{r} - N \delta_{\v{q},0}=\\
+	\frac{\rho }{V} \int d \v{r} \int d\v{R} \left[ g(r) + VN\delta(\v{r}) \right] e^{-i \v{q}\v{r}} - N \delta_{\v{q},0}=\\
 	=&
-	\frac{\rho }{V} \int \left[ g(r) + V\delta(\v{r}) \right] e^{-i \v{q}\v{r}}d \v{r} - \frac{N}{V^2} \int e^{-i \v{q}\v{r}}d \v{r}=\\
+	\rho  \int \left[ g(r) + VN\delta(\v{r}) \right] e^{-i \v{q}\v{r}}d \v{r} - \frac{N}{V^2} \int e^{-i \v{q}\v{r}}d \v{r}=\\
 	=&
 	1 + \rho \int_{0}^{\infty} \left[ g(r) - 1 \right] \frac{\sin(qr)}{qr}4\pi r^2 dr 
 .\end{aligned}\]
@@ -281,14 +309,16 @@ Quindi raggruppando qualche termine si ha:
 		=
 		\frac{1}{N}\left| \int\rho (\v{r})e^{i \v{q}\v{r}} d \v{r} \right|^2 = \left| FT\left[ \rho (\v{r}) \right]  \right| ^2
 	.\] 
+	Questa è valida in prima approssimazione imponendo che $\overline{\rho }_2\approx\rho\rho-\delta\rho$.
 \end{fact}
 Quindi i punti visualizzati sul rilevatore sono espressione diretta della trasformata di $\rho (\v{r})$. \\
 \subsection{Digressione sulla FT}
 \label{subsec:Digressione sulla FT}
-Posso descrivere un cristallo come una somma di funzioni centrate sui siti cristallini. In prima approssimazione supponiamo che tali funzioni siano delle $\delta$:
+Posso descrivere un cristallo come una somma di funzioni centrate sui siti cristallini $\v{R}_I$. In prima approssimazione supponiamo che tali funzioni siano delle $\delta$:
 \[
 	\rho (\v{r}) = \sum_{I}^{} f(\v{r}-\v{R}_I) = \sum_{I}^{} \delta(\v{r}-\v{R}_I)
 .\] 
+In questo modo immaginiamo il cristallo formato da atomi fermi nelle loro posizioni di equilibrio, ovviamente sappiamo che questa condizione non si realizza nemmeno a temperatura nulla a causa delle fluttuazioni quantistiche.\\
 La trasformata di Fourier di una tale funzione sarà:
 \[\begin{aligned}
 	FT\left[ \rho (\v{r}) \right] 
@@ -299,6 +329,7 @@ La trasformata di Fourier di una tale funzione sarà:
 	=&
 	\frac{N}{V}\sum_{J}^{} \delta_{\v{k},\v{K}_J}
 .\end{aligned}\]
+La trasformata di Fourier di una somma di $\delta$ di Dirac disposte periodicamente è una somma di $\delta$ di Kronecker centrate sui siti del reticolo reciproco.\\
 Quindi una periodicità in spazio reale corrisponde ad una discretizzazione dello spazio reciproco. \\
 Quest'ultima affermazione equivale a dire che il rapporto tra reticolo diretto e reciproco è l'equivalente della condizione di Bragg di interferenza costruttiva ($e^{-i \v{R}\v{K}} = 1$).
 \begin{figure}[H]

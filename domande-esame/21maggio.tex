@@ -63,13 +63,15 @@ La densità di stati è un concetto quantistico, si accorge del "colore" delle p
 \subsection{Perchè si mette $\mu =0$ nella Bose Einstein per i fotoni?}%
 \label{sub:Perchè si mette mu =0 nella Bose Einstein per i foo}
 Perché non si ha una legge di conservazione del numero di fotoni e l'energia è completamente indipendente dal numero di Fotoni.
-\paragraph{Si può fare una condensazione di Bose-Einstein con i fotoni oppure no?}%
-\label{par:Si può fare una condensazione di Bose-Einstein con i fotoni oppure no?}
+\subsection{Si può fare una condensazione di Bose-Einstein con i fotoni oppure no?}%
 Hint: Lo stato fondamentale per i fotoni è problematico, supponiamo che abbia comunque un qualche significato..è possibile trovare una transizione di fase raffreddando il sistema?\\
 Non  ho la conservazione del numero di particelle, abbassando la temperatura il numero di fotoni nella scatola si riduce e quindi non ho la condensazione.
 \paragraph{Come posso abbassare la temperatura e tenere il numero di fotoni costante?}%
 \label{par:Come posso abbassare la temperatura e tenere il numero di fotoni costante?}
-Se ho un corpo nero non funziona. Dovrei circondare il sistema di oscillatori armonici, la scatola dovrebbe essere un cristallo con risposta dipendente dalla frequenza: un sistema di fotoni termalizzato con \ldots
+Se ho un corpo nero non funziona perché in tal caso il numero di fotoni va a zero.
+Sappiamo che nella interazione con le pareti il numero di particelle non è conservato, se il corpo non è nero possiamo fare un oggetto che conserva il numero di fotoni.\\
+Potremmo circondare il sistema di oscillatori armonici, è necessario costruire un sistema a due livelli il quale, una volta acquistato un fotone ne riemette uno.\\
+Nello specifico si tiene un sistema di fotoni termalizzato con un range di energia molto piccolo in modo tale che si conservi il numero di fotoni.
 \subsection{Parlare della condensazione di Bose-Einstein.}%
 \label{sub:Parlare della condensazione di Bose-Einstein.}
 Prendendo la distribuzione di Bose-Einstein:
@@ -83,18 +85,19 @@ Proviamo a calcolare il numero di particelle al tendere di $\mu\to 0$:
 Ci aspettiamo per la distribuzione che il numero di particella diverga, tuttavia l'integrale non diverge. L'unica soluzione è che nell'integrale (nella $\rho$ ) abbiamo escluso lo stato fondamentale. \\
 Come conseguenza le particelle che non stiamo considerando sono quelle che finiscono nel fondamentale che acquista una occupazione macroscopica.
 \paragraph{Perché non considero il fondamentale non vengono considerate nel calcolo con la $\rho$?}%
-Perché lo stato fondamentale non ha energia e $\rho  \propto\left(\mathcal{E}\right)^2$: lo stato fondamentale nel nostro modello ha densità nulla.
+Perché lo stato fondamentale non ha energia e $\rho  \propto\left(\mathcal{E}\right)^{1 /2}$: lo stato fondamentale nel nostro modello ha densità nulla.
 \paragraph{Possiamo immaginare un sistema in cui la densità di stati diverge?}%
 \label{par:Possiamo immaginare un sistema in cui la densità di stati diverge?}
 Si, basta ridurre la dimensione del sistema.
 \paragraph{In 2D come va la $\rho$?}%
-Va come $\mathcal{E}^0$: è costante nella energia. Mettendo questa nella $N$ si ha che l'integrale non diverge ovvero niente condensazione.
+Va come $\mathcal{E}^0$: è costante nella energia. Mettendo questa nella $N$ si ha che l'integrale diverge ovvero niente condensazione.
 \subsection{Come va il calore specifico del gas di Bosoni in funzione della tempertura?}%
 Il conto da fare al di sotto della temperatura critica è:
 \[
  F = \int_{0}^{\infty} \frac{\mathcal{E}^{3 /2}}{\exp\left(\frac{\mathcal{E}-\mu}{kT}\right)-1}d\mathcal{E} 
 .\] 
 Da questo esce una dipendenza di $F$ da $\left(kT\right)^{5 /2}$ quindi $C_V \propto \left(kT\right)^{3 /2}$.
+Questa vale quando possiamo approssimare $\mu\approx 0$ ovvero al di sotto della temperatura critica $T_c$.
 Dopo torniamo nella approssimazione di Doulong-Depetit.
 \subsection{Misurare il fattore di struttura dei liquidi e cosa significa.}%
 \label{sub:Misurare il fattore di struttura dei liquidi e cosa significa.}
@@ -104,10 +107,10 @@ Scattering di fotoni a raggi X oppure neutroni. Si misura lo scattering di parti
 .\] 
 \paragraph{E per lo scattering inelastico che si fa?}%
 \label{par:E per lo scattering inelastico che si fa?}
-Si usa la $S(\v{k},\omega)$\ldots $G(r,t)$: la probabilità di trovare un'altra particella alla distanza $r$. Noi misuriamo la trasformata di Fourier di questa quantità (a parte fattori geometrici).
+Si usa la $S(\v{k},\omega)$, analogamente a quanto fatto per il caso statico si definisce una funzione di correlazione di coppia dinamica:$G(r,t)$, questa indica la probabilità di trovare un'altra particella alla distanza $r$ ed al tempo $t$. Noi misuriamo la trasformata di Fourier di questa quantità (a parte fattori geometrici) che corrisponde proprio a $S(k,\omega) $ .
+\paragraph{Per cosa si usa la funzione di scattering inelastica?}%
 La misura di scattering elastico si usa per trovare la legge di dispersione dei fononi nel materiale. 
 \paragraph{E in un liquido questa misura a cosa corrisponde? (qual'è il collegamento microscopico).}%
-\label{par:E in un liquido questa misura a cosa corrisponde? (qual'è il collegamento microscopico).}
 Nel liquido non abbiamo più le posizioni di equilibrio, possiamo pensare alla propagazione di onde di pressione. \\
 A numeri d'onda finiti posso vedere il fonone nel liquido come una fluttuazione di densità. 
 \subsection{Distribuzione dei Fermioni.}%

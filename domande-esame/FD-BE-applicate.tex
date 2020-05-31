@@ -1,0 +1,63 @@
+\clearpage 
+\section*{Domande di esame per il capitolo}%
+\begin{quest}[Da che principio deriva Dulong-Depetit?]{quest:Da che principio deriva Dulong-Depetit?}
+Equipartizione della energia.
+\end{quest}
+\begin{quest}[Perché $C_v$ non raggiunge il limite di Doulong-Depetit nel caso di corpo nero?]{quest:Perché $C_v$ non raggiunge il limite di Doulong-Depetit nel caso di corpo nero?}
+    I fotoni non sono limitati in energia, hanno una densità di energia che aumenta con la frequenza. 
+    I fononi invece seguono una densità di energia quadratica con la frequenza soltanto per frequenze inferiori alla $\Omega_D$ (frequenza di Debye).\\
+    Di conseguenza per i fotoni $C_V\propto T^3$ sempre, mentre per i fononi vale solo in regime di $T<\theta_D$. Fisicamente si ha che per ogni temperatura i fotoni possono avere dei modi con energia maggiore di $kT$ permettendo quindi loro di essere sempre fuori dal regime classico.
+\end{quest}
+\begin{quest}[Descrivere la distribuzione di energia del corpo nero]{quest:Descrivere la distribuzione di energia del corpo nero}
+Importante sapere la forma, il modo in cui cambia al variare della temperatura sia in frequenza che in lunghezza d'onda.\\
+L'espressione per tale distribuzione è bene saperla a memoria ma può essere utile anche saperla ricavare (è necessario saper ricavare la $\rho(\omega)$ per il corpo nero), viene chiesta spesso.
+\end{quest}
+\begin{quest}[Dove si trova il massimo della distrib. di corpo nero?]{quest:Dove si trova il massimo della distrib. di corpo nero?}
+Legge di spostamento di Wien:
+\[
+    \omega_{\text{max}} \propto T
+.\] 
+\end{quest}
+\begin{quest}[Come osservare la radiazione di corpo nero della stanza in cui ti trovi?]{quest:Come osservare la radiazione di corpo nero della stanza in cui ti trovi?}
+    Spegnere le luci e sbarrare tutto, è necessario fornirsi di un sensore infrarossi ($\lambda\sim 10 \mu$m) 
+\end{quest}
+\begin{quest}[Ricavare la distribuzione di energia del corpo nero]{quest:Ricavare la distribuzione di energia del corpo nero}
+    É necessario ricavare $\rho (\omega) d\omega$ e successivamente scrivere $u(\omega) d\omega  = \rho (\omega) \overline{n}\hbar \omega$. Ricordando che la $\overline{n} $ è il numero medio di occupazione degli stati nel caso di Fononi (Bose-Einstein senza $\mu$).
+\end{quest}
+\begin{quest}[Da dove prende il nome la dist. di corpo nero?]{quest:Da dove prende il nome la dist. di corpo nero?}
+    Abbiamo un corpo perfettamente in equilibrio con la radiazione elettromagnetica che contiene, questo significa che può essere considerato perfettamente assorbente a tutte le frequenze e quindi corpo nero. 
+\end{quest}
+\begin{quest}[Perché la $\rho$ nel caso di corpo nero si accorge della forma delle pareti?]{quest:Perché la  nel caso di corpo nero si accorge della forma delle pareti?}
+Perché per ricavarla è necessario imporre delle condizioni al contorno che tengono appunto di conto delle pareti. 
+\end{quest}
+\begin{quest}[É possibile fare condensaz. di BE con i fotoni?]{quest:É possibile fare condensaz. di BE con i fotoni?}
+    Il problema con i fotoni è che non conservano il numero di particelle, quindi quanto tento di raffreddare il sistema (facendo $\mu\to 0$ e $N\to \infty$ nel caso di particelle Bosoniche (ATTENZIONE CHE QUI $\mu$ NON C'È PER I FOTONI)) non c'è nessun problema con il fatto che $N$ non diverga: i fotoni semplicemente spariscono!\\
+    È quindi necessario trovare un modo per conservare il numero di fotoni. Nel caso di corpo nero non c'è modo di far questo: il numero di fotoni tende a zero. 
+    Si deve prendere un sistema in grado di riemettere lo stesso numero di fotoni che assorbe. Nella pratica si costruisce una "scatola" che funzioni come un sistema a due livelli (all'orale si è parlato di una scatola di oscillat. armonici), tale sistema insieme a dei fotoni termalizzati con un range di energia molto stretto può permettere la condensazione.
+\end{quest}
+\begin{quest}[Parlare della condensazione di Bose-Einstein]{quest:Parlare della condensazione di Bose-Einstein}
+Forma della distribuzione e espressione della distribuzione da dire al volo. Calcolare il numero medio di particelle e spiegare perché non diverge\ldots Argomentare.
+\end{quest}
+\begin{quest}[Perché le particelle nel fondamentale non vengono considerate nella $\rho$?]{quest:Perché le particelle nel fondamentale non vengono considerate nella $rho$?}
+Non avendo energia lo stato fondamentale, secondo la nostra $\rho \propto  \mathcal{E}^{1 /2}$, ha densità di stati nulla.
+\end{quest}
+\begin{quest}[Esiste sistema per il quale $N\to \infty$ con $\mu\to 0$ nel caso di Bosoni?]{quest:Esiste sistema per il quale $Ntoinfty$ con  nel caso di Bosoni?}
+    Si, basta prendere un sistema 2D, in tal caso la densità di stati è indipendente dall'energia e l'integrale della (sola) Bose-Einstein da 0 a $\infty$ può divergere: in 2 dimensioni niente condensato =(
+\end{quest}
+\begin{quest}[Calore specifico per il gas di Bosoni]{quest:Calore specifico per il gas di Bosoni}
+    In regime classico tornerà $C_V = 3 /2 NK$. In regime quantistico al di sotto della temperatura critica possiamo approssimare $\mu\approx  0$ procedere al calcolo della energia:
+\[
+    E \propto  \int_0^{\infty} \overline{n}\mathcal{E}^{1 /2}\cdot \mathcal{E}  d\mathcal{E}
+.\] 
+Con il classico cambio di variabile $x = \mathcal{E}  /kT$ si arriva ad avere:
+\[
+    E \propto  \left(kT\right)^{5 /2}
+.\] 
+E quindi $C_V \propto T^{3 /2}$. Nel regime intermedio il calore specifico presenterà una sorta di overshoot da questo andamento che lo porta a salire leggermente al di sopra del calore specifico di Doulong-Depetit poiché $C_V(T_c) \approx 1.9 NK > 1.5 NK$.
+\end{quest}
+
+
+
+
+
+

@@ -1,6 +1,7 @@
 \lez{21}{06-04-2020}{}
 \subsection{Collegamento tra $g(r)$ ed il potenziale tra le particelle $u(r)$.}
 \label{subsec:Collegamento tra $g(r)$ ed il potenziale tra le particelle $u(r)$.}
+Cerchiamo di indagare il collegamento tra la funzione di correlazione di coppia $g(r)$ ed il potenziale di interazione tra le particelle $u(r) $. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/schema-iniziale-ur-gr.png}
@@ -9,7 +10,7 @@
 \end{figure}
 \subsubsection{Teorie molticorpi.}
 \label{subsubsec:Teorie molticorpi.}
-La relazione tra $u(r)$ e $g(r)$ può essere studiata all'interno delle teorie di multicorpi e di calcolo numerico. Questo approccio ha un costo computazionale quasi nullo ma richiede spesso delle approssimazioni importanti per gestire l'interazione a molticorpi.\\
+La relazione tra $u(r)$ e $g(r)$ può essere studiata all'interno delle teorie di multicorpi e di calcolo numerico. Questo approccio ha un costo computazionale quasi nullo ma richiede spesso delle approssimazioni importanti per gestire l'interazione a molticorpi.
 \subsubsection{Simulazioni al computer}
 \label{subsubsec:Simulazioni al computer}
 Possiamo simulare un set di particelle con un potenziale di interazione scelto dal programmatore $u(r)$, a questo punto abbiamo che $g(r)$ può essere estrapolata lanciando la simulazione e lasciandola andare per un tempo sufficientemente lungo.\\
@@ -17,8 +18,8 @@ Questo approccio è molto simile a fare un esperimento vero, l'artificialità è
 L'unico limite di questo approccio è la potenza di calcolo del computer, inoltre per avere dei risultati fisici significativi è necessario poter accedere a dei dati veri di $g(r)$ altrimenti resta soltanto un giocattolo.
 \subsection{Unicità della relazione tra $g(r)$ e $u(r)$.}
 \label{subsec:Unicità della relazione tra $g(r)$ e $u(r)$.}
-Abbiamo visto che la relazione tra la $S(q)$ e la $g(r)$ è unicamente determinata tramite una FT, si può dire lo stesso tra $g(r)$ e $u(r)$?\\
-Prendiamo un sistema di particelle in cui il potenziale agisce soltanto tra i primi vicini \footnote{Questa è una approssimazione molto brutale}, in questo caso la $u(r)$ determina in modo univoco la $g(r)$. Potremmo dire anche il viceversa?\\
+Abbiamo visto che la relazione tra la $S(q)$ e la $g(r)$ è unicamente determinata tramite una FT, si può dire lo stesso tra $g(r)$ e $u(r)$? Esiste una relazione che determina in modo biunivoco il legame tra la $u$ e la $g$?\\
+Prendiamo un sistema di particelle in cui il potenziale agisce soltanto tra i primi vicini, in questo caso la $u(r)$ determina in modo univoco la $g(r)$. Potremmo dire anche il viceversa?\\
 Ci chiediamo quindi se è vero che ad ogni funzione di distribuzione di coppia corrisponde un unico potenziale di coppia $u(r)$.\\
 La risposta è si, sotto alcune ipotesi:
 \begin{fact}[La relazione che lega $g(r)$ ad una singola $u(r)$ è unica e biunivoca.]{fact:La relazione che lega $g(r)$ ad una singola $u(r)$ è unica e biunivoca.}
@@ -30,7 +31,38 @@ La risposta è si, sotto alcune ipotesi:
 			stessa $g(r)$.
 	\end{itemize}
 \end{fact}
-Non è comunque garantita l'esistenza di una $u(r)$ per ogni $g(r)$, tuttavia esiste sempre una procedura numerica inversa quando le condizioni del Fatto \ref{fact:La relazione che lega $g(r)$ ad una singola $u(r)$ è unica e biunivoca.}.\\ 
+Per la dimostrazione di questo teorema riporto una reinterpretazione (traduzione) dell'articolo di Henderson. L'autore considera un sistema di $N$ particelle identiche alla temperatura $T$ in un volume $V$, l'Hamiltoniana è data da:
+\[
+    H = \sum_{i}^{} \frac{p^2_i}{2M}+ \frac{1}{2}\sum_{i\neq j}^{} u(\v{r}_i-\v{r}_j) 
+.\] 
+Possiamo scrivere il potenziale interatomico mediante la funzione di distribuzione di coppia $n_2(\v{r},\v{r}')$ (la nostra $\rho_2$ moltiplicata per il numero medio di particelle) e trasformando la somma sulle posizioni $i$  e $j$  in integrale:
+\[
+    \left<\frac{1}{2}\sum_{i\neq j}^{} u(\v{r}_i-\v{r}_j)\right> = \frac{1}{2}\int \v{r}d\v{r}'u(\v{r}-\v{r'}) n_2(\v{r},\v{r}') 
+.\] 
+Se andiamo nel limite termodinamico allora la funzione di distribuzione di coppia diventa:
+\[
+    n_2 \to n^2g(r) 
+.\] 
+Dove $n$ è la densità media di particelle e la $g(r)$ è la funzione vista nella lezione scorsa (qui chiamata funzione di distribuzione radiale).
+Il teorema di unicità segue da una disuguaglianza sulla energia libera di Halmotz: consideriamo due sistemi sotto condizioni di temperatura, densità e volume identici ma descritti da due Hamiltoniane diverse $H_1$ e $H_2$; sia nel caso classico che nel caso quantistico le corrispondenti energie libere sono legate dalla seguente disuguaglianza:
+\[
+    F_2\le F_1 + \left<H_2-H_1\right>_1 \label{eq:Halmotz-Badasss}
+.\] 
+Dove si media con la misura adatta ad $H_1$. La relazione sopra diventa una uguaglianza se $H_2-H_1$ è indipendente dagli impulsi e dalle coordinate.\\
+Consideriamo quindi due sistemi identici in ogni aspetto eccetto il potenziale di coppia $u(r)$ e $u'(r)$, le corrispondenti funzioni di distribuzione di coppia sono $n_2$ e $n_2'$. \\
+Il teorema di unicità che stiamo dimostrando afferma che se $n_2(\v{r},\v{r}') = n'_2(\v{r},\v{r}')$ per ogni $\v{r}$ e $\v{r}'$ allora i potenziali non possono differire per più di una costante.\\
+Procediamo per assurdo negando l'ultima affermazione, in questo modo per ogni temperatura la condizione per avere una uguaglianza in equazione \ref{eq:Halmotz-Badasss} sarebbe violata; si avrà quindi:
+\[
+    F< F' + \left<H-H'\right>'=
+    F'+\frac{1}{2}\int d\v{r}d\v{r}'\left[u(\v{r}-\v{r}') - u'(\v{r}-\v{r}') \right]n_2'(\v{r}\v{r}') 	
+.\] 
+Dove si usa la $n_2'$ perché fa parte della misura di media (della disuguaglianza). Possiamo dire che tale disuguaglianza debba valere anche per l'energia di Halmotz non primata, quindi:
+\[
+    F'< F + \left<H-H'\right>=
+    F+\frac{1}{2}\int d\v{r}d\v{r}'\left[u(\v{r}-\v{r}') - u'(\v{r}-\v{r}') \right]n_2(\v{r}\v{r}') 	
+.\] 
+Se supponiamo che $n_2=n_2'$ per tutti gli $\v{r}$ e $\v{r}'$ allora abbiamo l'assurdo $0<0$.\\
+Non è comunque garantita l'esistenza di una $u(r)$ per ogni $g(r)$, tuttavia esiste sempre una procedura numerica inversa quando le condizioni del Fatto \ref{fact:La relazione che lega $g(r)$ ad una singola $u(r)$ è unica e biunivoca.} sussistono.\\ 
 \subsection{Energia interna di un fluido monoatomico classico con potenziale a 2 corpi.}
 \label{subsec:Energia interna di un fluido monoatomico classico con potenziale a 2 corpi.}
 Consideriamo un fluido monoatomico con un potenziale di interazione che agisce solo a due particelle:
@@ -59,7 +91,9 @@ La media dell'energia potenziale totale del sistema si ottiene come:
 	=&
 	\frac{1}{2} \rho ^2 V \int u(r)g(r)4\pi r^2 dr
 .\end{aligned}\]
-Dove si è sfruttata la definizione di $\rho_2 g(r)$:
+Nel primo passaggio abbiamo assunto che $u(r_{ij})$ sia lo stesso per tutte le particelle, quindi abbiamo esplicitato le $N(N-1) /2$ sommatorie lasciando il potenziale in dipendenza di sue singole particelle: $\v{r}_1$ e $\v{r}_2$. \\
+Visto che ci è ancora comodo avere un integrale su tutte le particelle (che escluda la $u$ non in forma esponenziale) allora si trasformano i rimanenti $N-2$ integrali in $N$ integrali introducendo le due $\delta$. Procedendo in questo modo la quantità da parentesi è esattamente la $\overline{\rho}_2$.\\
+La definizione di $\overline{\rho}_2$ è infatti:
 \[
 	\overline{\rho }_2(\v{r}_1,\v{r}_2) 
 	= 
@@ -78,7 +112,7 @@ In conclusione troviamo che l'energia potenziale può essere espressa in termini
 	+
 	\frac{N}{2}\rho \int u(r)g(r)4\pi r^2 dr
 .\] 
-Da cui si ha ovviamente il calore specifico:
+Se il potenziale è indipendente dalla temperatura allora possiamo esprimere il calore specifico come:
 \[
 	C_V =
 	\frac{3}{2}Nk 

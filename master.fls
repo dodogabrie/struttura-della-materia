@@ -538,6 +538,8 @@ INPUT figures/spazio-delle-fasi-proiettato-in-due-dimensioni.pdf_tex
 INPUT figures/spazio-delle-fasi-proiettato-in-due-dimensioni.pdf
 INPUT ./figures/spazio-delle-fasi-proiettato-in-due-dimensioni.pdf
 INPUT ./figures/spazio-delle-fasi-proiettato-in-due-dimensioni.pdf
+INPUT domande-esame/termodinamica.tex
+INPUT domande-esame/termodinamica.tex
 INPUT lezioni/lez_6.tex
 INPUT lezioni/lez_6.tex
 INPUT figures/calcolo-delle-fluttuazioni.pdf_tex
@@ -602,6 +604,8 @@ INPUT figures/modello-di-buca-di-potenziale-per-un-metallo.pdf_tex
 INPUT figures/modello-di-buca-di-potenziale-per-un-metallo.pdf
 INPUT ./figures/modello-di-buca-di-potenziale-per-un-metallo.pdf
 INPUT ./figures/modello-di-buca-di-potenziale-per-un-metallo.pdf
+INPUT domande-esame/FD-BE.tex
+INPUT domande-esame/FD-BE.tex
 INPUT lezioni/lez_10.tex
 INPUT lezioni/lez_10.tex
 INPUT figures/buca-in-presenza-di-un-campo-elettrico.pdf_tex
@@ -716,6 +720,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eurb10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eurb7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eurb5.tfm
+INPUT domande-esame/FD-BE-applicate.tex
+INPUT domande-esame/FD-BE-applicate.tex
 INPUT lezioni/lez_14.tex
 INPUT lezioni/lez_14.tex
 INPUT figures/sistema-di-emettitori-di-fotoni-con-rilevatore.pdf_tex
@@ -1261,6 +1267,8 @@ INPUT ./figures/SiC-rami.png
 INPUT figures/FluttuDiss-quantistico.png
 INPUT ./figures/FluttuDiss-quantistico.png
 INPUT ./figures/FluttuDiss-quantistico.png
+INPUT domande-esame/liquidi.tex
+INPUT domande-esame/liquidi.tex
 INPUT lezioni/lez_24.tex
 INPUT lezioni/lez_24.tex
 INPUT figures/f-interazione-radiazione-materia.pdf_tex

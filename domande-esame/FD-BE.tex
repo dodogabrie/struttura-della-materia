@@ -1,0 +1,45 @@
+\clearpage 
+\section*{Domande di esame per il capitolo}%
+\begin{quest}[Definire la distribuzione di Fermi]{quest:Definire la distribuzione di Fermi}
+Vabè..
+\end{quest}
+\begin{quest}[Cosa succede a $\mu$ se il numero di particelle è fisso? (andam. in T)]{quest:Cosa succede al potenziale chimico se il numero di particelle è fisso?}
+    L'andamento del potenziale chimico con la temperatura e $\Delta\mu\propto-\left(kT\right)^{2}$ quindi all'aumentare della temperatura è possibile tornare nel caso classico ($\mu < 0$ e $\left|\mu\right|\gg kT$).
+\end{quest}
+\begin{quest}[Perché ci aspettiamo che il potenziale chimico torni classico?]{quest:Perché ci aspettiamo che il potenziale chimico torni classico?}
+Perché la "classicità" di un sistema deriva dall'avere la disuguaglianza:
+\[
+    \frac{N}{V}\Lambda^3\ll 1
+.\] 
+con 
+\[
+    \Lambda  = \frac{h}{\sqrt{2\pi mkT} }
+.\] 
+Di conseguenza visto che $\Lambda\propto T^{-1 /2}$ abbiamo che la disug. è sempre più vera all'aumentare della temperatura.
+\end{quest}
+\begin{quest}[Quando si ha invece un potenziale chimico crescente in $T$?]{quest:Quando si ha invece un potenziale chimico crescente in $T$?}
+Nei semiconduttori. Consideriamo il calcolo del numero di particelle:
+\[
+    N  = \int_{0}^{\infty}  \rho\left(\mathcal{E}\right)\overline{n}_qd\mathcal{E}
+.\] 
+Il contributo principale a questo integrale è quello che proviene da un intorno di $\mathcal{E} =\mathcal{E}_F$ largo $kT$, visto l'andamento in questo punto di tale funzione, se prendiamo la $\rho$ più comune ($\rho\propto\mathcal{E}^{1 /2}$) allora abbiamo che sicuramente all'aumentare della temperatura $\Delta N>0$ poiché l'integrale della parte con energia maggiore di $\mathcal{E}_F$ sarà predominante. 
+Quindi per mantenere il numero di particelle costante il potenziale chimico deve diminuire. \\
+Per invertire questa tendenza serve una $\rho$ che decresca con l'energia, in questo modo all'aumentare della temperatura il numero di particelle ha la tendenza a diminuire e per mantenerlo costante la $\mu$ deve aumentare.
+I semiconduttori drogati hanno questa peculiarita: al di sotto del livello di fermi la $\rho$ è molto grande per via delle impurezze mentre al di sopra (per lo meno per piccoli $k$..) si ha una densità di stati più bassa.
+\end{quest}
+\begin{quest}[Calore specifico per il gas di Fermioni]{quest:Calore specifico per il gas di Fermioni}
+Per un gas di Fermioni il contributo al calore specifico deriva soltanto dalle particelle aventi energia prossima a quella di Fermi, possiamo affermare che all'aumentare della temperatura del sistema la variazione del numero di particelle sarà data da: 
+\[
+    \Delta  N = N \frac{T}{T_F} \implies
+    \Delta E \propto   kT N \frac{T}{T_F}
+.\] 
+Una prima stima del calore specifico prevede allora una linearità in $T$: 
+\[
+    C_V \sim \frac{\Delta E}{\Delta T} \propto  \frac{T}{T_F}
+.\]
+\end{quest}
+\begin{quest}[Range di temperatura per vedere l'andamento lineare di $C_V$ nei metalli?]{quest:Range di temperatura per vedere l'andamento lineare di $C_V$ nei metalli?}
+Nei metalli anche gli ioni contribuiscono al calore specifico, quindi avremo anche l'andamento cubico alla Debye. Sicuramente dobbiamo lavorare sotto a $T_F$ perché al di sopra il metallo è già bello e che sciolto, la temperatura importante da non superare è quella di Debye.\\
+Infatti l'andamento cubico è in $T /\theta_D$, se vado al di sotto di $\theta_D$ un andamento lineare diventa dominante.
+\end{quest}
+

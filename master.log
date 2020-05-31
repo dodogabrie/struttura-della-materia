@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.14)  29 MAY 2020 22:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.14)  30 MAY 2020 19:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -814,6 +814,7 @@ Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
 ) (/home/edoardo/Modelli/latex/boxtheo.tex
 \c@fact=\count336
 \c@defn=\count337
+\c@quest=\count338
 )) (/home/edoardo/Modelli/latex/fancyh.tex) (./master.aux
 
 LaTeX Warning: Label `eq:densita-stati' multiply defined.
@@ -842,16 +843,16 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count338
+\scratchcounter=\count339
 \scratchdimen=\dimen300
 \scratchbox=\box115
-\nofMPsegments=\count339
-\nofMParguments=\count340
+\nofMPsegments=\count340
+\nofMParguments=\count341
 \everyMPshowfont=\toks54
-\MPscratchCnt=\count341
+\MPscratchCnt=\count342
 \MPscratchDim=\dimen301
-\MPnumerator=\count342
-\makeMPintoPDFobject=\count343
+\MPnumerator=\count343
+\makeMPintoPDFobject=\count344
 \everyMPtoPDFconversion=\toks55
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1386,7 +1387,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--268
 
  []
 
-[39] [40]) [41]
+[39] [40]) (./domande-esame/termodinamica.tex [41]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 5.
+) [42
+
+]
 Capitolo 2.
 (./lezioni/lez_6.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--5
@@ -1394,28 +1404,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--5
  []
 
 (./figures/calcolo-delle-fluttuazioni.pdf_tex
-<figures/calcolo-delle-fluttuazioni.pdf, id=1618, page=1, 627.48564pt x 208.01028pt>
+<figures/calcolo-delle-fluttuazioni.pdf, id=1625, page=1, 627.48564pt x 208.01028pt>
 File: figures/calcolo-delle-fluttuazioni.pdf Graphic file (type pdf)
 <use figures/calcolo-delle-fluttuazioni.pdf, page 1>
 Package pdftex.def Info: figures/calcolo-delle-fluttuazioni.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 160.34615pt.
-) [42
+) [43
 
-] [43 <./figures/calcolo-delle-fluttuazioni.pdf>] (./figures/andamento-della-distribuzione-di-energia-al-variare-di-n.pdf_tex
-<figures/andamento-della-distribuzione-di-energia-al-variare-di-n.pdf, id=1654, page=1, 518.44484pt x 137.76918pt>
+] [44 <./figures/calcolo-delle-fluttuazioni.pdf>] (./figures/andamento-della-distribuzione-di-energia-al-variare-di-n.pdf_tex
+<figures/andamento-della-distribuzione-di-energia-al-variare-di-n.pdf, id=1660, page=1, 518.44484pt x 137.76918pt>
 File: figures/andamento-della-distribuzione-di-energia-al-variare-di-n.pdf Graphic file (type pdf)
 <use figures/andamento-della-distribuzione-di-energia-al-variare-di-n.pdf, page 1>
 Package pdftex.def Info: figures/andamento-della-distribuzione-di-energia-al-variare-di-n.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 128.53603pt.
-) [44 <./figures/andamento-della-distribuzione-di-energia-al-variare-di-n.pdf>]
+) [45 <./figures/andamento-della-distribuzione-di-energia-al-variare-di-n.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 151--153
 
  []
 
 
-LaTeX Warning: Hyper reference `eq:potenziale-Landau1' on page 45 undefined on input line 155.
+LaTeX Warning: Hyper reference `eq:potenziale-Landau1' on page 46 undefined on input line 155.
 
-[45] [46] [47] [48]
+[46] [47] [48] [49]
 Underfull \hbox (badness 10000) in paragraph at lines 334--338
 
  []
@@ -1425,9 +1435,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 358--360
 
  []
 
-) [49]
+) [50]
 Capitolo 3.
-(./lezioni/lez_7.tex [50
+(./lezioni/lez_7.tex [51
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 66--69
@@ -1446,37 +1456,37 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 70.
 
-[51] [52] [53]
+[52] [53] [54]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 197.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 203.
-<figures/fermi_dirac.png, id=1835, 987.2082pt x 489.9906pt>
+<figures/fermi_dirac.png, id=1842, 987.2082pt x 489.9906pt>
 File: figures/fermi_dirac.png Graphic file (type png)
 <use figures/fermi_dirac.png>
 Package pdftex.def Info: figures/fermi_dirac.png  used on input line 207.
 (pdftex.def)             Requested size: 435.32422pt x 216.06755pt.
- [54] [55 <./figures/fermi_dirac.png>]
+ [55] [56 <./figures/fermi_dirac.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 243.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 248.
-<figures/bose_einstein.png, id=1864, 987.2082pt x 489.9906pt>
+<figures/bose_einstein.png, id=1870, 987.2082pt x 489.9906pt>
 File: figures/bose_einstein.png Graphic file (type png)
 <use figures/bose_einstein.png>
 Package pdftex.def Info: figures/bose_einstein.png  used on input line 252.
 (pdftex.def)             Requested size: 459.51054pt x 228.07504pt.
 ) (./lezioni/lez_8.tex (./figures/bose-einstein-con-t-tendente-a-zero-e-numero-di-particelle-fissato.pdf_tex
-<figures/bose-einstein-con-t-tendente-a-zero-e-numero-di-particelle-fissato.pdf, id=1865, page=1, 672.21524pt x 199.59383pt>
+<figures/bose-einstein-con-t-tendente-a-zero-e-numero-di-particelle-fissato.pdf, id=1871, page=1, 672.21524pt x 199.59383pt>
 File: figures/bose-einstein-con-t-tendente-a-zero-e-numero-di-particelle-fissato.pdf Graphic file (type pdf)
 <use figures/bose-einstein-con-t-tendente-a-zero-e-numero-di-particelle-fissato.pdf, page 1>
 Package pdftex.def Info: figures/bose-einstein-con-t-tendente-a-zero-e-numero-di-particelle-fissato.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 143.62215pt.
-) [56 <./figures/bose_einstein.png>]
+) [57 <./figures/bose_einstein.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 23--27
 
  []
@@ -1493,7 +1503,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 28.
 
-[57 <./figures/bose-einstein-con-t-tendente-a-zero-e-numero-di-particelle-fissato.pdf>] [58] [59]
+[58 <./figures/bose-einstein-con-t-tendente-a-zero-e-numero-di-particelle-fissato.pdf>] [59] [60]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 186.
@@ -1501,45 +1511,45 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 189.
 Package mdframed Info: Not enough space on this page on input line 189.
- [60]
+ [61]
 Package mdframed Info: Not enough space on this page on input line 189.
- [61] (./figures/correzione-per-il-potenziale-di-landau-nella-statistica-di-fermi-dirac.pdf_tex
-<figures/correzione-per-il-potenziale-di-landau-nella-statistica-di-fermi-dirac.pdf, id=1955, page=1, 526.76003pt x 170.7911pt>
+ [62] (./figures/correzione-per-il-potenziale-di-landau-nella-statistica-di-fermi-dirac.pdf_tex
+<figures/correzione-per-il-potenziale-di-landau-nella-statistica-di-fermi-dirac.pdf, id=1961, page=1, 526.76003pt x 170.7911pt>
 File: figures/correzione-per-il-potenziale-di-landau-nella-statistica-di-fermi-dirac.pdf Graphic file (type pdf)
 <use figures/correzione-per-il-potenziale-di-landau-nella-statistica-di-fermi-dirac.pdf, page 1>
 Package pdftex.def Info: figures/correzione-per-il-potenziale-di-landau-nella-statistica-di-fermi-dirac.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 156.83002pt.
 ) (./figures/g1-e-g0.pdf_tex
-<figures/g1-e-g0.pdf, id=1956, page=1, 548.7733pt x 167.81926pt>
+<figures/g1-e-g0.pdf, id=1962, page=1, 548.7733pt x 167.81926pt>
 File: figures/g1-e-g0.pdf Graphic file (type pdf)
 <use figures/g1-e-g0.pdf, page 1>
 Package pdftex.def Info: figures/g1-e-g0.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 147.9221pt.
-) [62 <./figures/correzione-per-il-potenziale-di-landau-nella-statistica-di-fermi-dirac.pdf>]) (./lezioni/lez_9.tex [63 <./figures/g1-e-g0.pdf>] [64] (./figures/spin-up-per-gas-di-elettroni-nel-campo-magnetico.pdf_tex
-<figures/spin-up-per-gas-di-elettroni-nel-campo-magnetico.pdf, id=2005, page=1, 768.50963pt x 105.69821pt>
+) [63 <./figures/correzione-per-il-potenziale-di-landau-nella-statistica-di-fermi-dirac.pdf>]) (./lezioni/lez_9.tex [64 <./figures/g1-e-g0.pdf>] [65] (./figures/spin-up-per-gas-di-elettroni-nel-campo-magnetico.pdf_tex
+<figures/spin-up-per-gas-di-elettroni-nel-campo-magnetico.pdf, id=2011, page=1, 768.50963pt x 105.69821pt>
 File: figures/spin-up-per-gas-di-elettroni-nel-campo-magnetico.pdf Graphic file (type pdf)
 <use figures/spin-up-per-gas-di-elettroni-nel-campo-magnetico.pdf, page 1>
 Package pdftex.def Info: figures/spin-up-per-gas-di-elettroni-nel-campo-magnetico.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 66.5257pt.
 ) (./figures/energia-degli-elettroni-senza-campo-b-in-funzione-della-densita-di-stati.pdf_tex
-<figures/energia-degli-elettroni-senza-campo-b-in-funzione-della-densita-di-stati.pdf, id=2007, page=1, 589.54971pt x 160.139pt>
+<figures/energia-degli-elettroni-senza-campo-b-in-funzione-della-densita-di-stati.pdf, id=2013, page=1, 589.54971pt x 160.139pt>
 File: figures/energia-degli-elettroni-senza-campo-b-in-funzione-della-densita-di-stati.pdf Graphic file (type pdf)
 <use figures/energia-degli-elettroni-senza-campo-b-in-funzione-della-densita-di-stati.pdf, page 1>
 Package pdftex.def Info: figures/energia-degli-elettroni-senza-campo-b-in-funzione-della-densita-di-stati.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 131.38812pt.
-) [65 <./figures/spin-up-per-gas-di-elettroni-nel-campo-magnetico.pdf>] (./figures/energia-degli-elettroni-con-campo-b-in-funzione-della-densita-di-stati.pdf_tex
-<figures/energia-degli-elettroni-con-campo-b-in-funzione-della-densita-di-stati.pdf, id=2020, page=1, 581.86746pt x 173.7666pt>
+) [66 <./figures/spin-up-per-gas-di-elettroni-nel-campo-magnetico.pdf>] (./figures/energia-degli-elettroni-con-campo-b-in-funzione-della-densita-di-stati.pdf_tex
+<figures/energia-degli-elettroni-con-campo-b-in-funzione-della-densita-di-stati.pdf, id=2027, page=1, 581.86746pt x 173.7666pt>
 File: figures/energia-degli-elettroni-con-campo-b-in-funzione-della-densita-di-stati.pdf Graphic file (type pdf)
 <use figures/energia-degli-elettroni-con-campo-b-in-funzione-della-densita-di-stati.pdf, page 1>
 Package pdftex.def Info: figures/energia-degli-elettroni-con-campo-b-in-funzione-della-densita-di-stati.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 144.45425pt.
 ) (./figures/calcolo-del-numero-di-particelle-negli-stati-up-e-down-sciftando-le-aree.pdf_tex
-<figures/calcolo-del-numero-di-particelle-negli-stati-up-e-down-sciftando-le-aree.pdf, id=2022, page=1, 536.52509pt x 161.70685pt>
+<figures/calcolo-del-numero-di-particelle-negli-stati-up-e-down-sciftando-le-aree.pdf, id=2029, page=1, 536.52509pt x 161.70685pt>
 File: figures/calcolo-del-numero-di-particelle-negli-stati-up-e-down-sciftando-le-aree.pdf Graphic file (type pdf)
 <use figures/calcolo-del-numero-di-particelle-negli-stati-up-e-down-sciftando-le-aree.pdf, page 1>
 Package pdftex.def Info: figures/calcolo-del-numero-di-particelle-negli-stati-up-e-down-sciftando-le-aree.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 145.78894pt.
-) [66 <./figures/energia-degli-elettroni-senza-campo-b-in-funzione-della-densita-di-stati.pdf> <./figures/energia-degli-elettroni-con-campo-b-in-funzione-della-densita-di-stati.pdf
+) [67 <./figures/energia-degli-elettroni-senza-campo-b-in-funzione-della-densita-di-stati.pdf> <./figures/energia-degli-elettroni-con-campo-b-in-funzione-della-densita-di-stati.pdf
 
 pdfTeX warning: pdflatex (file ./figures/energia-degli-elettroni-con-campo-b-in-funzione-della-densita-di-stati.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/calcolo-del-numero-di-particelle-negli-stati-up-e-down-sciftando-le-aree.pdf
@@ -1551,26 +1561,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--144
  []
 
 (./figures/modello-di-buca-di-potenziale-per-un-metallo.pdf_tex
-<figures/modello-di-buca-di-potenziale-per-un-metallo.pdf, id=2041, page=1, 649.5062pt x 52.38814pt>
+<figures/modello-di-buca-di-potenziale-per-un-metallo.pdf, id=2047, page=1, 649.5062pt x 52.38814pt>
 File: figures/modello-di-buca-di-potenziale-per-un-metallo.pdf Graphic file (type pdf)
 <use figures/modello-di-buca-di-potenziale-per-un-metallo.pdf, page 1>
 Package pdftex.def Info: figures/modello-di-buca-di-potenziale-per-un-metallo.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 39.0144pt.
-) [67 <./figures/modello-di-buca-di-potenziale-per-un-metallo.pdf>]) [68]
+) [68 <./figures/modello-di-buca-di-potenziale-per-un-metallo.pdf>]) (./domande-esame/FD-BE.tex [69]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 5.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 6.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 8.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 9.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 19.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 20.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 29.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 30.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 40.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 41.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 44.
+Package mdframed Info: Not enough space on this page on input line 44.
+ [70
+
+]
+Package mdframed Info: Not enough space on this page on input line 44.
+) [71]
 Capitolo 4.
 (./lezioni/lez_10.tex (./figures/buca-in-presenza-di-un-campo-elettrico.pdf_tex
-<figures/buca-in-presenza-di-un-campo-elettrico.pdf, id=2075, page=1, 571.18184pt x 85.61124pt>
+<figures/buca-in-presenza-di-un-campo-elettrico.pdf, id=2102, page=1, 571.18184pt x 85.61124pt>
 File: figures/buca-in-presenza-di-un-campo-elettrico.pdf Graphic file (type pdf)
 <use figures/buca-in-presenza-di-un-campo-elettrico.pdf, page 1>
 Package pdftex.def Info: figures/buca-in-presenza-di-un-campo-elettrico.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 72.50078pt.
 ) (./figures/buca-in-presenza-di-un-campo-elettrico-considerando-la-carica-immagine.pdf_tex
-<figures/buca-in-presenza-di-un-campo-elettrico-considerando-la-carica-immagine.pdf, id=2077, page=1, 545.57433pt x 90.35907pt>
+<figures/buca-in-presenza-di-un-campo-elettrico-considerando-la-carica-immagine.pdf, id=2104, page=1, 545.57433pt x 90.35907pt>
 File: figures/buca-in-presenza-di-un-campo-elettrico-considerando-la-carica-immagine.pdf Graphic file (type pdf)
 <use figures/buca-in-presenza-di-un-campo-elettrico-considerando-la-carica-immagine.pdf, page 1>
 Package pdftex.def Info: figures/buca-in-presenza-di-un-campo-elettrico-considerando-la-carica-immagine.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 80.11185pt.
-) [69
+) [72
 
  <./figures/buca-in-presenza-di-un-campo-elettrico.pdf> <./figures/buca-in-presenza-di-un-campo-elettrico-considerando-la-carica-immagine.pdf
 
@@ -1583,13 +1635,13 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 37.
  (./figures/corrente-termoionica-in-funzione-del-campo-elettrico.pdf_tex
-<figures/corrente-termoionica-in-funzione-del-campo-elettrico.pdf, id=2091, page=1, 420.76424pt x 85.74185pt>
+<figures/corrente-termoionica-in-funzione-del-campo-elettrico.pdf, id=2119, page=1, 420.76424pt x 85.74185pt>
 File: figures/corrente-termoionica-in-funzione-del-campo-elettrico.pdf Graphic file (type pdf)
 <use figures/corrente-termoionica-in-funzione-del-campo-elettrico.pdf, page 1>
 Package pdftex.def Info: figures/corrente-termoionica-in-funzione-del-campo-elettrico.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 98.56834pt.
-) [70 <./figures/corrente-termoionica-in-funzione-del-campo-elettrico.pdf>] (./figures/elettroni-pi-energetici-della-buca-di-potenziale.pdf_tex
-<figures/elettroni-pi-energetici-della-buca-di-potenziale.pdf, id=2110, page=1, 573.58597pt x 169.46788pt>
+) [73 <./figures/corrente-termoionica-in-funzione-del-campo-elettrico.pdf>] (./figures/elettroni-pi-energetici-della-buca-di-potenziale.pdf_tex
+<figures/elettroni-pi-energetici-della-buca-di-potenziale.pdf, id=2137, page=1, 573.58597pt x 169.46788pt>
 File: figures/elettroni-pi-energetici-della-buca-di-potenziale.pdf Graphic file (type pdf)
 <use figures/elettroni-pi-energetici-della-buca-di-potenziale.pdf, page 1>
 Package pdftex.def Info: figures/elettroni-pi-energetici-della-buca-di-potenziale.pdf , page1 used on input line 56.
@@ -1599,58 +1651,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--126
 
  []
 
-[71 <./figures/elettroni-pi-energetici-della-buca-di-potenziale.pdf>] [72] [73] [74]) (./lezioni/lez_11.tex
+[74 <./figures/elettroni-pi-energetici-della-buca-di-potenziale.pdf>] [75] [76] [77]) (./lezioni/lez_11.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
-[75] (./figures/pressione-di-vapore.pdf_tex
-<figures/pressione-di-vapore.pdf, id=2194, page=1, 578.4431pt x 188.19312pt>
+[78] (./figures/pressione-di-vapore.pdf_tex
+<figures/pressione-di-vapore.pdf, id=2222, page=1, 578.4431pt x 188.19312pt>
 File: figures/pressione-di-vapore.pdf Graphic file (type pdf)
 <use figures/pressione-di-vapore.pdf, page 1>
 Package pdftex.def Info: figures/pressione-di-vapore.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 157.36897pt.
-<figures/pressione-di-vapore.pdf, id=2195, page=2, 578.4431pt x 188.19312pt>
+<figures/pressione-di-vapore.pdf, id=2223, page=2, 578.4431pt x 188.19312pt>
 File: figures/pressione-di-vapore.pdf Graphic file (type pdf)
 <use figures/pressione-di-vapore.pdf, page 2>
 Package pdftex.def Info: figures/pressione-di-vapore.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 483.69687pt x 157.36897pt.
-) [76 <./figures/pressione-di-vapore.pdf> <./figures/pressione-di-vapore.pdf
+) [79 <./figures/pressione-di-vapore.pdf> <./figures/pressione-di-vapore.pdf
 
 pdfTeX warning: pdflatex (file ./figures/pressione-di-vapore.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf_tex
-<figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf, id=2215, page=1, 434.91745pt x 100.11699pt>
+<figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf, id=2242, page=1, 434.91745pt x 100.11699pt>
 File: figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf Graphic file (type pdf)
 <use figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf, page 1>
 Package pdftex.def Info: figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 111.34808pt.
-<figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf, id=2216, page=2, 434.91745pt x 100.11699pt>
+<figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf, id=2243, page=2, 434.91745pt x 100.11699pt>
 File: figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf Graphic file (type pdf)
 <use figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf, page 2>
 Package pdftex.def Info: figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf , page2 used on input line 60.
 (pdftex.def)             Requested size: 483.69687pt x 111.34808pt.
-<figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf, id=2217, page=3, 434.91745pt x 100.11699pt>
+<figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf, id=2244, page=3, 434.91745pt x 100.11699pt>
 File: figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf Graphic file (type pdf)
 <use figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf, page 3>
 Package pdftex.def Info: figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf , page3 used on input line 62.
 (pdftex.def)             Requested size: 483.69687pt x 111.34808pt.
-<figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf, id=2218, page=4, 434.91745pt x 100.11699pt>
+<figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf, id=2245, page=4, 434.91745pt x 100.11699pt>
 File: figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf Graphic file (type pdf)
 <use figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf, page 4>
 Package pdftex.def Info: figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf , page4 used on input line 64.
 (pdftex.def)             Requested size: 483.69687pt x 111.34808pt.
-) [77] (./figures/calore-specifico-al-variare-della-temperatura-per-un-gas-di-bosoni.pdf_tex
-<figures/calore-specifico-al-variare-della-temperatura-per-un-gas-di-bosoni.pdf, id=2233, page=1, 500.3673pt x 138.86414pt>
+) [80] (./figures/calore-specifico-al-variare-della-temperatura-per-un-gas-di-bosoni.pdf_tex
+<figures/calore-specifico-al-variare-della-temperatura-per-un-gas-di-bosoni.pdf, id=2260, page=1, 500.3673pt x 138.86414pt>
 File: figures/calore-specifico-al-variare-della-temperatura-per-un-gas-di-bosoni.pdf Graphic file (type pdf)
 <use figures/calore-specifico-al-variare-della-temperatura-per-un-gas-di-bosoni.pdf, page 1>
 Package pdftex.def Info: figures/calore-specifico-al-variare-della-temperatura-per-un-gas-di-bosoni.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 134.24248pt.
-<figures/calore-specifico-al-variare-della-temperatura-per-un-gas-di-bosoni.pdf, id=2234, page=2, 500.3673pt x 138.86414pt>
+<figures/calore-specifico-al-variare-della-temperatura-per-un-gas-di-bosoni.pdf, id=2261, page=2, 500.3673pt x 138.86414pt>
 File: figures/calore-specifico-al-variare-della-temperatura-per-un-gas-di-bosoni.pdf Graphic file (type pdf)
 <use figures/calore-specifico-al-variare-della-temperatura-per-un-gas-di-bosoni.pdf, page 2>
 Package pdftex.def Info: figures/calore-specifico-al-variare-della-temperatura-per-un-gas-di-bosoni.pdf , page2 used on input line 59.
 (pdftex.def)             Requested size: 483.69687pt x 134.24248pt.
-<figures/calore-specifico-al-variare-della-temperatura-per-un-gas-di-bosoni.pdf, id=2235, page=3, 500.3673pt x 138.86414pt>
+<figures/calore-specifico-al-variare-della-temperatura-per-un-gas-di-bosoni.pdf, id=2262, page=3, 500.3673pt x 138.86414pt>
 File: figures/calore-specifico-al-variare-della-temperatura-per-un-gas-di-bosoni.pdf Graphic file (type pdf)
 <use figures/calore-specifico-al-variare-della-temperatura-per-un-gas-di-bosoni.pdf, page 3>
 Package pdftex.def Info: figures/calore-specifico-al-variare-della-temperatura-per-un-gas-di-bosoni.pdf , page3 used on input line 61.
@@ -1660,7 +1712,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--152
 
  []
 
-[78 <./figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf> <./figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf
+[81 <./figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf> <./figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf
 
 pdfTeX warning: pdflatex (file ./figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/particelle-nel-fondamentale-e-particelle-negli-stati-eccitati-in-funzione-della-temperatura.pdf
@@ -1679,61 +1731,61 @@ pdfTeX warning: pdflatex (file ./figures/calore-specifico-al-variare-della-tempe
 
 pdfTeX warning: pdflatex (file ./figures/calore-specifico-al-variare-della-temperatura-per-un-gas-di-bosoni.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./figures/andamento-pt-per-un-gas-di-bosoni.pdf_tex
-<figures/andamento-pt-per-un-gas-di-bosoni.pdf, id=2256, page=1, 444.92526pt x 103.58609pt>
+<figures/andamento-pt-per-un-gas-di-bosoni.pdf, id=2282, page=1, 444.92526pt x 103.58609pt>
 File: figures/andamento-pt-per-un-gas-di-bosoni.pdf Graphic file (type pdf)
 <use figures/andamento-pt-per-un-gas-di-bosoni.pdf, page 1>
 Package pdftex.def Info: figures/andamento-pt-per-un-gas-di-bosoni.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 112.61575pt.
-) [79 <./figures/andamento-pt-per-un-gas-di-bosoni.pdf>]
+) [82 <./figures/andamento-pt-per-un-gas-di-bosoni.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 216.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 218.
- [80]) (./lezioni/lez_12.tex [81] (./figures/distribuzione-di-plank.pdf_tex
-<figures/distribuzione-di-plank.pdf, id=2301, page=1, 563.1021pt x 164.77727pt>
+ [83]) (./lezioni/lez_12.tex [84] (./figures/distribuzione-di-plank.pdf_tex
+<figures/distribuzione-di-plank.pdf, id=2329, page=1, 563.1021pt x 164.77727pt>
 File: figures/distribuzione-di-plank.pdf Graphic file (type pdf)
 <use figures/distribuzione-di-plank.pdf, page 1>
 Package pdftex.def Info: figures/distribuzione-di-plank.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 141.54225pt.
-<figures/distribuzione-di-plank.pdf, id=2302, page=2, 563.1021pt x 164.77727pt>
+<figures/distribuzione-di-plank.pdf, id=2330, page=2, 563.1021pt x 164.77727pt>
 File: figures/distribuzione-di-plank.pdf Graphic file (type pdf)
 <use figures/distribuzione-di-plank.pdf, page 2>
 Package pdftex.def Info: figures/distribuzione-di-plank.pdf , page2 used on input line 60.
 (pdftex.def)             Requested size: 483.69687pt x 141.54225pt.
-) [82] [83 <./figures/distribuzione-di-plank.pdf> <./figures/distribuzione-di-plank.pdf
+) [85] [86 <./figures/distribuzione-di-plank.pdf> <./figures/distribuzione-di-plank.pdf
 
 pdfTeX warning: pdflatex (file ./figures/distribuzione-di-plank.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [84] (./figures/catena-di-atomi-in-una-dimensione.pdf_tex
-<figures/catena-di-atomi-in-una-dimensione.pdf, id=2352, page=1, 507.76312pt x 68.365pt>
+>] [87] (./figures/catena-di-atomi-in-una-dimensione.pdf_tex
+<figures/catena-di-atomi-in-una-dimensione.pdf, id=2378, page=1, 507.76312pt x 68.365pt>
 File: figures/catena-di-atomi-in-una-dimensione.pdf Graphic file (type pdf)
 <use figures/catena-di-atomi-in-una-dimensione.pdf, page 1>
 Package pdftex.def Info: figures/catena-di-atomi-in-una-dimensione.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 65.1258pt.
-) [85] (./figures/perturbazione-meno-energetica-per-una-catena-di-atomi.pdf_tex
-<figures/perturbazione-meno-energetica-per-una-catena-di-atomi.pdf, id=2368, page=1, 567.02238pt x 170.9715pt>
+) [88] (./figures/perturbazione-meno-energetica-per-una-catena-di-atomi.pdf_tex
+<figures/perturbazione-meno-energetica-per-una-catena-di-atomi.pdf, id=2394, page=1, 567.02238pt x 170.9715pt>
 File: figures/perturbazione-meno-energetica-per-una-catena-di-atomi.pdf Graphic file (type pdf)
 <use figures/perturbazione-meno-energetica-per-una-catena-di-atomi.pdf, page 1>
 Package pdftex.def Info: figures/perturbazione-meno-energetica-per-una-catena-di-atomi.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 145.8508pt.
-<figures/perturbazione-meno-energetica-per-una-catena-di-atomi.pdf, id=2369, page=2, 567.02238pt x 170.9715pt>
+<figures/perturbazione-meno-energetica-per-una-catena-di-atomi.pdf, id=2395, page=2, 567.02238pt x 170.9715pt>
 File: figures/perturbazione-meno-energetica-per-una-catena-di-atomi.pdf Graphic file (type pdf)
 <use figures/perturbazione-meno-energetica-per-una-catena-di-atomi.pdf, page 2>
 Package pdftex.def Info: figures/perturbazione-meno-energetica-per-una-catena-di-atomi.pdf , page2 used on input line 59.
 (pdftex.def)             Requested size: 483.69687pt x 145.8508pt.
 ) (./figures/perturbazione-più-energetica-per-una-catena-di-atomi.pdf_tex
-<figures/perturbazione-più-energetica-per-una-catena-di-atomi.pdf, id=2370, page=1, 584.21614pt x 170.71414pt>
+<figures/perturbazione-più-energetica-per-una-catena-di-atomi.pdf, id=2396, page=1, 584.21614pt x 170.71414pt>
 File: figures/perturbazione-più-energetica-per-una-catena-di-atomi.pdf Graphic file (type pdf)
 <use figures/perturbazione-più-energetica-per-una-catena-di-atomi.pdf, page 1>
 Package pdftex.def Info: figures/perturbazione-più-energetica-per-una-catena-di-atomi.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 141.34624pt.
-<figures/perturbazione-più-energetica-per-una-catena-di-atomi.pdf, id=2371, page=2, 584.21614pt x 170.71414pt>
+<figures/perturbazione-più-energetica-per-una-catena-di-atomi.pdf, id=2397, page=2, 584.21614pt x 170.71414pt>
 File: figures/perturbazione-più-energetica-per-una-catena-di-atomi.pdf Graphic file (type pdf)
 <use figures/perturbazione-più-energetica-per-una-catena-di-atomi.pdf, page 2>
 Package pdftex.def Info: figures/perturbazione-più-energetica-per-una-catena-di-atomi.pdf , page2 used on input line 59.
 (pdftex.def)             Requested size: 483.69687pt x 141.34624pt.
-) [86 <./figures/catena-di-atomi-in-una-dimensione.pdf> <./figures/perturbazione-meno-energetica-per-una-catena-di-atomi.pdf
+) [89 <./figures/catena-di-atomi-in-una-dimensione.pdf> <./figures/perturbazione-meno-energetica-per-una-catena-di-atomi.pdf
 
 pdfTeX warning: pdflatex (file ./figures/perturbazione-meno-energetica-per-una-catena-di-atomi.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/perturbazione-meno-energetica-per-una-catena-di-atomi.pdf
@@ -1750,7 +1802,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--240
 
  []
 
-) (./lezioni/lez_13.tex [87]
+) (./lezioni/lez_13.tex [90]
 Underfull \hbox (badness 10000) in paragraph at lines 15--19
 
  []
@@ -1761,18 +1813,18 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 62.
-[88] (./figures/calore-specifico-in-un-solido-al-variare-della-temperatura.pdf_tex
-<figures/calore-specifico-in-un-solido-al-variare-della-temperatura.pdf, id=2423, page=1, 648.97522pt x 171.7747pt>
+[91] (./figures/calore-specifico-in-un-solido-al-variare-della-temperatura.pdf_tex
+<figures/calore-specifico-in-un-solido-al-variare-della-temperatura.pdf, id=2451, page=1, 648.97522pt x 171.7747pt>
 File: figures/calore-specifico-in-un-solido-al-variare-della-temperatura.pdf Graphic file (type pdf)
 <use figures/calore-specifico-in-un-solido-al-variare-della-temperatura.pdf, page 1>
 Package pdftex.def Info: figures/calore-specifico-in-un-solido-al-variare-della-temperatura.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 128.02866pt.
-<figures/calore-specifico-in-un-solido-al-variare-della-temperatura.pdf, id=2424, page=2, 648.97522pt x 171.7747pt>
+<figures/calore-specifico-in-un-solido-al-variare-della-temperatura.pdf, id=2452, page=2, 648.97522pt x 171.7747pt>
 File: figures/calore-specifico-in-un-solido-al-variare-della-temperatura.pdf Graphic file (type pdf)
 <use figures/calore-specifico-in-un-solido-al-variare-della-temperatura.pdf, page 2>
 Package pdftex.def Info: figures/calore-specifico-in-un-solido-al-variare-della-temperatura.pdf , page2 used on input line 61.
 (pdftex.def)             Requested size: 483.69687pt x 128.02866pt.
-) [89 <./figures/calore-specifico-in-un-solido-al-variare-della-temperatura.pdf> <./figures/calore-specifico-in-un-solido-al-variare-della-temperatura.pdf
+) [92 <./figures/calore-specifico-in-un-solido-al-variare-della-temperatura.pdf> <./figures/calore-specifico-in-un-solido-al-variare-della-temperatura.pdf
 
 pdfTeX warning: pdflatex (file ./figures/calore-specifico-in-un-solido-al-variare-della-temperatura.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
@@ -1782,31 +1834,118 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 168.
- [90]
+ [93]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 252.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 261.
- [91] [92]
+ [94] [95]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 395.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 401.
-) [93]
+) (./domande-esame/FD-BE-applicate.tex [96]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 5.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 6.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 10.
+
+Overfull \hbox (10.90106pt too wide) in paragraph at lines 10--10
+[][] 
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 11.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 14.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 15.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 20.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 21.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 23.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 24.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 26.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 27.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 29.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 30.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 32.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 33.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 37.
+[97
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 38.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 40.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 41.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 43.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 44.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 46.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 47.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 57.
+) [98]
 Capitolo 5.
-(./lezioni/lez_14.tex [94
+(./lezioni/lez_14.tex [99
 
 ] (./figures/sistema-di-emettitori-di-fotoni-con-rilevatore.pdf_tex
-<figures/sistema-di-emettitori-di-fotoni-con-rilevatore.pdf, id=2526, page=1, 547.37415pt x 189.61156pt>
+<figures/sistema-di-emettitori-di-fotoni-con-rilevatore.pdf, id=2579, page=1, 547.37415pt x 189.61156pt>
 File: figures/sistema-di-emettitori-di-fotoni-con-rilevatore.pdf Graphic file (type pdf)
 <use figures/sistema-di-emettitori-di-fotoni-con-rilevatore.pdf, page 1>
 Package pdftex.def Info: figures/sistema-di-emettitori-di-fotoni-con-rilevatore.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 167.56172pt.
-) [95 <./figures/sistema-di-emettitori-di-fotoni-con-rilevatore.pdf>] [96]
+) [100 <./figures/sistema-di-emettitori-di-fotoni-con-rilevatore.pdf>] [101]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 206.
@@ -1814,27 +1953,27 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 208.
  (./figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf_tex
-<figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf, id=2557, page=1, 754.70506pt x 196.13162pt>
+<figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf, id=2608, page=1, 754.70506pt x 196.13162pt>
 File: figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf Graphic file (type pdf)
 <use figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf, page 1>
 Package pdftex.def Info: figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 125.70337pt.
-<figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf, id=2558, page=2, 754.70506pt x 196.13162pt>
+<figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf, id=2609, page=2, 754.70506pt x 196.13162pt>
 File: figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf Graphic file (type pdf)
 <use figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf, page 2>
 Package pdftex.def Info: figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 483.69687pt x 125.70337pt.
-<figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf, id=2559, page=3, 754.70506pt x 196.13162pt>
+<figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf, id=2610, page=3, 754.70506pt x 196.13162pt>
 File: figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf Graphic file (type pdf)
 <use figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf, page 3>
 Package pdftex.def Info: figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf , page3 used on input line 60.
 (pdftex.def)             Requested size: 483.69687pt x 125.70337pt.
-<figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf, id=2560, page=4, 754.70506pt x 196.13162pt>
+<figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf, id=2611, page=4, 754.70506pt x 196.13162pt>
 File: figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf Graphic file (type pdf)
 <use figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf, page 4>
 Package pdftex.def Info: figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf , page4 used on input line 62.
 (pdftex.def)             Requested size: 483.69687pt x 125.70337pt.
-) [97 <./figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf> <./figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf
+) [102 <./figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf> <./figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf
 
 pdfTeX warning: pdflatex (file ./figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/fotoni-da-una-superficie-s-raccolti-a-s.pdf
@@ -1854,28 +1993,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 286--291
  []
 
 (./figures/esperimento-di-young.pdf_tex
-<figures/esperimento-di-young.pdf, id=2578, page=1, 591.06343pt x 191.97pt>
+<figures/esperimento-di-young.pdf, id=2630, page=1, 591.06343pt x 191.97pt>
 File: figures/esperimento-di-young.pdf Graphic file (type pdf)
 <use figures/esperimento-di-young.pdf, page 1>
 Package pdftex.def Info: figures/esperimento-di-young.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 157.10591pt.
-<figures/esperimento-di-young.pdf, id=2579, page=2, 591.06343pt x 191.97pt>
+<figures/esperimento-di-young.pdf, id=2631, page=2, 591.06343pt x 191.97pt>
 File: figures/esperimento-di-young.pdf Graphic file (type pdf)
 <use figures/esperimento-di-young.pdf, page 2>
 Package pdftex.def Info: figures/esperimento-di-young.pdf , page2 used on input line 59.
 (pdftex.def)             Requested size: 483.69687pt x 157.10591pt.
-) [98] (./figures/esperimento-per-raccogliere-la-radiazione-stellare.pdf_tex
-<figures/esperimento-per-raccogliere-la-radiazione-stellare.pdf, id=2593, page=1, 692.39978pt x 217.54123pt>
+) [103] (./figures/esperimento-per-raccogliere-la-radiazione-stellare.pdf_tex
+<figures/esperimento-per-raccogliere-la-radiazione-stellare.pdf, id=2645, page=1, 692.39978pt x 217.54123pt>
 File: figures/esperimento-per-raccogliere-la-radiazione-stellare.pdf Graphic file (type pdf)
 <use figures/esperimento-per-raccogliere-la-radiazione-stellare.pdf, page 1>
 Package pdftex.def Info: figures/esperimento-per-raccogliere-la-radiazione-stellare.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 151.97243pt.
-<figures/esperimento-per-raccogliere-la-radiazione-stellare.pdf, id=2594, page=2, 692.39978pt x 217.54123pt>
+<figures/esperimento-per-raccogliere-la-radiazione-stellare.pdf, id=2646, page=2, 692.39978pt x 217.54123pt>
 File: figures/esperimento-per-raccogliere-la-radiazione-stellare.pdf Graphic file (type pdf)
 <use figures/esperimento-per-raccogliere-la-radiazione-stellare.pdf, page 2>
 Package pdftex.def Info: figures/esperimento-per-raccogliere-la-radiazione-stellare.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 483.69687pt x 151.97243pt.
-) [99 <./figures/esperimento-di-young.pdf> <./figures/esperimento-di-young.pdf
+) [104 <./figures/esperimento-di-young.pdf> <./figures/esperimento-di-young.pdf
 
 pdfTeX warning: pdflatex (file ./figures/esperimento-di-young.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/esperimento-per-raccogliere-la-radiazione-stellare.pdf
@@ -1885,22 +2024,22 @@ pdfTeX warning: pdflatex (file ./figures/esperimento-per-raccogliere-la-radiazio
 
 pdfTeX warning: pdflatex (file ./figures/esperimento-per-raccogliere-la-radiazione-stellare.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./figures/linea-di-trasmissione-di-nyquist.pdf_tex
-<figures/linea-di-trasmissione-di-nyquist.pdf, id=2609, page=1, 524.39426pt x 102.18832pt>
+<figures/linea-di-trasmissione-di-nyquist.pdf, id=2662, page=1, 524.39426pt x 102.18832pt>
 File: figures/linea-di-trasmissione-di-nyquist.pdf Graphic file (type pdf)
 <use figures/linea-di-trasmissione-di-nyquist.pdf, page 1>
 Package pdftex.def Info: figures/linea-di-trasmissione-di-nyquist.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 94.26073pt.
-<figures/linea-di-trasmissione-di-nyquist.pdf, id=2610, page=2, 524.39426pt x 102.18832pt>
+<figures/linea-di-trasmissione-di-nyquist.pdf, id=2663, page=2, 524.39426pt x 102.18832pt>
 File: figures/linea-di-trasmissione-di-nyquist.pdf Graphic file (type pdf)
 <use figures/linea-di-trasmissione-di-nyquist.pdf, page 2>
 Package pdftex.def Info: figures/linea-di-trasmissione-di-nyquist.pdf , page2 used on input line 59.
 (pdftex.def)             Requested size: 483.69687pt x 94.26073pt.
-<figures/linea-di-trasmissione-di-nyquist.pdf, id=2611, page=3, 524.39426pt x 102.18832pt>
+<figures/linea-di-trasmissione-di-nyquist.pdf, id=2664, page=3, 524.39426pt x 102.18832pt>
 File: figures/linea-di-trasmissione-di-nyquist.pdf Graphic file (type pdf)
 <use figures/linea-di-trasmissione-di-nyquist.pdf, page 3>
 Package pdftex.def Info: figures/linea-di-trasmissione-di-nyquist.pdf , page3 used on input line 61.
 (pdftex.def)             Requested size: 483.69687pt x 94.26073pt.
-) [100]) (./lezioni/lez_15.tex [101 <./figures/linea-di-trasmissione-di-nyquist.pdf> <./figures/linea-di-trasmissione-di-nyquist.pdf
+) [105]) (./lezioni/lez_15.tex [106 <./figures/linea-di-trasmissione-di-nyquist.pdf> <./figures/linea-di-trasmissione-di-nyquist.pdf
 
 pdfTeX warning: pdflatex (file ./figures/linea-di-trasmissione-di-nyquist.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/linea-di-trasmissione-di-nyquist.pdf
@@ -1913,14 +2052,14 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 55.
- [102]
+ [107]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 127.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 132.
- [103]
+ [108]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 179.
@@ -1928,49 +2067,49 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 188.
  (./figures/densita-spettrale-per-una-correlazione-esponenziale.pdf_tex
-<figures/densita-spettrale-per-una-correlazione-esponenziale.pdf, id=2672, page=1, 584.79373pt x 179.82545pt>
+<figures/densita-spettrale-per-una-correlazione-esponenziale.pdf, id=2724, page=1, 584.79373pt x 179.82545pt>
 File: figures/densita-spettrale-per-una-correlazione-esponenziale.pdf Graphic file (type pdf)
 <use figures/densita-spettrale-per-una-correlazione-esponenziale.pdf, page 1>
 Package pdftex.def Info: figures/densita-spettrale-per-una-correlazione-esponenziale.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 148.73921pt.
-<figures/densita-spettrale-per-una-correlazione-esponenziale.pdf, id=2673, page=2, 584.79373pt x 179.82545pt>
+<figures/densita-spettrale-per-una-correlazione-esponenziale.pdf, id=2725, page=2, 584.79373pt x 179.82545pt>
 File: figures/densita-spettrale-per-una-correlazione-esponenziale.pdf Graphic file (type pdf)
 <use figures/densita-spettrale-per-una-correlazione-esponenziale.pdf, page 2>
 Package pdftex.def Info: figures/densita-spettrale-per-una-correlazione-esponenziale.pdf , page2 used on input line 60.
 (pdftex.def)             Requested size: 483.69687pt x 148.73921pt.
-) [104] [105 <./figures/densita-spettrale-per-una-correlazione-esponenziale.pdf> <./figures/densita-spettrale-per-una-correlazione-esponenziale.pdf
+) [109] [110 <./figures/densita-spettrale-per-una-correlazione-esponenziale.pdf> <./figures/densita-spettrale-per-una-correlazione-esponenziale.pdf
 
 pdfTeX warning: pdflatex (file ./figures/densita-spettrale-per-una-correlazione-esponenziale.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./figures/circuito-alternativo-per-dimostrare-nyquist.pdf_tex
-<figures/circuito-alternativo-per-dimostrare-nyquist.pdf, id=2700, page=1, 702.31133pt x 123.30464pt>
+<figures/circuito-alternativo-per-dimostrare-nyquist.pdf, id=2752, page=1, 702.31133pt x 123.30464pt>
 File: figures/circuito-alternativo-per-dimostrare-nyquist.pdf Graphic file (type pdf)
 <use figures/circuito-alternativo-per-dimostrare-nyquist.pdf, page 1>
 Package pdftex.def Info: figures/circuito-alternativo-per-dimostrare-nyquist.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 84.92412pt.
-<figures/circuito-alternativo-per-dimostrare-nyquist.pdf, id=2701, page=2, 702.31133pt x 123.30464pt>
+<figures/circuito-alternativo-per-dimostrare-nyquist.pdf, id=2753, page=2, 702.31133pt x 123.30464pt>
 File: figures/circuito-alternativo-per-dimostrare-nyquist.pdf Graphic file (type pdf)
 <use figures/circuito-alternativo-per-dimostrare-nyquist.pdf, page 2>
 Package pdftex.def Info: figures/circuito-alternativo-per-dimostrare-nyquist.pdf , page2 used on input line 59.
 (pdftex.def)             Requested size: 483.69687pt x 84.92412pt.
-<figures/circuito-alternativo-per-dimostrare-nyquist.pdf, id=2702, page=3, 702.31133pt x 123.30464pt>
+<figures/circuito-alternativo-per-dimostrare-nyquist.pdf, id=2754, page=3, 702.31133pt x 123.30464pt>
 File: figures/circuito-alternativo-per-dimostrare-nyquist.pdf Graphic file (type pdf)
 <use figures/circuito-alternativo-per-dimostrare-nyquist.pdf, page 3>
 Package pdftex.def Info: figures/circuito-alternativo-per-dimostrare-nyquist.pdf , page3 used on input line 61.
 (pdftex.def)             Requested size: 483.69687pt x 84.92412pt.
-) [106]
+) [111]
 Underfull \hbox (badness 10000) in paragraph at lines 359--362
 
  []
 
-[107 <./figures/circuito-alternativo-per-dimostrare-nyquist.pdf> <./figures/circuito-alternativo-per-dimostrare-nyquist.pdf
+[112 <./figures/circuito-alternativo-per-dimostrare-nyquist.pdf> <./figures/circuito-alternativo-per-dimostrare-nyquist.pdf
 
 pdfTeX warning: pdflatex (file ./figures/circuito-alternativo-per-dimostrare-nyquist.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/circuito-alternativo-per-dimostrare-nyquist.pdf
 
 pdfTeX warning: pdflatex (file ./figures/circuito-alternativo-per-dimostrare-nyquist.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]) [108]
+>]) [113]
 Capitolo 6.
-(./lezioni/lez_16.tex [109
+(./lezioni/lez_16.tex [114
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
@@ -1979,14 +2118,14 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 102.
- [110] [111] (./figures/esempio-di-reticolo.pdf_tex
-<figures/esempio-di-reticolo.pdf, id=2789, page=1, 532.26276pt x 121.53117pt>
+ [115] [116] (./figures/esempio-di-reticolo.pdf_tex
+<figures/esempio-di-reticolo.pdf, id=2841, page=1, 532.26276pt x 121.53117pt>
 File: figures/esempio-di-reticolo.pdf Graphic file (type pdf)
 <use figures/esempio-di-reticolo.pdf, page 1>
 Package pdftex.def Info: figures/esempio-di-reticolo.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 110.44331pt.
 ) (./figures/reticolo-alternativo.pdf_tex
-<figures/reticolo-alternativo.pdf, id=2792, page=1, 461.0356pt x 123.41145pt>
+<figures/reticolo-alternativo.pdf, id=2844, page=1, 461.0356pt x 123.41145pt>
 File: figures/reticolo-alternativo.pdf Graphic file (type pdf)
 <use figures/reticolo-alternativo.pdf, page 1>
 Package pdftex.def Info: figures/reticolo-alternativo.pdf , page1 used on input line 56.
@@ -1999,59 +2138,59 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 245.
 Package mdframed Info: Not enough space on this page on input line 245.
- [112 <./figures/esempio-di-reticolo.pdf> <./figures/reticolo-alternativo.pdf
+ [117 <./figures/esempio-di-reticolo.pdf> <./figures/reticolo-alternativo.pdf
 
 pdfTeX warning: pdflatex (file ./figures/reticolo-alternativo.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 Package mdframed Info: Not enough space on this page on input line 245.
  (./figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf_tex
-<figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf, id=2807, page=1, 779.99652pt x 167.97874pt>
+<figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf, id=2859, page=1, 779.99652pt x 167.97874pt>
 File: figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf Graphic file (type pdf)
 <use figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf, page 1>
 Package pdftex.def Info: figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 104.17137pt.
-<figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf, id=2808, page=2, 779.99652pt x 167.97874pt>
+<figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf, id=2860, page=2, 779.99652pt x 167.97874pt>
 File: figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf Graphic file (type pdf)
 <use figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf, page 2>
 Package pdftex.def Info: figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 483.69687pt x 104.17137pt.
-<figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf, id=2809, page=3, 779.99652pt x 167.97874pt>
+<figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf, id=2861, page=3, 779.99652pt x 167.97874pt>
 File: figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf Graphic file (type pdf)
 <use figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf, page 3>
 Package pdftex.def Info: figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf , page3 used on input line 60.
 (pdftex.def)             Requested size: 483.69687pt x 104.17137pt.
-<figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf, id=2810, page=4, 779.99652pt x 167.97874pt>
+<figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf, id=2862, page=4, 779.99652pt x 167.97874pt>
 File: figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf Graphic file (type pdf)
 <use figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf, page 4>
 Package pdftex.def Info: figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf , page4 used on input line 65.
 (pdftex.def)             Requested size: 483.69687pt x 104.17137pt.
-<figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf, id=2811, page=5, 779.99652pt x 167.97874pt>
+<figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf, id=2863, page=5, 779.99652pt x 167.97874pt>
 File: figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf Graphic file (type pdf)
 <use figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf, page 5>
 Package pdftex.def Info: figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf , page5 used on input line 68.
 (pdftex.def)             Requested size: 483.69687pt x 104.17137pt.
 ) (./figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf_tex
-<figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf, id=2813, page=1, 583.29184pt x 87.30396pt>
+<figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf, id=2865, page=1, 583.29184pt x 87.30396pt>
 File: figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf Graphic file (type pdf)
 <use figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf, page 1>
 Package pdftex.def Info: figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 72.39697pt.
-<figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf, id=2814, page=2, 583.29184pt x 87.30396pt>
+<figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf, id=2866, page=2, 583.29184pt x 87.30396pt>
 File: figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf Graphic file (type pdf)
 <use figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf, page 2>
 Package pdftex.def Info: figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 483.69687pt x 72.39697pt.
-<figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf, id=2815, page=3, 583.29184pt x 87.30396pt>
+<figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf, id=2867, page=3, 583.29184pt x 87.30396pt>
 File: figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf Graphic file (type pdf)
 <use figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf, page 3>
 Package pdftex.def Info: figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf , page3 used on input line 61.
 (pdftex.def)             Requested size: 483.69687pt x 72.39697pt.
-<figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf, id=2816, page=4, 583.29184pt x 87.30396pt>
+<figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf, id=2868, page=4, 583.29184pt x 87.30396pt>
 File: figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf Graphic file (type pdf)
 <use figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf, page 4>
 Package pdftex.def Info: figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf , page4 used on input line 65.
 (pdftex.def)             Requested size: 483.69687pt x 72.39697pt.
-) [113 <./figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf> <./figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf
+) [118 <./figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf> <./figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf
 
 pdfTeX warning: pdflatex (file ./figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf
@@ -2064,12 +2203,12 @@ pdfTeX warning: pdflatex (file ./figures/zona-di-brilloiun-per-reticolo-quadrato
 
 pdfTeX warning: pdflatex (file ./figures/zona-di-brilloiun-per-reticolo-quadrato-bidimensionale.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<figures/X-ray_diffraction_pattern_3clpro.jpg, id=2947, 510.40688pt x 509.65407pt>
+<figures/X-ray_diffraction_pattern_3clpro.jpg, id=2999, 510.40688pt x 509.65407pt>
 File: figures/X-ray_diffraction_pattern_3clpro.jpg Graphic file (type jpg)
 <use figures/X-ray_diffraction_pattern_3clpro.jpg>
 Package pdftex.def Info: figures/X-ray_diffraction_pattern_3clpro.jpg  used on input line 356.
 (pdftex.def)             Requested size: 145.11053pt x 144.89519pt.
- [114 <./figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf> <./figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf
+ [119 <./figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf> <./figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf
 
 pdfTeX warning: pdflatex (file ./figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/esperimento-per-l'ossevazione-della-struttura-periodica-dei-cristalli.pdf
@@ -2090,75 +2229,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 407--409
 
  []
 
-[115 <./figures/X-ray_diffraction_pattern_3clpro.jpg>]
+[120 <./figures/X-ray_diffraction_pattern_3clpro.jpg>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 457.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 463.
- [116] (./figures/vettori-k-nello-spazio-del-reticolo-reciproco-k.pdf_tex
-<figures/vettori-k-nello-spazio-del-reticolo-reciproco-k.pdf, id=3005, page=1, 629.53761pt x 167.5792pt>
+ [121] (./figures/vettori-k-nello-spazio-del-reticolo-reciproco-k.pdf_tex
+<figures/vettori-k-nello-spazio-del-reticolo-reciproco-k.pdf, id=3057, page=1, 629.53761pt x 167.5792pt>
 File: figures/vettori-k-nello-spazio-del-reticolo-reciproco-k.pdf Graphic file (type pdf)
 <use figures/vettori-k-nello-spazio-del-reticolo-reciproco-k.pdf, page 1>
 Package pdftex.def Info: figures/vettori-k-nello-spazio-del-reticolo-reciproco-k.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 128.75764pt.
-<figures/vettori-k-nello-spazio-del-reticolo-reciproco-k.pdf, id=3006, page=2, 629.53761pt x 167.5792pt>
+<figures/vettori-k-nello-spazio-del-reticolo-reciproco-k.pdf, id=3058, page=2, 629.53761pt x 167.5792pt>
 File: figures/vettori-k-nello-spazio-del-reticolo-reciproco-k.pdf Graphic file (type pdf)
 <use figures/vettori-k-nello-spazio-del-reticolo-reciproco-k.pdf, page 2>
 Package pdftex.def Info: figures/vettori-k-nello-spazio-del-reticolo-reciproco-k.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 483.69687pt x 128.75764pt.
-) [117 <./figures/vettori-k-nello-spazio-del-reticolo-reciproco-k.pdf> <./figures/vettori-k-nello-spazio-del-reticolo-reciproco-k.pdf
+) [122 <./figures/vettori-k-nello-spazio-del-reticolo-reciproco-k.pdf> <./figures/vettori-k-nello-spazio-del-reticolo-reciproco-k.pdf
 
 pdfTeX warning: pdflatex (file ./figures/vettori-k-nello-spazio-del-reticolo-reciproco-k.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf_tex
-<figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf, id=3089, page=1, 593.43546pt x 232.23961pt>
+<figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf, id=3142, page=1, 593.43546pt x 232.23961pt>
 File: figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf Graphic file (type pdf)
 <use figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf, page 1>
 Package pdftex.def Info: figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 189.30017pt.
-<figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf, id=3090, page=2, 593.43546pt x 232.23961pt>
+<figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf, id=3143, page=2, 593.43546pt x 232.23961pt>
 File: figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf Graphic file (type pdf)
 <use figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf, page 2>
 Package pdftex.def Info: figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 483.69687pt x 189.30017pt.
-<figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf, id=3091, page=3, 593.43546pt x 232.23961pt>
+<figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf, id=3144, page=3, 593.43546pt x 232.23961pt>
 File: figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf Graphic file (type pdf)
 <use figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf, page 3>
 Package pdftex.def Info: figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf , page3 used on input line 64.
 (pdftex.def)             Requested size: 483.69687pt x 189.30017pt.
-<figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf, id=3092, page=4, 593.43546pt x 232.23961pt>
+<figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf, id=3145, page=4, 593.43546pt x 232.23961pt>
 File: figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf Graphic file (type pdf)
 <use figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf, page 4>
 Package pdftex.def Info: figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf , page4 used on input line 66.
 (pdftex.def)             Requested size: 483.69687pt x 189.30017pt.
-<figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf, id=3093, page=5, 593.43546pt x 232.23961pt>
+<figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf, id=3146, page=5, 593.43546pt x 232.23961pt>
 File: figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf Graphic file (type pdf)
 <use figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf, page 5>
 Package pdftex.def Info: figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf , page5 used on input line 68.
 (pdftex.def)             Requested size: 483.69687pt x 189.30017pt.
 ) (./figures/degenerazioni-nella-struttura-a-bande.pdf_tex
-<figures/degenerazioni-nella-struttura-a-bande.pdf, id=3096, page=1, 498.36371pt x 182.77226pt>
+<figures/degenerazioni-nella-struttura-a-bande.pdf, id=3149, page=1, 498.36371pt x 182.77226pt>
 File: figures/degenerazioni-nella-struttura-a-bande.pdf Graphic file (type pdf)
 <use figures/degenerazioni-nella-struttura-a-bande.pdf, page 1>
 Package pdftex.def Info: figures/degenerazioni-nella-struttura-a-bande.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 177.39763pt.
-<figures/degenerazioni-nella-struttura-a-bande.pdf, id=3097, page=2, 498.36371pt x 182.77226pt>
+<figures/degenerazioni-nella-struttura-a-bande.pdf, id=3150, page=2, 498.36371pt x 182.77226pt>
 File: figures/degenerazioni-nella-struttura-a-bande.pdf Graphic file (type pdf)
 <use figures/degenerazioni-nella-struttura-a-bande.pdf, page 2>
 Package pdftex.def Info: figures/degenerazioni-nella-struttura-a-bande.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 483.69687pt x 177.39763pt.
-<figures/degenerazioni-nella-struttura-a-bande.pdf, id=3098, page=3, 498.36371pt x 182.77226pt>
+<figures/degenerazioni-nella-struttura-a-bande.pdf, id=3151, page=3, 498.36371pt x 182.77226pt>
 File: figures/degenerazioni-nella-struttura-a-bande.pdf Graphic file (type pdf)
 <use figures/degenerazioni-nella-struttura-a-bande.pdf, page 3>
 Package pdftex.def Info: figures/degenerazioni-nella-struttura-a-bande.pdf , page3 used on input line 61.
 (pdftex.def)             Requested size: 483.69687pt x 177.39763pt.
-<figures/degenerazioni-nella-struttura-a-bande.pdf, id=3099, page=4, 498.36371pt x 182.77226pt>
+<figures/degenerazioni-nella-struttura-a-bande.pdf, id=3152, page=4, 498.36371pt x 182.77226pt>
 File: figures/degenerazioni-nella-struttura-a-bande.pdf Graphic file (type pdf)
 <use figures/degenerazioni-nella-struttura-a-bande.pdf, page 4>
 Package pdftex.def Info: figures/degenerazioni-nella-struttura-a-bande.pdf , page4 used on input line 63.
 (pdftex.def)             Requested size: 483.69687pt x 177.39763pt.
-) [118 <./figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf> <./figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf
+) [123 <./figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf> <./figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf
 
 pdfTeX warning: pdflatex (file ./figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/livelli-energetici-di-una-particella-libera-in-un-potenziale-periodico.pdf
@@ -2176,27 +2315,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--3
  []
 
 (./figures/struttura-a-bande-parabole-traslate.pdf_tex
-<figures/struttura-a-bande-parabole-traslate.pdf, id=3115, page=1, 600.89165pt x 237.43555pt>
+<figures/struttura-a-bande-parabole-traslate.pdf, id=3168, page=1, 600.89165pt x 237.43555pt>
 File: figures/struttura-a-bande-parabole-traslate.pdf Graphic file (type pdf)
 <use figures/struttura-a-bande-parabole-traslate.pdf, page 1>
 Package pdftex.def Info: figures/struttura-a-bande-parabole-traslate.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 191.12978pt.
-<figures/struttura-a-bande-parabole-traslate.pdf, id=3116, page=2, 600.89165pt x 237.43555pt>
+<figures/struttura-a-bande-parabole-traslate.pdf, id=3169, page=2, 600.89165pt x 237.43555pt>
 File: figures/struttura-a-bande-parabole-traslate.pdf Graphic file (type pdf)
 <use figures/struttura-a-bande-parabole-traslate.pdf, page 2>
 Package pdftex.def Info: figures/struttura-a-bande-parabole-traslate.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 483.69687pt x 191.12978pt.
-<figures/struttura-a-bande-parabole-traslate.pdf, id=3117, page=3, 600.89165pt x 237.43555pt>
+<figures/struttura-a-bande-parabole-traslate.pdf, id=3170, page=3, 600.89165pt x 237.43555pt>
 File: figures/struttura-a-bande-parabole-traslate.pdf Graphic file (type pdf)
 <use figures/struttura-a-bande-parabole-traslate.pdf, page 3>
 Package pdftex.def Info: figures/struttura-a-bande-parabole-traslate.pdf , page3 used on input line 61.
 (pdftex.def)             Requested size: 483.69687pt x 191.12978pt.
-<figures/struttura-a-bande-parabole-traslate.pdf, id=3118, page=4, 600.89165pt x 237.43555pt>
+<figures/struttura-a-bande-parabole-traslate.pdf, id=3171, page=4, 600.89165pt x 237.43555pt>
 File: figures/struttura-a-bande-parabole-traslate.pdf Graphic file (type pdf)
 <use figures/struttura-a-bande-parabole-traslate.pdf, page 4>
 Package pdftex.def Info: figures/struttura-a-bande-parabole-traslate.pdf , page4 used on input line 64.
 (pdftex.def)             Requested size: 483.69687pt x 191.12978pt.
-) [119 <./figures/degenerazioni-nella-struttura-a-bande.pdf> <./figures/degenerazioni-nella-struttura-a-bande.pdf
+) [124 <./figures/degenerazioni-nella-struttura-a-bande.pdf> <./figures/degenerazioni-nella-struttura-a-bande.pdf
 
 pdfTeX warning: pdflatex (file ./figures/degenerazioni-nella-struttura-a-bande.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/degenerazioni-nella-struttura-a-bande.pdf
@@ -2205,7 +2344,7 @@ pdfTeX warning: pdflatex (file ./figures/degenerazioni-nella-struttura-a-bande.p
 > <./figures/degenerazioni-nella-struttura-a-bande.pdf
 
 pdfTeX warning: pdflatex (file ./figures/degenerazioni-nella-struttura-a-bande.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [120 <./figures/struttura-a-bande-parabole-traslate.pdf> <./figures/struttura-a-bande-parabole-traslate.pdf
+>] [125 <./figures/struttura-a-bande-parabole-traslate.pdf> <./figures/struttura-a-bande-parabole-traslate.pdf
 
 pdfTeX warning: pdflatex (file ./figures/struttura-a-bande-parabole-traslate.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/struttura-a-bande-parabole-traslate.pdf
@@ -2215,42 +2354,42 @@ pdfTeX warning: pdflatex (file ./figures/struttura-a-bande-parabole-traslate.pdf
 
 pdfTeX warning: pdflatex (file ./figures/struttura-a-bande-parabole-traslate.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./figures/effetto-sulle-bande-del-metodo-perturbativo.pdf_tex
-<figures/effetto-sulle-bande-del-metodo-perturbativo.pdf, id=3156, page=1, 1140.0599pt x 305.62436pt>
+<figures/effetto-sulle-bande-del-metodo-perturbativo.pdf, id=3207, page=1, 1140.0599pt x 305.62436pt>
 File: figures/effetto-sulle-bande-del-metodo-perturbativo.pdf Graphic file (type pdf)
 <use figures/effetto-sulle-bande-del-metodo-perturbativo.pdf, page 1>
 Package pdftex.def Info: figures/effetto-sulle-bande-del-metodo-perturbativo.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 129.66711pt.
-<figures/effetto-sulle-bande-del-metodo-perturbativo.pdf, id=3157, page=2, 1140.0599pt x 305.62436pt>
+<figures/effetto-sulle-bande-del-metodo-perturbativo.pdf, id=3208, page=2, 1140.0599pt x 305.62436pt>
 File: figures/effetto-sulle-bande-del-metodo-perturbativo.pdf Graphic file (type pdf)
 <use figures/effetto-sulle-bande-del-metodo-perturbativo.pdf, page 2>
 Package pdftex.def Info: figures/effetto-sulle-bande-del-metodo-perturbativo.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 483.69687pt x 129.66711pt.
-<figures/effetto-sulle-bande-del-metodo-perturbativo.pdf, id=3158, page=3, 1140.0599pt x 305.62436pt>
+<figures/effetto-sulle-bande-del-metodo-perturbativo.pdf, id=3209, page=3, 1140.0599pt x 305.62436pt>
 File: figures/effetto-sulle-bande-del-metodo-perturbativo.pdf Graphic file (type pdf)
 <use figures/effetto-sulle-bande-del-metodo-perturbativo.pdf, page 3>
 Package pdftex.def Info: figures/effetto-sulle-bande-del-metodo-perturbativo.pdf , page3 used on input line 61.
 (pdftex.def)             Requested size: 483.69687pt x 129.66711pt.
-<figures/effetto-sulle-bande-del-metodo-perturbativo.pdf, id=3159, page=4, 1140.0599pt x 305.62436pt>
+<figures/effetto-sulle-bande-del-metodo-perturbativo.pdf, id=3210, page=4, 1140.0599pt x 305.62436pt>
 File: figures/effetto-sulle-bande-del-metodo-perturbativo.pdf Graphic file (type pdf)
 <use figures/effetto-sulle-bande-del-metodo-perturbativo.pdf, page 4>
 Package pdftex.def Info: figures/effetto-sulle-bande-del-metodo-perturbativo.pdf , page4 used on input line 63.
 (pdftex.def)             Requested size: 483.69687pt x 129.66711pt.
-<figures/effetto-sulle-bande-del-metodo-perturbativo.pdf, id=3160, page=5, 1140.0599pt x 305.62436pt>
+<figures/effetto-sulle-bande-del-metodo-perturbativo.pdf, id=3211, page=5, 1140.0599pt x 305.62436pt>
 File: figures/effetto-sulle-bande-del-metodo-perturbativo.pdf Graphic file (type pdf)
 <use figures/effetto-sulle-bande-del-metodo-perturbativo.pdf, page 5>
 Package pdftex.def Info: figures/effetto-sulle-bande-del-metodo-perturbativo.pdf , page5 used on input line 65.
 (pdftex.def)             Requested size: 483.69687pt x 129.66711pt.
-<figures/effetto-sulle-bande-del-metodo-perturbativo.pdf, id=3161, page=6, 1140.0599pt x 305.62436pt>
+<figures/effetto-sulle-bande-del-metodo-perturbativo.pdf, id=3212, page=6, 1140.0599pt x 305.62436pt>
 File: figures/effetto-sulle-bande-del-metodo-perturbativo.pdf Graphic file (type pdf)
 <use figures/effetto-sulle-bande-del-metodo-perturbativo.pdf, page 6>
 Package pdftex.def Info: figures/effetto-sulle-bande-del-metodo-perturbativo.pdf , page6 used on input line 68.
 (pdftex.def)             Requested size: 483.69687pt x 129.66711pt.
-<figures/effetto-sulle-bande-del-metodo-perturbativo.pdf, id=3162, page=7, 1140.0599pt x 305.62436pt>
+<figures/effetto-sulle-bande-del-metodo-perturbativo.pdf, id=3213, page=7, 1140.0599pt x 305.62436pt>
 File: figures/effetto-sulle-bande-del-metodo-perturbativo.pdf Graphic file (type pdf)
 <use figures/effetto-sulle-bande-del-metodo-perturbativo.pdf, page 7>
 Package pdftex.def Info: figures/effetto-sulle-bande-del-metodo-perturbativo.pdf , page7 used on input line 70.
 (pdftex.def)             Requested size: 483.69687pt x 129.66711pt.
-) [121] [122 <./figures/effetto-sulle-bande-del-metodo-perturbativo.pdf> <./figures/effetto-sulle-bande-del-metodo-perturbativo.pdf
+) [126] [127 <./figures/effetto-sulle-bande-del-metodo-perturbativo.pdf> <./figures/effetto-sulle-bande-del-metodo-perturbativo.pdf
 
 pdfTeX warning: pdflatex (file ./figures/effetto-sulle-bande-del-metodo-perturbativo.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/effetto-sulle-bande-del-metodo-perturbativo.pdf
@@ -2269,12 +2408,12 @@ pdfTeX warning: pdflatex (file ./figures/effetto-sulle-bande-del-metodo-perturba
 
 pdfTeX warning: pdflatex (file ./figures/effetto-sulle-bande-del-metodo-perturbativo.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./figures/rottura-degenerazione-dei-livelli-con-il-potenziale.pdf_tex
-<figures/rottura-degenerazione-dei-livelli-con-il-potenziale.pdf, id=3200, page=1, 837.60512pt x 276.43158pt>
+<figures/rottura-degenerazione-dei-livelli-con-il-potenziale.pdf, id=3253, page=1, 837.60512pt x 276.43158pt>
 File: figures/rottura-degenerazione-dei-livelli-con-il-potenziale.pdf Graphic file (type pdf)
 <use figures/rottura-degenerazione-dei-livelli-con-il-potenziale.pdf, page 1>
 Package pdftex.def Info: figures/rottura-degenerazione-dei-livelli-con-il-potenziale.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 159.63023pt.
-<figures/rottura-degenerazione-dei-livelli-con-il-potenziale.pdf, id=3201, page=2, 837.60512pt x 276.43158pt>
+<figures/rottura-degenerazione-dei-livelli-con-il-potenziale.pdf, id=3254, page=2, 837.60512pt x 276.43158pt>
 File: figures/rottura-degenerazione-dei-livelli-con-il-potenziale.pdf Graphic file (type pdf)
 <use figures/rottura-degenerazione-dei-livelli-con-il-potenziale.pdf, page 2>
 Package pdftex.def Info: figures/rottura-degenerazione-dei-livelli-con-il-potenziale.pdf , page2 used on input line 58.
@@ -2285,51 +2424,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 284--287
  []
 
 (./figures/solido-isolante-e-potenziale-chimico.pdf_tex
-<figures/solido-isolante-e-potenziale-chimico.pdf, id=3204, page=1, 675.23256pt x 275.95369pt>
+<figures/solido-isolante-e-potenziale-chimico.pdf, id=3257, page=1, 675.23256pt x 275.95369pt>
 File: figures/solido-isolante-e-potenziale-chimico.pdf Graphic file (type pdf)
 <use figures/solido-isolante-e-potenziale-chimico.pdf, page 1>
 Package pdftex.def Info: figures/solido-isolante-e-potenziale-chimico.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 197.68013pt.
-<figures/solido-isolante-e-potenziale-chimico.pdf, id=3205, page=2, 675.23256pt x 275.95369pt>
+<figures/solido-isolante-e-potenziale-chimico.pdf, id=3258, page=2, 675.23256pt x 275.95369pt>
 File: figures/solido-isolante-e-potenziale-chimico.pdf Graphic file (type pdf)
 <use figures/solido-isolante-e-potenziale-chimico.pdf, page 2>
 Package pdftex.def Info: figures/solido-isolante-e-potenziale-chimico.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 483.69687pt x 197.68013pt.
-<figures/solido-isolante-e-potenziale-chimico.pdf, id=3206, page=3, 675.23256pt x 275.95369pt>
+<figures/solido-isolante-e-potenziale-chimico.pdf, id=3259, page=3, 675.23256pt x 275.95369pt>
 File: figures/solido-isolante-e-potenziale-chimico.pdf Graphic file (type pdf)
 <use figures/solido-isolante-e-potenziale-chimico.pdf, page 3>
 Package pdftex.def Info: figures/solido-isolante-e-potenziale-chimico.pdf , page3 used on input line 61.
 (pdftex.def)             Requested size: 483.69687pt x 197.68013pt.
-<figures/solido-isolante-e-potenziale-chimico.pdf, id=3207, page=4, 675.23256pt x 275.95369pt>
+<figures/solido-isolante-e-potenziale-chimico.pdf, id=3260, page=4, 675.23256pt x 275.95369pt>
 File: figures/solido-isolante-e-potenziale-chimico.pdf Graphic file (type pdf)
 <use figures/solido-isolante-e-potenziale-chimico.pdf, page 4>
 Package pdftex.def Info: figures/solido-isolante-e-potenziale-chimico.pdf , page4 used on input line 63.
 (pdftex.def)             Requested size: 483.69687pt x 197.68013pt.
-) [123 <./figures/rottura-degenerazione-dei-livelli-con-il-potenziale.pdf> <./figures/rottura-degenerazione-dei-livelli-con-il-potenziale.pdf
+) [128 <./figures/rottura-degenerazione-dei-livelli-con-il-potenziale.pdf> <./figures/rottura-degenerazione-dei-livelli-con-il-potenziale.pdf
 
 pdfTeX warning: pdflatex (file ./figures/rottura-degenerazione-dei-livelli-con-il-potenziale.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./figures/solido-conduttore-e-potenziale-chimico.pdf_tex
-<figures/solido-conduttore-e-potenziale-chimico.pdf, id=3220, page=1, 675.23256pt x 275.95369pt>
+<figures/solido-conduttore-e-potenziale-chimico.pdf, id=3273, page=1, 675.23256pt x 275.95369pt>
 File: figures/solido-conduttore-e-potenziale-chimico.pdf Graphic file (type pdf)
 <use figures/solido-conduttore-e-potenziale-chimico.pdf, page 1>
 Package pdftex.def Info: figures/solido-conduttore-e-potenziale-chimico.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 197.68013pt.
-<figures/solido-conduttore-e-potenziale-chimico.pdf, id=3221, page=2, 675.23256pt x 275.95369pt>
+<figures/solido-conduttore-e-potenziale-chimico.pdf, id=3274, page=2, 675.23256pt x 275.95369pt>
 File: figures/solido-conduttore-e-potenziale-chimico.pdf Graphic file (type pdf)
 <use figures/solido-conduttore-e-potenziale-chimico.pdf, page 2>
 Package pdftex.def Info: figures/solido-conduttore-e-potenziale-chimico.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 483.69687pt x 197.68013pt.
-<figures/solido-conduttore-e-potenziale-chimico.pdf, id=3222, page=3, 675.23256pt x 275.95369pt>
+<figures/solido-conduttore-e-potenziale-chimico.pdf, id=3275, page=3, 675.23256pt x 275.95369pt>
 File: figures/solido-conduttore-e-potenziale-chimico.pdf Graphic file (type pdf)
 <use figures/solido-conduttore-e-potenziale-chimico.pdf, page 3>
 Package pdftex.def Info: figures/solido-conduttore-e-potenziale-chimico.pdf , page3 used on input line 61.
 (pdftex.def)             Requested size: 483.69687pt x 197.68013pt.
-<figures/solido-conduttore-e-potenziale-chimico.pdf, id=3223, page=4, 675.23256pt x 275.95369pt>
+<figures/solido-conduttore-e-potenziale-chimico.pdf, id=3276, page=4, 675.23256pt x 275.95369pt>
 File: figures/solido-conduttore-e-potenziale-chimico.pdf Graphic file (type pdf)
 <use figures/solido-conduttore-e-potenziale-chimico.pdf, page 4>
 Package pdftex.def Info: figures/solido-conduttore-e-potenziale-chimico.pdf , page4 used on input line 63.
 (pdftex.def)             Requested size: 483.69687pt x 197.68013pt.
-) [124 <./figures/solido-isolante-e-potenziale-chimico.pdf> <./figures/solido-isolante-e-potenziale-chimico.pdf
+) [129 <./figures/solido-isolante-e-potenziale-chimico.pdf> <./figures/solido-isolante-e-potenziale-chimico.pdf
 
 pdfTeX warning: pdflatex (file ./figures/solido-isolante-e-potenziale-chimico.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/solido-isolante-e-potenziale-chimico.pdf
@@ -2350,82 +2489,82 @@ pdfTeX warning: pdflatex (file ./figures/solido-conduttore-e-potenziale-chimico.
 > <./figures/solido-conduttore-e-potenziale-chimico.pdf
 
 pdfTeX warning: pdflatex (file ./figures/solido-conduttore-e-potenziale-chimico.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [125]) (./lezioni/lez_18.tex (./figures/gap-azzerato.pdf_tex
-<figures/gap-azzerato.pdf, id=3250, page=1, 711.76271pt x 225.76675pt>
+>] [130]) (./lezioni/lez_18.tex (./figures/gap-azzerato.pdf_tex
+<figures/gap-azzerato.pdf, id=3302, page=1, 711.76271pt x 225.76675pt>
 File: figures/gap-azzerato.pdf Graphic file (type pdf)
 <use figures/gap-azzerato.pdf, page 1>
 Package pdftex.def Info: figures/gap-azzerato.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 153.42635pt.
-<figures/gap-azzerato.pdf, id=3251, page=2, 711.76271pt x 225.76675pt>
+<figures/gap-azzerato.pdf, id=3303, page=2, 711.76271pt x 225.76675pt>
 File: figures/gap-azzerato.pdf Graphic file (type pdf)
 <use figures/gap-azzerato.pdf, page 2>
 Package pdftex.def Info: figures/gap-azzerato.pdf , page2 used on input line 59.
 (pdftex.def)             Requested size: 483.69687pt x 153.42635pt.
 ) (./figures/conca-della-banda-energetica.pdf_tex
-<figures/conca-della-banda-energetica.pdf, id=3253, page=1, 648.5623pt x 160.7567pt>
+<figures/conca-della-banda-energetica.pdf, id=3305, page=1, 648.5623pt x 160.7567pt>
 File: figures/conca-della-banda-energetica.pdf Graphic file (type pdf)
 <use figures/conca-della-banda-energetica.pdf, page 1>
 Package pdftex.def Info: figures/conca-della-banda-energetica.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 119.8951pt.
-) [126 <./figures/gap-azzerato.pdf> <./figures/gap-azzerato.pdf
+) [131 <./figures/gap-azzerato.pdf> <./figures/gap-azzerato.pdf
 
 pdfTeX warning: pdflatex (file ./figures/gap-azzerato.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./figures/banda-semi-occupata-nel-caso-di-materiale-conduttore.pdf_tex
-<figures/banda-semi-occupata-nel-caso-di-materiale-conduttore.pdf, id=3268, page=1, 506.93477pt x 129.37039pt>
+<figures/banda-semi-occupata-nel-caso-di-materiale-conduttore.pdf, id=3319, page=1, 506.93477pt x 129.37039pt>
 File: figures/banda-semi-occupata-nel-caso-di-materiale-conduttore.pdf Graphic file (type pdf)
 <use figures/banda-semi-occupata-nel-caso-di-materiale-conduttore.pdf, page 1>
 Package pdftex.def Info: figures/banda-semi-occupata-nel-caso-di-materiale-conduttore.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 123.446pt.
 ) (./figures/spostamento-degli-elettroni-con-campo-elettrico-applicato.pdf_tex
-<figures/spostamento-degli-elettroni-con-campo-elettrico-applicato.pdf, id=3269, page=1, 506.93477pt x 72.46489pt>
+<figures/spostamento-degli-elettroni-con-campo-elettrico-applicato.pdf, id=3320, page=1, 506.93477pt x 72.46489pt>
 File: figures/spostamento-degli-elettroni-con-campo-elettrico-applicato.pdf Graphic file (type pdf)
 <use figures/spostamento-degli-elettroni-con-campo-elettrico-applicato.pdf, page 1>
 Package pdftex.def Info: figures/spostamento-degli-elettroni-con-campo-elettrico-applicato.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 69.14642pt.
-<figures/spostamento-degli-elettroni-con-campo-elettrico-applicato.pdf, id=3270, page=2, 506.93477pt x 72.46489pt>
+<figures/spostamento-degli-elettroni-con-campo-elettrico-applicato.pdf, id=3321, page=2, 506.93477pt x 72.46489pt>
 File: figures/spostamento-degli-elettroni-con-campo-elettrico-applicato.pdf Graphic file (type pdf)
 <use figures/spostamento-degli-elettroni-con-campo-elettrico-applicato.pdf, page 2>
 Package pdftex.def Info: figures/spostamento-degli-elettroni-con-campo-elettrico-applicato.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 483.69687pt x 69.14642pt.
-) [127 <./figures/conca-della-banda-energetica.pdf> <./figures/banda-semi-occupata-nel-caso-di-materiale-conduttore.pdf
+) [132 <./figures/conca-della-banda-energetica.pdf> <./figures/banda-semi-occupata-nel-caso-di-materiale-conduttore.pdf
 
 pdfTeX warning: pdflatex (file ./figures/banda-semi-occupata-nel-caso-di-materiale-conduttore.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [128 <./figures/spostamento-degli-elettroni-con-campo-elettrico-applicato.pdf> <./figures/spostamento-degli-elettroni-con-campo-elettrico-applicato.pdf
+>] [133 <./figures/spostamento-degli-elettroni-con-campo-elettrico-applicato.pdf> <./figures/spostamento-degli-elettroni-con-campo-elettrico-applicato.pdf
 
 pdfTeX warning: pdflatex (file ./figures/spostamento-degli-elettroni-con-campo-elettrico-applicato.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf_tex
-<figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf, id=3294, page=1, 536.64853pt x 189.09842pt>
+<figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf, id=3346, page=1, 536.64853pt x 189.09842pt>
 File: figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf Graphic file (type pdf)
 <use figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf, page 1>
 Package pdftex.def Info: figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 170.44667pt.
-<figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf, id=3295, page=2, 536.64853pt x 189.09842pt>
+<figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf, id=3347, page=2, 536.64853pt x 189.09842pt>
 File: figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf Graphic file (type pdf)
 <use figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf, page 2>
 Package pdftex.def Info: figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 483.69687pt x 170.44667pt.
-<figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf, id=3296, page=3, 536.64853pt x 189.09842pt>
+<figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf, id=3348, page=3, 536.64853pt x 189.09842pt>
 File: figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf Graphic file (type pdf)
 <use figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf, page 3>
 Package pdftex.def Info: figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf , page3 used on input line 60.
 (pdftex.def)             Requested size: 483.69687pt x 170.44667pt.
-) [129] (./figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf_tex
-<figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf, id=3311, page=1, 548.87646pt x 158.05974pt>
+) [134] (./figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf_tex
+<figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf, id=3364, page=1, 548.87646pt x 158.05974pt>
 File: figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf Graphic file (type pdf)
 <use figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf, page 1>
 Package pdftex.def Info: figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 139.28835pt.
-<figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf, id=3312, page=2, 548.87646pt x 158.05974pt>
+<figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf, id=3365, page=2, 548.87646pt x 158.05974pt>
 File: figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf Graphic file (type pdf)
 <use figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf, page 2>
 Package pdftex.def Info: figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 483.69687pt x 139.28835pt.
-<figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf, id=3313, page=3, 548.87646pt x 158.05974pt>
+<figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf, id=3366, page=3, 548.87646pt x 158.05974pt>
 File: figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf Graphic file (type pdf)
 <use figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf, page 3>
 Package pdftex.def Info: figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf , page3 used on input line 60.
 (pdftex.def)             Requested size: 483.69687pt x 139.28835pt.
-<figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf, id=3314, page=4, 548.87646pt x 158.05974pt>
+<figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf, id=3367, page=4, 548.87646pt x 158.05974pt>
 File: figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf Graphic file (type pdf)
 <use figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf, page 4>
 Package pdftex.def Info: figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf , page4 used on input line 63.
@@ -2435,7 +2574,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--202
 
  []
 
-[130 <./figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf> <./figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf
+[135 <./figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf> <./figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf
 
 pdfTeX warning: pdflatex (file ./figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/soluzioni-per-cristallo-monoatomico-unidimensionale.pdf
@@ -2454,78 +2593,78 @@ pdfTeX warning: pdflatex (file ./figures/modi-longitudinali-e-trasversali-in-un-
 
 pdfTeX warning: pdflatex (file ./figures/modi-longitudinali-e-trasversali-in-un-solido-tridimensionale-monoatomico.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./figures/cristallo-biatomico-unidimensionale.pdf_tex
-<figures/cristallo-biatomico-unidimensionale.pdf, id=3327, page=1, 458.52582pt x 71.633pt>
+<figures/cristallo-biatomico-unidimensionale.pdf, id=3380, page=1, 458.52582pt x 71.633pt>
 File: figures/cristallo-biatomico-unidimensionale.pdf Graphic file (type pdf)
 <use figures/cristallo-biatomico-unidimensionale.pdf, page 1>
 Package pdftex.def Info: figures/cristallo-biatomico-unidimensionale.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 75.56879pt.
-<figures/cristallo-biatomico-unidimensionale.pdf, id=3328, page=2, 458.52582pt x 71.633pt>
+<figures/cristallo-biatomico-unidimensionale.pdf, id=3381, page=2, 458.52582pt x 71.633pt>
 File: figures/cristallo-biatomico-unidimensionale.pdf Graphic file (type pdf)
 <use figures/cristallo-biatomico-unidimensionale.pdf, page 2>
 Package pdftex.def Info: figures/cristallo-biatomico-unidimensionale.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 483.69687pt x 75.56879pt.
 ) (./figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf_tex
-<figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf, id=3329, page=1, 695.54288pt x 235.0752pt>
+<figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf, id=3382, page=1, 695.54288pt x 235.0752pt>
 File: figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf Graphic file (type pdf)
 <use figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf, page 1>
 Package pdftex.def Info: figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 163.479pt.
-<figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf, id=3330, page=2, 695.54288pt x 235.0752pt>
+<figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf, id=3383, page=2, 695.54288pt x 235.0752pt>
 File: figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf Graphic file (type pdf)
 <use figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf, page 2>
 Package pdftex.def Info: figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf , page2 used on input line 59.
 (pdftex.def)             Requested size: 483.69687pt x 163.479pt.
-<figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf, id=3331, page=3, 695.54288pt x 235.0752pt>
+<figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf, id=3384, page=3, 695.54288pt x 235.0752pt>
 File: figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf Graphic file (type pdf)
 <use figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf, page 3>
 Package pdftex.def Info: figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf , page3 used on input line 62.
 (pdftex.def)             Requested size: 483.69687pt x 163.479pt.
-<figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf, id=3332, page=4, 695.54288pt x 235.0752pt>
+<figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf, id=3385, page=4, 695.54288pt x 235.0752pt>
 File: figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf Graphic file (type pdf)
 <use figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf, page 4>
 Package pdftex.def Info: figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf , page4 used on input line 64.
 (pdftex.def)             Requested size: 483.69687pt x 163.479pt.
-<figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf, id=3333, page=5, 695.54288pt x 235.0752pt>
+<figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf, id=3386, page=5, 695.54288pt x 235.0752pt>
 File: figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf Graphic file (type pdf)
 <use figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf, page 5>
 Package pdftex.def Info: figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf , page5 used on input line 66.
 (pdftex.def)             Requested size: 483.69687pt x 163.479pt.
-<figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf, id=3334, page=6, 695.54288pt x 235.0752pt>
+<figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf, id=3387, page=6, 695.54288pt x 235.0752pt>
 File: figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf Graphic file (type pdf)
 <use figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf, page 6>
 Package pdftex.def Info: figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf , page6 used on input line 68.
 (pdftex.def)             Requested size: 483.69687pt x 163.479pt.
-<figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf, id=3335, page=7, 695.54288pt x 235.0752pt>
+<figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf, id=3388, page=7, 695.54288pt x 235.0752pt>
 File: figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf Graphic file (type pdf)
 <use figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf, page 7>
 Package pdftex.def Info: figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf , page7 used on input line 70.
 (pdftex.def)             Requested size: 483.69687pt x 163.479pt.
-) [131 <./figures/cristallo-biatomico-unidimensionale.pdf> <./figures/cristallo-biatomico-unidimensionale.pdf
+) [136 <./figures/cristallo-biatomico-unidimensionale.pdf> <./figures/cristallo-biatomico-unidimensionale.pdf
 
 pdfTeX warning: pdflatex (file ./figures/cristallo-biatomico-unidimensionale.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./figures/radiazione-elettromagnetica-su-atomi-di-cristallo-biatomico.pdf_tex
-<figures/radiazione-elettromagnetica-su-atomi-di-cristallo-biatomico.pdf, id=3350, page=1, 560.52232pt x 235.0752pt>
+<figures/radiazione-elettromagnetica-su-atomi-di-cristallo-biatomico.pdf, id=3403, page=1, 560.52232pt x 235.0752pt>
 File: figures/radiazione-elettromagnetica-su-atomi-di-cristallo-biatomico.pdf Graphic file (type pdf)
 <use figures/radiazione-elettromagnetica-su-atomi-di-cristallo-biatomico.pdf, page 1>
 Package pdftex.def Info: figures/radiazione-elettromagnetica-su-atomi-di-cristallo-biatomico.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 202.86017pt.
-<figures/radiazione-elettromagnetica-su-atomi-di-cristallo-biatomico.pdf, id=3351, page=2, 560.52232pt x 235.0752pt>
+<figures/radiazione-elettromagnetica-su-atomi-di-cristallo-biatomico.pdf, id=3404, page=2, 560.52232pt x 235.0752pt>
 File: figures/radiazione-elettromagnetica-su-atomi-di-cristallo-biatomico.pdf Graphic file (type pdf)
 <use figures/radiazione-elettromagnetica-su-atomi-di-cristallo-biatomico.pdf, page 2>
 Package pdftex.def Info: figures/radiazione-elettromagnetica-su-atomi-di-cristallo-biatomico.pdf , page2 used on input line 59.
 (pdftex.def)             Requested size: 483.69687pt x 202.86017pt.
-<figures/radiazione-elettromagnetica-su-atomi-di-cristallo-biatomico.pdf, id=3352, page=3, 560.52232pt x 235.0752pt>
+<figures/radiazione-elettromagnetica-su-atomi-di-cristallo-biatomico.pdf, id=3405, page=3, 560.52232pt x 235.0752pt>
 File: figures/radiazione-elettromagnetica-su-atomi-di-cristallo-biatomico.pdf Graphic file (type pdf)
 <use figures/radiazione-elettromagnetica-su-atomi-di-cristallo-biatomico.pdf, page 3>
 Package pdftex.def Info: figures/radiazione-elettromagnetica-su-atomi-di-cristallo-biatomico.pdf , page3 used on input line 62.
 (pdftex.def)             Requested size: 483.69687pt x 202.86017pt.
 ) (./figures/oscillazioni-degli-atomi-nel-cristallo-biatomico.pdf_tex
-<figures/oscillazioni-degli-atomi-nel-cristallo-biatomico.pdf, id=3353, page=1, 1654.12033pt x 168.9465pt>
+<figures/oscillazioni-degli-atomi-nel-cristallo-biatomico.pdf, id=3406, page=1, 1654.12033pt x 168.9465pt>
 File: figures/oscillazioni-degli-atomi-nel-cristallo-biatomico.pdf Graphic file (type pdf)
 <use figures/oscillazioni-degli-atomi-nel-cristallo-biatomico.pdf, page 1>
 Package pdftex.def Info: figures/oscillazioni-degli-atomi-nel-cristallo-biatomico.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 49.4031pt.
-) [132 <./figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf> <./figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf
+) [137 <./figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf> <./figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf
 
 pdfTeX warning: pdflatex (file ./figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/soluzioni-per-le-vibrazioni-nel-caso-biatomico.pdf
@@ -2556,73 +2695,73 @@ pdfTeX warning: pdflatex (file ./figures/radiazione-elettromagnetica-su-atomi-di
 
 pdfTeX warning: pdflatex (file ./figures/oscillazioni-degli-atomi-nel-cristallo-biatomico.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf_tex
-<figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf, id=3367, page=1, 617.42786pt x 206.62245pt>
+<figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf, id=3419, page=1, 617.42786pt x 206.62245pt>
 File: figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf Graphic file (type pdf)
 <use figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf, page 1>
 Package pdftex.def Info: figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 161.87422pt.
-<figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf, id=3368, page=2, 617.42786pt x 206.62245pt>
+<figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf, id=3420, page=2, 617.42786pt x 206.62245pt>
 File: figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf Graphic file (type pdf)
 <use figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf, page 2>
 Package pdftex.def Info: figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf , page2 used on input line 59.
 (pdftex.def)             Requested size: 483.69687pt x 161.87422pt.
-<figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf, id=3369, page=3, 617.42786pt x 206.62245pt>
+<figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf, id=3421, page=3, 617.42786pt x 206.62245pt>
 File: figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf Graphic file (type pdf)
 <use figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf, page 3>
 Package pdftex.def Info: figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf , page3 used on input line 62.
 (pdftex.def)             Requested size: 483.69687pt x 161.87422pt.
-) [133 <./figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf> <./figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf
+) [138 <./figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf> <./figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf
 
 pdfTeX warning: pdflatex (file ./figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf
 
 pdfTeX warning: pdflatex (file ./figures/dispersione-di-solido-biatomico-con-masse-uguali.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./figures/polaritoni-fononici.pdf_tex
-<figures/polaritoni-fononici.pdf, id=3388, page=1, 584.1042pt x 187.31975pt>
+<figures/polaritoni-fononici.pdf, id=3440, page=1, 584.1042pt x 187.31975pt>
 File: figures/polaritoni-fononici.pdf Graphic file (type pdf)
 <use figures/polaritoni-fononici.pdf, page 1>
 Package pdftex.def Info: figures/polaritoni-fononici.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 155.12091pt.
-<figures/polaritoni-fononici.pdf, id=3389, page=2, 584.1042pt x 187.31975pt>
+<figures/polaritoni-fononici.pdf, id=3441, page=2, 584.1042pt x 187.31975pt>
 File: figures/polaritoni-fononici.pdf Graphic file (type pdf)
 <use figures/polaritoni-fononici.pdf, page 2>
 Package pdftex.def Info: figures/polaritoni-fononici.pdf , page2 used on input line 61.
 (pdftex.def)             Requested size: 483.69687pt x 155.12091pt.
-)) [134 <./figures/polaritoni-fononici.pdf> <./figures/polaritoni-fononici.pdf
+)) [139 <./figures/polaritoni-fononici.pdf> <./figures/polaritoni-fononici.pdf
 
 pdfTeX warning: pdflatex (file ./figures/polaritoni-fononici.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [135]
+>] [140]
 Capitolo 7.
 (./lezioni/lez_19.tex (./figures/scattering-elastico-di-un-onda-elettromagnetica-con-un-blocco-di-materia.pdf_tex
-<figures/scattering-elastico-di-un-onda-elettromagnetica-con-un-blocco-di-materia.pdf, id=3411, page=1, 601.88898pt x 142.01778pt>
+<figures/scattering-elastico-di-un-onda-elettromagnetica-con-un-blocco-di-materia.pdf, id=3463, page=1, 601.88898pt x 142.01778pt>
 File: figures/scattering-elastico-di-un-onda-elettromagnetica-con-un-blocco-di-materia.pdf Graphic file (type pdf)
 <use figures/scattering-elastico-di-un-onda-elettromagnetica-con-un-blocco-di-materia.pdf, page 1>
 Package pdftex.def Info: figures/scattering-elastico-di-un-onda-elettromagnetica-con-un-blocco-di-materia.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 114.13226pt.
-) [136
+) [141
 
  <./figures/scattering-elastico-di-un-onda-elettromagnetica-con-un-blocco-di-materia.pdf>] (./figures/scattering-con-rilevatore.pdf_tex
-<figures/scattering-con-rilevatore.pdf, id=3422, page=1, 716.20387pt x 274.64543pt>
+<figures/scattering-con-rilevatore.pdf, id=3474, page=1, 716.20387pt x 274.64543pt>
 File: figures/scattering-con-rilevatore.pdf Graphic file (type pdf)
 <use figures/scattering-con-rilevatore.pdf, page 1>
 Package pdftex.def Info: figures/scattering-con-rilevatore.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 185.48662pt.
-<figures/scattering-con-rilevatore.pdf, id=3423, page=2, 716.20387pt x 274.64543pt>
+<figures/scattering-con-rilevatore.pdf, id=3475, page=2, 716.20387pt x 274.64543pt>
 File: figures/scattering-con-rilevatore.pdf Graphic file (type pdf)
 <use figures/scattering-con-rilevatore.pdf, page 2>
 Package pdftex.def Info: figures/scattering-con-rilevatore.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 483.69687pt x 185.48662pt.
-<figures/scattering-con-rilevatore.pdf, id=3424, page=3, 716.20387pt x 274.64543pt>
+<figures/scattering-con-rilevatore.pdf, id=3476, page=3, 716.20387pt x 274.64543pt>
 File: figures/scattering-con-rilevatore.pdf Graphic file (type pdf)
 <use figures/scattering-con-rilevatore.pdf, page 3>
 Package pdftex.def Info: figures/scattering-con-rilevatore.pdf , page3 used on input line 61.
 (pdftex.def)             Requested size: 483.69687pt x 185.48662pt.
-<figures/scattering-con-rilevatore.pdf, id=3425, page=4, 716.20387pt x 274.64543pt>
+<figures/scattering-con-rilevatore.pdf, id=3477, page=4, 716.20387pt x 274.64543pt>
 File: figures/scattering-con-rilevatore.pdf Graphic file (type pdf)
 <use figures/scattering-con-rilevatore.pdf, page 4>
 Package pdftex.def Info: figures/scattering-con-rilevatore.pdf , page4 used on input line 63.
 (pdftex.def)             Requested size: 483.69687pt x 185.48662pt.
-) [137 <./figures/scattering-con-rilevatore.pdf> <./figures/scattering-con-rilevatore.pdf
+) [142 <./figures/scattering-con-rilevatore.pdf> <./figures/scattering-con-rilevatore.pdf
 
 pdfTeX warning: pdflatex (file ./figures/scattering-con-rilevatore.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/scattering-con-rilevatore.pdf
@@ -2644,7 +2783,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 117.
- [138]
+ [143]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 121.
@@ -2652,7 +2791,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 141.
 Package mdframed Info: Not enough space on this page on input line 141.
- [139]
+ [144]
 Overfull \hbox (2.1037pt too wide) in paragraph at lines 181--183
 \OT1/cmr/m/n/10 Sommando e sot-traen-do que-ste due equa-zio-ni pos-sia-mo ri-scri-ve-re in ma-nie-ra equi-va-len-te l'e-qua-zio-ne per $\OML/cmm/m/it/10 ^^Z\OT1/cmr/m/n/10 ([][]\OML/cmm/m/it/10 ; [][]\OT1/cmr/m/n/10 )$: 
  []
@@ -2663,19 +2802,19 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 217.
-<figures/Istantanea_2020-04-04_09-36-23.png, id=3467, 545.03625pt x 561.09625pt>
+<figures/Istantanea_2020-04-04_09-36-23.png, id=3520, 545.03625pt x 561.09625pt>
 File: figures/Istantanea_2020-04-04_09-36-23.png Graphic file (type png)
 <use figures/Istantanea_2020-04-04_09-36-23.png>
 Package pdftex.def Info: figures/Istantanea_2020-04-04_09-36-23.png  used on input line 234.
 (pdftex.def)             Requested size: 96.73788pt x 99.58885pt.
-[140 <./figures/Istantanea_2020-04-04_09-36-23.png>]
+[145 <./figures/Istantanea_2020-04-04_09-36-23.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 271.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 278.
- [141]
+ [146]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 306.
@@ -2687,18 +2826,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 314--315
 
  []
 
-<figures/reticolo-localizzato.png, id=3497, 1763.58875pt x 157.58875pt>
+<figures/reticolo-localizzato.png, id=3549, 1763.58875pt x 157.58875pt>
 File: figures/reticolo-localizzato.png Graphic file (type png)
 <use figures/reticolo-localizzato.png>
 Package pdftex.def Info: figures/reticolo-localizzato.png  used on input line 337.
 (pdftex.def)             Requested size: 290.22107pt x 25.93127pt.
-<figures/delta-smussate.png, id=3498, 1390.19376pt x 206.7725pt>
+<figures/delta-smussate.png, id=3550, 1390.19376pt x 206.7725pt>
 File: figures/delta-smussate.png Graphic file (type png)
 <use figures/delta-smussate.png>
 Package pdftex.def Info: figures/delta-smussate.png  used on input line 345.
 (pdftex.def)             Requested size: 241.84843pt x 35.97118pt.
-[142 <./figures/reticolo-localizzato.png> <./figures/delta-smussate.png>]
-<figures/tipi-cristalli.png, id=3510, 1522.68875pt x 429.605pt>
+[147 <./figures/reticolo-localizzato.png> <./figures/delta-smussate.png>]
+<figures/tipi-cristalli.png, id=3562, 1522.68875pt x 429.605pt>
 File: figures/tipi-cristalli.png Graphic file (type png)
 <use figures/tipi-cristalli.png>
 Package pdftex.def Info: figures/tipi-cristalli.png  used on input line 369.
@@ -2710,24 +2849,24 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 18.
-<figures/lennard-S.png, id=3513, 1773.62625pt x 638.385pt>
+<figures/lennard-S.png, id=3565, 1773.62625pt x 638.385pt>
 File: figures/lennard-S.png Graphic file (type png)
 <use figures/lennard-S.png>
 Package pdftex.def Info: figures/lennard-S.png  used on input line 22.
 (pdftex.def)             Requested size: 386.95897pt x 139.27621pt.
- [143 <./figures/tipi-cristalli.png>]
-<figures/acqua-fase.png, id=3525, 1033.8625pt x 903.375pt>
+ [148 <./figures/tipi-cristalli.png>]
+<figures/acqua-fase.png, id=3577, 1033.8625pt x 903.375pt>
 File: figures/acqua-fase.png Graphic file (type png)
 <use figures/acqua-fase.png>
 Package pdftex.def Info: figures/acqua-fase.png  used on input line 60.
 (pdftex.def)             Requested size: 290.22107pt x 253.59114pt.
- [144 <./figures/lennard-S.png>]
-<figures/S-acqua.png, id=3536, 1188.44pt x 799.98875pt>
+ [149 <./figures/lennard-S.png>]
+<figures/S-acqua.png, id=3587, 1188.44pt x 799.98875pt>
 File: figures/S-acqua.png Graphic file (type png)
 <use figures/S-acqua.png>
 Package pdftex.def Info: figures/S-acqua.png  used on input line 78.
 (pdftex.def)             Requested size: 338.58632pt x 227.91371pt.
- [145 <./figures/acqua-fase.png> <./figures/S-acqua.png>]
+ [150 <./figures/acqua-fase.png> <./figures/S-acqua.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 90.
@@ -2736,17 +2875,17 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 90.
 
-<figures/argon-g.png, id=3545, 935.495pt x 694.595pt>
+<figures/argon-g.png, id=3597, 935.495pt x 694.595pt>
 File: figures/argon-g.png Graphic file (type png)
 <use figures/argon-g.png>
 Package pdftex.def Info: figures/argon-g.png  used on input line 97.
 (pdftex.def)             Requested size: 193.47578pt x 143.65413pt.
-<figures/argon-g-solido.png, id=3547, 955.57pt x 707.64375pt>
+<figures/argon-g-solido.png, id=3599, 955.57pt x 707.64375pt>
 File: figures/argon-g-solido.png Graphic file (type png)
 <use figures/argon-g-solido.png>
 Package pdftex.def Info: figures/argon-g-solido.png  used on input line 107.
 (pdftex.def)             Requested size: 217.66211pt x 161.18896pt.
-[146 <./figures/argon-g.png> <./figures/argon-g-solido.png>]
+[151 <./figures/argon-g.png> <./figures/argon-g-solido.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 118.
@@ -2755,12 +2894,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 118.
 
-<figures/FCC.png, id=3557, 673.51625pt x 549.05125pt>
+<figures/FCC.png, id=3610, 673.51625pt x 549.05125pt>
 File: figures/FCC.png Graphic file (type png)
 <use figures/FCC.png>
 Package pdftex.def Info: figures/FCC.png  used on input line 123.
 (pdftex.def)             Requested size: 145.11053pt x 118.29504pt.
-<figures/FCC-plot.png, id=3560, 706.64pt x 551.05875pt>
+<figures/FCC-plot.png, id=3613, 706.64pt x 551.05875pt>
 File: figures/FCC-plot.png Graphic file (type png)
 <use figures/FCC-plot.png>
 Package pdftex.def Info: figures/FCC-plot.png  used on input line 136.
@@ -2773,18 +2912,18 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 143.
 
-<figures/fase-lennard-jones.png, id=3561, 976.64874pt x 792.9625pt>
+<figures/fase-lennard-jones.png, id=3614, 976.64874pt x 792.9625pt>
 File: figures/fase-lennard-jones.png Graphic file (type png)
 <use figures/fase-lennard-jones.png>
 Package pdftex.def Info: figures/fase-lennard-jones.png  used on input line 148.
 (pdftex.def)             Requested size: 241.84843pt x 196.35258pt.
-[147 <./figures/FCC.png> <./figures/FCC-plot.png>]
-<figures/slide-tesi.png, id=3569, 1232.605pt x 879.285pt>
+[152 <./figures/FCC.png> <./figures/FCC-plot.png>]
+<figures/slide-tesi.png, id=3622, 1232.605pt x 879.285pt>
 File: figures/slide-tesi.png Graphic file (type png)
 <use figures/slide-tesi.png>
 Package pdftex.def Info: figures/slide-tesi.png  used on input line 158.
 (pdftex.def)             Requested size: 435.32422pt x 310.53163pt.
- [148 <./figures/fase-lennard-jones.png> <./figures/slide-tesi.png>]
+ [153 <./figures/fase-lennard-jones.png> <./figures/slide-tesi.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 228.
@@ -2792,7 +2931,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 242.
 Package mdframed Info: Not enough space on this page on input line 242.
- [149]
+ [154]
 Package mdframed Info: Not enough space on this page on input line 242.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -2817,19 +2956,19 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 268.
 
-<figures/Plasma-schiacciato.png, id=3594, 788.9475pt x 337.26pt>
+<figures/Plasma-schiacciato.png, id=3647, 788.9475pt x 337.26pt>
 File: figures/Plasma-schiacciato.png Graphic file (type png)
 <use figures/Plasma-schiacciato.png>
 Package pdftex.def Info: figures/Plasma-schiacciato.png  used on input line 273.
 (pdftex.def)             Requested size: 193.47578pt x 82.70404pt.
-[150 <./figures/Plasma-schiacciato.png>]
+[155 <./figures/Plasma-schiacciato.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 286.
+(hyperref)                removing `math shift' on input line 288.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 286.
+(hyperref)                removing `math shift' on input line 288.
 
 ) (./lezioni/lez_21.tex
 
@@ -2848,385 +2987,430 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 2.
 
-<figures/schema-iniziale-ur-gr.png, id=3610, 859.21pt x 430.60875pt>
+<figures/schema-iniziale-ur-gr.png, id=3661, 859.21pt x 430.60875pt>
 File: figures/schema-iniziale-ur-gr.png Graphic file (type png)
 <use figures/schema-iniziale-ur-gr.png>
-Package pdftex.def Info: figures/schema-iniziale-ur-gr.png  used on input line 6.
+Package pdftex.def Info: figures/schema-iniziale-ur-gr.png  used on input line 7.
 (pdftex.def)             Requested size: 241.84843pt x 121.20695pt.
+[156 <./figures/schema-iniziale-ur-gr.png>]
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 19.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 19.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 19.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 19.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 25.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 33.
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--66
 
  []
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 18.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 18.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 18.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 18.
-
-[151 <./figures/schema-iniziale-ur-gr.png>]
+[157]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 24.
+(mdframed)              on input line 136.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 32.
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
-
- []
-
-[152]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 102.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 108.
+(mdframed)              on input line 142.
+Package mdframed Info: Not enough space on this page on input line 142.
+ [158]
+Package mdframed Info: Not enough space on this page on input line 142.
  (./figures/sfera-per-dimostrare-la-relazione-di-gas-perfetto.pdf_tex
-<figures/sfera-per-dimostrare-la-relazione-di-gas-perfetto.pdf, id=3636, page=1, 338.19667pt x 110.5746pt>
+<figures/sfera-per-dimostrare-la-relazione-di-gas-perfetto.pdf, id=3701, page=1, 338.19667pt x 110.5746pt>
 File: figures/sfera-per-dimostrare-la-relazione-di-gas-perfetto.pdf Graphic file (type pdf)
 <use figures/sfera-per-dimostrare-la-relazione-di-gas-perfetto.pdf, page 1>
 Package pdftex.def Info: figures/sfera-per-dimostrare-la-relazione-di-gas-perfetto.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 158.14915pt.
-) [153 <./figures/sfera-per-dimostrare-la-relazione-di-gas-perfetto.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 148--150
+)
+Underfull \hbox (badness 10000) in paragraph at lines 182--184
 
  []
 
+[159 <./figures/sfera-per-dimostrare-la-relazione-di-gas-perfetto.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 162.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 162.
+(hyperref)                removing `math shift' on input line 196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 162.
+(hyperref)                removing `math shift' on input line 196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 162.
+(hyperref)                removing `math shift' on input line 196.
 
-[154]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 196.
+
+[160]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 256.
+(mdframed)              on input line 290.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 263.
- [155]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 290.
+(mdframed)              on input line 297.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 290.
+(hyperref)                removing `math shift' on input line 324.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 290.
+(hyperref)                removing `math shift' on input line 324.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 290.
+(hyperref)                removing `math shift' on input line 324.
 
-<figures/wug-andamenti.png, id=3685, 755.07094pt x 623.32875pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 324.
+
+<figures/wug-andamenti.png, id=3736, 755.07094pt x 623.32875pt>
 File: figures/wug-andamenti.png Graphic file (type png)
 <use figures/wug-andamenti.png>
-Package pdftex.def Info: figures/wug-andamenti.png  used on input line 295.
+Package pdftex.def Info: figures/wug-andamenti.png  used on input line 329.
 (pdftex.def)             Requested size: 290.22107pt x 239.57808pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 299--302
+[161]
+Underfull \hbox (badness 10000) in paragraph at lines 333--336
 
  []
 
-[156 <./figures/wug-andamenti.png>]
+[162 <./figures/wug-andamenti.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 340.
+(mdframed)              on input line 374.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 349.
-<figures/riassuntone-lez3-liquidi.png, id=3698, 1771.61874pt x 440.64626pt>
+(mdframed)              on input line 383.
+<figures/riassuntone-lez3-liquidi.png, id=3763, 1771.61874pt x 440.64626pt>
 File: figures/riassuntone-lez3-liquidi.png Graphic file (type png)
 <use figures/riassuntone-lez3-liquidi.png>
-Package pdftex.def Info: figures/riassuntone-lez3-liquidi.png  used on input line 376.
+Package pdftex.def Info: figures/riassuntone-lez3-liquidi.png  used on input line 410.
 (pdftex.def)             Requested size: 435.32422pt x 108.27193pt.
- [157] (./figures/sfere-dure-u.pdf_tex
-<figures/sfere-dure-u.pdf, id=3714, page=1, 637.10385pt x 166.18346pt>
+ (./figures/sfere-dure-u.pdf_tex
+<figures/sfere-dure-u.pdf, id=3765, page=1, 637.10385pt x 166.18346pt>
 File: figures/sfere-dure-u.pdf Graphic file (type pdf)
 <use figures/sfere-dure-u.pdf, page 1>
 Package pdftex.def Info: figures/sfere-dure-u.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 126.16887pt.
-) (./figures/sfere-soffici-u.pdf_tex
-<figures/sfere-soffici-u.pdf, id=3716, page=1, 637.10385pt x 166.18346pt>
+) [163 <./figures/riassuntone-lez3-liquidi.png>] (./figures/sfere-soffici-u.pdf_tex
+<figures/sfere-soffici-u.pdf, id=3779, page=1, 637.10385pt x 166.18346pt>
 File: figures/sfere-soffici-u.pdf Graphic file (type pdf)
 <use figures/sfere-soffici-u.pdf, page 1>
 Package pdftex.def Info: figures/sfere-soffici-u.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 126.16887pt.
 ) (./figures/sfere-lennard-jones.pdf_tex
-<figures/sfere-lennard-jones.pdf, id=3717, page=1, 637.31097pt x 166.18346pt>
+<figures/sfere-lennard-jones.pdf, id=3780, page=1, 637.31097pt x 166.18346pt>
 File: figures/sfere-lennard-jones.pdf Graphic file (type pdf)
 <use figures/sfere-lennard-jones.pdf, page 1>
 Package pdftex.def Info: figures/sfere-lennard-jones.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 126.13083pt.
-<figures/sfere-lennard-jones.pdf, id=3718, page=2, 637.31097pt x 166.18346pt>
+<figures/sfere-lennard-jones.pdf, id=3781, page=2, 637.31097pt x 166.18346pt>
 File: figures/sfere-lennard-jones.pdf Graphic file (type pdf)
 <use figures/sfere-lennard-jones.pdf, page 2>
 Package pdftex.def Info: figures/sfere-lennard-jones.pdf , page2 used on input line 60.
 (pdftex.def)             Requested size: 483.69687pt x 126.13083pt.
-) [158 <./figures/riassuntone-lez3-liquidi.png> <./figures/sfere-dure-u.pdf> <./figures/sfere-soffici-u.pdf
+) [164 <./figures/sfere-dure-u.pdf> <./figures/sfere-soffici-u.pdf
 
 pdfTeX warning: pdflatex (file ./figures/sfere-soffici-u.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<figures/coovolume.png, id=3731, 383.4325pt x 324.21124pt>
-File: figures/coovolume.png Graphic file (type png)
-<use figures/coovolume.png>
-Package pdftex.def Info: figures/coovolume.png  used on input line 435.
-(pdftex.def)             Requested size: 96.73788pt x 81.79466pt.
-<figures/HS-diluited1.png, id=3732, 521.95pt x 471.7625pt>
-File: figures/HS-diluited1.png Graphic file (type png)
-<use figures/HS-diluited1.png>
-Package pdftex.def Info: figures/HS-diluited1.png  used on input line 448.
-(pdftex.def)             Requested size: 145.11053pt x 131.15678pt.
-<figures/HS-diluited2.png, id=3733, 521.95pt x 431.6125pt>
-File: figures/HS-diluited2.png Graphic file (type png)
-<use figures/HS-diluited2.png>
-Package pdftex.def Info: figures/HS-diluited2.png  used on input line 449.
-(pdftex.def)             Requested size: 145.11053pt x 119.9945pt.
- [159 <./figures/sfere-lennard-jones.pdf> <./figures/sfere-lennard-jones.pdf
+> <./figures/sfere-lennard-jones.pdf
 
 pdfTeX warning: pdflatex (file ./figures/sfere-lennard-jones.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./figures/coovolume.png>]
-<figures/gr-sfera-dura.png, id=3746, 1321.93875pt x 522.95375pt>
+> <./figures/sfere-lennard-jones.pdf
+
+pdfTeX warning: pdflatex (file ./figures/sfere-lennard-jones.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<figures/coovolume.png, id=3794, 383.4325pt x 324.21124pt>
+File: figures/coovolume.png Graphic file (type png)
+<use figures/coovolume.png>
+Package pdftex.def Info: figures/coovolume.png  used on input line 469.
+(pdftex.def)             Requested size: 96.73788pt x 81.79466pt.
+<figures/HS-diluited1.png, id=3795, 521.95pt x 471.7625pt>
+File: figures/HS-diluited1.png Graphic file (type png)
+<use figures/HS-diluited1.png>
+Package pdftex.def Info: figures/HS-diluited1.png  used on input line 482.
+(pdftex.def)             Requested size: 145.11053pt x 131.15678pt.
+<figures/HS-diluited2.png, id=3796, 521.95pt x 431.6125pt>
+File: figures/HS-diluited2.png Graphic file (type png)
+<use figures/HS-diluited2.png>
+Package pdftex.def Info: figures/HS-diluited2.png  used on input line 483.
+(pdftex.def)             Requested size: 145.11053pt x 119.9945pt.
+<figures/gr-sfera-dura.png, id=3797, 1321.93875pt x 522.95375pt>
 File: figures/gr-sfera-dura.png Graphic file (type png)
 <use figures/gr-sfera-dura.png>
-Package pdftex.def Info: figures/gr-sfera-dura.png  used on input line 458.
+Package pdftex.def Info: figures/gr-sfera-dura.png  used on input line 492.
 (pdftex.def)             Requested size: 290.22107pt x 114.81079pt.
-<figures/formato-cristallo-sfere-rigide.png, id=3747, 588.1975pt x 532.99126pt>
+ [165 <./figures/coovolume.png> <./figures/HS-diluited1.png> <./figures/HS-diluited2.png>]
+<figures/formato-cristallo-sfere-rigide.png, id=3808, 588.1975pt x 532.99126pt>
 File: figures/formato-cristallo-sfere-rigide.png Graphic file (type png)
 <use figures/formato-cristallo-sfere-rigide.png>
-Package pdftex.def Info: figures/formato-cristallo-sfere-rigide.png  used on input line 473.
+Package pdftex.def Info: figures/formato-cristallo-sfere-rigide.png  used on input line 507.
 (pdftex.def)             Requested size: 193.47578pt x 175.31836pt.
- [160 <./figures/HS-diluited1.png> <./figures/HS-diluited2.png> <./figures/gr-sfera-dura.png>] [161 <./figures/formato-cristallo-sfere-rigide.png>]
+ [166 <./figures/gr-sfera-dura.png> <./figures/formato-cristallo-sfere-rigide.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 544.
+(mdframed)              on input line 578.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 554.
-<figures/Confronto-chiusure.png, id=3773, 329.23pt x 295.1025pt>
+(mdframed)              on input line 588.
+
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 588.
+
+Package mdframed Info: You first box width is to small
+ mdframed fixed it
+(mdframed)              on input line 588.
+[167]
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last split box is empty
+(mdframed)                You have to change the settings on input line 588.
+
+<figures/Confronto-chiusure.png, id=3839, 329.23pt x 295.1025pt>
 File: figures/Confronto-chiusure.png Graphic file (type png)
 <use figures/Confronto-chiusure.png>
-Package pdftex.def Info: figures/Confronto-chiusure.png  used on input line 570.
+Package pdftex.def Info: figures/Confronto-chiusure.png  used on input line 604.
 (pdftex.def)             Requested size: 145.11053pt x 130.07063pt.
-<figures/connessione-RP-PY-BG.png, id=3774, 716.6775pt x 569.12625pt>
+<figures/connessione-RP-PY-BG.png, id=3840, 716.6775pt x 569.12625pt>
 File: figures/connessione-RP-PY-BG.png Graphic file (type png)
 <use figures/connessione-RP-PY-BG.png>
-Package pdftex.def Info: figures/connessione-RP-PY-BG.png  used on input line 578.
+Package pdftex.def Info: figures/connessione-RP-PY-BG.png  used on input line 612.
 (pdftex.def)             Requested size: 241.84843pt x 192.05011pt.
- [162 <./figures/Confronto-chiusure.png>]
-<figures/buca-Lennard-Jones.png, id=3790, 590.205pt x 420.57124pt>
+<figures/buca-Lennard-Jones.png, id=3841, 590.205pt x 420.57124pt>
 File: figures/buca-Lennard-Jones.png Graphic file (type png)
 <use figures/buca-Lennard-Jones.png>
-Package pdftex.def Info: figures/buca-Lennard-Jones.png  used on input line 587.
+Package pdftex.def Info: figures/buca-Lennard-Jones.png  used on input line 621.
 (pdftex.def)             Requested size: 145.11053pt x 103.40343pt.
- [163 <./figures/connessione-RP-PY-BG.png> <./figures/buca-Lennard-Jones.png>]
-<figures/Wan-Der-Waals-curve--dipendenza-ekT.png, id=3804, 1251.67625pt x 803.0pt>
+[168 <./figures/Confronto-chiusure.png> <./figures/connessione-RP-PY-BG.png>]
+<figures/Wan-Der-Waals-curve--dipendenza-ekT.png, id=3855, 1251.67625pt x 803.0pt>
 File: figures/Wan-Der-Waals-curve--dipendenza-ekT.png Graphic file (type png)
 <use figures/Wan-Der-Waals-curve--dipendenza-ekT.png>
-Package pdftex.def Info: figures/Wan-Der-Waals-curve--dipendenza-ekT.png  used on input line 641.
+Package pdftex.def Info: figures/Wan-Der-Waals-curve--dipendenza-ekT.png  used on input line 675.
 (pdftex.def)             Requested size: 290.22107pt x 186.18095pt.
  (./figures/cambio-statoWDV.pdf_tex
-<figures/cambio-statoWDV.pdf, id=3805, page=1, 966.816pt x 344.43117pt>
+<figures/cambio-statoWDV.pdf, id=3856, page=1, 966.816pt x 344.43117pt>
 File: figures/cambio-statoWDV.pdf Graphic file (type pdf)
 <use figures/cambio-statoWDV.pdf, page 1>
 Package pdftex.def Info: figures/cambio-statoWDV.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 172.315pt.
-<figures/cambio-statoWDV.pdf, id=3806, page=2, 966.816pt x 344.43117pt>
+<figures/cambio-statoWDV.pdf, id=3857, page=2, 966.816pt x 344.43117pt>
 File: figures/cambio-statoWDV.pdf Graphic file (type pdf)
 <use figures/cambio-statoWDV.pdf, page 2>
 Package pdftex.def Info: figures/cambio-statoWDV.pdf , page2 used on input line 63.
 (pdftex.def)             Requested size: 483.69687pt x 172.315pt.
-) [164 <./figures/Wan-Der-Waals-curve--dipendenza-ekT.png> <./figures/cambio-statoWDV.pdf> <./figures/cambio-statoWDV.pdf
-
-pdfTeX warning: pdflatex (file ./figures/cambio-statoWDV.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
+) [169 <./figures/buca-Lennard-Jones.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 660.
+(mdframed)              on input line 694.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 665.
-Package mdframed Info: Not enough space on this page on input line 665.
-<figures/Punto-triplo.png, id=3818, 665.48625pt x 519.9425pt>
+(mdframed)              on input line 699.
+Package mdframed Info: Not enough space on this page on input line 699.
+<figures/Punto-triplo.png, id=3873, 665.48625pt x 519.9425pt>
 File: figures/Punto-triplo.png Graphic file (type png)
 <use figures/Punto-triplo.png>
-Package pdftex.def Info: figures/Punto-triplo.png  used on input line 671.
+Package pdftex.def Info: figures/Punto-triplo.png  used on input line 705.
 (pdftex.def)             Requested size: 193.47578pt x 151.16028pt.
-<figures/grafico-T-rho.png, id=3820, 704.6325pt x 510.90875pt>
+<figures/grafico-T-rho.png, id=3875, 704.6325pt x 510.90875pt>
 File: figures/grafico-T-rho.png Graphic file (type png)
 <use figures/grafico-T-rho.png>
-Package pdftex.def Info: figures/grafico-T-rho.png  used on input line 679.
+Package pdftex.def Info: figures/grafico-T-rho.png  used on input line 713.
 (pdftex.def)             Requested size: 193.47578pt x 140.27815pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 683.
+(hyperref)                removing `math shift' on input line 717.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 683.
+(hyperref)                removing `math shift' on input line 717.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 683.
+(hyperref)                removing `math shift' on input line 717.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 683.
+(hyperref)                removing `math shift' on input line 717.
 
-<figures/grafici-shiftati.png, id=3822, 1551.7975pt x 484.81125pt>
+<figures/grafici-shiftati.png, id=3877, 1551.7975pt x 484.81125pt>
 File: figures/grafici-shiftati.png Graphic file (type png)
 <use figures/grafici-shiftati.png>
-Package pdftex.def Info: figures/grafici-shiftati.png  used on input line 688.
+Package pdftex.def Info: figures/grafici-shiftati.png  used on input line 722.
 (pdftex.def)             Requested size: 435.32422pt x 135.99774pt.
-<figures/grafici-sovrapposti.png, id=3824, 1532.72626pt x 511.9125pt>
+<figures/grafici-sovrapposti.png, id=3879, 1532.72626pt x 511.9125pt>
 File: figures/grafici-sovrapposti.png Graphic file (type png)
 <use figures/grafici-sovrapposti.png>
-Package pdftex.def Info: figures/grafici-sovrapposti.png  used on input line 695.
+Package pdftex.def Info: figures/grafici-sovrapposti.png  used on input line 729.
 (pdftex.def)             Requested size: 435.32422pt x 145.38885pt.
-<figures/riassuntone-lez3-emezzo.png, id=3825, 1772.6225pt x 748.7975pt>
+<figures/riassuntone-lez3-emezzo.png, id=3880, 1772.6225pt x 748.7975pt>
 File: figures/riassuntone-lez3-emezzo.png Graphic file (type png)
 <use figures/riassuntone-lez3-emezzo.png>
-Package pdftex.def Info: figures/riassuntone-lez3-emezzo.png  used on input line 704.
+Package pdftex.def Info: figures/riassuntone-lez3-emezzo.png  used on input line 738.
 (pdftex.def)             Requested size: 483.69687pt x 204.32605pt.
-[165 <./figures/Punto-triplo.png> <./figures/grafico-T-rho.png>]
-<figures/superfluido.png, id=3836, 1125.20375pt x 443.6575pt>
+[170 <./figures/Wan-Der-Waals-curve--dipendenza-ekT.png> <./figures/cambio-statoWDV.pdf> <./figures/cambio-statoWDV.pdf
+
+pdfTeX warning: pdflatex (file ./figures/cambio-statoWDV.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<figures/superfluido.png, id=3892, 1125.20375pt x 443.6575pt>
 File: figures/superfluido.png Graphic file (type png)
 <use figures/superfluido.png>
-Package pdftex.def Info: figures/superfluido.png  used on input line 715.
+Package pdftex.def Info: figures/superfluido.png  used on input line 749.
 (pdftex.def)             Requested size: 338.58632pt x 133.49768pt.
-<figures/Tr-quantistico.png, id=3837, 1133.23375pt x 399.4925pt>
+<figures/Tr-quantistico.png, id=3893, 1133.23375pt x 399.4925pt>
 File: figures/Tr-quantistico.png Graphic file (type png)
 <use figures/Tr-quantistico.png>
-Package pdftex.def Info: figures/Tr-quantistico.png  used on input line 722.
+Package pdftex.def Info: figures/Tr-quantistico.png  used on input line 756.
 (pdftex.def)             Requested size: 338.58632pt x 119.36101pt.
- [166 <./figures/grafici-shiftati.png> <./figures/grafici-sovrapposti.png> <./figures/riassuntone-lez3-emezzo.png>]
+ [171 <./figures/Punto-triplo.png> <./figures/grafico-T-rho.png> <./figures/riassuntone-lez3-emezzo.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 729.
+(mdframed)              on input line 763.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 732.
-<figures/colloidi.png, id=3847, 657.45625pt x 495.8525pt>
+(mdframed)              on input line 766.
+<figures/colloidi.png, id=3903, 657.45625pt x 495.8525pt>
 File: figures/colloidi.png Graphic file (type png)
 <use figures/colloidi.png>
-Package pdftex.def Info: figures/colloidi.png  used on input line 739.
+Package pdftex.def Info: figures/colloidi.png  used on input line 773.
 (pdftex.def)             Requested size: 145.11053pt x 109.43593pt.
- [167 <./figures/superfluido.png> <./figures/Tr-quantistico.png> <./figures/colloidi.png>]
-<figures/cristallo-Wiegner.png, id=3859, 574.145pt x 411.5375pt>
+ [172 <./figures/grafici-shiftati.png> <./figures/grafici-sovrapposti.png> <./figures/superfluido.png>]
+<figures/cristallo-Wiegner.png, id=3911, 574.145pt x 411.5375pt>
 File: figures/cristallo-Wiegner.png Graphic file (type png)
 <use figures/cristallo-Wiegner.png>
-Package pdftex.def Info: figures/cristallo-Wiegner.png  used on input line 756.
+Package pdftex.def Info: figures/cristallo-Wiegner.png  used on input line 790.
 (pdftex.def)             Requested size: 193.47578pt x 138.67755pt.
- [168 <./figures/cristallo-Wiegner.png>]
-<figures/RP-coulomb.png, id=3871, 563.10374pt x 692.5875pt>
+ [173 <./figures/Tr-quantistico.png> <./figures/colloidi.png>]
+<figures/RP-coulomb.png, id=3922, 563.10374pt x 692.5875pt>
 File: figures/RP-coulomb.png Graphic file (type png)
 <use figures/RP-coulomb.png>
-Package pdftex.def Info: figures/RP-coulomb.png  used on input line 808.
+Package pdftex.def Info: figures/RP-coulomb.png  used on input line 842.
 (pdftex.def)             Requested size: 145.11053pt x 178.47272pt.
-) (./lezioni/lez_22.tex [169 <./figures/RP-coulomb.png>] [170]
-<figures/Gs-Fs.png, id=3897, 976.64874pt x 456.70625pt>
+ [174 <./figures/cristallo-Wiegner.png>]) (./lezioni/lez_22.tex [175 <./figures/RP-coulomb.png>]
+<figures/Gs-Fs.png, id=3946, 976.64874pt x 456.70625pt>
 File: figures/Gs-Fs.png Graphic file (type png)
 <use figures/Gs-Fs.png>
 Package pdftex.def Info: figures/Gs-Fs.png  used on input line 96.
 (pdftex.def)             Requested size: 290.22107pt x 135.71674pt.
-<figures/Fsolido-liquido.png, id=3899, 764.8575pt x 475.7775pt>
+<figures/Fsolido-liquido.png, id=3948, 764.8575pt x 475.7775pt>
 File: figures/Fsolido-liquido.png Graphic file (type png)
 <use figures/Fsolido-liquido.png>
 Package pdftex.def Info: figures/Fsolido-liquido.png  used on input line 104.
 (pdftex.def)             Requested size: 164.45515pt x 102.29742pt.
- [171 <./figures/Gs-Fs.png> <./figures/Fsolido-liquido.png>]
+ [176 <./figures/Gs-Fs.png>] [177 <./figures/Fsolido-liquido.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
-[172]) (./lezioni/lez_23.tex
+) (./lezioni/lez_23.tex [178]
 Underfull \hbox (badness 10000) in paragraph at lines 18--21
 
  []
 
-<figures/Si-struttura.png, id=3918, 168.63pt x 159.59625pt>
+<figures/Si-struttura.png, id=3983, 168.63pt x 159.59625pt>
 File: figures/Si-struttura.png Graphic file (type png)
 <use figures/Si-struttura.png>
 Package pdftex.def Info: figures/Si-struttura.png  used on input line 26.
 (pdftex.def)             Requested size: 96.73788pt x 91.55768pt.
-<figures/SiC-struttura.png, id=3919, 158.09062pt x 148.30406pt>
+<figures/SiC-struttura.png, id=3984, 158.09062pt x 148.30406pt>
 File: figures/SiC-struttura.png Graphic file (type png)
 <use figures/SiC-struttura.png>
 Package pdftex.def Info: figures/SiC-struttura.png  used on input line 27.
 (pdftex.def)             Requested size: 96.73788pt x 90.75046pt.
-<figures/Si-rami.png, id=3920, 375.65344pt x 276.28218pt>
+<figures/Si-rami.png, id=3985, 375.65344pt x 276.28218pt>
 File: figures/Si-rami.png Graphic file (type png)
 <use figures/Si-rami.png>
 Package pdftex.def Info: figures/Si-rami.png  used on input line 40.
 (pdftex.def)             Requested size: 193.47578pt x 142.29744pt.
-<figures/SiC-rami.png, id=3921, 373.395pt x 302.63063pt>
+<figures/SiC-rami.png, id=3986, 373.395pt x 302.63063pt>
 File: figures/SiC-rami.png Graphic file (type png)
 <use figures/SiC-rami.png>
 Package pdftex.def Info: figures/SiC-rami.png  used on input line 41.
 (pdftex.def)             Requested size: 193.47578pt x 156.81007pt.
-[173] [174 <./figures/Si-struttura.png (PNG copy)> <./figures/SiC-struttura.png (PNG copy)> <./figures/Si-rami.png (PNG copy)> <./figures/SiC-rami.png (PNG copy)>] [175]
-<figures/FluttuDiss-quantistico.png, id=3959, 987.69pt x 296.60812pt>
+[179 <./figures/Si-struttura.png (PNG copy)> <./figures/SiC-struttura.png (PNG copy)> <./figures/Si-rami.png (PNG copy)> <./figures/SiC-rami.png (PNG copy)>] [180] [181]
+<figures/FluttuDiss-quantistico.png, id=4024, 987.69pt x 296.60812pt>
 File: figures/FluttuDiss-quantistico.png Graphic file (type png)
 <use figures/FluttuDiss-quantistico.png>
 Package pdftex.def Info: figures/FluttuDiss-quantistico.png  used on input line 206.
 (pdftex.def)             Requested size: 435.32422pt x 130.72974pt.
- [176]) [177 <./figures/FluttuDiss-quantistico.png (PNG copy)>]
+) (./domande-esame/liquidi.tex [182 <./figures/FluttuDiss-quantistico.png (PNG copy)>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 11.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 12.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 14.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 15.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 17.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 18.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 20.
+) [183
+
+]
 Capitolo 8.
 (./lezioni/lez_24.tex
 Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
 
-[178
+[184
 
 ] (./figures/f-interazione-radiazione-materia.pdf_tex
-<figures/f-interazione-radiazione-materia.pdf, id=3990, page=1, 619.96187pt x 179.53958pt>
+<figures/f-interazione-radiazione-materia.pdf, id=4057, page=1, 619.96187pt x 179.53958pt>
 File: figures/f-interazione-radiazione-materia.pdf Graphic file (type pdf)
 <use figures/f-interazione-radiazione-materia.pdf, page 1>
 Package pdftex.def Info: figures/f-interazione-radiazione-materia.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 140.08139pt.
-<figures/f-interazione-radiazione-materia.pdf, id=3991, page=2, 619.96187pt x 179.53958pt>
+<figures/f-interazione-radiazione-materia.pdf, id=4058, page=2, 619.96187pt x 179.53958pt>
 File: figures/f-interazione-radiazione-materia.pdf Graphic file (type pdf)
 <use figures/f-interazione-radiazione-materia.pdf, page 2>
 Package pdftex.def Info: figures/f-interazione-radiazione-materia.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 483.69687pt x 140.08139pt.
-) [179 <./figures/f-interazione-radiazione-materia.pdf> <./figures/f-interazione-radiazione-materia.pdf
+) [185 <./figures/f-interazione-radiazione-materia.pdf> <./figures/f-interazione-radiazione-materia.pdf
 
 pdfTeX warning: pdflatex (file ./figures/f-interazione-radiazione-materia.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [180] [181] [182] (./figures/livelliarimondo.pdf_tex
-<figures/livelliarimondo.pdf, id=4059, page=1, 504.10599pt x 92.06496pt>
+>] [186] [187] [188] (./figures/livelliarimondo.pdf_tex
+<figures/livelliarimondo.pdf, id=4125, page=1, 504.10599pt x 92.06496pt>
 File: figures/livelliarimondo.pdf Graphic file (type pdf)
 <use figures/livelliarimondo.pdf, page 1>
 Package pdftex.def Info: figures/livelliarimondo.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 88.3392pt.
-)) (./lezioni/lez_25.tex [183 <./figures/livelliarimondo.pdf>]
+)) (./lezioni/lez_25.tex [189 <./figures/livelliarimondo.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 12.
@@ -3234,12 +3418,12 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 14.
  (./figures/picchi-per-la-rwa.pdf_tex
-<figures/picchi-per-la-rwa.pdf, id=4075, page=1, 691.37741pt x 179.53958pt>
+<figures/picchi-per-la-rwa.pdf, id=4141, page=1, 691.37741pt x 179.53958pt>
 File: figures/picchi-per-la-rwa.pdf Graphic file (type pdf)
 <use figures/picchi-per-la-rwa.pdf, page 1>
 Package pdftex.def Info: figures/picchi-per-la-rwa.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 125.60834pt.
-<figures/picchi-per-la-rwa.pdf, id=4076, page=2, 691.37741pt x 179.53958pt>
+<figures/picchi-per-la-rwa.pdf, id=4142, page=2, 691.37741pt x 179.53958pt>
 File: figures/picchi-per-la-rwa.pdf Graphic file (type pdf)
 <use figures/picchi-per-la-rwa.pdf, page 2>
 Package pdftex.def Info: figures/picchi-per-la-rwa.pdf , page2 used on input line 58.
@@ -3249,26 +3433,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--23
 
  []
 
-[184 <./figures/picchi-per-la-rwa.pdf> <./figures/picchi-per-la-rwa.pdf
+[190 <./figures/picchi-per-la-rwa.pdf> <./figures/picchi-per-la-rwa.pdf
 
 pdfTeX warning: pdflatex (file ./figures/picchi-per-la-rwa.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [185] [186] [187] [188]
+>] [191] [192] [193] [194]
 Underfull \hbox (badness 10000) in paragraph at lines 275--277
 
  []
 
 (./figures/corpo-per-interazione-radiazione-materia.pdf_tex
-<figures/corpo-per-interazione-radiazione-materia.pdf, id=4140, page=1, 648.63791pt x 120.38681pt>
+<figures/corpo-per-interazione-radiazione-materia.pdf, id=4207, page=1, 648.63791pt x 120.38681pt>
 File: figures/corpo-per-interazione-radiazione-materia.pdf Graphic file (type pdf)
 <use figures/corpo-per-interazione-radiazione-materia.pdf, page 1>
 Package pdftex.def Info: figures/corpo-per-interazione-radiazione-materia.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 89.77368pt.
-<figures/corpo-per-interazione-radiazione-materia.pdf, id=4141, page=2, 648.63791pt x 120.38681pt>
+<figures/corpo-per-interazione-radiazione-materia.pdf, id=4208, page=2, 648.63791pt x 120.38681pt>
 File: figures/corpo-per-interazione-radiazione-materia.pdf Graphic file (type pdf)
 <use figures/corpo-per-interazione-radiazione-materia.pdf, page 2>
 Package pdftex.def Info: figures/corpo-per-interazione-radiazione-materia.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 483.69687pt x 89.77368pt.
-) [189 <./figures/corpo-per-interazione-radiazione-materia.pdf> <./figures/corpo-per-interazione-radiazione-materia.pdf
+) [195 <./figures/corpo-per-interazione-radiazione-materia.pdf> <./figures/corpo-per-interazione-radiazione-materia.pdf
 
 pdfTeX warning: pdflatex (file ./figures/corpo-per-interazione-radiazione-materia.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
@@ -3276,41 +3460,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 330--332
 
  []
 
-) (./lezioni/lez_26.tex [190] [191] (./figures/sistema-a-3-livelli.pdf_tex
-<figures/sistema-a-3-livelli.pdf, id=4191, page=1, 462.43878pt x 76.09814pt>
+) (./lezioni/lez_26.tex [196] [197] (./figures/sistema-a-3-livelli.pdf_tex
+<figures/sistema-a-3-livelli.pdf, id=4257, page=1, 462.43878pt x 76.09814pt>
 File: figures/sistema-a-3-livelli.pdf Graphic file (type pdf)
 <use figures/sistema-a-3-livelli.pdf, page 1>
 Package pdftex.def Info: figures/sistema-a-3-livelli.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 79.59534pt.
-) [192] (./figures/inversione-di-popolazione-1-2.pdf_tex
-<figures/inversione-di-popolazione-1-2.pdf, id=4204, page=1, 462.43878pt x 76.09814pt>
+) [198] (./figures/inversione-di-popolazione-1-2.pdf_tex
+<figures/inversione-di-popolazione-1-2.pdf, id=4270, page=1, 462.43878pt x 76.09814pt>
 File: figures/inversione-di-popolazione-1-2.pdf Graphic file (type pdf)
 <use figures/inversione-di-popolazione-1-2.pdf, page 1>
 Package pdftex.def Info: figures/inversione-di-popolazione-1-2.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 79.59534pt.
-<figures/inversione-di-popolazione-1-2.pdf, id=4205, page=2, 462.43878pt x 76.09814pt>
+<figures/inversione-di-popolazione-1-2.pdf, id=4271, page=2, 462.43878pt x 76.09814pt>
 File: figures/inversione-di-popolazione-1-2.pdf Graphic file (type pdf)
 <use figures/inversione-di-popolazione-1-2.pdf, page 2>
 Package pdftex.def Info: figures/inversione-di-popolazione-1-2.pdf , page2 used on input line 60.
 (pdftex.def)             Requested size: 483.69687pt x 79.59534pt.
 ) (./figures/inversione-di-popolazione-2-3.pdf_tex
-<figures/inversione-di-popolazione-2-3.pdf, id=4206, page=1, 462.43878pt x 76.09814pt>
+<figures/inversione-di-popolazione-2-3.pdf, id=4272, page=1, 462.43878pt x 76.09814pt>
 File: figures/inversione-di-popolazione-2-3.pdf Graphic file (type pdf)
 <use figures/inversione-di-popolazione-2-3.pdf, page 1>
 Package pdftex.def Info: figures/inversione-di-popolazione-2-3.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 79.59534pt.
-<figures/inversione-di-popolazione-2-3.pdf, id=4207, page=2, 462.43878pt x 76.09814pt>
+<figures/inversione-di-popolazione-2-3.pdf, id=4273, page=2, 462.43878pt x 76.09814pt>
 File: figures/inversione-di-popolazione-2-3.pdf Graphic file (type pdf)
 <use figures/inversione-di-popolazione-2-3.pdf, page 2>
 Package pdftex.def Info: figures/inversione-di-popolazione-2-3.pdf , page2 used on input line 60.
 (pdftex.def)             Requested size: 483.69687pt x 79.59534pt.
 ) (./figures/sistema-di-specchi-per-il-laser.pdf_tex
-<figures/sistema-di-specchi-per-il-laser.pdf, id=4210, page=1, 594.68953pt x 156.62254pt>
+<figures/sistema-di-specchi-per-il-laser.pdf, id=4276, page=1, 594.68953pt x 156.62254pt>
 File: figures/sistema-di-specchi-per-il-laser.pdf Graphic file (type pdf)
 <use figures/sistema-di-specchi-per-il-laser.pdf, page 1>
 Package pdftex.def Info: figures/sistema-di-specchi-per-il-laser.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 127.38931pt.
-) [193 <./figures/sistema-a-3-livelli.pdf> <./figures/inversione-di-popolazione-1-2.pdf
+) [199 <./figures/sistema-a-3-livelli.pdf> <./figures/inversione-di-popolazione-1-2.pdf
 
 pdfTeX warning: pdflatex (file ./figures/inversione-di-popolazione-1-2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/inversione-di-popolazione-1-2.pdf
@@ -3322,50 +3506,50 @@ pdfTeX warning: pdflatex (file ./figures/inversione-di-popolazione-2-3.pdf): PDF
 > <./figures/inversione-di-popolazione-2-3.pdf
 
 pdfTeX warning: pdflatex (file ./figures/inversione-di-popolazione-2-3.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [194 <./figures/sistema-di-specchi-per-il-laser.pdf>] [195] [196]
+>] [200 <./figures/sistema-di-specchi-per-il-laser.pdf>] [201] [202]
 Underfull \hbox (badness 10000) in paragraph at lines 314--316
 
  []
 
-[197] [198] (./figures/vettore-b-della-precessione.pdf_tex
-<figures/vettore-b-della-precessione.pdf, id=4296, page=1, 507.32224pt x 180.27315pt>
+[203] [204] (./figures/vettore-b-della-precessione.pdf_tex
+<figures/vettore-b-della-precessione.pdf, id=4362, page=1, 507.32224pt x 180.27315pt>
 File: figures/vettore-b-della-precessione.pdf Graphic file (type pdf)
 <use figures/vettore-b-della-precessione.pdf, page 1>
 Package pdftex.def Info: figures/vettore-b-della-precessione.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 171.88017pt.
-<figures/vettore-b-della-precessione.pdf, id=4297, page=2, 507.32224pt x 180.27315pt>
+<figures/vettore-b-della-precessione.pdf, id=4363, page=2, 507.32224pt x 180.27315pt>
 File: figures/vettore-b-della-precessione.pdf Graphic file (type pdf)
 <use figures/vettore-b-della-precessione.pdf, page 2>
 Package pdftex.def Info: figures/vettore-b-della-precessione.pdf , page2 used on input line 62.
 (pdftex.def)             Requested size: 483.69687pt x 171.88017pt.
-<figures/vettore-b-della-precessione.pdf, id=4298, page=3, 507.32224pt x 180.27315pt>
+<figures/vettore-b-della-precessione.pdf, id=4364, page=3, 507.32224pt x 180.27315pt>
 File: figures/vettore-b-della-precessione.pdf Graphic file (type pdf)
 <use figures/vettore-b-della-precessione.pdf, page 3>
 Package pdftex.def Info: figures/vettore-b-della-precessione.pdf , page3 used on input line 64.
 (pdftex.def)             Requested size: 483.69687pt x 171.88017pt.
-) [199 <./figures/vettore-b-della-precessione.pdf> <./figures/vettore-b-della-precessione.pdf
+) [205 <./figures/vettore-b-della-precessione.pdf> <./figures/vettore-b-della-precessione.pdf
 
 pdfTeX warning: pdflatex (file ./figures/vettore-b-della-precessione.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/vettore-b-della-precessione.pdf
 
 pdfTeX warning: pdflatex (file ./figures/vettore-b-della-precessione.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./figures/condizioni-iniziali-su-r.pdf_tex
-<figures/condizioni-iniziali-su-r.pdf, id=4312, page=1, 528.11812pt x 190.7486pt>
+<figures/condizioni-iniziali-su-r.pdf, id=4378, page=1, 528.11812pt x 190.7486pt>
 File: figures/condizioni-iniziali-su-r.pdf Graphic file (type pdf)
 <use figures/condizioni-iniziali-su-r.pdf, page 1>
 Package pdftex.def Info: figures/condizioni-iniziali-su-r.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 174.71078pt.
-<figures/condizioni-iniziali-su-r.pdf, id=4313, page=2, 528.11812pt x 190.7486pt>
+<figures/condizioni-iniziali-su-r.pdf, id=4379, page=2, 528.11812pt x 190.7486pt>
 File: figures/condizioni-iniziali-su-r.pdf Graphic file (type pdf)
 <use figures/condizioni-iniziali-su-r.pdf, page 2>
 Package pdftex.def Info: figures/condizioni-iniziali-su-r.pdf , page2 used on input line 60.
 (pdftex.def)             Requested size: 483.69687pt x 174.71078pt.
-<figures/condizioni-iniziali-su-r.pdf, id=4314, page=3, 528.11812pt x 190.7486pt>
+<figures/condizioni-iniziali-su-r.pdf, id=4380, page=3, 528.11812pt x 190.7486pt>
 File: figures/condizioni-iniziali-su-r.pdf Graphic file (type pdf)
 <use figures/condizioni-iniziali-su-r.pdf, page 3>
 Package pdftex.def Info: figures/condizioni-iniziali-su-r.pdf , page3 used on input line 63.
 (pdftex.def)             Requested size: 483.69687pt x 174.71078pt.
-)) (./lezioni/lez_27.tex [200 <./figures/condizioni-iniziali-su-r.pdf> <./figures/condizioni-iniziali-su-r.pdf
+)) (./lezioni/lez_27.tex [206 <./figures/condizioni-iniziali-su-r.pdf> <./figures/condizioni-iniziali-su-r.pdf
 
 pdfTeX warning: pdflatex (file ./figures/condizioni-iniziali-su-r.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/condizioni-iniziali-su-r.pdf
@@ -3378,29 +3562,29 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 49.
- [201] [202] (./figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf_tex
-<figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf, id=4350, page=1, 571.31479pt x 113.39615pt>
+ [207] [208] (./figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf_tex
+<figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf, id=4417, page=1, 571.31479pt x 113.39615pt>
 File: figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf Graphic file (type pdf)
 <use figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf, page 1>
 Package pdftex.def Info: figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 96.00478pt.
-<figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf, id=4351, page=2, 571.31479pt x 113.39615pt>
+<figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf, id=4418, page=2, 571.31479pt x 113.39615pt>
 File: figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf Graphic file (type pdf)
 <use figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf, page 2>
 Package pdftex.def Info: figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf , page2 used on input line 59.
 (pdftex.def)             Requested size: 483.69687pt x 96.00478pt.
-<figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf, id=4352, page=3, 571.31479pt x 113.39615pt>
+<figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf, id=4419, page=3, 571.31479pt x 113.39615pt>
 File: figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf Graphic file (type pdf)
 <use figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf, page 3>
 Package pdftex.def Info: figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf , page3 used on input line 61.
 (pdftex.def)             Requested size: 483.69687pt x 96.00478pt.
-) [203 <./figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf> <./figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf
+) [209 <./figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf> <./figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf
 
 pdfTeX warning: pdflatex (file ./figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf
 
 pdfTeX warning: pdflatex (file ./figures/andamento-di-r1-e-r2-in-funzione-di-w.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [204] [205]) [206]
+>] [210] [211]) [212]
 Capitolo 9.
 (./domande-esame/21maggio.tex
 
@@ -3416,12 +3600,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 3.
 
 (./figures/black-body.pdf_tex
-<figures/black-body.pdf, id=4419, page=1, 682.86612pt x 341.43306pt>
+<figures/black-body.pdf, id=4485, page=1, 682.86612pt x 341.43306pt>
 File: figures/black-body.pdf Graphic file (type pdf)
 <use figures/black-body.pdf, page 1>
 Package pdftex.def Info: figures/black-body.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 241.85127pt.
-) [207
+) [213
 
 ]
 
@@ -3436,7 +3620,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 63.
 
-[208 <./figures/black-body.pdf>] [209] [210]
+[214 <./figures/black-body.pdf>] [215] [216]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 187.
@@ -3453,19 +3637,19 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 187.
 
-[211]
+[217]
 Underfull \hbox (badness 10000) in paragraph at lines 222--224
 
  []
 
-) [212]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
+) [218]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
  (./master.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 4020543BB5B8AAF3276354E4CAFE04A8;16812.
+(rerunfilecheck)             Checksum: 2CED46F7C3DE5D648E09981287C454D2;16821.
 
 
 LaTeX Warning: There were undefined references.
@@ -3475,10 +3659,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 36771 strings out of 481239
- 881507 string characters out of 5920377
- 1266233 words of memory out of 5000000
- 48787 multiletter control sequences out of 15000+600000
+ 36952 strings out of 481239
+ 886029 string characters out of 5920377
+ 1271424 words of memory out of 5000000
+ 48908 multiletter control sequences out of 15000+600000
  550085 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,22n,105p,840b,2018s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3486,10 +3670,10 @@ pdfTeX warning (dest): name{Hfootnote.129} has been referenced but does not exis
 
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on master.pdf (213 pages, 9011439 bytes).
+Output written on master.pdf (219 pages, 9033657 bytes).
 PDF statistics:
- 5068 PDF objects out of 5155 (max. 8388607)
- 4503 compressed objects within 46 object streams
- 2163 named destinations out of 2487 (max. 500000)
+ 5146 PDF objects out of 5155 (max. 8388607)
+ 4575 compressed objects within 46 object streams
+ 2211 named destinations out of 2487 (max. 500000)
  2654 words of extra memory for PDF output out of 10000 (max. 10000000)
 

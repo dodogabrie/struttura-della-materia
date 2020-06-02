@@ -98,16 +98,25 @@ D_{ij}= \frac{q_k q_l}{\rho}C_{ikjl}
 .\] 
 Le soluzioni sono quindi onde non dispersive le cui velocità al quadrato sono combinazioni lineari dei coefficienti $C_{ijkl} /\rho$ e possono essere ricavate risolvendo il problema agli autovalori.\\
 Quando il cristallo raggiunge l'equilibrio traslazionale e rotazionale si ha una notevole riduzione delle costanti indipendenti all'interno della matrice delle costanti elastiche $C_{ijkl}$, se inoltre il cristallo ha la forma cubica allora le costanti indipendenti si riducono a 6. In questo modo il calcolo delle velocità di propagazione si semplifica notevolmente.
-\subsection{Funzione di risposta e teorema di fluttuazione dissipazione.}%
+
+\subsection{Causalità e relazioni di Kramers Kroening.}%
 \label{sub:Funzione di risposta e teorema di fluttuazione dissipazione.}
-Definiamo la funzione di risposta di un generico sistema nel seguente modo:
+Definiamo la funzione di risposta in densità $\rho$ ad una perturbazione esterna $\nu$ di un generico sistema:
 \[\begin{aligned}
     \delta\rho (\v{r}, t) =&
     \int d\v{r}\int_{-\infty}^{t}\chi_l(\v{r}-\v{r}',t-t')v(\v{t}',t')dt=\\ 
     =&
     \int d\v{r}'\int_{-\infty}^{\infty}\chi(\v{r}-\v{r}', t-t') v(\v{r}',t')dt
 .\end{aligned}\]
-IN cui si fa uso di una funzione di Eavyside per espandere gli estremi di integrazione:
+Notiamo che la risposta è stata fatta in densità ma poteva esser fatta anche per qualunque altra generica grandezza, ad esempio:
+\begin{itemize}
+    \item $\rho\to \v{M}$ e $\nu  \to \v{B}$.
+    \item $\rho\to \v{P}$ e $\nu\to \v{E}$.
+    \item $\rho\to Q$ (carica) e $\nu\to -V$ (potenziale).
+    \item $\rho\to U$ (energia interna) e $\nu\to T$.
+    \item $\rho\to x_i$ (coordinate) e $\nu\to F$ (per l'oscillatore armonico forzato).
+\end{itemize}
+Per espandere gli estremi di integrazione si è fatto uso di una funzione di Heaviside:
 \[
     \chi(\v{r}-\v{r}', t-t') =\chi_l(\v{r}-\v{r}',t-t')\Theta (t-t') 
 .\] 
@@ -116,7 +125,7 @@ Quindi la funzione $\chi$ è definita per ogni tempo ed è nulla per tempi negat
     \delta\overline{\rho}(\v{k},\omega) 
     = \overline{\chi}(\v{k},\omega) \overline{v}(\v{k},\omega) 
 .\] 
-Mentre la trasformata spazio-temporale della $\chi$ è:
+Mentre la trasformata spazio-temporale della $\chi$ è la trasformata di un prodotto, diventa quindi l'integrale di convoluzione in $\omega'$:
 \[\begin{aligned}
     \overline{\chi}(\v{k},\omega) =&
     	\int d\omega' \overline{\chi}_l(\v{k},\omega-\omega')\Theta (\omega')=\\
@@ -128,6 +137,7 @@ Mentre la trasformata spazio-temporale della $\chi$ è:
     	\int d\omega' \frac{i}{\pi\omega'} 
 	\overline{\chi}_l(\v{k},\omega-\omega') \right]
 .\end{aligned}\]
+Assume quindi un ruolo interessante il fatto tutto quello che segue è il risultato del fatto di aver aggiunto la funzione di Heavyside, ovvero di avere un sistema causale.\\
 $\chi_l$ è reale nel dominio positivo, nel dominio negativo invece può assumere ogni valore. Noi consideriamo il caso in cui $ \overline{\chi}_l(\v{k},\omega)$ sia simmetrico e reale, in tal caso:
 \[\begin{aligned}
     &Re\left[ \overline{\chi}(\v{k},\omega)\right] =
@@ -158,7 +168,11 @@ Abbiamo quindi le relazioni di Kramers Kronig che nella forma complessa generale
     \frac{\overline{\chi}(\v{k},\omega)}{(\omega-\omega')}
 .\] 
 Tali relazioni dipendono dalla causalità del sistema e sono dette trasformate di Hilbert. Matematicamente queste sono collegate da una convoluzione con la funzione di risposta ed una funzione di Heavyside (visto a metodi 2). \\
+Un altro modo di esprimere la cosa è affermare che la funzione d'onda complessa causale è la trasformata di Hilbert di se stessa.\\
 Notiamo anche che la FT di $ \overline{\chi}$ è indefinita, è definita soltanto la sua trasformata di Laplace e coincide con la FT di $\chi$.\\
+\subsection{Teorema di Fluttuazione-Dissipazione}%
+\label{sub:Teorema di Fluttuazione-Dissipazione}
+\subsubsection{Parte di fluttuazione.}%
 Assumiamo adesso che il nostro sistema abbia una perturbazione indipendente dal tempo nella Hamiltoniana:
 \[
     H= H_0 - \int d\v{r} v(\v{r}') \delta  \hat{\rho}(\v{r}') 
@@ -175,12 +189,16 @@ Dove $ \hat{\rho}(\v{r}) = \sum_{}^{} \delta (\v{r}-\v{r}_i)$. Calcolando la med
     \beta\int d\v{r}'v(\v{r}')
     \left<\delta  \hat{\rho}(\v{r}) \delta\hat{\rho}(\v{r}') \right>_0
 .\end{aligned}\]
+Abbiamo utilizzato la statistica di Boltzmann per il primo passaggio, per il secondo abbiamo fatto uno sviluppo perturbativo al primo ordine e per il terzo abbiamo assunto media nulla delle $\delta\hat{\rho}(\v{r})$ in assenza di perturbazione (così che il primo termine nell'integrale vada via).\\
 Quindi otteniamo che:
 \[
     \chi_s(\v{r}-\v{r}') 
     = \frac{1}{kT}\left<\delta\hat{\rho}(\v{r})\delta\hat{\rho}(\v{r}')\right>_0
 .\] 
-La funzione di risposta lineare del sistema ad un campo esterno è collegata alle fluttuazioni spaziali del sistema in assenza di campo esterno (inperturbato)!\\
+\begin{fact}[Parte statica del teorema di Fluttuazione-Dissipazione]{fact:Parte statica del teorema di Fluttuazione-Dissipazione}
+    La funzione di risposta lineare del sistema ad un campo esterno è collegata alle fluttuazioni spaziali del sistema in assenza di campo esterno (mediate sul sistema imperturbato).
+\end{fact}
+Vediamo la parte di fluttuazioni del sistema in questa prima parte statica, più avanti con una perturbazione dinamica vedremo anche la parte dissipativa.\\
 Usando inoltre la definizione di $S(k)$ (fattore di struttura statica) e la sua relazione con $S(k,\omega)$ possiamo scrivere le seguenti relazioni:
 \[\begin{aligned}
     \frac{1}{kT}\left<\left|\rho (\v{k}) \right|^2\right> = &

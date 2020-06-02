@@ -201,9 +201,9 @@ Se potessimo ottenere la relazione analitica tra la funzione di correlazione di 
 Vediamo come si procede analiticamente a grandi linee per arrivare ad un risultato. Per far questo ci è utile sfruttare la definizione di media di $\overline{\rho }_2$ nell'Ensemble gran canonico:
 \[
 	\overline{\rho }_2(\v{r}_1,\v{r}_2) =
-	\sum_{N=2}^{} \frac{1}{Z_N N!}\int \prod_{I,J}^{} d \v{r}_I d \v{r}_J 
-	e^{
-	-\left\{ K(\left\{ \v{P}_J \right\}) + U(\left\{ \v{r}_I \right\} ) \right\}/kT }
+	\sum_{N=2}^{} \frac{1}{Z_N N!}\int \prod_{I,J}^{} d \v{r}_I d \v{P}_J 
+	\exp\left(
+	-\frac{ K(\left\{ \v{P}_J \right\}) + U(\left\{ \v{r}_I \right\} ) }{kT} \right)
 	\sum_{i\neq j}^{} \delta(\v{r}_1-\v{r}_i)\delta(\v{r}_2-\v{r}_j)
 .\] 
 Nel caso di fluidi questa espressione si semplifica sensibilmente diventando la seguente formula:
@@ -236,7 +236,7 @@ Abbiamo quindi una complicata equazione per la densità di massa a due corpi, in
 	+
 	\left( \text{Term. indip. da } \v{r}_1 \right) 
 .\end{aligned}\]
-Aver scritto il potenziale in questo modo ci aiuta perché se adesso prendiamo il gradiente della equazione \ref{eq:brutta-eq} otteniamo:
+Aver scritto il potenziale in questo modo ci aiuta perché se adesso prendiamo il gradiente della equazione \ref{eq:brutta-eq} rispetto a $\v{r}_1$ otteniamo:
 \[\begin{aligned}
 	\rho ^2\nabla_{\v{r}_1}g(\left| \v{r}_1-\v{r}_2 \right| ) =
 	- \frac{1}{kT} \nabla_{\v{r}_1}u(\left| \v{r}_1-\v{r}_2 \right|)
@@ -411,8 +411,7 @@ Per concludere la carrellata mettiamo una tabella di cose utili da ricordare:
 	\caption{Riassunto delle formule salienti affrontate fino ad ora.}
 	\label{fig:figures-riassuntone-lez3-liquidi-png}
 \end{figure}
-\subsection{Esempi di applicazione della Chiusura di Born-Green.}
-\label{subsec:Esempi di applicazione della Chiusura di Born-Green.}
+\subsection{Modelli a sfere}
 Se volessimo studiare un gas perfetto allora abbiamo già tutto quello che ci serve \footnote{Ricordiamo che in questo caso si ha una $S(q)$ piatta e da questa derivano tutte le semplificazioni.}. Il modello più facile che possiamo incontrare dopo il gas perfetto è quello delle sfere dure:
 \begin{figure}[H]
     \centering
@@ -510,8 +509,7 @@ In prossimità della densità critica del cristallo la compressibilità si annul
 \end{figure}
 \noindent
 Per descrivere cosa avviene nella zona centrale è necessario utilizzare delle approssimazioni migliori alle due equazioni (stato e delle forze).
-\subsubsection{Approssimazione di Abe.}
-\label{subsubsec:Approssimazione di Abe.}
+\subsection{Approssimazione di Abe.}
 Un altro modo per risolvere in maniera analitica il problema alle Hard Sphere è l'approssimazione di Abe o Hypernetted Chain. \\
 Riprendiamo le due equazioni:
 \[\begin{aligned}
@@ -549,7 +547,7 @@ Infatti è stato sufficiente assumere che per $r\to \infty$ la differenza tra i 
 \paragraph{Applicazioni fisiche della approssimazione di Abe}
 L'approssimazione di Abe si può applicare a sistemi nei quali è possibile separare una interazione a corto range ed una a lungo range, questa risulta quindi molto buona per i potenziali di contatto mentre risulta pessima per i potenziali come Coulomb.
 \paragraph{Legame della approssimazione con $c(r)$}
-In maniera più pratica l'approssimazione di Abe può essere scritta come:
+In maniera più pratica l'approssimazione di Abe può essere scritta ridefinendo la $c(r)$:
  \[\begin{aligned}
 	 c(r) 
 	 =&
@@ -558,7 +556,8 @@ In maniera più pratica l'approssimazione di Abe può essere scritta come:
 	 - \left[ \ln(g(r)) + \frac{u(r)}{kT} \right] + h(r)
 	 \label{eq:1}
 .\end{aligned}\]
-Inoltre si ha anche che l'approssimazione di Abe è l'equivalente di porre $E(r)=c(r)$ nella equazione di stato:
+In cui l'approssimazione si usa nel secondo passaggio.\\
+In questo modo Abe è l'equivalente di porre $E(r)=c(r)$ nella equazione di stato:
 \[
 	\ln(g(r)) + \frac{u(r)}{kT} = \rho \int d\v{r}' h(r')c(r-r')
 	\label{eq:2}
@@ -568,13 +567,13 @@ Visto che si ha l'equazione \ref{eq:1} vale che, nel limite di grandi distanze r
 	&c(r) \approx -\frac{u(r)}{kT}\\
 	&h(r) \approx -\frac{w(r)}{kT}
 .\end{aligned}\]
+Questo perché $\ln (g(r) ) \to 0$ e $h(r)\to 0$.\\
 Dalla prima deriva il fatto che la funzione $c(r)$ si chiama funzione di correlazione diretta \footnote{Si vede infatti il collegamento diretto con il potenziale "nudo" di interazione} mentre dalla seconda il fatto che $h(r)$ si chiama funzione di correlazione totale.\\
 Ricordiamo allora che $w(r)$ ed $h(r)$ contengono l'informazione della correlazione a molti corpi mentre $c(r)$ e $u(r)$ sono direttamente collegate al potenziale di interazione interatomico.\\
 Il problema con i potenziali Hard core come quello a sfere rigide è il loro oscillare molto rapidamente nella regione di core.
 Per trattare in maniera corretta tale regione si usa un'altra chiusura detta di Percus Yevick.
-\subsubsection{Chiusura di Percus Yevick.}
-\label{subsubsec:Chiusura di Percus Yevick.}
-Questa chiusura regolarizza la funzione $c(r)$ in vicinanza del core.
+\subsection{Chiusura di Percus Yevick.}
+Questa chiusura regolarizza la funzione $c(r)$ in vicinanza del core, infatti per le sfere dure abbiamo il problema che $u(r) \to \infty$ con $r\to \sigma$.
 \begin{fact}[Apprrossimazione di Percus Yevick]{fact:Apprrossimazione di Percus Y}
 	\[
 		c(r) 
@@ -583,22 +582,21 @@ Questa chiusura regolarizza la funzione $c(r)$ in vicinanza del core.
 		=
 		g(r)\left[ 1-e^{u(r)/kT} \right] 
 		=
-		e^{w(r)/kT}-e^{-\left[ w(r)-u(r) \right]/kT}
+		e^{-w(r)/kT}-e^{-\left[ w(r)-u(r) \right]/kT}
 	.\] 
 \end{fact}
 Lo scopo di questa approssimazione è dare una espressione analitica per la $c(r)$ che sia nulla per $r>\sigma$ e polinomiale per $r<\sigma$. Inoltre la PY ci da anche una espressione esplicita per l'equazione di stato.
 \paragraph{Utilità fisica}
 Questo metodo risulta efficace quando siamo in situazioni di densità molto maggiori rispetto alla equazione di gas diluito, quindi funziona dove Abe fallisce. Infatti il metodo di Abe consiste nel mettere $g(r)\sim 1$ in un integrale contenente la differenza tra i potenziali, quindi in un certo senso assume il gas molto diluito, questa chiusura possiamo affermare che "mette una pezza" ai problemi di Abe.
 \paragraph{Risultato della approssimazione PY}
-Con questa chiusura si ottiene una legge di stato che non ha più il problema asintotico incontrato per la chiusura BG:
+Con questa chiusura si ottiene una legge di stato che non ha più il problema asintotico incontrato per la chiusura BG con le sfere dure:
 \[
 	\frac{P}{\rho kT}=\frac{1+\eta+\eta^2}{\left( 1-\eta \right)^3}
 	\approx 
 	1 + 4\eta+10\eta^2\ldots
 .\] 
-\subsubsection{Andamenti delle approssimazioni e RP.}
-\label{subsubsec:Andamenti delle approssimazioni e RP.}
-Nella zona centrale del grafico per la legge di stato, nello stato di fase disordinata, oltre alla PY è possibile anche predire l'andamento tramite simulazioni al computer (questo metodo vale quindi per la fase detta Random Phase o RP). Possiamo vedere un confronto tra gli andamenti in Figura \ref{fig:chiusure-confronto}.
+\subsubsection{Andamenti delle approssimazioni.}
+Nella zona centrale del grafico per la legge di stato, nello stato di fase disordinata, oltre alla PY è possibile anche utilizzare un'altra chiusura che discutiamo più avanti detta Random Phase. Possiamo vedere un confronto tra gli andamenti in Figura \ref{fig:chiusure-confronto}.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.3\textwidth]{figures/Confronto-chiusure.png}

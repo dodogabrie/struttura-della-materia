@@ -54,7 +54,9 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{f-interazione-radiazione-materia.pdf}}%
-    \put(0.64964097,0.01070046){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\frac{x\tau}{\hbar }$\end{tabular}}}}%
+    \put(0.79816116,0.01847174){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\frac{x\tau}{\hbar }$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{f-interazione-radiazione-materia.pdf}}%
+    \put(0.47991926,0.01859682){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x=0$\end{tabular}}}}%
+    \put(0.17493659,0.25747594){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F\left(\frac{x\tau}{\hbar }\right) $\end{tabular}}}}%
   \end{picture}%
 \endgroup%

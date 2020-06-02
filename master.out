@@ -20,168 +20,153 @@
 \BOOKMARK [2][-]{subsection.221}{Passagio al continuo per le energie del sistemino}{section.208}% 20
 \BOOKMARK [2][-]{subsection.244}{Conteggio degli stati con particelle interagenti e non interagenti}{section.208}% 21
 \BOOKMARK [2][-]{subsection.256}{Solido cristallino con campo magnetico}{section.208}% 22
-\BOOKMARK [2][-]{subsection.276}{Correzione al conteggio degli stati eliminando i conteggi ripetuti.}{section.208}% 23
-\BOOKMARK [1][-]{section.295}{Lezione 5}{chapter.2}% 24
-\BOOKMARK [2][-]{subsection.296}{Contare gli stati}{section.295}% 25
-\BOOKMARK [2][-]{subsection.307}{Distribuzione di Boltzmann}{section.295}% 26
-\BOOKMARK [2][-]{subsection.324}{Conteggio degli stati nel passagio al continuo}{section.295}% 27
-\BOOKMARK [2][-]{subsection.336}{La costante di Plank nel conteggio degli stati}{section.295}% 28
-\BOOKMARK [2][-]{subsection.342}{Calcolo della \( E \)}{section.295}% 29
-\BOOKMARK [2][-]{subsection.356}{Calcolo dell'energia media di singola particella}{section.295}% 30
-\BOOKMARK [2][-]{subsection.364}{Gas ideale con particelle interagenti.}{section.295}% 31
-\BOOKMARK [0][-]{chapter.387}{Fluttuazioni classiche}{}% 32
-\BOOKMARK [1][-]{section.388}{Lezione 6}{chapter.387}% 33
-\BOOKMARK [2][-]{subsection.389}{Fluttuazioni}{section.388}% 34
-\BOOKMARK [2][-]{subsection.446}{Fluttuazioni dipendenti ed indipendenti}{section.388}% 35
-\BOOKMARK [2][-]{subsection.467}{Indeterminazione dell'entropia}{section.388}% 36
-\BOOKMARK [2][-]{subsection.475}{Tempo di vita media degli stati}{section.388}% 37
-\BOOKMARK [0][-]{chapter.480}{Statistica di Fermi-Dirac e Bose-Einstein}{}% 38
-\BOOKMARK [1][-]{section.481}{Lezione 7}{chapter.480}% 39
-\BOOKMARK [2][-]{subsection.482}{Stati equiprobabili e teoria degli Ensamble}{section.481}% 40
-\BOOKMARK [2][-]{subsection.490}{Oltre il modello di gas ideale.}{section.481}% 41
-\BOOKMARK [2][-]{subsection.501}{Significato quantistico della approssimazione classica ed espressione completa di .}{section.481}% 42
-\BOOKMARK [2][-]{subsection.522}{Sistemi fuori da approssimazione di gas ideale.}{section.481}% 43
-\BOOKMARK [1][-]{section.545}{Lezione 8}{chapter.480}% 44
-\BOOKMARK [2][-]{subsection.549}{Fluttuazioni quantistiche vs fluttuazioni termodinamiche}{section.545}% 45
-\BOOKMARK [2][-]{subsection.551}{Spin nel calcolo della \( E \) }{section.545}% 46
-\BOOKMARK [2][-]{subsection.556}{Correzione al secondo ordine per l'equazione di stato dei gas ideali}{section.545}% 47
-\BOOKMARK [2][-]{subsection.576}{Gas di Fermioni: elettroni di conduzione in un metallo}{section.545}% 48
-\BOOKMARK [1][-]{section.606}{Lezione 9}{chapter.480}% 49
-\BOOKMARK [2][-]{subsection.624}{Gas di elettroni con campo magnetico}{section.606}% 50
-\BOOKMARK [2][-]{subsection.637}{Emissione termoionica.}{section.606}% 51
-\BOOKMARK [0][-]{chapter.668}{Applicazioni delle statistiche FD-BE}{}% 52
-\BOOKMARK [1][-]{section.669}{Lezione 10}{chapter.668}% 53
-\BOOKMARK [2][-]{subsection.670}{Effetto termoionico in presenza di un campo elettrico}{section.669}% 54
-\BOOKMARK [2][-]{subsection.684}{Effetto fotoelettrico}{section.669}% 55
-\BOOKMARK [2][-]{subsection.705}{Condizione sulla massa di una nana bianca per il collasso gravitazionale.}{section.669}% 56
-\BOOKMARK [1][-]{section.744}{Lezione 11}{chapter.668}% 57
-\BOOKMARK [2][-]{subsection.745}{Condensazione di Bose-Einsein}{section.744}% 58
-\BOOKMARK [2][-]{subsection.780}{Oscillatore armonico}{section.744}% 59
-\BOOKMARK [1][-]{section.804}{Lezione 12}{chapter.668}% 60
-\BOOKMARK [2][-]{subsection.805}{Radiazione di Corpo Nero}{section.804}% 61
-\BOOKMARK [2][-]{subsection.835}{Vibrazioni all'interno dei solidi}{section.804}% 62
-\BOOKMARK [1][-]{section.867}{Lezione 13}{chapter.668}% 63
-\BOOKMARK [2][-]{subsection.868}{Onde nei solidi.}{section.867}% 64
-\BOOKMARK [2][-]{subsection.888}{Modello del trasporto semi-classico: equazione del trasporto di Boltzmann.}{section.867}% 65
-\BOOKMARK [2][-]{subsection.899}{Conduzione elettrica}{section.867}% 66
-\BOOKMARK [2][-]{subsection.922}{Conduzione termica}{section.867}% 67
-\BOOKMARK [2][-]{subsection.935}{Calore specifico in meno di 3 dimensioni}{section.867}% 68
-\BOOKMARK [0][-]{chapter.953}{Fluttuazioni quantistiche}{}% 69
-\BOOKMARK [1][-]{section.954}{Lezione 14}{chapter.953}% 70
-\BOOKMARK [2][-]{subsection.955}{Fluttuazioni nelle statistiche quantistiche}{section.954}% 71
-\BOOKMARK [2][-]{subsection.963}{Fluttuazioni del numero medio di particelle per un insieme di stati}{section.954}% 72
-\BOOKMARK [2][-]{subsection.967}{Significato fisico della correzione quantistica alle fluttuazioni}{section.954}% 73
-\BOOKMARK [2][-]{subsection.983}{Numero di celle coinvolte nelle fluttuazioni del numero di fotoni}{section.954}% 74
-\BOOKMARK [2][-]{subsection.998}{Esempio numerico di numero di celle occupate.}{section.954}% 75
-\BOOKMARK [2][-]{subsection.999}{Coerenza dei fotoni ed esperimento di Young}{section.954}% 76
-\BOOKMARK [2][-]{subsection.1004}{Ottenere la coerenza dalla radiazione stellare}{section.954}% 77
-\BOOKMARK [2][-]{subsection.1008}{Correlazione tra fasci di particelle: esperimento di Hanbury Brown e Twiss.}{section.954}% 78
-\BOOKMARK [2][-]{subsection.1015}{Dinamica delle flutuazioni: Rumore Jonshon nei circuiti elettrici}{section.954}% 79
-\BOOKMARK [1][-]{section.1029}{Lezione 15}{chapter.953}% 80
-\BOOKMARK [2][-]{subsection.1030}{Distribuzione spettrale delle fluttuazioni}{section.1029}% 81
-\BOOKMARK [2][-]{subsection.1039}{Teorema di fluttuazione-dissipazione}{section.1029}% 82
-\BOOKMARK [2][-]{subsection.1060}{Applicazione del teorema Fluttuazione-dissipazione al rumore Jonshon}{section.1029}% 83
-\BOOKMARK [2][-]{subsection.1077}{Rumore shot}{section.1029}% 84
-\BOOKMARK [0][-]{chapter.1093}{Solidi}{}% 85
-\BOOKMARK [1][-]{section.1094}{Lezione 16}{chapter.1093}% 86
-\BOOKMARK [2][-]{subsection.1095}{Introduzione ai solidi.}{section.1094}% 87
-\BOOKMARK [2][-]{subsection.1126}{Reticoli nei solidi}{section.1094}% 88
-\BOOKMARK [2][-]{subsection.1136}{Prima zona di Brilloiun}{section.1094}% 89
-\BOOKMARK [2][-]{subsection.1138}{Osservazione della struttura periodica del cristallo}{section.1094}% 90
-\BOOKMARK [2][-]{subsection.1155}{Teorema di Bloch}{section.1094}% 91
-\BOOKMARK [1][-]{section.1196}{Lezione 17}{chapter.1093}% 92
-\BOOKMARK [2][-]{subsection.1197}{Metodo perturbativo per la struttura a bande dei solidi.}{section.1196}% 93
-\BOOKMARK [2][-]{subsection.1237}{Conduzione nei metalli}{section.1196}% 94
-\BOOKMARK [2][-]{subsection.1243}{Conducibilit\340 dei materiali del gruppo 1}{section.1196}% 95
-\BOOKMARK [2][-]{subsection.1244}{Velocit\340 media dell'elettrone}{section.1196}% 96
-\BOOKMARK [1][-]{section.1260}{Lezione 18}{chapter.1093}% 97
-\BOOKMARK [2][-]{subsection.1261}{Semimetalli e Semiconduttori}{section.1260}% 98
-\BOOKMARK [2][-]{subsection.1263}{Massa efficace dell'elettrone}{section.1260}% 99
-\BOOKMARK [2][-]{subsection.1267}{Conduzione elettronica nel dettaglio: oscillazioni di Bloch.}{section.1260}% 100
-\BOOKMARK [2][-]{subsection.1271}{Soluzione per i nuclei del reticolo}{section.1260}% 101
-\BOOKMARK [2][-]{subsection.1282}{Frequenza di vibrazione di un cristallo unidimensionale}{section.1260}% 102
-\BOOKMARK [2][-]{subsection.1317}{Misurare i fononi}{section.1260}% 103
-\BOOKMARK [0][-]{chapter.1321}{Liquidi}{}% 104
-\BOOKMARK [1][-]{section.1322}{Lezione 19: Dagli appunti di Sara}{chapter.1321}% 105
-\BOOKMARK [2][-]{subsection.1323}{Scattering elastico}{section.1322}% 106
-\BOOKMARK [2][-]{subsection.1327}{Fattore di struttura statistica.}{section.1322}% 107
-\BOOKMARK [2][-]{subsection.1338}{Densit\340 ad uno e a due particelle.}{section.1322}% 108
-\BOOKMARK [2][-]{subsection.1346}{Fattore di struttura statistica come trasformata di Fourier della densit\340 a due particelle.}{section.1322}% 109
-\BOOKMARK [2][-]{subsection.1357}{Fattore di struttura statistica per i liquidi}{section.1322}% 110
-\BOOKMARK [2][-]{subsection.1369}{Fattore di struttura statistica per sistemi amorfi e cristallini}{section.1322}% 111
-\BOOKMARK [2][-]{subsection.1375}{Digressione sulla FT}{section.1322}% 112
-\BOOKMARK [2][-]{subsection.1380}{Cristallo poliatomico.}{section.1322}% 113
-\BOOKMARK [2][-]{subsection.1384}{Fattore di struttura statistica per gas perfetto}{section.1322}% 114
-\BOOKMARK [1][-]{section.1385}{Lezione 20}{chapter.1321}% 115
-\BOOKMARK [2][-]{subsection.1386}{Hole function o funzione di correlazione totale.}{section.1385}% 116
-\BOOKMARK [2][-]{subsection.1392}{Fattore di struttura statistica per un fluido poliatomico.}{section.1385}% 117
-\BOOKMARK [2][-]{subsection.1394}{Caso speciale: l'acqua.}{section.1385}% 118
-\BOOKMARK [2][-]{subsection.1398}{Analisi della g\(r\) dell'Argon}{section.1385}% 119
-\BOOKMARK [2][-]{subsection.1404}{Struttura dell'argon e funzione g\(r\).}{section.1385}% 120
-\BOOKMARK [2][-]{subsection.1407}{Diagrammi di stato e S\(q\)}{section.1385}% 121
-\BOOKMARK [2][-]{subsection.1410}{Relazione di Ornstein-Zernike}{section.1385}% 122
-\BOOKMARK [2][-]{subsection.1423}{Limite asintotico di S\(K\) nel caso di Gas perfetti}{section.1385}% 123
-\BOOKMARK [2][-]{subsection.1427}{Limite asintotico di S\(K\) nel caso di plasmi}{section.1385}% 124
-\BOOKMARK [2][-]{subsection.1431}{Momenti di g\(r\)}{section.1385}% 125
-\BOOKMARK [1][-]{section.1434}{Lezione 21}{chapter.1321}% 126
-\BOOKMARK [2][-]{subsection.1435}{Collegamento tra g\(r\) ed il potenziale tra le particelle u\(r\).}{section.1434}% 127
-\BOOKMARK [2][-]{subsection.1439}{Unicit\340 della relazione tra g\(r\) e u\(r\).}{section.1434}% 128
-\BOOKMARK [2][-]{subsection.1447}{Energia interna di un fluido monoatomico classico con potenziale a 2 corpi.}{section.1434}% 129
-\BOOKMARK [2][-]{subsection.1469}{Ricerca di una relazione analitica tra u\(r\) e g\(r\).}{section.1434}% 130
-\BOOKMARK [2][-]{subsection.1486}{Potenziali u\(r\) e w\(r\) in un fluido di Lennard Jones.}{section.1434}% 131
-\BOOKMARK [2][-]{subsection.1488}{Chiusura di Born-Green.}{section.1434}% 132
-\BOOKMARK [2][-]{subsection.1493}{Funzione di correlazione diretta.}{section.1434}% 133
-\BOOKMARK [2][-]{subsection.1501}{Esempi di applicazione della Chiusura di Born-Green.}{section.1434}% 134
-\BOOKMARK [2][-]{subsection.1507}{Modello a sfere dure.}{section.1434}% 135
-\BOOKMARK [2][-]{subsection.1538}{Modello di Lennard Jones per le sfere}{section.1434}% 136
-\BOOKMARK [2][-]{subsection.1552}{Riscalamento di S\(q\) e g\(r\).}{section.1434}% 137
-\BOOKMARK [2][-]{subsection.1555}{Riassunto di HG,HS,LJ.}{section.1434}% 138
-\BOOKMARK [2][-]{subsection.1557}{Fluidi quantistici: trattazione della condensazione di Bose.}{section.1434}% 139
-\BOOKMARK [2][-]{subsection.1560}{Colloidi.}{section.1434}% 140
-\BOOKMARK [2][-]{subsection.1565}{Repulsione a lungo raggio: cristallo di Wiegner.}{section.1434}% 141
-\BOOKMARK [2][-]{subsection.1568}{Interazioni a lungo raggio ed approssimazione di Random Phase.}{section.1434}% 142
-\BOOKMARK [2][-]{subsection.1577}{Cosa devo sapere all'esame?}{section.1434}% 143
-\BOOKMARK [1][-]{section.1578}{Lezione 22}{chapter.1321}% 144
-\BOOKMARK [2][-]{subsection.1579}{Estensione dinamica: funzione di Van Hove.}{section.1578}% 145
-\BOOKMARK [2][-]{subsection.1595}{"Fononi" e fattore di struttura dinamico.}{section.1578}% 146
-\BOOKMARK [2][-]{subsection.1598}{Approssimazione per le funzioni di struttura dinamica.}{section.1578}% 147
-\BOOKMARK [2][-]{subsection.1601}{Collegamento con le funzioni di risposta del fluido}{section.1578}% 148
-\BOOKMARK [1][-]{section.1608}{Lezione 23}{chapter.1321}% 149
-\BOOKMARK [2][-]{subsection.1609}{Generalit\340 sui fononi}{section.1608}% 150
-\BOOKMARK [2][-]{subsection.1613}{Struttura del Silicio e del carburo di Silicio.}{section.1608}% 151
-\BOOKMARK [2][-]{subsection.1616}{Onde longitudinali nei liquidi e nei gas}{section.1608}% 152
-\BOOKMARK [2][-]{subsection.1622}{Teoria della elasticit\340: legge di Hooke}{section.1608}% 153
-\BOOKMARK [2][-]{subsection.1627}{Funzione di risposta e teorema di fluttuazione dissipazione.}{section.1608}% 154
-\BOOKMARK [0][-]{chapter.1648}{Interazione radiazione materia}{}% 155
-\BOOKMARK [1][-]{section.1649}{Lezione 24}{chapter.1648}% 156
-\BOOKMARK [2][-]{subsection.1650}{Regola d'oro di Fermi}{section.1649}% 157
-\BOOKMARK [2][-]{subsection.1677}{Interazione con campo EM}{section.1649}% 158
-\BOOKMARK [2][-]{subsection.1692}{Coefficienti di Einstein.}{section.1649}% 159
-\BOOKMARK [1][-]{section.1717}{Lezione 25}{chapter.1648}% 160
-\BOOKMARK [2][-]{subsection.1718}{Approssimazione di onda rotante}{section.1717}% 161
-\BOOKMARK [2][-]{subsection.1722}{Trattamento non perturbativo della interazione radiazione materia}{section.1717}% 162
-\BOOKMARK [2][-]{subsection.1741}{Interazione radiazione materia collegata alla termodinamica}{section.1717}% 163
-\BOOKMARK [2][-]{subsection.1764}{Applicazione dell'interazione radiazione materia: Laser}{section.1717}% 164
-\BOOKMARK [1][-]{section.1783}{Lezione 26}{chapter.1648}% 165
-\BOOKMARK [2][-]{subsection.1799}{Maser}{section.1783}% 166
-\BOOKMARK [2][-]{subsection.1832}{Trattazione completa della equazione di Rate nella interazione radiazione-materia}{section.1783}% 167
-\BOOKMARK [1][-]{section.1859}{Lezione 27}{chapter.1648}% 168
-\BOOKMARK [0][-]{chapter.1920}{Domande D'esame}{}% 169
-\BOOKMARK [1][-]{section.1921}{21 maggio}{chapter.1920}% 170
-\BOOKMARK [2][-]{subsection.1922}{Doulong Depetit \350 l'espressione di un teorema pi\371 generale.. Quale? Come spiega per l'oscillatore armonico il risultato CV = 3NkT?}{section.1921}% 171
-\BOOKMARK [2][-]{subsection.1925}{Descrivere la distribuzione di energia del corpo nero.}{section.1921}% 172
-\BOOKMARK [2][-]{subsection.1930}{Ricavare la distribuzione di energia del corpo nero.}{section.1921}% 173
-\BOOKMARK [2][-]{subsection.1938}{Perch\350 si mette =0 nella Bose Einstein per i fotoni?}{section.1921}% 174
-\BOOKMARK [2][-]{subsection.1939}{Si pu\362 fare una condensazione di Bose-Einstein con i fotoni oppure no?}{section.1921}% 175
-\BOOKMARK [2][-]{subsection.1941}{Parlare della condensazione di Bose-Einstein.}{section.1921}% 176
-\BOOKMARK [2][-]{subsection.1947}{Come va il calore specifico del gas di Bosoni in funzione della tempertura?}{section.1921}% 177
-\BOOKMARK [2][-]{subsection.1949}{Misurare il fattore di struttura dei liquidi e cosa significa.}{section.1921}% 178
-\BOOKMARK [2][-]{subsection.1954}{Distribuzione dei Fermioni.}{section.1921}% 179
-\BOOKMARK [2][-]{subsection.1962}{Calore specifico per il gas di elettroni}{section.1921}% 180
-\BOOKMARK [2][-]{subsection.1966}{In che range di temperatura devo fare una misura nei metalli per vedere questo calore specifico lineare?}{section.1921}% 181
-\BOOKMARK [2][-]{subsection.1967}{In un gas di elettroni liberi con un campo magnetico come va la risposta degli elettroni ad un campo magnetico? \(magnetizzazione\).}{section.1921}% 182
-\BOOKMARK [2][-]{subsection.1973}{Perch\351 non possiamo usare la funzione di partizione Z1N per le particelle quantistiche?}{section.1921}% 183
-\BOOKMARK [2][-]{subsection.1974}{Diamagnetizzazione adiabatica}{section.1921}% 184
-\BOOKMARK [2][-]{subsection.1981}{Bande elettroniche dei cristalli: cosa sono e da dove vengono fuori?}{section.1921}% 185
-\BOOKMARK [2][-]{subsection.1988}{Che succede alle bande se gli elettroni nel metallo fossero Bosoni??}{section.1921}% 186
-\BOOKMARK [2][-]{subsection.1989}{Per sistemi cristallini come sono fatte le bande di energia? \(Tozzini\).}{section.1921}% 187
+\BOOKMARK [2][-]{subsection.268}{Demagnetizzazione adiabatica}{section.208}% 23
+\BOOKMARK [2][-]{subsection.279}{Correzione al conteggio degli stati eliminando i conteggi ripetuti.}{section.208}% 24
+\BOOKMARK [1][-]{section.298}{Lezione 5}{chapter.2}% 25
+\BOOKMARK [2][-]{subsection.299}{Contare gli stati}{section.298}% 26
+\BOOKMARK [2][-]{subsection.310}{Distribuzione di Boltzmann}{section.298}% 27
+\BOOKMARK [2][-]{subsection.327}{Conteggio degli stati nel passagio al continuo}{section.298}% 28
+\BOOKMARK [2][-]{subsection.339}{La costante di Plank nel conteggio degli stati}{section.298}% 29
+\BOOKMARK [2][-]{subsection.345}{Calcolo della \( E \)}{section.298}% 30
+\BOOKMARK [2][-]{subsection.359}{Calcolo dell'energia media di singola particella}{section.298}% 31
+\BOOKMARK [2][-]{subsection.367}{Gas ideale con particelle interagenti.}{section.298}% 32
+\BOOKMARK [0][-]{chapter.394}{Fluttuazioni classiche}{}% 33
+\BOOKMARK [1][-]{section.395}{Lezione 6}{chapter.394}% 34
+\BOOKMARK [2][-]{subsection.396}{Fluttuazioni}{section.395}% 35
+\BOOKMARK [2][-]{subsection.453}{Fluttuazioni dipendenti ed indipendenti}{section.395}% 36
+\BOOKMARK [2][-]{subsection.474}{Indeterminazione dell'entropia}{section.395}% 37
+\BOOKMARK [2][-]{subsection.482}{Tempo di vita media degli stati}{section.395}% 38
+\BOOKMARK [0][-]{chapter.487}{Statistica di Fermi-Dirac e Bose-Einstein}{}% 39
+\BOOKMARK [1][-]{section.488}{Lezione 7}{chapter.487}% 40
+\BOOKMARK [2][-]{subsection.489}{Stati equiprobabili e teoria degli Ensamble}{section.488}% 41
+\BOOKMARK [2][-]{subsection.497}{Oltre il modello di gas ideale.}{section.488}% 42
+\BOOKMARK [2][-]{subsection.508}{Significato quantistico della approssimazione classica ed espressione completa di .}{section.488}% 43
+\BOOKMARK [2][-]{subsection.529}{Sistemi fuori da approssimazione di gas ideale.}{section.488}% 44
+\BOOKMARK [1][-]{section.552}{Lezione 8}{chapter.487}% 45
+\BOOKMARK [2][-]{subsection.556}{Fluttuazioni quantistiche vs fluttuazioni termodinamiche}{section.552}% 46
+\BOOKMARK [2][-]{subsection.558}{Spin nel calcolo della \( E \) }{section.552}% 47
+\BOOKMARK [2][-]{subsection.563}{Correzione al secondo ordine per l'equazione di stato dei gas ideali}{section.552}% 48
+\BOOKMARK [2][-]{subsection.583}{Gas di Fermioni: elettroni di conduzione in un metallo}{section.552}% 49
+\BOOKMARK [1][-]{section.613}{Lezione 9}{chapter.487}% 50
+\BOOKMARK [2][-]{subsection.631}{Gas di elettroni con campo magnetico}{section.613}% 51
+\BOOKMARK [2][-]{subsection.644}{Emissione termoionica.}{section.613}% 52
+\BOOKMARK [0][-]{chapter.680}{Applicazioni delle statistiche FD-BE}{}% 53
+\BOOKMARK [1][-]{section.681}{Lezione 10}{chapter.680}% 54
+\BOOKMARK [2][-]{subsection.682}{Effetto termoionico in presenza di un campo elettrico}{section.681}% 55
+\BOOKMARK [2][-]{subsection.696}{Effetto fotoelettrico}{section.681}% 56
+\BOOKMARK [2][-]{subsection.717}{Condizione sulla massa di una nana bianca per il collasso gravitazionale.}{section.681}% 57
+\BOOKMARK [1][-]{section.756}{Lezione 11}{chapter.680}% 58
+\BOOKMARK [2][-]{subsection.757}{Condensazione di Bose-Einsein}{section.756}% 59
+\BOOKMARK [2][-]{subsection.792}{Oscillatore armonico}{section.756}% 60
+\BOOKMARK [1][-]{section.816}{Lezione 12}{chapter.680}% 61
+\BOOKMARK [2][-]{subsection.817}{Radiazione di Corpo Nero}{section.816}% 62
+\BOOKMARK [2][-]{subsection.847}{Vibrazioni all'interno dei solidi}{section.816}% 63
+\BOOKMARK [1][-]{section.879}{Lezione 13}{chapter.680}% 64
+\BOOKMARK [2][-]{subsection.880}{Onde nei solidi.}{section.879}% 65
+\BOOKMARK [2][-]{subsection.900}{Modello del trasporto semi-classico: equazione del trasporto di Boltzmann.}{section.879}% 66
+\BOOKMARK [2][-]{subsection.911}{Conduzione elettrica}{section.879}% 67
+\BOOKMARK [2][-]{subsection.934}{Conduzione termica}{section.879}% 68
+\BOOKMARK [2][-]{subsection.947}{Calore specifico in meno di 3 dimensioni}{section.879}% 69
+\BOOKMARK [0][-]{chapter.966}{Fluttuazioni quantistiche}{}% 70
+\BOOKMARK [1][-]{section.967}{Lezione 14}{chapter.966}% 71
+\BOOKMARK [2][-]{subsection.968}{Fluttuazioni nelle statistiche quantistiche}{section.967}% 72
+\BOOKMARK [2][-]{subsection.976}{Fluttuazioni del numero medio di particelle per un insieme di stati}{section.967}% 73
+\BOOKMARK [2][-]{subsection.980}{Significato fisico della correzione quantistica alle fluttuazioni}{section.967}% 74
+\BOOKMARK [2][-]{subsection.996}{Numero di celle coinvolte nelle fluttuazioni del numero di fotoni}{section.967}% 75
+\BOOKMARK [2][-]{subsection.1011}{Esempio numerico di numero di celle occupate.}{section.967}% 76
+\BOOKMARK [2][-]{subsection.1012}{Coerenza dei fotoni ed esperimento di Young}{section.967}% 77
+\BOOKMARK [2][-]{subsection.1017}{Ottenere la coerenza dalla radiazione stellare}{section.967}% 78
+\BOOKMARK [2][-]{subsection.1021}{Correlazione tra fasci di particelle: esperimento di Hanbury Brown e Twiss.}{section.967}% 79
+\BOOKMARK [2][-]{subsection.1028}{Dinamica delle flutuazioni: Rumore Jonshon nei circuiti elettrici}{section.967}% 80
+\BOOKMARK [1][-]{section.1042}{Lezione 15}{chapter.966}% 81
+\BOOKMARK [2][-]{subsection.1043}{Distribuzione spettrale delle fluttuazioni}{section.1042}% 82
+\BOOKMARK [2][-]{subsection.1052}{Teorema di fluttuazione-dissipazione}{section.1042}% 83
+\BOOKMARK [2][-]{subsection.1073}{Applicazione del teorema Fluttuazione-dissipazione al rumore Jonshon}{section.1042}% 84
+\BOOKMARK [2][-]{subsection.1090}{Rumore shot}{section.1042}% 85
+\BOOKMARK [0][-]{chapter.1106}{Solidi}{}% 86
+\BOOKMARK [1][-]{section.1107}{Lezione 16}{chapter.1106}% 87
+\BOOKMARK [2][-]{subsection.1108}{Introduzione ai solidi.}{section.1107}% 88
+\BOOKMARK [2][-]{subsection.1139}{Reticoli nei solidi}{section.1107}% 89
+\BOOKMARK [2][-]{subsection.1149}{Prima zona di Brilloiun}{section.1107}% 90
+\BOOKMARK [2][-]{subsection.1151}{Osservazione della struttura periodica del cristallo}{section.1107}% 91
+\BOOKMARK [2][-]{subsection.1168}{Teorema di Bloch}{section.1107}% 92
+\BOOKMARK [1][-]{section.1209}{Lezione 17}{chapter.1106}% 93
+\BOOKMARK [2][-]{subsection.1210}{Metodo perturbativo per la struttura a bande dei solidi.}{section.1209}% 94
+\BOOKMARK [2][-]{subsection.1250}{Conduzione nei metalli}{section.1209}% 95
+\BOOKMARK [2][-]{subsection.1256}{Conducibilit\340 dei materiali del gruppo 1}{section.1209}% 96
+\BOOKMARK [2][-]{subsection.1257}{Velocit\340 media dell'elettrone}{section.1209}% 97
+\BOOKMARK [1][-]{section.1273}{Lezione 18}{chapter.1106}% 98
+\BOOKMARK [2][-]{subsection.1274}{Semimetalli e Semiconduttori}{section.1273}% 99
+\BOOKMARK [2][-]{subsection.1276}{Massa efficace dell'elettrone}{section.1273}% 100
+\BOOKMARK [2][-]{subsection.1280}{Conduzione elettronica nel dettaglio: oscillazioni di Bloch.}{section.1273}% 101
+\BOOKMARK [2][-]{subsection.1284}{Soluzione per i nuclei del reticolo}{section.1273}% 102
+\BOOKMARK [2][-]{subsection.1295}{Frequenza di vibrazione di un cristallo unidimensionale}{section.1273}% 103
+\BOOKMARK [2][-]{subsection.1330}{Misurare i fononi}{section.1273}% 104
+\BOOKMARK [0][-]{chapter.1355}{Liquidi}{}% 105
+\BOOKMARK [1][-]{section.1356}{Lezione 19: Dagli appunti di Sara}{chapter.1355}% 106
+\BOOKMARK [2][-]{subsection.1357}{Scattering elastico}{section.1356}% 107
+\BOOKMARK [2][-]{subsection.1361}{Fattore di struttura statistica.}{section.1356}% 108
+\BOOKMARK [2][-]{subsection.1372}{Densit\340 ad uno e a due particelle.}{section.1356}% 109
+\BOOKMARK [2][-]{subsection.1380}{Fattore di struttura statistica come trasformata di Fourier della densit\340 a due particelle.}{section.1356}% 110
+\BOOKMARK [2][-]{subsection.1391}{Fattore di struttura statistica per i liquidi}{section.1356}% 111
+\BOOKMARK [2][-]{subsection.1403}{Fattore di struttura statistica per sistemi amorfi e cristallini}{section.1356}% 112
+\BOOKMARK [2][-]{subsection.1409}{Digressione sulla FT}{section.1356}% 113
+\BOOKMARK [2][-]{subsection.1414}{Cristallo poliatomico.}{section.1356}% 114
+\BOOKMARK [2][-]{subsection.1418}{Fattore di struttura statistica per gas perfetto}{section.1356}% 115
+\BOOKMARK [1][-]{section.1419}{Lezione 20}{chapter.1355}% 116
+\BOOKMARK [2][-]{subsection.1420}{Hole function o funzione di correlazione totale.}{section.1419}% 117
+\BOOKMARK [2][-]{subsection.1426}{Fattore di struttura statistica per un fluido poliatomico.}{section.1419}% 118
+\BOOKMARK [2][-]{subsection.1428}{Caso speciale: l'acqua.}{section.1419}% 119
+\BOOKMARK [2][-]{subsection.1432}{Analisi della g\(r\) dell'Argon}{section.1419}% 120
+\BOOKMARK [2][-]{subsection.1438}{Struttura dell'argon e funzione g\(r\).}{section.1419}% 121
+\BOOKMARK [2][-]{subsection.1441}{Diagrammi di stato e S\(q\)}{section.1419}% 122
+\BOOKMARK [2][-]{subsection.1444}{Relazione di Ornstein-Zernike}{section.1419}% 123
+\BOOKMARK [2][-]{subsection.1457}{Limite asintotico di S\(K\) nel caso di Gas perfetti}{section.1419}% 124
+\BOOKMARK [2][-]{subsection.1461}{Limite asintotico di S\(K\) nel caso di plasmi}{section.1419}% 125
+\BOOKMARK [2][-]{subsection.1465}{Momenti di g\(r\)}{section.1419}% 126
+\BOOKMARK [1][-]{section.1468}{Lezione 21}{chapter.1355}% 127
+\BOOKMARK [2][-]{subsection.1469}{Collegamento tra g\(r\) ed il potenziale tra le particelle u\(r\).}{section.1468}% 128
+\BOOKMARK [2][-]{subsection.1473}{Unicit\340 della relazione tra g\(r\) e u\(r\).}{section.1468}% 129
+\BOOKMARK [2][-]{subsection.1481}{Energia interna di un fluido monoatomico classico con potenziale a 2 corpi.}{section.1468}% 130
+\BOOKMARK [2][-]{subsection.1503}{Ricerca di una relazione analitica tra u\(r\) e g\(r\).}{section.1468}% 131
+\BOOKMARK [2][-]{subsection.1520}{Potenziali u\(r\) e w\(r\) in un fluido di Lennard Jones.}{section.1468}% 132
+\BOOKMARK [2][-]{subsection.1522}{Chiusura di Born-Green.}{section.1468}% 133
+\BOOKMARK [2][-]{subsection.1527}{Funzione di correlazione diretta.}{section.1468}% 134
+\BOOKMARK [2][-]{subsection.1535}{Modelli a sfere}{section.1468}% 135
+\BOOKMARK [2][-]{subsection.1541}{Modello a sfere dure.}{section.1468}% 136
+\BOOKMARK [2][-]{subsection.1551}{Approssimazione di Abe.}{section.1468}% 137
+\BOOKMARK [2][-]{subsection.1563}{Chiusura di Percus Yevick.}{section.1468}% 138
+\BOOKMARK [2][-]{subsection.1572}{Modello di Lennard Jones per le sfere}{section.1468}% 139
+\BOOKMARK [2][-]{subsection.1586}{Riscalamento di S\(q\) e g\(r\).}{section.1468}% 140
+\BOOKMARK [2][-]{subsection.1589}{Riassunto di HG,HS,LJ.}{section.1468}% 141
+\BOOKMARK [2][-]{subsection.1591}{Fluidi quantistici: trattazione della condensazione di Bose.}{section.1468}% 142
+\BOOKMARK [2][-]{subsection.1594}{Colloidi.}{section.1468}% 143
+\BOOKMARK [2][-]{subsection.1599}{Repulsione a lungo raggio: cristallo di Wiegner.}{section.1468}% 144
+\BOOKMARK [2][-]{subsection.1602}{Interazioni a lungo raggio ed approssimazione di Random Phase.}{section.1468}% 145
+\BOOKMARK [2][-]{subsection.1611}{Cosa devo sapere all'esame?}{section.1468}% 146
+\BOOKMARK [1][-]{section.1612}{Lezione 22}{chapter.1355}% 147
+\BOOKMARK [2][-]{subsection.1613}{Estensione dinamica: funzione di Van Hove.}{section.1612}% 148
+\BOOKMARK [2][-]{subsection.1629}{"Fononi" e fattore di struttura dinamico.}{section.1612}% 149
+\BOOKMARK [2][-]{subsection.1632}{Approssimazione per le funzioni di struttura dinamica.}{section.1612}% 150
+\BOOKMARK [2][-]{subsection.1635}{Collegamento con le funzioni di risposta del fluido}{section.1612}% 151
+\BOOKMARK [1][-]{section.1642}{Lezione 23}{chapter.1355}% 152
+\BOOKMARK [2][-]{subsection.1643}{Generalit\340 sui fononi}{section.1642}% 153
+\BOOKMARK [2][-]{subsection.1647}{Struttura del Silicio e del carburo di Silicio.}{section.1642}% 154
+\BOOKMARK [2][-]{subsection.1650}{Onde longitudinali nei liquidi e nei gas}{section.1642}% 155
+\BOOKMARK [2][-]{subsection.1656}{Teoria della elasticit\340: legge di Hooke}{section.1642}% 156
+\BOOKMARK [2][-]{subsection.1661}{Causalit\340 e relazioni di Kramers Kroening.}{section.1642}% 157
+\BOOKMARK [2][-]{subsection.1671}{Teorema di Fluttuazione-Dissipazione}{section.1642}% 158
+\BOOKMARK [0][-]{chapter.1688}{Interazione radiazione materia}{}% 159
+\BOOKMARK [1][-]{section.1689}{Lezione 24}{chapter.1688}% 160
+\BOOKMARK [2][-]{subsection.1690}{Regola d'oro di Fermi da un sistema perturbato.}{section.1689}% 161
+\BOOKMARK [2][-]{subsection.1728}{Interazione con campo EM}{section.1689}% 162
+\BOOKMARK [2][-]{subsection.1743}{Coefficienti di Einstein.}{section.1689}% 163
+\BOOKMARK [1][-]{section.1768}{Lezione 25}{chapter.1688}% 164
+\BOOKMARK [2][-]{subsection.1769}{Approssimazione di onda rotante}{section.1768}% 165
+\BOOKMARK [2][-]{subsection.1773}{Trattamento non perturbativo della interazione radiazione materia}{section.1768}% 166
+\BOOKMARK [2][-]{subsection.1792}{Interazione radiazione materia collegata alla termodinamica}{section.1768}% 167
+\BOOKMARK [2][-]{subsection.1815}{Applicazione dell'interazione radiazione materia: Laser}{section.1768}% 168
+\BOOKMARK [1][-]{section.1834}{Lezione 26}{chapter.1688}% 169
+\BOOKMARK [2][-]{subsection.1850}{Maser}{section.1834}% 170
+\BOOKMARK [2][-]{subsection.1883}{Trattazione completa della equazione di Rate nella interazione radiazione-materia}{section.1834}% 171
+\BOOKMARK [1][-]{section.1910}{Lezione 27}{chapter.1688}% 172

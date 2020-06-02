@@ -1,0 +1,78 @@
+\clearpage 
+\section*{Domande di esame per il capitolo}%
+\begin{quest}[Bande elettroniche nei cristalli: origine e forma.]{quest:Bande elettroniche nei cristalli: origine e forma.}
+Sapere il teorema di Bloch, invarianza per traslazione di $\v{K}$ del reticolo reciproco. Con queste due si deve arrivare alle bande per elettroni liberi, è sufficiente poi argomentare sul come mai vengono eliminate le degenerazioni al bordo senza mettersi a fare i calcoli in teoria perturbativa.
+\end{quest}
+\begin{quest}[Come è legata la struttura a bande alla conducibilità nei solidi]{quest:Come è legata la struttura a bande alla conducibilità nei solidi}
+Se la $\mathcal{E}_F$ casca in mezzo ad una banda si conduce, altrimenti non si conduce perché non ci saranno stati limitrofi disponibili per la conduzione.
+\end{quest}
+\begin{quest}[Parlare delle oscillazioni di Bloch]{quest:Parlare delle oscillazioni di Bloch}
+Argomentare al meglio.
+\end{quest}
+\begin{quest}[Che succede al metallo se gli elettroni fossero bosoni]{quest:Che succede al metallo se gli elettroni fossero bosoni}
+I cristalli sarebbero tutti conduttori perché non ci sarebbero più i vincoli di occupazione degli stati stringenti dei Fermioni.
+\end{quest}
+\begin{quest}[Definire il reticolo reciproco e la prima zona di Brillouin]{quest:Definire il reticolo reciproco e la prima zona di Brillouin}
+Dato un insieme di vettori completo $\v{R}$ del reticolo di Bravais si definisce reticolo reciproco come l'insieme dei vettori $\v{K}$ che soddisfano:
+\[
+    e^{i\v{K}\v{R}}=1 
+.\]
+Quindi se definiamo i vettori come:
+\[
+    \v{R}=\sum_{i=1}^{3} n_i\v{a}_i 
+    \qquad
+    \v{K}= \sum_{i=1}^{3} m_i\v{b}_i
+.\] 
+Allora si ha anche la relazione:
+\[
+    \v{b}_i\v{a}_j = 2\pi\delta_{i,j}
+.\] 
+In fine la prima zona di Brillouin è una scelta particolare di cella unitaria del reticolo reciproco definito dall'area disegnata dalle bisecanti dei vettori $\v{K}$. Nel caso di reticolo cubico consiste nel centrare il reticolo su un centro scatterante ed è detta cella primitiva di Wiegner-Size.
+\end{quest}
+\begin{quest}[Che relazione c'è tra la velocità dell'elettrone e le bande energetiche?]{quest:Che relazione c'è tra la velocità dell'elettrone e le bande energetiche?}
+    Se si confronta la teoria perturbativa sulla Hamiltoniana efficace per le $u_{n,k}$ (funzioni periodiche del teorema di Bloch) con l'energia delle bande sviluppata al primo ordine in un vettore $\v{q}$ si ottiene che:
+    \[
+        \frac{\partial \mathcal{E}_n}{\partial \v{k}} 
+	= 
+	\frac{\hbar ^2}{m}
+	\int d\v{r}
+	u^*_{n,\v{k}}\left(\frac{\nabla }{i}+\v{k}\right)u_{n,k}
+    .\] 
+    Reintroducendo la funzione d'onda tramite la formula inversa per le autofunzioni emerge l'operatore velocità:
+    \[
+        \frac{1}{m}\frac{\hbar }{i}\nabla = \frac{\v{p}}{m}
+    .\] 
+    quindi se ne conclude che:
+    \[
+	\v{v}_n(\v{k}) 
+	= 
+    \frac{1}{\hbar }\nabla_{\v{k}}\mathcal{E}_n(\v{k}) 
+    .\] 
+    Questa indica il valor medio dell'operatore $v$ calcolato sugli stati di Bloch.
+\end{quest}
+\begin{quest}[Ordine di grandezza di $\v{E}$ per rendere un rendere conduttore un isolante?]{quest:Di che ordine deve essere il campo elettrico per rendere un rendere conduttore un isolante?}
+    Il salto energetico è tipicamente delle dimensioni dell'eV, l'energia va fornita sulle scale di lunghezze atomiche ($10^{-10}$ m), quindi:
+    \[
+        E_\text{cond}\sim \frac{V}{a} \sim 10^{10} \text{V/m}
+    .\] 
+    Che è un campo esagerato.
+\end{quest}
+\begin{quest}[$T$ di un isolante per saltare nella banda di conduzione]{quest:$T$ di un isolante per saltare nella banda di conduzione}
+Il salto è dell'ordine dell'eV, come prima. Quindi abbiamo che:
+\[
+    kT \sim eV
+.\] 
+Quindi serve $T\sim 1000 K$, tuttavia solitamente il metallo si fonde prima o a quelle temperature.
+\end{quest}
+\begin{quest}[Come definire la massa eficace]{quest:Come definire la massa eficace}
+Bisogna andare allo sviluppo al secondo ordine analogamente alla velocità descritta sopra. Si ottiene che la massa efficace è ben definita a "centro banda" approssimando le bande come parabole. Inoltre andando verso bande più alte tale stima è sempre migliore perché l'elettrone è sempre più libero quindi il potenziale avrà meno effetto su questa misura.
+\end{quest}
+\begin{quest}[Come si arriva alla equazione del trasporto di Boltz.]{quest:Come si arriva alla equazione del trasporto di Boltz.}
+    Si parte dal teorema di Liuville e si introduce un termine dissipativo dovuto agli urti tra gli elettroni.
+\end{quest}
+\begin{quest}[Scrivere la corrente in funzione di $f$]{quest:Scrivere la corrente in funzione di $f$}
+Nota la $f$, che corrisponde al numero di occupazione medio nello spazio delle fasi, dobbiamo integrarla sul sullo spazio delle fasi e moltiplicarlo per la carica $e$ e per $v$.
+\[
+    J = \frac{1}{h^3}\int e f(r,v,t)v d^3p 
+.\] 
+\end{quest}

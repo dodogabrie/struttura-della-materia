@@ -1,20 +1,29 @@
 \lez{24}{19-04-2020}{}
-\subsection{Regola d'oro di Fermi}%
-\label{sub:Regola d'oro di Fermi}
-
-Riprendiamo la teoria delle perturbazioni (anche dipendenti dal tempo), supponiamo di avere una Hamiltoniana per il nostro sistema $H_0$ e di inserire una perturbazione $V(t) $ tale che:
+\subsection{Regola d'oro di Fermi da un sistema perturbato.}%
+Riprendiamo la teoria delle perturbazioni (anche dipendenti dal tempo), supponiamo di avere una Hamiltoniana per il nostro sistema imperturbato $H_0$ e di inserire una perturbazione $V(t)$:
 \[
     \overline{V}(t) = \begin{cases}
 	&W(t)  \quad  0<t<\tau\\
 	&0 	\quad \quad t<0 \text{ e } t>\tau
     \end{cases}
 .\] 
-L'Hamiltoniana completa sarà la somma di queste due quantità: $H=H_0+\overline{V}(t)$.\\
+\begin{figure}[H]
+    \centering
+    \incfig{perturbazione-a-gradino}
+    \caption{Perturbazione dipendente dal tempo.}
+    \label{fig:perturbazione-a-gradino}
+\end{figure}
+\noindent
+l'Hamiltoniana completa $H$ sarà data da:
+\[
+	H=H_0+\overline{V}(t)
+.\] 
 Cerchiamo le soluzioni alla equazione di Schrodinger dipendente dal tempo:
 \[
     i\hbar \frac{\text{d} \psi(t)}{\text{d} t} 
     = \left[H_0+\overline{V}(t) \right]\psi (t) 
 .\] 
+\subsubsection{Soluzione a livelli discreti}%
 Sviluppiamo la funzione d'onda sugli autostati di $H_0$ :
 \[
     \ket{\psi(t)}=\sum_{n}^{} a_n(t) e^{-i E_n t /\hbar }\ket{\varphi_n}
@@ -22,8 +31,10 @@ Sviluppiamo la funzione d'onda sugli autostati di $H_0$ :
 Ipotizziamo inoltre che per tutti i $t<0$ il sistema si trovi in un autostato $\ket{\varphi_m}$ dato. Vogliamo trovare lo stato del sistema all'istante $ \tau$: quello in cui termina la perturbazione.\\
 Per $t\le 0$ abbiamo che 
 \[\begin{aligned}
+    \begin{cases}
     &\ket{\psi_m}(t) = e^{-iE_m t /\hbar } \ket{\varphi_m}\\
     &a_n(t) = \delta_{mn}
+    \end{cases}
 .\end{aligned}\]
 Al termine della perturbazione mi troverò in uno stato dato dalla sovrapposizione degli altri autostati, tali autostati continueranno ad evolvere (con l'esponenziale della loro energia) e gli $a_n(t)$ per $t\ge \tau$ rimarranno costanti ed uguali a $a(\tau)$.\\
 Possiamo chiamare le ampiezze di probabilità $a_n(\tau)$ come $a_{m\to n}(\tau) $ essendo questa l'ampiezza di probabilità dello stato $\varphi_m$ di passare allo stato n-esimo.\\
@@ -34,17 +45,19 @@ La probabilità di andare dallo stato $m$ allo stato $n$ sarà data da:
 Per trovare tali ampiezze sostituiamo nella equazione di Schrodinger lo sviluppo della $\psi$ e proiettiamo su un generico $\bra{\varphi_n}$.\\
 \[
     i\hbar \frac{\text{d} }{\text{d} t} a_{m\to n}(t) 
-    = \sum_{l}^{} \bra{n}W(t)\ket{l}e^{i\omega_{n,l} t}a_{m\to l}(t) 
+    = \sum_{l}^{} \bra{n}W(t)\ket{l}e^{i\omega_{n,l} t}a_{m\to l}(t) \label{eq:risposta111}
 .\] 
 Nella quale $\omega_{n,l}$  vale:
 \[
 \omega_{n,l}=\frac{E_n-E_l}{\hbar }
 .\] 
-Ci mettiamo nel caso in cui l'elemento di matrice è nullo tra stati uguali $\bra{n}W\ket{n} = 0$ (lo possiamo sempre fare con una base opportuna degli stati) e risolviamo queste equazioni con la condizione 
+Ci mettiamo nel caso in cui l'elemento di matrice è nullo tra stati uguali $\bra{n}W\ket{n} = 0$ (lo possiamo sempre fare con una base opportuna degli stati), vedremo che questo è il caso più naturale quando la perturbazione sarà l'interazione elettromagnetica.
+Risolviamo queste equazioni con l'ulteriore condizione iniziale che ripetiamo essere:
 \[
     a_{m\to n}(t=0) = \delta_{mn}
 .\] 
-Possiamo riscrivere l'equazione di Schrodinger al primo ordine come:
+Adesso procediamo con una soluzione iterativa: mettiamo le condizioni iniziali nella parte destra della equazione \ref{eq:risposta111}, otteniamo una espressione per la $a_{m\to n}(t) $ e la reinseriamo nella stessa equazione. \\
+In conclusione si ottiene l'equazione di Schrodinger al primo ordine (semplicemente utilizzando la $\delta_{nm}$ delle condizioni iniziali):
 \[
     i\hbar \frac{\text{d} a_{m\to n}(t) }{\text{d} t} 
     =
@@ -63,7 +76,15 @@ Agli ordini successivi abbiamo che
     \sum_{m}^{} \int_{0}^{t}  
     \bra{k}W(t')\ket{n}e^{i\omega_{kn}t'}a_{m\to n}^{(1)}(t')  dt'
 .\] 
-Come primo esempio possiamo prendere la $W(t) = V$  indipendente dal tempo. In questo caso abbiamo che:
+Come primo esempio possiamo prendere la $W(t) = V$  indipendente dal tempo. 
+\begin{figure}[H]
+    \centering
+    \incfig{perturbazione-indipendente-dal-tempo-davvero}
+    \caption{Perturbazione indipendente dal tempo.}
+    \label{fig:perturbazione-indipendente-dal-tempo-davvero}
+\end{figure}
+\noindent
+In questo caso abbiamo che:
 \[
     a_{m\to n}^{(1)}(t) =
     \frac{1}{i\hbar }\bra{n}W \ket{m} \int_{0}^{t} e^{i\omega_{nm}t'}dt'
@@ -71,7 +92,7 @@ Come primo esempio possiamo prendere la $W(t) = V$  indipendente dal tempo. In q
 Quindi possiamo trovare la probabilità di transizione da $m$ a $n$ al tempo $\tau$:
 \[
     W^{(1)}_{m\to n}(\tau)=
-    \left|a_{m\to n}^{(1)}(\tau) \right|^2 = \frac{2}{\hbar }\left|\bra{n}W \ket{m}\right|^2F(\tau,E_n-E_m) 
+    \left|a_{m\to n}^{(1)}(\tau) \right|^2 = \frac{2}{\hbar^2 }\left|\bra{n}W \ket{m}\right|^2F(\tau,E_n-E_m) 
 .\] 
 Questa $F$ è:
 \[
@@ -81,14 +102,15 @@ Questa funzione ha la seguente forma:
 \begin{figure}[H]
     \centering
     \incfig{f-interazione-radiazione-materia}
-    \caption{F interazione radiazione materia}
+    \caption{Funzione che descrive la probabilità di transizione tra gli stati.}
     \label{fig:f-interazione-radiazione-materia}
 \end{figure}
-In cui 
+\noindent
+In cui il primo massimo si ha per $x=0$ mentre gli zeri di tale funzione si hanno per: 
 \[
 \left|x\right|=\frac{2\pi\hbar }{\tau}n
 .\] 
-Maggiore è $\tau$ e più si stringe il massimo della funzione. Se vale
+Maggiore è $\tau$ e più si stringe il massimo della funzione poiché si avvicinano i minimi limitrofi. Se vale
 \[
 \tau \gg \frac{2\pi\hbar }{\left|x\right|} 
 .\] 
@@ -100,28 +122,71 @@ Con questa normalizzazione possiamo scrivere la funzione $F(\tau,x)$:
 \[
     F(\tau,x) =\pi\tau\hbar \delta (x)  
 .\] 
-Se la perturbazione dura un tempo infinito ($\tau\to \infty$ ) allora l'ultima formula ci dice che il sistema non può cambiare energia: la probabilità non è normalizzabile. \\
-Abbiamo trattato il sistema concentrandoci sulla transizione di due livelli $m$ e $n$, in generale possiamo avere una distribuzione di stati continua (come ad esempio la $\rho_e$ nei cristalli ) in tal caso possiamo normalizzare:
+Se la perturbazione dura un tempo infinito ($\tau\to \infty$ ) allora l'ultima formula ci dice che il sistema non può cambiare energia. Possiamo vedere questo nella formula di probabilità di transito (in cui vi è la $F$), se questa funzione è una $\delta (E_n-E_m)$ allora il sistema non cambia energia poiché l'unico modo di farlo è avere la stessa energia di prima\ldots\\
+\begin{fact}[Perturbazione costante]{fact:Perturbazione costante}
+Una perturbazione costante nel tempo conserva l'energia del sistema.
+\end{fact}
+Questo esprime sia la conservazione dell'energia per il sistema che il principio di indeterminazione (quando l'approssimazione della $\delta$ non è valida), infatti la larghezza che collega le grandezze $x$ e $\tau$ è proprio $\hbar 2\pi$.
+\subsubsection{Soluzione a livelli continui.}%
+Abbiamo trattato il sistema concentrandoci sulla transizione di due livelli $m$ e $n$, in generale possiamo avere una distribuzione di stati finali continua (come ad esempio la $\rho_e$ nei cristalli) 
+\begin{figure}[H]
+    \centering
+    \incfig{distribuzione-di-stati-finali-continua}
+    \caption{Distribuzione di stati finali continua}
+    \label{fig:distribuzione-di-stati-finali-continua}
+\end{figure}
+\noindent
+in tal caso possiamo normalizzare:
 \[
     \int\rho(E_n) dE_n = 1
 .\] 
-Possiamo immaginare che questa densità di stati sia distribuita con un picco largo $\Delta E_n = \hbar \Delta\omega_n $. \\
-Possiamo calcolare la probabilità di transizione complessiva come:
+Possiamo immaginare che questa densità di stati sia distribuita attorno ad una energia centrale con un picco largo $\Delta E_n = \hbar \Delta\omega_n $. 
+\begin{figure}[H]
+    \centering
+    \incfig{distribuzione-degli-stati-continua}
+    \caption{Distribuzione degli stati continua}
+    \label{fig:distribuzione-degli-stati-continua}
+\end{figure}
+\noindent
+Possiamo calcolare la probabilità di transizione complessiva, ovvero non solo quella di transire dalla energia $m$ a quella $n$ ma quella di passare dall'energia $E_m$ ad un'altra della distribuzione finale:
 \[
-    W^{(1)}_{m\to n}(\tau) =
+    \overline{W}^{(1)}_{m\to n}(\tau) =
     \frac{2}{\hbar ^2}\int\left|\bra{n}W \ket{m}\right|^2 F(\tau, E_n-E_m)\rho(E_n) dE_n 
 .\] 
-Tipicamente nei sistemi che trattiamo il primo termine (che è un modulo quadro di un elemento di matrice) non dipende da quali dei singoli stati $m$ o $n$  che andiamo a considerare, quindi può essere tirato fuori dall'integrale.
+Tipicamente nei sistemi che trattiamo il primo termine (che è un modulo quadro di un elemento di matrice) non dipende da quali dei singoli stati $n$ andiamo a considerare, quindi può essere tirato fuori dall'integrale (e ci mettiamo $\overline{n}$ per indicare che non dipende da quale $n$ scegliamo).
 \[
-    W^{(1)}_{m\to n}(\tau) =
-    \frac{2}{\hbar ^2}\left|\bra{n}W \ket{m}\right|^2\int\frac{2}{\left(\frac{x}{\hbar }\right)^2}\sin^2\left(\frac{x\tau}{2\hbar }\right) \rho(E_n) dE_n
+    \overline{W}^{(1)}_{m\to n}(\tau) =
+    \frac{2}{\hbar ^2}
+    \left|\bra{\overline{n}}W \ket{m}\right|^2
+    \int
+    \frac{2}{\left(\frac{E_n-E_m}{\hbar }\right)^2}
+    \sin^2\left(\frac{\left(E_n-E_m\right)\tau}{2\hbar }\right) 
+    \rho(E_n) dE_n
 .\] 
-Nell'ipotesi in cui $\tau\gg 2\pi /\Delta\omega$ (nello spazio delle frequenze la $F$ è molto più stretta di $\rho$  ), portiamo allora fuori dall'integrale la $\rho$, ci resta un integrale noto:
+Nell'ipotesi in cui $\tau\gg 2\pi /\Delta\omega_n$ abbiamo che la densità di stati finali è molto larga rispetto alla durata della interazione. \\
+Dal momento che $\tau$ descrive la larghezza della $F$ abbiamo che nello spazio delle frequenze (invertendo la disuguaglianza) $F$ è molto più stretta di $\rho$.
+\begin{figure}[H]
+    \centering
+    \incfig{relazione-tra-f-e-la-densità-di-stati}
+    \caption{Relazione tra F e la densità di stati, sulle y abbiamo unità adimensionali.}
+    \label{fig:relazione-tra-f-e-la-densità-di-stati}
+\end{figure}
+\noindent
+Con queste considerazioni possiamo portare fuori la $\rho$ dall'integrale, rimane un integrale che si risolve e fa $\pi \tau \hbar $:
+\begin{defn}[Regola d'oro di Fermi]{defn:Regola d'oro di Fermi}
+    Per un sistema perturbato da una perturbazione di durata $\tau$ molto più grande dell'inverso della larghezza del salto di livelli $\Delta\omega$  la probabilità di passare dal livello $m$ al livello $n$ è:
 \[
     W^{(1)}_{m\to n}(\tau) =
     \frac{2\pi}{\hbar}\left|\bra{\overline{n}}W \ket{m}\right|^2\rho(E_{\overline{n}})\tau 
 .\] 
-Questa è la regola d'oro di Fermi. Grazie a questa possiamo definire una probabilità $P_{m\to n}$ per unità di tempo dividendo semplicemente per $\tau$.
+Importante notare la linearità della probabilità di transizione dal tempo $\tau$.
+\end{defn}
+Riassumiamo le ipotesi di applicabilità:
+\begin{itemize}
+    \item Poter sviluppare perturbativamente al primo ordine ("piccole" perturbazioni da definire dopo).
+    \item Durata del tempo di interazione molto maggiore dell'inverso della larghezza della distribuzione degli stati finali.
+\end{itemize}
+Grazie alla linearità in $\tau$ della regola possiamo definire una probabilità $P_{m\to n}$ per unità di tempo dividendo semplicemente per $\tau$.
 \[
     \overline{P}_{m\to n}^{(1) } =
     \frac{2\pi}{\hbar}\left|\bra{\overline{n}}W \ket{m}\right|^2\rho(E_{\overline{n}})
@@ -129,12 +194,18 @@ Questa è la regola d'oro di Fermi. Grazie a questa possiamo definire una probab
 Possiamo imporre che tale probabilità prima di essere integrata fosse la $\delta$, quindi:
 \[
     P_{m\to n}^{(1) } =
-    \frac{2\pi}{\hbar}\left|\bra{\overline{n}}W \ket{m}\right|^2\delta (E_n-E_m) 
+    \frac{2\pi}{\hbar}\left|\bra{n}W \ket{m}\right|^2\delta (E_n-E_m) 
 .\] 
-Nel caso opposto invece $\tau\ll\frac{2\pi }{\Delta\omega}$, in tal caso portiamo fuori la $F$ e resta l'integrale della $\rho$. Facendo in questo modo si ottiene 
+Vediamo che in questo modo raggiungiamo sempre gli stati aventi la stessa energia dello stato iniziale:
 \[
-\overline{P} \propto \tau^4
+    \overline{E}_n = E_m
 .\] 
+Nel caso opposto invece $\tau\ll\frac{2\pi }{\Delta\omega}$, questo è il caso in cui la $F$ è molto larga rispetto alla $\rho$.
+In tal caso facciamo il contrario: portiamo fuori la $F$ e resta l'integrale della $\rho$. Facendo in questo modo si ottiene 
+\[
+\overline{P} \propto \tau^2
+.\] 
+Non abbiamo più la linearità, non si può definire una probabilità di interazione nell'unità di tempo.
 \subsection{Interazione con campo EM}%
 \label{sub:Interazione con campo EM}
 Abbiamo parlato fin'ora di un potenziale a "impulso quadro", ovvero un potenziale che sale fino ad un $W$  costante e poi torna a 0 al tempo $\tau$. Se interagiamo con il campo elettromagnetico dobbiamo prendere una interazione con un potenziale oscillante, supponiamo di avere una onda piana

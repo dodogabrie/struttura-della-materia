@@ -173,7 +173,7 @@ Sarebbe comunque bello vedere se ci sono dei regimi in cui sia possibile usare l
 Vediamo adesso il secondo caso: quello delle particelle distinguibili.\\
 \subsection{Solido cristallino con campo magnetico}%
 Prendiamo un solido cristallino, le particelle sono fissate a stare all'interno del cristallo in una certa posizione fissa. Proviamo a fare i conti per questo sistema considerando un sistema di spin nucleari in un solido. Supponiamo che in nuclei abbiano Spin $\pm 1 /2$ e ci mettiamo un campo magnetico. Le particelle, fissate sul reticolo cristallino, saranno distinguibili perché si orienteranno a seconda del loro spin!\\
-I livelli energetici saranno:
+Se consideriamo l'energia di punto zero nulla i livelli energetici saranno:
 \[
 	E = \pm \mu B
 .\] 
@@ -218,14 +218,18 @@ Questo calore specifico è interessante per un motivo:\\
 Per $T \rightarrow 0$ si ha $C \rightarrow 0$ perchè a basse temperature, quando gli stati non sono più continui, ad un certo punto non si ha una temperatura sufficiente per far fare il salto di energia al nostro sistema.\\
 Inoltre abbiamo anche che $C \rightarrow 0 $ anche per $ T \rightarrow \infty$, questo è caratteristico di sistemi che sono limitati con il numero di stati. \\
 
-\paragraph{Demagnetizzazione adiabatica}%
-Il sistema ha un forte interesse per la tecnica di \textit{demagnetizzazione adiabatica} che è una tecnica di raffreddamento tra le più potenti:\\
+\subsection{Demagnetizzazione adiabatica}%
+Il sistema della scorsa sezione ha un forte interesse per la tecnica di \textit{demagnetizzazione adiabatica} che è una tecnica di raffreddamento tra le più potenti.
 Con questo metodo si riescono a raggiungere temperature dell'ordine del $\mu K$ anche per i solidi. \\
 Come suggerisce il nome della tecnica avremo a che fare con l'entropia del sistema, essa è data da:
  \[
 	S = Nk \ln Z + NkT \frac{\mbox{d} \ln Z_{1}}{\mbox{d} T} 
 .\] 
-Tralasciamo l'espressione matematica che non è molto importante, la cosa importante è il fatto che troviamo una $S$ che è funzione di $\frac{\mu B}{kT}$, quindi B e T restano sempre in rapporto fra di loro nella espressione finale.\\
+Tralasciamo l'espressione matematica che non è molto importante, la cosa importante è il fatto che questa entropia è funzione di: 
+\[
+    S = S\left(\frac{\mu B}{kT}\right)
+.\] 
+Come conseguenza B e T restano sempre in rapporto fra di loro nella espressione finale.\\
 L'andamento della funzione è il seguente:
 \begin{figure}[H]
     \centering
@@ -243,8 +247,25 @@ Possiamo vedere cosa succede alla curva al variare di $B$:
     \label{fig:demagnetizzazione-magnetica}
 \end{figure}
 \noindent
-Se il campo magnetico è maggiore vuol dire che i due livelli sono maggiormente separati e l'entropia è minore\footnote{O meglio, per avere la stessa entropia con i due campi magnetici dovrei essere a temperatura maggiore, vista la dipendenza di S. Tuttavia qua T è fissata\ldots}.\\
-La demagnetizzazione adiabatica funziona in questo modo: prendiamo un oggetto alla temperatura $T_{\text{in}}$ a contatto con un bagno termico, aumentiamo il campo magnetico facendo una traslazione verticale nel grafico precedente (Trasformazione (1) in \hyperref[fig:demagnetizzazione-adiabatica-1]{Figura 19}).\\
+Fisicamente ogni particella tenderà a stare nello stato con energia maggiore o inferiore come in figura:
+\begin{figure}[H]
+    \centering
+    \incfig{sistema-magnetico-a-due-livelli}
+    \caption{Sistema magnetico a due livelli}
+    \label{fig:sistema-magnetico-a-due-livelli}
+\end{figure}
+\noindent
+Se il campo magnetico è piccolo rispetto alla temperatura allora le particelle non sono in grado di vedere questa separazione di energia e ,"confuse", si orienteranno su o giù in modo casuale.
+\begin{figure}[H]
+    \centering
+    \incfig{particella-confusa}
+    \caption{particella confusa}
+    \label{fig:particella-confusa}
+\end{figure}
+\noindent
+Questo è il motivo per cui l'entropia tende a $k\ln\left(2^N\right)$. Se invece aumentiamo il campo magnetico la separazione tra i due livelli sarà più netta, $\mu B$ sarà sempre più rilevante rispetto alla agitazione termica e le particelle tenderanno ad allinearsi metà giù e metà su a seconda del loro spin.\\
+Questo allineamento comporta una diminuzione della entropia, da cui lo shift del grafico verso il basso.\\
+La demagnetizzazione adiabatica funziona in questo modo: prendiamo un oggetto alla temperatura $T_{\text{in}}$ a contatto con un bagno termico (si usa solitamente elio liquido a 2 K), aumentiamo il campo magnetico facendo una traslazione verticale nel grafico precedente (Trasformazione (1) in \hyperref[fig:demagnetizzazione-adiabatica-1]{Figura 19}).\\
 A questo punto scolleghiamo il cristallo dal mondo esterno isolandolo, spegniamo il campo magnetico fino a tornare a quello di partenza. \\
 Quest'ultima trasformazione è adiabatica, quindi isoentropica. Per tornare alla situazione iniziale quindi abbiamo necessariamente raffreddato il cristallo (trasformazione (2) in \hyperref[fig:demagnetizzazione-adiabatica-1]{Figura 19}).
 \begin{figure}[H]
@@ -262,8 +283,12 @@ Quindi
 \[
 	T_{f} = T_{i}\cdot \frac{B_1}{B_2}
 .\] 
-Praticamente si trasferisce energia convertendo il disordine del sistema: da disordine termico a disordine "magnetico" di orientazione dei dipoli, si capisce bene che si tratta di una tecnica molto raffinata ed ingegnosa.\\
+La fisica di questo processo consiste nel fatto che, se rimuoviamo lentamente il campo magnetico (adiabaticità), i magneti per tornare ad orientarsi casualmente dovranno compiere lavoro contro il campo residuo in una parte del cristallo. Questo compiere lavoro toglie energia al cristallo stesso diminuendone la temperatura.\\
+Un altro modo di vedere la cosa è quello di pensare che ogni atomo in presenza di un campo magnetico tenderà a stare nel suo stato di energia più basso (quello orientato correttamente), se rimuovo il campo magnetico allora è possibile che le vibrazioni termiche facciano fare il salto energetico a quest'atomo portandolo nello stato orientato male. In questo modo l'atomo acquista una energia $\mu B$ e tale energia viene sottratta alle vibrazioni (diminuendo la temperatura).\\
 La fregatura è che $B_1=0$ non si può fare, anche se mettiamo il campo esterno a zero nella posizione di ogni singolo magnete non avremo mai $B = 0$ per via della magnetizzazione interna nel solido che non può essere spenta.\\
+Nella realtà is usano sistemi a doppio stadio: prima si utilizza elio liquido come bagno termico per raffreddare un sale paramagnetico (si applica la tecnica sugli atomi), successivamente si utilizza il sale (che raggiunge il millesimo di K) per raffreddare un materiale con un forte magnetismo nucleare (si applica la tecnica sui nuclei). In questo modo nel secondo materiale si riesce a raggiungere la saturazione magnetica $\mu B /kT\approx  1$ e quando lo scolleghiamo dal campo magnetico si arriva al $\mu K$!!
+\footnote{Feynmann, Volume II.}
+ 
 \subsection{Correzione al conteggio degli stati eliminando i conteggi ripetuti.}%
 \subsubsection{Conteggio delle particelle}%
 \label{subsub:Conteggio delle particelle}

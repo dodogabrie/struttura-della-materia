@@ -109,9 +109,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.406257"
-     inkscape:cx="470.66036"
-     inkscape:cy="112.06171"
+     inkscape:zoom="2.812514"
+     inkscape:cx="412.72353"
+     inkscape:cy="118.87401"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -119,8 +119,8 @@
      width="200mm"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="694"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -171,12 +171,12 @@
        id="text22"
        xml:space="preserve"
        style="font-size:2.64583325px;font-family:'Iosevka Term';-inkscape-font-specification:'Iosevka Term, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       y="263.24786"
-       x="158.22647"><tspan
+       y="261.55457"
+       x="190.58778"><tspan
          id="tspan20"
          sodipodi:role="line"
-         x="158.22647"
-         y="263.24786"
+         x="190.58778"
+         y="261.55457"
          style="stroke-width:0.26458332">$\frac{x\tau}{\hbar }$</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -195,5 +195,32 @@
        inkscape:path-effect="#path-effect36-36"
        inkscape:original-d="m 68.67373,256.7365 c 0.941002,-1.06644 1.881738,-2.1326 2.82221,-3.19851 1.755844,-0.94075 3.512347,-1.88173 5.268122,-2.82221 1.567875,0.50138 3.13605,1.00319 4.70368,1.50518 1.191738,1.69288 2.383464,3.38639 3.574795,5.07998 1.693586,-2.7e-4 3.386915,-2.7e-4 5.079976,0 1.25458,-2.06989 2.508894,-4.1395 3.762945,-6.20886 1.31704,-0.50189 2.634324,-1.00372 3.951092,-1.50518 1.442376,0.18784 2.88519,0.37603 4.32738,0.56444 1.12897,3.00962 2.258,6.02035 3.38665,9.03106 1.31734,-1.63092 2.63433,-3.26147 3.9511,-4.89182 1.8187,-13.92072 3.63777,-27.84605 5.45627,-41.76868 0.81555,-1.31727 1.63087,-2.75976 2.44591,-4.13924 1.4424,-0.62728 3.01062,-1.25458 4.51553,-1.88147 1.00351,-0.063 2.00717,-0.1257 3.01036,-0.18815"
        sodipodi:nodetypes="ccccccccccccccc" />
+    <path
+       style="fill:none;stroke:black;stroke-width:0.14044083;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;marker-end:none;marker-start:none;stroke-dasharray:1.05330625,1.05330625"
+       d="m 124.92975,206.31304 v 51.55233"
+       id="path27"
+       inkscape:connector-curvature="0" />
+    <text
+       id="text39"
+       xml:space="preserve"
+       style="font-size:3.96875px;font-family:'Iosevka Term';-inkscape-font-specification:'Iosevka Term, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="121.24552"
+       y="261.52731"><tspan
+         id="tspan37"
+         sodipodi:role="line"
+         x="121.24552"
+         y="261.52731"
+         style="stroke-width:0.26458332">$x=0$</tspan></text>
+    <text
+       id="text46"
+       xml:space="preserve"
+       style="font-size:3.96875px;font-family:'Iosevka Term';-inkscape-font-specification:'Iosevka Term, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="54.792336"
+       y="209.47754"><tspan
+         id="tspan44"
+         sodipodi:role="line"
+         x="54.792336"
+         y="209.47754"
+         style="stroke-width:0.26458332">$F\left(\frac{x\tau}{\hbar }\right) $</tspan></text>
   </g>
 </svg>

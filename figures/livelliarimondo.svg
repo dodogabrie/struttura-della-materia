@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="177.17299mm"
-   height="32.357132mm"
-   viewBox="0 0 177.17299 32.357132"
+   width="296.0441mm"
+   height="31.22821mm"
+   viewBox="0 0 296.0441 31.22821"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.406257"
-     inkscape:cx="401.94979"
-     inkscape:cy="46.70816"
+     inkscape:cx="616.27706"
+     inkscape:cy="45.285888"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -35,13 +35,13 @@
      width="200mm"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="694"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     fit-margin-left="40"
-     fit-margin-right="40"
+     fit-margin-left="100"
+     fit-margin-right="100"
      fit-margin-top="0"
      fit-margin-bottom="0">
     <inkscape:grid
@@ -52,8 +52,8 @@
        spacingy="10"
        empspacing="4"
        dotted="false"
-       originx="-18.325633"
-       originy="-39.418936" />
+       originx="41.674366"
+       originy="-39.795244" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -71,7 +71,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-18.325633,-225.22393)">
+     transform="translate(41.674367,-225.97654)">
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 58.325633,226.82109 H 139.60523"

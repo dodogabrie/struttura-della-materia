@@ -30,46 +30,49 @@ Riprendiamo il sistema a due livelli lasciato alla fine della scorsa lezione. L'
 In questo caso i termini $W^i$ coincidono, i due termini che ci danno un contributo in RWA sono:
 \[\begin{aligned}
     &\bra{1}W^+\ket{2} = \frac{iE_0}{2}\hat{e}\cdot \v{d}_{12}\\
-    &\bra{2}W^+\ket{1} = \frac{iE_0}{2}\hat{e}\cdot \v{d}_{21}\\
+    &\bra{2}W^-\ket{1} = -\frac{iE_0}{2}\hat{e}\cdot \v{d}_{21}
 .\end{aligned}\]
 In cui $\v{d}_{ij}=\bra{i}\hat{e}\cdot \v{p}\ket{j}$, inoltre ci siamo messi nella ipotesi in cui $\v{d}_{12}$ sia reale, in questo modo $\v{d}_{12}=\v{d}_{21}$.\\
 Cerchiamo una soluzione della equazione di Schrodinger che sia sovrapposizione dei due autostati in assenza di campo elettromagnetico:
 \[
     \ket{\psi(t) } = a_1(t) e^{-iE_1t /\hbar } + a_2(t) e^{-iE_2t /\hbar } 
 .\] 
-Si procede sostituendo questa nella equazione di Schrodinger dipendente dal tempo e proiettiamo su $\ket{1}$ e $\bra{2}$ ottenendo due equazioni: una per la derivata di $a_1$ ed una per la derivata di $a_2$ :
+Si procede sostituendo questa nella equazione di Schrodinger dipendente dal tempo e proiettiamo su $\bra{1}$ e $\bra{2}$ ottenendo due equazioni: una per la derivata di $a_1$ ed una per la derivata di $a_2$ :
 \[\begin{aligned}
     &\frac{\text{d} a_1(t) }{\text{d} t} =
     a_2 \frac{\bra{1}W^+\ket{2}}{i\hbar }e^{i(\omega_{12}-\omega) t}
     +
     \cancel{a_2\frac{\bra{1}W^-\ket{2}}{i\hbar }e^{i(\omega_{12}-\omega) t}}\\
     &\frac{\text{d} a_2(t) }{\text{d} t} =
-    \cancel{a_1 \frac{\bra{1}W^+\ket{2}}{i\hbar }e^{i(\omega_{12}-\omega) t}}
+    \cancel{a_1 \frac{\bra{2}W^+\ket{1}}{i\hbar }e^{i(\omega_{12}-\omega) t}}
     +
-    a_1\frac{\bra{1}W^-\ket{2}}{i\hbar }e^{i(\omega_{12}-\omega) t}\\
+    a_1\frac{\bra{2}W^-\ket{1}}{i\hbar }e^{i(\omega_{12}-\omega) t}\\
 .\end{aligned}\]
-Nello spirito della RWA trascuriamo i termini antirisonanti nella transizione.\\
+Nello spirito della RWA trascuriamo i termini antirisonanti  nella transizione (i termini che hanno la risonanza negativa rispetto alla energia della transizione).\\
 Per risolvere questo sistema conviene introdurre due nuove ampiezze:
 \[\begin{aligned}
-    &\tilde{a_1}(t) \to a_1(t) e^{i(\omega_{12}-\omega) t}\\
-    &\tilde{a_2}(t) \to a_2(t)
+    &\tilde{a}_1(t) \to a_1(t) e^{i(\omega_{12}-\omega) t}\\
+    &\tilde{a}_2(t) \to a_2(t)
 .\end{aligned}\]
-Il sistema diventa:
+In questo modo possiamo riscrivere le equazioni in termini del Detuing $\delta$:
 \[
-\begin{cases}
+\delta  = \omega-\omega_{12}
+.\] 
+Tale termine ci dice quanto la frequenza della radiazione incidente differisce dalla energia della transizione, si ha quindi:
+\[\begin{aligned}
     &\frac{\text{d} \tilde{a}_1(t) }{\text{d} t} = i \delta\tilde{a}_1(t) 
     + \frac{E_0}{2}\frac{\hat{e}\cdot \v{d}_{12}}{\hbar }\tilde{a}_2(t) \\
     &\frac{\text{d} \tilde{a}_2(t)}{\text{d} t} = -\frac{E_0}{2}\frac{\hat{e}\cdot \v{d}_{12}}{\hbar }\tilde{a}_1(t) 
-\end{cases}
-.\] 
-In cui $\delta  =\omega-\omega_{12}$. Risolvendo per sostituzione ($\tilde{a}_2(t)$ dalla prima inserito nella seconda):
+.\end{aligned}\]
+Risolvendo per sostituzione ($\tilde{a}_2(t)$ dalla prima inserito nella seconda):
 \[
     \frac{\text{d} ^2\tilde{a}_1(t) }{\text{d} t^2} 
     - i\delta\frac{\text{d} \tilde{a}_1(t) }{\text{d} t}
     + \left(\frac{E_0}{2}\frac{\hat{e}\cdot \v{d}_{12}}{\hbar }\right)
     \tilde{a}_1(t) = 0
 .\] 
-Risolviamo questa equazione nella ipotesi di $\delta =0$:
+\subsubsection{Detuning in risonanza}%
+Risolviamo questa equazione nella ipotesi di $\delta =0$, quindi l'energia del campo elettromagnetico conincidente con l'energia della transizione:
 \[
     \frac{\text{d}^2 \tilde{a}_1}{\text{d} t^2} 
     + \left(\frac{E_0}{2}\frac{\hat{e}\cdot \v{d}_{12}}{\hbar }\right)
@@ -85,7 +88,14 @@ Quindi la soluzione generale sarebbe:
     \tilde{a}_1 = c_1 \cos\left(\frac{\Omega_r}{2}t\right) 
     + c_2 \sin\left(\frac{\Omega_r}{2}t\right)
 .\] 
-Dove $\Omega_r = \frac{E_0 \hat{e}\cdot \v{d}_{12}}{2\hbar }$  detta frequenza di Rabi. Le soluzioni con le nostre condizioni saranno:
+In cui abbiamo definito la frequenza di Rabi:
+\begin{defn}[Frequenza di Rabi]{defn:Frequenza di Rabi}
+\[
+  \Omega_r = \frac{E_0 \hat{e}\cdot \v{d}_{12}}{\hbar }  
+.\] 
+\end{defn}
+
+Le soluzioni con le nostre condizioni saranno:
 \[\begin{aligned}
     &\tilde{a}_1(t) = -\sin\left(\frac{\Omega_r}{2}t\right)\\
     &\tilde{a}_2(t) = \cos\left(\frac{\Omega_r}{2}t\right)
@@ -113,7 +123,14 @@ La probabilità di trovare il sistema nel fondamentale o nel primo eccitato osci
     \caption{$\left|\tilde{a}_1(t) \right|$ }
     \label{ddd}
 \end{figure}
-Il periodo di queste oscillazioni è $2\pi /\Omega_r$ , al tempo $\pi /\Omega_r = T_\pi$ il sistema si è "ribaltato": ha probabilità massima 1 di essere nel primo eccitato.
+Queste oscillazioni hanno un periodo:
+\begin{fact}[Periodo oscillazioni di Rabi]{fact:Periodo oscillazioni di Rabi}
+\[
+    T_r = \frac{2\pi}{\Omega_r}
+.\] 
+\end{fact}
+Al tempo $\pi /\Omega_r = T_\pi$ il sistema si è "ribaltato": ha probabilità massima 1 di essere nel primo eccitato.\\
+Ovviamente l'ampiezza dell'altro stato seguirà un andamento sciftato:
 \begin{figure}[H]
     \centering
     \begin{tikzpicture}
@@ -129,9 +146,11 @@ Il periodo di queste oscillazioni è $2\pi /\Omega_r$ , al tempo $\pi /\Omega_r 
     \caption{$\left|\tilde{a}_2(t) \right|$.}
     \label{1111}
 \end{figure}
-Possiamo spiegarci questa cosa pensandola come tanti processi perturbativi consecutivi: il nostro atomo parte nel fondamentale ed interagendo con la radiazione passa nel primo eccitato. 
-Arrivato nel livello eccitato non può più assorbire radiazione, può solo fare emissione stimolata ricadendo nel fondamentale.\\
-Notiamo che la probabilità di transizione non è lineare nel tempo (come potevamo aspettarci per $\tau$ molto piccoli), inoltre tale soluzione deve contenere il trattamento perturbativo, quindi per tempi piccoli (ovvero tali da far rimanere la probabilità di transizione piccola). \\
+\noindent
+Possiamo spiegarci questa cosa pensandola come tanti processi perturbativi consecutivi: il nostro atomo parte nel fondamentale ed assorbendo la radiazione passa nel primo eccitato. \\
+Arrivato nel livello eccitato non può più assorbire radiazione per via della assenza di ulteriori livelli, può solo fare emissione stimolata ricadendo nel fondamentale.\\
+Notiamo che la probabilità di transizione non è lineare nel tempo (Non ci sono più le ipotesi fatte su $\tau$).
+Tale soluzione, essendo esatta, deve contenere il trattamento perturbativo, quindi per tempi piccoli (ovvero tali da far rimanere la probabilità di transizione piccola) deve tornare tale teoria. \\
 Questo ci dice anche che l'approccio perturbativo vale per 
 \[
 \tau \ll \frac{2\pi}{\Omega_r}
@@ -157,7 +176,14 @@ Quindi la forma di $\left|\tilde{a}_1\right|^2$ si modifica nel seguente modo:
     \caption{$\left|\tilde{a}_1(t)\right|$ considerando $\delta\neq 0$.}
     \label{delta non nullo}
 \end{figure}
-Con questa ultima equazione capiamo che l'approssimazione RWA è sensata, la correzione a questa sarebbero delle oscillazioni molto piccole sovrapposte all'andamento già oscillante. \\
+\noindent
+Quindi prendendo un Detuning non perfettamente centrato sulla frequenza di salto tra i livelli otteniamo:
+\begin{itemize}
+    \item Una ampiezza ridotta, non si arriva più ad 1.
+    \item Un aumento della frequenza di oscillazione.
+\end{itemize}
+Con questa ultima equazione capiamo che l'approssimazione RWA è sensata, infatti per i termini antirisonanti la frequenza della radiazione sarebbe molto "Stunata" essendo la $\delta$ molto distante dalla frequenza di risonanza di questi termini. Come conseguenza le correzioni alla RWA avrebbero una ampiezza molto inferiore a quella delle nostre soluzioni ed una frequenza molto maggiore.\\
+Con queste considerazioni possiamo dire che le correzioni dovute a questi termini antirisonanti sarebbero delle oscillazioni molto piccole sovrapposte all'andamento già oscillante. \\
 Per poter visualizzare le onde di Rabi è necessario avere delle onde quanto più possibile monocromatiche, altrimenti la convoluzione di tutte le componenti oscillanti distruggerà la forma della oscillazione. \\
 Per poter vedere tali oscillazioni quindi sarà necessario avere una ampiezza della distribuzione in frequenza $\Delta\omega$ pari a:
 \[
@@ -165,26 +191,25 @@ Per poter vedere tali oscillazioni quindi sarà necessario avere una ampiezza de
 .\] 
 Quindi gli esperimenti in questo campo si fanno tipicamente con Laser molto intensi.
 \subsection{Interazione radiazione materia collegata alla termodinamica}%
-\label{sub:Interazione radiazione materia collegata alla termodinamica}
-Supponiamo di avere una Ensemble di N atomi, la probabilità al tempo $t$  di avere l'atomo nel livello $m$-esimo è $\left|a_m(t) \right|^2$. Il numero di atomi nel livello $m$-esimo al tempo $t$  sarà dato da:
+Torniamo adesso nella teoria perturbativa e supponiamo di avere una Ensemble di N atomi, la probabilità al tempo $t$  di avere l'atomo nel livello $m$-esimo è $\left|a_m(t) \right|^2$. Il numero di atomi nel livello $m$-esimo al tempo $t$  sarà dato da:
 \[
     N_m = N\left|a_m(t) \right|^2
 .\] 
-La probabilità di transizione l'abbiamo calcolata e supponiamo che gli atomi non abbiano altri tipi di interazione al di fuori del campo elettromagnetico. Possiamo quindi scrivere che:
+La probabilità di transizione l'abbiamo calcolata e supponiamo che gli atomi non abbiano altri tipi di interazione al di fuori del campo elettromagnetico, quindi questo può essere l'unico responsabile della variazione di stato degli atomi. Possiamo quindi scrivere una equazione di Rate per le probabilità, in particolare per la probabilità che un atomo vada nel livello n-esimo:
 \[
     \frac{\text{d} \left|a_n(t) \right|^2_\text{in} }{\text{d} t} =
     P_{m\to n}\left|a_m(t) \right|^2
 .\] 
-Viceversa:
+Viceversa per il livello m-esimo:
 \[
     \frac{\text{d} \left|a_m(t) \right|^2_\text{in} }{\text{d} t} =
     P_{n\to m}\left|a_n(t) \right|^2
 .\] 
 Questa è la probabilità che l'atomo vada nel livello $n$  per la prima formula e $m$  per la seconda.\\
-La probabilità di uscire dal livello $n$  sarà invece:
+La variazione probabilità di uscire dal livello $n$ seguirà invece:
 \[
     \frac{\text{d} \left|a_n(t)\right|^2_\text{out} }{\text{d} t} =
-    -\frac{\text{d} \left|a_n(t) \right|^2_\text{in} }{\text{d} t}=
+    -\frac{\text{d} \left|a_m(t) \right|^2_\text{in} }{\text{d} t}=
     -P_{n\to m}\left|a_n\right|^2
 .\] 
 In totale (per tutti gli atomi) si ha che:
@@ -193,25 +218,31 @@ In totale (per tutti gli atomi) si ha che:
 -\sum_{m}^{'} P_{n\to m}N_n
 .\] 
 Le sommatoria sono su tutti i livelli diversi da $n$, la prima corrisponde al prodotto della probabilità di andare da $m$  a $n$  moltiplicata per gli atomi del livello $m$  (e poi sommiamo su tutti gli $m\neq n$) mentre il secondo termine corrisponde agli atomi che abbandonano il livello $n$.\\
-Se siamo all'equilibrio ovviamente tale derivata deve essere nulla:
+Se siamo all'equilibrio ovviamente abbiamo l'uguaglianza tra le sommatorie:
 \[
 \sum_{m}^{'} P_{m\to n}N_m =
-\sum_{m}^{'} P_{n\to m}N_{n}
+\sum_{m}^{'} P_{n\to m}N_{n} \label{eq:parentebilancio}
 .\] 
-Notiamo che stiamo ragionando sui moduli quadri delle ampiezze di probabilità, quindi quando facciamo una trattazione di rate abbiamo già perso un po di informazione (nella trattazione di Rabi invece potevamo vedere anche le fasi della ampiezza di probabilità), per questo motivo non siamo in grado di descrivere fenomeni coerenti o interferenze.\\
-L'equazione per l'equilibrio che abbiamo trovato è parente di un'altra ancora più stringente che abbiamo già incontrato: l'equazione di bilancio dettagliato.\\
+Questa trattazione vale per i moduli quadri delle ampiezze di probabilità, di conseguenza stiamo perdendo dell'informazione: non siamo in grado di descrivere fenomeni coerenti o interferenze. 
+\begin{fact}[Equazioni di Rate: niente interferenze]{fact:Equazioni di Rate: niente interferenze}
+Descrivendo il sistema con le equazioni di Rate perdiamo le informazioni sulle coerenze del sistema.
+\end{fact}
+Questi fenomeni venivano invece descritti con le oscillazioni di Rabi e la RWA.\\
+L'equazione per l'equilibrio che abbiamo trovato (\ref{eq:parentebilancio}) è parente di un'altra ancora più stringente che abbiamo già incontrato: l'equazione di bilancio dettagliato.\\
 Infatti il bilancio dettagliato ci diceva che i singoli processi dai singoli stati devono essere uguali:
 \[
 \forall n,m \quad P_{m\to n}N_m = P_{n\to m}N_n 
 .\] 
-Dal punto di vista quantistico questa è strettamente connessa con il time revelsal simmetry.\\
+È più stringente perché deve valere per ogni termine della somma. Dal punto di vista quantistico questa è strettamente connessa con il time revelsal simmetry della Hamiltoniana.\\
+Notiamo che nel caso di interazione con il campo elettromagnetico abbiamo proprio trovato che $P_{n\to m}=P_{m\to n}$ (simmetria dei coefficienti di Einstein per i processi di emissione o assorbimento).
+\subsubsection{Necessità di Emissione spontanea}%
 Dal punto di vista classico (sistema alla Boltzmann) se prendiamo un sistema a due livelli sappiamo che all'equilibrio termico:
 \[
     \frac{N_1^0}{N_2^0}= \frac{g_1}{g_2}\exp\left(-\frac{E_{12}}{kT}\right)
 .\] 
 Se gli atomi possono interagire solo con il campo elettromagnetico allora si ha che:
 \[
-P_{12} = B_{12}u_{\nu_{12}}=P_{21}=B_{21}u_{\nu_2}
+    P_{12} = B_{12}u_{\nu}(\nu_{12}) =P_{21}=B_{21}u_{\nu}(\nu_{12}) 
 .\] 
 Applicando il bilancio dettagliato abbiamo che:
 \[
@@ -236,12 +267,17 @@ Se siamo all'equilibrio termico possiamo utilizzare l'espressione di plank:
 A_{1\to 2} =
 \frac{8\pi h\nu_{12}^3}{c^3}\left(\frac{B_{2\to 1}\frac{g_2}{g_1}e^{h\nu_{12} /k_BT}-B_{1\to 2}}{e^{h\nu_{12} /k_BT}-1}\right)
 .\] 
-Imponendo che tale coefficiente non dipenda dalla temperatura abbiamo che $B_{1\to 2}g_1=B_{2\to 1}g_2$, quindi rimane semplicemente:
+Imponendo che tale coefficiente non dipenda dalla temperatura otteniamo una relazione generale tra i coefficienti $B$:
+\[
+B_{1\to 2}g_1=B_{2\to 1}g_2
+.\] 
+Nel caso in cui i livelli abbiano la stessa degenerazione si arriva al risultato:
 \[
 A_{1\to 2}=\frac{4}{3\hbar }\frac{\omega_{12}^3}{c ^3}\left|\bra{1}d\ket{2}\right|^2
 .\] 
-Questa è l'espressione del coefficiente di emissione spontanea, quella che si ottiene anche quantizzando il campo elettromagnetico.\\
-Vediamo che dipende dal cubo della frequenza e dal modulo quadro del dipolo. Se siamo in una situazione di assenza del campo EM rimane l'emissione spontanea e troviamo dalla equazione di rate semplicemente un decadimento esponenziale con tempo caratteristico:
+Questa è l'espressione del coefficiente di emissione spontanea, quella che si ottiene anche quantizzando il campo elettromagnetico.
+Vediamo che dipende dal cubo della frequenza e dal modulo quadro del dipolo.\\
+Se siamo in una situazione di assenza del campo EM rimane l'emissione spontanea e troviamo dalla equazione di rate semplicemente un decadimento esponenziale con tempo caratteristico:
 \[
 \tau_{s}=\frac{1}{A_{1\to 2}}
 .\] 
@@ -249,23 +285,40 @@ Diamo una dimensione numerica del tempo tipico di emissione spontanea:
 \[
     \left|\bra{1}d\ket{2}\right|\approx ea \approx 2.4 \text{ Debye} = 2.4\cdot 10^{-30}\text{ [C][m]}
 .\] 
-Nel visibile ($\lambda\sim 600$ nm) abbiamo che il tempo di emissione spontanea viene $\tau_s \sim 100$  ns.\\
-Se andiamo nell'infrarosso ($\lambda  = 10$ $\mu$m) abbiamo $\tau_s\sim 0.5$  ms.\\
+Nella quale abbiamo inserito il raggio classico di Bohr:
+\[
+    a_B = \frac{4\pi\epsilon_0\hbar ^2}{m_ee^2} \approx 5\cdot 10^{-11} \text{ m}
+.\] 
+\begin{itemize}
+    \item Visibile ($\lambda\sim 600$ nm, $\nu  \sim 5\cdot 10^{14}$ Hz): $\tau\sim 100$ ns.
+    \item Infrarosso ($\lambda\sim 10 \ \mu$m, $\nu\sim 10^{13}$ Hz): $\tau  \sim 0.5 $ ms.
+    \item Radio ($\lambda  \sim 1$ cm, $\nu\sim 10^{7}$ Hz): $\tau\sim 100$ h.
+\end{itemize}
+Più le transizioni sono alte in frequenza e più il rate di emissione spontanea è alto ed di conseguenza il rate è più breve.
+\subsubsection{Trattazione quantistica del coefficiente di emissione spontanea}%
 Nel caso quantistico la trattazione fatta resta valida, tuttavia se cambiamo il tipo di particella sarà necessario cambiare l'assunzione che 
 \[
 \frac{\text{d} N_1}{\text{d} t} \propto N_{2}P_{21}
 .\]   
 Con particelle classiche questo funziona, con con particelle quantistiche invece no. \\
 Prendiamo come esempio il caso di Fermioni: il rate con cui le particelle vanno dallo stato 1 a quello 2 deve tener conto del fatto che non ci può stare più di una particella per stato, gli stati finali devono essere liberi per transire.\\
-Nel caso di Bosoni invece si ha che più particelle ci sono nello stato finale e più e probabile che un'altra particella ci finisca.\\
+Nel caso di Bosoni invece si ha che più particelle ci sono nello stato finale e più e probabile che un'altra particella ci finisca.
+\begin{fact}[Caso quantistico per l'interazione]{fact:Caso quantistico per l'interazione}
+Cambiando le particelle cambia il Rate di interazione, visto che $A_{n\to m}$ non dipende dal rate allora abbiamo che quello che abbiamo trovato funziona con tutte le statistiche.
+\end{fact}
 Vediamo adesso quando domina il processo di emissione stimolata e quando invece domina quello di emissione spontanea. Per far questo consideriamo il rapporto:
 \[
     \frac{B_{1\to 2}u_\nu(\nu_{12})}{A_{1\to 2}} = \frac{1}{e^{h\nu_{12} /kT}-1}
-    = n_\text{ph}^{(\nu_{12})} = n_{\nu_{12}}
+    = n_\text{ph}(\nu_{12}) = n_{\nu_{12}}
 .\] 
-Questo è il numero medio di fotoni alla frequenza $\nu_{12}$  che è la frequenza della transizione. Quantizzando il campo magnetico troviamo che $P_\text{em} \propto n_\text{pH} + 1$, il primo termine sarà quello si emissione stimolata mentre quello di emissione spontanea è il secondo.\\
-Questo comporta che in una situazione in cui $n_{\nu_{12}}\ll 1$ allora domina l'emissione spontanea, viceversa domina la stimolata.\\
-Nel primo dei due casi se abbiamo fotoni termici la condizione comporta:
+Questo è il numero medio di fotoni alla frequenza $\nu_{12}$  che è la frequenza della transizione.\\
+Quantizzando il campo magnetico troviamo che la probabilità di emissione $P_\text{em} \propto n_\text{pH} + 1$, il primo termine sarà quello di emissione stimolata mentre quello di emissione spontanea è il secondo.\\
+Questo comporta che 
+\begin{itemize}
+    \item Se $n_{\nu_{12}}\ll 1$: domina l'emissione spontanea.
+    \item Se $u_{\nu_{12}}\gg 1$: domina l'emissione stimolata.
+\end{itemize}
+Nel primo dei due casi se abbiamo fotoni termici tale condizione comporta:
 \[
 e^{h\nu /kT}\ll 2
 .\] 
@@ -273,24 +326,24 @@ Di conseguenza anche:
 \[
     T\lambda\gg \frac{1}{\ln(2)}\frac{hc}{k}\sim 20000 [\mu\text{m}][\text{K}]
 .\] 
-L'emissione stimolata domina quindi per $\lambda\gg 10^4$.\\
-\subsection{Applicazione dell'interazione radiazione materia: Laser}%
-\label{sub:Applicazione dell'interazione radiazione materia: Laser}
+L'emissione stimolata domina quindi per $\lambda\gg 10^4$ m.\\
+\subsection{Variazione della intensità della radiazione in un mezzo materiale}%
 Vediamo come varia l'intensità della radiazione quando attraversa un mezzo materiale (che noi schematizziamo come un sistema a due livelli). Dobbiamo studiare la variazione della intensità $I$  della radiazione (il flusso di energia per unità di tempo, la potenza per unità di area), ricordando che
 \[
 u = \frac{E_0^2}{8\pi}
 .\] 
 Questa è la densità di energia (nel corpo nero avevamo $u_\nu$: la densità di energia per unità di frequenza). Abbiamo quindi
 \[
-I=cu
+I= \frac{\text{d} u}{\text{d} t} dz =  cu
 .\] 
-Considerando il seguente corpo
-\begin{figure}[ht]
+Considerando il seguente corpo:
+\begin{figure}[H]
     \centering
     \incfig{corpo-per-interazione-radiazione-materia}
     \caption{Corpo per interazione radiazione materia}
     \label{fig:corpo-per-interazione-radiazione-materia}
 \end{figure}
+\noindent
 Vogliamo trovare l'andamento di $I_z$, in particolare vedremo che
 \[
     I=\exp\left(-kz\right)I(0) 
@@ -301,9 +354,18 @@ O in forma differenziale:
 .\] 
 Dove il segno negativo è per la convenzione che una variazione di intensità negativa si riferisce ad un $k$  positivo.\\
 In generale $k$  potrebbe dipendere da $I$, al primo ordine non sarà così, $k$  si dice coefficiente di assorbimento.
-Se tale parametro è positivo l'energia viene soppressa, se è negativo l'energia aumenta.\\
-Per un sistema a due livelli questo significa che se $k$  è positivo l'energia viene persa dal campo elettromagnetico perché domina l'assorbimento, viceversa domina l'emissione stimolata.\\
-Poniamoci nella situazione in cui $N_2$  ed $N_1$  (le popolazioni dei due livelli) sono fissate e diventano da qui in poi le densità di popolazione \footnote{Facciamo in modo che non si modifichino con l'applicazione di un campo elettromagnetico esterno}.
+\begin{defn}[Coefficiente di assorbimento]{defn:Coefficiente di assorbimento}
+In un materiale il coefficiente di assorbimento $k$ ci esprime come viene Dumpata l'intensità secondo la relazione:
+\[
+    dI=-kI(z) dz
+.\] 
+Inoltre vale che:
+\begin{itemize}
+    \item $k>0\implies$ domina l'assorbimento, campo soppresso.
+    \item $k<0\implies$ domina l'emissione stimolata, campo amplificato
+\end{itemize}
+\end{defn}
+Poniamoci nella situazione in cui $N_2$  ed $N_1$  (le popolazioni dei due livelli) sono fissate e diventano da qui in poi le densità di popolazione (popolazioni per unità di volume)\footnote{Facciamo in modo che non si modifichino con l'applicazione di un campo elettromagnetico esterno}.
 Consideriamo la variazione di $I$  in $z$  :
 \[
 \frac{\text{d} I}{\text{d} z} = c \frac{\text{d} u}{\text{d} z} 
@@ -324,14 +386,15 @@ Quindi abbiamo che
 \frac{\text{d} I}{\text{d} z} = \frac{\text{d} u}{\text{d} t} =
 h\nu \left(P_{1\to 2}N_1 - P_{2\to 1}N_2\right)
 .\] 
-Inserendo dentro $P_{1\to 2}$  e $P_{2\to 1}$:
+Inserendo dentro $P_{1\to 2}$  e $P_{2\to 1}$, tuttavia invece che scriverlo come visto in precedenza:
 \[
     P_{1 \to 2} = B_{12}u_\nu (\nu_{12}) 
 .\] 
-Questa volta supponiamo che la radiazione sia molto "stretta" rispetto alla $g$, integriamo la $u_\nu$  lasciando la $g$.  \\
+Prendiamo la radiazione "stretta" rispetto alla $g$ (ricordiamo che questa era la forma di riga, definita tramite la $\rho (E) $ cambiando variabile nelle frequenze), integriamo allora $u_\nu$  lasciando la $g$:
 \[
     P_{1 \to 2} = B_{12}g(\nu-\nu_{12})u
 .\] 
+Dove adesso la $u$ è l'integrale in frequenza della densità di energia per unità di frequenza.\\
 Inserendo dentro otteniamo l'espressione:
 \[
     \frac{\text{d} I}{\text{d} z} = h\nu g(\nu-\nu_{12}) u\left(B_{1\to 2}N_1
@@ -341,7 +404,7 @@ Nella formula abbiamo riscritto $u = I /c$  mentre il coefficiente $k$  vale:
 \[
     k=\frac{h\nu}{c}g(\nu-\nu_{12})\left(B_{21}N_2 - B_{12}N_1\right) 
 .\] 
-All'equilibrio termodinamico la popolazione del livello i-esimo la popolazione sarà moltiplicata per la degenerazione del livello:
+Abbiamo lasciato i due coefficienti perché, come abbiamo già visto possono essere diversi se i livelli hanno degenerazioni diverse.\\ All'equilibrio termodinamico la popolazione del livello i-esimo la popolazione sarà moltiplicata per la degenerazione del livello:
 \[
 N_i^0 = \frac{g_i e^{- E_i /kT}}{Z}
 .\] 
@@ -349,13 +412,20 @@ Quindi abbiamo che:
 \[
 \frac{N_1^0}{N_2^0} = \frac{g_1}{g_2}e^{-E_{12} /kT}
 .\] 
-Inoltre
+Ricordiamo allora che:
 \[
 \frac{B_{21}}{B_{12}} = \frac{g_1}{g_2}
 .\] 
 Anche con la degenerazione invece $A$ resta lo stesso. Supponiamo adesso che le degenerazioni siano uguali, il coefficiente di assorbimento diventa
 \[
-    k=\frac{h\nu}{c}g(\nu-\nu_{12}) (N_2-N_1) 
+    k=\frac{h\nu}{c}g(\nu-\nu_{12})B (N_2-N_1) 
 .\] 
 Quindi il coefficiente di assorbimento è positivo quando $N_2$ è maggiore di $N_1$. \\
-Se si riesce ad invertire la popolazione (cioè ad avere $N_1>N_2$) allora il coefficiente $k$ diventa negativo e la radiazione aumenta esponenzialmente nel passaggio nel materiale. 
+\begin{fact}[Inversione di popolazione]{fact:Inversione di popolazione}
+La radiazione viene incrementata attraverso il mezzo se abbiamo più atomi nello stato eccitato di quanti ne abbiamo nel fondamentale.
+\[
+    N_1>N_2
+.\] 
+In questo caso infatti si ha $k>0$.
+\end{fact}
+Si chiama inversione perché a cose normali all'equilibrio termodinamico succede il contrario: abbiamo più atomi nel fondamentale che nell'eccitato.

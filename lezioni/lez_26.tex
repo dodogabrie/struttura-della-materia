@@ -9,7 +9,7 @@ Ci saranno poi dei processi che tengono a riportare il sistema in una condizione
 Cerchiamo di modellizzare questo sistema, vedremo che il coefficiente di assorbimento in questo caso dipenderà dalla intensità.\\
 Il coefficiente trovato nella scorsa lezione è:
 \[
-    k = \frac{h\nu}{c}g(\nu-\nu_{12}) \left(N_2-N_1\right)
+    k = \frac{h\nu}{c}g(\nu-\nu_{12})B \left(N_2-N_1\right)
 .\] 
 Dove $g(\nu-\nu_{12})$ è la forma di riga della transizione. Ricordiamo anche che il livello superiore è (1) mentre il livello inferiore è il (2) e che le popolazioni sono definite per unità di volume.
 Oppure se la degenerazione dei livelli è diversa abbiamo:
@@ -29,7 +29,7 @@ Ovviamente per l'altro livello abbiamo la stessa cosa con il segno opposto:
 La differenza delle ultime due equazioni ci da:
 \[
     \frac{\text{d} \left(N_2-N_1\right)}{\text{d} t} =
-    2\left|B_{21}N_1-B_{21}N_2\right|u g(\nu-\nu_{12}) 
+    2\left|B_{12}N_1-B_{21}N_2\right|u g(\nu-\nu_{12}) 
 .\] 
 Questa riguarda l'interazione con il campo elettromagnetico, dobbiamo tener di conto anche dei processi che riportano il sistema all'equilibrio: introduciamo quindi il parametro $\gamma_{\parallel}$.
 \begin{defn}[Rate di ritorno all'equilibrio]{defn:Rate di ritorno all'equilibrio}
@@ -205,7 +205,7 @@ Q = \omega\tau
 Nella quale $\omega$ è la frequenza di risonanza determinata dalla fase (per avere un sistema auto-oscillante bisogna che dopo un giro nella cavità ottica il campo sia in fase per avere interferenza costruttiva).\\
 Quindi l'uguaglianza "Guadagno = Perdite" ci dirà la condizione di soglia per la quale il sistema è in grado di auto-oscillare, la frequenza di oscillazione sarà fissata dalla fase che a sua volta sarà determinata dalla lunghezza della cavità.\\
 Ribadiamo che $\omega$ è data dai modi risonanti del campo elettromagnetico che esistono nella cavità permessi dalle condizioni al contorno (dipendenti dalla lunghezza).
-\subsubsection{Distribuzione Lorentziana della densità di energia uscente dal Laser}%
+\subsubsection{Distribuzione Lorentziana della densità di energia della cavità ottica}%
 Supponiamo che all'interno della cavità il campo EM sia uniforme:
 \[
     E(t) = E(0) \exp\left(-i\omega t- \frac{t}{2\tau}\right)

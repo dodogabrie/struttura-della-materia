@@ -27,9 +27,42 @@ Legge di spostamento di Wien:
 \begin{quest}[Da dove prende il nome la dist. di corpo nero?]{quest:Da dove prende il nome la dist. di corpo nero?}
     Abbiamo un corpo perfettamente in equilibrio con la radiazione elettromagnetica che contiene, questo significa che può essere considerato perfettamente assorbente a tutte le frequenze e quindi corpo nero. 
 \end{quest}
+\begin{quest}[Parlare della conducibilità elettrica dei metalli]{quest:Parlare della conducibilità elettrica dei metalli}
+    Applicare l'equazione del trasporto di Boltzmann, approssimare $f\approx f_0$ nelle derivate della equazione ed utilizzare la distribuzione di Fermi a gradino. Ne risulterà che la $f$ cambia come $\delta (\mathcal{E}-\mu_F)$ e che quindi gli unici elettroni disponibili alla conduzione sono quelli aventi energia in un intorno $kT$ dell'energia di Fermi.
+\end{quest}
 \begin{quest}[Perché la $\rho$ nel caso di corpo nero si accorge della forma delle pareti?]{quest:Perché la  nel caso di corpo nero si accorge della forma delle pareti?}
 Perché per ricavarla è necessario imporre delle condizioni al contorno che tengono appunto di conto delle pareti. 
 \end{quest}
+
+\begin{quest}[Quale tra i seguenti due materiali conduce meglio? (immagini) ]{quest:Quale tra i seguenti due materiali conduce meglio? (immagini) }
+\begin{figure}[H]
+    \centering
+    \incfig{chi-conduce-meglio?}
+    \caption{chi conduce meglio?}
+    \label{fig:chi-conduce-meglio?}
+\end{figure}
+Ci sono due contributi alla conducibilità in questo caso: 
+\begin{itemize}
+    \item La concavità della parabola (più ripida è la conca e minore è la massa efficace)
+    \item Il numero di elettroni che è maggiore nel caso di parabola più schiacciata.
+\end{itemize}
+È necessario capire se vince la quantità di elettroni oppure il fatto che con massa efficace minore ne accelero di più. 
+Per rispondere è necessario ricordare il coefficiente $\sigma$ per la conducibilità:
+\[
+    \sigma  = \frac{e^2n}{m}\tau (\mu_F) 
+.\] 
+Dove si ricorda che $J = \sigma E$. Nei due casi abbiamo due masse diverse, dobbiamo giocarcela con gli $n$ (diversi anche quelli) per capire chi conduce di più.
+Per trovare $n$ possiamo vedere chi dei due ha più elettroni: 
+\[
+    N = \int_{0}^{\mathcal{E}_F} \rho (\mathcal{E}) d\mathcal{E}\propto\left(\mathcal{E}_F\cdot m\right)^{3 /2} \implies  n = \frac{N}{V}
+.\] 
+In conclusione abbiamo che:
+\[
+    \frac{\sigma_1}{\sigma_2} = \frac{m_1^{1 /2}}{m_2^{1 /2}}
+.\] 
+Supponiamo che $m_1>m_2$, in tal caso si ha $\sigma_1>\sigma_2$, quindi vince la parabola più schiacciata.	
+\end{quest}
+
 \begin{quest}[É possibile fare condensaz. di BE con i fotoni?]{quest:É possibile fare condensaz. di BE con i fotoni?}
     Il problema con i fotoni è che non conservano il numero di particelle, quindi quanto tento di raffreddare il sistema (facendo $\mu\to 0$ e $N\to \infty$ nel caso di particelle Bosoniche (ATTENZIONE CHE QUI $\mu$ NON C'È PER I FOTONI)) non c'è nessun problema con il fatto che $N$ non diverga: i fotoni semplicemente spariscono!\\
     È quindi necessario trovare un modo per conservare il numero di fotoni. Nel caso di corpo nero non c'è modo di far questo: il numero di fotoni tende a zero. 
@@ -44,6 +77,7 @@ Non avendo energia lo stato fondamentale, secondo la nostra $\rho \propto  \math
 \begin{quest}[Esiste sistema per il quale $N\to \infty$ con $\mu\to 0$ nel caso di Bosoni?]{quest:Esiste sistema per il quale $Ntoinfty$ con  nel caso di Bosoni?}
     Si, basta prendere un sistema 2D, in tal caso la densità di stati è indipendente dall'energia e l'integrale della (sola) Bose-Einstein da 0 a $\infty$ può divergere: in 2 dimensioni niente condensato =(
 \end{quest}
+
 \begin{quest}[Calore specifico per il gas di Bosoni]{quest:Calore specifico per il gas di Bosoni}
     In regime classico tornerà $C_V = 3 /2 NK$. In regime quantistico al di sotto della temperatura critica possiamo approssimare $\mu\approx  0$ procedere al calcolo della energia:
 \[
@@ -55,7 +89,7 @@ Con il classico cambio di variabile $x = \mathcal{E}  /kT$ si arriva ad avere:
 .\] 
 E quindi $C_V \propto T^{3 /2}$. Nel regime intermedio il calore specifico presenterà una sorta di overshoot da questo andamento che lo porta a salire leggermente al di sopra del calore specifico di Doulong-Depetit poiché $C_V(T_c) \approx 1.9 NK > 1.5 NK$.
 \end{quest}
-\begin{quest}[Parlare della conducibilità elettrica dei metalli]{quest:Parlare della conducibilità elettrica dei metalli}
-    Applicare l'equazione del trasporto di Boltzmann, approssimare $f\approx f_0$ nelle derivate della equazione ed utilizzare la distribuzione di Fermi a gradino. Ne risulterà che la $f$ cambia come $\delta (\mathcal{E}-\mu_F)$ e che quindi gli unici elettroni disponibili alla conduzione sono quelli aventi energia in un intorno $kT$ dell'energia di Fermi.
+\begin{quest}[Parlare dell'effetto fotoelettrico]{quest:Parlare dell'effetto fotoelettrico}
+
 \end{quest}
 

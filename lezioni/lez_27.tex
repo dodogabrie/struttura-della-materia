@@ -341,23 +341,23 @@ Assumiamo che per queste particelle valga la distribuzione di Boltzmann, quindi 
 .\] 
 Dalla espressione scritta prima per l'effetto doppler si ha che:
 \[
-    v_z = c \frac{\nu_0-\nu_{12}}{\nu_{12}}
+    v_z = c \frac{\nu_{12}-\nu_0}{\nu_0}
 .\] 
 Si ha quindi che il differenziale della velocità è:
 \[
-    dv_z = c \frac{d\nu_0}{\nu_{12}}
+    dv_z = c \frac{d\nu_{12}}{\nu_{0}}
 .\] 
 La larghezza di riga è quindi fatta, possiamo scrivere $g(\nu_0-\nu_{12})d\nu_0$ :
 \[
-    g(\nu_0-\nu_{12}) d\nu_0 = 
+    g(\nu_0-\nu_{12}) d\nu_{12} = 
     \sqrt{\frac{m}{2\pi kT}}
     \exp\left(-\frac{m}{2kT}
-    \frac{c^2\left(\nu_0^2-\nu_{12}\right)^2}{\nu_{12}^2}\right)
-    \frac{c}{\nu_{12}}d\nu_0
+    \frac{c^2\left(\nu_0^2-\nu_{12}\right)^2}{\nu_{0}^2}\right)
+    \frac{c}{\nu_{0}}d\nu_{12}
 .\] 
 La forma di riga diventa una gaussiana grazie a Boltzmann. La larghezza di riga doppler è quindi:
 \[
-    \Delta\nu _\text{Doppler} = \frac{\nu_{12}}{c}\sqrt{\ln (2)  \frac{2kT}{m}}
+    \Delta\nu _\text{Doppler} = \frac{\nu_{0}}{c}\sqrt{\ln (2)  \frac{2kT}{m}}
 .\] 
 Possiamo allora riscrivere la forma di riga:
 \[

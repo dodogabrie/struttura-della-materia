@@ -68,14 +68,14 @@ Risolvendo per sostituzione ($\tilde{a}_2(t)$ dalla prima inserito nella seconda
 \[
     \frac{\text{d} ^2\tilde{a}_1(t) }{\text{d} t^2} 
     - i\delta\frac{\text{d} \tilde{a}_1(t) }{\text{d} t}
-    + \left(\frac{E_0}{2}\frac{\hat{e}\cdot \v{d}_{12}}{\hbar }\right)
+    + \left(\frac{E_0}{2}\frac{\hat{e}\cdot \v{d}_{12}}{\hbar }\right)^2
     \tilde{a}_1(t) = 0
 .\] 
 \subsubsection{Detuning in risonanza}%
 Risolviamo questa equazione nella ipotesi di $\delta =0$, quindi l'energia del campo elettromagnetico coincidente con l'energia della transizione:
 \[
     \frac{\text{d}^2 \tilde{a}_1}{\text{d} t^2} 
-    + \left(\frac{E_0}{2}\frac{\hat{e}\cdot \v{d}_{12}}{\hbar }\right)
+    + \left(\frac{E_0}{2}\frac{\hat{e}\cdot \v{d}_{12}}{\hbar }\right)^2
     \tilde{a}_1=0
 .\] 
 Cerchiamo la soluzione imponendo che $t=0$ il sistema si trovasse nel livello più basso (2): 
@@ -258,11 +258,11 @@ Einstein risolse questo problema assumendo che le probabilità fossero proporzio
 Il secondo termine è indipendente dalla densità di energia del campo elettromagnetico. Questo coefficiente è quello di emissione spontanea \footnote{Quantizzando il campo EM si vedrà che tale elemento viene fuori direttamente dagli elementi di matrice della interazione.}.\\
 Possiamo ora scrivere le proprietà di equilibrio termodinamico:
 \[
-    \frac{N_1^0}{N_2^0} = \frac{B_{1\to 2 u_\nu(\nu_{12})}}{B_{1\to 2}u_\nu(\nu_{12}) + A_{1\to 2}} = \frac{g_1}{g_2}e^{-h\nu_{12} /k_BT}
+    \frac{N_1^0}{N_2^0} = \frac{B_{2\to 1 u_\nu(\nu_{12})}}{B_{1\to 2}u_\nu(\nu_{12}) + A_{1\to 2}} = \frac{g_1}{g_2}e^{-h\nu_{12} /k_BT}
 .\] 
 Possiamo quindi calcolare $A$  in funzione di $T$  :
 \[
-    A_{12} = \left(B_{1\to 2}\frac{g_2}{g_1}e^{h\nu_{12} /k_BT}-B_{1\to 2}\right)u_\nu(\nu_{12}) 
+    A_{12} = \left(B_{2\to 1}\frac{g_2}{g_1}e^{h\nu_{12} /k_BT}-B_{1\to 2}\right)u_\nu(\nu_{12}) 
 .\] 
 Se siamo all'equilibrio termico possiamo utilizzare l'espressione di plank:
 \[
@@ -320,7 +320,7 @@ Quantizzando il campo magnetico troviamo che la probabilità di emissione $P_\te
 Questo comporta che 
 \begin{itemize}
     \item Se $n_{\nu_{12}}\ll 1$: domina l'emissione spontanea.
-    \item Se $u_{\nu_{12}}\gg 1$: domina l'emissione stimolata.
+    \item Se $n_{\nu_{12}}\gg 1$: domina l'emissione stimolata.
 \end{itemize}
 Nel primo dei due casi se abbiamo fotoni termici tale condizione comporta:
 \[
@@ -330,7 +330,7 @@ Di conseguenza anche:
 \[
     T\lambda\gg \frac{1}{\ln(2)}\frac{hc}{k}\sim 20000 [\mu\text{m}][\text{K}]
 .\] 
-L'emissione stimolata domina quindi per $\lambda\gg 10^4$ m.\\
+L'emissione spontanea domina quindi per $\lambda\gg 10^4$ m.\\
 \subsection{Variazione della intensità della radiazione in un mezzo materiale}%
 Vediamo come varia l'intensità della radiazione quando attraversa un mezzo materiale (che noi schematizziamo come un sistema a due livelli). Dobbiamo studiare la variazione della intensità $I$  della radiazione (il flusso di energia per unità di tempo, la potenza per unità di area), ricordando che
 \[
@@ -424,7 +424,7 @@ Anche con la degenerazione invece $A$ resta lo stesso. Supponiamo adesso che le 
 \[
     k=\frac{h\nu}{c}g(\nu-\nu_{12})B (N_2-N_1) 
 .\] 
-Quindi il coefficiente di assorbimento è positivo quando $N_2$ è maggiore di $N_1$. \\
+Quindi il coefficiente di assorbimento è negativo quando $N_1$ è maggiore di $N_2$. \\
 \begin{fact}[Inversione di popolazione]{fact:Inversione di popolazione}
 La radiazione viene incrementata attraverso il mezzo se abbiamo più atomi nello stato eccitato di quanti ne abbiamo nel fondamentale.
 \[

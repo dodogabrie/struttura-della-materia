@@ -4,5 +4,65 @@
 \end{quest}
 \begin{quest}[Cosa si intende per pompaggio attivo?]{quest:Cosa si intende per pompaggio attivo?}
 \end{quest}
-
-
+\begin{quest}[Modello di Einstein per l'interazione radiazione materia]{quest:Modello di Einstein per l'interazione radiazione materia}
+Einstein impose che la probabilità di transizione da un livello $m$ ad un livello $n$ a causa della presenza del campo EM fosse:
+\[
+    P_{m\to n} = u(\nu_{nm}) B_{m\to n}
+.\] 
+Nella quale $B_{m\to n}$ è il coefficiente di Einstein che regola l'emissione spontanea (e l'assorbimento, a meno di un eventuale fattore).\\
+Il problema con questa trattazione deriva dal principio del bilancio dettagliato, questo afferma che:
+\[
+    P_{12}N_1=P_{21}N_2
+.\] 
+Se fossero semplicemente $P_{12}=P_{12}$  (quindi se tra emissione ed assorbim. ci fosse completa simmetria) allora si avrebbe che:
+\[
+    \frac{N_2}{N_1}=1
+.\] 
+Tuttavia per particelle classiche ad esempio sappiamo che:
+\[
+    \frac{N_2}{N_1} = \exp\left(-\frac{E_{21}}{kT}\right)
+.\] 
+Questo conflitto venne risolto da Einstein introducendo il coefficiente di emissione spontanea $A_{12}$, infatti scrisse che la probabilità di emettere, quindi di andare da $1$ a $2$ è:
+\[
+    P_{12}=B_{12}u(\nu_{12}) + A_{12}
+.\] 
+Mentre quella di assorbimento:
+\[
+    P_{21} = B_{21}u(\nu_{21}) 
+.\] 
+Quindi sfruttando Boltzmann e la distribuzione di Plank (per la $u$)
+\[
+    u(\nu_{12}) d\nu_{12}  = \frac{8\pi\nu_{12}^3}{c^3}\frac{1}{\exp\left(\frac{h\nu_{12}}{k_BT}\right)-1}
+.\]  
+si trova come deve essere fatto $A$, inoltre grazie al fatto che tale coefficiente deve essere indipendente dalla temperatura si ottiene anche che:
+\[
+    B_{12}=B_{21}
+.\] 
+E con le degenerazioni si ha che:
+\[
+    B_{12}g_1= B_{21}g_2
+.\] 
+\end{quest}
+\begin{quest}[La trattazione per ricavare $A$ di Einstein vale per particelle Quantistiche?]{quest:La trattazione per ricavare $A$ di Einstein vale per particelle Quantistiche?}
+In tal caso $\frac{N_1}{N_2}$ è diverso da quello dato da Boltzmann, tuttavia i coefficienti di Einstein continuano a funzionare.
+Questo perché si modificano le equazioni di Rate, infatti i numeri di occupazione sono fortemente diversi nel caso quantistico rispetto a quello classico. Nel caso di fermioni la probabilità di raggiungere lo stato finale è proporzionale sia al numero di particelle dello stato iniziale $n_i$ ma anche a $1-n_f$ ($n_f$ numero di particelle nello stato finale). Nel caso di bosoni è proporzionale anche a $1+n_f$.
+\end{quest}
+\begin{quest}[Motivi per cui si ha una larghezza di riga]{quest:Motivi per cui si ha una larghezza di riga}
+    Ha praticamente chiesto l'ultimo paragrafo, da sapere tutto per rispondere\ldots
+\end{quest}
+\begin{quest}[Chi determina la freq. di emissione di un LASER e chi la larg. di riga]{quest:Chi determina la freq. di emissione di un LASER e chi la larg. di riga}
+La della cavità è data dal fattore di Forma $Q$
+\[
+    \Delta\omega  = \frac{1}{\tau}=\frac{\omega}{Q}
+.\] 
+mentre la frequenza è data da dalla cavità che avrà dei modi normali dovuti alla fase introdotta.
+\end{quest}
+\begin{quest}[Cosa determina la larghezza di riga dell'emissione del LASER?]{quest:Cosa determina la larghezza di riga dell'emissione del LASER?}
+La larghezza residua del laser è dovuta alla emissione spontanea.	
+\end{quest}
+\begin{quest}[Perché la larghezza del LASER è molto più piccola di quella della cavità?]{quest:Perché la larghezza del LASER è molto più piccola di quella della cavità?}
+Perché il mezzo attivo funziona per emissione stimolata e l'emissione stimolata sputa sempre fotoni tutti uguali: il primo fotone che fa partire questa emissione prende il sopravvento.
+\end{quest}
+\begin{quest}[Aumentando il pompagg. che succede se ho un allargam. omog. o disomog.?]{quest:Aumentando il pompagg. che succede se ho un allargam. omog. o disomog.?}
+Se ho un allargamento omogeneo non cambia nulla, se è disomogeneo ho che ogni specie atomica contribuisce ad una frequenza diversa. Se nel secondo caso aumento il pompaggio potrei avere altre popolazioni che arrivano a stazionarietà ed iniziano a emettere. Nei sistemi disomog. i laser funzionano si più modi contemporaneamente.
+\end{quest}

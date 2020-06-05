@@ -72,17 +72,17 @@ Risolvendo per sostituzione ($\tilde{a}_2(t)$ dalla prima inserito nella seconda
     \tilde{a}_1(t) = 0
 .\] 
 \subsubsection{Detuning in risonanza}%
-Risolviamo questa equazione nella ipotesi di $\delta =0$, quindi l'energia del campo elettromagnetico conincidente con l'energia della transizione:
+Risolviamo questa equazione nella ipotesi di $\delta =0$, quindi l'energia del campo elettromagnetico coincidente con l'energia della transizione:
 \[
     \frac{\text{d}^2 \tilde{a}_1}{\text{d} t^2} 
     + \left(\frac{E_0}{2}\frac{\hat{e}\cdot \v{d}_{12}}{\hbar }\right)
     \tilde{a}_1=0
 .\] 
 Cerchiamo la soluzione imponendo che $t=0$ il sistema si trovasse nel livello più basso (2): 
-\[\begin{aligned}
-    &a_2(0) = 1\\
-    &a_1(0) = 0
-.\end{aligned}\]
+\[
+    a_2(0) = 1 \qquad
+    a_1(0) = 0
+.\] 
 Quindi la soluzione generale sarebbe:
 \[
     \tilde{a}_1 = c_1 \cos\left(\frac{\Omega_r}{2}t\right) 
@@ -96,10 +96,10 @@ In cui abbiamo definito la frequenza di Rabi:
 \end{defn}
 
 Le soluzioni con le nostre condizioni saranno:
-\[\begin{aligned}
-    &\tilde{a}_1(t) = -\sin\left(\frac{\Omega_r}{2}t\right)\\
-    &\tilde{a}_2(t) = \cos\left(\frac{\Omega_r}{2}t\right)
-.\end{aligned}\]
+\[
+    \tilde{a}_1(t) = -\sin\left(\frac{\Omega_r}{2}t\right) \qquad
+    \tilde{a}_2(t) = \cos\left(\frac{\Omega_r}{2}t\right)
+.\] 
 A noi interessa la probabilità, facciamo quindi il modulo quadro di tali ampiezze:
 \[\begin{aligned}
     &\left|\tilde{a}_1(t)\right|^2 = \sin^2\left(\frac{\Omega_r}{2}t\right)=
@@ -129,7 +129,6 @@ Queste oscillazioni hanno un periodo:
     T_r = \frac{2\pi}{\Omega_r}
 .\] 
 \end{fact}
-Al tempo $\pi /\Omega_r = T_\pi$ il sistema si è "ribaltato": ha probabilità massima 1 di essere nel primo eccitato.\\
 Ovviamente l'ampiezza dell'altro stato seguirà un andamento sciftato:
 \begin{figure}[H]
     \centering
@@ -149,18 +148,21 @@ Ovviamente l'ampiezza dell'altro stato seguirà un andamento sciftato:
 \noindent
 Possiamo spiegarci questa cosa pensandola come tanti processi perturbativi consecutivi: il nostro atomo parte nel fondamentale ed assorbendo la radiazione passa nel primo eccitato. \\
 Arrivato nel livello eccitato non può più assorbire radiazione per via della assenza di ulteriori livelli, può solo fare emissione stimolata ricadendo nel fondamentale.\\
-Notiamo che la probabilità di transizione non è lineare nel tempo (Non ci sono più le ipotesi fatte su $\tau$).
-Tale soluzione, essendo esatta, deve contenere il trattamento perturbativo, quindi per tempi piccoli (ovvero tali da far rimanere la probabilità di transizione piccola) deve tornare tale teoria. \\
-Questo ci dice anche che l'approccio perturbativo vale per 
+Notiamo che la probabilità di transizione non è lineare nel tempo (Non ci sono più le ipotesi fatte su $\tau$).\\
+Quando si interagisce con campi elettromagnetici forti in regime di oscillazioni di Rabi se utilizziamo un impulso di campo molto breve (di durata pari a $\frac{\pi}{\Omega_R}$) possiamo "flippare" completamente le popolazioni, questo tipo di impulso è detto impulso $\pi$.
+\begin{defn}[Impulso $\pi$]{defn:Impulso $pi$} 
+L'impulso $\pi$  è un impulso EM che eccita l'atomo, la durata di tale impulso deve essere:
 \[
-\tau \ll \frac{2\pi}{\Omega_r}
+T_{\pi} = \frac{\pi}{\Omega_R}
 .\] 
+\end{defn}
+La soluzione ottenuta con questo metodo, essendo esatta, deve contenere il regime perturbativo, quindi per tempi che rispettano $W\ll 1$ deve tornare tale teoria. 
+Quindi il metodo perturbativo vale per $\tau \ll \frac{2\pi}{\Omega_r}$\\
 Possiamo anche risolvere le equazioni nel caso di $\delta \neq 0$, si ottiene:
 \[
 \left|\tilde{a}_1\right|^2= \frac{\Omega^2_r}{\Omega_r^2+\delta^2}
 \sin^2\left(\frac{\sqrt{\Omega^2_r + \delta^2}}{2}t\right)
 .\] 
-Quindi la forma di $\left|\tilde{a}_1\right|^2$ si modifica nel seguente modo:
 \begin{figure}[H]
     \centering
     \begin{tikzpicture}
@@ -272,10 +274,12 @@ Imponendo che tale coefficiente non dipenda dalla temperatura otteniamo una rela
 B_{1\to 2}g_1=B_{2\to 1}g_2
 .\] 
 Nel caso in cui i livelli abbiano la stessa degenerazione si arriva al risultato:
+\begin{defn}[Coefficiente di emissione spontanea]{defn:Coefficiente di emissione spontanea}
 \[
 A_{1\to 2}=\frac{4}{3\hbar }\frac{\omega_{12}^3}{c ^3}\left|\bra{1}d\ket{2}\right|^2
 .\] 
-Questa è l'espressione del coefficiente di emissione spontanea, quella che si ottiene anche quantizzando il campo elettromagnetico.
+\end{defn}
+Questo coefficiente si ottiene anche quantizzando il campo elettromagnetico.
 Vediamo che dipende dal cubo della frequenza e dal modulo quadro del dipolo.\\
 Se siamo in una situazione di assenza del campo EM rimane l'emissione spontanea e troviamo dalla equazione di rate semplicemente un decadimento esponenziale con tempo caratteristico:
 \[

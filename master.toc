@@ -266,11 +266,24 @@
 \contentsline {subsection}{\numberline {8.2.1}Approssimazione di onda rotante}{197}{subsection.1785}%
 \contentsline {subsection}{\numberline {8.2.2}Trattamento non perturbativo della interazione radiazione materia}{197}{subsection.1789}%
 \contentsline {subsubsection}{Detuning in risonanza}{198}{section*.1798}%
-\contentsline {subsection}{\numberline {8.2.3}Interazione radiazione materia collegata alla termodinamica}{201}{subsection.1814}%
-\contentsline {subsubsection}{Necessità di Emissione spontanea}{202}{section*.1823}%
-\contentsline {subsubsection}{Trattazione quantistica del coefficiente di emissione spontanea}{203}{section*.1837}%
-\contentsline {subsection}{\numberline {8.2.4}Variazione della intensità della radiazione in un mezzo materiale}{204}{subsection.1843}%
-\contentsline {section}{\numberline {8.3}Lezione 26}{206}{section.1866}%
-\contentsline {subsection}{\numberline {8.3.1}Maser}{207}{subsection.1882}%
-\contentsline {subsection}{\numberline {8.3.2}Trattazione completa della equazione di Rate nella interazione radiazione-materia}{212}{subsection.1915}%
-\contentsline {section}{\numberline {8.4}Lezione 27}{215}{section.1942}%
+\contentsline {subsection}{\numberline {8.2.3}Interazione radiazione materia collegata alla termodinamica}{201}{subsection.1815}%
+\contentsline {subsubsection}{Necessità di Emissione spontanea}{202}{section*.1824}%
+\contentsline {subsubsection}{Trattazione quantistica del coefficiente di emissione spontanea}{203}{section*.1839}%
+\contentsline {subsection}{\numberline {8.2.4}Variazione della intensità della radiazione in un mezzo materiale}{204}{subsection.1845}%
+\contentsline {section}{\numberline {8.3}Lezione 26}{206}{section.1868}%
+\contentsline {subsection}{\numberline {8.3.1}Inversione di popolazione per un sistema a 3 livelli}{208}{subsection.1890}%
+\contentsline {subsection}{\numberline {8.3.2}Laser}{209}{subsection.1899}%
+\contentsline {subsubsection}{Distribuzione Lorentziana della densità di energia uscente dal Laser}{210}{section*.1907}%
+\contentsline {subsubsection}{Esempio: perdite dovute solo alle riflessioni sugli specchi}{211}{section*.1914}%
+\contentsline {subsection}{\numberline {8.3.3}Condizioni di auto-oscillazione per un sistema}{211}{subsection.1918}%
+\contentsline {subsection}{\numberline {8.3.4}Introduzione alla soluzione "Termodinamica+Coerenze" e Matrice densità}{213}{subsection.1934}%
+\contentsline {subsubsection}{Esempio di coerenze: operatore di Dipolo}{214}{section*.1942}%
+\contentsline {subsection}{\numberline {8.3.5}Soluzione della evoluzione temporale per la matrice densità}{215}{subsection.1946}%
+\contentsline {subsubsection}{Vettore di Feynmann e precessione}{215}{section*.1952}%
+\contentsline {subsubsection}{Soluzione alle equazioni con condizioni iniziali: Ritorno delle oscillazioni di Rabi.}{216}{section*.1959}%
+\contentsline {section}{\numberline {8.4}Lezione 27}{217}{section.1965}%
+\contentsline {subsubsection}{Rate di ritorno all'equilibrio nel caso di emissione spontanea}{218}{section*.1970}%
+\contentsline {subsection}{\numberline {8.4.1}Equazioni di Bloch ottiche}{218}{subsection.1974}%
+\contentsline {subsection}{\numberline {8.4.2}Allargamenti di riga: omogenei o disomogenei}{222}{subsection.2007}%
+\contentsline {subsubsection}{Allargamento omogeneo: collisionale}{222}{section*.2008}%
+\contentsline {subsubsection}{Allargamento disomogeneo: effetto doppler}{223}{section*.2023}%

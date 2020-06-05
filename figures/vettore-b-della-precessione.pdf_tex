@@ -62,6 +62,6 @@
     \put(0,0){\includegraphics[width=\unitlength,page=2]{vettore-b-della-precessione.pdf}}%
     \put(0.38594478,0.16018544){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\v{B}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{vettore-b-della-precessione.pdf}}%
-    \put(0.40276289,0.08315526){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\v{R}$\end{tabular}}}}%
+    \put(0.32230327,0.09449876){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\v{R}$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

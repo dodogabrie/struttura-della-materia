@@ -54,9 +54,19 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{inversione-di-popolazione-1-2.pdf}}%
-    \put(0.24475917,0.15218995){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1$\end{tabular}}}}%
-    \put(0.24639633,0.07688199){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
-    \put(0.24475919,0.0023926){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$3$\end{tabular}}}}%
+    \put(0.06019434,0.13561525){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1$\end{tabular}}}}%
+    \put(0.06130973,0.09143349){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0.06019436,0.03355391){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$3$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{inversione-di-popolazione-1-2.pdf}}%
+    \put(0.92986939,0.08258016){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1$\end{tabular}}}}%
+    \put(0.93047672,0.1005986){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0.93060506,0.06509376){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$3$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{inversione-di-popolazione-1-2.pdf}}%
+    \put(0.43974088,0.07447622){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$N_3\sim N_1$\end{tabular}}}}%
+    \put(0.44707353,0.10514567){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\nu_{23}>\nu_{12}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{inversione-di-popolazione-1-2.pdf}}%
+    \put(0.58362896,0.12698978){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$N_f$\end{tabular}}}}%
+    \put(0.65224958,0.02683447){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Popolazioni finali\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{inversione-di-popolazione-1-2.pdf}}%
   \end{picture}%
 \endgroup%

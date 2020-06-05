@@ -20,8 +20,10 @@ Per le popolazioni $R_3$  (il termine diagonale della matrice densità) introduc
     \frac{\text{d} R_3}{\text{d} t} =-\gamma_\parallel \left(R_3-R_3^0\right)
 .\] 
 Questo perché possiamo aspettarci che il rate per cui si perde l'informazione sulla coerenza del sistema sia diverso dal rate di dissipazione per cui si perde energia. \\
-Nella equazione abbiamo che $R_3^0$ è la differenza di popolazioni $\rho_{11}$  e $\rho_{22}$  all'equilibrio termodinamico.
-In generale ci aspettiamo che $\gamma_{\perp}>\gamma_\parallel$, questo perché la fase si perde molto più rapidamente dell'energia in generale. Esistono dei sistemi in cui non è vero, ed esempio se il processo che ci  riporta all'equilibrio è soltanto l'emissione spontanea. Tale emissione è regolata dal parametro $A_{12}$:
+Nella equazione abbiamo che $R_3^0$ è la differenza di popolazioni $\rho_{11}$  e $\rho_{22}$  all'equilibrio termodinamico.\\
+In generale ci aspettiamo che $\gamma_{\perp}>\gamma_\parallel$, questo perché per un solido in contatto con un bagno termico la fase si perde molto più rapidamente dell'energia in generale. Esistono dei sistemi in cui non è vero, ed esempio se il processo che ci  riporta all'equilibrio è soltanto l'emissione spontanea. 
+\subsubsection{Rate di ritorno all'equilibrio nel caso di emissione spontanea}%
+L'emissione spontanea è regolata dal parametro $A_{12}$:
 \[\begin{aligned}
 &\frac{\text{d} N_1}{\text{d} t} = -A_{12}N_1\\
 &\frac{\text{d} N_2}{\text{d} t} = -A_{21}N_2	
@@ -30,13 +32,15 @@ In questo caso quindi possiamo assumere $\gamma_\parallel = -A_{12}$:
 \[
     \frac{\text{d} R_3}{\text{d} t} = -A_{12}\left(R_3+1\right)
 .\] 
-In cui abbiamo preso frequenze ottiche (visibile) ed abbiamo approssimato tutti gli atomi nel fondamentale quindi $R_3^0 = -1$. 
-$A_{12}$  è il decadimento del modulo quadro dell'ampiezza, per la singola ampiezza invece:
+In cui abbiamo preso frequenze ottiche (visibile) ed abbiamo approssimato tutti gli atomi inizialmente nel fondamentale quindi $R_3^0 = -1$.\\
+In questo caso $A_{12} = \gamma_\parallel$ , questo coefficiente rappresenta anche il decadimento del modulo quadro dell'ampiezza, per la singola ampiezza invece:
 \[
 \frac{\text{d} a_1}{\text{d} t} = \frac{A_{12}}{2}a_1
 .\] 
-Inserendo questa forma di decadimento per le ampiezze di probabilità troviamo che per $R_1$  e $R_2$  si ha che $\gamma_\perp  = \gamma_\parallel /2$ (ricordiamo che vale solo nel caso di emissione spontanea questo) .\\
-Le equazioni complete sono allora le seguenti:
+Ci aspettiamo che sia la metà perché si tratta di una singola ampiezza.\\
+Inserendo questa forma di decadimento per le ampiezze di probabilità troviamo che per $R_1$  e $R_2$  si ha che $\gamma_\perp  = \gamma_\parallel /2$ (ricordiamo che vale solo nel caso di emissione spontanea questo).
+\subsection{Equazioni di Bloch ottiche}%
+Abbandonando l'emissione spontanea abbiamo che le equazioni con i sistemi di rilassamento sono allora le stesse viste nella scorsa lezione con le modifiche introdotte adesso:
 \begin{defn}[Equazioni di Bloch ottiche]{defn:Equazioni di Bloch ottiche}
 \[\begin{aligned}
     &\frac{\text{d} R_1}{\text{d} t} = \left(\omega-\omega_{12}\right)R_2
@@ -46,11 +50,14 @@ Le equazioni complete sono allora le seguenti:
     &\frac{\text{d} R_3}{\text{d} t} = -\frac{pE_0}{\hbar }R_2 - 
     \gamma_\parallel\left(R_3-R_3^0\right)
 .\end{aligned}\]
+Queste descrivono l'evoluzione di un sistema a due livelli termodinamico in interazione con il campo elettromagnetico e con dei processi di rilassamento che lo riportano verso l'equilibrio. 
 \end{defn}
-Queste descrivono l'evoluzione di un sistema a due livelli termodinamico in interazione che il campo elettromagnetico e con dei processi di rilassamento che lo riportano verso l'equilibrio. 
 Queste sono più generali dei processi di Rate perché ci dicono anche come evolvono gli elementi fuori diagonale.\\
-Le soluzioni in funzioni del tempo dipenderanno dalle condizioni iniziali, l'evoluzione dipenderà dalla interazione con il campo elettromagnetico combinata con l'effetto dei termini di rilassamento che tendono a riportare il sistema verso l'equilibrio.\\
-Qualitativamente se partiamo all'istante iniziale con $R_1^0=0$, $R_2^0 = 0$ e $R_3^0= -1$ ci aspettiamo che inizi una evoluzione stile oscillazioni di Rabi ma nel frattempo agisca anche il rilassamento che tenderà a smorzare questo andamento oscillatorio. A tempi lunghi ci si aspetta che tale andamento sia scomparso e che avremo delle soluzioni stazionarie, tali soluzioni ci diranno come sono cambiate le popolazioni e le coerenze del nostro sistema dovute alle interazioni con il campo elettromagnetico e saranno diverse dai valori che avevamo prima all'equilibrio termodinamico. \\
+Tuttavia notiamo che i Rate introdotti $\gamma$ potrebbero dipendere dalla intensità del campo elettromagnetico (in generale), in tal caso allora assumere di poterli semplicemente sommare in questo modo non sarebbe corretto. 
+Nella nostra trattazione li consideriamo indipendenti e li sommiamo (per molti sistemi ottici va bene così).\\
+Le soluzioni di queste equazioni in funzione del tempo dipenderanno dalle condizioni iniziali, l'evoluzione dipenderà dalla interazione con il campo elettromagnetico combinata con l'effetto dei termini di rilassamento che tendono a riportare il sistema verso l'equilibrio.\\
+Qualitativamente se partiamo all'istante iniziale con $R_1^0=0$, $R_2^0 = 0$ e $R_3^0= -1$ ci aspettiamo che inizi una evoluzione stile oscillazioni di Rabi ma nel frattempo agisca anche il rilassamento che tenderà a smorzare questo andamento oscillatorio. 
+A tempi lunghi ci si aspetta che tale andamento sia scomparso e che avremo delle soluzioni stazionarie, tali soluzioni ci diranno come sono cambiate le popolazioni e le coerenze del nostro sistema dovute alle interazioni con il campo elettromagnetico e saranno diverse dai valori che avevamo prima all'equilibrio termodinamico. \\
 Possiamo trovare tali soluzioni a tempi lunghi imponendo che il sistema sia stazionario:
 \[
 \frac{\text{d} R_1}{\text{d} t} =\frac{\text{d} R_2}{\text{d} t} = 
@@ -77,7 +84,7 @@ Possiamo risolvere queste 3 equazioni ottenendo:
 {1+\frac{1}{\gamma_\perp^2}\left(\omega-\omega_{12}\right)^2 
     + \left(\frac{pE_0}{\hbar }\right)^2 
 	\frac{1}{\gamma_\perp\gamma_\parallel}}\\
-    &R_3 = - \frac{1+ \frac{1}{\gamma_\perp^2\left(\gamma-\gamma_{12}\right)^2}}
+    &R_3 = - \frac{1+ \frac{1}{\gamma_\perp^2}\left(\omega-\omega_{12}\right)^2}
     {1+\frac{1}{\gamma_\perp^2}\left(\omega-\omega_{12}\right)^2 
     + \left(\frac{pE_0}{\hbar }\right)^2 
 	\frac{1}{\gamma_\perp\gamma_\parallel}}
@@ -222,7 +229,7 @@ Si lavora inoltre nelle ipotesi $I\ll I_s$.\\
 Abbiamo allora che:
 \[
 \frac{\text{d} R_3}{\text{d} t} =
-\left(p \frac{E_0}{\hbar }\right)^2 
+-\left(p \frac{E_0}{\hbar }\right)^2 
 \frac{\gamma_\perp}
 {\gamma_\perp^2+\left(\omega-\omega_{12}\right)^2}
 R_3-\gamma_\parallel\left(R_3+1\right)
@@ -251,10 +258,14 @@ Oppure possiamo scriverla per la frequenza:
 .\] 
 Abbiamo quindi una espressione per la larghezza di riga $g(\nu-\nu_{12})$ che avevamo fenomenologicamente inserito nella nostra espressione della regola d'oro di Fermi. Quando abbiamo introdotto tale regola abbiamo detto che questa $g$ descriveva la distribuzione degli stati mentre qui abbiamo trovato che esiste una $g$ anche in presenza di due soli stati.\\
 In questo caso la $g$ deriva dalla indeterminazione che abbiamo nella energia per il fatto che il sistema interagisce con un bagno termico ecc\ldots\\
-Una cosa notevole è il fatto che la larghezza di riga $g$ trovata è una funzione di $\gamma_\perp$ (il prof ha detto che è proprio $\gamma_\perp$ quello che otteniamo), quindi alla fine più che l'indeterminazione dell'energia quello che pesa di più è l'indeterminazione della fase (dovuta all'interazione con il bagno termico).\\
-In questo caso quando in una misura troviamo una riga Lorentziana in funzione della frequenza (con una sua larghezza che è essenzialmente $\gamma_\perp$ ) si parla di allargamento omogeneo.
+Una cosa notevole è il fatto che la larghezza di riga di questa funzione $g$ è proprio $\gamma_\perp$, quindi alla fine più che l'indeterminazione dell'energia quello che pesa  è l'indeterminazione della fase (dovuta all'interazione con il bagno termico).\\
+In questo caso quando in una misura troviamo una riga Lorentziana in funzione della frequenza (con una sua larghezza che è essenzialmente $\gamma_\perp$ ) si parla di \textit{Allargamento omogeneo}.
 Questo tipo di forma di riga è una conseguenza naturale del fatto che il nostro sistema perde informazione sulla coerenza (sulla fase del sistema). \\
-Possiamo considerare questa cosa "intrinseca" al sistema, anche con due livelli singoli (che però possono interagire con il bagno termico che li riporta all'equilibrio) il rate di interazione con tale bagno (per la parte sulla fase) è quello che determina la larghezza di riga della misura spettroscopica.\\
+Possiamo considerare questa cosa "intrinseca" al sistema, anche con due livelli singoli (che però possono interagire con il bagno termico che li riporta all'equilibrio) il rate di interazione con tale bagno (per la parte sulla fase) è quello che determina la larghezza di riga della misura spettroscopica. Ricordiamo che questa è valida per  $\gamma_\perp\gg \gamma_\parallel$. 
+\subsection{Allargamenti di riga: omogenei o disomogenei}%
+Per allargamento omogeneo si intende un allargamento dovuto alla sola larghezza di riga intrinseca (solo le interazioni degli atomi con il bagno termico). Per allargamento disomogeneo invece si intende un allargamento non dovuto alla larghezza di riga intrinseca ma dovuta al fatto che i nostri $N$ (il nostro Ensemble di sistemi a due livelli) non hanno tutti la stessa energia di risonanza. \\
+Possiamo pensare alla disomogeneità come una conseguenza dell'avere una legge di dispersione non piatta, oppure nei solidi possiamo avere dei \textit{Quantum Dot}: delle regioni di spazio molto piccole in cui gli elettroni sono confinati in una regione di spazio delle dimensioni della loro stessa lunghezza d'onda, in questo caso non abbiamo più delle bande ma dei livelli discreti. In quest'ultimo caso se in un solido abbiamo tanti di questi Quantum Dot (tutti diversi tra loro) a seconda delle loro dimensioni cambiano le energie di transizione che ci da un allargamento disomogeneo (ci si aspetta che questo tipo di allargamento sia gaussiano).
+\subsubsection{Allargamento omogeneo: collisionale}%
 In un sistema di atomi il meccanismo che da origine al $\gamma_\perp$ sono tipicamente le collisioni. Possiamo stimare quanto è il tempo collisionale (il rate sarà l'inverso di questo tempo $T_c$), il tempo medio tra due collisioni sarà:
 \[
     T_c = \frac{\lambda}{v}
@@ -271,7 +282,7 @@ Facendo un conto più dettagliato si ottiene che:
 \[
     \lambda  = \frac{1}{\sqrt{2}}\frac{1}{\pi nd^2}
 .\] 
-La velocità relativa tra i due atomi (mediata sulla distribuzione di atomi) $v$.Questa seguirà quindi una Maxell-Boltzmann:
+Nella espressione per $T_c$ abbiamo che $v$ è velocità relativa tra i due atomi (mediata sulla distribuzione di atomi). Questa seguirà quindi una Maxell-Boltzmann:
 \[
     \overline{v} \propto e^{-(1 /2mv^2)/kT} 
 .\] 
@@ -300,7 +311,7 @@ Dove $P$ è la pressione, abbiamo allora che:
 \[
     T_c = \sqrt{\frac{mkT}{\pi}} \frac{1}{4d^2}\frac{1}{P}
 .\] 
-La larghezza di riga della nostra lorentziana sarà:
+La larghezza di riga della nostra Lorentziana sarà:
 \[
     \Delta\omega =\frac{2}{T_c}
 .\] 
@@ -309,7 +320,10 @@ Quindi abbiamo la formuletta della larghezza di riga di un gas di atomi classico
     \Delta\omega  = \sqrt{\frac{\pi}{ mkT}} 8d^2P
 .\] 
 Per un gas classico si ha quindi che $\Delta\omega\propto P$  con valori tipici di 50-60 MHz/Torr.\\
-Consideriamo adesso un allargamento disomogeneo, si intende per disomogeneo un allargamento non dovuto alla larghezza di riga intrinseca ma dovuta al fatto che i nostri $N$  atomi non hanno tutti la stessa energia di risonanza.\\
+\begin{fact}[Allargamento collisionale omogeneo]{fact:Allargamento collisionale omogeneo}
+    L'allargamento collisionale è un allargamento omogeneo, ovvero dipende dal tempo di rilassamento della fase $T_c$. 
+\end{fact}
+\subsubsection{Allargamento disomogeneo: effetto doppler}%
 Un caso particolare di allargamento gaussiano disomogeneo è quello dovuto all'effetto doppler per un gas di atomi classico.\\
 Supponiamo che l'atomo si muova ad una certa velocità $v_z$  non trascurabile rispetto a $c$, questo vedrà una frequenza del campo elettromagnetico diversa da quella che vedrebbe se fosse fermo $\nu_0$, al primo ordine sappiamo che la frequenza che tale atomo vede è data da:
 \[
@@ -318,7 +332,7 @@ Supponiamo che l'atomo si muova ad una certa velocità $v_z$  non trascurabile r
 Di conseguenza è $\nu$ che deve essere uguale a $\nu_{12}$  perché possa avvenire la transizione tra i livelli.\\
 Dal punto di vista della radiazione abbiamo una distribuzione di atomi aventi tutte frequenze di transizione diverse dipendenti dalla $v_z$. Quindi possono assorbire un determinato $\nu_0 $ solo gli atomi che hanno un $v_z$  tale da
 \[
-    \nu\left(1+\frac{V-z}{c}\right) = \nu_{12}
+    \nu_0\left(1+\frac{v_z}{c}\right) = \nu_{12}
 .\] 
 Assumiamo che per queste particelle valga la distribuzione di Boltzmann, quindi per la velocità:
 \[

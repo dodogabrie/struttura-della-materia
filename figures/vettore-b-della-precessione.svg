@@ -196,9 +196,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.406257"
-     inkscape:cx="305.07312"
-     inkscape:cy="119.66234"
+     inkscape:zoom="5.625028"
+     inkscape:cx="239.24208"
+     inkscape:cy="88.063463"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -206,8 +206,8 @@
      width="200mm"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="694"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -234,7 +234,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -344,28 +344,28 @@
          style="stroke-width:0.26458332">$\v{B}$</tspan></text>
     <path
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.28088167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:none;marker-end:url(#marker-arrow-1.0616)"
-       d="m 89.40299,243.78393 -16.748074,9.44842"
+       d="M 89.40299,243.78393 70.350113,253.0442"
        id="path53"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <ellipse
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.14044084;stroke-dasharray:1.05330625, 1.05330625;stroke-opacity:1;marker-start:none;marker-end:none"
        id="path70"
+       transform="rotate(24.586415)"
        ry="17.685837"
-       rx="7.3377419"
+       rx="15"
        cy="183.34042"
-       cx="168.9166"
-       transform="rotate(24.586415)" />
+       cx="168.9166" />
     <text
        id="text84"
        xml:space="preserve"
        style="font-size:2.64583325px;font-family:'Iosevka Term';-inkscape-font-specification:'Iosevka Term, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="84.826233"
-       y="251.57579"><tspan
+       x="70.480011"
+       y="249.55321"><tspan
          id="tspan82"
          sodipodi:role="line"
-         x="84.826233"
-         y="251.57579"
+         x="70.480011"
+         y="249.55321"
          style="stroke-width:0.26458332">$\v{R}$</tspan></text>
   </g>
 </svg>

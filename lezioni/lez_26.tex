@@ -464,6 +464,12 @@ Mentre $V$ è l'Hamiltoniana di interazione con il campo elettromagnetico (facci
 \[
 V=-\frac{1}{2}pE_0e^{-i\omega t}\ket{1}\bra{2}-\frac{1}{2}pE_0e^{i\omega t}\ket{2}\bra{1}
 .\] 
+Dove abbiamo preso gli stati $\ket{1}$ e $\ket{2}$ con una fase opportuna in modo tale da avere $-1 /2$ davanti ad ogni termine di $V(t) $ ed in modo tale da togliere tutte le $i$ di mezzo.\\
+Possiamo quindi visualizzare la forma delle due matrici:
+\[
+    \hat{\rho} = \begin{pmatrix} \rho_{11} & \rho_{12} \\ \rho_{21} & \rho_{22} \end{pmatrix} \qquad
+    H = \begin{pmatrix} E_1 & d \\ d & E_2\end{pmatrix} 
+.\] 
 A questo punto possiamo riscrivere la derivata della $\rho$ (con il conto già svolto):
 \[\begin{aligned}
     &\frac{\text{d} \rho_{11}}{\text{d} t} =
@@ -515,7 +521,7 @@ Vediamo questa precessione nello spazio $x-y-z$, il vettore $\v{B}$ è così fat
 \noindent
 Il vettore di Feynmann $\v{R}$ precede attorno alla direzione individuata da $\v{B}$.
 \subsubsection{Soluzione alle equazioni con condizioni iniziali: Ritorno delle oscillazioni di Rabi.}%
-Supponiamo che all'istante iniziale si accenda il campo EM, in tal caso siamo inizialmente all'equilibrio termodinamico (coerenze nulle $\v{R}_1^0 = \v{R}_2^0=0$) quindi $\v{R}$ è diretto lungo l'asse $z$ all'istante iniziale.
+Supponiamo che all'istante iniziale si accenda il campo EM, in tal caso siamo inizialmente all'equilibrio termodinamico (coerenze nulle $R_1^0 = R_2^0=0$) quindi $\v{R}$ è diretto lungo l'asse $z$ all'istante iniziale.
 In particolare si ha che:
 \[
     R_3^0 = \frac{1}{N}\left(N_1^0 -N_2^0\right)

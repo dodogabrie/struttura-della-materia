@@ -35,18 +35,18 @@ In questo caso i termini $W^i$ coincidono, i due termini che ci danno un contrib
 In cui $\v{d}_{ij}=\bra{i}\hat{e}\cdot \v{p}\ket{j}$, inoltre ci siamo messi nella ipotesi in cui $\v{d}_{12}$ sia reale, in questo modo $\v{d}_{12}=\v{d}_{21}$.\\
 Cerchiamo una soluzione della equazione di Schrodinger che sia sovrapposizione dei due autostati in assenza di campo elettromagnetico:
 \[
-    \ket{\psi(t) } = a_1(t) e^{-iE_1t /\hbar } + a_2(t) e^{-iE_2t /\hbar } 
+    \ket{\psi(t) } = a_1(t) e^{-iE_1t /\hbar } \ket{1}+ a_2(t) e^{-iE_2t /\hbar } \ket{2}
 .\] 
 Si procede sostituendo questa nella equazione di Schrodinger dipendente dal tempo e proiettiamo su $\bra{1}$ e $\bra{2}$ ottenendo due equazioni: una per la derivata di $a_1$ ed una per la derivata di $a_2$ :
 \[\begin{aligned}
     &\frac{\text{d} a_1(t) }{\text{d} t} =
     a_2 \frac{\bra{1}W^+\ket{2}}{i\hbar }e^{i(\omega_{12}-\omega) t}
     +
-    \cancel{a_2\frac{\bra{1}W^-\ket{2}}{i\hbar }e^{i(\omega_{12}-\omega) t}}\\
+    \cancel{a_2\frac{\bra{1}W^-\ket{2}}{i\hbar }e^{i(\omega_{12}+\omega) t}}\\
     &\frac{\text{d} a_2(t) }{\text{d} t} =
-    \cancel{a_1 \frac{\bra{2}W^+\ket{1}}{i\hbar }e^{i(\omega_{12}-\omega) t}}
+    \cancel{a_1 \frac{\bra{2}W^+\ket{1}}{i\hbar }e^{-i(\omega_{12}+\omega) t}}
     +
-    a_1\frac{\bra{2}W^-\ket{1}}{i\hbar }e^{i(\omega_{12}-\omega) t}\\
+    a_1\frac{\bra{2}W^-\ket{1}}{i\hbar }e^{-i(\omega_{12}-\omega) t}\\
 .\end{aligned}\]
 Nello spirito della RWA trascuriamo i termini antirisonanti  nella transizione (i termini che hanno la risonanza negativa rispetto alla energia della transizione).\\
 Per risolvere questo sistema conviene introdurre due nuove ampiezze:

@@ -66,3 +66,44 @@ Perché il mezzo attivo funziona per emissione stimolata e l'emissione stimolata
 \begin{quest}[Aumentando il pompagg. che succede se ho un allargam. omog. o disomog.?]{quest:Aumentando il pompagg. che succede se ho un allargam. omog. o disomog.?}
 Se ho un allargamento omogeneo non cambia nulla, se è disomogeneo ho che ogni specie atomica contribuisce ad una frequenza diversa. Se nel secondo caso aumento il pompaggio potrei avere altre popolazioni che arrivano a stazionarietà ed iniziano a emettere. Nei sistemi disomog. i laser funzionano si più modi contemporaneamente.
 \end{quest}
+\begin{quest}[Come cambia il rapporto tra E. Stimolata ed E. Spont. se i fotoni sono Fermioni?]{quest:Come cambia il rapporto tra E. Stimolata ed E. Spont. se i fotoni sono Fermioni?}
+Nel caso di Fotoni che conosciamo noi si ha che:
+\[
+    \frac{B_{12}u(\nu_{12})}{A_{12}} = \frac{1}{\exp\left(\frac{\hbar \nu_{12}}{kT}\right)-1}
+.\] 
+Quindi la probabilità di transire si scrive anche:
+\[
+    P_{12} = B_{12}u(\nu_{12}) + A_{12} = A_{12}\left(\left<n\right> + 1\right)
+.\] 
+In particolare si ha che: 
+\[
+    B_{12}u = A_{12}\left<n\right> = B_{21}u
+.\] 
+Se i fotoni fossero Fermioni dobbiamo rivedere alcune cose, possiamo intanto assumere che l'emissione segua la seguente legge:
+\[
+    P_{12} = A\left(1+f\left(\left<n\right>\right)\right)
+.\] 
+Dove $f$ è una funzione di $\left<n\right>$ che ci dobbiamo ricavare. Supponiamo che all'equilibrio termodinamico la prob. di assorbimento sia la stessa (soltanto che adesso $\left<n\right>$ segue la distribuzione di Fermi):
+\[
+    P_{21} = A\left<n\right>
+.\] 
+Imponiamo adesso l'equilibrio termodinamico nuovamente:
+\[
+    \frac{P_{12}}{P_{21}} = \exp\left( -\frac{h\nu_{12}}{kT}\right) = \frac{1+f\left(\left<n\right>\right)}{\left<n\right>}
+.\] 
+(Nell'orale è stato messo il $+$ in questa formula, nonostante non sia corretto esprimere la Boltzmann con il $+$ all'esponente in questo caso)\ldots\\
+Dove $\left<n\right>$ è:
+\[
+    \left<n\right> = \frac{1}{\exp\left(\frac{h\nu_{12}}{kT}\right)+1}
+.\] 
+In questo modo si arriva a 
+\[
+    f\left(\left<n\right>\right)= -\left<n\right>
+.\] 
+Quindi abbiamo per fermioni che:
+\[
+    P_{12} = A\left(1-\left<n\right>\right)
+.\] 
+Come ci si aspetta, se c'è una particella sotto non si emette.
+\end{quest}
+

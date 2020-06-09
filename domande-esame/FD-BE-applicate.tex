@@ -90,6 +90,42 @@ Con il classico cambio di variabile $x = \mathcal{E}  /kT$ si arriva ad avere:
 E quindi $C_V \propto T^{3 /2}$. Nel regime intermedio il calore specifico presenterà una sorta di overshoot da questo andamento che lo porta a salire leggermente al di sopra del calore specifico di Doulong-Depetit poiché $C_V(T_c) \approx 1.9 NK > 1.5 NK$.
 \end{quest}
 \begin{quest}[Parlare dell'effetto fotoelettrico]{quest:Parlare dell'effetto fotoelettrico}
-
+\end{quest}
+\begin{quest}[Come va il calore specifico per un foglio di grafite?]{quest:Come va il calore specifico per un foglio di grafite?}
+In due dimensioni abbiamo che ad alte temperature torna l'andamento $3Nk$, a basse temperature non abbiamo l'andamento $T^2$ come invece ci si aspetterebbe: il sistema è immerso in un um mondo 3D e tutti i 3 modi vibrazionali sono ancora accessibili.
+\end{quest}
+\begin{quest}[Data la dispersione del grafene rispondere alle domande in descrizione]{quest:Data la dispersione del grafene indicare quali modi sono sul piano}
+    \begin{figure}[H]
+        \centering
+	\includegraphics[width=0.4\textwidth]{figures/dipersione_grafene.png}
+        \caption{Curve di dispersione del grafene: qual'è la banda che indica i moti nel piano? Perché?}
+        \label{fig:figures-dipersione_grafene-png}
+    \end{figure}
+    La banda meno energetica è quella che si muove nel piano, quindi la ZA. Questo è spiegato dal fatto che fuori dal piano non ci si avvicina a nessun altro atomo, quindi il moto è meno energetico. É più facile piegare un foglio in direzione ortogonale al foglio rispetto a farlo scorrere nel piano stesso.
+\end{quest}
+\begin{quest}[Dal grafico \ref{fig:figures-dipersione_grafene-png} possiamo dedurre l'andamento di $C_v$ per il grafene a basse $T$?]{quest:Nel grafico di figura}
+Una delle tre curve ha una dispersione parabolica anziché lineare:
+\[
+    \mathcal{E}\propto k^2  \propto  p^2
+.\] 
+Quindi abbiamo anche che 
+\[
+    p \propto  \sqrt{\mathcal{E}} 
+.\] 
+Conteggiando gli stati ottengo il risultato che otterrei per un sistema bidimensionale:
+\[
+    \rho (\mathcal{E}) = \text{cost}
+.\] 
+Quindi anche $C_v\propto T$. Un altro calore specifico che va linearmente come la temperatura è quello del gas di elettroni in un cristallo!
+\end{quest}
+\begin{quest}[Nel grafico \ref{fig:figures-dipersione_grafene-png} i fononi ottici long. e trasv. sono isoenergetici a $k=0$, perché?]{quest:Nel grafico i fononi ottici long. e trasv. sono isoenergetici a $k=0$, perché?}
+    I fononi ottici longitudinali trasportano un campo elettrico macroscopico, per questo non dovrebbero essere uguali nell'origine. Il grafene non ha un momento dipolare nella cella unitaria (c'è solo il carbonio), quindi nessun campo elettrico.
+\end{quest}
+\begin{quest}[Nel grafico \ref{fig:figures-dipersione_grafene-png} come si spiegano le degen. in $M$?]{quest:Nel }
+Tali degenerazioni sono date da particolari simmetrie nel cristallo, questo perché nel punto di contatto si può estendere la zona di Brillouin: c'é una simmetria più alta rispetto al resto della zona. Praticamente è come dire che in quella direzione vedo una catena di atomi equispaziati.
+\end{quest}
+\begin{quest}[In un gas di fermioni è tanto importante la densità di stati per il calcolo di $C_V$?]{quest:In un gas di fermioni è tanto importante la densità di stati per il calcolo di $C_V$?}
+Nel caso di distribuzione di Fermi abbiamo che solitamente è possibile approssimare a gradino, quindi in questo caso la forma funzionale della densità di stati non conta molto, contano soltanto gli elettroni aventi energia $\mathcal{E}_F$. 
+Nella Bose-Einstein contano essenzialmente quelli con $\mathcal{E} =0$. Quindi per i Fermioni la dipendenza dall'energia è congelata (diventa $\mathcal{E}_F$) nel caso di Bosoni invece la dipendenza è pesante.
 \end{quest}
 

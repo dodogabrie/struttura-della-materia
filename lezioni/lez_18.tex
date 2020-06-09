@@ -297,50 +297,50 @@ Anche per i fononi ottici abbiamo energie delle bande longitudinali maggiori di 
 Tuttavia a $q=0$ diventa impossibile distinguere tra onde longitudinali ed onde trasversali, in questo regime non si ha più nemmeno propagazione \footnote{Notiamo che invece per i fononi acustici tutte le curve vanno nell'origine come ci si aspetta.}. \\
 Il motivo per questa situazione viene dal fatto che il fonone ottico longitudinale si porta dietro un campo elettrico macroscopico, il risultato della differenza di energia è dovuto a questa differenza di energia. \\
 Questo risultato a $q=0$ è leggermente "finto": il problema si elude quando consideriamo la velocità (finita) di propagazione del campo elettromagnetico, diamo un accenno di questa faccenda.
-\subsubsection{Longitudinal Transfer Splitting collegata a Clausius-Mossotti}%
-\label{subsub:Longitudinal Transfer Splitting collegata a Clausius-Mossotti}
-Prendiamo un oscillatore armonico carico, dalla Fisica II abbiamo che i modi longitudinali e trasversi si propagano con leggi di dispersione differenti. Dalle equazioni di Maxwell si ricava che
-\footnote{Precisamente dalla equazione per $\nabla \times \v{E}$ facendo il rotore a destra e sinistra e sostituendo dalla equazione per $\nabla \times \v{B}$.}
-:
-\[
-    -\mu \frac{\partial ^2\v{D}}{\partial t^2} = \nabla \times \left(\nabla \times \v{E}\right)
-.\] 
-Prendendo un'onda EM monocromatica $\v{E} \propto e^{i\left(\omega t-kz\right)}$ si ottiene:
-\[
-    \v{k}\cdot \left(\v{k}\cdot \v{E}\right)-k^2\v{E}=-\epsilon_r(\v{k},\omega) \frac{\omega^2}{c^2}\v{E}
-.\] 
-A questo punto considerando le onde trasverse si ha $\v{k}\cdot \v{E}=0$ quindi:
-\[
-    k^2=\epsilon_r(\v{k},\omega) \frac{\omega^2}{c^2} \label{eq:dispersonnn}
-.\] 
-Mentre per le onde longitudinali l'equazione sopra corrisponde ad avere $\epsilon_r(\v{k},\omega) =0$ ($\v{k}\cdot \v{k}=k^2$), in tal caso è necessario passare attraverso la teoria dell'oscillatore armonico per il dipolo e valutare la risposta dielettrica. Si arriva ad una equazione del tipo:
-\[
-    \v{D}=\epsilon_0\left(1-\frac{\omega_p^2}{\omega^2+i\gamma\omega}\right)\v{E}
-.\] 
-Nella quale compare il coefficiente di smorzamento e la frequenza di Plasma $\omega_p$. In questo caso nel regime di $\omega\gg \omega_p$ abbiamo una risposta dielettrica reale (fare il limite di grandi $\omega$ nella parentesi, il termine complesso al denominatore se ne va):
-\[
-    \epsilon (\omega) = 1-\frac{\omega_p^2}{\omega^2}
-.\] 
-Sostituendo questa nella equazione \ref{eq:dispersonnn} si ottiene:
-\[
-    \omega^2=\omega^2_p+k^2c^2
-.\] 
-La cosa importante è che onde strasverse e longitudinali hanno due coefficienti di propagazione differenti, in particolare esiste una condizione che mette in relazione il rapporto tra le due dispersioni di tali onde (non sono riuscito a trovare la dimostrazione: Relazione di Lyddane–Sachs–Teller):
-\[
-    \frac{\omega_L^2}{\omega_T^2} = \frac{\epsilon_s}{\epsilon_\infty}
-.\] 
-In cui $\epsilon_\infty$ è la permettività per $\omega\gg \omega_p$ mentre $\epsilon_s$ è quella statica. \\
-\ldots\\
-Possiamo applicare tutto questo ai fononi semplicemente considerando le curve dei fononi ottici come piatte, in questo modo la loro dipendenza dalla frequenza svanisce e (per analogia a sopra) $\epsilon (\v{k},\omega) \to \epsilon (w)$, quindi abbiamo che l'andamento risultante sarà il mescolamento dell'onda elettromagnetica con la vibrazione (fonone) del cristallo:
-\begin{figure}[ht]
-    \centering
-    \incfig{polaritoni-fononici}
-    \caption{Polaritoni fononici}
-    \label{fig:polaritoni-fononici}
-\end{figure}
-\noindent
-Nella figura $\omega_T$ è la frequenza di risonanza della $\epsilon(\omega)$, questa immagine ci permette di comprendere meglio la propagazione dei fononi acustici. Notiamo che per $\v{q}\to 0$ si ha che le onde longitudinali tendono ad avere proprio la frequenza $\omega_L$ (la frequenza del modo longitudinale) dettata dal campo EM incidente.\\
-Vediamo che nelle frequenze tra $\omega_L$ e $\omega_T$ c'è una zona di non propagazione del campo elettromagnetico, questa zona sarà interessante per effettuare delle misure della dispersione dei fononi ottici.
+%\subsubsection{Longitudinal Transfer Splitting collegata a Clausius-Mossotti}%
+%\label{subsub:Longitudinal Transfer Splitting collegata a Clausius-Mossotti}
+%Prendiamo un oscillatore armonico carico, dalla Fisica II abbiamo che i modi longitudinali e trasversi si propagano con leggi di dispersione differenti. Dalle equazioni di Maxwell si ricava che
+%\footnote{Precisamente dalla equazione per $\nabla \times \v{E}$ facendo il rotore a destra e sinistra e sostituendo dalla equazione per $\nabla \times \v{B}$.}
+%:
+%\[
+%    -\mu \frac{\partial ^2\v{D}}{\partial t^2} = \nabla \times \left(\nabla \times \v{E}\right)
+%.\] 
+%Prendendo un'onda EM monocromatica $\v{E} \propto e^{i\left(\omega t-kz\right)}$ si ottiene:
+%\[
+%    \v{k}\cdot \left(\v{k}\cdot \v{E}\right)-k^2\v{E}=-\epsilon_r(\v{k},\omega) \frac{\omega^2}{c^2}\v{E}
+%.\] 
+%A questo punto considerando le onde trasverse si ha $\v{k}\cdot \v{E}=0$ quindi:
+%\[
+%    k^2=\epsilon_r(\v{k},\omega) \frac{\omega^2}{c^2} \label{eq:dispersonnn}
+%.\] 
+%Mentre per le onde longitudinali l'equazione sopra corrisponde ad avere $\epsilon_r(\v{k},\omega) =0$ ($\v{k}\cdot \v{k}=k^2$), in tal caso è necessario passare attraverso la teoria dell'oscillatore armonico per il dipolo e valutare la risposta dielettrica. Si arriva ad una equazione del tipo:
+%\[
+%    \v{D}=\epsilon_0\left(1-\frac{\omega_p^2}{\omega^2+i\gamma\omega}\right)\v{E}
+%.\] 
+%Nella quale compare il coefficiente di smorzamento e la frequenza di Plasma $\omega_p$. In questo caso nel regime di $\omega\gg \omega_p$ abbiamo una risposta dielettrica reale (fare il limite di grandi $\omega$ nella parentesi, il termine complesso al denominatore se ne va):
+%\[
+%    \epsilon (\omega) = 1-\frac{\omega_p^2}{\omega^2}
+%.\] 
+%Sostituendo questa nella equazione \ref{eq:dispersonnn} si ottiene:
+%\[
+%    \omega^2=\omega^2_p+k^2c^2
+%.\] 
+%La cosa importante è che onde strasverse e longitudinali hanno due coefficienti di propagazione differenti, in particolare esiste una condizione che mette in relazione il rapporto tra le due dispersioni di tali onde (non sono riuscito a trovare la dimostrazione: Relazione di Lyddane–Sachs–Teller):
+%\[
+%    \frac{\omega_L^2}{\omega_T^2} = \frac{\epsilon_s}{\epsilon_\infty}
+%.\] 
+%In cui $\epsilon_\infty$ è la permettività per $\omega\gg \omega_p$ mentre $\epsilon_s$ è quella statica. \\
+%\ldots\\
+%Possiamo applicare tutto questo ai fononi semplicemente considerando le curve dei fononi ottici come piatte, in questo modo la loro dipendenza dalla frequenza svanisce e (per analogia a sopra) $\epsilon (\v{k},\omega) \to \epsilon (w)$, quindi abbiamo che l'andamento risultante sarà il mescolamento dell'onda elettromagnetica con la vibrazione (fonone) del cristallo:
+%\begin{figure}[ht]
+%    \centering
+%    \incfig{polaritoni-fononici}
+%    \caption{Polaritoni fononici}
+%    \label{fig:polaritoni-fononici}
+%\end{figure}
+%\noindent
+%Nella figura $\omega_T$ è la frequenza di risonanza della $\epsilon(\omega)$, questa immagine ci permette di comprendere meglio la propagazione dei fononi acustici. Notiamo che per $\v{q}\to 0$ si ha che le onde longitudinali tendono ad avere proprio la frequenza $\omega_L$ (la frequenza del modo longitudinale) dettata dal campo EM incidente.\\
+%Vediamo che nelle frequenze tra $\omega_L$ e $\omega_T$ c'è una zona di non propagazione del campo elettromagnetico, questa zona sarà interessante per effettuare delle misure della dispersione dei fononi ottici.
 \subsection{Misurare i fononi}
 \label{subsec:Misurare i fononi}
 \subsubsection{Misura della propagazione lineare dei fononi acustici}
@@ -349,8 +349,8 @@ Per misurare i fononi possiamo utilizzare un cristallo piezoelettrico \footnote{
 Questa tecnica ci permette di misurare la parte di propagazione lineare dei fononi acustici. 
 \subsubsection{Misura della interazione con la radiazione dei fononi: scattering Raman}
 \label{subsubsec:Misura della interazione con la radiazione dei fononi}
-Possiamo osservare l'interazione del nostro cristallo con la radiazione osservando la figura \ref{fig:polaritoni-fononici}: abbiamo un range di frequenze in cui la radiazione non si propaga (Restramer Band), questa ci dice dove stanno i fononi ottici longitudinali o trasversi a $\v{k}=0$, in sostanza si misura $\omega_L$ e $\omega_T$. Ovviamente questa misura si fa a $\v{k}$ piccoli perché abbiamo l'impulso del fotone che è piccolo rispetto a quello del cristallo.\\
-Un'altro metodo utilizzato è lo scattering Raman: diffusione di fotoni da parte delle vibrazioni del cristallo. 
+%Possiamo osservare l'interazione del nostro cristallo con la radiazione osservando la figura \ref{fig:polaritoni-fononici}: abbiamo un range di frequenze in cui la radiazione non si propaga (Restramer Band), questa ci dice dove stanno i fononi ottici longitudinali o trasversi a $\v{k}=0$, in sostanza si misura $\omega_L$ e $\omega_T$. Ovviamente questa misura si fa a $\v{k}$ piccoli perché abbiamo l'impulso del fotone che è piccolo rispetto a quello del cristallo.\\
+Un metodo utilizzato è lo scattering Raman: diffusione di fotoni da parte delle vibrazioni del cristallo. 
 Mandando fotoni con un certo $\omega , k$ questi usciranno scatterati dal cristallo, questo tipo di scattering è inelastico, l'energia viene trasmessa al fonone del cristallo.\\
 Andando a vedere come è distribuita l'energia della particella uscente possiamo dedurre qual'è la $\omega '$ ed il $k'$ del fonone.\\
 Lo scattering si chiama Raman se riguarda fononi ottici oppure Brillouin se riguarda fononi acustici.\\
